@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	
+	
+    <SoS2_Shuttle_Personal.label>Персональный шаттл</SoS2_Shuttle_Personal.label>
+    <SoS2_Shuttle_Personal.description>Одноместный шаттл с небольшим грузовым отсеком. Работает на химическом топливе, способен совершать как орбитальные, так и наземные перелёты.</SoS2_Shuttle_Personal.description>
+    <SoS2_Shuttle_Personal.properties.roles.0.label>Пилот</SoS2_Shuttle_Personal.properties.roles.0.label>
+    <SoS2_Shuttle_Personal.components.0.label>Ускоритель</SoS2_Shuttle_Personal.components.0.label>
+    <SoS2_Shuttle_Personal.components.1.label>Ускоритель</SoS2_Shuttle_Personal.components.1.label>
+    <SoS2_Shuttle_Personal.components.2.label>Ускоритель</SoS2_Shuttle_Personal.components.2.label>
+    <SoS2_Shuttle_Personal.components.3.label>Ускоритель</SoS2_Shuttle_Personal.components.3.label>
+    <SoS2_Shuttle_Personal.components.4.label>Топливный бак</SoS2_Shuttle_Personal.components.4.label>
+    <SoS2_Shuttle_Personal.components.5.label>Корпус</SoS2_Shuttle_Personal.components.5.label>
+	
+    <SoS2_Shuttle.label>лёгкий шаттл</SoS2_Shuttle.label>
+    <SoS2_Shuttle.description>Лёгкий многофункциональный шаттл на ядерном топливе для космических и наземных перелётов. Оборудование этого транспортного средства основано на миниатюризации базовых корабельных систем, оно менее эффективно, но может быть улучшено. На этот вариант шаттла можно установить только одну турель.</SoS2_Shuttle.description>
+    <SoS2_Shuttle.properties.roles.0.label>Пилот</SoS2_Shuttle.properties.roles.0.label>
+    <SoS2_Shuttle.properties.roles.1.label>Пассажир</SoS2_Shuttle.properties.roles.1.label>
+    <SoS2_Shuttle.components.0.label>Ускоритель</SoS2_Shuttle.components.0.label>
+    <SoS2_Shuttle.components.1.label>Ускоритель</SoS2_Shuttle.components.1.label>
+    <SoS2_Shuttle.components.2.label>Ускоритель</SoS2_Shuttle.components.2.label>
+    <SoS2_Shuttle.components.3.label>Ускоритель</SoS2_Shuttle.components.3.label>
+    <SoS2_Shuttle.components.4.label>Реактор</SoS2_Shuttle.components.4.label>
+    <SoS2_Shuttle.components.5.label>Кокпит</SoS2_Shuttle.components.5.label>
+    <SoS2_Shuttle.components.6.label>Радиатор</SoS2_Shuttle.components.6.label>
+    <SoS2_Shuttle.components.7.label>Корпус</SoS2_Shuttle.components.7.label>
+	
+    <SoS2_Shuttle_Heavy.label>тяжёлый шаттл</SoS2_Shuttle_Heavy.label>
+    <SoS2_Shuttle_Heavy.description>Тяжёлый многофункциональный шаттл на ядерном топливе для космических и наземных перелётов. Оборудование этого транспортного средства основано на миниатюризации базовых корабельных систем, оно менее эффективно, но может быть улучшено. На этот вариант шаттла можно установить две турели.</SoS2_Shuttle_Heavy.description>
+    <SoS2_Shuttle_Heavy.properties.roles.0.label>Пилот</SoS2_Shuttle_Heavy.properties.roles.0.label>
+    <SoS2_Shuttle_Heavy.properties.roles.1.label>Пассажир</SoS2_Shuttle_Heavy.properties.roles.1.label>
+    <SoS2_Shuttle_Heavy.components.0.label>Ускоритель</SoS2_Shuttle_Heavy.components.0.label>
+    <SoS2_Shuttle_Heavy.components.1.label>Ускоритель</SoS2_Shuttle_Heavy.components.1.label>
+    <SoS2_Shuttle_Heavy.components.2.label>Ускоритель</SoS2_Shuttle_Heavy.components.2.label>
+    <SoS2_Shuttle_Heavy.components.3.label>Ускоритель</SoS2_Shuttle_Heavy.components.3.label>
+    <SoS2_Shuttle_Heavy.components.4.label>Реактор</SoS2_Shuttle_Heavy.components.4.label>
+    <SoS2_Shuttle_Heavy.components.5.label>Кокпит</SoS2_Shuttle_Heavy.components.5.label>
+    <SoS2_Shuttle_Heavy.components.6.label>Радиатор</SoS2_Shuttle_Heavy.components.6.label>
+    <SoS2_Shuttle_Heavy.components.7.label>Корпус</SoS2_Shuttle_Heavy.components.7.label>
+	
+    <SoS2_Shuttle_Superheavy.label>сверхтяжёлый шаттл</SoS2_Shuttle_Superheavy.label>
+    <SoS2_Shuttle_Superheavy.description>Сверхтяжёлый многофункциональный шаттл на ядерном топливе для космических и наземных перелётов. Оборудование этого транспортного средства основано на миниатюризации базовых корабельных систем, оно менее эффективно, но может быть улучшено. На этот вариант шаттла можно установить три турели.</SoS2_Shuttle_Superheavy.description>
+    <SoS2_Shuttle_Superheavy.properties.roles.0.label>Пилот</SoS2_Shuttle_Superheavy.properties.roles.0.label>
+    <SoS2_Shuttle_Superheavy.properties.roles.1.label>Пассажир</SoS2_Shuttle_Superheavy.properties.roles.1.label>
+    <SoS2_Shuttle_Superheavy.components.0.label>Ускоритель</SoS2_Shuttle_Superheavy.components.0.label>
+    <SoS2_Shuttle_Superheavy.components.1.label>Ускоритель</SoS2_Shuttle_Superheavy.components.1.label>
+    <SoS2_Shuttle_Superheavy.components.2.label>Ускоритель</SoS2_Shuttle_Superheavy.components.2.label>
+    <SoS2_Shuttle_Superheavy.components.3.label>Ускоритель</SoS2_Shuttle_Superheavy.components.3.label>
+    <SoS2_Shuttle_Superheavy.components.4.label>Реактор</SoS2_Shuttle_Superheavy.components.4.label>
+    <SoS2_Shuttle_Superheavy.components.5.label>Кокпит</SoS2_Shuttle_Superheavy.components.5.label>
+    <SoS2_Shuttle_Superheavy.components.6.label>Радиатор</SoS2_Shuttle_Superheavy.components.6.label>
+    <SoS2_Shuttle_Superheavy.components.7.label>Корпус</SoS2_Shuttle_Superheavy.components.7.label>
+
+
+</LanguageData>

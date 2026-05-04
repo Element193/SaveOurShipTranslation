@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>	<!--1.5\Defs\Scenarios\ScenParts.xml-->
-
-	<StartInSpace.label>начало в космосе</StartInSpace.label>
-	<AfterlifeVault.label>загробный бункер</AfterlifeVault.label>
-	<LoadPreviousShip.label>загрузка корабля</LoadPreviousShip.label>
-	
-</LanguageData>

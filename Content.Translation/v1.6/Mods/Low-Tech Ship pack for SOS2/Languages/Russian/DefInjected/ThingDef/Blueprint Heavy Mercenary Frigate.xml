@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--1.5\Defs\Misc\Bleuprintdefs\Blueprint Heavy Mercenary Frigate.xml-->
+  <ShipBPHeMeFr.label>проект корабля (Ударный фрегат наемников)</ShipBPHeMeFr.label>
+  <ShipBPHeMeFr.description>Многоразовый проект космического корабля, который строится в 3 этапа при наличии нужных технологий. Проект можно изменять в процессе строительства, но его следующий этап будет размещён только после постройки всех сооружений.</ShipBPHeMeFr.description>
+</LanguageData>

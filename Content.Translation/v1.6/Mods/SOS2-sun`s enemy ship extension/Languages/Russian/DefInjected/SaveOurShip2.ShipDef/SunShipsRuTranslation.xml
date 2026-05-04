@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Sun_StormAssaultShip.label>Ударный корабль Шторм</Sun_StormAssaultShip.label>
+
+  <Sun_OrbitalShieldBreaker.label>Орбитальный разрушитель щитов</Sun_OrbitalShieldBreaker.label>
+
+  <Sun_MetalStormAssaultShip.label>Ударный фрегат Шторм-Метал</Sun_MetalStormAssaultShip.label>
+
+  <Sun_HeavyTorpedoPlane.label>Тяжелый торпедный планер</Sun_HeavyTorpedoPlane.label>
+
+  <Sun_HeavyGunShip.label>Тяжелый истребитель</Sun_HeavyGunShip.label>
+
+  <Sun_Flagship.label>Дредноут Сан-Флагман</Sun_Flagship.label>
+
+  <Sun_FatHeadFish.label>Дредноут Сан-Фишхэд</Sun_FatHeadFish.label>
+
+  <Sun_CycloneTorpedoBoat.label>Торпедный фрегат Циклон</Sun_CycloneTorpedoBoat.label>
+
+  <Sun_BigArrow.label>Крейсер Сан-Эрроу</Sun_BigArrow.label>
+
+  <Sun_LogisticsSpaceStation.label>Космическая станция логистики</Sun_LogisticsSpaceStation.label>
+
+  <Sun_LoveBento.label>Любовный бенто</Sun_LoveBento.label>
+
+  <Sun_OrbitalBombingSatellite.label>Спутник орбитальной бомбардировки</Sun_OrbitalBombingSatellite.label>
+
+  <Sun_OrbitingEnergyBeamSatellite.label>Спутник орбитального луча</Sun_OrbitingEnergyBeamSatellite.label>
+
+  <Sun_MechanicalRareCargoShip.label>Грузовой корабль механоидов</Sun_MechanicalRareCargoShip.label>
+</LanguageData>

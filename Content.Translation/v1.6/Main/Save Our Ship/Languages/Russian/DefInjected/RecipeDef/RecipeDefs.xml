@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Ядерное топливо -->
+	<MakeShuttleFuelPods.label>изготовить ядерное топливо</MakeShuttleFuelPods.label>
+	<MakeShuttleFuelPods.description>Изготовить 100 капсул с ядерным топливом.</MakeShuttleFuelPods.description>
+	<MakeShuttleFuelPods.jobString>Изготавливает ядерное топливо.</MakeShuttleFuelPods.jobString>
+
+	<MakeShuttleFuelPods100.description>Изготовить 100 капсул с ядерным топливом.</MakeShuttleFuelPods100.description>
+	<MakeShuttleFuelPods100.label>изготовить ядерное топливо х100</MakeShuttleFuelPods100.label>
+	<MakeShuttleFuelPods100.jobString>Изготавливает 100 капсул с ядерным топливом.</MakeShuttleFuelPods100.jobString>
+
+	<MakeShuttleFuelPods1000.description>Изготовить 1000 капсул с ядерным топливом.</MakeShuttleFuelPods1000.description>
+	<MakeShuttleFuelPods1000.label>изготовить ядерное топливо х1000</MakeShuttleFuelPods1000.label>
+	<MakeShuttleFuelPods1000.jobString>Изготавливает 1000 капсул с ядерным топливом.</MakeShuttleFuelPods1000.jobString>
+
+	<!-- Рециклотрон -->
+	<RecyclotronRecipe.label>разобрать предмет</RecyclotronRecipe.label>
+	<RecyclotronRecipe.description>Разобрать предмет на составляющие части при помощи механитов, с почти идеальной эффективностью.</RecyclotronRecipe.description>
+	<RecyclotronRecipe.jobString>Разбирает предмет с помощью рециклотрона.</RecyclotronRecipe.jobString>
+
+	<!-- Каркасная пена -->
+	<MakeHullFoam.label>изготовить каркасную пену</MakeHullFoam.label>
+	<MakeHullFoam.description>Изготовить канистру каркасной пены.</MakeHullFoam.description>
+	<MakeHullFoam.jobString>Изготавливает канистру каркасной пены.</MakeHullFoam.jobString>
+
+	<MakeHullFoam10.description>Изготовить 10 канистр каркасной пены.</MakeHullFoam10.description>
+	<MakeHullFoam10.label>изготовить каркасную пену х10</MakeHullFoam10.label>
+	<MakeHullFoam10.jobString>Изготавливает 10 канистр каркасной пены.</MakeHullFoam10.jobString>
+
+	<!-- Боеприпасы -->
+	<MakeAntigrainTorpedo4.description>Изготовить 4 гранульные торпеды для торпедного аппарата.</MakeAntigrainTorpedo4.description>
+	<MakeAntigrainTorpedo4.label>изготовить гранульные торпеды х4</MakeAntigrainTorpedo4.label>
+	<MakeAntigrainTorpedo4.jobString>Изготавливает 4 гранульные торпеды.</MakeAntigrainTorpedo4.jobString>
+
+	<MakeAntigrainWarheadx4.description>Изготовить 4 гранульные боеголовки.</MakeAntigrainWarheadx4.description>
+	<MakeAntigrainWarheadx4.label>изготовить гранульные боеголовки х4</MakeAntigrainWarheadx4.label>
+	<MakeAntigrainWarheadx4.jobString>Изготавливает 4 гранульные боеголовки.</MakeAntigrainWarheadx4.jobString>
+
+	<MakeEMPShellx4.description>Изготовить 4 ЭМИ-снаряда.</MakeEMPShellx4.description>
+	<MakeEMPShellx4.label>изготовить ЭМИ-снаряд х4</MakeEMPShellx4.label>
+	<MakeEMPShellx4.jobString>Изготавливает 4 ЭМИ-снаряда.</MakeEMPShellx4.jobString>
+
+	<MakeEMPTorpedo4.description>Изготовить 4 ЭМИ-торпеды.</MakeEMPTorpedo4.description>
+	<MakeEMPTorpedo4.label>изготовить 4 ЭМИ-торпеды</MakeEMPTorpedo4.label>
+	<MakeEMPTorpedo4.jobString>Изготавливает 4 ЭМИ-торпеды.</MakeEMPTorpedo4.jobString>
+
+	<MakeHighExplosiveShellx4.description>Изготовить 4 осколочных снаряда.</MakeHighExplosiveShellx4.description>
+	<MakeHighExplosiveShellx4.label>изготовить осколочные снаряды х4</MakeHighExplosiveShellx4.label>
+	<MakeHighExplosiveShellx4.jobString>Изготавливает 4 осколочных снаряда.</MakeHighExplosiveShellx4.jobString>
+
+	<MakeHighExplosiveTorpedo4.description>Изготовить 4 осколочные торпеды.</MakeHighExplosiveTorpedo4.description>
+	<MakeHighExplosiveTorpedo4.label>изготовить осколочные торпеды х4</MakeHighExplosiveTorpedo4.label>
+	<MakeHighExplosiveTorpedo4.jobString>Изготавливает 4 осколочные торпеды.</MakeHighExplosiveTorpedo4.jobString>
+
+	<!-- Архоимпланты -->
+	<SoSInstallArchotechEar.label>вживить архоухо</SoSInstallArchotechEar.label>
+	<SoSInstallArchotechEar.description>Вживить архоухо.</SoSInstallArchotechEar.description>
+	<SoSInstallArchotechEar.jobString>Вживляет архоухо.</SoSInstallArchotechEar.jobString>
+	
+    <SoSInstallArchotechNose.label>вживить архонос</SoSInstallArchotechNose.label>
+    <SoSInstallArchotechNose.description>Вживить архонос.</SoSInstallArchotechNose.description>
+    <SoSInstallArchotechNose.jobString>Вживляет архонос.</SoSInstallArchotechNose.jobString>
+
+    <SoSInstallArchotechJaw.label>вживить архочелюсть</SoSInstallArchotechJaw.label>
+    <SoSInstallArchotechJaw.description>Вживить архочелюсть.</SoSInstallArchotechJaw.description>
+    <SoSInstallArchotechJaw.jobString>Вживляет архочелюсть.</SoSInstallArchotechJaw.jobString>
+
+	<SoSInstallArchotechHeart.label>вживить архосердце</SoSInstallArchotechHeart.label>
+    <SoSInstallArchotechHeart.description>Вживить архосердце.</SoSInstallArchotechHeart.description>
+    <SoSInstallArchotechHeart.jobString>Вживляет архосердце.</SoSInstallArchotechHeart.jobString>
+
+	<SoSInstallArchotechLung.label>вживить архолегкое</SoSInstallArchotechLung.label>
+    <SoSInstallArchotechLung.description>Вживить архолегкое.</SoSInstallArchotechLung.description>
+    <SoSInstallArchotechLung.jobString>Вживляет архолегкое.</SoSInstallArchotechLung.jobString>
+
+    <SoSInstallArchotechStomach.label>вживить архожелудок</SoSInstallArchotechStomach.label>
+    <SoSInstallArchotechStomach.description>Вживить архожелудок.</SoSInstallArchotechStomach.description>
+    <SoSInstallArchotechStomach.jobString>Вживляет архожелудок.</SoSInstallArchotechStomach.jobString>
+
+    <SoSInstallArchotechKidney.label>вживить архопочку</SoSInstallArchotechKidney.label>
+    <SoSInstallArchotechKidney.description>Вживить архопочку.</SoSInstallArchotechKidney.description>
+    <SoSInstallArchotechKidney.jobString>Вживляет архопочку.</SoSInstallArchotechKidney.jobString>
+
+    <SoSInstallArchotechLiver.label>вживить архопечень</SoSInstallArchotechLiver.label>
+    <SoSInstallArchotechLiver.description>Вживить архопечень.</SoSInstallArchotechLiver.description>
+    <SoSInstallArchotechLiver.jobString>Вживляет архопечень.</SoSInstallArchotechLiver.jobString>
+
+    <SoSInstallArchotechSpine.label>вживить архопозвоночник</SoSInstallArchotechSpine.label>
+    <SoSInstallArchotechSpine.description>Вживить архопозвоночник.</SoSInstallArchotechSpine.description>
+    <SoSInstallArchotechSpine.jobString>Вживляет архопозвоночник.</SoSInstallArchotechSpine.jobString>
+
+    <InstallSoSArchotechSkin.label>вживить архокожу</InstallSoSArchotechSkin.label>
+    <InstallSoSArchotechSkin.description>Вживить архокожу.</InstallSoSArchotechSkin.description>
+    <InstallSoSArchotechSkin.jobString>Вживляет архокожу.</InstallSoSArchotechSkin.jobString>
+
+    <RemoveSoSArchotechSkin.label>удалить архокожу</RemoveSoSArchotechSkin.label>
+    <RemoveSoSArchotechSkin.description>Удалить архокожу.</RemoveSoSArchotechSkin.description>
+    <RemoveSoSArchotechSkin.jobString>Удаляет архокожу.</RemoveSoSArchotechSkin.jobString>
+
+    <InstallSoSPsychicPredictor.label>вживить пси-предсказатель</InstallSoSPsychicPredictor.label>
+    <InstallSoSPsychicPredictor.description>Вживить пси-предсказатель.</InstallSoSPsychicPredictor.description>
+    <InstallSoSPsychicPredictor.jobString>Вживляет пси-предсказатель.</InstallSoSPsychicPredictor.jobString>
+
+    <RemoveSoSPsychicPredictor.label>удалить пси-предсказатель</RemoveSoSPsychicPredictor.label>
+    <RemoveSoSPsychicPredictor.description>Удалить пси-предсказатель.</RemoveSoSPsychicPredictor.description>
+    <RemoveSoSPsychicPredictor.jobString>Удаляет пси-предсказатель.</RemoveSoSPsychicPredictor.jobString>
+
+    <InstallSoSPsychicManipulator.label>вживить пси-манипулятор</InstallSoSPsychicManipulator.label>
+    <InstallSoSPsychicManipulator.description>Вживить пси-манипулятор.</InstallSoSPsychicManipulator.description>
+    <InstallSoSPsychicManipulator.jobString>Вживляет пси-манипулятор.</InstallSoSPsychicManipulator.jobString>
+
+    <RemoveSoSPsychicManipulator.label>удалить пси-манипулятор</RemoveSoSPsychicManipulator.label>
+    <RemoveSoSPsychicManipulator.description>Удалить пси-манипулятор.</RemoveSoSPsychicManipulator.description>
+    <RemoveSoSPsychicManipulator.jobString>Удаляет пси-манипулятор.</RemoveSoSPsychicManipulator.jobString>
+
+</LanguageData>

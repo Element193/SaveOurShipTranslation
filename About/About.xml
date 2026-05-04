@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Save Our Ship 2 RU</name>
+    <name>Save Our Ship - Translation</name>
     <packageId>EL.SOS2.TR</packageId>
     <author>ARL193</author>
 
@@ -11,7 +11,7 @@
         <li>1.6</li>
     </supportedVersions>
 
-    <description>Неофициальное дополнение для RimWorld. Постройте пригодный для жизни корабль и продолжите историю своих колонистов в космосе — участвуйте в корабельных боях с пиратами, ищите сокровища среди заброшенных кораблей или откройте одну-две величайших космических тайн!\n\nSoS2 включает две концовки: постройте двигатель Джонсона-Танаки, чтобы отправиться в новый мир, или превратите кого-то из своего экипажа в бога-машину с помощью Архотек-Споры.\n\nПеревод 1.6:\nSave Our Ship 2\n\nПеревод 1.5 (используется для 1.6):Save Our Ship Creation Kit\nSpinal Engines for SOS2\nLow-Tech Ship pack for SOS2</description>
+    <description>Неофициальное дополнение для RimWorld. Постройте пригодный для жизни корабль и продолжите историю своих колонистов в космосе — участвуйте в корабельных боях с пиратами, ищите сокровища среди заброшенных кораблей или откройте одну-две величайшие космические тайны!\n\nSOS2 включает две концовки: постройте двигатель Джонсона-Танаки, чтобы отправиться к звёздам, или превратите кого-то из своего экипажа в бога-машину с помощью Архоспоры.\n\nTranslation:\nSave Our Ship 2 Ru;\nSave Our Ship Creation Kit Ru;\nSpinal Engines for SOS2 Ru;\nLow-Tech Ship pack for SOS2 Ru;\nSOS2-sun`s enemy ship extension Ru/En;\nSave Our Ship 2 - Scout Landing Zone Ru/En.\n\nAdditional changes:\nSome UI textures replaced;\nAbout 30 - 40 new ships/structures.\n\nRecommended mods:\nLow-Tech Ship pack for SOS2 and ship packs;\nDubs Bad Hygiene Lite;\nSome textures from Vanilla Textures Expanded SOS2.</description>
 
     <modDependencies>
     <li><packageId>kentington.saveourship2</packageId><displayName>Save Our Ship 2</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/1909914131</steamWorkshopUrl></li>
@@ -21,6 +21,12 @@
         <li>kentington.saveourship2</li>
         <li>TheCafFiend.SOS2SpinalEngines</li>
         <li>carl.outlanderships</li>
+        <li>kentington.saveourshipck</li>
+        <li>sos2.sunship</li>
+        <li>xannihilusx.saveourship2.scoutlandingzone</li>
+        <li>xannihilusx.saveourship2.orbitalbombardment</li>
+        <li>xannihilusx.saveourship2.cyberwarfare</li>
+        <li>belinko.hackers</li>
     </loadAfter>
     
 </ModMetaData>

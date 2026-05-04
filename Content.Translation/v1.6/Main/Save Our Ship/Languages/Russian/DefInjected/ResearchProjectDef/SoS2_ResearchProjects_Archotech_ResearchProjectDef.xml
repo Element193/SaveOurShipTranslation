@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ArchotechMechanites.label>инженерные механиты</ArchotechMechanites.label>
+	<ArchotechMechanites.description>Атом за атомом! Инженерные механиты, которые могут конструировать или ремонтировать предметы.</ArchotechMechanites.description>
+	
+	<ArchotechBioMechanites.label>биоинтеграция механитов</ArchotechBioMechanites.label>
+	<ArchotechBioMechanites.description>Разработка специализированных механитов, которые могут интегрироваться в плоть для модификации биологических существ.</ArchotechBioMechanites.description>
+	
+	<ArchotechBioMechanitesTwo.label>интелект биомеханитов</ArchotechBioMechanitesTwo.label>
+    <ArchotechBioMechanitesTwo.description>Наделение механитов гештальт интелектом для диагностики и восстановления травм.</ArchotechBioMechanitesTwo.description>
+	
+	<ArchotechArchites.label>архогенетика</ArchotechArchites.label>
+	<ArchotechArchites.description>Исследование новых способов для получения совершенных архогенов. Возможность для Архоспоры создавать гены и дарить их в качестве подарков.</ArchotechArchites.description>
+	
+    <SoSArchotechOrgans.label>архоанатомия</SoSArchotechOrgans.label>
+    <SoSArchotechOrgans.description>Разработка высокотехнологичных протезов, которые превосходят биологию на молекулярном уровне.</SoSArchotechOrgans.description>
+	
+    <ArchotechAnimals.label>архофауна</ArchotechAnimals.label>
+    <ArchotechAnimals.description>Превосходство над естественной эволюцией и создание модифицированных животных.</ArchotechAnimals.description>
+    
+    <ArchotechPlants.label>архофлора</ArchotechPlants.label>
+    <ArchotechPlants.description>Превосходство над естественной эволюцией и выращивание модифицированных растений.</ArchotechPlants.description>
+	
+    <ArchotechMechaniteWeapon.label>поглощающие механиты</ArchotechMechaniteWeapon.label>
+    <ArchotechMechaniteWeapon.description>Атом за атомом! Механиты, которые поглощают материю. Полезны для утилизации мусора, или "переработки" вражеских кораблей.</ArchotechMechaniteWeapon.description>
+	
+    <ArchotechHullConversion.label>преобразование материи</ArchotechHullConversion.label>
+    <ArchotechHullConversion.description>Преобразование корпуса корабля до уровня архотек. Не влияет на крупные конструкции, такие как радиаторы или генераторы щитов.</ArchotechHullConversion.description>
+	
+	<ArchotechPsychicField.label>формирование пси-поля</ArchotechPsychicField.label>
+	<ArchotechPsychicField.description>Открытие основных принципов психических взаимодействий, которые позволят Архоспоре генерировать пси-поле.</ArchotechPsychicField.description>
+	<ArchotechPsychicField.discoveredLetterTitle>Психическое поле</ArchotechPsychicField.discoveredLetterTitle>
+	<ArchotechPsychicField.discoveredLetterText>Теперь Архоспора генерирует психическое поле. Вы можете использовать пси-способности Архоспоры, если накоплено достаточно силы поля и завершены необходимые исследования.\n\nСила пси-поля медленно накапливается, когда члены экипажа медитируют поблизости Архоспоры. Пси-поле можно усилить за счёт установки архоколонн возле Архоспоры.</ArchotechPsychicField.discoveredLetterText>
+	
+	<ArchotechPsychicManipulation.label>формирование пси-импульсов</ArchotechPsychicManipulation.label>
+	<ArchotechPsychicManipulation.description>Формирование простых успокаивающих или подавляющих пси-импульсов, используя накопленную силу пси-поля Архоспоры.</ArchotechPsychicManipulation.description>
+	
+	<ArchotechBroadManipulation.label>широкая манипуляция</ArchotechBroadManipulation.label>
+	<ArchotechBroadManipulation.description>Использование пси-поля Архоспоры для трансляции сообщений и снов тысячам существ, влияя на их мнения. Это может быть полезно при переговорах через консоль связи.</ArchotechBroadManipulation.description>
+	
+	<ArchotechPsylink.label>формирование пси-связи</ArchotechPsylink.label>
+	<ArchotechPsylink.description>Использование накопленной силы пси-поля Архоспоры для наделения существ пси-связью.</ArchotechPsylink.description>
+	
+	<ArchotechPsychicEffectors.label>пси-устройства</ArchotechPsychicEffectors.label>
+	<ArchotechPsychicEffectors.description>Разработка портативных устройств ограниченного использования для генерации заданных пси-импульсов.</ArchotechPsychicEffectors.description>
+	
+	<ArchotechPsychicWeapon.label>корабельный пси-луч</ArchotechPsychicWeapon.label>
+	<ArchotechPsychicWeapon.description>Орудие, конвертирующее энергию в подавляющий луч, который проходит сквозь корпус и выводит из строя экипаж вражеских кораблей.</ArchotechPsychicWeapon.description>
+	
+	<ArchotechPsychicSoulLink.label>пси-реинкарнация</ArchotechPsychicSoulLink.label>
+	<ArchotechPsychicSoulLink.description>Возможность связать существо с Архоспорой. Если телу существа будут нанесены смертельные повреждения, Архоспоры мгновенно загрузит его в свободную капсулу личности.</ArchotechPsychicSoulLink.description>
+
+	<ArchotechExotics.label>экзотические частицы</ArchotechExotics.label>
+	<ArchotechExotics.description>Расширение законов физики множеством частиц с экзотическим поведением.</ArchotechExotics.description>
+	
+	<ArchotechVanometrics.label>ванометрия</ArchotechVanometrics.label>
+	<ArchotechVanometrics.description>Разработка автономных ванометрических генераторов, которые вырабатывают энергию поглощая частицы из окружающего пространства.</ArchotechVanometrics.description>
+	
+	<ArchotechShields.label>экзотические поля</ArchotechShields.label>
+	<ArchotechShields.description>Применение экзотических частиц для создания высокотехнологичных генераторов защитного поля.</ArchotechShields.description>
+	
+	<ArchotechHeatsink.label>антиэнтропия</ArchotechHeatsink.label>
+	<ArchotechHeatsink.description>Применение физических свойств экзотических частиц для создания радиаторов, которые конвертируют тепло обратно в полезную энергию, не излучая его в космос.</ArchotechHeatsink.description>
+	
+	<ArchotechAntimatter.label>инверсивная материя</ArchotechAntimatter.label>
+	<ArchotechAntimatter.description>Разработка высокотехнологичных снарядов из утопических миров с использованием экзотических частиц. При детонации гранула антиматерии в боевой части способна создать взрыв большой силы с последующим возгоранием. Такие снаряды могут быть использованы для изготовления корабельных торпед.</ArchotechAntimatter.description>
+	
+	<ArchotechEngine.label>ускорители антиматерии</ArchotechEngine.label>
+	<ArchotechEngine.description>Разработка высокоэффективных корабельных двигателей, которые обеспечивают огромную тягу за счёт аннигиляции экзотических частиц.</ArchotechEngine.description>
+	
+	<ArchotechReactor.label>реакторы антиматерии</ArchotechReactor.label>
+	<ArchotechReactor.description>Разработка высокоэффективных корабельных генераторов, которые способны вырабатывать огромное количество энергии за счёт аннигиляции экзотических частиц.</ArchotechReactor.description>
+
+	<ArchotechPillarA.label>Поиск архоколонны на орбите</ArchotechPillarA.label>
+	<ArchotechPillarA.description>Исследование планетарной орбиты для поиска древнего архоартефакта - архоколонны.</ArchotechPillarA.description>
+	<ArchotechPillarA.discoveredLetterTitle>Колонна найдена</ArchotechPillarA.discoveredLetterTitle>
+	<ArchotechPillarA.discoveredLetterText>Удалось определить местонахождение архоколонны! Этот образец находится на древней станции терраформирования "Горизонт".\n\nКупольная часть станции поддерживает экосистему в рабочем состоянии на протяжении тысячелетий. Однако в настоящее время её захватил клан космических пиратов. Учитывая количество установленного ими тяжёлого вооружения на корпусе станции, они явно не намерены принимать гостей.\n\nВы можете атаковать станцию, отдав приказ с корабельного мостика.</ArchotechPillarA.discoveredLetterText>
+
+	<ArchotechPillarB.label>Поиск архоколонны на спутниках</ArchotechPillarB.label>
+	<ArchotechPillarB.description>Исследование планетарных спутников для поиска древнего архоартефакта - архоколонны.</ArchotechPillarB.description>
+	<ArchotechPillarB.discoveredLetterTitle>Колонна найдена</ArchotechPillarB.discoveredLetterTitle>
+	<ArchotechPillarB.discoveredLetterText>Удалось определить местонахождение архоколонны! Этот образец, по-видимому, изучается ульем механоидов на одной из лун планеты.\n\nСканирование показывает, что улей защищает очень большой военный корабль механоидов.\n\nВам нужно подготовить шаттл с штурмовой группой. После этого предстоит бой в космосе, и бой на поверхности. Убедитесь, что шаттл полностью заправлен топливом.</ArchotechPillarB.discoveredLetterText>
+
+	<ArchotechPillarC.label>Поиск архоколонны на планете</ArchotechPillarC.label>
+	<ArchotechPillarC.description>Исследование планетарной поверхности для поиска древнего архоартефакта - архоколонны.</ArchotechPillarC.description>
+	<ArchotechPillarC.discoveredLetterTitle>Колонна найдена</ArchotechPillarC.discoveredLetterTitle>
+	<ArchotechPillarC.discoveredLetterText>Удалось определить местонахождение архоколонны! Этот образец является самым священным артефактом племенных культур планеты, известным как Звёздный Тотем.\n\nКогда-то это было священное место встреч, где соперничающие племена собирались под знаменами мира, но оно было захвачено и осквернено диким кланом берсерков.\n\nКогда ваш отряд прибудет на место, к нему присоединятся все дружественные племена, чтобы вернуть тотем в дружественные руки.</ArchotechPillarC.discoveredLetterText>
+
+	<ArchotechPillarD.label>Поиск архоколонны в недрах</ArchotechPillarD.label>
+	<ArchotechPillarD.description>Исследование подповерхностных слоев планеты для поиска древнего архоартефакта - архоколонны.</ArchotechPillarD.description>
+	<ArchotechPillarD.discoveredLetterTitle>Колонна найдена</ArchotechPillarD.discoveredLetterTitle>
+	<ArchotechPillarD.discoveredLetterText>Удалось определить местонахождение архоколонны! Этот конкретный образец находится глубоко под поверхностью планеты, в центре улья насекомых.\n\nРезультаты сканирования отображают большую популяцию генетически модифицированных насекомых, а также несколько аномальных показателей - вероятно, это архопауки или что-то хуже.\n\nВашей команде рекомендуется тренироваться в ближнем бою...</ArchotechPillarD.discoveredLetterText>
+
+</LanguageData>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	
+
+    <ShipOrbiting.label>Космический корабль</ShipOrbiting.label>
+    <ShipOrbiting.description>Корабль одной из фракций на планетарной орбите.</ShipOrbiting.description>
+	
+    <ShipEnemy.label>Враждебный корабль</ShipEnemy.label>
+    <ShipEnemy.description>Враждебный космический корабль на планетарной орбите.</ShipEnemy.description>
+	
+    <WreckSpace.label>Космический объект</WreckSpace.label>
+    <WreckSpace.description>Космический объект или обломки одной из фракций на планетарной орбите.</WreckSpace.description>
+	
+    <ShipEngineImpactSite.label>древние обломки</ShipEngineImpactSite.label>
+    <ShipEngineImpactSite.description>Место падения кормовой части древнего космического корабля, судя по информации, здесь может быть двигатель Джонсона-Танаки.</ShipEngineImpactSite.description>
+
+    <MoonPillarSite.label>Лунная база</MoonPillarSite.label>
+    <MoonPillarSite.description>Исследовательская база на поверхности одной из лун планеты. Здесь механоиды изучают экземпляр могущественной архоколонны.</MoonPillarSite.description>
+	
+    <TribalPillarSite.label>звёздный тотем</TribalPillarSite.label>
+    <TribalPillarSite.description>Местоположение архоколонны, которая считается святыней для всех племён этой планеты. В настоящее время место захвачено враждебным племенем берсерков.</TribalPillarSite.description>
+	
+    <InsectPillarSite.label>материнский улей</InsectPillarSite.label>
+    <InsectPillarSite.description>Судя по информации с датчиков, здесь огромное скопление насекомых вокруг архоколонны, и что-то ещё более страшное. Вероятно, это один из самых больших ульев насекомых в этой системе.</InsectPillarSite.description>
+
+
+</LanguageData>

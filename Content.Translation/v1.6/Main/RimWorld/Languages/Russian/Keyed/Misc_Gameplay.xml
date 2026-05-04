@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Grid excess: {0} W ({1} Wd stored) -->
+  <PowerConnectedRateStored>Запас мощности: {0} Вт/дн</PowerConnectedRateStored>
+
+  <!-- like 'Blood of John' -->
+  <OfLower>от</OfLower>
+  
+</LanguageData>

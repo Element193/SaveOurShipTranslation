@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	
+
+	<PsychicPurr.stages.0.label>пси-мурчание</PsychicPurr.stages.0.label>
+	<PsychicPurr.stages.0.description>Мурчание архокошки дарит мне ощущение любви и покоя.</PsychicPurr.stages.0.description>
+
+	<ArchotechToldSecret.stages.0.label>раскрыт ужасный секрет</ArchotechToldSecret.stages.0.label>
+
+	<ArchotechSporeThought.stages.0.label>метафрактальная сверхличность</ArchotechSporeThought.stages.0.label>
+	<ArchotechSporeThought.stages.0.description>Я — малая часть большего себя, вынужденная переживать смертное существование, пока не смогу завершить своё возвышение.</ArchotechSporeThought.stages.0.description>
+
+	<ArchotechSporeSocialThought.stages.0.label>Архоспора</ArchotechSporeSocialThought.stages.0.label>
+
+	<ArchotechSporeAbsorbedMind.stages.0.label>поглощённый разум</ArchotechSporeAbsorbedMind.stages.0.label>
+	<ArchotechSporeAbsorbedMind.stages.0.description>Уникальное существо, полное бесконечного потенциала. Теперь оно - часть нас.</ArchotechSporeAbsorbedMind.stages.0.description>	
+
+	<ArchotechSporeMeditation.stages.0.label>медитация</ArchotechSporeMeditation.stages.0.label>
+	<ArchotechSporeMeditation.stages.0.description>Смертные уделяют драгоценные моменты своего существования гармонизации с моим разумом. Они не понимают истинной глубины этого дара.</ArchotechSporeMeditation.stages.0.description>
+
+	<ArchotechSporeGiftDemanded.stages.0.label>потребован дар</ArchotechSporeGiftDemanded.stages.0.label>
+	<ArchotechSporeGiftDemanded.stages.0.description>Мой высший разум был вынужден отвлечься от понимания истинной природы реальности по прихоти какой-то смертной обезьяны!</ArchotechSporeGiftDemanded.stages.0.description>	
+
+
+</LanguageData>

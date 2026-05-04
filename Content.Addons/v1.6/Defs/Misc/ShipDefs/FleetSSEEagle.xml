@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetSSEEagle</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Eagle Fleet (2000)</label>
+		<combatPoints>1979</combatPoints>
+		<ships>
+			<li>
+				<ship>SSEEagle</ship>
+				<offsetX>82</offsetX>
+				<offsetZ>100</offsetZ>
+			</li>
+			<li>
+				<ship>SSESunder</ship>
+				<offsetX>151</offsetX>
+				<offsetZ>180</offsetZ>
+			</li>
+			<li>
+				<ship>SSESunder</ship>
+				<offsetX>148</offsetX>
+				<offsetZ>47</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

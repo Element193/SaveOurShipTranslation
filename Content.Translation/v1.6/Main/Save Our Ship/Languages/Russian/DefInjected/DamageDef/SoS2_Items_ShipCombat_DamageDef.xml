@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ShipTorpedoBomb.label>торпеда</ShipTorpedoBomb.label>
+	<ShipTorpedoBomb.deathMessage>{0} {PAWN_gender ? погиб : погибла} от взрыва торпеды.</ShipTorpedoBomb.deathMessage>
+
+	<ShipTorpedoBombSuper.label>торпеда</ShipTorpedoBombSuper.label>
+	<ShipTorpedoBombSuper.deathMessage>{0} {PAWN_gender ? погиб : погибла} от мощного взрыва торпеды.</ShipTorpedoBombSuper.deathMessage>
+
+</LanguageData>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetSSEMudSkipper</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Trader MudSkipper with escort</label>
+		<combatPoints>290</combatPoints>
+				<tradeShip>True</tradeShip>
+		<ships>
+			<li>
+				<ship>SSEMudSkipper</ship>
+				<offsetX>102</offsetX>
+				<offsetZ>105</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>122</offsetX>
+				<offsetZ>174</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>117</offsetX>
+				<offsetZ>48</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

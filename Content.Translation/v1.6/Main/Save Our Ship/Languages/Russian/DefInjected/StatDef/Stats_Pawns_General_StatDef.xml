@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	
+	<DecompressionResistance.label>устойчивость к декомпрессии</DecompressionResistance.label>
+	<DecompressionResistance.description>Насколько хорошо этот объект сопротивляется декомпрессии.</DecompressionResistance.description>
+	
+	<HypoxiaResistance.label>устойчивость к гипоксии</HypoxiaResistance.label>
+	<HypoxiaResistance.description>Насколько хорошо этот объект переносит недостаток кислорода.</HypoxiaResistance.description>
+	
+	<VacuumSpeedMultiplier.label>скорость в вакууме</VacuumSpeedMultiplier.label>
+	<VacuumSpeedMultiplier.description>Как быстро этот объект перемещается в вакууме.</VacuumSpeedMultiplier.description>
+
+</LanguageData>

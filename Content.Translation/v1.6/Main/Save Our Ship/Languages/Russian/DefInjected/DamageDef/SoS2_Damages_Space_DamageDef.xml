@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	
+	<VacuumDamage.label>декомпрессия</VacuumDamage.label>
+	<VacuumDamage.deathMessage>{0} {PAWN_gender ? погиб : погибла} от разрывающей декомпрессии.</VacuumDamage.deathMessage>
+	
+	<FormgelSlime.label>останки формгеля</FormgelSlime.label>
+	<FormgelSlime.deathMessage>{0} {PAWN_gender ? потерял : потеряла} контроль над формгелем.</FormgelSlime.deathMessage>
+
+</LanguageData>

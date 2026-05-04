@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetX4Asgard</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Asgard Battlecruiser Fleet</label>
+		<combatPoints>4555</combatPoints>
+		<ships>
+			<li>
+				<ship>X4Asgard</ship>
+				<offsetX>79</offsetX>
+				<offsetZ>111</offsetZ>
+			</li>
+			<li>
+				<ship>ARLHunter</ship>
+				<offsetX>134</offsetX>
+				<offsetZ>177</offsetZ>
+			</li>
+			<li>
+				<ship>ARLHunter</ship>
+				<offsetX>127</offsetX>
+				<offsetZ>32</offsetZ>
+			</li>
+			<li>
+				<ship>SSEGladius</ship>
+				<offsetX>77</offsetX>
+				<offsetZ>72</offsetZ>
+			</li>
+			<li>
+				<ship>SSEGladius</ship>
+				<offsetX>79</offsetX>
+				<offsetZ>163</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWasp</ship>
+				<offsetX>40</offsetX>
+				<offsetZ>212</offsetZ>
+			</li>
+			<li>
+				<ship>SSEGladius</ship>
+				<offsetX>45</offsetX>
+				<offsetZ>43</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

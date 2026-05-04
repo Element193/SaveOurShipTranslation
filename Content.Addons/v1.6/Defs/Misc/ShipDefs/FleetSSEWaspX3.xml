@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetSSEWaspX3</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Several Wasp drones</label>
+		<combatPoints>72</combatPoints>
+		<ships>
+			<li>
+				<ship>SSEWasp</ship>
+				<offsetX>122</offsetX>
+				<offsetZ>183</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWasp</ship>
+				<offsetX>76</offsetX>
+				<offsetZ>110</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWasp</ship>
+				<offsetX>124</offsetX>
+				<offsetZ>71</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<ShipCombatShieldGenerator.label>генератор щита</ShipCombatShieldGenerator.label>
+	<ShipCombatShieldGenerator.description>Генерирует импульсное репульсорное поле, которое отражает входящие объекты, при этом вырабатывает тепло. Капитанам рекомендуется отключать щиты, когда уровень нагрева приближается к максимальному, иначе генератор выйдет из строя.</ShipCombatShieldGenerator.description>
+	
+	<ShipCombatShieldGeneratorMini.label>малый генератор щита</ShipCombatShieldGeneratorMini.label>
+	<ShipCombatShieldGeneratorMini.description>Генерирует импульсное репульсорное поле, которое отражает входящие объекты, при этом вырабатывает тепло. Капитанам рекомендуется отключать щиты, когда уровень нагрева приближается к максимальному, иначе генератор выйдет из строя.\n\nЗа счёт миниатюризации, этот генератор щита занимает меньше места, но производит на 25% больше тепла при отражении.</ShipCombatShieldGeneratorMini.description>
+	
+	<ShipHeatConduit.label>теплопровод</ShipHeatConduit.label>
+	<ShipHeatConduit.description>Жидкостный канал для передачи тепла в космосе. Отводит тепло от горячих систем в радиаторы и тепловые резервуары.</ShipHeatConduit.description>
+
+	<HiddenShipHeatConduit.description>Жидкостный канал для передачи тепла в космосе. Отводит тепло от горячих систем в радиаторы и тепловые резервуары. Этот провод скрыт в обшивке корпуса.</HiddenShipHeatConduit.description>
+  	<HiddenShipHeatConduit.label>скрытый теплопровод</HiddenShipHeatConduit.label>
+	
+	<ShipHeatsink.label>радиатор</ShipHeatsink.label>
+	<ShipHeatsink.description>Медленно излучает тепло в космическое пространство. Может работать эффективнее в режиме быстрого охлаждения за счёт сброса охлаждающей жидкости. Воспламеняется при критическом уровне нагрева и высвобождает накопленное тепло в случае разрушения.\n\nНе функционирует при активной маскировке.\n\n&lt;color=#bb8f04&gt;Теплоёмкость: 200 Те.\nОтдача в космос: 4 Те/с.\nИзлучение: 1 Те/с.&lt;/color&gt;</ShipHeatsink.description>
+	
+	<ShipHeatsinkLarge.label>большой радиатор</ShipHeatsinkLarge.label>
+	<ShipHeatsinkLarge.description>Медленно излучает тепло в космическое пространство. Может работать эффективнее в режиме быстрого охлаждения за счёт сброса охлаждающей жидкости. Воспламеняется при критическом уровне нагрева и высвобождает накопленное тепло в случае разрушения.\n\nНе функционирует при активной маскировке.\n\n&lt;color=#bb8f04&gt;Теплоёмкость: 1000 Те.\nОтдача в космос: 16 Те/с.\nИзлучение: 3 Те/с.&lt;/color&gt;</ShipHeatsinkLarge.description>
+	
+	<ShipHeatManifold.label>тепловой резервуар</ShipHeatManifold.label>
+	<ShipHeatManifold.description>Резервуар с охлаждающей жидкостью для хранения избыточного тепла. Медленно излучает тепло в помещение, если не находится в вакууме. Воспламеняется при критическом уровне нагрева и высвобождает накопленное тепло в случае разрушения.\n\n&lt;color=#bb8f04&gt;Теплоёмкость: 800 Те.\nИзлучение: 2 Те/с.&lt;/color&gt;</ShipHeatManifold.description>
+	
+	<ShipHeatBankLarge.label>большой тепловой резервуар</ShipHeatBankLarge.label>
+	<ShipHeatBankLarge.description>Большой резервуар с охлаждающей жидкостью для хранения избыточного тепла. Медленно излучает тепло в помещение, если не находится в вакууме. Воспламеняется при критическом уровне нагрева и высвобождает накопленное тепло в случае разрушения.\n\n&lt;color=#bb8f04&gt;Теплоёмкость: 4000 Те.\nИзлучение: 6 Те/с.&lt;/color&gt;</ShipHeatBankLarge.description>
+	
+	<ShipPurgePort.label>порт быстрого охлаждения</ShipPurgePort.label>
+	<ShipPurgePort.description>Это оборудование способно сбросить раскалённое серебро в открытый космос, чтобы быстро снизить уровень нагрева тепловой системы корабля.\n\nЩиты автоматически отключаются после активации сброса.</ShipPurgePort.description>
+	
+	<ShipPurgePortLarge.label>большой порт быстрого охлаждения</ShipPurgePortLarge.label>
+	<ShipPurgePortLarge.description>Это оборудование способно сбросить раскалённое серебро в открытый космос, чтобы быстро снизить уровень нагрева тепловой системы корабля.\n\nЩиты автоматически отключаются после активации сброса.</ShipPurgePortLarge.description>
+	
+	<ShipTurret_ACI.label>турель автопушки</ShipTurret_ACI.label>
+	<ShipTurret_ACI.description>Орудие, устанавливаемое на космические корабли и станции. Разгоняет урановые снаряды до огромных скоростей, поражая цели на близкой дистанции. Не расходует энергию на выстрелы, генерирует небольшое количество нагрева, но требует перезарядки.\n\nРежим точечной обороны: это орудие способно поразить вражеские торпеды и шаттлы.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipTurret_ACI.description>
+	<ShipTurret_ACI.comps.3.fuelLabel>Выстрелов до перезарядки</ShipTurret_ACI.comps.3.fuelLabel>
+	<ShipTurret_ACI.comps.3.fuelGizmoLabel>Урановые снаряды</ShipTurret_ACI.comps.3.fuelGizmoLabel>
+	<ShipTurret_ACI.comps.3.outOfFuelMessage>Нет боеприпасов</ShipTurret_ACI.comps.3.outOfFuelMessage>
+	
+	<ShipTurret_ACITop.label>орудие автопушки</ShipTurret_ACITop.label>
+	<ShipTurret_ACITop.description>Это орудие разгоняет урановые снаряды до огромных скоростей, поражая цели на близкой дистанции. Не расходует энергию на выстрелы, генерирует небольшое количество нагрева, но требует перезарядки.\n\nРежим точечной обороны: это орудие способно поразить вражеские торпеды и шаттлы.</ShipTurret_ACITop.description>
+	<ShipTurret_ACITop.verbs.0.label>стреляет</ShipTurret_ACITop.verbs.0.label>
+	
+	<Bullet_Fake_ACI.label>Снаряд автопушки</Bullet_Fake_ACI.label>
+	<Proj_ShipTurretACI.label>Снаряд автопушки</Proj_ShipTurretACI.label>
+	<Bullet_Ground_ACI.label>Снаряд автопушки</Bullet_Ground_ACI.label>
+	
+	<ShipTurret_ACII.label>артиллерийская турель</ShipTurret_ACII.label>
+	<ShipTurret_ACII.description>Орудие, устанавливаемое на космические корабли и станции. Разгоняет урановые снаряды до огромных скоростей, поражая цели на средней дистанции. Не расходует энергию на выстрелы, генерирует небольшое количество нагрева, но требует перезарядки.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipTurret_ACII.description>
+	<ShipTurret_ACII.comps.2.fuelLabel>Выстрелов до перезарядки</ShipTurret_ACII.comps.2.fuelLabel>
+	<ShipTurret_ACII.comps.2.fuelGizmoLabel>Урановые снаряды</ShipTurret_ACII.comps.2.fuelGizmoLabel>
+	<ShipTurret_ACII.comps.2.outOfFuelMessage>Нет боеприпасов</ShipTurret_ACII.comps.2.outOfFuelMessage>
+	
+	<ShipTurret_ACIITop.label>артиллерийское орудие</ShipTurret_ACIITop.label>
+	<ShipTurret_ACIITop.description>Это орудие разгоняет урановые снаряды до огромных скоростей, поражая цели на средней дистанции. Не расходует энергию на выстрелы, генерирует небольшое количество нагрева, но требует перезарядки.</ShipTurret_ACIITop.description>
+	<ShipTurret_ACIITop.verbs.0.label>стреляет</ShipTurret_ACIITop.verbs.0.label>
+	
+	<Bullet_Fake_ACII.label>Артиллерийский снаряд</Bullet_Fake_ACII.label>
+	<Proj_ShipTurretACII.label>Артиллерийский снаряд</Proj_ShipTurretACII.label>
+	
+	<ShipTurret_ACIII.label>большая артиллерийская турель</ShipTurret_ACIII.label>
+	<ShipTurret_ACIII.description>Орудие, устанавливаемое на космические корабли и станции. Разгоняет урановые снаряды до огромных скоростей, поражая цели на средней дистанции. Не расходует энергию на выстрелы, генерирует небольшое количество нагрева, но требует перезарядки.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipTurret_ACIII.description>
+	<ShipTurret_ACIII.comps.2.fuelLabel>Выстрелов до перезарядки</ShipTurret_ACIII.comps.2.fuelLabel>
+	<ShipTurret_ACIII.comps.2.fuelGizmoLabel>Урановые снаряды</ShipTurret_ACIII.comps.2.fuelGizmoLabel>
+	<ShipTurret_ACIII.comps.2.outOfFuelMessage>Нет боеприпасов</ShipTurret_ACIII.comps.2.outOfFuelMessage>
+	
+	<ShipTurret_ACIIITop.label>большое артиллерийское орудие</ShipTurret_ACIIITop.label>
+	<ShipTurret_ACIIITop.description>Это орудие разгоняет урановые снаряды до огромных скоростей, поражая цели на средней дистанции. Не расходует энергию на выстрелы, генерирует небольшое количество нагрева, но требует перезарядки.</ShipTurret_ACIIITop.description>
+	<ShipTurret_ACIIITop.verbs.0.label>стреляет</ShipTurret_ACIIITop.verbs.0.label>
+	
+	<Bullet_Fake_ACIII.label>Артиллерийский снаряд</Bullet_Fake_ACIII.label>
+	<Proj_ShipTurretACIII.label>Артиллерийский снаряд</Proj_ShipTurretACIII.label>
+	
+	<ShipTurret_Laser.label>лазерная турель</ShipTurret_Laser.label>
+	<ShipTurret_Laser.description>Орудие, устанавливаемое на космические корабли и станции. Генерирует мощный лазерный луч, который способен нанести сокрушительный урон целям на близкой дистанции.\n\nРежим точечной обороны: это орудие способно поразить вражеские торпеды и шаттлы.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipTurret_Laser.description>
+	
+	<ShipTurret_LaserTop.label>генератор лазерного луча</ShipTurret_LaserTop.label>
+	<ShipTurret_LaserTop.description>Это орудие генерирует мощный лазерный луч, который способен нанести сокрушительный урон целям на близкой дистанции.\n\nРежим точечной обороны: это орудие способно поразить вражеские торпеды и шаттлы.</ShipTurret_LaserTop.description>
+	<ShipTurret_LaserTop.verbs.0.label>стреляет</ShipTurret_LaserTop.verbs.0.label>
+	
+	<Bullet_Fake_Laser.label>лазерный луч</Bullet_Fake_Laser.label>
+	
+	<Proj_ShipTurretLaser.label>лазерный луч</Proj_ShipTurretLaser.label>
+	
+	<Bullet_Ground_Laser.label>лазерный луч</Bullet_Ground_Laser.label>
+	
+	<ShipTurret_Laser_Large.label>большая лазерная турель</ShipTurret_Laser_Large.label>
+	<ShipTurret_Laser_Large.description>Орудие, устанавливаемое на космические корабли и станции. Генерирует мощный лазерный луч, который способен нанести сокрушительный урон целям на средней дистанции.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipTurret_Laser_Large.description>
+	
+	<ShipTurret_LaserTop_Large.label>усиленный генератор лазерного луча</ShipTurret_LaserTop_Large.label>
+	<ShipTurret_LaserTop_Large.description>Это орудие генерирует мощный лазерный луч, который способен нанести сокрушительный урон целям на близкой дистанции.</ShipTurret_LaserTop_Large.description>
+	<ShipTurret_LaserTop_Large.verbs.0.label>стреляет</ShipTurret_LaserTop_Large.verbs.0.label>
+	
+	<Proj_ShipTurretLaserTwo.label>лазерный луч</Proj_ShipTurretLaserTwo.label>
+	
+	<ShipTurret_Plasma.label>плазменная турель</ShipTurret_Plasma.label>
+	<ShipTurret_Plasma.description>Орудие, устанавливаемое на космические корабли и станции. Стреляет пучками раскалённой плазмы, поражая цели на средней дистанции.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipTurret_Plasma.description>
+	
+	<ShipTurret_PlasmaTop.label>плазменная пушка</ShipTurret_PlasmaTop.label>
+	<ShipTurret_PlasmaTop.description>Это орудие стреляет пучками раскалённой плазмы, поражая цели на средней дистанции.</ShipTurret_PlasmaTop.description>
+	<ShipTurret_PlasmaTop.verbs.0.label>стреляет</ShipTurret_PlasmaTop.verbs.0.label>
+	
+	<Bullet_Fake_Plasma.label>плазма</Bullet_Fake_Plasma.label>
+	
+	<Proj_ShipTurretPlasma.label>плазма</Proj_ShipTurretPlasma.label>
+	
+	<Bullet_Ground_Plasma.label>плазма</Bullet_Ground_Plasma.label>
+	
+	<ShipTurret_Plasma_Large.label>большая плазменная турель</ShipTurret_Plasma_Large.label>
+	<ShipTurret_Plasma_Large.description>Орудие, устанавливаемое на космические корабли и станции. Стреляет пучками раскалённой плазмы, поражая цели на дальних дистанциях.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipTurret_Plasma_Large.description>
+	
+	<ShipTurret_PlasmaTop_Large.label>крупная плазменная пушка</ShipTurret_PlasmaTop_Large.label>
+	<ShipTurret_PlasmaTop_Large.description>Это орудие стреляет пучками раскалённой плазмы, поражая цели на дальних дистанциях.</ShipTurret_PlasmaTop_Large.description>
+	<ShipTurret_PlasmaTop_Large.verbs.0.label>стреляет</ShipTurret_PlasmaTop_Large.verbs.0.label>
+	
+	<Bullet_Fake_Plasma_Large.label>плазма</Bullet_Fake_Plasma_Large.label>
+	
+	<Proj_ShipTurretPlasma_Large.label>плазма</Proj_ShipTurretPlasma_Large.label>
+	
+	<ShipTurret_Kinetic.label>турель рельсотрона</ShipTurret_Kinetic.label>
+	<ShipTurret_Kinetic.description>Орудие, устанавливаемое на космические корабли и станции. Разгоняет металлические снаряды, поражая цели на дальних дистанциях.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipTurret_Kinetic.description>
+	
+	<ShipTurret_KineticTop.label>орудие рельсотрона</ShipTurret_KineticTop.label>
+	<ShipTurret_KineticTop.description>Это орудие Разгоняет металлические снаряды, поражая цели на дальних дистанциях.</ShipTurret_KineticTop.description>
+	<ShipTurret_KineticTop.verbs.0.label>стреляет</ShipTurret_KineticTop.verbs.0.label>
+	
+	<Bullet_Fake_Kinetic.label>снаряд рельсотрона</Bullet_Fake_Kinetic.label>
+	
+	<Proj_ShipTurretKinetic.label>снаряд рельсотрона</Proj_ShipTurretKinetic.label>
+	
+	<Bullet_Ground_Kinetic.label>снаряд рельсотрона</Bullet_Ground_Kinetic.label>
+	
+	<ShipTurret_Kinetic_Large.label>большая турель рельсотрона</ShipTurret_Kinetic_Large.label>
+	<ShipTurret_Kinetic_Large.description>Орудие, устанавливаемое на космические корабли и станции. Разгоняет металлические снаряды, поражая цели на огромных дистанциях.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipTurret_Kinetic_Large.description>
+	
+	<ShipTurret_KineticTop_Large.label>большое орудие рельсотрона</ShipTurret_KineticTop_Large.label>
+	<ShipTurret_KineticTop_Large.description>Это орудие Разгоняет металлические снаряды, поражая цели на огромных дистанциях.</ShipTurret_KineticTop_Large.description>
+	<ShipTurret_KineticTop_Large.verbs.0.label>стреляет</ShipTurret_KineticTop_Large.verbs.0.label>
+	
+	<Bullet_Fake_Kinetic_Large.label>снаряд рельсотрона</Bullet_Fake_Kinetic_Large.label>
+	
+	<Proj_ShipTurretKinetic_Large.label>снаряд рельсотрона</Proj_ShipTurretKinetic_Large.label>
+	
+	<ShipSpinalEmitter.label>излучатель орудия</ShipSpinalEmitter.label>
+	<ShipSpinalEmitter.description>Основной сегмент линейного орудия, подключается к одному, или нескольким усилителям.</ShipSpinalEmitter.description>
+	
+	<ShipSpinalAmplifier.label>усилитель орудия</ShipSpinalAmplifier.label>
+	<ShipSpinalAmplifier.description>Центральный усиливающий сегмент, повышает мощь линейного орудия на 25%, на это же значение увеличивает потребление энергии и генерацию тепла.</ShipSpinalAmplifier.description>
+	
+	<ShipSpinalBarrelLaser.label>линейный лазер</ShipSpinalBarrelLaser.label>
+	<ShipSpinalBarrelLaser.description>Финальный сегмент линейного орудия — лазер. Генерирует мощный луч, который способен нанести сокрушительный урон целям на средней дистанции.\n\nСледует устанавливать снаружи корпуса, или внутри - если вы хотите пробить дыру в корпусе корабля.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipSpinalBarrelLaser.description>
+
+	<ShipTurret_SpinalMountTopLaser.label>линейное орудие</ShipTurret_SpinalMountTopLaser.label>
+	<ShipTurret_SpinalMountTopLaser.description>Вооружение флагманов.</ShipTurret_SpinalMountTopLaser.description>
+	<ShipTurret_SpinalMountTopLaser.verbs.0.label>стреляет</ShipTurret_SpinalMountTopLaser.verbs.0.label>
+	
+	<Proj_ShipSpinalBeamLaser.label>лазерный луч</Proj_ShipSpinalBeamLaser.label>
+	
+	<ShipSpinalBarrelPlasma.label>линейный плазмотрон</ShipSpinalBarrelPlasma.label>
+	<ShipSpinalBarrelPlasma.description>Финальный сегмент линейного орудия — плазмотрон. Стреляет пучками раскалённой плазмы, поражая цели на дальних дистанциях.\n\nСледует устанавливать снаружи корпуса, или внутри - если вы хотите пробить дыру в корпусе корабля.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipSpinalBarrelPlasma.description>
+	
+	<ShipTurret_SpinalMountTopPlasma.label>линейное орудие</ShipTurret_SpinalMountTopPlasma.label>
+	<ShipTurret_SpinalMountTopPlasma.description>Вооружение флагманов.</ShipTurret_SpinalMountTopPlasma.description>
+	<ShipTurret_SpinalMountTopPlasma.verbs.0.label>стреляет</ShipTurret_SpinalMountTopPlasma.verbs.0.label>
+	
+	<Bullet_Fake_Plasma_XL.label>плазма</Bullet_Fake_Plasma_XL.label>
+	
+	<Proj_ShipSpinalBeamPlasma.label>лазерный луч</Proj_ShipSpinalBeamPlasma.label>
+	
+	<ShipSpinalBarrelKinetic.label>линейный рельсотрон</ShipSpinalBarrelKinetic.label>
+	<ShipSpinalBarrelKinetic.description>Финальный сегмент линейного орудия — рельсотрон. Разгоняет металлические снаряды, поражая цели на огромных дистанциях.\n\nСледует устанавливать снаружи корпуса, или внутри - если вы хотите пробить дыру в корпусе корабля.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipSpinalBarrelKinetic.description>
+	
+	<ShipTurret_SpinalMountTopKinetic.label>линейное орудие</ShipTurret_SpinalMountTopKinetic.label>
+	<ShipTurret_SpinalMountTopKinetic.description>Вооружение флагманов.</ShipTurret_SpinalMountTopKinetic.description>
+	<ShipTurret_SpinalMountTopKinetic.verbs.0.label>стреляет</ShipTurret_SpinalMountTopKinetic.verbs.0.label>
+	
+	<Artillery_ShipTorpedo_One.verbs.Verb_LaunchProjectileShip.label>торпедный аппарат</Artillery_ShipTorpedo_One.verbs.Verb_LaunchProjectileShip.label>
+	<Artillery_ShipTorpedo_Two.verbs.Verb_LaunchProjectileShip.label>торпедный аппарат (2)</Artillery_ShipTorpedo_Two.verbs.Verb_LaunchProjectileShip.label>
+	<Artillery_ShipTorpedo.verbs.Verb_LaunchProjectileShip.label>торпедный аппарат (6)</Artillery_ShipTorpedo.verbs.Verb_LaunchProjectileShip.label>
+
+	<Artillery_ShipTorpedo_One.description>Установка для запуска торпед различных типов, которые могут быть использованы для пробития корпуса корабля, или истощения его щитов. Торпеды имеют хорошую точность, однако могут быть сбиты защитными орудиями.</Artillery_ShipTorpedo_One.description>
+	<Artillery_ShipTorpedo_One.label>торпедный аппарат</Artillery_ShipTorpedo_One.label>
+	
+	<Artillery_ShipTorpedo_Two.description>Установка для запуска торпед различных типов, которые могут быть использованы для пробития корпуса корабля, или истощения его щитов. Торпеды имеют хорошую точность, однако могут быть сбиты защитными орудиями.</Artillery_ShipTorpedo_Two.description>
+	<Artillery_ShipTorpedo_Two.label>торпедный аппарат (2)</Artillery_ShipTorpedo_Two.label>
+	
+	<Artillery_ShipTorpedo.description>Установка для запуска торпед различных типов, которые могут быть использованы для пробития корпуса корабля, или истощения его щитов. Торпеды имеют хорошую точность, однако могут быть сбиты защитными орудиями.</Artillery_ShipTorpedo.description>
+	<Artillery_ShipTorpedo.label>торпедный аппарат (6)</Artillery_ShipTorpedo.label>
+	
+	<ShipTorpedoOne.label>торпедный аппарат</ShipTorpedoOne.label>
+	<ShipTorpedoOne.description>Установка для хранения и запуска торпед, они точны и разрушительны, но медленно достигают цели и уязвимы для орудий точечной обороны.\n\n&lt;color=#bb8f04&gt;Вместимость торпед: 7\nСкорострельность: 5/мин&lt;/color&gt;</ShipTorpedoOne.description>
+	
+	<ShipTorpedoTwo.label>торпедный аппарат (2)</ShipTorpedoTwo.label>
+	<ShipTorpedoTwo.description>Установка для хранения и запуска торпед, они точны и разрушительны, но медленно достигают цели и уязвимы для орудий точечной обороны.\n\n&lt;color=#bb8f04&gt;Вместимость торпед: 14\nСкорострельность: 10/мин&lt;/color&gt;</ShipTorpedoTwo.description>
+	
+	<ShipTorpedoSix.label>торпедный аппарат (6)</ShipTorpedoSix.label>
+	<ShipTorpedoSix.description>Установка для хранения и запуска торпед, они точны и разрушительны, но медленно достигают цели и уязвимы для орудий точечной обороны.\n\n&lt;color=#bb8f04&gt;Вместимость торпед: 28\nСкорострельность: 30/мин&lt;/color&gt;</ShipTorpedoSix.description>
+	
+	<Proj_ShipDebrisA.label>обломки корабля</Proj_ShipDebrisA.label>
+	
+	<Proj_ShipDebrisB.label>обломки корабля</Proj_ShipDebrisB.label>
+	
+	<Proj_ShipDebrisC.label>обломки корабля</Proj_ShipDebrisC.label>
+	
+	<Proj_ShipDebrisD.label>обломки корабля</Proj_ShipDebrisD.label>
+	
+	<Proj_ShipRockA.label>обломки корабля</Proj_ShipRockA.label>
+	
+	<Proj_ShipRockB.label>обломки корабля</Proj_ShipRockB.label>
+	
+	<Proj_ShipRockC.label>обломки корабля</Proj_ShipRockC.label>
+</LanguageData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	
+	<SoS2ShuttleLaser.gizmoDescription>Выберите цель для стрельбы</SoS2ShuttleLaser.gizmoDescription>
+	<SoS2ShuttleLaser.label>лазер</SoS2ShuttleLaser.label>
+	<SoS2ShuttleLaser.description>Малый лазер шаттла, генерирует луч, который выжигает цели.</SoS2ShuttleLaser.description>
+	<SoS2ShuttleLaser.fireModes.0.label>Пульсирующий</SoS2ShuttleLaser.fireModes.0.label>
+	
+	<SoS2ShuttlePlasma.gizmoDescription>Выберите цель для стрельбы</SoS2ShuttlePlasma.gizmoDescription>
+	<SoS2ShuttlePlasma.label>плазмотрон</SoS2ShuttlePlasma.label>
+	<SoS2ShuttlePlasma.description>Малый плазмотрон шаттла, разгоняет пучки перегретой плазмы, нанося обжигающие и взрывные повреждения.</SoS2ShuttlePlasma.description>
+	<SoS2ShuttlePlasma.fireModes.0.label>Одиночный</SoS2ShuttlePlasma.fireModes.0.label>
+	
+	<SoS2ShuttleTorpedo.gizmoDescription>Выберите цель для стрельбы</SoS2ShuttleTorpedo.gizmoDescription>
+	<SoS2ShuttleTorpedo.label>торпедный аппарат</SoS2ShuttleTorpedo.label>
+	<SoS2ShuttleTorpedo.description>Малый торпедный аппарат шаттла, запускает торпеды по вражеским кораблям, или используется как артиллерия на поверхности планеты.</SoS2ShuttleTorpedo.description>
+	<SoS2ShuttleTorpedo.fireModes.0.label>Одиночный</SoS2ShuttleTorpedo.fireModes.0.label>
+</LanguageData>

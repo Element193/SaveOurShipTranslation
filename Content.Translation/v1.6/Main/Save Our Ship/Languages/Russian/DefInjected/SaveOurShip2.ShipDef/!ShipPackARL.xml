@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!-- Структуры -->
+   <ARLMiscArmContainer.label>Странный контейнер</ARLMiscArmContainer.label>
+   <ARLMiscBeerContainer.label>Запечатанный контейнер</ARLMiscBeerContainer.label>
+
+   <StationGeneralRing.label>Средняя кольцевая станция</StationGeneralRing.label>
+
+<!-- Разные корабли -->
+  <ARLArchoFighterPsy.label>Пси-истребитель Архотек</ARLArchoFighterPsy.label>
+
+  <ARLAkrinatorBattle.label>Эсминец Акринатор</ARLAkrinatorBattle.label>
+
+  <ARLAkrinatorT2.label>Эсминец Акринатор-М</ARLAkrinatorT2.label>
+
+  <ARLAkrinatorT2Start.label>Эсминец Акринатор-М</ARLAkrinatorT2Start.label>
+
+  <ARLAkrinatorUniversal.label>Эсминец Акринатор-У</ARLAkrinatorUniversal.label>
+
+  <ARLGaussBattle.label>Корвет Гаусс</ARLGaussBattle.label>
+
+  <ARLGaussStart.label>Корвет Гаусс</ARLGaussStart.label>
+
+
+<!-- Корабли из Х4 -->
+  <X4Heron.label>Грузовой корабль Цапля</X4Heron.label>
+  <X4Heron-S.label>Грузовой корабль Цапля-У</X4Heron-S.label>
+
+  <X4Envoy.label>Корвет Посланник</X4Envoy.label>
+
+  <ARLHunter.label>Фрегат Охотник</ARLHunter.label>
+
+  <X4Asgard.label>Линейный линкор Асгард</X4Asgard.label>
+
+  <X4Syn-S.label>Линейный крейсер Син-У</X4Syn-S.label>
+  <X4Syn-M.label>Линейный крейсер Син-М</X4Syn-M.label>
+  <X4Syn-T.label>Ракетный крейсер Син-М</X4Syn-T.label>
+
+<!-- Персональные мини крабли -->
+  <ARLSmallPersonal1.label>Малый личный корабль</ARLSmallPersonal1.label>
+  <ARLSmallMining.label>Малый добывающий корабль</ARLSmallMining.label>
+
+<!-- Флоты -->
+   <FleetX4Asgard.label>Флот Асгарда (4500)</FleetX4Asgard.label>
+   <FleetSSEWaspX5.label>Рой дронов Оса</FleetSSEWaspX5.label>
+   <FleetSSEWaspX3.label>Рой дронов Оса</FleetSSEWaspX3.label>
+   <FleetSSEAurora.label>Флот Авроры (2000)</FleetSSEAurora.label>
+   <FleetX4HeronX2.label>Торговцы Цапля Х2</FleetX4HeronX2.label>
+   <FleetTradeSSEMudSkipperEscort.label>Торговец МудСкиппер</FleetTradeSSEMudSkipperEscort.label>
+   <FleetSSEStar1.label>Звёздный флот (4200)</FleetSSEStar1.label>
+   <FleetSSEStar2.label>Звёздный флот (3700)</FleetSSEStar2.label>
+   <FleetSSEWolfX3.label>Истребители Волк X3</FleetSSEWolfX3.label>
+   <FleetSSEStar3.label>Флот Сандера (700)</FleetSSEStar3.label>
+   <FleetSSEStarFighters.label>Звёздные истребители</FleetSSEStarFighters.label>
+   <FleetX4AsgardX3.label>Крейсеры Асгард Х3</FleetX4AsgardX3.label>
+   <EagleFleet.label>Флот Орла (2000)</EagleFleet.label>
+
+</LanguageData>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>	<!--1.5\Defs\ThingDefs_Buildings\Buildings_ShipTechArcho.xml-->
-	
-	<RecyclotronRecipe.label>утилизировать</RecyclotronRecipe.label>
-	<RecyclotronRecipe.description>Разобрать предмет на составляющие части при помощи механитов, с почти идеальной эффективностью.</RecyclotronRecipe.description>
-	<RecyclotronRecipe.jobString>Утилизирует предмет с помощью рециклотрона.</RecyclotronRecipe.jobString>
-
-</LanguageData>

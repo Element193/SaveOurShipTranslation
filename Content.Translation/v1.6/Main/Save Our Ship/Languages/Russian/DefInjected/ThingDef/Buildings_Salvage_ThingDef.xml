@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<Ship_Beam_Wrecked.label>поврежденный корпус</Ship_Beam_Wrecked.label>
+	<Ship_Beam_Wrecked.description>Внешний структурный элемент корпуса космического корабля или станции, поврежден до неузнаваемости. Эта часть корпуса не способна выдержать даже минимальное давление.</Ship_Beam_Wrecked.description>
+	
+	<ShipAirlockWrecked.label>поврежденный шлюз</ShipAirlockWrecked.label>
+	<ShipAirlockWrecked.description>Повреждённый шлюз, едва способный выдержать минимальное давление.</ShipAirlockWrecked.description>
+	
+	<ShipHullTileWrecked.label>обломки корпуса</ShipHullTileWrecked.label>
+	<ShipHullTileWrecked.description>Обломки корпуса космического корабля или станции. Не способны выдержать даже минимальное давление.</ShipHullTileWrecked.description>
+	
+	<ShipChunkSalvage.label>обломки корабля</ShipChunkSalvage.label>
+	<ShipChunkSalvage.description>Обломки, которые содержат относительно целые компоненты корабельного оборудования. Можно разобрать для получения ценных компонентов.</ShipChunkSalvage.description>
+	
+	<Space_Satellite_Core.label>ядро спутника</Space_Satellite_Core.label>
+	<Space_Satellite_Core.description>Центральное ядро древнего спутника, спроектированное много веков назад для неизвестных целей. Может быть это часть древнего проекта по терраформированию планеты, или ретранслятор для управления орудиями орбитальной бомбардировки.\n\nКомпьютерное ядро частично функционирует и может содержать полезные данные, однако ремонт и взлом требуют значительных навыков, а любое вмешательство может привести к активации защитных протоколов.</Space_Satellite_Core.description>
+	
+	<Ship_DamagedReactor.label>поврежденный реактор</Ship_DamagedReactor.label>
+	<Ship_DamagedReactor.description>Реактор на ядерном топливе, который не смотря на повреждения продолжает функционировать. Пока он не будет остановлен, любое существо поблизости будет получать радиационные ожоги.</Ship_DamagedReactor.description>
+	
+	<Ship_LabConsole.label>консоль лаборатории</Ship_LabConsole.label>
+	<Ship_LabConsole.description>Консоль лаборатории отвечает за работу реакторов и прочих систем корабля. Опытный хакер может использовать ее, чтобы отключить реакторы корабля.</Ship_LabConsole.description>
+	
+	<Ship_SecurityConsole.label>консоль безопасности</Ship_SecurityConsole.label>
+	<Ship_SecurityConsole.description>Консоль безопасности отвечает за шлюзы и защитные системы корабля или станции. Опытный хакер может получить доступ к всем шлюзам после взлома.</Ship_SecurityConsole.description>
+	
+	<BlackBoxAI.label>безумный ИИ</BlackBoxAI.label>
+	<BlackBoxAI.description>Компьютерное ядро со встроенным ИИ, потерявшим рассудок в процессе наблюдения за ужасами, которые происходили с его близкими. Только самые одаренные переговорщики могут надеяться на то, что им удастся переубедить его от желания быть уничтоженным.</BlackBoxAI.description>
+	
+	<JTDriveSalvage.label>Древний двигатель Джонсона-Танаки</JTDriveSalvage.label>
+	<JTDriveSalvage.description>Древний двигатель Джонсона-Танаки, который использовался для межзвёздных путешествий. Повреждён после крушения, но частично функционирует.\n\nДля разборки двигателя требуется длительный процесс разрядки накопленного импульса, что привлечет внимание в большой области.</JTDriveSalvage.description>
+	
+	<SpaceHive.label>космический улей</SpaceHive.label>
+	<SpaceHive.description>Улей гигантских космических насекомых. В активном состоянии будет производить насекомых и новые ульи, а также ценное желе.</SpaceHive.description>
+	
+	<DetachedShipPart.label>Отделённая Часть Корабля</DetachedShipPart.label>
+	<DetachedShipPart.description>Разрушенная часть космического корабля.</DetachedShipPart.description>
+	
+	<Ship_Beam_Wrecked_Fake.label>разбитый корпус</Ship_Beam_Wrecked_Fake.label>
+	<Ship_Beam_Wrecked_Fake.description>Внешний структурный элемент корпуса космического корабля или станции. Повреждён, не подлежит ремонту.</Ship_Beam_Wrecked_Fake.description>
+	
+	<ShipHullTileWreckedFake.label>обломки корпуса</ShipHullTileWreckedFake.label>
+	<ShipHullTileWreckedFake.description>Обломки корпуса космического корабля или станции. Не способны выдержать даже минимальное давление.</ShipHullTileWreckedFake.description>
+</LanguageData>

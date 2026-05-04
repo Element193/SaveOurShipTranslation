@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetSSEStarFighters</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Star Fighters Fleet</label>
+		<combatPoints>456</combatPoints>
+		<ships>
+			<li>
+				<ship>SSEGladius</ship>
+				<offsetX>107</offsetX>
+				<offsetZ>119</offsetZ>
+			</li>
+			<li>
+				<ship>SSEDagger</ship>
+				<offsetX>135</offsetX>
+				<offsetZ>168</offsetZ>
+			</li>
+			<li>
+				<ship>SSECobra</ship>
+				<offsetX>136</offsetX>
+				<offsetZ>48</offsetZ>
+			</li>
+			<li>
+				<ship>SSELongbow</ship>
+				<offsetX>66</offsetX>
+				<offsetZ>71</offsetZ>
+			</li>
+			<li>
+				<ship>SSETempest</ship>
+				<offsetX>166</offsetX>
+				<offsetZ>115</offsetZ>
+			</li>
+			<li>
+				<ship>SSEVigilance</ship>
+				<offsetX>65</offsetX>
+				<offsetZ>171</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

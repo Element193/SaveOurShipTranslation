@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+        <SSEApogee1.label>Фрегат Апогей</SSEApogee1.label>
+
+        <SSEApogee2.label>Фрегат Апогей</SSEApogee2.label>
+
+        <SSEAurora.label>Фрегат Аврора</SSEAurora.label>
+
+        <SSECobra.label>Лёгкий бомбардировщик Кобра</SSECobra.label>
+
+        <SSEDagger.label>Лёгкий бомбардировщик Даггер</SSEDagger.label>
+
+        <SSEFalcon.label>Фрегат Фалкон</SSEFalcon.label>
+
+        <SSEGladius.label>Лёгкий истребитель Гладиус</SSEGladius.label>
+
+        <SSEHammerhead.label>Корвет Молот</SSEHammerhead.label>
+
+        <SSEKite.label>Шаттл Кайт</SSEKite.label>
+
+        <SSELasher.label>Шаттл Лашер</SSELasher.label>
+
+        <SSELongbow.label>Лёгкий истребитель Лонгбоу</SSELongbow.label>
+
+        <SSEMudSkipper.label>Грузовой корабль МудСкиппер</SSEMudSkipper.label>
+
+        <SSESunder.label>Корвет Сандер</SSESunder.label>
+
+        <SSETempest.label>Тяжёлый истребитель Темпест</SSETempest.label>
+
+        <SSEVigilance.label>Патрульный истребитель Вигиланс</SSEVigilance.label>
+
+        <SSEWasp.label>Дрон-перехватчик Оса</SSEWasp.label>
+
+        <SSEWolf.label>Истребитель Вульф</SSEWolf.label>
+
+        <!-- NEW SHIPS -->
+
+        <SSEEagle.label>Линейный фрегат Орёл</SSEEagle.label>
+
+</LanguageData>

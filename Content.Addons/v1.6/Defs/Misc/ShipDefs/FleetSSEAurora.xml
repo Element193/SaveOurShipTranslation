@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetSSEAurora</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Aurora DestroyerFleet</label>
+		<combatPoints>2123</combatPoints>
+		<ships>
+			<li>
+				<ship>SSEAurora</ship>
+				<offsetX>93</offsetX>
+				<offsetZ>108</offsetZ>
+			</li>
+			<li>
+				<ship>SSEHammerhead</ship>
+				<offsetX>161</offsetX>
+				<offsetZ>174</offsetZ>
+			</li>
+			<li>
+				<ship>SSEHammerhead</ship>
+				<offsetX>135</offsetX>
+				<offsetZ>50</offsetZ>
+			</li>
+			<li>
+				<ship>SSECobra</ship>
+				<offsetX>88</offsetX>
+				<offsetZ>177</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>86</offsetX>
+				<offsetZ>78</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWasp</ship>
+				<offsetX>192</offsetX>
+				<offsetZ>85</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWasp</ship>
+				<offsetX>124</offsetX>
+				<offsetZ>210</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWasp</ship>
+				<offsetX>71</offsetX>
+				<offsetZ>35</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

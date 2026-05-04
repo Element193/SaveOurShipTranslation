@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>	<!--1.5\Defs\RecipeDefs\Recipes_Shuttle.xml-->
-
-	<MakeShuttleFuelPods.label>изготовить ядерное топливо</MakeShuttleFuelPods.label>
-	<MakeShuttleFuelPods.description>Изготовить 100 капсул с ядерным топливом.</MakeShuttleFuelPods.description>
-	<MakeShuttleFuelPods.jobString>Изготавливает ядерное топливо.</MakeShuttleFuelPods.jobString>
-
-</LanguageData>

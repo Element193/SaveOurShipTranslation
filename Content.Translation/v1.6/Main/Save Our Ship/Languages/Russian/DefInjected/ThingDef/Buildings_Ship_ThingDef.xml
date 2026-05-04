@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+
+	<ShipHullTile.label>обшивка корпуса</ShipHullTile.label>
+	<ShipHullTile.description>Обшивка корпуса космического корабля или станции. Позволяет устанавливать оборудование и другие сооружения внутри корпуса космического объекта.</ShipHullTile.description>
+
+	<Ship_Beam_Unpowered.label>корпус</Ship_Beam_Unpowered.label>
+	<Ship_Beam_Unpowered.description>Внешний структурный элемент корпуса космического корабля или станции. Не включает теплопроводы и кабели.</Ship_Beam_Unpowered.description>
+
+	<Ship_Beam.label>корпус с проводкой</Ship_Beam.label>
+	<Ship_Beam.description>Внешний структурный элемент корпуса космического корабля или станции. Включает теплопроводы и кабели.</Ship_Beam.description>
+	
+	<Ship_Corner_OneOne.description>Угол внешнего корпуса космического корабля или станции. Не включает теплопроводы и кабели.</Ship_Corner_OneOne.description>
+	<Ship_Corner_OneOne.label>угол корпуса</Ship_Corner_OneOne.label>
+	
+	<Ship_Corner_OneOneFlip.description>Угол внешнего корпуса космического корабля или станции. Не включает теплопроводы и кабели.</Ship_Corner_OneOneFlip.description>
+	<Ship_Corner_OneOneFlip.label>угол корпуса отраженный</Ship_Corner_OneOneFlip.label>
+	
+	<Ship_Corner_OneTwo.description>Угол внешнего корпуса космического корабля или станции. Не включает теплопроводы и кабели.</Ship_Corner_OneTwo.description>
+	<Ship_Corner_OneTwo.label>скат корпуса х2</Ship_Corner_OneTwo.label>
+	
+	<Ship_Corner_OneTwoFlip.description>Угол внешнего корпуса космического корабля или станции. Не включает теплопроводы и кабели.</Ship_Corner_OneTwoFlip.description>
+	<Ship_Corner_OneTwoFlip.label>скат корпуса х2 отраженный</Ship_Corner_OneTwoFlip.label>
+	
+	<Ship_Corner_OneThree.description>Угол внешнего корпуса космического корабля или станции. Не включает теплопроводы и кабели.</Ship_Corner_OneThree.description>
+	<Ship_Corner_OneThree.label>скат корпуса х3</Ship_Corner_OneThree.label>
+	
+	<Ship_Corner_OneThreeFlip.description>Угол внешнего корпуса космического корабля или станции. Не включает теплопроводы и кабели.</Ship_Corner_OneThreeFlip.description>
+	<Ship_Corner_OneThreeFlip.label>скат корпуса х3 отраженный</Ship_Corner_OneThreeFlip.label>
+
+	<ShipHardpointSmall.label>малая платформа</ShipHardpointSmall.label>
+	<ShipHardpointSmall.description>Опорная платформа для крепления конструкций и турелей к внешнему корпусу корабля.\n\nВстроенная нанокомпозитная броня снижает урон турелям, установленным на этой платформе в два раза.</ShipHardpointSmall.description>
+
+	<ShipHardpoint.label>средняя платформа</ShipHardpoint.label>
+	<ShipHardpoint.description>Опорная платформа для крепления конструкций и турелей к внешнему корпусу корабля.\n\nВстроенная нанокомпозитная броня снижает урон турелям, установленным на этой платформе в два раза.</ShipHardpoint.description>
+	
+	<ShipHardpointExtraMedium.label>большая платформа</ShipHardpointExtraMedium.label>
+	<ShipHardpointExtraMedium.description>Опорная платформа для крепления конструкций и турелей к внешнему корпусу корабля.\n\nВстроенная нанокомпозитная броня снижает урон турелям, установленным на этой платформе в два раза.</ShipHardpointExtraMedium.description>
+	
+	<ShipHardpointLarge.label>огромная платформа</ShipHardpointLarge.label>
+	<ShipHardpointLarge.description>Опорная платформа для крепления конструкций и турелей к внешнему корпусу корабля.\n\nВстроенная нанокомпозитная броня снижает урон турелям, установленным на этой платформе в два раза.</ShipHardpointLarge.description>
+
+	<ShipInside_PassiveVent.label>вентиляция</ShipInside_PassiveVent.label>
+	<ShipInside_PassiveVent.description>Охлаждает или нагревает комнаты внутри корабля до нужной температуры.\n\nМожет использовать электричество для отопления, если в тепловых баках недостаточно тепла.</ShipInside_PassiveVent.description>
+
+	<ShipAirlock.label>шлюз</ShipAirlock.label>
+	<ShipAirlock.description>Позволяет получать доступ к космическому кораблю или станции и разделять помещения внутри корпуса. Энергетические плазменные барьеры препятствуют выходу газов.</ShipAirlock.description>
+
+	<ShipAirlockBeam.label>стыковочный узел</ShipAirlockBeam.label>
+	<ShipAirlockBeam.description>Развёртываемый узел для стыковки и герметичного соединения двух космических объектов. В активном состоянии включает кабели и теплопроводы для передачи энергии и тепла, также обеспечивает безопасное перемещение экипажа.\n\nДля правильного функционирования следует установить два стыковочных узла возле внешнего шлюза.\n\nСтыковочный узел не предназначен для межзвёздных путешествий или посадки на планету, поэтому крепления будут автоматически разъединены.</ShipAirlockBeam.description>
+
+	<ShipInside_SolarGenerator.label>космическая солнечная батарея</ShipInside_SolarGenerator.label>
+	<ShipInside_SolarGenerator.description>Производит электричество из солнечного света. До 600 Вт/дн в космосе, до 300 Вт/дн на поверхности планеты. Не работает в темноте и от искусственного освещения.</ShipInside_SolarGenerator.description>
+
+	<Ship_Engine_Small.label>малый космический ускоритель</Ship_Engine_Small.label>
+	<Ship_Engine_Small.description>Корабельный двигатель на химическом топливе, способный вывести корабль на орбиту и поддерживать стабильное положение.\n\nНе подходит для межзвёздных путешествий.</Ship_Engine_Small.description>
+	
+	<Ship_Engine.label>сдвоенный космический ускоритель</Ship_Engine.label>
+	<Ship_Engine.description>Корабельный двигатель на химическом топливе, способный вывести корабль на орбиту и поддерживать стабильное положение.\n\nНе подходит для межзвёздных путешествий.</Ship_Engine.description>
+	
+	<Ship_Engine_Large.label>ядерный космический ускоритель</Ship_Engine_Large.label>
+	<Ship_Engine_Large.description>Корабельный двигатель на ядерном топливе, способный вывести корабль на орбиту и поддерживать стабильное положение.\n\nЗагрязняет окружающую среду при взлёте.\n\nНе подходит для межзвёздных путешествий.</Ship_Engine_Large.description>
+	
+	<Ship_Thruster.label>маневровый космический ускоритель</Ship_Thruster.label>
+	<Ship_Thruster.description>Небольшой двигатель низкой тяги для изменения положения корабля в космосе.\n\nТребуется по одному для левого и правого борта на каждые 2000кг массы корабля.</Ship_Thruster.description>
+	
+	<Ship_Engine_Interplanetary.label>двигатель Джонсона-Танаки</Ship_Engine_Interplanetary.label>
+	<Ship_Engine_Interplanetary.description>Двигатель Джонсона-Танаки идеально подходит для длительных межзвёздных путешествий. В основе его работы лежит синтез квантовой и классической механик, позволяющий достигать требуемых скоростей, используя дальние звёзды для обмена импульсами.\n\nДвигатель Джонсона-Танаки необходим для межзвёздных перелётов.</Ship_Engine_Interplanetary.description>
+	
+	<Ship_Engine_Interplanetary_Large.label>большой двигатель Джонсона-Танаки</Ship_Engine_Interplanetary_Large.label>
+	<Ship_Engine_Interplanetary_Large.description>Двигатель Джонсона-Танаки идеально подходит для длительных межзвёздных путешествий. В основе его работы лежит синтез квантовой и классической механик, позволяющий достигать требуемых скоростей, используя дальние звёзды для обмена импульсами.\n\nДвигатель Джонсона-Танаки необходим для межзвёздных перелётов.</Ship_Engine_Interplanetary_Large.description>
+	
+	<ShipPilotSeatMini.label>корабельный мостик</ShipPilotSeatMini.label>
+	<ShipPilotSeatMini.description>Центральная командная консоль, откуда осуществляется управление кораблём.</ShipPilotSeatMini.description>
+	
+	<ShipConsoleTactical.label>тактическая консоль</ShipConsoleTactical.label>
+	<ShipConsoleTactical.description>Консоль для эффективного управления орудиями в космических бях. Оператор получает дополнительную информацию о цели, что способствует более вероятному попаданию.\n\nТочность корабельных орудий повышается в зависимости от навыка стрельбы оператора.</ShipConsoleTactical.description>
+	
+	<ShipConsoleScience.label>исследовательская консоль</ShipConsoleScience.label>
+	<ShipConsoleScience.description>Позволяет изучать космическое пространство на наличие интересных объектов, наблюдать за планетарными и орбитальными областями при помощи сенсоров.</ShipConsoleScience.description>
+	
+	<Ship_DroneCore.label>компьютерное ядро дрона</Ship_DroneCore.label>
+	<Ship_DroneCore.description>Этот компьютер содержит простой субличный ИИ. Хотя он и не способен к продвинутому мышлению, тем не менее, имеет обширный набор программ для управления кораблём в бою.</Ship_DroneCore.description>
+
+	<Ship_ComputerCore.label>компьютерное ядро ИИ</Ship_ComputerCore.label>
+	<Ship_ComputerCore.description>Компьютер со встроенной ИИ-личностью. Предназначен для установки на космических кораблях, чтобы управлять его полётом во время долгих межзвёздных путешествий.\n\nКомпьютер имеет встроенный генератор механитов, который позволяет воссоздать ИИ-личность в виде формгеля.\n\nКомпьютерное ядро ИИ необходимо для межзвёздных перелетов.</Ship_ComputerCore.description>
+	Корабельный компьютер со встроенным ИИ ядром. Предназначен для командования кораблем во времена долгих межзвездных перелетов, пока экипаж спит в саркофагах.\n\nКроме того, ИИ можно воссоздать в физической форме формгеля - роя механитов, который имитирует человеческие тело.
+	<Ship_SensorCluster.label>базовые сенсоры</Ship_SensorCluster.label>
+	<Ship_SensorCluster.description>Корабельные сенсоры дальнего радиуса действия, необходимы для сканирования космического пространства и навигации корабля.</Ship_SensorCluster.description>
+	
+	<Ship_SensorClusterAdv.label>продвинутые сенсоры</Ship_SensorClusterAdv.label>
+	<Ship_SensorClusterAdv.description>Продвинутые сенсоры дальнего радиуса действия, необходимы для сканирования космического пространства и навигации корабля. Встроенный компьютер автоматически анализирует данные в поисках космических объектов, также сканирует вражеские корабли в бою.</Ship_SensorClusterAdv.description>
+	
+	<Ship_LifeSupport.label>Система жизнеобеспечения</Ship_LifeSupport.label>
+	<Ship_LifeSupport.description>Рециркулирует кислород во всех герметичных помещениях. Поддерживает пригодную для дыхания атмосферу, обеспечивая жизнедеятельность экипажа и животных на борту космического корабля или станции.</Ship_LifeSupport.description>
+	
+	<Ship_LifeSupport_Small.label>Малая система жизнеобеспечения</Ship_LifeSupport_Small.label>
+	<Ship_LifeSupport_Small.description>Рециркулирует кислород во всех герметичных помещениях. Поддерживает пригодную для дыхания атмосферу, обеспечивая жизнедеятельность экипажа и животных на борту космического корабля или станции.\n\nКонструкция этого устройства модифицирована, за счёт миниатюризации оно занимает меньше места, но расходует больше энергии.</Ship_LifeSupport_Small.description>
+	
+	<ShipCapacitorSmall.label>конденсатор</ShipCapacitorSmall.label>
+	<ShipCapacitorSmall.description>Устройство для накопления и эффективного хранения энергии на борту космического корабля или станции.\n\nИмеет систему встроенных предохранителей, которая предотвращает короткие замыкания.\n\nЭффективно хранит до 1000 Вт/дн энергии.</ShipCapacitorSmall.description>
+	
+	<ShipCapacitor.label>большой конденсатор</ShipCapacitor.label>
+	<ShipCapacitor.description>Устройство для накопления и эффективного хранения энергии на борту космического корабля или станции.\n\nИмеет систему встроенных предохранителей, которая предотвращает короткие замыкания.\n\nЭффективно хранит до 10000 Вт/дн энергии.</ShipCapacitor.description>
+	
+	<Ship_Reactor.label>реактор</Ship_Reactor.label>
+	<Ship_Reactor.description>Расщепляет ядерное топливо, эффективно вырабатывая большое количество энергии. Генерирует тепло, которое излучается в помещение или тепловую сеть.\n\nБазовая мощность в 10000 Вт/дн может быть увеличена с помощью нескольких режимов разгона.</Ship_Reactor.description>
+
+	<Ship_Reactor_Small.label>малый реактор</Ship_Reactor_Small.label>
+	<Ship_Reactor_Small.description>Расщепляет ядерное топливо, эффективно вырабатывая большое количество энергии. Генерирует тепло, которое излучается в помещение или тепловую сеть.\n\nБазовая мощность в 3000 Вт/дн может быть увеличена с помощью нескольких режимов разгона.</Ship_Reactor_Small.description>
+
+	<ShipShuttleBay.label>ангарный отсек</ShipShuttleBay.label>
+	<ShipShuttleBay.description>Герметичный отсек, который обеспечивает места для шаттлов на борту космического корабля или станции. Позволяет безопасно принимать, запускать и обслуживать шаттлы, также включает заправочную станцию.</ShipShuttleBay.description>
+	
+	<ShipShuttleBayLarge.label>большой ангарный отсек</ShipShuttleBayLarge.label>
+	<ShipShuttleBayLarge.description>Герметичный отсек, который обеспечивает места для шаттлов на борту космического корабля или станции. Позволяет безопасно принимать, запускать и обслуживать шаттлы, также включает заправочную станцию.</ShipShuttleBayLarge.description>
+	
+	<ShipSalvageBay.label>инженерный отсек</ShipSalvageBay.label>
+	<ShipSalvageBay.description>Использует дронов и магнитные импульсы для перемещения космических объектов. Позволяет извлекать ценные предметы после боя, или перемещать и соединять обломки кораблей.\n\nОдин инженерный отсек способен перемещать объекты в космосе массой до 5000кг.</ShipSalvageBay.description>
+	
+	<ShipSalvageBayNano.label>инженерный манипулятор</ShipSalvageBayNano.label>
+	<ShipSalvageBayNano.description>Инженерный отсек с оборудованием для перемещения космических объектов, основанный на реверсивном принципе действия двигателя Джонсона-Танаки. Позволяет извлекать ценные предметы после боя, или перемещать и соединять обломки кораблей.\n\nОдин инженерный манипулятор способен перемещать объекты массой до 10000кг.</ShipSalvageBayNano.description>
+	
+	<ShipCloakingDevice.label>маскировочное устройство</ShipCloakingDevice.label>
+	<ShipCloakingDevice.description>Устройство, которое формирует маскировочное поле вокруг корабля, скрывая его тепловые излучение. Делает корабль невидимым для врагов, но мощные сканеры охотников за головами все же проходят через этот барьер.</ShipCloakingDevice.description>
+	
+	<Ship_CryptosleepCasket.label>космический саркофаг</Ship_CryptosleepCasket.label>
+	<Ship_CryptosleepCasket.description>Сверхпрочная автономная капсула для условий открытого космоса. Предназначена для погружения экипажа корабля в состояние анабиоза на долгие годы, незаменима во время многолетних межзвёздных полётов. В экстренной ситуации может быть использована в качестве спасательной капсулы для высадки на ближайшую планету.</Ship_CryptosleepCasket.description>
+
+	<SpaceCrib.label>космическая кроватка</SpaceCrib.label>
+	<SpaceCrib.description>Высокотехнологическая кроватка, которая идеально подходит для сна ребёнка в космосе. При отказе систем жизнеобеспечения, защитная оболочка закрывает спящего, снабжает его кислородом, регулирует температуру и давление. В случае экстренной ситуации, эта капсула может выдержать вход в атмосферу планеты.</SpaceCrib.description>
+	
+	<CrittersleepCasket.label>капсулы для животных (8)</CrittersleepCasket.label>
+	<CrittersleepCasket.description>Массив автономных саркофагов, способных поддерживать до восьми мелких животных в состоянии стазиса. Животных следует предварительно анестезировать перед помещением в криптосон.</CrittersleepCasket.description>
+	
+	<CrittersleepCasketLarge.label>капсулы для животных (32)</CrittersleepCasketLarge.label>
+	<CrittersleepCasketLarge.description>Большой массив автономных саркофагов, способных поддерживать до тридцати двух мелких животных в состоянии стазиса. Животных следует предварительно анестезировать перед помещением в криптосон.</CrittersleepCasketLarge.description>
+	
+	<Cryptonest.label>криптогнездо</Cryptonest.label>
+	<Cryptonest.description>Саркофаг с автономным питанием, способный хранить в стазисе до шестнадцати яиц.</Cryptonest.description>
+	
+	<Ship_AvatarCasket.label>капсула личности</Ship_AvatarCasket.label>
+	<Ship_AvatarCasket.description>Капсула с продвинутыми механитами, которые способны разобрать тело погибшего и воссоздать его в виде формгеля - роя механитов, который имитирует биологические тела.\n\nЛичность переносится с идеальной точностью в искусственный нейро-психический субстрат и получает возможность дистанционно управлять формгелем с помощью пси-связи.</Ship_AvatarCasket.description>
+	
+	<HullFoamDistributor.label>Распределитель пены</HullFoamDistributor.label>
+	<HullFoamDistributor.description>Система для распределения каркасной пены по корпусу корабля. Когда часть корпуса разрушается в бою, эта система автоматически заделывает пробоину каркасной пеной.\n\nНеобходимо заправлять каркасной пеной.</HullFoamDistributor.description>
+	
+	<HullFoamWall.label>стена из каркасной пены</HullFoamWall.label>
+	<HullFoamWall.description>Герметичная стена из каркасной пены.</HullFoamWall.description>
+	
+	<ShipHullfoamTile.label>покрытие из каркасной пены</ShipHullfoamTile.label>
+	<ShipHullfoamTile.description>Герметичное покрытие из каркасной пены.</ShipHullfoamTile.description>
+	
+	<ShipAirlockBeamWall.label>обшивка шлюза</ShipAirlockBeamWall.label>
+	<ShipAirlockBeamWall.description>Стенка развёртываемого стыковочного узла. Включает теплопроводы и кабели.</ShipAirlockBeamWall.description>
+	
+	<ShipAirlockBeamWallInert.label>обшивка шлюза</ShipAirlockBeamWallInert.label>
+	<ShipAirlockBeamWallInert.description>Стенка развёртываемого стыковочного узла.</ShipAirlockBeamWallInert.description>
+	
+	<ShipAirlockBeamTile.label>обшивка шлюза</ShipAirlockBeamTile.label>
+	
+	<WallSunLampSoS.label>настенная солнечная лампа</WallSunLampSoS.label>
+	<WallSunLampSoS.description>Настенная солнечная лампа, которая освещает небольшую область, достаточно ярко для выращивания культур, но требует много энергии. Автоматически выключается на ночь.</WallSunLampSoS.description>
+	<WallSunLampSoS.comps.4.offMessage>Отключена для имитации ночи</WallSunLampSoS.comps.4.offMessage>
+	
+	<ShipMoveBlueprint.label>Новая позиция корабля</ShipMoveBlueprint.label>
+	<ShipMoveBlueprint.description>Выбор новой позиции для вашего корабля.</ShipMoveBlueprint.description>
+	
+	<MinifiedThingShipMove.label>уменьшенный объект</MinifiedThingShipMove.label>
+	
+	<Ship_FakeBeam.label>корпус</Ship_FakeBeam.label>
+	<Ship_FakeBeam.description>Внешний структурный элемент корпуса космического корабля или станции. Включает трубопроводы и кабели.</Ship_FakeBeam.description>
+	
+	<SoS2DummyObject.label>ненастоящий объект</SoS2DummyObject.label>
+	
+	<PawnSpawnerStart.label>Метка призыва</PawnSpawnerStart.label>
+	<PawnSpawnerStart.description>На этом месте будут появляться стартовые колонисты, вместо того чтобы использовать другие варианты - криптокапсулу, космические саркофаги. Используется только на стартовых картах.</PawnSpawnerStart.description>
+</LanguageData>

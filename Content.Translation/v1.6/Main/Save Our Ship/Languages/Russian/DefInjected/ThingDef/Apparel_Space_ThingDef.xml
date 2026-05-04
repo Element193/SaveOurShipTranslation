@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<Apparel_SpaceSuitBody.label>космоскафандр</Apparel_SpaceSuitBody.label>
+	<Apparel_SpaceSuitBody.description>Скафандр для поддержания жизни экипажа в условиях космического пространства. Имеет небольшие ускорители для перемещения в вакууме.</Apparel_SpaceSuitBody.description>
+
+	<Apparel_SpaceSuitBodyChild.label>детский космоскафандр</Apparel_SpaceSuitBodyChild.label>
+	<Apparel_SpaceSuitBodyChild.description>Скафандр для поддержания жизни ребёнка в условиях космического пространства. Имеет небольшие ускорители для перемещения в вакууме.</Apparel_SpaceSuitBodyChild.description>
+	
+	<Apparel_SpaceSuitHelmet.label>шлем космоскафандра</Apparel_SpaceSuitHelmet.label>
+	<Apparel_SpaceSuitHelmet.description>Шлем для поддержания жизни экипажа в условиях космического пространства. Вырабатывает кислород, также обеспечивает устойчивость к токсинам.</Apparel_SpaceSuitHelmet.description>
+	
+	<Apparel_SpaceSuitHelmetChild.label>детский шлем космоскафандра</Apparel_SpaceSuitHelmetChild.label>
+	<Apparel_SpaceSuitHelmetChild.description>Шлем для поддержания жизни ребёнка в условиях космического пространства. Вырабатывает кислород, также обеспечивает устойчивость к токсинам.</Apparel_SpaceSuitHelmetChild.description>
+	
+	<Apparel_SpaceSuitBodyHeavy.label>космопехотный доспех</Apparel_SpaceSuitBodyHeavy.label>
+	<Apparel_SpaceSuitBodyHeavy.description>Герметичный силовой доспех, предназначенный для ведения боя в условиях космического пространства. Имеет небольшие ускорители для перемещения в вакууме.</Apparel_SpaceSuitBodyHeavy.description>
+	
+	<Apparel_SpaceSuitHelmetHeavy.label>космопехотный шлем</Apparel_SpaceSuitHelmetHeavy.label>
+	<Apparel_SpaceSuitHelmetHeavy.description>Герметичный силовой шлем, предназначенный для ведения боя в условиях космического пространства. Вырабатывает кислород, также обеспечивает устойчивость к токсинам.</Apparel_SpaceSuitHelmetHeavy.description>
+
+	<Apparel_SpaceSurvivalBelt.label>пояс астронавта</Apparel_SpaceSurvivalBelt.label>
+	<Apparel_SpaceSurvivalBelt.description>Аварийный пояс выживания, используемый астронавтами. Он находится в режиме ожидания, пока поддерживается оптимальная среда. Как только датчики идентифицируют вакуум, пояс создает мембрану вокруг тела и генерирует кислород в течении нескольких часов. Предназначен для одноразового использования.</Apparel_SpaceSurvivalBelt.description>
+	<Apparel_SpaceSurvivalBelt.verbs.0.label>мембрана</Apparel_SpaceSurvivalBelt.verbs.0.label>
+
+	<Apparel_SpaceSuitBodyHeavyPrestige.label>роскошный космодоспех</Apparel_SpaceSuitBodyHeavyPrestige.label>
+	<Apparel_SpaceSuitBodyHeavyPrestige.description>Герметичный силовой доспех, предназначенный для ведения боя в условиях космического пространства. Имеет небольшие ускорители для перемещения в вакууме.\n\nРоскошные доспехи вроде этого обычно изготавливают для пользователей с высоким статусом. Внутренняя обшивка из эльтекса также повышает пси-чувствительность.</Apparel_SpaceSuitBodyHeavyPrestige.description>
+
+	<Apparel_SpaceSuitHelmetHeavyPrestige.label>роскошный космошлем</Apparel_SpaceSuitHelmetHeavyPrestige.label>
+	<Apparel_SpaceSuitHelmetHeavyPrestige.description>Герметичный силовой шлем, предназначенный для ведения боя в условиях космического пространства. Вырабатывает кислород, также обеспечивает устойчивость к токсинам..\n\nРоскошные доспехи вроде этого обычно изготавливают для пользователей с высоким статусом. Внутренняя обшивка из эльтекса также повышает пси-чувствительность.</Apparel_SpaceSuitHelmetHeavyPrestige.description>
+	<!-- Комент из defs
+	<Apparel_SpaceSurvivalBelt.comps.CompApparelReloadable.chargeNoun>зарядка</Apparel_SpaceSurvivalBelt.comps.CompApparelReloadable.chargeNoun>
+	<Apparel_SpaceSurvivalBelt.comps.CompApparelReloadable.cooldownGerund>заряжается</Apparel_SpaceSurvivalBelt.comps.CompApparelReloadable.cooldownGerund>-->
+
+	
+</LanguageData>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetSSEStar3</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Sunder Fleet (700)</label>
+		<combatPoints>719</combatPoints>
+		<ships>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>93</offsetX>
+				<offsetZ>109</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>153</offsetX>
+				<offsetZ>188</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>158</offsetX>
+				<offsetZ>40</offsetZ>
+			</li>
+			<li>
+				<ship>SSESunder</ship>
+				<offsetX>171</offsetX>
+				<offsetZ>101</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SoSHologram.title>машинная личность</SoSHologram.title>
+  <SoSHologram.titleShort>личность</SoSHologram.titleShort>
+  <SoSHologram.baseDesc>[PAWN_nameDef] это машинная личность. [PAWN_pronoun] взаимодействует с миром с помощью роя механитов, имитирующих человеческое тело.</SoSHologram.baseDesc>
+  <SoSHologram.titleFemale>машинная личность</SoSHologram.titleFemale>
+  <SoSHologram.titleShortFemale>личность</SoSHologram.titleShortFemale>
+
+</LanguageData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<ShipTorpedo_HighExplosive.label>осколочная торпеда</ShipTorpedo_HighExplosive.label>
+	<ShipTorpedo_HighExplosive.description>Космическая торпеда, начиненная взрывчаткой. Может быть запущена из торпедных аппаратов. Детонирует при повреждении.</ShipTorpedo_HighExplosive.description>
+	<Bullet_Fake_Torpedo_HighExplosive.label>осколочная торпеда</Bullet_Fake_Torpedo_HighExplosive.label>
+	<Bullet_Torpedo_HighExplosive.label>осколочная торпеда</Bullet_Torpedo_HighExplosive.label>
+
+	<ShipTorpedo_EMP.label>ЭМИ-торпеда</ShipTorpedo_EMP.label>
+	<ShipTorpedo_EMP.description>Космическая торпеда, оснащённая ЭМИ-зарядом для перегрузки вражеских систем. Может быть запущена из торпедных аппаратов. Детонирует при повреждении.</ShipTorpedo_EMP.description>
+	<Bullet_Fake_Torpedo_EMP.label>ЭМИ-торпеда</Bullet_Fake_Torpedo_EMP.label>
+	<Bullet_Torpedo_EMP.label>ЭМИ-торпеда</Bullet_Torpedo_EMP.label>
+	
+	<ShipTorpedo_Antimatter.label>гранульная торпеда</ShipTorpedo_Antimatter.label>
+	<ShipTorpedo_Antimatter.description>Космическая торпеда, оснащённая гранульным зарядом. Может быть запущена из торпедных аппаратов. Детонирует при повреждении.</ShipTorpedo_Antimatter.description>
+	<Bullet_Fake_Torpedo_Antimatter.label>гранульная торпеда</Bullet_Fake_Torpedo_Antimatter.label>
+	<Bullet_Torpedo_Antimatter.label>гранульная торпеда</Bullet_Torpedo_Antimatter.label>
+
+</LanguageData>

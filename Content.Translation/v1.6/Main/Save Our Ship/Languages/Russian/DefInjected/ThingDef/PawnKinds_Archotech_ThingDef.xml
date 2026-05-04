@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<Archocat.label>архокот</Archocat.label>
+	<Archocat.description>Этот очаровательный пушистик не желает ничего, кроме как проводить свои дни, играя с командой корабля. Помимо частых ласк, архокот издает пси-мурлыканье, которое значительно улучшает настроение всех, кто рядом. Его можно обучить таскать предметы, кроме того, архокот способен менять форму тела и цвет шерсти.</Archocat.description>
+	<Archocat.tools.0.label>левый коготь</Archocat.tools.0.label>
+	<Archocat.tools.1.label>правый коготь</Archocat.tools.1.label>
+	<Archocat.tools.3.label>голова</Archocat.tools.3.label>
+	
+	<Archomutt.label>архопёс</Archomutt.label>
+	<Archomutt.description>Лучший друг человека стал еще лучше. Архопёс - крупный, свирепо преданный пёс с безграничной энергией для игр и боевыми качествами тяжелого механоида, когда его семье угрожает опасность.</Archomutt.description>
+	<Archomutt.tools.0.label>левый коготь</Archomutt.tools.0.label>
+	<Archomutt.tools.1.label>правый коготь</Archomutt.tools.1.label>
+	<Archomutt.tools.3.label>голова</Archomutt.tools.3.label>
+	
+	<Archojerboa.label>архотушканчик</Archojerboa.label>
+	<Archojerboa.description>Этот гиперактивный грызун способен совершать огромные прыжки и часто приземляется на плечо хозяина, чтобы пощебетать ему на ухо. Это отличный домашний питомец, а скорость его размножения гарантирует, что у каждого на борту вашего корабля будет такой спутник. В экстренных случаях его можно использовать как боеприпас — его нестабильная ванометрия приводит к взрыву после гибели.</Archojerboa.description>
+	<Archojerboa.tools.0.label>левый коготь</Archojerboa.tools.0.label>
+	<Archojerboa.tools.1.label>правый коготь</Archojerboa.tools.1.label>
+	<Archojerboa.tools.3.label>голова</Archojerboa.tools.3.label>
+	
+	<Archoffalo.label>архомуффало</Archoffalo.label>
+	<Archoffalo.description>Ваша Спора уважает стремление мира не использовать наземные транспортные средства и поэтому разработала архомуффало, чтобы заменить их. Шерсть этого животного способна менять форму и затвердевать, образуя мешки, платформы и другие конструкции, необходимые для перевозки грузов. Когда шерсть становится слишком длинной, её можно срезать для получения гиперткани.</Archoffalo.description>
+	<Archoffalo.tools.0.label>голова</Archoffalo.tools.0.label>
+	<Archoffalo.tools.1.label>левое копыто</Archoffalo.tools.1.label>
+	<Archoffalo.tools.2.label>правое копыто</Archoffalo.tools.2.label>
+	
+	<Archolope.label>архолопа</Archolope.label>
+	<Archolope.description>Элегантное улучшение стандартной бумалопы, архолопа каким-то образом генерирует экзотические частицы, надежно заключённые в фуллереновые оболочки внутри молекулярной структуры её «молока». Какой бы процесс в них ни происходил, он, по-видимому, нестабилен — гибель архолопы сопровождается термоядерным взрывом.</Archolope.description>
+	<Archolope.tools.0.label>голова</Archolope.tools.0.label>
+	<Archolope.tools.1.label>левое копыто</Archolope.tools.1.label>
+	<Archolope.tools.2.label>правое копыто</Archolope.tools.2.label>
+	
+	<Archothrumbo.label>архотрумбо</Archothrumbo.label>
+	<Archothrumbo.description>Можно ли улучшить совершенство? Архотрумбо отвечает на этот вопрос уверенным «ДА». Этот зверь такой же великолепный и мощный, как и его предшественник, но без хищного аппетита. Его рог может пылать огнём, словно плазменный меч, а копыта генерируют ЭМИ-разряды при каждом ударе. Нет более смертоносного животного, чем этот мифический зверь.</Archothrumbo.description>
+	<Archothrumbo.tools.0.label>рог</Archothrumbo.tools.0.label>
+	<Archothrumbo.tools.2.label>левая нога</Archothrumbo.tools.2.label>
+	<Archothrumbo.tools.3.label>правая нога</Archothrumbo.tools.3.label>
+	<Archothrumbo.tools.4.label>голова</Archothrumbo.tools.4.label>
+	
+	<Archotortoise.label>архочерепаха</Archotortoise.label>
+	<Archotortoise.description>Архочерепаха — это не что иное, как мобильная крепость. В мирное время её панцирь можно разобрать на пласталь, не причиняя вреда.</Archotortoise.description>
+	<Archotortoise.tools.0.label>шея</Archotortoise.tools.0.label>
+	<Archotortoise.tools.1.label>голова</Archotortoise.tools.1.label>
+	
+	<EggArchotortoiseUnrtilized.description>Яйцо архочерепахи. Его можно есть сырым, но гораздо вкуснее в приготовленном виде.</EggArchotortoiseUnrtilized.description>
+	<EggArchotortoiseUnrtilized.label>яйцо архочерепахи</EggArchotortoiseUnrtilized.label>
+
+	<EggArchotortoiseFertilized.label>яйцо архочерепахи (опл.)</EggArchotortoiseFertilized.label>
+	<EggArchotortoiseFertilized.description>Оплодотворенное яйцо архочерепахи. Если все пройдет хорошо, из него должен вылупиться детеныш. Его можно есть сырым, но гораздо лучше приготовленным.</EggArchotortoiseFertilized.description>
+	
+	<Archopanda.label>архопанда</Archopanda.label>
+	<Archopanda.description>Иногда архопанду называют живым плюшевым медведем. Она станет идеальным питомцем для тех, кто любит, когда их сбивают с ног восторженные ласки. Мягкий характер не позволяет ей быть полезной в бою, но её можно обучить переносить предметы.</Archopanda.description>
+	<Archopanda.tools.0.label>левый коготь</Archopanda.tools.0.label>
+	<Archopanda.tools.1.label>правый коготь</Archopanda.tools.1.label>
+	<Archopanda.tools.3.label>голова</Archopanda.tools.3.label>
+	
+	<Archostrich.label>архостраус</Archostrich.label>
+	<Archostrich.description>Нелетающий, но свирепый архостраус выполняет необычную роль: он служит и источником пищи, и боевым животным. Эта птица превосходно выполняет роль авангарда в боевых действиях; она двигается быстрее большинства автомобилей, а её удар способен разорвать пласталь. Архостраус также психически считывает предпочтения ближайших людей и соответственно модифицирует свои яйца.</Archostrich.description>
+	<Archostrich.tools.0.label>когти</Archostrich.tools.0.label>
+	<Archostrich.tools.1.label>клюв</Archostrich.tools.1.label>
+	<Archostrich.tools.2.label>голова</Archostrich.tools.2.label>
+	
+	<EggArchostrichFertilized.label>яйцо архострауса (опл.)</EggArchostrichFertilized.label>
+	<EggArchostrichFertilized.description>Оплодотворенное яйцо архострауса. Если все пройдет хорошо, из него должен вылупиться детеныш архострауса. Его можно есть сырым, но гораздо лучше приготовленным.</EggArchostrichFertilized.description>
+	
+	<EggArchostrichUnfertilized.label>яйцо архострауса</EggArchostrichUnfertilized.label>
+	<EggArchostrichUnfertilized.description>Неоплодотворенное яйцо архострауса. Его можно есть сырым, но гораздо лучше - приготовленным.</EggArchostrichUnfertilized.description>
+	
+	<Archospider.label>архопаук</Archospider.label>
+	<Archospider.description>Возможно, ваша Спора ненавидит арахнофобов. Других оправданий для создания этой чудовищной формы жизни — паука с танковидной броней, челюстями, способными разрубить пласталь, и скоростью размножения, которая угрожает быстро переполнить экосистему планеты, — немного. По крайней мере, он неизменно предан своим хозяевам… пока что.</Archospider.description>
+	<Archospider.tools.0.label>головной коготь</Archospider.tools.0.label>
+	<Archospider.tools.1.label>голова</Archospider.tools.1.label>
+</LanguageData>

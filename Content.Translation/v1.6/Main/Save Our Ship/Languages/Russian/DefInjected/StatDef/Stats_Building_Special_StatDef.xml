@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<DecompressionResistanceOffset.label>Устойчивость к декомпрессии</DecompressionResistanceOffset.label>
+	<DecompressionResistanceOffset.description>Устойчивость к декомпрессии настраивается этим значением.</DecompressionResistanceOffset.description>
+	
+	<HypoxiaResistanceOffset.label>Устойчивость к гипоксии</HypoxiaResistanceOffset.label>
+	<HypoxiaResistanceOffset.description>Устойчивость к гипоксии настраивается этим значением.</HypoxiaResistanceOffset.description>
+	
+</LanguageData>

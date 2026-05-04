@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<PsychicFlayer.label>пси-травма</PsychicFlayer.label>
+	<PsychicFlayer.deathMessage>{0} {PAWN_gender ? уничтожен : уничтожена} пси-излучением.</PsychicFlayer.deathMessage>
+
+	<BombMechanite.label>поглощающие механиты</BombMechanite.label>
+	<BombMechanite.deathMessage>{0} {PAWN_gender ? поглощен : поглощена} механитами.</BombMechanite.deathMessage>
+
+</LanguageData>

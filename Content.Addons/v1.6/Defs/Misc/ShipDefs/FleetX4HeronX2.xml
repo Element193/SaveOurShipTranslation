@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetX4HeronX2</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Trader Heron x2</label>
+		<combatPoints>1983</combatPoints>
+				<tradeShip>True</tradeShip>
+		<ships>
+			<li>
+				<ship>X4Heron</ship>
+				<offsetX>60</offsetX>
+				<offsetZ>86</offsetZ>
+			</li>
+			<li>
+				<ship>X4Heron-S</ship>
+				<offsetX>124</offsetX>
+				<offsetZ>170</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>121</offsetX>
+				<offsetZ>31</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>56</offsetX>
+				<offsetZ>151</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetSSEWolfX3</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Wolf Fighters X3</label>
+		<combatPoints>327</combatPoints>
+		<ships>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>93</offsetX>
+				<offsetZ>109</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>153</offsetX>
+				<offsetZ>188</offsetZ>
+			</li>
+			<li>
+				<ship>SSEWolf</ship>
+				<offsetX>158</offsetX>
+				<offsetZ>40</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

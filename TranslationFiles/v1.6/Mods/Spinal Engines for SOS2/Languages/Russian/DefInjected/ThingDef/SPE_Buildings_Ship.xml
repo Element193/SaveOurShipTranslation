@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <!--1.5\Defs\ThingDefs_Buildings\Buildings_Ship.xml-->
-  <Ship_Engine_Spinal_Chem.label>Сопло химического ускорителя</Ship_Engine_Spinal_Chem.label>
-  <Ship_Engine_Spinal_Chem.description>Сопло линейного ускорителя на химическом топливе.\n\nТяга: 2000.\nРасход топлива: 4/c.\n\nНе подходит для межзвёздных путешествий.</Ship_Engine_Spinal_Chem.description>
-  
-  <Ship_Engine_Spinal_Nuke.label>Сопло ядерного ускорителя</Ship_Engine_Spinal_Nuke.label>
-  <Ship_Engine_Spinal_Nuke.description>Сопло линейного ускорителя на ядерном топливе.\n\nТяга: 2500.\nРасход топлива: 3/с.\n\nНе подходит для межзвёздных путешествий.</Ship_Engine_Spinal_Nuke.description>
-</LanguageData>

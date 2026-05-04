@@ -3,51 +3,60 @@
 	<!-- RimWorld 1.3 -->
 	<v1.3>
 		<!-- SOS -->
-		<li>TranslationFiles/v1.5/Main/Save Our Ship</li>
-		<li>TextureFiles</li>
+		<li>Content.Translation/v1.5/Main/Save Our Ship</li>
+		<li>Content.Textures</li>
 	</v1.3>
 
 
 	<!-- RimWorld 1.4 -->
 	<v1.4>
 		<!-- SOS -->
-		<li>TranslationFiles/v1.5/Main/Save Our Ship</li>
-		<li>TextureFiles</li>
+		<li>Content.Translation/v1.5/Main/Save Our Ship</li>
+		<li>Content.Textures</li>
 	</v1.4>
 
 
 	<!-- RimWorld 1.5 -->
 	<v1.5>
 		<!-- SOS -->
-		<li>TranslationFiles/v1.5/Main/Save Our Ship</li>
-		<li>TextureFiles</li>
+		<li>Content.Translation/v1.5/Main/Save Our Ship</li>
+		<li>Content.Textures</li>
 
 		<!-- DLC -->
-		<li IfModActive="Ludeon.RimWorld.Royalty">TranslationFiles/v1.5/Main/Royalty</li>
-		<li IfModActive="Ludeon.RimWorld.Anomaly">TranslationFiles/v1.5/Main/Anomaly</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">Content.Translation/v1.5/Main/Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">Content.Translation/v1.5/Main/Anomaly</li>
 
 		<!-- MOD -->
-		<li IfModActive="kentington.saveourshipck">TranslationFiles/v1.5/Mods/Save Our Ship Creation Kit</li>
-		<li IfModActive="TheCafFiend.SOS2SpinalEngines">TranslationFiles/v1.5/Mods/Spinal Engines for SOS2</li>
-		<li IfModActive="carl.outlanderships">TranslationFiles/v1.5/Mods/Low-Tech Ship pack for SOS2</li>
+		<li IfModActive="kentington.saveourshipck">Content.Translation/v1.5/Mods/Save Our Ship Creation Kit</li>
+		<li IfModActive="TheCafFiend.SOS2SpinalEngines">Content.Translation/v1.5/Mods/Spinal Engines for SOS2</li>
+		<li IfModActive="carl.outlanderships">Content.Translation/v1.5/Mods/Low-Tech Ship pack for SOS2</li>
 	</v1.5>
 
 
 	<!-- RimWorld 1.6 -->
 	<v1.6>
-		<!-- SOS -->
-		<li>TranslationFiles/v1.6/Main/Save Our Ship</li>
-		<li>TextureFiles</li>
+		<!-- SOS Addons -->
+		<li>Content.Addons/v1.6</li> <!-- RU/EN Translation | ScenarioDefs | ShipDefs -->
 
-		<!-- DLC -->
-		<li IfModActive="Ludeon.RimWorld.Royalty">TranslationFiles/v1.6/Main/Royalty</li>
-		<li IfModActive="Ludeon.RimWorld.Anomaly">TranslationFiles/v1.6/Main/Anomaly</li>
+		<!-- SOS Translation -->
+		<li>Content.Translation/v1.6/Main/Save Our Ship</li> <!-- RU Translation | DefInjected | Keyed -->
+		<li>Content.Translation/v1.6/Main/RimWorld</li> <!-- RU Translation| Keyed | Вт/дн | of - от -->
+		<li>Content.Textures</li> <!-- UI Icons | Storytellers -->
 
-		<!-- MOD -->
-		<li IfModActive="kentington.saveourshipck">TranslationFiles/v1.6/Mods/Save Our Ship Creation Kit</li>
-		<li IfModActive="TheCafFiend.SOS2SpinalEngines">TranslationFiles/v1.6/Mods/Spinal Engines for SOS2</li>
-		<li IfModActive="carl.outlanderships">TranslationFiles/v1.6/Mods/Low-Tech Ship pack for SOS2</li>
+		<!-- DLC Translation -->
+		<li IfModActive="Ludeon.RimWorld.Royalty">Content.Translation/v1.6/Main/Royalty</li> <!-- RU Translation -->
+		<li IfModActive="Ludeon.RimWorld.Anomaly">Content.Translation/v1.6/Main/Anomaly</li> <!-- RU Translation -->
+		<!--<li IfModActive="Ludeon.RimWorld.Odyssey">Content.Translation/v1.6/Main/Odyssey</li> -->
+
+		<!-- MOD Translations -->
+		<li IfModActive="kentington.saveourshipck">Content.Translation/v1.6/Mods/Save Our Ship Creation Kit</li> <!-- RU Translation -->
+		<li IfModActive="TheCafFiend.SOS2SpinalEngines">Content.Translation/v1.6/Mods/Spinal Engines for SOS2</li> <!-- RU Translation -->
+		<li IfModActive="carl.outlanderships">Content.Translation/v1.6/Mods/Low-Tech Ship pack for SOS2</li> <!-- RU Translation -->
+		<li IfModActive="sos2.sunship">Content.Translation/v1.6/Mods/SOS2-sun`s enemy ship extension</li> <!-- RU/EN Translation -->
+		<li IfModActive="xannihilusx.saveourship2.scoutlandingzone">Content.Translation/v1.6/Mods/Save Our Ship 2 - Scout Landing Zone</li> <!-- RU/EN Translation -->
+		<li IfModActive="xannihilusx.saveourship2.orbitalbombardment">Content.Translation/v1.6/Mods/Save Our Ship 2 - Orbital Bombardment</li> <!-- RU Translation -->
+		<li IfModActive="xannihilusx.saveourship2.cyberwarfare">Content.Translation/v1.6/Mods/Save Our Ship 2 - Cyber Warfare</li> <!-- RU Translation -->
+		<li IfModActive="belinko.hackers">Content.Translation/v1.6/Mods/Save Our Ship 2 - Cyberwarfare Ship pack</li> <!-- RU Translation -->
 	</v1.6>
-
 
 </loadFolders>

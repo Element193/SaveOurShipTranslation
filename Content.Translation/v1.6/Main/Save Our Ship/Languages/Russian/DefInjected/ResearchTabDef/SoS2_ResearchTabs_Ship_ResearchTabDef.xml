@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ResearchTabShip.label>Корабль</ResearchTabShip.label>
+	<ResearchTabShip.generalTitle>Корабельные технологии</ResearchTabShip.generalTitle>
+	<ResearchTabShip.generalDescription>Разблокируйте корабельное вооружение и оборудование, или другие космические технологии.</ResearchTabShip.generalDescription>
+	
+	<ResearchTabArchotech.label>Архотек</ResearchTabArchotech.label>
+	<ResearchTabArchotech.generalTitle>Архотек проекты</ResearchTabArchotech.generalTitle>
+	<ResearchTabArchotech.generalDescription>[ЛЮБАЯ ПРЕДЕЛЬНО РАЗВИТАЯ ТЕХНОЛОГИЯ НЕОТЛИЧИМА ОТ МЕНЯ.]</ResearchTabArchotech.generalDescription>
+	
+</LanguageData>

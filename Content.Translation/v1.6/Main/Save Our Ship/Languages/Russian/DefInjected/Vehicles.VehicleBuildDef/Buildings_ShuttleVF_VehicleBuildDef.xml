@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<SoS2_Shuttle_Personal_Blueprint.label>персональный шаттл</SoS2_Shuttle_Personal_Blueprint.label>
+	<SoS2_Shuttle_Personal_Blueprint.description>Одноместный шаттл с небольшим грузовым отсеком. Работает на химическом топливе, способен совершать как орбитальные, так и наземные перелёты.</SoS2_Shuttle_Personal_Blueprint.description>
+	
+	<SoS2_Shuttle_Standard_Blueprint.label>лёгкий шаттл</SoS2_Shuttle_Standard_Blueprint.label>
+	<SoS2_Shuttle_Standard_Blueprint.description>Лёгкий многофункциональный шаттл на ядерном топливе для космических и наземных перелётов. Оборудование этого транспортного средства основано на миниатюризации базовых корабельных систем, оно менее эффективно, но может быть улучшено. На этот вариант шаттла можно установить только одну турель.</SoS2_Shuttle_Standard_Blueprint.description>
+	
+	<SoS2_Shuttle_Heavy_Blueprint.label>тяжёлый шаттл</SoS2_Shuttle_Heavy_Blueprint.label>
+	<SoS2_Shuttle_Heavy_Blueprint.description>Тяжёлый многофункциональный шаттл на ядерном топливе для космических и наземных перелётов. Оборудование этого транспортного средства основано на миниатюризации базовых корабельных систем, оно менее эффективно, но может быть улучшено. На этот вариант шаттла можно установить две турели.</SoS2_Shuttle_Heavy_Blueprint.description>
+	
+	<SoS2_Shuttle_Superheavy_Blueprint.label>сверхтяжёлый шаттл</SoS2_Shuttle_Superheavy_Blueprint.label>
+	<SoS2_Shuttle_Superheavy_Blueprint.description>Сверхтяжёлый многофункциональный шаттл на ядерном топливе для космических и наземных перелётов. Оборудование этого транспортного средства основано на миниатюризации базовых корабельных систем, оно менее эффективно, но может быть улучшено. На этот вариант шаттла можно установить три турели.</SoS2_Shuttle_Superheavy_Blueprint.description>
+</LanguageData>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<ShipBPBomberHeavy.label>проектор корабля</ShipBPBomberHeavy.label>
+<ShipBPBomberHeavy.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Тяжёлый бомбардировщик</ShipBPBomberHeavy.description>
+
+<ShipBPCargoFirefly.label>проектор корабля</ShipBPCargoFirefly.label>
+<ShipBPCargoFirefly.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Транспортный корабль Светлячок</ShipBPCargoFirefly.description>
+
+<ShipBPCorvette.label>проектор корабля</ShipBPCorvette.label>
+<ShipBPCorvette.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Корвет</ShipBPCorvette.description>
+
+<ShipBPCorvetteGunship.label>проектор корабля</ShipBPCorvetteGunship.label>
+<ShipBPCorvetteGunship.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Боевой корвет</ShipBPCorvetteGunship.description>
+
+<ShipBPCorvetteTorpedo.label>проектор корабля</ShipBPCorvetteTorpedo.label>
+<ShipBPCorvetteTorpedo.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Торпедный корвет</ShipBPCorvetteTorpedo.description>
+
+<ShipBPCorvetteWinged.label>проектор корабля</ShipBPCorvetteWinged.label>
+<ShipBPCorvetteWinged.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Крылатый корвет</ShipBPCorvetteWinged.description>
+
+<ShipBPFrigateArcher.label>проектор корабля</ShipBPFrigateArcher.label>
+<ShipBPFrigateArcher.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Фрегат Арчер</ShipBPFrigateArcher.description>
+
+<ShipBPFrigateWinged.label>проектор корабля</ShipBPFrigateWinged.label>
+<ShipBPFrigateWinged.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Крылатый фрегат</ShipBPFrigateWinged.description>
+
+<ShipBPCorvetteMartian.label>проектор корабля</ShipBPCorvetteMartian.label>
+<ShipBPCorvetteMartian.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Древний марсианский корвет</ShipBPCorvetteMartian.description>
+
+<ShipBPTransportSmall.label>проектор корабля</ShipBPTransportSmall.label>
+<ShipBPTransportSmall.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Малый транспорт</ShipBPTransportSmall.description>
+
+<ShipBPExplorationVessel.label>проектор корабля</ShipBPExplorationVessel.label>
+<ShipBPExplorationVessel.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Исследовательское судно</ShipBPExplorationVessel.description>
+
+<ShipBPCorvetteArrowhead.label>проектор корабля</ShipBPCorvetteArrowhead.label>
+<ShipBPCorvetteArrowhead.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Корвет Стрела</ShipBPCorvetteArrowhead.description>
+
+<ShipBPFrigateIronclad.label>проектор корабля</ShipBPFrigateIronclad.label>
+<ShipBPFrigateIronclad.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Фрегат Айронклад</ShipBPFrigateIronclad.description>
+
+<ShipBPCorvetteArdent.label>проектор корабля</ShipBPCorvetteArdent.label>
+<ShipBPCorvetteArdent.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Корвет Ардент</ShipBPCorvetteArdent.description>
+
+<ShipBPMiningRig.label>проектор корабля</ShipBPMiningRig.label>
+<ShipBPMiningRig.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Добывающее судно</ShipBPMiningRig.description>
+
+<ShipBPDestroyer.label>проектор корабля</ShipBPDestroyer.label>
+<ShipBPDestroyer.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Торпедный эсминец Дэс</ShipBPDestroyer.description>
+
+<ShipBPCruiserThor.label>проектор корабля</ShipBPCruiserThor.label>
+<ShipBPCruiserThor.description>Проектор для сборки космического корабля. Содержит несколько проекций для поэтапного строительства, может применяться много раз.\n\nТип корабля: Крейсер Тор</ShipBPCruiserThor.description>
+
+</LanguageData>

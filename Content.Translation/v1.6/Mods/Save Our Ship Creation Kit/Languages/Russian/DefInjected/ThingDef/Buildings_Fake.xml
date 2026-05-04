@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--1.5\Defs\ThingDefs_Buildings\Buildings_Fake.xml-->
+<ShipPartShip.label>Корабль флота</ShipPartShip.label>
+<ShipPartShip.description>Инструмент для создания флотов. Флот это как обычный корабль, только несколько кораблей. После экспорта флота его можно вызвать на бой как и другой любой корабль в режиме разработчика через мостик корабля (с home карты). Если флота нет после экспорта, то попробуйте заменить деф в файле флота на SaveOurShip2.ShipDef.\n\nКак использовать: разместите на карте, нажмите на объект, введите дефнейм корабля. Дефнеймы можно найти на вики мода.</ShipPartShip.description>
+
+<ShipPartFake.label>Макет корабля</ShipPartFake.label>
+<ShipPartFake.description>Макет корабля, в этой области будет корабль.</ShipPartFake.description>
+
+<ShipPartRect.label>Фигура прямоугол.</ShipPartRect.label>
+<ShipPartRect.description>Установите на карту, затем выберите нужный тип корпуса и также поставьте на карту. Выйдет прямоугольник из корпуса.</ShipPartRect.description>
+
+<ShipPartRectUnpEnd.label>Корпус прямоугол.</ShipPartRectUnpEnd.label>
+<ShipPartRectUnpEnd.description>Завершите рисование прямоугольной области корпуса.</ShipPartRectUnpEnd.description>
+
+<ShipPartRectEnd.label>Корпус с проводкой прямоугол.</ShipPartRectEnd.label>
+<ShipPartRectEnd.description>Завершите рисование прямоугольной области корпуса.</ShipPartRectEnd.description>
+
+<ShipPartRectWreckEnd.label>Обломки корпуса прямоугол.</ShipPartRectWreckEnd.label>
+<ShipPartRectWreckEnd.description>Завершите рисование прямоугольной области корпуса.</ShipPartRectWreckEnd.description>
+
+<MechPartRectUnpEnd.label>Мехкорпус прямоугол.</MechPartRectUnpEnd.label>
+<MechPartRectUnpEnd.description>Завершите рисование прямоугольной области корпуса меха.</MechPartRectUnpEnd.description>
+
+<MechPartRectEnd.label>Мехкорпус провод. прямоугол.</MechPartRectEnd.label>
+<MechPartRectEnd.description>Завершите рисование прямоугольной области корпуса меха.</MechPartRectEnd.description>
+
+<ShipPartCircle.label>Фигура круг</ShipPartCircle.label>
+<ShipPartCircle.description>Установите на карту, затем выберите нужный тип корпуса и также поставьте на карту. Выйдет круг из корпуса.</ShipPartCircle.description>
+
+<ShipPartCircleUnpEnd.label>Корпус круг</ShipPartCircleUnpEnd.label>
+<ShipPartCircleUnpEnd.description>Завершите рисование круглой области корпуса.</ShipPartCircleUnpEnd.description>
+
+<ShipPartCircleEnd.label>Корпус провод. круг</ShipPartCircleEnd.label>
+<ShipPartCircleEnd.description>Завершите рисование круглой области корпуса.</ShipPartCircleEnd.description>
+
+<ShipPartCircleWreckEnd.label>Обломки корпуса круг</ShipPartCircleWreckEnd.label>
+<ShipPartCircleWreckEnd.description>Завершите рисование круглой области корпуса.</ShipPartCircleWreckEnd.description>
+
+<MechPartCircleUnpEnd.label>Мехкорпус круг</MechPartCircleUnpEnd.label>
+<MechPartCircleUnpEnd.description>Завершите рисование круглой области корпуса меха.</MechPartCircleUnpEnd.description>
+
+<MechPartCircleEnd.label>Мехкорпус провод. круг</MechPartCircleEnd.label>
+<MechPartCircleEnd.description>Завершите рисование круглой области корпуса меха.</MechPartCircleEnd.description>
+
+<ShipPartRegion.label>Груз (начало)</ShipPartRegion.label>
+<ShipPartRegion.description>Это место, где будут появляться случайные или скриптовые предметы при генерации кораблей. Грузовой отсек размещается по такому-же принципу как область склада или посадок, только двумя метками, ничего сложного. После установки корабль не рекомендуется вращать, область грузового отсека желательно делать перед экспортом корабля.</ShipPartRegion.description>
+
+<ShipPartRegionEnd.label>Груз (конец)</ShipPartRegionEnd.label>
+<ShipPartRegionEnd.description>Это место, где будут появляться случайные или скриптовые предметы при генерации кораблей. Грузовой отсек размещается по такому-же принципу как область склада или посадок, только двумя метками, ничего сложного. После установки корабль не рекомендуется вращать, область грузового отсека желательно делать перед экспортом корабля.</ShipPartRegionEnd.description>
+
+<ShipPartTurretSmall.label>Малая турель</ShipPartTurretSmall.label>
+<ShipPartTurretSmall.description>Тут будет случайная малая турель при появлении корабля в игре. Лазерная, плазменная, баллистическая или рельсотрон.</ShipPartTurretSmall.description>
+
+<ShipPartTurretLarge.label>Большая турель</ShipPartTurretLarge.label>
+<ShipPartTurretLarge.description>Тут будет случайная большая турель при появлении корабля в игре. Лазерная, плазменная, баллистическая или рельсотрон.</ShipPartTurretLarge.description>
+
+<ShipPartTurretSpinal.label>Линейное орудие</ShipPartTurretSpinal.label>
+<ShipPartTurretSpinal.description>Тут будет случайное линейное орудие при появлении корабля в игре. Лазерное, плазменное или рельсотрон. Не включает архотек и разборочных механитов.</ShipPartTurretSpinal.description>
+
+<CasketFilled.label>Капсула с экипажем</CasketFilled.label>
+<CasketFilled.description>Здесь будет космическая криптосонная капсула с человеком.</CasketFilled.description>
+
+<PawnSpawnerGeneric.label>Существо</PawnSpawnerGeneric.label>
+<PawnSpawnerGeneric.description>Используется для создания разных существ по типу насекомых, животных, и тп. Можно выбрать фракцию, которой будет принадлежать существо, если не выбрано - будет базовая фракция для существа.\n\nКак использовать: поместите эту структуру на карту, нажмите на объект и введите PawnKindDef, по желанию дефнейм фракции.\n\nФракция случайных вражеских кораблей - AncientsHostile.\nИИ формгель (голограмма) - SOSHologram.\nДругие дефнеймы можно найти на странице вики или в файлах игры.</PawnSpawnerGeneric.description>
+
+<SpaceCrew.label>экипаж корабля</SpaceCrew.label>
+<SpaceCrew.description>Здесь появится SpaceCrew из фракции AncientsHostile - экипаж корабля в обычных космсоскафандрах. Выполняют все задачи на корабле - стоят на мостике, загружают торпеды. Возможно они не могут выполнять штурм, рекомендуется проверить их функции.</SpaceCrew.description>
+
+<SpaceCrewMarine.label>пехотинец</SpaceCrewMarine.label>
+<SpaceCrewMarine.description>Здесь появится SpaceCrewMarine из фракции AncientsHostile - пехотинец корабля в обычных космических скафандрах. Выполняют все задачи на корабле - Стоят на мостике, загружают торпеды. Возможно, они не могут выполнять штурм, рекомендуется проверить их функции.</SpaceCrewMarine.description>
+
+<SpaceCrewMarineHeavy.label>тяжёлый пехотинец</SpaceCrewMarineHeavy.label>
+<SpaceCrewMarineHeavy.description>Здесь появится SpaceCrewMarineHeavy из фракции AncientsHostile - тяжёлый космический пехотинец в космопехотных доспехах. Могут делать все задачи на корабле и выполнять штурм.</SpaceCrewMarineHeavy.description>
+
+<Mech_CentipedeGunner_SPAWNER.label>Сентипеда</Mech_CentipedeGunner_SPAWNER.label>
+<Mech_CentipedeGunner_SPAWNER.description>Здесь размещается Mech_CentipedeGunner. Тяжелый механоид в форме гуссеницы.</Mech_CentipedeGunner_SPAWNER.description>
+
+<Mech_Lancer_SPAWNER.label>Улан</Mech_Lancer_SPAWNER.label>
+<Mech_Lancer_SPAWNER.description>Здесь размещается Mech_Lancer. Механоид с энергокопьём.</Mech_Lancer_SPAWNER.description>
+
+<Mech_Scyther_SPAWNER.label>Жнец</Mech_Scyther_SPAWNER.label>
+<Mech_Scyther_SPAWNER.description>Здесь размещается Mech_Scyther. Режущий механоид ближнего боя.</Mech_Scyther_SPAWNER.description>
+
+<Mech_Pikeman_SPAWNER.label>Драгун</Mech_Pikeman_SPAWNER.label>
+<Mech_Pikeman_SPAWNER.description>Здесь размещается Mech_Pikeman. Средний механоид с дальнобойным игломётом.</Mech_Pikeman_SPAWNER.description>
+
+<Mech_Random.label>случайный механоид</Mech_Random.label>
+<Mech_Random.description>Здесь размещается случайный механоид.</Mech_Random.description>
+
+<Astromite_SPAWNER.label>астроскарабей</Astromite_SPAWNER.label>
+<Astromite_SPAWNER.description>Здесь размещается астроскарабей. Безвредное космическое насекомое, которое может нанести немного урона. Обычно погибает за 1 - 3 удара.</Astromite_SPAWNER.description>
+
+<Stellapede_SPAWNER.label>галажук</Stellapede_SPAWNER.label>
+<Stellapede_SPAWNER.description>Здесь размещается галажук. Равный по силе обычному среднему поселенцу без тяжелой брони с примитивным оружием ближнего боя.</Stellapede_SPAWNER.description>
+
+<Cosmopillar_SPAWNER.label>космогусеница</Cosmopillar_SPAWNER.label>
+<Cosmopillar_SPAWNER.description>Здесь размещается космогусеница. Превосходит среднего поселенца по силе, но с мечом и бронёй силы равны.</Cosmopillar_SPAWNER.description>
+
+<SpaceBug_Random.label>случайное космонасекомое</SpaceBug_Random.label>
+<SpaceBug_Random.description>Здесь размещается случайное космическое насекомое</SpaceBug_Random.description>
+
+<SpaceHive_SPAWNER.label>космический улей</SpaceHive_SPAWNER.label>
+<SpaceHive_SPAWNER.description>Здесь размещается космический улей насекомых, который действует как самый обычный пещерный улей. Возле улья изначально появится примерно 3 насекомых, могут быть как крупные и опасные, так и безвредные скарабеи.</SpaceHive_SPAWNER.description>
+
+</LanguageData>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	
+
+	<ScanSpace.label>сканировать пространство</ScanSpace.label>
+	<ScanSpace.verb>сканировать пространство</ScanSpace.verb>
+	<ScanSpace.gerund>сканировать пространство</ScanSpace.gerund>
+	
+	<LoadTorpedoTube.label>загружать торпеды в</LoadTorpedoTube.label>
+	<LoadTorpedoTube.verb>загружать торпеды в</LoadTorpedoTube.verb>
+	<LoadTorpedoTube.gerund>загружать торпеды в</LoadTorpedoTube.gerund>
+	
+	<FightMechanites.label>уничтожать механитов</FightMechanites.label>
+	<FightMechanites.verb>уничтожать механитов</FightMechanites.verb>
+	<FightMechanites.gerund>уничтожать механитов</FightMechanites.gerund>
+	
+	<DoArchotechSacrifice.label>жертвовать пленных</DoArchotechSacrifice.label>
+	<DoArchotechSacrifice.verb>пожертвовать пленных</DoArchotechSacrifice.verb>
+	<DoArchotechSacrifice.gerund>жертвовать пленных</DoArchotechSacrifice.gerund>
+	
+	<DoBillsRecyclotron.label>перерабатывать предметы</DoBillsRecyclotron.label>
+	<DoBillsRecyclotron.verb>перерабатывать предметы</DoBillsRecyclotron.verb>
+	<DoBillsRecyclotron.gerund>перерабатывать предметы</DoBillsRecyclotron.gerund>
+	
+	<InstallConsciousness.label>переносить личность</InstallConsciousness.label>
+	<InstallConsciousness.verb>переносить личность</InstallConsciousness.verb>
+	<InstallConsciousness.gerund>переносить личность в</InstallConsciousness.gerund>
+
+
+</LanguageData>

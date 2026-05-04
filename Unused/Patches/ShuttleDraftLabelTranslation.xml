@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/Vehicles.VehicleDef[defName="SoS2_Shuttle_Personal"]/draftLabel</xpath>
+    <value>
+      <draftLabel>Режим парения</draftLabel>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/Vehicles.VehicleDef[defName="SoS2_Shuttle"]/draftLabel</xpath>
+    <value>
+      <draftLabel>Режим парения</draftLabel>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/Vehicles.VehicleDef[defName="SoS2_Shuttle_Heavy"]/draftLabel</xpath>
+    <value>
+      <draftLabel>Режим парения</draftLabel>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/Vehicles.VehicleDef[defName="SoS2_Shuttle_Superheavy"]/draftLabel</xpath>
+    <value>
+      <draftLabel>Режим парения</draftLabel>
+    </value>
+  </Operation>
+</Patch>

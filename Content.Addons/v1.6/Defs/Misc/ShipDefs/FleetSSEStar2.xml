@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetSSEStar2</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>StarFleet (3700)</label>
+		<combatPoints>3716</combatPoints>
+		<ships>
+			<li>
+				<ship>SSEApogee1</ship>
+				<offsetX>86</offsetX>
+				<offsetZ>106</offsetZ>
+			</li>
+			<li>
+				<ship>SSEApogee2</ship>
+				<offsetX>44</offsetX>
+				<offsetZ>34</offsetZ>
+			</li>
+			<li>
+				<ship>SSEEagle</ship>
+				<offsetX>80</offsetX>
+				<offsetZ>183</offsetZ>
+			</li>
+			<li>
+				<ship>SSESunder</ship>
+				<offsetX>39</offsetX>
+				<offsetZ>147</offsetZ>
+			</li>
+			<li>
+				<ship>SSEGladius</ship>
+				<offsetX>60</offsetX>
+				<offsetZ>90</offsetZ>
+			</li>
+			<li>
+				<ship>SSEGladius</ship>
+				<offsetX>28</offsetX>
+				<offsetZ>181</offsetZ>
+			</li>
+			<li>
+				<ship>SSEGladius</ship>
+				<offsetX>188</offsetX>
+				<offsetZ>34</offsetZ>
+			</li>
+			<li>
+				<ship>SSEKite</ship>
+				<offsetX>182</offsetX>
+				<offsetZ>178</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

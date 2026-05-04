@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<SpaceDebris.label>Космические обломки</SpaceDebris.label>
+	<SpaceDebris.description>Область скопления космических обломков.</SpaceDebris.description>
+	<SpaceDebris.endMessage>Корабль покинул область скопления космических обломков.</SpaceDebris.endMessage>
+
+</LanguageData>

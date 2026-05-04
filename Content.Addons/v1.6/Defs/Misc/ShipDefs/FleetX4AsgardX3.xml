@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SaveOurShip2.ShipDef>
+		<defName>FleetX4AsgardX3</defName>
+		<saveSysVer>2</saveSysVer>
+		<label>Asgard Cruisers X3</label>
+		<combatPoints>6663</combatPoints>
+		<ships>
+			<li>
+				<ship>X4Asgard</ship>
+				<offsetX>89</offsetX>
+				<offsetZ>106</offsetZ>
+			</li>
+			<li>
+				<ship>X4Asgard</ship>
+				<offsetX>65</offsetX>
+				<offsetZ>202</offsetZ>
+			</li>
+			<li>
+				<ship>X4Asgard</ship>
+				<offsetX>58</offsetX>
+				<offsetZ>12</offsetZ>
+			</li>
+		</ships>
+		<parts />
+	</SaveOurShip2.ShipDef>
+</Defs>

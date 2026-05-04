@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>	<!--1.5\Defs\Stats\Stats_Archotech.xml-->
-	
-	<ArchotechPillarsConnected.label>активные артефакты</ArchotechPillarsConnected.label>
-	<ArchotechPillarsConnected.description>Количество уникальных архотек-колонн, связанных с этой Архотек-Спорой.</ArchotechPillarsConnected.description>
-
-</LanguageData>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<CarryToCryptonest.reportString>переносит яйца в криптогнездо.</CarryToCryptonest.reportString>
+	<OperateScannerSpace.reportString>сканирует космическое пространство.</OperateScannerSpace.reportString> <!--TargetA = Исследовательская консоль-->
+	<HackSatellite.reportString>взламывает TargetA.</HackSatellite.reportString>
+	<RepairSatellite.reportString>восстанавливает TargetA.</RepairSatellite.reportString>
+	<PersuadeAI.reportString>переубеждает TargetA.</PersuadeAI.reportString>
+	<HackBlackBoxConsole.reportString>взламывает TargetA.</HackBlackBoxConsole.reportString>
+	<LoadTorpedoTube.reportString>заряжает торпеды.</LoadTorpedoTube.reportString>
+	<LoadShipBuilding.reportString>заправляет TargetA.</LoadShipBuilding.reportString>
+	<ManShipBridge.reportString>взаимодействует с мостиком.</ManShipBridge.reportString>
+	<HackEnemyShip.reportString>взламывает TargetA.</HackEnemyShip.reportString>
+	<HackAirlock.reportString>взламывает TargetA.</HackAirlock.reportString>
+	<BreachAirlock.reportString>вскрывает TargetA.</BreachAirlock.reportString>
+	<DefendBreacher.reportString>охраняет TargetA.</DefendBreacher.reportString>
+	<RepairItemWithGel.reportString>ремонтирует TargetA.</RepairItemWithGel.reportString>
+	<SacrificeToArchotech.reportString>приносит в жертву TargetA.</SacrificeToArchotech.reportString>
+	<FleeVacuum.reportString>спасается от вакуума.</FleeVacuum.reportString>
+	<InstallConsciousness.reportString>загружает личность TargetB.</InstallConsciousness.reportString>
+	<MergeWithSpore.reportString>сливается с Архоспорой.</MergeWithSpore.reportString>
+	<ResurrectHologram.reportString>загружает личность в TargetA.</ResurrectHologram.reportString>
+
+</LanguageData>
