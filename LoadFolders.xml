@@ -57,6 +57,7 @@
 		<li IfModActive="xannihilusx.saveourship2.orbitalbombardment">Content.Translation/v1.6/Mods/Save Our Ship 2 - Orbital Bombardment</li> <!-- RU Translation -->
 		<li IfModActive="xannihilusx.saveourship2.cyberwarfare">Content.Translation/v1.6/Mods/Save Our Ship 2 - Cyberwarfare</li> <!-- RU Translation -->
 		<li IfModActive="belinko.hackers">Content.Translation/v1.6/Mods/Save Our Ship 2 - Cyberwarfare Ship pack</li> <!-- RU Translation -->
+		<li IfModActive="CruelMoose.sos2msu">Content.Translation/v1.6/Mods/More Shuttle Upgrades</li> <!-- RU Translation -->
 	</v1.6>
 
 </loadFolders>

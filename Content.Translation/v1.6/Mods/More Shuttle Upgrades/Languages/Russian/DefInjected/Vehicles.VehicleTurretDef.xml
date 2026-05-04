@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 1.6\Defs\Turret Defs.xml -->
+  <SOS2ShuttleMinigun.label>Турель минигана</SOS2ShuttleMinigun.label>
+  <SOS2ShuttleMinigun.description>Турель минигана для шаттла.</SOS2ShuttleMinigun.description>
+
+  <SOS2ShuttleChargeMinigun.label>Турель зарядного минигана</SOS2ShuttleChargeMinigun.label>
+  <SOS2ShuttleChargeMinigun.description>Турель зарядного минигана для шаттла.</SOS2ShuttleChargeMinigun.description>
+
+  <SOS2ShuttleEMPCannon.label>ЭМП турель</SOS2ShuttleEMPCannon.label>
+  <SOS2ShuttleEMPCannon.description>ЭМП турель для шаттла.</SOS2ShuttleEMPCannon.description>
+
+  <SOS2ShuttleIncendiaryCannon.label>Зажигательная турель</SOS2ShuttleIncendiaryCannon.label>
+  <SOS2ShuttleIncendiaryCannon.description>Зажигательная турель для шаттла.</SOS2ShuttleIncendiaryCannon.description>
+
+  <SOS2ShuttleToxCannon.label>Токсичная турель</SOS2ShuttleToxCannon.label>
+  <SOS2ShuttleToxCannon.description>Токсичная турель для шаттла.</SOS2ShuttleToxCannon.description>
+
+  <SOS2ShuttleSmokeCannon.label>Дымовая турель</SOS2ShuttleSmokeCannon.label>
+  <SOS2ShuttleSmokeCannon.description>Дымовая турель для шаттла.</SOS2ShuttleSmokeCannon.description>
+
+  <SOS2ShuttleFirefoamCannon.label>Огненная турель</SOS2ShuttleFirefoamCannon.label>
+  <SOS2ShuttleFirefoamCannon.description>Огненная турель для шаттла.</SOS2ShuttleFirefoamCannon.description>
+
+  <SOS2ShuttleDisruptorFlareCannon.label>Разрушительная огненная турель</SOS2ShuttleDisruptorFlareCannon.label>
+  <SOS2ShuttleDisruptorFlareCannon.description>Разрушительная огненная турель для шаттла.</SOS2ShuttleDisruptorFlareCannon.description>
+
+  <SOS2ShuttleDeadlifeCannon.label>Турель мертвой жизни</SOS2ShuttleDeadlifeCannon.label>
+  <SOS2ShuttleDeadlifeCannon.description>Турель с капсулами мертвой жизни для шаттла.</SOS2ShuttleDeadlifeCannon.description>
+</LanguageData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 1.6\Defs\Turret Defs.xml -->
+  <Bullet_MinigunShuttle.label>пуля минигана</Bullet_MinigunShuttle.label>
+
+  <Bullet_ChargeMinigunShuttle.label>пуля минигана</Bullet_ChargeMinigunShuttle.label>
+
+  <Bullet_EMPLauncherShuttle.label>ЭМП снаряд</Bullet_EMPLauncherShuttle.label>
+
+  <Bullet_IncendiaryLauncherShuttle.label>зажигательный снаряд</Bullet_IncendiaryLauncherShuttle.label>
+
+  <Bullet_ToxbombLauncherShuttle.label>токсичный снаряд</Bullet_ToxbombLauncherShuttle.label>
+
+  <Bullet_SmokeLauncherShuttle.label>дымовой снаряд</Bullet_SmokeLauncherShuttle.label>
+
+  <Bullet_FirefoamLauncherShuttle.label>пенный снаряд</Bullet_FirefoamLauncherShuttle.label>
+
+  <Grenade_DisruptorFlareShuttle.label>огонь</Grenade_DisruptorFlareShuttle.label>
+
+  <DisruptorFlareShuttle.label>огонь</DisruptorFlareShuttle.label>
+
+  <Bullet_Shell_Deadlife_Shuttle.label>капсула мертвой жизни</Bullet_Shell_Deadlife_Shuttle.label>
+
+  <Shell_Deadlife_Releasing_Shuttle.label>капсула мертвой жизни</Shell_Deadlife_Releasing_Shuttle.label>
+</LanguageData>
