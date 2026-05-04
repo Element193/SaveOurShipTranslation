@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<languagedata>
+<LanguageData>
 <BigHackerCorvette.label>Тяжёлый хак-корвет</BigHackerCorvette.label>
 <BigHackerCruiser.label>Тяжёлый хак-крейсер</BigHackerCruiser.label>
 <DestroyerSpineHacker.label>Линейный хак-эсминец</DestroyerSpineHacker.label>
@@ -15,4 +15,4 @@
 <HeavyHackerFighter.label>Тяжёлый хак-истребитель</HeavyHackerFighter.label>
 <interstellarHackerCruiser.label>Межзвёздный хак-крейсер</interstellarHackerCruiser.label>
 <LightHackerBomber.label>Лёгкий хак-бомбардировщик</LightHackerBomber.label>
-</languagedata>
+</LanguageData>
