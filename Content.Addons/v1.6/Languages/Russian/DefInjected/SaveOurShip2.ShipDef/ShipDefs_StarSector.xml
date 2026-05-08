@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+        <!-- StarSector ships by Antisodium (reworked) -->
 
         <SSEApogee1.label>Фрегат Апогей</SSEApogee1.label>
 
@@ -35,8 +36,21 @@
 
         <SSEWolf.label>Истребитель Вульф</SSEWolf.label>
 
-        <!-- NEW SHIPS -->
+        <!-- New ships -->
 
         <SSEEagle.label>Линейный фрегат Орёл</SSEEagle.label>
 
+        <!-- Fleets -->
+
+        <FleetSSEWaspX5.label>Рой дронов Оса</FleetSSEWaspX5.label>
+        <FleetSSEWaspX3.label>Рой дронов Оса</FleetSSEWaspX3.label>
+        <FleetSSEAurora.label>Флот Авроры (2000)</FleetSSEAurora.label>
+        <FleetX4HeronX2.label>Торговцы Цапля Х2</FleetX4HeronX2.label>
+        <FleetTradeSSEMudSkipperEscort.label>Торговец МудСкиппер</FleetTradeSSEMudSkipperEscort.label>
+        <FleetSSEStar1.label>Звёздный флот (4200)</FleetSSEStar1.label>
+        <FleetSSEStar2.label>Звёздный флот (3700)</FleetSSEStar2.label>
+        <FleetSSEWolfX3.label>Истребители Волк X3</FleetSSEWolfX3.label>
+        <FleetSSEStar3.label>Флот Сандера (700)</FleetSSEStar3.label>
+        <FleetSSEStarFighters.label>Звёздные истребители</FleetSSEStarFighters.label>
+        <EagleFleet.label>Флот Орла (2000)</EagleFleet.label>
 </LanguageData>

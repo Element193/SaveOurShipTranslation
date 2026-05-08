@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Patch - Save Our Ship x Odyssey -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="enableOdysseyTexPatch"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- текстура для Ship_Beam -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Ship_Beam"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
+					</value>
+				</li>
+
+				<!-- График клас для Ship_Beam -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Ship_Beam"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_Single</graphicClass>
+					</value>
+				</li>
+
+				<!-- Линк для Ship_Beam -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Ship_Beam"]/graphicData/linkType</xpath>
+					<value>
+						<linkType>Basic</linkType>
+					</value>
+				</li>
+
+				<!-- Текстура для Ship_Beam_Unpowered -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Ship_Beam_Unpowered"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
+					</value>
+				</li>
+
+				<!-- График клас для Ship_Beam_Unpowered -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Ship_Beam_Unpowered"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_Single</graphicClass>
+					</value>
+				</li>
+
+				<!-- Линк для Ship_Beam_Unpowered -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Ship_Beam_Unpowered"]/graphicData/linkType</xpath>
+					<value>
+						<linkType>Basic</linkType>
+					</value>
+				</li>
+
+				<!-- Замена шлюза -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="ShipAirlockBeam"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
+					</value>
+				</li>
+
+				<!-- Замена график сингл -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="ShipAirlockBeam"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_Single</graphicClass>
+					</value>
+				</li>
+
+				<!-- Замена линктайп -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="ShipAirlockBeam"]/graphicData/linkType</xpath>
+					<value>
+						<linkType>Basic</linkType>
+					</value>
+				</li>
+
+				<!-- Замена вентиляции -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="ShipInside_PassiveVent"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
+					</value>
+				</li>
+
+				<!-- Замена вентиляции архотек -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="ShipInside_PassiveVentArchotech"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
+					</value>
+				</li>
+
+				<!-- Замена вентиляции -->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="ShipInside_PassiveVentMechanoid"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Замена солнечных батарей на корпус Одисеи -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ShipInside_SolarGenerator"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ShipInside_SolarGeneratorArchotech"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="ShipInside_SolarGeneratorMech"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath>
+		</value>
+	</Operation>
+
+	<!-- Замена текстуры малого ускорителя и растяжение текстуры -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Ship_Engine_Small"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/SmallThruster/SmallThruster</texPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Ship_Engine_Small"]/graphicData</xpath>
+		<value>
+			<drawSize>
+				<x>2</x>
+				<y>3</y>
+			</drawSize>
+		</value>
+	</Operation>
+
+	<!-- Замена текстуры большого ускорителя и растяжение текстуры -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Ship_Engine"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/LateralThruster/LateralThruster</texPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Ship_Engine"]/graphicData</xpath>
+		<value>
+			<drawSize>
+				<x>3</x>
+				<y>3</y>
+			</drawSize>
+		</value>
+	</Operation>
+
+	<!-- Замена слоя отрисовки -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Ship_Thruster"]/altitudeLayer</xpath>
+		<value>
+			<altitudeLayer>Building</altitudeLayer>
+		</value>
+	</Operation>
+
+</Patch>

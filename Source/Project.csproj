@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Project</AssemblyName>
+    <RootNamespace>SaveOurCat</RootNamespace>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+    <Reference Include="ShipsHaveInsides">
+      <HintPath>..\..\SaveOurShip2-super_unstable\1.6\Assemblies\ShipsHaveInsides.dll</HintPath>
+      <CopyLocal>false</CopyLocal>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="archive\**\*.cs" />
+  </ItemGroup>
+  <Target Name="CleanAssemblies" AfterTargets="Build">
+    <ItemGroup>
+      <FilesToDelete Include="$(OutputPath)*.dll" Exclude="$(OutputPath)SaveOurShipTranslation.dll" />
+      <FilesToDelete Include="$(OutputPath)*.pdb" />
+    </ItemGroup>
+    <Delete Files="@(FilesToDelete)" />
+  </Target>
+</Project>

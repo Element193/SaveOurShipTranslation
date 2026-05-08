@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>MakeAntiprotoniumPods</defName>
+    <label>make antiprotonium pods</label>
+    <description>Craft antiprotonium pods.</description>
+    <jobString>Making antiprotonium pods.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>3600</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Uranium</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AntiprotoniumPod>20</AntiprotoniumPod>
+    </products>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>AcceleratingParticles</li>
+    </researchPrerequisites>
+  </RecipeDef>
+
+</Defs>

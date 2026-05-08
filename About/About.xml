@@ -19,6 +19,7 @@
 
     <loadAfter>
         <li>kentington.saveourship2</li>
+        <li>Ludeon.RimWorld.Odyssey</li>
         <li>TheCafFiend.SOS2SpinalEngines</li>
         <li>carl.outlanderships</li>
         <li>kentington.saveourshipck</li>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- X4 Ships -->
+  <X4Heron.label>Грузовой корабль Цапля</X4Heron.label>
+
+  <X4Heron-S.label>Грузовой корабль Цапля-У</X4Heron-S.label>
+
+  <X4Envoy.label>Корвет Посланник</X4Envoy.label>
+
+  <X4Hydra.label>Корвет Гидра</X4Hydra.label>
+
+  <ARLHunter.label>Фрегат Охотник</ARLHunter.label>
+
+  <X4Asgard.label>Линейный линкор Асгард</X4Asgard.label>
+
+  <X4Syn-S.label>Линейный крейсер Син-У</X4Syn-S.label>
+
+  <X4Syn-M.label>Линейный крейсер Син-М</X4Syn-M.label>
+
+  <X4Syn-T.label>Ракетный крейсер Син-М</X4Syn-T.label>
+
+  <!-- Personal small ships -->
+  <ARLSmallPersonal1.label>Малый личный корабль</ARLSmallPersonal1.label>
+
+  <ARLSmallMining.label>Малый добывающий корабль</ARLSmallMining.label>
+
+  <!-- Fleets -->
+  <FleetX4Asgard.label>Флот Асгарда (4500)</FleetX4Asgard.label>
+  
+  <FleetX4AsgardX3.label>Крейсеры Асгард Х3</FleetX4AsgardX3.label>
+
+</LanguageData>

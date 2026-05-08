@@ -5,7 +5,7 @@
 	
 	<SoS.Settings.UI>Настройки интерфейса</SoS.Settings.UI>
 	<SoS.Settings.UseSplashScreen>Фон в главном меню</SoS.Settings.UseSplashScreen>
-	<SoS.Settings.UseSplashScreen.Desc>Фон SOS2 в главном меню.\n\nНеобходим перезапуск.\n\nПо умолчанию: включено</SoS.Settings.UseSplashScreen.Desc>
+	<SoS.Settings.UseSplashScreen.Desc>Фон SOS2 в главном меню.\n\nНеобходим перезапуск.\nПо умолчанию: включено</SoS.Settings.UseSplashScreen.Desc>
 	<SoS.Settings.PersistShipUI>Интерфейс корабля</SoS.Settings.PersistShipUI>
 	<SoS.Settings.PersistShipUI.Desc>Постоянное отображение энергии и нагрева корабля.\n\nПо умолчанию: отключено</SoS.Settings.PersistShipUI.Desc>
 	<SoS.Settings.OffsetUIx>Смещение интерфейса по X</SoS.Settings.OffsetUIx>
@@ -17,9 +17,9 @@
 	
 	<SoS.Settings.Misc>Разные настройки</SoS.Settings.Misc>
 	<SoS.Settings.EasyMode>Спасательные капсулы</SoS.Settings.EasyMode>
-	<SoS.Settings.EasyMode.Desc>При уничтожении шаттла, его экипаж вернётся обратно в спасательных капсулах.\n\nПо умолчанию: отключено</SoS.Settings.EasyMode.Desc>
+	<SoS.Settings.EasyMode.Desc>При уничтожении шаттла его экипаж прибудет обратно в место запуска.\n\nПо умолчанию: отключено</SoS.Settings.EasyMode.Desc>
 	<SoS.Settings.ShipMapPhysics>Физика корабля</SoS.Settings.ShipMapPhysics>
-	<SoS.Settings.ShipMapPhysics.Desc>Во время движения корабля, существа и предметы за бортом останутся позади. Это также ограничит доступные места для посадки шаттлов на вражеском корабле.\n\nПо умолчанию: отключено</SoS.Settings.ShipMapPhysics.Desc>
+	<SoS.Settings.ShipMapPhysics.Desc>Во время движения корабля существа и предметы за бортом останутся позади. Это также ограничит доступные места для посадки шаттлов на вражеском корабле.\n\nПо умолчанию: отключено</SoS.Settings.ShipMapPhysics.Desc>
 	<SoS.Settings.ArchoRemove>Удаление архожизни</SoS.Settings.ArchoRemove>
 	<SoS.Settings.ArchoRemove.Desc>Удаляет существа архотека, если они появляются из-за других модификаций до прохождения нужных событий в SOS2.\n\nПо умолчанию: отключено</SoS.Settings.ArchoRemove.Desc>
 	<SoS.Settings.ArchoKill>Связь архожизни</SoS.Settings.ArchoKill>
@@ -50,8 +50,8 @@
 	<SoS.Settings.MaxTravelTime>Максимальное время путешествия: {3}. Мин: {0} Макс: {1} Стандарт: {2}</SoS.Settings.MaxTravelTime>
 	<SoS.Settings.MaxTravelTime.Desc>Максимальное количество лет, которые проходят в межзвёздном путешествии.</SoS.Settings.MaxTravelTime.Desc>
 	
-	<SoS.Settings.Danger>Экспериментальные настройки</SoS.Settings.Danger>
-	<SoS.Settings.EnemyMapSize>Размер карты: {3}. Мин: {0} Макс: {1} Стандарт: {2}</SoS.Settings.EnemyMapSize>
+	<SoS.Settings.Danger>Продвинутые настройки</SoS.Settings.Danger>
+	<SoS.Settings.EnemyMapSize>Размер вражеских карт: {3}. Мин: {0} Макс: {1} Стандарт: {2}</SoS.Settings.EnemyMapSize>
 	<SoS.Settings.EnemyMapSize.Desc>Переопределение размера карты. Позволит флотам появляться на огромных картах с более крупными кораблями, работает на высоком боевом рейтинге. Некоторые корабли из корабельных паков могут не появляться в игре, так как им не хватает места на карте.</SoS.Settings.EnemyMapSize.Desc>
 
 	<!--<SoS.Settings.UseVacuumPathfinding>Избегать вакуума</SoS.Settings.UseVacuumPathfinding>

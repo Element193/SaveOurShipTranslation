@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!-- Структуры -->
+   <ARLMiscArmContainer.label>Странный контейнер</ARLMiscArmContainer.label>
+   <ARLMiscBeerContainer.label>Запечатанный контейнер</ARLMiscBeerContainer.label>
+
+   <StationGeneralRing.label>Средняя кольцевая станция</StationGeneralRing.label>
+
+<!-- Разные корабли -->
+  <ARLArchoFighterPsy.label>Пси-истребитель Архотек</ARLArchoFighterPsy.label>
+
+  <ARLAkrinatorBattle.label>Эсминец Акринатор</ARLAkrinatorBattle.label>
+
+  <ARLAkrinatorT2.label>Эсминец Акринатор-М</ARLAkrinatorT2.label>
+
+  <ARLAkrinatorT2Start.label>Эсминец Акринатор-М</ARLAkrinatorT2Start.label>
+
+  <ARLAkrinatorUniversal.label>Эсминец Акринатор-У</ARLAkrinatorUniversal.label>
+
+  <ARLGaussBattle.label>Корвет Гаусс</ARLGaussBattle.label>
+
+  <ARLGaussStart.label>Корвет Гаусс</ARLGaussStart.label>
+
+<!-- Персональные мини-корабли -->
+  <ARLSmallPersonal1.label>Малый личный корабль</ARLSmallPersonal1.label>
+  <ARLSmallMining.label>Малый добывающий корабль</ARLSmallMining.label>
+
+</LanguageData>

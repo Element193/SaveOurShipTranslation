@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<ARL.SOSSetts.Addons.Title>Addons</ARL.SOSSetts.Addons.Title>
+	<ARL.SOSSetts.Antiproton.Label>In progress</ARL.SOSSetts.Antiproton.Label>
+	<ARL.SOSSetts.Antiproton.Desc>The antiproton add-on. Includes a storyline of seven quests with some dialogues, items, ships, and ship equipment.</ARL.SOSSetts.Antiproton.Desc>
+
+	<ARL.SOSSetts.Ships.Title>Ships</ARL.SOSSetts.Ships.Title>
+	<ARL.SOSSetts.Ships.Label>In progress</ARL.SOSSetts.Ships.Label>
+	<ARL.SOSSetts.Ships.Desc>Do you want ships from the StarSector game to appear in the game?\n\nShips were created by Antisodium.</ARL.SOSSetts.Ships.Desc>
+	<ARL.SOSSetts.X4Foundations.Label>In progress</ARL.SOSSetts.X4Foundations.Label>
+	<ARL.SOSSetts.X4Foundations.Desc>Enable ships from X4 Foundations.</ARL.SOSSetts.X4Foundations.Desc>
+	<ARL.SOSSetts.OtherShips.Label>In progress</ARL.SOSSetts.OtherShips.Label>
+	<ARL.SOSSetts.OtherShips.Desc>Various ships and structures that will appear in the game.</ARL.SOSSetts.OtherShips.Desc>
+
+	<ARL.SOSSets.Patches.Title>Patches</ARL.SOSSets.Patches.Title>
+	<ARL.SOSSets.Energopatch.Label>Energy patch</ARL.SOSSets.Energopatch.Label>
+	<ARL.SOSSets.Energopatch.Desc>Reduces the energy consumption of life support systems by 2x, and the small life support system by 3x.\n\nApplied in-game, but a restart may be required.</ARL.SOSSets.Energopatch.Desc>
+	<ARL.SOSSets.Odysseytexpatch.Label>Odyssey hull graphics</ARL.SOSSets.Odysseytexpatch.Label>
+	<ARL.SOSSets.Odysseytexpatch.Desc>Replaces the graphics of the Save Our Ship mod with textures from the Odyssey add-on.\n\nApplied in-game, but a restart is required.</ARL.SOSSets.Odysseytexpatch.Desc>
+	<ARL.SOSSets.ThrustersPatch.Label>Odyssey thrusters graphics</ARL.SOSSets.ThrustersPatch.Label>
+	<ARL.SOSSets.ThrustersPatch.Desc>Replaces the graphics of the Save Our Ship mod with textures from the Odyssey add-on. Also changes the rendering layer of the RCS thruster from SOS so it doesn't appear over other structures.\n\nApplied in-game, but a restart is required.</ARL.SOSSets.ThrustersPatch.Desc>
+	<ARL.SOSSets.HoverModepatch.Label>Russian translation patch</ARL.SOSSets.HoverModepatch.Label>
+	<ARL.SOSSets.HoverModepatch.Desc>Replaces the text "Hover Mode" with "Режим парения" in the shuttles UI. Use this if you want to learn some russian words.\n\nApplied in-game, but a restart may be required.</ARL.SOSSets.HoverModepatch.Desc>
+</LanguageData>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <Def>
+    <defName>HoverModeTranslationPatchEnable</defName>
+    <label>Hover mode translation patch enable</label>
+    <description>Dummy def used to enable the HoverMode translation XML patch.</description>
+  </Def>
+</Defs>

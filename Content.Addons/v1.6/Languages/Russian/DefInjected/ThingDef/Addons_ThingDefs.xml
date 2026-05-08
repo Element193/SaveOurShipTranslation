@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AntiprotoniumPod.label>антиропротонная капсула</AntiprotoniumPod.label>
+  <AntiprotoniumPod.description>Небольшая канистра, наполненная антипротонами.</AntiprotoniumPod.description>
+
+  <Ship_AntiprotoniumThruster.label>космический анти-ускоритель</Ship_AntiprotoniumThruster.label>
+  <Ship_AntiprotoniumThruster.description>Компактный ускоритель частиц из продвинутых миров. Имеет небольшой топливный бак и может обеспечить большое ускорение за короткое время. Используется для быстрого ухода от возможных угроз или сближения в бою.\n\n&lt;color=#bb8f04&gt;Тяга: 4200 кН.\nНе подходит для межзвездных путешествий.&lt;/color&gt;</Ship_AntiprotoniumThruster.description>
+
+  <Ship_IonThruster.label>космический ионный ускоритель</Ship_IonThruster.label>
+  <Ship_IonThruster.description>Компактный ионный ускоритель частиц из продвинутых миров. Менее мощен, чем ядерные и химические аналоги, использует энергию вместо топлива.\n\n&lt;color=#bb8f04&gt;Тяга: 600 кН.\nАктивное энергопотребление: 1200 Вт/д.\nНе подходит для межзвездных путешествий.&lt;/color&gt;</Ship_IonThruster.description>
+</LanguageData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef ParentName="ShipResearchProjectBase">
+		<defName>AcceleratingParticles</defName>
+		<label>accelerating particles</label>
+		<description>Particle acceleration will enable the construction of new types of compact accelerators that are less powerful than chemical and nuclear counterparts, but offer high fuel efficiency.</description>
+		<baseCost>4000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>ShipBasics</li>
+            <li>ShipEngine</li>
+		</prerequisites>
+		<tab>ResearchTabShip</tab>
+		<researchViewX>0.00</researchViewX>
+  		<researchViewY>0.80</researchViewY>
+	</ResearchProjectDef>
+
+    <!-- Ускорение частиц позволит сооружать новые типы компактных ускорителей, которые уступают химтопливным и ядерным аналогам по мощности, но имеют высокую топливную эффективность. -->
+</Defs>
