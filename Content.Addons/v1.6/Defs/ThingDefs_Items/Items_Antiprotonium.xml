@@ -3,8 +3,8 @@
 
 <ThingDef ParentName="ResourceBase">
     <defName>AntiprotoniumPod</defName>
-    <label>antiprotonium pod</label>
-    <description>A small pod of antiprotonium.</description>
+    <label>antiproton pod</label>
+    <description>A small pod with stable particles of antiprotons.</description>
     <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Item/Resource/AntiProtonCanister</texPath>

@@ -7,11 +7,11 @@
 	<MakeShuttleFuelPods.jobString>Изготавливает ядерное топливо.</MakeShuttleFuelPods.jobString>
 
 	<MakeShuttleFuelPods100.description>Изготовить 100 капсул с ядерным топливом.</MakeShuttleFuelPods100.description>
-	<MakeShuttleFuelPods100.label>изготовить ядерное топливо х100</MakeShuttleFuelPods100.label>
+	<MakeShuttleFuelPods100.label>изготовить ядерное топливо 100х</MakeShuttleFuelPods100.label>
 	<MakeShuttleFuelPods100.jobString>Изготавливает 100 капсул с ядерным топливом.</MakeShuttleFuelPods100.jobString>
 
 	<MakeShuttleFuelPods1000.description>Изготовить 1000 капсул с ядерным топливом.</MakeShuttleFuelPods1000.description>
-	<MakeShuttleFuelPods1000.label>изготовить ядерное топливо х1000</MakeShuttleFuelPods1000.label>
+	<MakeShuttleFuelPods1000.label>изготовить ядерное топливо 1000х</MakeShuttleFuelPods1000.label>
 	<MakeShuttleFuelPods1000.jobString>Изготавливает 1000 капсул с ядерным топливом.</MakeShuttleFuelPods1000.jobString>
 
 	<!-- Рециклотрон -->
@@ -25,20 +25,20 @@
 	<MakeHullFoam.jobString>Изготавливает канистру каркасной пены.</MakeHullFoam.jobString>
 
 	<MakeHullFoam10.description>Изготовить 10 канистр каркасной пены.</MakeHullFoam10.description>
-	<MakeHullFoam10.label>изготовить каркасную пену х10</MakeHullFoam10.label>
+	<MakeHullFoam10.label>изготовить каркасную пену 10х</MakeHullFoam10.label>
 	<MakeHullFoam10.jobString>Изготавливает 10 канистр каркасной пены.</MakeHullFoam10.jobString>
 
 	<!-- Боеприпасы -->
 	<MakeAntigrainTorpedo4.description>Изготовить 4 гранульные торпеды для торпедного аппарата.</MakeAntigrainTorpedo4.description>
-	<MakeAntigrainTorpedo4.label>изготовить гранульные торпеды х4</MakeAntigrainTorpedo4.label>
+	<MakeAntigrainTorpedo4.label>изготовить гранульные торпеды 4х</MakeAntigrainTorpedo4.label>
 	<MakeAntigrainTorpedo4.jobString>Изготавливает 4 гранульные торпеды.</MakeAntigrainTorpedo4.jobString>
 
 	<MakeAntigrainWarheadx4.description>Изготовить 4 гранульные боеголовки.</MakeAntigrainWarheadx4.description>
-	<MakeAntigrainWarheadx4.label>изготовить гранульные боеголовки х4</MakeAntigrainWarheadx4.label>
+	<MakeAntigrainWarheadx4.label>изготовить гранульные боеголовки 4х</MakeAntigrainWarheadx4.label>
 	<MakeAntigrainWarheadx4.jobString>Изготавливает 4 гранульные боеголовки.</MakeAntigrainWarheadx4.jobString>
 
 	<MakeEMPShellx4.description>Изготовить 4 ЭМИ-снаряда.</MakeEMPShellx4.description>
-	<MakeEMPShellx4.label>изготовить ЭМИ-снаряд х4</MakeEMPShellx4.label>
+	<MakeEMPShellx4.label>изготовить ЭМИ-снаряд 4х</MakeEMPShellx4.label>
 	<MakeEMPShellx4.jobString>Изготавливает 4 ЭМИ-снаряда.</MakeEMPShellx4.jobString>
 
 	<MakeEMPTorpedo4.description>Изготовить 4 ЭМИ-торпеды.</MakeEMPTorpedo4.description>
@@ -46,11 +46,11 @@
 	<MakeEMPTorpedo4.jobString>Изготавливает 4 ЭМИ-торпеды.</MakeEMPTorpedo4.jobString>
 
 	<MakeHighExplosiveShellx4.description>Изготовить 4 осколочных снаряда.</MakeHighExplosiveShellx4.description>
-	<MakeHighExplosiveShellx4.label>изготовить осколочные снаряды х4</MakeHighExplosiveShellx4.label>
+	<MakeHighExplosiveShellx4.label>изготовить осколочные снаряды 4х</MakeHighExplosiveShellx4.label>
 	<MakeHighExplosiveShellx4.jobString>Изготавливает 4 осколочных снаряда.</MakeHighExplosiveShellx4.jobString>
 
 	<MakeHighExplosiveTorpedo4.description>Изготовить 4 осколочные торпеды.</MakeHighExplosiveTorpedo4.description>
-	<MakeHighExplosiveTorpedo4.label>изготовить осколочные торпеды х4</MakeHighExplosiveTorpedo4.label>
+	<MakeHighExplosiveTorpedo4.label>изготовить осколочные торпеды 4х</MakeHighExplosiveTorpedo4.label>
 	<MakeHighExplosiveTorpedo4.jobString>Изготавливает 4 осколочные торпеды.</MakeHighExplosiveTorpedo4.jobString>
 
 	<!-- Архоимпланты -->

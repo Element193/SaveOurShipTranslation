@@ -3,7 +3,7 @@
 	<ResearchProjectDef ParentName="ShipResearchProjectBase">
 		<defName>AcceleratingParticles</defName>
 		<label>accelerating particles</label>
-		<description>Particle acceleration will enable the construction of new types of compact accelerators that are less powerful than chemical and nuclear counterparts, but offer high fuel efficiency.</description>
+		<description>Particle acceleration will enable the construction of new types of compact thrusters from advanced worlds.</description>
 		<baseCost>4000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>

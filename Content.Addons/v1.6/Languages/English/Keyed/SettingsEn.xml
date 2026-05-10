@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<ARL.SOSSetts.Addons.Title>Addons</ARL.SOSSetts.Addons.Title>
-	<ARL.SOSSetts.Antiproton.Label>In progress</ARL.SOSSetts.Antiproton.Label>
-	<ARL.SOSSetts.Antiproton.Desc>The antiproton add-on. Includes a storyline of seven quests with some dialogues, items, ships, and ship equipment.</ARL.SOSSetts.Antiproton.Desc>
+	<SocSetts.Addons.title>Addons</SocSetts.Addons.title>
+	<SocSetts.AcceleratingParticles.label>Accelerating Particles</SocSetts.AcceleratingParticles.label>
+	<SocSetts.AcceleratingParticles.desc>Adds new content including ion thrusters, anti‑thrusters, and antiproton capsules.
 
-	<ARL.SOSSetts.Ships.Title>Ships</ARL.SOSSetts.Ships.Title>
-	<ARL.SOSSetts.Ships.Label>In progress</ARL.SOSSetts.Ships.Label>
-	<ARL.SOSSetts.Ships.Desc>Do you want ships from the StarSector game to appear in the game?\n\nShips were created by Antisodium.</ARL.SOSSetts.Ships.Desc>
-	<ARL.SOSSetts.X4Foundations.Label>In progress</ARL.SOSSetts.X4Foundations.Label>
-	<ARL.SOSSetts.X4Foundations.Desc>Enable ships from X4 Foundations.</ARL.SOSSetts.X4Foundations.Desc>
-	<ARL.SOSSetts.OtherShips.Label>In progress</ARL.SOSSetts.OtherShips.Label>
-	<ARL.SOSSetts.OtherShips.Desc>Various ships and structures that will appear in the game.</ARL.SOSSetts.OtherShips.Desc>
+- Ion Thruster: Requires no fuel, consumes 120 W of energy when active, providing thrust of 600 kN.
+- Anti‑Thruster: “Provides a thrust of 4200 kN, but has a small tank and high antiproton consumption.
 
-	<ARL.SOSSets.Patches.Title>Patches</ARL.SOSSets.Patches.Title>
-	<ARL.SOSSets.Energopatch.Label>Energy patch</ARL.SOSSets.Energopatch.Label>
-	<ARL.SOSSets.Energopatch.Desc>Reduces the energy consumption of life support systems by 2x, and the small life support system by 3x.\n\nApplied in-game, but a restart may be required.</ARL.SOSSets.Energopatch.Desc>
-	<ARL.SOSSets.Odysseytexpatch.Label>Odyssey hull graphics</ARL.SOSSets.Odysseytexpatch.Label>
-	<ARL.SOSSets.Odysseytexpatch.Desc>Replaces the graphics of the Save Our Ship mod with textures from the Odyssey add-on.\n\nApplied in-game, but a restart is required.</ARL.SOSSets.Odysseytexpatch.Desc>
-	<ARL.SOSSets.ThrustersPatch.Label>Odyssey thrusters graphics</ARL.SOSSets.ThrustersPatch.Label>
-	<ARL.SOSSets.ThrustersPatch.Desc>Replaces the graphics of the Save Our Ship mod with textures from the Odyssey add-on. Also changes the rendering layer of the RCS thruster from SOS so it doesn't appear over other structures.\n\nApplied in-game, but a restart is required.</ARL.SOSSets.ThrustersPatch.Desc>
-	<ARL.SOSSets.HoverModepatch.Label>Russian translation patch</ARL.SOSSets.HoverModepatch.Label>
-	<ARL.SOSSets.HoverModepatch.Desc>Replaces the text "Hover Mode" with "Режим парения" in the shuttles UI. Use this if you want to learn some russian words.\n\nApplied in-game, but a restart may be required.</ARL.SOSSets.HoverModepatch.Desc>
+The setting does not fully disable the content; it simply removes thrusters from the construction menu and antiproton from the crafting menu.
+
+Applied after restart.</SocSetts.AcceleratingParticles.desc>
+
+	<SocSetts.Ships.title>Ships</SocSetts.Ships.title>
+	<SocSetts.StarSectorShips.label>StarSector</SocSetts.StarSectorShips.label>
+	<SocSetts.StarSectorShips.desc>A collection of ships in the style of the StarSector game. Includes several destroyers and frigates with a combat rating of 1000, and other types of ships - fighters, bombers, cargo ships, shuttles.\n\n- Ships have been reworked, the original version was created by Antisodium.</SocSetts.StarSectorShips.desc>
+	<SocSetts.X4FoundationsShips.label>X4 Foundations</SocSetts.X4FoundationsShips.label>
+	<SocSetts.X4FoundationsShips.desc>A collection of ships in the style of the X4 Foundations game. Includes several large ships with a combat rating of 2000, like the Asgard cruiser, and other ship classes - fighters, frigates, cargo ships, destroyers.</SocSetts.X4FoundationsShips.desc>
+	<SocSetts.DifferentShips.label>Various Ships</SocSetts.DifferentShips.label>
+	<SocSetts.DifferentShips.desc>A collection of various ships and structures that do not fall into other categories. May contain stations, mini-ships, fighters, cargo ships, frigates, destroyers, and cruisers.</SocSetts.DifferentShips.desc>
+
+	<SocSetts.Patches.Title>Patches</SocSetts.Patches.Title>
+	<SocSetts.LifeSupportEnergy.label>Energy Patch</SocSetts.LifeSupportEnergy.label>
+	<SocSetts.LifeSupportEnergy.desc>Reduces the energy consumption of the life support system by 2x, and the small life support system by 3x.\n\nApplied after restart.</SocSetts.LifeSupportEnergy.desc>
+	<SocSetts.OdysseyHullGraphics.label>Odyssey Hull Graphics</SocSetts.OdysseyHullGraphics.label>
+	<SocSetts.OdysseyHullGraphics.desc>Ship hull graphics from the Odyssey add-on.\n\nApplied after restart.</SocSetts.OdysseyHullGraphics.desc>
+	<SocSetts.OdysseyThrustersGraphics.label>Odyssey Thrusters Graphics</SocSetts.OdysseyThrustersGraphics.label>
+	<SocSetts.OdysseyThrustersGraphics.desc>Ship thruster graphics from the Odyssey add-on.\n\nApplied after restart.</SocSetts.OdysseyThrustersGraphics.desc>
+	<SocSetts.RCSLayerFix.label>RCS Layer Fix</SocSetts.RCSLayerFix.label>
+	<SocSetts.RCSLayerFix.desc>Sets the RCS thruster render layer to FloorEmplacement so it displays correctly.\n\nApplied after restart.</SocSetts.RCSLayerFix.desc>
+	<SocSetts.RussianTranslation.label>Translation Patch</SocSetts.RussianTranslation.label>
+	<SocSetts.RussianTranslation.desc>Replaces the text "Hover Mode" with "Режим парения" in the shuttle interface. Apply if want to learn some Russian words.\n\nApplied after restart.</SocSetts.RussianTranslation.desc>
+	<SocSetts.Active.stat>Loaded </SocSetts.Active.stat>
 </LanguageData>

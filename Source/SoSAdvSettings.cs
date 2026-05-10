@@ -5,52 +5,53 @@ using Verse;
 
 namespace SaveOurCat
 {
-    public class SaveOurCatSetts : ModSettings
+    public class Soc_ModSettings : ModSettings
     {
-        public bool enableOdysseyTexPatch = false;
-        public bool enableAntiproton = false;
-        public bool enableStarSectorShips = false;
-        public bool enableX4FoundationsShips = false;
-        public bool enableOtherShips = false;
-        public bool enableHoverModePatch = false;
-        public bool enableEnergopatch = false;
-        public bool enableThrustersPatch = false;
+        public bool Soc_Flag_OdysseyHullGraphics = false;
+        public bool Soc_Flag_AccelerationParticles = true;
+        public bool Soc_Flag_RussianTranslation = false;
+        public bool Soc_Flag_LifeSupportEnergy = false;
+        public bool Soc_Flag_OdysseyThrustersGraphics = false;
+        public bool Soc_Flag_RCSLayerFix = true;
 
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref enableOdysseyTexPatch, "enableOdysseyTexPatch", false);
-            Scribe_Values.Look(ref enableAntiproton, "enableAntiproton", false);
-            Scribe_Values.Look(ref enableStarSectorShips, "enableStarSectorShips", false);
-            Scribe_Values.Look(ref enableX4FoundationsShips, "enableX4FoundationsShips", false);
-            Scribe_Values.Look(ref enableOtherShips, "enableOtherShips", false);
-            Scribe_Values.Look(ref enableHoverModePatch, "enableHoverModePatch", false);
-            Scribe_Values.Look(ref enableEnergopatch, "enableEnergopatch", false);
-            Scribe_Values.Look(ref enableThrustersPatch, "enableThrustersPatch", false);
+            Scribe_Values.Look(ref Soc_Flag_OdysseyHullGraphics, "enableOdysseyHullGraphics", false);
+            Scribe_Values.Look(ref Soc_Flag_AccelerationParticles, "enableAccelerationParticles", true);
+            Scribe_Values.Look(ref Soc_Flag_RussianTranslation, "enableRussianTranslation", false);
+            Scribe_Values.Look(ref Soc_Flag_LifeSupportEnergy, "enableLifeSupportEnergy", false);
+            Scribe_Values.Look(ref Soc_Flag_OdysseyThrustersGraphics, "enableOdysseyThrustersGraphics", false);
+            Scribe_Values.Look(ref Soc_Flag_RCSLayerFix, "enableRCSLayerFix", true);
             base.ExposeData();
         }
     }
 
     public class SaveOurCat : Mod
     {
-        public static SaveOurCatSetts settings;
+        public static Soc_ModSettings settings;
 
         public SaveOurCat(ModContentPack content) : base(content)
         {
-            settings = GetSettings<SaveOurCatSetts>();
+            settings = GetSettings<Soc_ModSettings>();
             LongEventHandler.ExecuteWhenFinished(ApplyPatchIfNeeded);
         }
 
         private static void ApplyPatchIfNeeded()
         {
-            ARLOdysseyPatchApplier.ApplyPatchIfNeeded();
-            ARLOdysseyThrustersPatchApplier.ApplyPatchIfNeeded();
-            if (settings.enableEnergopatch)
+            Soc_PatchLogics.ApplyIfNeed_OdysseyHullGraphics();
+            Soc_PatchLogics.ApplyIfNeedOdysseyThrustersGraphics();
+            Soc_PatchLogics.ApplyIfNeed_AcceleratingParticles();
+            if (settings.Soc_Flag_RCSLayerFix)
             {
-                ARLEnergyPatchApplier.ApplyPatch();
+                Soc_PatchLogics.ApplyIfNeed_RCSLayerFix();
             }
-            if (settings.enableHoverModePatch)
+            if (settings.Soc_Flag_LifeSupportEnergy)
             {
-                ARLHoverModePatchApplier.ApplyPatch();
+                Soc_PatchLogics.ApplyIfNeed_LifeSupportEnergy();
+            }
+            if (settings.Soc_Flag_RussianTranslation)
+            {
+                Soc_PatchLogics.ApplyIfNeed_RussianTranslation();
             }
         }
 
@@ -63,32 +64,62 @@ namespace SaveOurCat
             listing.Begin(inRect);
 
             // Addons
-            Text.Font = GameFont.Medium;
-            listing.Label("ARL.SOSSetts.Addons.Title".Translate());
-            Text.Font = GameFont.Small;
+            Text.Anchor = TextAnchor.MiddleCenter;
+            listing.Label("SocSetts.Addons.title".Translate());
+            Text.Anchor = TextAnchor.UpperLeft;
             listing.GapLine();
-            listing.CheckboxLabeled("ARL.SOSSetts.Antiproton.Label".Translate(), ref settings.enableAntiproton, "ARL.SOSSetts.Antiproton.Desc".Translate());
+            listing.CheckboxLabeled("SocSetts.AcceleratingParticles.label".Translate(), ref settings.Soc_Flag_AccelerationParticles, "SocSetts.AcceleratingParticles.desc".Translate());
             listing.Gap();
 
             // Ships
-            Text.Font = GameFont.Medium;
-            listing.Label("ARL.SOSSetts.Ships.Title".Translate());
-            Text.Font = GameFont.Small;
+            Text.Anchor = TextAnchor.MiddleCenter;
+            listing.Label("SocSetts.Ships.title".Translate());
+            Text.Anchor = TextAnchor.UpperLeft;
             listing.GapLine();
-            listing.CheckboxLabeled("ARL.SOSSetts.Ships.Label".Translate(), ref settings.enableStarSectorShips, "ARL.SOSSetts.Ships.Desc".Translate());
-            listing.CheckboxLabeled("ARL.SOSSetts.X4Foundations.Label".Translate(), ref settings.enableX4FoundationsShips, "ARL.SOSSetts.X4Foundations.Desc".Translate());
-            listing.CheckboxLabeled("ARL.SOSSetts.OtherShips.Label".Translate(), ref settings.enableOtherShips, "ARL.SOSSetts.OtherShips.Desc".Translate());
+            
+            // StarSector Ships
+            Rect starSectorRect = listing.GetRect(24f);
+            Rect starSectorLabelRect = new Rect(starSectorRect.x, starSectorRect.y, starSectorRect.width - 80, starSectorRect.height);
+            Widgets.Label(starSectorLabelRect, "SocSetts.StarSectorShips.label".Translate());
+            TooltipHandler.TipRegion(starSectorLabelRect, "SocSetts.StarSectorShips.desc".Translate());
+            GUI.color = Color.green;
+            Widgets.Label(new Rect(starSectorRect.xMax - 100, starSectorRect.y, 100, 24), "SocSetts.Active.stat".Translate());
+            GUI.color = Color.white;
+            listing.Gap(4f);
+
+            // X4 Foundations Ships
+            Rect x4Rect = listing.GetRect(24f);
+            Rect x4LabelRect = new Rect(x4Rect.x, x4Rect.y, x4Rect.width - 80, x4Rect.height);
+            Widgets.Label(x4LabelRect, "SocSetts.X4FoundationsShips.label".Translate());
+            TooltipHandler.TipRegion(x4LabelRect, "SocSetts.X4FoundationsShips.desc".Translate());
+            GUI.color = Color.green;
+            Widgets.Label(new Rect(x4Rect.xMax - 100, x4Rect.y, 100, 24), "SocSetts.Active.stat".Translate());
+            GUI.color = Color.white;
+            listing.Gap(4f);
+
+            // Other Ships
+            Rect otherRect = listing.GetRect(24f);
+            Rect otherLabelRect = new Rect(otherRect.x, otherRect.y, otherRect.width - 80, otherRect.height);
+            Widgets.Label(otherLabelRect, "SocSetts.DifferentShips.label".Translate());
+            TooltipHandler.TipRegion(otherLabelRect, "SocSetts.DifferentShips.desc".Translate());
+            GUI.color = Color.green;
+            Widgets.Label(new Rect(otherRect.xMax - 100, otherRect.y, 100, 24), "SocSetts.Active.stat".Translate());
+            GUI.color = Color.white;
+            listing.Gap(4f);
+            
             listing.Gap();
 
             // Patches
-            Text.Font = GameFont.Medium;
-            listing.Label("ARL.SOSSets.Patches.Title".Translate());
-            Text.Font = GameFont.Small;
+            Rect patchesTitleRect = listing.GetRect(24f);
+            Text.Anchor = TextAnchor.MiddleCenter;
+            Widgets.Label(patchesTitleRect, "SocSetts.Patches.Title".Translate());
+            Text.Anchor = TextAnchor.UpperLeft;
             listing.GapLine();
-            listing.CheckboxLabeled("ARL.SOSSets.Energopatch.Label".Translate(), ref settings.enableEnergopatch, "ARL.SOSSets.Energopatch.Desc".Translate());
-            listing.CheckboxLabeled("ARL.SOSSets.Odysseytexpatch.Label".Translate(), ref settings.enableOdysseyTexPatch, "ARL.SOSSets.Odysseytexpatch.Desc".Translate());
-            listing.CheckboxLabeled("ARL.SOSSets.ThrustersPatch.Label".Translate(), ref settings.enableThrustersPatch, "ARL.SOSSets.ThrustersPatch.Desc".Translate());
-            listing.CheckboxLabeled("ARL.SOSSets.HoverModepatch.Label".Translate(), ref settings.enableHoverModePatch, "ARL.SOSSets.HoverModepatch.Desc".Translate());
+            listing.CheckboxLabeled("SocSetts.LifeSupportEnergy.label".Translate(), ref settings.Soc_Flag_LifeSupportEnergy, "SocSetts.LifeSupportEnergy.desc".Translate());
+            listing.CheckboxLabeled("SocSetts.OdysseyHullGraphics.label".Translate(), ref settings.Soc_Flag_OdysseyHullGraphics, "SocSetts.OdysseyHullGraphics.desc".Translate());
+            listing.CheckboxLabeled("SocSetts.OdysseyThrustersGraphics.label".Translate(), ref settings.Soc_Flag_OdysseyThrustersGraphics, "SocSetts.OdysseyThrustersGraphics.desc".Translate());
+            listing.CheckboxLabeled("SocSetts.RCSLayerFix.label".Translate(), ref settings.Soc_Flag_RCSLayerFix, "SocSetts.RCSLayerFix.desc".Translate());
+            listing.CheckboxLabeled("SocSetts.RussianTranslation.label".Translate(), ref settings.Soc_Flag_RussianTranslation, "SocSetts.RussianTranslation.desc".Translate());
 
             listing.End();
         }
@@ -96,11 +127,17 @@ namespace SaveOurCat
         public override string SettingsCategory() => "Save Our Cat";
     }
 
-    public static class ARLOdysseyPatchApplier
+    public static class Soc_PatchLogics
     {
-        public static void ApplyPatchIfNeeded()
+        private static bool Soc_OdysseyGraphics_Applied = false;
+        private static bool Soc_OdysseyThrusters_Applied = false;
+        private static bool Soc_RCSLayerFix_Applied = false;
+        private static bool Soc_LifeSypportEnergy_Applied = false;
+        private static bool Soc_RussianTranslation_Applied = false;
+        private static bool Soc_AccelerationParticles_Applied = false;
+        public static void ApplyIfNeed_OdysseyHullGraphics()
         {
-if (!(SaveOurCat.settings?.enableOdysseyTexPatch ?? false))
+            if (!(SaveOurCat.settings?.Soc_Flag_OdysseyHullGraphics ?? false) || Soc_OdysseyGraphics_Applied)
             {
                 return;
             }
@@ -110,10 +147,53 @@ if (!(SaveOurCat.settings?.enableOdysseyTexPatch ?? false))
                 return;
             }
 
-            ApplyPatch();
+            ApplyOdysseyTexPatch();
+            Soc_OdysseyGraphics_Applied = true;
         }
 
-        public static bool IsSaveOurShipLoaded()
+        public static void ApplyIfNeedOdysseyThrustersGraphics()
+        {
+            if (!(SaveOurCat.settings?.Soc_Flag_OdysseyThrustersGraphics ?? false) || Soc_OdysseyThrusters_Applied)
+            {
+                return;
+            }
+
+            if (!IsSaveOurShipLoaded())
+            {
+                return;
+            }
+
+            ApplyOdysseyThrustersPatch();
+            Soc_OdysseyThrusters_Applied = true;
+        }
+
+        public static void ApplyIfNeed_LifeSupportEnergy()
+        {
+            if (Soc_LifeSypportEnergy_Applied)
+            {
+                return;
+            }
+
+            ApplyEnergyPatchInternal("Ship_LifeSupport", 400f);
+            ApplyEnergyPatchInternal("Ship_LifeSupport_Small", 800f);
+            Soc_LifeSypportEnergy_Applied = true;
+        }
+
+        public static void ApplyIfNeed_RussianTranslation()
+        {
+            if (Soc_RussianTranslation_Applied)
+            {
+                return;
+            }
+
+            PatchDraftLabel("SoS2_Shuttle_Personal");
+            PatchDraftLabel("SoS2_Shuttle");
+            PatchDraftLabel("SoS2_Shuttle_Heavy");
+            PatchDraftLabel("SoS2_Shuttle_Superheavy");
+            Soc_RussianTranslation_Applied = true;
+        }
+
+        private static bool IsSaveOurShipLoaded()
         {
             foreach (var mod in LoadedModManager.RunningModsListForReading)
             {
@@ -128,27 +208,184 @@ if (!(SaveOurCat.settings?.enableOdysseyTexPatch ?? false))
             return false;
         }
 
-        private static void ApplyPatch()
+        private static void ApplyOdysseyTexPatch()
         {
-            // Ship_Beam
             PatchGraphic("Ship_Beam", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas", typeof(Graphic_Single), LinkDrawerType.Basic);
-
-            // Ship_Beam_Unpowered
             PatchGraphic("Ship_Beam_Unpowered", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas", typeof(Graphic_Single), LinkDrawerType.Basic);
-
-            // ShipAirlockBeam
             PatchGraphic("ShipAirlockBeam", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas", typeof(Graphic_Single), LinkDrawerType.Basic);
-
-            // Passive vents
             PatchTex("ShipInside_PassiveVent", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
             PatchTex("ShipInside_PassiveVentArchotech", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
             PatchTex("ShipInside_PassiveVentMechanoid", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
-
-            // Solar generators
             PatchTex("ShipInside_SolarGenerator", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
             PatchTex("ShipInside_SolarGeneratorArchotech", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
             PatchTex("ShipInside_SolarGeneratorMech", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
+        }
 
+        private static void ApplyOdysseyThrustersPatch()
+        {
+            PatchThruster("Ship_Engine_Small", "Things/Building/SmallThruster/SmallThruster", new Vector2(2f, 3f));
+            PatchThruster("Ship_Engine", "Things/Building/LateralThruster/LateralThruster", new Vector2(3f, 3f));
+        }
+
+        public static void ApplyIfNeed_AcceleratingParticles()
+        {
+            bool isEnabled = SaveOurCat.settings?.Soc_Flag_AccelerationParticles ?? false;
+            
+            if (!IsSaveOurShipLoaded())
+            {
+                return;
+            }
+
+            if (!isEnabled && !Soc_AccelerationParticles_Applied)
+            {
+                RemoveAcceleratingParticles();
+                Soc_AccelerationParticles_Applied = true;
+            }
+        }
+
+        public static void ApplyIfNeed_RCSLayerFix()
+        {
+            if (!(SaveOurCat.settings?.Soc_Flag_RCSLayerFix ?? false) || Soc_RCSLayerFix_Applied)
+            {
+                return;
+            }
+
+            if (!IsSaveOurShipLoaded())
+            {
+                return;
+            }
+
+            ApplyRCSLayerFix();
+            Soc_RCSLayerFix_Applied = true;
+        }
+
+        private static void ApplyRCSLayerFix()
+        {
+            var thruster = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_Thruster");
+            if (thruster != null)
+            {
+                thruster.altitudeLayer = AltitudeLayer.FloorEmplacement;
+            }
+        }
+
+        private static void ApplyAcceleratingParticles()
+        {
+            var designationCategory = DefDatabase<DesignationCategoryDef>.GetNamed("Ship");
+            var designatorDropdown = DefDatabase<DesignatorDropdownGroupDef>.GetNamedSilentFail("Ship_Engines");
+            
+            var antiproton = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_AntiprotoniumThruster");
+            if (antiproton != null)
+            {
+                if (designatorDropdown != null)
+                {
+                    antiproton.designatorDropdown = designatorDropdown;
+                }
+                antiproton.designationCategory = designationCategory;
+            }
+            
+            var ion = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_IonThruster");
+            if (ion != null)
+            {
+                if (designatorDropdown != null)
+                {
+                    ion.designatorDropdown = designatorDropdown;
+                }
+                ion.designationCategory = designationCategory;
+            }
+            
+            var recipe = DefDatabase<RecipeDef>.GetNamedSilentFail("MakeAntiprotoniumPods");
+            if (recipe != null)
+            {
+                if (recipe.recipeUsers == null)
+                {
+                    recipe.recipeUsers = new System.Collections.Generic.List<ThingDef>();
+                }
+                
+                var table = DefDatabase<ThingDef>.GetNamedSilentFail("TableMachining");
+                if (table != null && !recipe.recipeUsers.Contains(table))
+                {
+                    recipe.recipeUsers.Add(table);
+                }
+            }
+        }
+
+        private static void RemoveAcceleratingParticles()
+        {
+            var antiproton = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_AntiprotoniumThruster");
+            if (antiproton != null)
+            {
+                antiproton.designatorDropdown = null;
+                antiproton.designationCategory = null;
+            }
+            
+            var ion = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_IonThruster");
+            if (ion != null)
+            {
+                ion.designatorDropdown = null;
+                ion.designationCategory = null;
+            }
+            
+            var recipe = DefDatabase<RecipeDef>.GetNamedSilentFail("MakeAntiprotoniumPods");
+            if (recipe != null && recipe.recipeUsers != null)
+            {
+                var table = DefDatabase<ThingDef>.GetNamedSilentFail("TableMachining");
+                if (table != null)
+                {
+                    recipe.recipeUsers.Remove(table);
+                }
+            }
+        }
+
+        private static void PatchThruster(string defName, string texPath, Vector2 drawSize)
+        {
+            PatchTex(defName, texPath);
+            var engine = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
+            if (engine?.graphicData != null)
+            {
+                engine.graphicData.drawSize = drawSize;
+            }
+        }
+
+        private static void ApplyEnergyPatchInternal(string defName, float newPower)
+        {
+            var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
+            if (def?.comps == null)
+            {
+                return;
+            }
+
+            foreach (var comp in def.comps)
+            {
+                if (comp == null || comp.GetType().Name != "CompProperties_Power")
+                {
+                    continue;
+                }
+
+                var valueField = comp.GetType().GetField("basePowerConsumption", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
+                              ?? comp.GetType().GetField("powerConsumption", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                if (valueField == null || valueField.FieldType != typeof(float))
+                {
+                    continue;
+                }
+
+                valueField.SetValue(comp, newPower);
+                return;
+            }
+        }
+
+        private static void PatchDraftLabel(string defName)
+        {
+            var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
+            if (def == null || def.GetType().Name != "VehicleDef")
+            {
+                return;
+            }
+
+            var field = def.GetType().GetField("draftLabel", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+            if (field != null)
+            {
+                field.SetValue(def, "Режим парения");
+            }
         }
 
         private static void PatchGraphic(string defName, string texPath, System.Type graphicClass, LinkDrawerType linkType)
@@ -170,120 +407,7 @@ if (!(SaveOurCat.settings?.enableOdysseyTexPatch ?? false))
                 def.graphicData.texPath = texPath;
             }
         }
-    }
 
-    public static class ARLOdysseyThrustersPatchApplier
-    {
-        public static void ApplyPatchIfNeeded()
-        {
-            if (!(SaveOurCat.settings?.enableThrustersPatch ?? false))
-            {
-                return;
-            }
 
-            if (!ARLOdysseyPatchApplier.IsSaveOurShipLoaded())
-            {
-                return;
-            }
-
-            ApplyPatch();
-        }
-
-        private static void ApplyPatch()
-        {
-            PatchThruster("Ship_Engine_Small", "Things/Building/SmallThruster/SmallThruster", new Vector2(2f, 3f));
-            PatchThruster("Ship_Engine", "Things/Building/LateralThruster/LateralThruster", new Vector2(3f, 3f));
-            PatchThrusterAltitude("Ship_Thruster");
-        }
-
-        private static void PatchThrusterAltitude(string defName)
-        {
-            var thruster = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            if (thruster != null)
-            {
-                thruster.altitudeLayer = AltitudeLayer.Building;
-            }
-        }
-
-        private static void PatchThruster(string defName, string texPath, Vector2 drawSize)
-        {
-            PatchTex(defName, texPath);
-            var engine = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            if (engine?.graphicData != null)
-            {
-                engine.graphicData.drawSize = drawSize;
-            }
-        }
-
-        private static void PatchTex(string defName, string texPath)
-        {
-            var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            if (def?.graphicData != null)
-            {
-                def.graphicData.texPath = texPath;
-            }
-        }
-    }
-
-    public static class ARLEnergyPatchApplier
-    {
-        public static void ApplyPatch()
-        {
-            ApplyEnergyPatch("Ship_LifeSupport", 400f);
-            ApplyEnergyPatch("Ship_LifeSupport_Small", 800f);
-        }
-
-        private static void ApplyEnergyPatch(string defName, float newPower)
-        {
-            var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            if (def?.comps == null)
-            {
-                return;
-            }
-
-            foreach (var comp in def.comps)
-            {
-                if (comp == null || comp.GetType().Name != "CompProperties_Power")
-                {
-                    continue;
-                }
-
-                var valueField = comp.GetType().GetField("basePowerConsumption", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                                 ?? comp.GetType().GetField("powerConsumption", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-                if (valueField == null || valueField.FieldType != typeof(float))
-                {
-                    continue;
-                }
-
-                valueField.SetValue(comp, newPower);
-                return;
-            }
-        }
-    }
-
-    public static class ARLHoverModePatchApplier
-    {
-        public static void ApplyPatch()
-        {
-            PatchDraftLabel("SoS2_Shuttle_Personal");
-            PatchDraftLabel("SoS2_Shuttle");
-            PatchDraftLabel("SoS2_Shuttle_Heavy");
-            PatchDraftLabel("SoS2_Shuttle_Superheavy");
-        }
-
-        private static void PatchDraftLabel(string defName)
-        {
-            var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            if (def == null || def.GetType().Name != "VehicleDef")
-            {
-                return;
-            }
-
-            var field = def.GetType().GetField("draftLabel", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
-            if (field != null)
-            {
-                field.SetValue(def, "Режим парения");
-            }
-        }
     }
 }

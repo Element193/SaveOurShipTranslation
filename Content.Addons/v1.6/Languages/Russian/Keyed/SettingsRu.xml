@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<ARL.SOSSetts.Addons.Title>Дополнения</ARL.SOSSetts.Addons.Title>
-	<ARL.SOSSetts.Antiproton.Label>В разработке</ARL.SOSSetts.Antiproton.Label>
-	<ARL.SOSSetts.Antiproton.Desc>Дополнение связанное с антипротоном. Включает сюжет из семи квестов с небольшим количеством диалогов, предметы, корабли и корабельное оборудование.</ARL.SOSSetts.Antiproton.Desc>
+	<SocSetts.Addons.title>Дополнения</SocSetts.Addons.title>
+	<SocSetts.AcceleratingParticles.label>Ускоряющие частицы</SocSetts.AcceleratingParticles.label>
+	<SocSetts.AcceleratingParticles.desc>Добавляет новый контент, который включает ионные ускорители, анти-ускорители и капсулы с антипротоном.\n\n- Ионный ускоритель: не требует топлива, расходует 120 Вт/д энергии когда активен при тяге 600 кН.\n- Анти-ускоритель: Обеспечивает большую тягу в 4200 кН, но имеет малый бак и высокий расход антипротона.\n\nНастройка полностью не отключает контент, а просто убирает ускорители из меню строительства и антипротон из меню крафта.\n\nПрименяется после перезапуска.</SocSetts.AcceleratingParticles.desc>
 
-	<ARL.SOSSetts.Ships.Title>Корабли</ARL.SOSSetts.Ships.Title>
-	<ARL.SOSSetts.Ships.Label>В разработке</ARL.SOSSetts.Ships.Label>
-	<ARL.SOSSetts.Ships.Desc>Хотите, чтобы корабли из игры StarSector появлялись в игре?\n\nКорабли созданы Antisoudium.</ARL.SOSSetts.Ships.Desc>
-	<ARL.SOSSetts.X4Foundations.Label>В разработке</ARL.SOSSetts.X4Foundations.Label>
-	<ARL.SOSSetts.X4Foundations.Desc>Включить корабли из X4 Foundations.</ARL.SOSSetts.X4Foundations.Desc>
-	<ARL.SOSSetts.OtherShips.Label>В разработке</ARL.SOSSetts.OtherShips.Label>
-	<ARL.SOSSetts.OtherShips.Desc>Различные корабли и структуры, которые будут появляться в игре.</ARL.SOSSetts.OtherShips.Desc>
+	<SocSetts.Ships.title>Корабли</SocSetts.Ships.title>
+	<SocSetts.StarSectorShips.label>StarSector</SocSetts.StarSectorShips.label>
+	<SocSetts.StarSectorShips.desc>Коллекция кораблей в стиле игры StarSector. Включает несколько эсминцев и фрегатов с боевым рейтингом 1000, и другие типы кораблей - истребители, бомбардировщики, грузовые корабли, шаттлы.\n\n- Корабли переработаны, изначальная их версия создана Antisodium.</SocSetts.StarSectorShips.desc>
+	<SocSetts.X4FoundationsShips.label>X4 Foundations</SocSetts.X4FoundationsShips.label>
+	<SocSetts.X4FoundationsShips.desc>Коллекция кораблей в стиле игры X4 Foundations. Включает несколько крупных кораблей, с боевым рейтингом 2000, по типу крейсера Асгард, и другие классы кораблей - истребители, фрегаты, грузовые корабли, эсминцы.</SocSetts.X4FoundationsShips.desc>
+	<SocSetts.DifferentShips.label>Различные корабли</SocSetts.DifferentShips.label>
+	<SocSetts.DifferentShips.desc>Коллекция различных кораблей и структур, которые не входят в другие категории. Может содержать станции, мини-корабли, истребители, грузовые корабли, фрегаты, эсминцы и крейсеры.</SocSetts.DifferentShips.desc>
 
-	<ARL.SOSSets.Patches.Title>Патчи</ARL.SOSSets.Patches.Title>
-	<ARL.SOSSets.Energopatch.Label>Энергетический патч</ARL.SOSSets.Energopatch.Label>
-	<ARL.SOSSets.Energopatch.Desc>Уменьшает параметр потребления энергии системой жизнеобеспечения в 2 раза, и малой системой жизнеобеспечения в 3 раза.\n\nПрименяется прямо в игре, но возможно нужен перезапуск.</ARL.SOSSets.Energopatch.Desc>
-	<ARL.SOSSets.Odysseytexpatch.Label>Графика корпуса из Odyssey</ARL.SOSSets.Odysseytexpatch.Label>
-	<ARL.SOSSets.Odysseytexpatch.Desc>Заменяет графику мода Save Our Ship текстурами из дополнения Odyssey.\n\nПрименяется прямо в игре, но нужен перезапуск.</ARL.SOSSets.Odysseytexpatch.Desc>
-	<ARL.SOSSets.ThrustersPatch.Label>Графика ускорителей из Odyssey</ARL.SOSSets.ThrustersPatch.Label>
-	<ARL.SOSSets.ThrustersPatch.Desc>Заменяет графику мода Save Our Ship текстурами из дополнения Odyssey. Также изменяет слой отрисовки маневрового ускорителя из SOS, чтобы он не отображался поверх остальных построек.\n\nПрименяется прямо в игре, но нужен перезапуск.</ARL.SOSSets.ThrustersPatch.Desc>
-	<ARL.SOSSets.HoverModepatch.Label>Патч перевода</ARL.SOSSets.HoverModepatch.Label>
-	<ARL.SOSSets.HoverModepatch.Desc>Заменяет текст "Hover Mode" на "Режим парения" в интерфейсе шаттлов.\n\nПрименяется прямо в игре, но возможно нужен перезапуск.</ARL.SOSSets.HoverModepatch.Desc>
+	<SocSetts.Patches.Title>Патчи</SocSetts.Patches.Title>
+
+	<SocSetts.LifeSupportEnergy.label>Энергетический патч</SocSetts.LifeSupportEnergy.label>
+	<SocSetts.LifeSupportEnergy.desc>Уменьшает параметр потребления энергии системой жизнеобеспечения в 2 раза, и малой системой жизнеобеспечения в 3 раза.\n\nПрименяется после перезапуска.</SocSetts.LifeSupportEnergy.desc>
+
+	<SocSetts.OdysseyHullGraphics.label>Графика корпуса из Odyssey</SocSetts.OdysseyHullGraphics.label>
+	<SocSetts.OdysseyHullGraphics.desc>Графика корпуса корабля из дополнения Odyssey.\n\nПрименяется после перезапуска.</SocSetts.OdysseyHullGraphics.desc>
+
+	<SocSetts.OdysseyThrustersGraphics.label>Графика ускорителей из Odyssey</SocSetts.OdysseyThrustersGraphics.label>
+	<SocSetts.OdysseyThrustersGraphics.desc>Графика ускорителей корабля из дополнения Odyssey.\n\nПрименяется после перезапуска.</SocSetts.OdysseyThrustersGraphics.desc>
+
+	<SocSetts.RCSLayerFix.label>Фикс слоя отрисовки RCS ускорителя</SocSetts.RCSLayerFix.label>
+	<SocSetts.RCSLayerFix.desc>Устанавливает слой отрисовки RCS ускорителя на FloorEmplacement, чтобы он отображался корректно.\n\nПрименяется после перезапуска.</SocSetts.RCSLayerFix.desc>
+
+	<SocSetts.RussianTranslation.label>Патч перевода</SocSetts.RussianTranslation.label>
+	<SocSetts.RussianTranslation.desc>Заменяет текст "Hover Mode" на "Режим парения" в интерфейсе шаттлов.\n\nПрименяется после перезапуска.</SocSetts.RussianTranslation.desc>
+
+	<SocSetts.Active.stat>Подгружено </SocSetts.Active.stat>
 </LanguageData>

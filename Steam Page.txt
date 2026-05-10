@@ -1,0 +1,81 @@
+Save Our Ship - Russian translation & Addons | English page (UPD 10.05.2026)
+
+[table][tr][td][b]Mod content[/b][/td][/tr]
+[tr][td]Accelerating Particles
+- ion thruster;
+- antiproton thruster;
+- antiproton pod.[/td][/tr]
+[tr][td]Settings & patches
+- Accelerating Particles: enabled by default. Allows new content.
+- Energy patch: disabled by default. Reduces the energy consumption of the life support system by 2x, and the small life support system by 3x.
+- Odyssey Hull Graphics: disabled by default. Ship hull graphics from the Odyssey add-on.
+- Odyssey Thrusters Graphics: disabled by default. Ship thruster graphics from the Odyssey add-on.
+- RCS Layer Fix: enabled by default. Sets the RCS thruster render layer to "FloorEmplacement" so it looks correctly.
+- Translation Patch: disabled by default. Replaces the text "Hover Mode" with "Режим парения" in the shuttle interface. Apply if want to learn some Russian words.[/td][/tr]
+[tr][td]Some UI graphics replaces
+- UI map sites;
+- Storytellers;[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2119580203&tscn=1777154219]StarSector[/url] ships
+SSEHammerhead, SSESunder, SSEApogee1, SSEApogee2, SSEAurora, SSEEagle, SSEFalcon, SSEMudSkipper, SSECobra, SSEDagger, SSEGladius, SSELongbow, SSETempest, SSEVigilance, SSEWasp, SSEWolf, SSEKite, SSELasher.
+- Reworked, initial design for 1.3 by [url=https://steamcommunity.com/profiles/76561199026109832]Antisodium[/url][/td][/tr]
+[tr][td]X4 Foundations ships
+X4Syn-T, X4Syn-M, X4Syn-S, X4Asgard, X4Heron, X4Heron-S, X4Envoy, X4Hydra.[/td][/tr]
+[tr][td]Different ships & sites
+StationGeneralRing, ARLAkrinatorBattle, ARLAkrinatorT2, ARLAkrinatorUniversal, ARLGaussBattle, ARLArchoFighterPsy, ARLSmallPersonal1, ARLSmallMining, ARLMiscArmContainer, ARLMiscBeerContainer.[/td][/tr]
+[tr][td]Fleets
+FleetSSEAurora, FleetSSEEagle, FleetSSEStar1, FleetSSEStar2, FleetSSEStar3, FleetSSEStarFighters, FleetSSEWaspX5, FleetSSEWaspX3, FleetSSEWolfX3, FleetX4Asgard, FleetX4AsgardX3, FleetX4HeronX2.[/td][/tr]
+[tr][td]Translation
+- Russian: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1909914131]Save Our Ship 2[/url];
+- Russian: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2105531392]Save Our Ship Creation Kit[/url];
+- Russian: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3348080545]Low-Tech Ship pack for SOS2[/url];
+- English, Russian: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3267566396]SOS2-sun`s enemy ship extension[/url];
+- Russian: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3254564110]Spinal Engines for SOS2[/url];
+- English, Russian: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3552377765]Save Our Ship 2 - Scout Landing Zone[/url];
+- Separate translation for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3233872148]Vehicle Framework RU[/url].[/td][/tr][/table]
+
+[img]https://i.imgur.com/OSfCmCt.png[/img][url=https://steamcommunity.com/id/Thaiauxn][img]https://i.imgur.com/mHC2aOY.png[/img][/url]
+[img]https://i.imgur.com/8cx82Vx.png[/img][url=https://steamcommunity.com/profiles/76561198015454843][img]https://i.imgur.com/y46k4Ui.png[/img][/url]
+[img]https://i.imgur.com/8eC1Bu6.png[/img]
+[img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img]
+
+==========================================================================================================================================================
+
+Save Our Ship - Перевод, дополнения, патчи
+
+[table][tr][td][b]Контент мода[/b][/td][/tr]
+[tr][td]Ускоряющие частицы
+- ионный ускоритель;
+- антипротонный ускоритель;
+- капсула с антипротоном.[/td][/tr]
+[tr][td]Настройки и патчи
+- Ускоряющие частицы: включено по умолчанию. Добавляет новый контент.
+- Энергетический патч: отключено по умолчанию. Уменьшает энергопотребление системы жизнеобеспечения в 2 раза, а малой системы жизнеобеспечения — в 3 раза.
+- Графика корпуса Odyssey: отключено по умолчанию. Графика корпусов кораблей из аддона Odyssey.
+- Графика ускорителей Odyssey: отключено по умолчанию. Графика ускорителей кораблей из аддона Odyssey.
+- Исправление слоя RCS: включено по умолчанию. Устанавливает слой ускорителей RCS на "FloorEmplacement" для корректного отображения.
+- Патч перевода: отключено по умолчанию. Заменяет текст "Hover Mode" на "Режим парения" в интерфейсе шаттла.[/td][/tr]
+[tr][td]Некоторые элементы интерфейса заменены
+- UI карты локаций;
+- Рассказчики.[/td][/tr]
+[tr][td][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2119580203&tscn=1777154219]Корабли StarSector[/url]
+SSEHammerhead, SSESunder, SSEApogee1, SSEApogee2, SSEAurora, SSEEagle, SSEFalcon, SSEMudSkipper, SSECobra, SSEDagger, SSEGladius, SSELongbow, SSETempest, SSEVigilance, SSEWasp, SSEWolf, SSEKite, SSELasher.
+- Переработано, первоначальный дизайн для версии 1.3 от [url=https://steamcommunity.com/profiles/76561199026109832]Antisodium[/url][/td][/tr]
+[tr][td]Корабли X4 Foundations
+X4Syn-T, X4Syn-M, X4Syn-S, X4Asgard, X4Heron, X4Heron-S, X4Envoy, X4Hydra.[/td][/tr]
+[tr][td]Разные корабли и объекты
+StationGeneralRing, ARLAkrinatorBattle, ARLAkrinatorT2, ARLAkrinatorUniversal, ARLGaussBattle, ARLArchoFighterPsy, ARLSmallPersonal1, ARLSmallMining, ARLMiscArmContainer, ARLMiscBeerContainer.[/td][/tr]
+[tr][td]Флоты
+FleetSSEAurora, FleetSSEEagle, FleetSSEStar1, FleetSSEStar2, FleetSSEStar3, FleetSSEStarFighters, FleetSSEWaspX5, FleetSSEWaspX3, FleetSSEWolfX3, FleetX4Asgard, FleetX4AsgardX3, FleetX4HeronX2.[/td][/tr]
+[tr][td]Переводы
+- Русский: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1909914131]Save Our Ship 2[/url];
+- Русский: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2105531392]Save Our Ship Creation Kit[/url];
+- Русский: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3348080545]Low-Tech Ship pack for SOS2[/url];
+- Английский, Русский: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3267566396]SOS2-sun`s enemy ship extension[/url];
+- Русский: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3254564110]Spinal Engines for SOS2[/url];
+- Английский, Русский: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3552377765]Save Our Ship 2 - Scout Landing Zone[/url];
+- Отдельный перевод для [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3233872148]Vehicle Framework RU[/url].[/td][/tr][/table]
+
+[img]https://i.imgur.com/OSfCmCt.png[/img][url=https://steamcommunity.com/id/Thaiauxn][img]https://i.imgur.com/mHC2aOY.png[/img][/url]
+[img]https://i.imgur.com/8cx82Vx.png[/img][url=https://steamcommunity.com/profiles/76561198015454843][img]https://i.imgur.com/y46k4Ui.png[/img][/url]
+[img]https://i.imgur.com/8eC1Bu6.png[/img]
+[img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img] [img]https://i.imgur.com/F8R9d44.png[/img]

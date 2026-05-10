@@ -1,0 +1,11 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Source\obj\Release\Project.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Source\obj\Release\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Source\obj\Release\Project.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Source\obj\Release\Project.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Source\obj\Release\Project.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Source\obj\Release\Project.sourcelink.json
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Source\obj\Release\Project.csproj.Up2Date
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Content.Addons\v1.6\Assemblies\SaveOurShipTranslation.dll
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Content.Addons\v1.6\Assemblies\SaveOurShipTranslation.pdb
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Source\obj\Release\SaveOurShipTranslation.dll
+c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SaveOurShipTranslation\Source\obj\Release\SaveOurShipTranslation.pdb

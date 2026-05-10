@@ -421,7 +421,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj",
-      "projectName": "Project",
+      "projectName": "SaveOurShipTranslation",
       "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj",
       "packagesPath": "C:\\Users\\add23\\.nuget\\packages\\",
       "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\obj\\",
