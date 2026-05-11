@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 using Verse;
@@ -83,7 +84,7 @@ namespace SaveOurCat
             Widgets.Label(starSectorLabelRect, "SocSetts.StarSectorShips.label".Translate());
             TooltipHandler.TipRegion(starSectorLabelRect, "SocSetts.StarSectorShips.desc".Translate());
             GUI.color = Color.green;
-            Widgets.Label(new Rect(starSectorRect.xMax - 100, starSectorRect.y, 100, 24), "SocSetts.Active.stat".Translate());
+            Widgets.Label(new Rect(starSectorRect.xMax - 80, starSectorRect.y, 80, 24), "SocSetts.Active.stat".Translate());
             GUI.color = Color.white;
             listing.Gap(4f);
 
@@ -93,7 +94,7 @@ namespace SaveOurCat
             Widgets.Label(x4LabelRect, "SocSetts.X4FoundationsShips.label".Translate());
             TooltipHandler.TipRegion(x4LabelRect, "SocSetts.X4FoundationsShips.desc".Translate());
             GUI.color = Color.green;
-            Widgets.Label(new Rect(x4Rect.xMax - 100, x4Rect.y, 100, 24), "SocSetts.Active.stat".Translate());
+            Widgets.Label(new Rect(x4Rect.xMax - 80, x4Rect.y, 80, 24), "SocSetts.Active.stat".Translate());
             GUI.color = Color.white;
             listing.Gap(4f);
 
@@ -129,59 +130,65 @@ namespace SaveOurCat
 
     public static class Soc_PatchLogics
     {
-        private static bool Soc_OdysseyGraphics_Applied = false;
-        private static bool Soc_OdysseyThrusters_Applied = false;
-        private static bool Soc_RCSLayerFix_Applied = false;
-        private static bool Soc_LifeSypportEnergy_Applied = false;
-        private static bool Soc_RussianTranslation_Applied = false;
-        private static bool Soc_AccelerationParticles_Applied = false;
+        private static HashSet<string> appliedPatches = new HashSet<string>();
+        private static bool? _isSaveOurShipLoaded;
+
+        private static bool AlreadyApplied(string key) => appliedPatches.Contains(key);
+        private static void MarkApplied(string key) => appliedPatches.Add(key);
+
+        private static bool IsSaveOurShipLoadedCached()
+        {
+            if (_isSaveOurShipLoaded == null)
+                _isSaveOurShipLoaded = IsSaveOurShipLoaded();
+            return _isSaveOurShipLoaded.Value;
+        }
         public static void ApplyIfNeed_OdysseyHullGraphics()
         {
-            if (!(SaveOurCat.settings?.Soc_Flag_OdysseyHullGraphics ?? false) || Soc_OdysseyGraphics_Applied)
+            if (!(SaveOurCat.settings?.Soc_Flag_OdysseyHullGraphics ?? false) || AlreadyApplied("OdysseyHullGraphics"))
             {
                 return;
             }
 
-            if (!IsSaveOurShipLoaded())
+            if (!IsSaveOurShipLoadedCached())
             {
                 return;
             }
 
             ApplyOdysseyTexPatch();
-            Soc_OdysseyGraphics_Applied = true;
+            MarkApplied("OdysseyHullGraphics");
         }
 
         public static void ApplyIfNeedOdysseyThrustersGraphics()
         {
-            if (!(SaveOurCat.settings?.Soc_Flag_OdysseyThrustersGraphics ?? false) || Soc_OdysseyThrusters_Applied)
+            if (!(SaveOurCat.settings?.Soc_Flag_OdysseyThrustersGraphics ?? false) || AlreadyApplied("OdysseyThrusters"))
             {
                 return;
             }
 
-            if (!IsSaveOurShipLoaded())
+            if (!IsSaveOurShipLoadedCached())
             {
                 return;
             }
 
             ApplyOdysseyThrustersPatch();
-            Soc_OdysseyThrusters_Applied = true;
+            MarkApplied("OdysseyThrusters");
         }
 
         public static void ApplyIfNeed_LifeSupportEnergy()
         {
-            if (Soc_LifeSypportEnergy_Applied)
+            if (AlreadyApplied("LifeSupportEnergy"))
             {
                 return;
             }
 
             ApplyEnergyPatchInternal("Ship_LifeSupport", 400f);
             ApplyEnergyPatchInternal("Ship_LifeSupport_Small", 800f);
-            Soc_LifeSypportEnergy_Applied = true;
+            MarkApplied("LifeSupportEnergy");
         }
 
         public static void ApplyIfNeed_RussianTranslation()
         {
-            if (Soc_RussianTranslation_Applied)
+            if (AlreadyApplied("RussianTranslation"))
             {
                 return;
             }
@@ -190,7 +197,7 @@ namespace SaveOurCat
             PatchDraftLabel("SoS2_Shuttle");
             PatchDraftLabel("SoS2_Shuttle_Heavy");
             PatchDraftLabel("SoS2_Shuttle_Superheavy");
-            Soc_RussianTranslation_Applied = true;
+            MarkApplied("RussianTranslation");
         }
 
         private static bool IsSaveOurShipLoaded()
@@ -210,53 +217,60 @@ namespace SaveOurCat
 
         private static void ApplyOdysseyTexPatch()
         {
-            PatchGraphic("Ship_Beam", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas", typeof(Graphic_Single), LinkDrawerType.Basic);
-            PatchGraphic("Ship_Beam_Unpowered", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas", typeof(Graphic_Single), LinkDrawerType.Basic);
-            PatchGraphic("ShipAirlockBeam", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas", typeof(Graphic_Single), LinkDrawerType.Basic);
-            PatchTex("ShipInside_PassiveVent", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
-            PatchTex("ShipInside_PassiveVentArchotech", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
-            PatchTex("ShipInside_PassiveVentMechanoid", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
-            PatchTex("ShipInside_SolarGenerator", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
-            PatchTex("ShipInside_SolarGeneratorArchotech", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
-            PatchTex("ShipInside_SolarGeneratorMech", "Things/Building/Linked/GravshipHull/GravshipHull_Atlas");
+            string texPath = "Things/Building/Linked/GravshipHull/GravshipHull_Atlas";
+            
+            string[] linkDefs = { "Ship_Beam", "Ship_Beam_Unpowered", "ShipAirlockBeam" };
+            foreach (var defName in linkDefs)
+            {
+                PatchThingGraphic(defName, texPath, typeof(Graphic_Single), LinkDrawerType.Basic);
+            }
+            
+            string[] texDefs = {
+                "ShipInside_PassiveVent", "ShipInside_PassiveVentArchotech", "ShipInside_PassiveVentMechanoid",
+                "ShipInside_SolarGenerator", "ShipInside_SolarGeneratorArchotech", "ShipInside_SolarGeneratorMech"
+            };
+            foreach (var defName in texDefs)
+            {
+                PatchThingGraphic(defName, texPath);
+            }
         }
 
         private static void ApplyOdysseyThrustersPatch()
         {
-            PatchThruster("Ship_Engine_Small", "Things/Building/SmallThruster/SmallThruster", new Vector2(2f, 3f));
-            PatchThruster("Ship_Engine", "Things/Building/LateralThruster/LateralThruster", new Vector2(3f, 3f));
+            PatchThingGraphic("Ship_Engine_Small", "Things/Building/SmallThruster/SmallThruster", drawSize: new Vector2(2f, 3f));
+            PatchThingGraphic("Ship_Engine", "Things/Building/LateralThruster/LateralThruster", drawSize: new Vector2(3f, 3f));
         }
 
         public static void ApplyIfNeed_AcceleratingParticles()
         {
             bool isEnabled = SaveOurCat.settings?.Soc_Flag_AccelerationParticles ?? false;
             
-            if (!IsSaveOurShipLoaded())
+            if (!IsSaveOurShipLoadedCached())
             {
                 return;
             }
 
-            if (!isEnabled && !Soc_AccelerationParticles_Applied)
+            if (!isEnabled && !AlreadyApplied("AccelerationParticles"))
             {
                 RemoveAcceleratingParticles();
-                Soc_AccelerationParticles_Applied = true;
+                MarkApplied("AccelerationParticles");
             }
         }
 
         public static void ApplyIfNeed_RCSLayerFix()
         {
-            if (!(SaveOurCat.settings?.Soc_Flag_RCSLayerFix ?? false) || Soc_RCSLayerFix_Applied)
+            if (!(SaveOurCat.settings?.Soc_Flag_RCSLayerFix ?? false) || AlreadyApplied("RCSLayerFix"))
             {
                 return;
             }
 
-            if (!IsSaveOurShipLoaded())
+            if (!IsSaveOurShipLoadedCached())
             {
                 return;
             }
 
             ApplyRCSLayerFix();
-            Soc_RCSLayerFix_Applied = true;
+            MarkApplied("RCSLayerFix");
         }
 
         private static void ApplyRCSLayerFix()
@@ -273,25 +287,8 @@ namespace SaveOurCat
             var designationCategory = DefDatabase<DesignationCategoryDef>.GetNamed("Ship");
             var designatorDropdown = DefDatabase<DesignatorDropdownGroupDef>.GetNamedSilentFail("Ship_Engines");
             
-            var antiproton = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_AntiprotoniumThruster");
-            if (antiproton != null)
-            {
-                if (designatorDropdown != null)
-                {
-                    antiproton.designatorDropdown = designatorDropdown;
-                }
-                antiproton.designationCategory = designationCategory;
-            }
-            
-            var ion = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_IonThruster");
-            if (ion != null)
-            {
-                if (designatorDropdown != null)
-                {
-                    ion.designatorDropdown = designatorDropdown;
-                }
-                ion.designationCategory = designationCategory;
-            }
+            PatchThrusterCategory("Ship_AntiprotoniumThruster", designatorDropdown, designationCategory);
+            PatchThrusterCategory("Ship_IonThruster", designatorDropdown, designationCategory);
             
             var recipe = DefDatabase<RecipeDef>.GetNamedSilentFail("MakeAntiprotoniumPods");
             if (recipe != null)
@@ -311,19 +308,8 @@ namespace SaveOurCat
 
         private static void RemoveAcceleratingParticles()
         {
-            var antiproton = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_AntiprotoniumThruster");
-            if (antiproton != null)
-            {
-                antiproton.designatorDropdown = null;
-                antiproton.designationCategory = null;
-            }
-            
-            var ion = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_IonThruster");
-            if (ion != null)
-            {
-                ion.designatorDropdown = null;
-                ion.designationCategory = null;
-            }
+            PatchThrusterCategory("Ship_AntiprotoniumThruster", null, null);
+            PatchThrusterCategory("Ship_IonThruster", null, null);
             
             var recipe = DefDatabase<RecipeDef>.GetNamedSilentFail("MakeAntiprotoniumPods");
             if (recipe != null && recipe.recipeUsers != null)
@@ -336,13 +322,13 @@ namespace SaveOurCat
             }
         }
 
-        private static void PatchThruster(string defName, string texPath, Vector2 drawSize)
+        private static void PatchThrusterCategory(string defName, DesignatorDropdownGroupDef dropdown, DesignationCategoryDef category)
         {
-            PatchTex(defName, texPath);
-            var engine = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            if (engine?.graphicData != null)
+            var thruster = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
+            if (thruster != null)
             {
-                engine.graphicData.drawSize = drawSize;
+                thruster.designatorDropdown = dropdown;
+                thruster.designationCategory = category;
             }
         }
 
@@ -388,26 +374,18 @@ namespace SaveOurCat
             }
         }
 
-        private static void PatchGraphic(string defName, string texPath, System.Type graphicClass, LinkDrawerType linkType)
+        private static void PatchThingGraphic(string defName, string texPath, 
+                                              System.Type graphicClass = null, 
+                                              LinkDrawerType? linkType = null, 
+                                              Vector2? drawSize = null)
         {
             var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            if (def?.graphicData != null)
-            {
-                def.graphicData.texPath = texPath;
-                def.graphicData.graphicClass = graphicClass;
-                def.graphicData.linkType = linkType;
-            }
+            if (def?.graphicData == null) return;
+
+            if (texPath != null) def.graphicData.texPath = texPath;
+            if (graphicClass != null) def.graphicData.graphicClass = graphicClass;
+            if (linkType != null) def.graphicData.linkType = linkType.Value;
+            if (drawSize != null) def.graphicData.drawSize = drawSize.Value;
         }
-
-        private static void PatchTex(string defName, string texPath)
-        {
-            var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            if (def?.graphicData != null)
-            {
-                def.graphicData.texPath = texPath;
-            }
-        }
-
-
     }
 }
