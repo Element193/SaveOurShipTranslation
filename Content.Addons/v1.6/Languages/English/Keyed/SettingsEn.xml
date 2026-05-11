@@ -30,5 +30,5 @@ Applied after restart.</SocSetts.AcceleratingParticles.desc>
 	<SocSetts.RCSLayerFix.desc>Sets the RCS thruster render layer to FloorEmplacement so it displays correctly.\n\nApplied after restart.</SocSetts.RCSLayerFix.desc>
 	<SocSetts.RussianTranslation.label>Translation Patch</SocSetts.RussianTranslation.label>
 	<SocSetts.RussianTranslation.desc>Replaces the text "Hover Mode" with "Режим парения" in the shuttle interface. Apply if want to learn some Russian words.\n\nApplied after restart.</SocSetts.RussianTranslation.desc>
-	<SocSetts.Active.stat>Loaded </SocSetts.Active.stat>
+	<SocSetts.Active.stat>Loaded</SocSetts.Active.stat>
 </LanguageData>

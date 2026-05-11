@@ -27,7 +27,7 @@
 	<SocSetts.RCSLayerFix.desc>Устанавливает слой отрисовки RCS ускорителя на FloorEmplacement, чтобы он отображался корректно.\n\nПрименяется после перезапуска.</SocSetts.RCSLayerFix.desc>
 
 	<SocSetts.RussianTranslation.label>Патч перевода</SocSetts.RussianTranslation.label>
-	<SocSetts.RussianTranslation.desc>Заменяет текст "Hover Mode" на "Режим парения" в интерфейсе шаттлов.\n\nПрименяется после перезапуска.</SocSetts.RussianTranslation.desc>
+	<SocSetts.RussianTranslation.desc>Заменяет текст "Hover Mode" на "Режим парения" в интерфейсе шаттлов.\nИзменяет позиции технологий в меню исследований.\n\nПрименяется после перезапуска.</SocSetts.RussianTranslation.desc>
 
-	<SocSetts.Active.stat>Подгружено </SocSetts.Active.stat>
+	<SocSetts.Active.stat>Подгружено</SocSetts.Active.stat>
 </LanguageData>
