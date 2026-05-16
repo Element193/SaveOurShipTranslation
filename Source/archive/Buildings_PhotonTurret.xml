@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- photon turret dropdown menu group -->
+	<DesignatorDropdownGroupDef>
+		<defName>ShipTurrets_Photon</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!-- Main Photon Turret Building -->
+	<ThingDef ParentName="ShipTurretBuilding">
+		<defName>ShipTurret_Photon</defName>
+		<label>photon turret</label>
+		<description>A starship turret that accelerates photon slugs to relativistic speeds. Can hit targets at long range. Capable of ship ground defense.\n\nCan be safely placed in rooms as it sticks out on top of the ship.\nMust be connected to a pilot/tactical console or AI core via the heat network.\nRequires sufficient stored power and heat capacity to function.</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/HardpointYellow</texPath>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>EMP</li>
+				</affectedDamageDefs>
+			</li>
+			<li Class="SaveOurShip2.CompProps_ShipHeat">
+				<compClass>SaveOurShip2.CompShipHeat</compClass>
+				<showOnRoof>true</showOnRoof>
+				<heatPerPulse>5</heatPerPulse>
+				<energyToFire>60</energyToFire>
+				<optRange>150</optRange>
+				<maxRange>150</maxRange>
+				<projectileSpeed>4</projectileSpeed>
+				<threat>10</threat>
+				<groundDefense>true</groundDefense>
+				<groundProjectile>Bullet_Ground_Kinetic</groundProjectile>
+				<groundMissRadius>2</groundMissRadius>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<building>
+			<turretGunDef>ShipTurret_PhotonTop</turretGunDef>
+			<turretBurstWarmupTime>0.5</turretBurstWarmupTime>
+			<turretBurstCooldownTime>25.0</turretBurstCooldownTime>
+			<turretTopDrawSize>2</turretTopDrawSize>
+		</building>
+		<costList>
+			<Steel>80</Steel>
+			<Uranium>20</Uranium>
+			<Plasteel>80</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<uiIconPath>Things/Building/Ship/TurretKinetic_Sm_MenuIcon</uiIconPath>
+	</ThingDef>
+
+	<!-- Photon Turret Gun (Top) -->
+	<ThingDef ParentName="BaseShipArtilleryWeapon">
+		<defName>ShipTurret_PhotonTop</defName>
+		<label>photon cannon</label>
+		<description>Photon cannon. Best used at long range.</description>
+		<graphicData>
+			<texPath>Things/Building/Ship/TurretKineticSmall</texPath>
+		</graphicData>
+		<verbs>
+			<li>
+				<label>shoot photon</label>
+				<verbClass>SaveOurShip2.Verb_LaunchProjectileShip</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>1500</range>
+				<minRange>31.9</minRange>
+				<warmupTime>0.5</warmupTime>
+				<forcedMissRadius>1</forcedMissRadius>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ShipCombatKinetic</soundCast>
+				<requireLineOfSight>false</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_ShipTurretKinetic</defaultProjectile>
+				<spawnDef>Bullet_Fake_Kinetic</spawnDef>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+	</ThingDef>
+
+
+
+</Defs>

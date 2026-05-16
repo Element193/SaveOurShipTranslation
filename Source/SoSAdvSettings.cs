@@ -1,6 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Reflection;
+
+using System.Collections.Generic; // HashSet only, can be replaced removed
 using UnityEngine;
 using Verse;
 
@@ -84,7 +83,7 @@ namespace SaveOurCat
             Widgets.Label(starSectorLabelRect, "SocSetts.StarSectorShips.label".Translate());
             TooltipHandler.TipRegion(starSectorLabelRect, "SocSetts.StarSectorShips.desc".Translate());
             GUI.color = Color.green;
-            Widgets.Label(new Rect(starSectorRect.xMax - 80, starSectorRect.y, 80, 24), "SocSetts.Active.stat".Translate());
+            Widgets.Label(new Rect(starSectorRect.xMax - 90, starSectorRect.y, 90, 24), "SocSetts.Active.stat".Translate());
             GUI.color = Color.white;
             listing.Gap(4f);
 
@@ -94,7 +93,7 @@ namespace SaveOurCat
             Widgets.Label(x4LabelRect, "SocSetts.X4FoundationsShips.label".Translate());
             TooltipHandler.TipRegion(x4LabelRect, "SocSetts.X4FoundationsShips.desc".Translate());
             GUI.color = Color.green;
-            Widgets.Label(new Rect(x4Rect.xMax - 80, x4Rect.y, 80, 24), "SocSetts.Active.stat".Translate());
+            Widgets.Label(new Rect(x4Rect.xMax - 90, x4Rect.y, 90, 24), "SocSetts.Active.stat".Translate());
             GUI.color = Color.white;
             listing.Gap(4f);
 
@@ -104,7 +103,7 @@ namespace SaveOurCat
             Widgets.Label(otherLabelRect, "SocSetts.DifferentShips.label".Translate());
             TooltipHandler.TipRegion(otherLabelRect, "SocSetts.DifferentShips.desc".Translate());
             GUI.color = Color.green;
-            Widgets.Label(new Rect(otherRect.xMax - 100, otherRect.y, 100, 24), "SocSetts.Active.stat".Translate());
+            Widgets.Label(new Rect(otherRect.xMax - 90, otherRect.y, 90, 24), "SocSetts.Active.stat".Translate());
             GUI.color = Color.white;
             listing.Gap(4f);
             
@@ -375,9 +374,9 @@ namespace SaveOurCat
         }
 
         private static void PatchThingGraphic(string defName, string texPath, 
-                                              System.Type graphicClass = null, 
-                                              LinkDrawerType? linkType = null, 
-                                              Vector2? drawSize = null)
+            System.Type graphicClass = null, 
+            LinkDrawerType? linkType = null, 
+            Vector2? drawSize = null)
         {
             var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
             if (def?.graphicData == null) return;

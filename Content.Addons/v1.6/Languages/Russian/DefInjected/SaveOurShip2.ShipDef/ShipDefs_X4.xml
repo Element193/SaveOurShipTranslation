@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- X4 Ships -->
-  <X4Heron.label>Грузовой корабль Цапля</X4Heron.label>
+  <X4Heron.label>Торговец Цапля</X4Heron.label>
 
-  <X4Heron-S.label>Грузовой корабль Цапля-У</X4Heron-S.label>
+  <X4Heron-S.label>Торговец Цапля-У</X4Heron-S.label>
+
+  <X4Discoverer.label>Корвет Исследователь-УЧ</X4Discoverer.label>
+
+  <X4Nova.label>Истребитель Нова-УЧ</X4Nova.label>
 
   <X4Envoy.label>Корвет Посланник</X4Envoy.label>
 
+  <X4HydraAP.label>Корвет Гидра-УЧ</X4HydraAP.label>
+
   <X4Hydra.label>Корвет Гидра</X4Hydra.label>
 
-  <ARLHunter.label>Фрегат Охотник</ARLHunter.label>
+  <X4ColossusE.label>Боевой крейсер Колосс-Е</X4ColossusE.label>
 
-  <X4Asgard.label>Линейный линкор Асгард</X4Asgard.label>
+  <X4Asgard.label>Батлкрейсер Асгард</X4Asgard.label>
 
-  <X4Syn-S.label>Линейный крейсер Син-У</X4Syn-S.label>
+  <X4Syn-S.label>Батлкрейсер Син-У</X4Syn-S.label>
 
-  <X4Syn-M.label>Линейный крейсер Син-М</X4Syn-M.label>
+  <X4Syn-M.label>Батлкрейсер Син-М</X4Syn-M.label>
 
-  <X4Syn-T.label>Ракетный крейсер Син-М</X4Syn-T.label>
+  <X4Syn-T.label>Крейсер ПВО Син-М</X4Syn-T.label>
 
   <!-- Personal small ships -->
   <ARLSmallPersonal1.label>Малый личный корабль</ARLSmallPersonal1.label>
@@ -27,6 +33,8 @@
   <!-- Fleets -->
   <FleetX4Asgard.label>Флот Асгарда (4500)</FleetX4Asgard.label>
   
-  <FleetX4AsgardX3.label>Крейсеры Асгард Х3</FleetX4AsgardX3.label>
+  <FleetX4AsgardX3.label>Батлкрейсеры Асгард Х3</FleetX4AsgardX3.label>
+
+  <FleetX4HeronX2.label>Торговцы Цапля Х2</FleetX4HeronX2.label>
 
 </LanguageData>

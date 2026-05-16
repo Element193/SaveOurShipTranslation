@@ -246,9 +246,9 @@
 	<!-- heat -->
     <SoS.HeatStored>Накопленное тепло: {0} Те.\nТеплоёмкость сети: {1} Те.</SoS.HeatStored>
 	<SoS.HeatWithPower>Использовать энергию</SoS.HeatWithPower>
-	<SoS.HeatWithPowerDesc>Использовать энергию для обогрева, когда в системе нет избыточного тепла.</SoS.HeatWithPowerDesc>
+	<SoS.HeatWithPowerDesc>Использовать энергию для обогрева, если нет избыточного тепла.</SoS.HeatWithPowerDesc>
 	<SoS.PurgeHeat>Сбросить серебро</SoS.PurgeHeat>
-	<SoS.PurgeHeatDesc>Сбросить раскалённое серебро в космос, чтобы быстро снизить нагрев охлаждающей жидкости.\n\nЭто приведет к отключению щитов, они не активируются автоматически!</SoS.PurgeHeatDesc>
+	<SoS.PurgeHeatDesc>Сбросить раскалённое серебро в космос, чтобы быстро снизить уровень нагрева охлаждающей жидкости.\n\nЭто приведет к отключению щитов, их нужно как можно скорее активировать с помощью корабельного мостика!</SoS.PurgeHeatDesc>
 	<SoS.HeatPurge>Сбросить нагрев</SoS.HeatPurge>
 	<SoS.HeatPurgeDesc>Начать сброс охлаждающей жидкости из радиаторов. Радиаторы будут работать в 5 раз эффективнее, пока нагрев не достигнет минимального значения.\n\nГенераторы защитного поля и орудия будут отключены во время сброса, после чего активируются автоматически.\n\nЭтот процесс нельзя отменить, а сброшенная охлаждающая жидкость восстановится только после завершения боя.</SoS.HeatPurgeDesc>
 	<SoS.HeatPurgeVenting>жидкость уже сбрасывается.</SoS.HeatPurgeVenting>
@@ -257,7 +257,7 @@
 	<SoS.HeatCritical>ОПАСНОСТЬ! Критический уровень нагрева!</SoS.HeatCritical>
 	<SoS.HeatNotConnected>Не подключено к тепловой сети.</SoS.HeatNotConnected>
 	<SoS.CantPurge>Невозможно сбросить нагрев, так как объект покрыт активным щитом другого корабля или тепловой сетью. Рассмотрите возможность отключения его вручную.</SoS.CantPurge>
-	<SoS.HeatTurretEnergy>Энергия для выстрела:</SoS.HeatTurretEnergy>
+	<SoS.HeatTurretEnergy>Энергия для выстрела: {0} Вт/д</SoS.HeatTurretEnergy>
 
 	<!-- turret -->
 	<SoS.TurretNotInShipCombat>Это орудие может быть использовано только в космическом бою.</SoS.TurretNotInShipCombat>
@@ -280,13 +280,13 @@
 	<SoS.CannotFireDueToHeat>{0} не может произвести выстрел: перегрузка тепловой системы</SoS.CannotFireDueToHeat>
 	<SoS.CannotFireDueToPower>{0} не может произвести выстрел: недостаточно энергии</SoS.CannotFireDueToPower>
 	<SoS.CannotFireDueToAmmo>{0} не может произвести выстрел: нет боеприпасов</SoS.CannotFireDueToAmmo>
-	<SoS.TurretNotConnected>Не подсоединено к мостику корабля теплопроводом, не может стрелять!</SoS.TurretNotConnected>
+	<SoS.TurretNotConnected>Нет подключения к системам управления через тепловой провод.</SoS.TurretNotConnected>
 
 	<!-- shield -->
 	<SoS.ShieldRadius>Радиус поля: {1}/{0}</SoS.ShieldRadius>
 	<SoS.ResetShieldRadius>Сбросить\nрадиус</SoS.ResetShieldRadius>
-	<SoS.ResetShieldRadiusDesc>Сбросить радиус защитного поля до 40.</SoS.ResetShieldRadiusDesc>
-	<SoS.DecreaseShieldRadiusDesc>Уменшить радиус защитного поля.</SoS.DecreaseShieldRadiusDesc>
+	<SoS.ResetShieldRadiusDesc>Сбросить радиус защитного поля до стандартного значения.</SoS.ResetShieldRadiusDesc>
+	<SoS.DecreaseShieldRadiusDesc>Уменьшить радиус защитного поля.</SoS.DecreaseShieldRadiusDesc>
 	<SoS.IncreaseShieldRadiusDesc>Увеличить радиус защитного поля.</SoS.IncreaseShieldRadiusDesc>
 	<SoS.FoamFill>Заполнять</SoS.FoamFill>
 	<SoS.FoamFillDesc>Заполнять разрушенные участки корабля каркасной пеной.</SoS.FoamFillDesc>
@@ -303,16 +303,16 @@
 	
 	<!-- blueprints -->
 	<SoS.BlueprintDisabled>Требует исследования основ кораблестроения</SoS.BlueprintDisabled>
-	<SoS.BlueprintFailed>Размещение не удалось! Площадь должна выдерживать тяжёлые конструкции и быть сводна от препятствий и крыш.</SoS.BlueprintFailed>
-	<SoS.BlueprintPlace1>Проекты корабельного каркаса</SoS.BlueprintPlace1>
+	<SoS.BlueprintFailed>Размещение не удалось! Площадь не поддерживает тяжелые конструкции, или заблокирована крышами.</SoS.BlueprintFailed>
+	<SoS.BlueprintPlace1>Проект корпуса</SoS.BlueprintPlace1>
 	<SoS.BlueprintPlace1Desc>Корабельный корпус и каркас. Постройте перед размещением корабельной обшивки!</SoS.BlueprintPlace1Desc>
-	<SoS.BlueprintPlace2>Проекты корабельной обшивки</SoS.BlueprintPlace2>
+	<SoS.BlueprintPlace2>Проект обшивки</SoS.BlueprintPlace2>
 	<SoS.BlueprintPlace2Desc>Корабельная обшивка. Постройте перед размещением интерьера!</SoS.BlueprintPlace2Desc>
-	<SoS.BlueprintPlace3>Проекты корабельного интерьера</SoS.BlueprintPlace3>
+	<SoS.BlueprintPlace3>Проект интерьера</SoS.BlueprintPlace3>
 	<SoS.BlueprintPlace3Desc>Корабельный интерьер. Разместите корпус и обшивку перед размещением интерьера!</SoS.BlueprintPlace3Desc>
 	
 	<!-- pawns/eva -->
-	<SoS.DamagedReactorHurtsPawn>{0} получает радиационные ожоги из-за нестабильности реактора!</SoS.DamagedReactorHurtsPawn>
+	<SoS.DamagedReactorHurtsPawn>{0} получает радиационные ожоги от нестабильного корабельного реактора.</SoS.DamagedReactorHurtsPawn>
 	<SoS.EVACapable>Позволяет находится в открытом космосе.</SoS.EVACapable>
 	<SoS.AtmosphereVacuum>Вакуум</SoS.AtmosphereVacuum>
 	<SoS.Atmosphere>Пригодная Атмосфера</SoS.Atmosphere>
@@ -343,7 +343,7 @@
 	<SoS.EquipMeleeDesc>Оснастить эту форму клинком и энергетическим щитом.</SoS.EquipMeleeDesc>
 	<SoS.ResurrectBrain>Воскресить</SoS.ResurrectBrain>
 	<SoS.ResurrectBrainDesc>Использовать сыворотку воскрешения, чтобы создать новое тело для этого существа.</SoS.ResurrectBrainDesc>
-	<SoS.ArchoGift>Открывает награды от Архоспоры</SoS.ArchoGift>
+	<SoS.ArchoGift>Открывает награды от Архотек-споры</SoS.ArchoGift>
 	<SoS.ArchotechGoodwillPlus>Улучшить отношения (+10, {0} силы поля)</SoS.ArchotechGoodwillPlus>
 	<SoS.ArchotechGoodwillMinus>Ухудшить отношения (-10, {0} силы поля)</SoS.ArchotechGoodwillMinus>
 	<SoS.ArchotechFieldStrengthLow>Недостаточная сила поля.</SoS.ArchotechFieldStrengthLow>
@@ -356,32 +356,32 @@
 	<SoS.ArchotechPsylink>Пси-связь</SoS.ArchotechPsylink>
 	<SoS.ArchotechPsylinkDesc>Наделить существо уровнем пси-связи ({0} силы поля).</SoS.ArchotechPsylinkDesc>
 	<SoS.ArchotechSoulLink>Архосвязь</SoS.ArchotechSoulLink>
-	<SoS.ArchotechSoulLinkDesc>Связать существо с Архоспорой. Если существо погибнет, его паттерн личности будет мгновенно загружен в свободный нейро-психический субстрат, таким каким он был до гибели. ({0} силы поля)</SoS.ArchotechSoulLinkDesc>
+	<SoS.ArchotechSoulLinkDesc>Связать существо с Архотек-спорой. Если существо погибнет, его паттерн личности будет мгновенно загружен в свободный нейро-психический субстрат, таким каким он был до гибели. ({0} силы поля)</SoS.ArchotechSoulLinkDesc>
 	<SoS.ArchotechSoulDownload>Загрузить личность ({0})</SoS.ArchotechSoulDownload>
 	<SoS.ArchotechSoulDownloadDesc>Загрузить паттерн {0} в свободную капсулу личности.</SoS.ArchotechSoulDownloadDesc>
 	<SoS.ArchotechOptimizeMatter>Улучшать корпус</SoS.ArchotechOptimizeMatter>
-	<SoS.ArchotechOptimizeMatterDesc>Преобразовывать стандартный корпус корабля до уровня архотек в медленно расширяющемся радиусе.\n\nПреобразование не влияет на радиаторы, генераторы щитов и другое корабельное оборудование.</SoS.ArchotechOptimizeMatterDesc>
+	<SoS.ArchotechOptimizeMatterDesc>Преобразовывать стандартный корпус корабля до уровня архотек, в медленно расширяющемся радиусе.\n\nПреобразование не влияет на радиаторы, генераторы щитов и другое корабельное оборудование.</SoS.ArchotechOptimizeMatterDesc>
 	<SoS.ArchotechGiftParticles>Получать экзочастицы</SoS.ArchotechGiftParticles>
-	<SoS.ArchotechGiftParticlesDesc>Автоматически принимать и конвертировать награды Архоспоры в экзотические частицы.</SoS.ArchotechGiftParticlesDesc>
+	<SoS.ArchotechGiftParticlesDesc>Автоматически принимать и конвертировать награды Архотек-споры в экзотические частицы.</SoS.ArchotechGiftParticlesDesc>
 	<SoS.ArchotechDemandGift>Требовать награду</SoS.ArchotechDemandGift>
 
-	<SoS.ArchotechDemandGiftDesc>Требовать награду от Архоспоры. Это приведет к недовольству и снижению настроения споры!</SoS.ArchotechDemandGiftDesc>
+	<SoS.ArchotechDemandGiftDesc>Требовать награду от Архотек-споры. Это приведет к недовольству и снижению настроения споры!</SoS.ArchotechDemandGiftDesc>
 	<SoS.Archotech.ResearchTabName>Архотек</SoS.Archotech.ResearchTabName>
-	<SoS.ArchotechSoulLinkDesc>Связать одного члена экипажа с Архоспорой. Если существо погибнет, его паттерн личности будет мгновенно загружен в свободный нейро-психический субстрат, таким каким он был до гибели. ({0} силы поля)</SoS.ArchotechSoulLinkDesc>
-	<SoS.ArchotechSoulDownloadDesc>Загрузить личность {0} в свободную капсулу с нейро-психическим субстратом при гибели.</SoS.ArchotechSoulDownloadDesc>
+	<SoS.ArchotechSoulLinkDesc>Связать одного члена экипажа с Архотек-спорой. Если существо погибнет, его паттерн личности будет мгновенно загружен в свободный нейро-психический субстрат, таким каким он был до гибели. ({0} силы поля)</SoS.ArchotechSoulLinkDesc>
+	<SoS.ArchotechSoulDownloadDesc>Загрузить личность {0} в свободную капсулу с нейро-психическим субстратом после гибели.</SoS.ArchotechSoulDownloadDesc>
 	<SoS.ArchotechIdeoKeep>Открыть истину {0}</SoS.ArchotechIdeoKeep>
-	<SoS.ArchotechIdeoNew>Найти новую идеологию</SoS.ArchotechIdeoNew>
-	<SoS.ArchotechIdeoKeepFaith>Все славим одну истину!</SoS.ArchotechIdeoKeepFaith>
-	<SoS.ArchotechIdeoDialogTitle>Кризис веры</SoS.ArchotechIdeoDialogTitle>
+	<SoS.ArchotechIdeoNew>Принять новую идеологию</SoS.ArchotechIdeoNew>
+	<SoS.ArchotechIdeoKeepFaith>Славить истинную веру!</SoS.ArchotechIdeoKeepFaith>
+	<SoS.ArchotechIdeoDialogTitle>Кризис Веры</SoS.ArchotechIdeoDialogTitle>
 	<SoS.ArchotechInspectMood>Настроение</SoS.ArchotechInspectMood>
 	<SoS.ArchotechInspectPsychicFieldStrength>Сила пси-поля</SoS.ArchotechInspectPsychicFieldStrength>
 	<SoS.ArchotechInspectLinked>Связано</SoS.ArchotechInspectLinked>
 	<SoS.ArchotechInspectStored>Хранится</SoS.ArchotechInspectStored>
 	<SoS.ArchotechNoGiftsUnlocked>Не изучены технологии для даров</SoS.ArchotechNoGiftsUnlocked>
 	<SoS.ArchotechEvolve>Начать эволюцию</SoS.ArchotechEvolve>
-	<SoS.ArchotechEvolveDesc>Начать процесс эволюции Архоспоры в настоящего архотека. Начало новой эры для этого мира!\n\nИстория будет закончена!</SoS.ArchotechEvolveDesc>
+	<SoS.ArchotechEvolveDesc>Начать процесс эволюции Архотек-споры в настоящего архотека. Начало новой эры для этого мира!\n\nИстория будет закончена!</SoS.ArchotechEvolveDesc>
 	<SoS.AllPillarsEnd>Изменить мир</SoS.AllPillarsEnd>
-	<SoS.AllPillarsCancel>Остаться смертными немного дольше</SoS.AllPillarsCancel>
+	<SoS.AllPillarsCancel>Пока оставить всё как есть</SoS.AllPillarsCancel>
 	<SoS.WinGameAlliesAlly>Дать им выбор - присоединиться или нет</SoS.WinGameAlliesAlly>
 	<SoS.WinGameAlliesTakeover>Захватить их силой</SoS.WinGameAlliesTakeover>
 	<SoS.WinGameNeutralAlly>Дать им выбор - присоединиться или нет</SoS.WinGameNeutralAlly>
@@ -390,33 +390,33 @@
 	<SoS.WinGameEnemiesTakeover>Захватить их силой</SoS.WinGameEnemiesTakeover>
 	<SoS.WinGameEnemiesKill>Уничтожить их</SoS.WinGameEnemiesKill>
 	<SoS.ArchotechGiftQuestDesc>Награда от {0}</SoS.ArchotechGiftQuestDesc>
-	<SoS.ArchotechMoodLow>Архоспора недовольна</SoS.ArchotechMoodLow>
-	<SoS.ArchotechMoodLowDesc>Архоспора в плохом настроении, и может подшутить над экипажем.\n\nTНастроение споры можно поднять медленно - медитируя поблизости, или быстро - жертвуя пленников.</SoS.ArchotechMoodLowDesc>
-	<SoS.ArchotechMoodLowNoRoyDesc>Архоспора в плохом настроении, и может подшутить над экипажем.\n\nНастроение споры можно поднять, принеся в жертву пленников.</SoS.ArchotechMoodLowNoRoyDesc>
+	<SoS.ArchotechMoodLow>Архотек-спора недовольна</SoS.ArchotechMoodLow>
+	<SoS.ArchotechMoodLowDesc>Архотек-спора в плохом настроении, и может подшутить над экипажем.\n\nTНастроение споры можно немного повысить - медитируя поблизости, или жертвуя пленников.</SoS.ArchotechMoodLowDesc>
+	<SoS.ArchotechMoodLowNoRoyDesc>Архотек-спора в плохом настроении, и может подшутить над экипажем.\n\nНастроение споры можно поднять, принеся в жертву пленников.</SoS.ArchotechMoodLowNoRoyDesc>
 	
 	<!-- archoanimals -->
 	<SoS.ArchoAnimalSuddenDeath>В результате какой-то космической случайности, на короткое время появилось существо архожизни, через несколько мгновений оно исчезло. Вероятно, это знак грядущих событий.</SoS.ArchoAnimalSuddenDeath>
-	<SoS.ArchoAnimalSporeDeath>В результате потери связи с архотеком-создателем, {0} погибает.</SoS.ArchoAnimalSporeDeath>
-	<SoS.CraftArchocat>Создать архокота</SoS.CraftArchocat>
-	<SoS.CraftArchomutt>Создать архособаку</SoS.CraftArchomutt>
-	<SoS.CraftArchostrich>Создать архострауса</SoS.CraftArchostrich>
-	<SoS.CraftArchoffalo>Создать архомуфалло</SoS.CraftArchoffalo>
-	<SoS.CraftArchospider>Создать архопаука</SoS.CraftArchospider>
-	<SoS.CraftArcholope>Создать архолопу</SoS.CraftArcholope>
-	<SoS.CraftArchotortoise>Создать архочерепаху</SoS.CraftArchotortoise>
-	<SoS.CraftArchopanda>Создать архопанду</SoS.CraftArchopanda>
-	<SoS.CraftArchojerboa>Создать архотушканчика</SoS.CraftArchojerboa>
-	<SoS.CraftArchothrumbo>Создать архотрумбо</SoS.CraftArchothrumbo>
+	<SoS.ArchoAnimalSporeDeath>{0} погибает в результате потери связи с архотек-создателем.</SoS.ArchoAnimalSporeDeath>
+	<SoS.CraftArchocat>Создать архо-кота</SoS.CraftArchocat>
+	<SoS.CraftArchomutt>Создать архо-пса</SoS.CraftArchomutt>
+	<SoS.CraftArchostrich>Создать архо-страуса</SoS.CraftArchostrich>
+	<SoS.CraftArchoffalo>Создать архо-муфалло</SoS.CraftArchoffalo>
+	<SoS.CraftArchospider>Создать архо-паука</SoS.CraftArchospider>
+	<SoS.CraftArcholope>Создать архо-лопу</SoS.CraftArcholope>
+	<SoS.CraftArchotortoise>Создать архо-черепаху</SoS.CraftArchotortoise>
+	<SoS.CraftArchopanda>Создать архо-панду</SoS.CraftArchopanda>
+	<SoS.CraftArchojerboa>Создать архо-тушканчика</SoS.CraftArchojerboa>
+	<SoS.CraftArchothrumbo>Создать архо-трумбо</SoS.CraftArchothrumbo>
 	<SoS.ArcholifeChangeSkin>Изменить внешность</SoS.ArcholifeChangeSkin>
-	<SoS.ArcholifeChangeSkinDesc>Кажется, это существо имеет несколько вариантов форм, и меняет их по своему желанию.</SoS.ArcholifeChangeSkinDesc>
+	<SoS.ArcholifeChangeSkinDesc>Это животное имеет несколько вариантов форм, и меняет их по своему желанию, вероятно, оно может изменить форму по желанию своего владельца.</SoS.ArcholifeChangeSkinDesc>
 	
 	<!-- mechanites -->
 	<SoS.MechanitesInHomeArea>Механиты!</SoS.MechanitesInHomeArea>
-    <SoS.MechanitesInHomeAreaDesc>Разборочные механиты в домашней области.</SoS.MechanitesInHomeAreaDesc>
+    <SoS.MechanitesInHomeAreaDesc>Разборочные механиты  в домашней области.</SoS.MechanitesInHomeAreaDesc>
 	
 	<!-- shuttles -->
-	<SoS.ShuttleMissionFloatBoard>Миссия: штурм</SoS.ShuttleMissionFloatBoard>
-	<SoS.ShuttleMissionFloatBoardWarn>Миссия: рискованный штурм</SoS.ShuttleMissionFloatBoardWarn>
+	<SoS.ShuttleMissionFloatBoard>Миссия: абордаж</SoS.ShuttleMissionFloatBoard>
+	<SoS.ShuttleMissionFloatBoardWarn>Миссия: рискованный абордаж</SoS.ShuttleMissionFloatBoardWarn>
 	<SoS.ShuttleMissionFloatIntercept>Миссия: перехват торпед/истребителей</SoS.ShuttleMissionFloatIntercept>
 	<SoS.ShuttleMissionFloatStrafe>Миссия: обстрел вражеского корабля</SoS.ShuttleMissionFloatStrafe>
 	<SoS.ShuttleMissionFloatTorpedo>Миссия: бомбардировка вражеского корабля</SoS.ShuttleMissionFloatTorpedo>
@@ -430,11 +430,11 @@
 	<SoS.BoardingShuttleArrived>Шаттл прибывает в место назначения!</SoS.BoardingShuttleArrived>
 	<SoS.EnemyBoardingShuttleArrived>Штурмовая группа противника прибывает в место назначения!</SoS.EnemyBoardingShuttleArrived>
 	<SoS.EnemyBoardingShuttleAborted>Штурмовая группа противника отступает!</SoS.EnemyBoardingShuttleAborted>
-	<SoS.ShuttleMissionBoarding>Штурм</SoS.ShuttleMissionBoarding>
-	<SoS.ShuttleMissionBoardingDesc>Отправить шаттл на штурм вражеского корабля. Он будет уязвим для орудий точечной обороны.</SoS.ShuttleMissionBoardingDesc>
+	<SoS.ShuttleMissionBoarding>Абордаж</SoS.ShuttleMissionBoarding>
+	<SoS.ShuttleMissionBoardingDesc>Отправить шаттл на абордаж вражеского корабля. Шаттл будет уязвим для орудий точечной обороны.</SoS.ShuttleMissionBoardingDesc>
 	<SoS.ShuttleMissionBoardingDisabled>Шаттл под крышей, на неподходящей поверхности!</SoS.ShuttleMissionBoardingDisabled>
-	<SoS.ShuttleMissionBoardingWarn>Рискованный штурм</SoS.ShuttleMissionBoardingWarn>
-	<SoS.ShuttleMissionBoardingWarnDesc>Внимание: Двигатели вражеского корабля активны, в области может не быть подходящего места для приземления!\nПрибытие шаттла займёт больше времени, он будет уязвим для орудий точечной обороны.</SoS.ShuttleMissionBoardingWarnDesc>
+	<SoS.ShuttleMissionBoardingWarn>Рискованный абордаж</SoS.ShuttleMissionBoardingWarn>
+	<SoS.ShuttleMissionBoardingWarnDesc>Внимание: Двигатели вражеского корабля активны, в области может не быть подходящего места для посадки!\nПрибытие шаттла займёт больше времени, он будет уязвим для орудий точечной обороны.</SoS.ShuttleMissionBoardingWarnDesc>
 	<SoS.ShuttleMissionBoardingReturn>Вернуть на корабль</SoS.ShuttleMissionBoardingReturn>
 	<SoS.ShuttleMissionBoardingReturnDesc>Вернуть шаттл на корабль. Он будет уязвим для орудий точечной обороны.</SoS.ShuttleMissionBoardingReturnDesc>
 	<SoS.ShuttleMissionIntercept>Перехват</SoS.ShuttleMissionIntercept>
@@ -447,9 +447,9 @@
 	<SoS.RecallShuttleDesc>Изменить миссию.</SoS.RecallShuttleDesc>
 	<SoS.RetreatAtHealth>Отступить при целостности</SoS.RetreatAtHealth>
 	<SoS.RetreatAtHealthDesc>Шаттл автоматически отступит, когда целостность корпуса упадет ниже этого предела.</SoS.RetreatAtHealthDesc>
-	<SoS.CancelBoarding>Отменить штурм? шаттл вернется на корабль.</SoS.CancelBoarding>
+	<SoS.CancelBoarding>Отменить абордаж? шаттл вернётся обратно на корабль.</SoS.CancelBoarding>
 	<SoS.NoHardpoints>У шаттла недостаточно точек крепления для турелей.</SoS.NoHardpoints>
-	<SoS.NotEnoughCargoSpace>Эта модификация снизит вместимость шаттла ниже нуля.</SoS.NotEnoughCargoSpace>
+	<SoS.NotEnoughCargoSpace>Недостаточно вместимости шаттла, эта модификация занимает слишком много места.</SoS.NotEnoughCargoSpace>
 	<SoS.HoverJump>Перелететь</SoS.HoverJump>
 	<SoS.HoverJump.Desc>Взлететь и приземлится в другом месте этой области, используя 5 ед. топлива.</SoS.HoverJump.Desc>
 	<SoS.TargetShuttles>Установить цель</SoS.TargetShuttles>
@@ -463,26 +463,26 @@
 	<!-- Temporary fix for Vehicke Framework message-->
 	<VF_Fix_CannotLaunchRotated>{0} нужно повернуть в горизонтальном или вертикальном направлении.</VF_Fix_CannotLaunchRotated>
 	<SoSRestoreHull>Восстановить корпус</SoSRestoreHull>
-	<SoSRestoreHullDesc>Восстановить структуры на месте корабельных обломков.</SoSRestoreHullDesc>
-	<SoSAlreadyRestoring>Область в процессе восстановления!</SoSAlreadyRestoring>
+	<SoSRestoreHullDesc>Восстановить поврежденный в бою корпус.</SoSRestoreHullDesc>
+	<SoSAlreadyRestoring>Область уже в процессе восстановления!</SoSAlreadyRestoring>
 	<SoSMustDesignateWreckage>Нужно выделить повреждённые части корабля.</SoSMustDesignateWreckage>
 	<SoS.UnDockWarning>Предупреждение: перемещение корабля в пристыкованном состоянии приведет к разъединению всех стыковочных узлов.</SoS.UnDockWarning>
 	<SoS.ExpelSuperheatedAir>Эжекция</SoS.ExpelSuperheatedAir>
-	<SoS.ExpelSuperheatedAirDesc>Использовать вентиляцию для поглощения перегретого воздуха. Этот процесс создаст вакуум и нарушит работу систем жизнеобеспечения в зависимости от размера комнаты.\n\nСущества, которые не способны выйти в открытый космос будут страдать от взрывной декомпрессии!</SoS.ExpelSuperheatedAirDesc>
-	<SoS.AirNotSuperheated>Температура воздуха в норме.</SoS.AirNotSuperheated>
+	<SoS.ExpelSuperheatedAirDesc>Использовать вентиляцию для поглощения перегретого воздуха. Этот процесс создаст вакуум и нарушит работу систем жизнеобеспечения в зависимости от размера комнаты.\n\nСущества, которые не способны выйти в открытый космос пострадают от взрывной декомпрессии!</SoS.ExpelSuperheatedAirDesc>
+	<SoS.AirNotSuperheated>Воздух не перегрет</SoS.AirNotSuperheated>
 	<SoS.NoLifeSupport>Нет активной системы жизнеобеспечения</SoS.NoLifeSupport>
 	<SoS.HeatDepletionLevel>Уровень нагрева: {0}</SoS.HeatDepletionLevel>
 	<SoS.BreakCloakAtHeat>Отключить маскировку при нагреве.</SoS.BreakCloakAtHeat>
 	<SoS.BreakCloakAtHeatDesc>Маскировочное устройство будет отключено, когда нагрев охлаждающей жидкости достигнет этого предела.</SoS.BreakCloakAtHeatDesc>
 	<SoS.CloakBrokenAtHeat>Маскировка отключена из-за перегрева охлаждающей жидкости!</SoS.CloakBrokenAtHeat>
 	<SoS.NotEnoughFuelToLaunchShuttle>Недостаточно топлива для запуска шаттла</SoS.NotEnoughFuelToLaunchShuttle>
-	<SoS.CannotLaunchUnderRoof>Шаттл находится под крышей, и не в специальном отсеке.</SoS.CannotLaunchUnderRoof>
+	<SoS.CannotLaunchUnderRoof>Шаттл находится под крышей.</SoS.CannotLaunchUnderRoof>
 	<SoSBreachAirlock>Вскрыть шлюз</SoSBreachAirlock>
 	<SoSHackAirlock>Взломать шлюз</SoSHackAirlock>
 	<SoSAttackShip>Атаковать {0}</SoSAttackShip>
 	<SoSAttackShipDesc>Начать космический бой против {0}.</SoSAttackShipDesc>
 	<SoSPirateShip>Ограбить {0}</SoSPirateShip>
-	<SoSPirateShipDesc>Акт космического пиратства против {0}. Это приведет к началу космического боя и повысит пиратский рейтинг вашего корабля!</SoSPirateShipDesc>
+	<SoSPirateShipDesc>Ограбить {0}. Это приведет к началу космического боя и повысит пиратский рейтинг вашего корабля!</SoSPirateShipDesc>
 	<SoSInvestigateDerelict>Приблизится к {0}</SoSInvestigateDerelict>
 	<SoSInvestigateDerelictDesc>Приблизится для исследования обломков {0}. Вы сможете отправить команду к заброшенному объекту и переместить его после зачистки от врагов.</SoSInvestigateDerelictDesc>
 	<SoSHackFailed>Взлом мостика не удался!</SoSHackFailed>

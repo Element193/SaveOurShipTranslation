@@ -56,6 +56,9 @@
   <ItemGroup>
     <Compile Remove="archive\**\*.cs" />
   </ItemGroup>
+  <Target Name="CopyToShipStorage" AfterTargets="Build">
+    <Copy SourceFiles="$(OutputPath)SaveOurShipTranslation.dll" DestinationFolder="..\Content.ShipStorage\Assemblies\" />
+  </Target>
   <Target Name="CleanAssemblies" AfterTargets="Build">
     <ItemGroup>
       <FilesToDelete Include="$(OutputPath)*.dll" Exclude="$(OutputPath)SaveOurShipTranslation.dll;$(OutputPath)Project.dll" />

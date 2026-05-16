@@ -2,7 +2,7 @@
 <LanguageData>
 	<SocSetts.Addons.title>Дополнения</SocSetts.Addons.title>
 	<SocSetts.AcceleratingParticles.label>Ускоряющие частицы</SocSetts.AcceleratingParticles.label>
-	<SocSetts.AcceleratingParticles.desc>Добавляет новый контент, который включает ионные ускорители, анти-ускорители и капсулы с антипротоном.\n\n- Ионный ускоритель: не требует топлива, расходует 120 Вт/д энергии когда активен при тяге 600 кН.\n- Анти-ускоритель: Обеспечивает большую тягу в 4200 кН, но имеет малый бак и высокий расход антипротона.\n\nНастройка полностью не отключает контент, а просто убирает ускорители из меню строительства и антипротон из меню крафта.\n\nПрименяется после перезапуска.</SocSetts.AcceleratingParticles.desc>
+	<SocSetts.AcceleratingParticles.desc>Добавляет новый контент, который включает ионные ускорители, анти-ускорители и капсулы с антипротоном.\n\n- Ионный ускоритель: не требует топлива, расходует 120Вт/д энергии когда активен при тяге 600кН.\n- Анти-ускоритель: Обеспечивает большую тягу в 4200кН, но имеет малый бак и высокий расход антипротона.\n\nНастройка полностью не отключает контент, а просто убирает ускорители из меню строительства и антипротон из меню крафта.\n\nПрименяется после перезапуска.</SocSetts.AcceleratingParticles.desc>
 
 	<SocSetts.Ships.title>Корабли</SocSetts.Ships.title>
 	<SocSetts.StarSectorShips.label>StarSector</SocSetts.StarSectorShips.label>
@@ -27,7 +27,7 @@
 	<SocSetts.RCSLayerFix.desc>Устанавливает слой отрисовки RCS ускорителя на FloorEmplacement, чтобы он отображался корректно.\n\nПрименяется после перезапуска.</SocSetts.RCSLayerFix.desc>
 
 	<SocSetts.RussianTranslation.label>Патч перевода</SocSetts.RussianTranslation.label>
-	<SocSetts.RussianTranslation.desc>Заменяет текст "Hover Mode" на "Режим парения" в интерфейсе шаттлов.\nИзменяет позиции технологий в меню исследований.\n\nПрименяется после перезапуска.</SocSetts.RussianTranslation.desc>
+	<SocSetts.RussianTranslation.desc>Заменяет текст "Hover Mode" на "Режим парения" в интерфейсе шаттлов.\n\nПрименяется после перезапуска.</SocSetts.RussianTranslation.desc>
 
 	<SocSetts.Active.stat>Подгружено</SocSetts.Active.stat>
 </LanguageData>

@@ -11,7 +11,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.375,3.1)</drawSize>
 		</graphicData>
-		<uiIconScale>0.55</uiIconScale>
+		<uiIconPath>Things/Building/Ship/AntiProton_Thruster_icon</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<researchPrerequisites>
 			<li>AcceleratingParticles</li>
@@ -22,7 +22,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<description>A compact antiproton thruster from advanced worlds. Have a small fuel tank and can provide fast acceleration in a short time. Used for quickly avoiding possible threats or approaching in battles.\n\n&lt;color=#bb8f04&gt;Thrust: 4200 kH.\nNot suitable for interstellar travel.&lt;/color&gt;</description>
+		<description>A compact thruster of advanced worlds. It annihilates antiprotons, releasing a multitude of particles that provide intense thrust. It has a small fuel tank and can provide high thrust for a short time, making it used for rapid approach maneuvers or avoiding threats. Not suitable for interstellar travel.\n\n&lt;color=#bb8f04&gt;Thrust: 4200kH.\nFuel use: 2 antiprotons/s.&lt;/color&gt;</description>
 		<size>(1,3)</size>
 		<receivesSignals>true</receivesSignals>
 		<designationCategory>Ship</designationCategory>
@@ -82,7 +82,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.375,3.1)</drawSize>
 		</graphicData>
-		<uiIconScale>0.55</uiIconScale>
+		<uiIconPath>Things/Building/Ship/Ion_Thruster_icon</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<researchPrerequisites>
 			<li>AcceleratingParticles</li>
@@ -93,7 +93,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<description>A compact ion particle accelerator from advanced worlds. It is less powerful than nuclear and chemical counterparts, but uses only power.\n\n&lt;color=#bb8f04&gt;Thrust: 600 kH.\nActive power consumption: 120 W/d.\nNot suitable for interstellar travel.&lt;/color&gt;</description>
+		<description>A compact thruster of advanced worlds. The ion engine operates on the principle of electromagnetic acceleration of charged particles, providing stable thrust in space. While its thrust is relatively low, the system relies solely on energy input and requires no fuel. Not suitable for atmosphere and interstellar travel.\n\n&lt;color=#bb8f04&gt;Thrust: 600kH.\nActive power consumption: 120W/d.&lt;/color&gt;</description>
 		<size>(1,3)</size>
 		<receivesSignals>true</receivesSignals>
 		<designationCategory>Ship</designationCategory>
@@ -111,7 +111,6 @@
 				<energy>true</energy>
 				<preciseThrust>0.6</preciseThrust>
 				<fuelUse>0</fuelUse>
-				<takeOff>true</takeOff>
 				<killZoneLength>7</killZoneLength>
 				<killZoneWidth>1</killZoneWidth>
 				<soundWorking>ShipEngineFuel</soundWorking>

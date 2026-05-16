@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Save Our Ship - Translation</name>
+    <name>Save Our Ship - Translation &#38; Addons</name>
     <packageId>EL.SOS2.TR</packageId>
-    <author>ARL193</author>
+    <author>Arelsk</author>
 
     <supportedVersions>
         <li>1.3</li>
@@ -11,7 +11,22 @@
         <li>1.6</li>
     </supportedVersions>
 
-    <description>Неофициальное дополнение для RimWorld. Постройте пригодный для жизни корабль и продолжите историю своих колонистов в космосе — участвуйте в корабельных боях с пиратами, ищите сокровища среди заброшенных кораблей или откройте одну-две величайшие космические тайны!\n\nSOS2 включает две концовки: постройте двигатель Джонсона-Танаки, чтобы отправиться к звёздам, или превратите кого-то из своего экипажа в бога-машину с помощью Архоспоры.\n\nTranslation:\nSave Our Ship 2 Ru;\nSave Our Ship Creation Kit Ru;\nSpinal Engines for SOS2 Ru;\nLow-Tech Ship pack for SOS2 Ru;\nSOS2-sun`s enemy ship extension Ru/En;\nSave Our Ship 2 - Scout Landing Zone Ru/En.\n\nAdditional changes:\nSome UI textures replaced;\nAbout 30 - 40 new ships/structures.\n\nRecommended mods:\nLow-Tech Ship pack for SOS2 and ship packs;\nDubs Bad Hygiene Lite;\nSome textures from Vanilla Textures Expanded SOS2.</description>
+    <description>Неофициальное дополнение для RimWorld. Постройте пригодный для жизни корабль и продолжите историю своих колонистов в космосе — участвуйте в корабельных боях с пиратами, ищите сокровища среди заброшенных кораблей, или откройте одну-две величайшие космические тайны!
+Save Our Ship включает две концовки: постройте двигатель Джонсона-Танаки, чтобы отправиться к звёздам, или превратите кого-то из экипажа в бога-машину с помощью Архотек-споры.
+                
+Languages content:
+Russian - Save Our Ship 2;
+Russian - Save Our Ship Creation Kit;
+Russian - Spinal Engines for SOS2;
+Russian - Low-Tech Ship pack for SOS2;
+English, Russian - SOS2-sun`s enemy ship extension;
+English, Russian - Save Our Ship 2 - Scout Landing Zone.
+                
+Additional content:
+New thrusters - Ion, Antiproton;
+Mod settings with patches;
+Ships &#38; sites collections;
+UI &#38; misc graphics replaces.</description>
 
     <modDependencies>
     <li><packageId>kentington.saveourship2</packageId><displayName>Save Our Ship 2</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/1909914131</steamWorkshopUrl></li>

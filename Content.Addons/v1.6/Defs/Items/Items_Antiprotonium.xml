@@ -4,7 +4,7 @@
 <ThingDef ParentName="ResourceBase">
     <defName>AntiprotoniumPod</defName>
     <label>antiproton pod</label>
-    <description>A small pod with stable particles of antiprotons.</description>
+    <description>A hermetically sealed electromagnetic container holding antiproton particles. It annihilates upon contact with ordinary matter, instantly vanishing while releasing a multitude of other particles.</description>
     <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Item/Resource/AntiProtonCanister</texPath>

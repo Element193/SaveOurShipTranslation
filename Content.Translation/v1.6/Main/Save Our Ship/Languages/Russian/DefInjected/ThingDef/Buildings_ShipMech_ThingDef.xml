@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 	<!--1.5\Defs\ThingDefs_Buildings\Buildings_ShipMech.xml-->
-	<Ship_BeamMech_Unpowered.label>мехкорпус</Ship_BeamMech_Unpowered.label>
-	<Ship_BeamMech_Unpowered.description>Внешний структурный элемент корпуса космического корабля или станции механоидов. Не включает теплопроводы и кабели.</Ship_BeamMech_Unpowered.description>
+	<Ship_BeamMech_Unpowered.label>мех-корпус корабля</Ship_BeamMech_Unpowered.label>
+	<Ship_BeamMech_Unpowered.description>Внешний структурный элемент корпуса космического корабля или станции механоидов. Не включает тепловые провода и кабели.</Ship_BeamMech_Unpowered.description>
 	
-	<Ship_BeamMech.label>мехкорпус с проводкой</Ship_BeamMech.label>
-	<Ship_BeamMech.description>Внешний структурный элемент корпуса космического корабля или станции механоидов. Включает трубопроводы и кабели.</Ship_BeamMech.description>
+	<Ship_BeamMech.label>мех-корпус корабля (проводной)</Ship_BeamMech.label>
+	<Ship_BeamMech.description>Внешний структурный элемент корпуса космического корабля или станции механоидов. Включает тепловые провода и кабели.</Ship_BeamMech.description>
 	
-	<Ship_Corner_OneOne_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает теплопроводы и кабели.</Ship_Corner_OneOne_Mech.description>
-	<Ship_Corner_OneOne_Mech.label>угол мехкорпуса</Ship_Corner_OneOne_Mech.label>
+	<Ship_Corner_OneOne_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает тепловые провода и кабели.</Ship_Corner_OneOne_Mech.description>
+	<Ship_Corner_OneOne_Mech.label>угол мех-корпуса корабля</Ship_Corner_OneOne_Mech.label>
 	
-	<Ship_Corner_OneOne_MechFlip.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает теплопроводы и кабели.</Ship_Corner_OneOne_MechFlip.description>
-	<Ship_Corner_OneOne_MechFlip.label>угол мехкорпуса отраженный</Ship_Corner_OneOne_MechFlip.label>
+	<Ship_Corner_OneOne_MechFlip.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает тепловые провода и кабели.</Ship_Corner_OneOne_MechFlip.description>
+	<Ship_Corner_OneOne_MechFlip.label>обрат. угол мех-корпуса корабля</Ship_Corner_OneOne_MechFlip.label>
 	
-	<Ship_Corner_OneTwo_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает теплопроводы и кабели.</Ship_Corner_OneTwo_Mech.description>
-	<Ship_Corner_OneTwo_Mech.label>скат мехкорпуса х2</Ship_Corner_OneTwo_Mech.label>
+	<Ship_Corner_OneTwo_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает тепловые провода и кабели.</Ship_Corner_OneTwo_Mech.description>
+	<Ship_Corner_OneTwo_Mech.label>скат мех-корпуса корабля х2</Ship_Corner_OneTwo_Mech.label>
 	
-	<Ship_Corner_OneTwoFlip_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает теплопроводы и кабели.</Ship_Corner_OneTwoFlip_Mech.description>
-	<Ship_Corner_OneTwoFlip_Mech.label>скат мехкорпуса х2 отраженный</Ship_Corner_OneTwoFlip_Mech.label>
+	<Ship_Corner_OneTwoFlip_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает тепловые провода и кабели.</Ship_Corner_OneTwoFlip_Mech.description>
+	<Ship_Corner_OneTwoFlip_Mech.label>обрат. скат мех-корпуса корабля х2</Ship_Corner_OneTwoFlip_Mech.label>
 	
-	<Ship_Corner_OneThree_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает теплопроводы и кабели.</Ship_Corner_OneThree_Mech.description>
-	<Ship_Corner_OneThree_Mech.label>скат мехкорпуса х3</Ship_Corner_OneThree_Mech.label>
+	<Ship_Corner_OneThree_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает тепловые провода и кабели.</Ship_Corner_OneThree_Mech.description>
+	<Ship_Corner_OneThree_Mech.label>скат мех-корпуса корабля х3</Ship_Corner_OneThree_Mech.label>
 	
-	<Ship_Corner_OneThreeFlip_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает теплопроводы и кабели.</Ship_Corner_OneThreeFlip_Mech.description>
-	<Ship_Corner_OneThreeFlip_Mech.label>скат мехкорпуса х3 отраженный</Ship_Corner_OneThreeFlip_Mech.label>
+	<Ship_Corner_OneThreeFlip_Mech.description>Угол внешнего корпуса космического корабля или станции механоидов. Не включает тепловые провода и кабели.</Ship_Corner_OneThreeFlip_Mech.description>
+	<Ship_Corner_OneThreeFlip_Mech.label>обрат. скат мех-корпуса корабля х3</Ship_Corner_OneThreeFlip_Mech.label>
 	
-	<ShipInside_SolarGeneratorMech.label>солнечная батарея механоидов</ShipInside_SolarGeneratorMech.label>
+	<ShipInside_SolarGeneratorMech.label>солнечная мех-батарея корабля</ShipInside_SolarGeneratorMech.label>
 	<ShipInside_SolarGeneratorMech.description>Производит электричество из солнечного света. До 750 Вт/дн в космосе, до 375 Вт/дн на поверхности планеты. Не работает в темноте и от искусственного освещения.</ShipInside_SolarGeneratorMech.description>
 	
-	<ShipInside_PassiveVentMechanoid.label>вентиляция механоидов</ShipInside_PassiveVentMechanoid.label>
+	<ShipInside_PassiveVentMechanoid.label>мех-вентиляция корабля</ShipInside_PassiveVentMechanoid.label>
 	<ShipInside_PassiveVentMechanoid.description>Охлаждает или нагревает комнаты внутри корабля до нужной температуры.\n\nМожет использовать электричество для отопления, если в тепловых баках недостаточно нагрева.</ShipInside_PassiveVentMechanoid.description>
 	
-	<ShipAirlockMech.label>шлюз механоидов</ShipAirlockMech.label>
+	<ShipAirlockMech.label>мех-шлюз корабля</ShipAirlockMech.label>
 	<ShipAirlockMech.description>Позволяет получать доступ к космическому кораблю или станции и разделять помещения внутри корпуса. Энергетические плазменные барьеры препятствуют выходу газов.</ShipAirlockMech.description>
 	
-	<ShipHullTileMech.label>обшивка корпуса механоидов</ShipHullTileMech.label>
+	<ShipHullTileMech.label>обшивка мех-корпуса корабля</ShipHullTileMech.label>
 	<ShipHullTileMech.description>Обшивка корпуса космического корабля или станции механоидов. Позволяет устанавливать оборудование и другие сооружения внутри корпуса космического объекта.</ShipHullTileMech.description>
 </LanguageData>

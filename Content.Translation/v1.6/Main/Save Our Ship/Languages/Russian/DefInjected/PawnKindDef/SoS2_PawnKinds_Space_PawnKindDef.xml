@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<SpaceCannibal.label>космоканнибал</SpaceCannibal.label>
-	<SpaceCannibal.labelPlural>космоканнибалы</SpaceCannibal.labelPlural>
-	<SpaceCannibal.labelMale>космоканнибал</SpaceCannibal.labelMale>
-	<SpaceCannibal.labelFemale>космоканнибалка</SpaceCannibal.labelFemale>
-	<SpaceCannibal.labelMalePlural>космоканнибалы</SpaceCannibal.labelMalePlural>
-	<SpaceCannibal.labelFemalePlural>космоканнибалки</SpaceCannibal.labelFemalePlural>
+	<SpaceCannibal.label>космический каннибал</SpaceCannibal.label>
+	<SpaceCannibal.labelPlural>космические каннибалы</SpaceCannibal.labelPlural>
+	<SpaceCannibal.labelMale>космический каннибал</SpaceCannibal.labelMale>
+	<SpaceCannibal.labelFemale>космическая каннибалка</SpaceCannibal.labelFemale>
+	<SpaceCannibal.labelMalePlural>космические каннибалы</SpaceCannibal.labelMalePlural>
+	<SpaceCannibal.labelFemalePlural>космические каннибалки</SpaceCannibal.labelFemalePlural>
 	
-	<SpaceCrew.label>экипаж</SpaceCrew.label>
-	<SpaceCrew.labelPlural>экипаж</SpaceCrew.labelPlural>
-	<SpaceCrew.labelMale>экипаж</SpaceCrew.labelMale>
-	<SpaceCrew.labelFemale>экипаж</SpaceCrew.labelFemale>
-	<SpaceCrew.labelMalePlural>экипаж</SpaceCrew.labelMalePlural>
-	<SpaceCrew.labelFemalePlural>экипаж</SpaceCrew.labelFemalePlural>
+	<SpaceCrew.label>космический служащий</SpaceCrew.label>
+	<SpaceCrew.labelPlural>космические служащие</SpaceCrew.labelPlural>
+	<SpaceCrew.labelMale>космический служащий</SpaceCrew.labelMale>
+	<SpaceCrew.labelFemale>космическая служащая</SpaceCrew.labelFemale>
+	<SpaceCrew.labelMalePlural>космические служащие</SpaceCrew.labelMalePlural>
+	<SpaceCrew.labelFemalePlural>космические служащие</SpaceCrew.labelFemalePlural>
 	
 	<SpaceCrewEVA.label>астронавт</SpaceCrewEVA.label>
 	<SpaceCrewEVA.labelPlural>астронавты</SpaceCrewEVA.labelPlural>
@@ -22,19 +22,19 @@
 	<SpaceCrewEVA.labelMalePlural>астронавты</SpaceCrewEVA.labelMalePlural>
 	<SpaceCrewEVA.labelFemalePlural>астронавтки</SpaceCrewEVA.labelFemalePlural>
 	
-	<SpaceCrewMarine.label>космосолдат</SpaceCrewMarine.label>
-	<SpaceCrewMarine.labelPlural>космосолдаты</SpaceCrewMarine.labelPlural>
-	<SpaceCrewMarine.labelMale>космосолдат</SpaceCrewMarine.labelMale>
-	<SpaceCrewMarine.labelFemale>космосолдатка</SpaceCrewMarine.labelFemale>
-	<SpaceCrewMarine.labelMalePlural>космосолдаты</SpaceCrewMarine.labelMalePlural>
-	<SpaceCrewMarine.labelFemalePlural>космосолдатки</SpaceCrewMarine.labelFemalePlural>
+	<SpaceCrewMarine.label>космический солдат</SpaceCrewMarine.label>
+	<SpaceCrewMarine.labelPlural>космические солдаты</SpaceCrewMarine.labelPlural>
+	<SpaceCrewMarine.labelMale>космический солдат</SpaceCrewMarine.labelMale>
+	<SpaceCrewMarine.labelFemale>космический солдат</SpaceCrewMarine.labelFemale>
+	<SpaceCrewMarine.labelMalePlural>космические солдаты</SpaceCrewMarine.labelMalePlural>
+	<SpaceCrewMarine.labelFemalePlural>космические солдаты</SpaceCrewMarine.labelFemalePlural>
 	
-  <SpaceCrewMarineHeavy.label>космопехотинец</SpaceCrewMarineHeavy.label>
-  <SpaceCrewMarineHeavy.labelPlural>космопехотинцы</SpaceCrewMarineHeavy.labelPlural>
-  <SpaceCrewMarineHeavy.labelMale>космопехотинец</SpaceCrewMarineHeavy.labelMale>
-  <SpaceCrewMarineHeavy.labelFemale>космопехотинка</SpaceCrewMarineHeavy.labelFemale>
-  <SpaceCrewMarineHeavy.labelMalePlural>космопехотинцы</SpaceCrewMarineHeavy.labelMalePlural>
-  <SpaceCrewMarineHeavy.labelFemalePlural>космопехотинки</SpaceCrewMarineHeavy.labelFemalePlural>
+  <SpaceCrewMarineHeavy.label>космический пехотинец</SpaceCrewMarineHeavy.label>
+  <SpaceCrewMarineHeavy.labelPlural>космические пехотинцы</SpaceCrewMarineHeavy.labelPlural>
+  <SpaceCrewMarineHeavy.labelMale>космический пехотинец</SpaceCrewMarineHeavy.labelMale>
+  <SpaceCrewMarineHeavy.labelFemale>космический пехотинец</SpaceCrewMarineHeavy.labelFemale>
+  <SpaceCrewMarineHeavy.labelMalePlural>космические пехотинцы</SpaceCrewMarineHeavy.labelMalePlural>
+  <SpaceCrewMarineHeavy.labelFemalePlural>космические пехотинцы</SpaceCrewMarineHeavy.labelFemalePlural>
 	
 	<Astromite.label>астроклещ</Astromite.label>
 	<Astromite.labelPlural>астроклещи</Astromite.labelPlural>
@@ -86,29 +86,29 @@
 	<Stellapede.labelFemale>звездоножка</Stellapede.labelFemale>
 	<Stellapede.labelFemalePlural>звездоножки</Stellapede.labelFemalePlural>
 	
-	<Cosmopillar.label>космогусеница</Cosmopillar.label>
+	<Cosmopillar.label>космическая гусеница</Cosmopillar.label>
 	<Cosmopillar.labelPlural>космические гусеницы</Cosmopillar.labelPlural>
-	<Cosmopillar.lifeStages.0.label>космогусеница</Cosmopillar.lifeStages.0.label>
+	<Cosmopillar.lifeStages.0.label>космическая гусеница</Cosmopillar.lifeStages.0.label>
 	<Cosmopillar.lifeStages.0.labelPlural>космические гусеницы</Cosmopillar.lifeStages.0.labelPlural>
-	<Cosmopillar.lifeStages.0.labelMale>космогусеница</Cosmopillar.lifeStages.0.labelMale>
+	<Cosmopillar.lifeStages.0.labelMale>космическая гусеница</Cosmopillar.lifeStages.0.labelMale>
 	<Cosmopillar.lifeStages.0.labelMalePlural>космические гусеницы</Cosmopillar.lifeStages.0.labelMalePlural>
-	<Cosmopillar.lifeStages.0.labelFemale>космогусеница</Cosmopillar.lifeStages.0.labelFemale>
+	<Cosmopillar.lifeStages.0.labelFemale>космическая гусеница</Cosmopillar.lifeStages.0.labelFemale>
 	<Cosmopillar.lifeStages.0.labelFemalePlural>космические гусеницы</Cosmopillar.lifeStages.0.labelFemalePlural>
-	<Cosmopillar.lifeStages.1.label>космогусеница</Cosmopillar.lifeStages.1.label>
+	<Cosmopillar.lifeStages.1.label>космическая гусеница</Cosmopillar.lifeStages.1.label>
 	<Cosmopillar.lifeStages.1.labelPlural>космические гусеницы</Cosmopillar.lifeStages.1.labelPlural>
-	<Cosmopillar.lifeStages.1.labelMale>космогусеница</Cosmopillar.lifeStages.1.labelMale>
+	<Cosmopillar.lifeStages.1.labelMale>космическая гусеница</Cosmopillar.lifeStages.1.labelMale>
 	<Cosmopillar.lifeStages.1.labelMalePlural>космические гусеницы</Cosmopillar.lifeStages.1.labelMalePlural>
-	<Cosmopillar.lifeStages.1.labelFemale>космогусеница</Cosmopillar.lifeStages.1.labelFemale>
+	<Cosmopillar.lifeStages.1.labelFemale>космическая гусеница</Cosmopillar.lifeStages.1.labelFemale>
 	<Cosmopillar.lifeStages.1.labelFemalePlural>космические гусеницы</Cosmopillar.lifeStages.1.labelFemalePlural>
-	<Cosmopillar.lifeStages.2.label>космогусеница</Cosmopillar.lifeStages.2.label>
+	<Cosmopillar.lifeStages.2.label>космическая гусеница</Cosmopillar.lifeStages.2.label>
 	<Cosmopillar.lifeStages.2.labelPlural>космические гусеницы</Cosmopillar.lifeStages.2.labelPlural>
-	<Cosmopillar.lifeStages.2.labelMale>космогусеница</Cosmopillar.lifeStages.2.labelMale>
+	<Cosmopillar.lifeStages.2.labelMale>космическая гусеница</Cosmopillar.lifeStages.2.labelMale>
 	<Cosmopillar.lifeStages.2.labelMalePlural>космические гусеницы</Cosmopillar.lifeStages.2.labelMalePlural>
-	<Cosmopillar.lifeStages.2.labelFemale>космогусеница</Cosmopillar.lifeStages.2.labelFemale>
+	<Cosmopillar.lifeStages.2.labelFemale>космическая гусеница</Cosmopillar.lifeStages.2.labelFemale>
 	<Cosmopillar.lifeStages.2.labelFemalePlural>космические гусеницы</Cosmopillar.lifeStages.2.labelFemalePlural>
-	<Cosmopillar.labelMale>космогусеница</Cosmopillar.labelMale>
+	<Cosmopillar.labelMale>космическая гусеница</Cosmopillar.labelMale>
 	<Cosmopillar.labelMalePlural>космические гусеницы</Cosmopillar.labelMalePlural>
-	<Cosmopillar.labelFemale>космогусеница</Cosmopillar.labelFemale>
+	<Cosmopillar.labelFemale>космическая гусеница</Cosmopillar.labelFemale>
 	<Cosmopillar.labelFemalePlural>космические гусеницы</Cosmopillar.labelFemalePlural>
 	
 	<SoSHologram.label>ИИ личность</SoSHologram.label>

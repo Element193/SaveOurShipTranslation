@@ -2,20 +2,20 @@
 <LanguageData>
 	
 	<ArcholifePod.label>капсула архожизни</ArcholifePod.label>
-	<ArcholifePod.description>Суспензия синтетических клеток, завёрнутая в одноразовый инкубатор. Может быть использована для создания модифицированного животного.</ArcholifePod.description>
+	<ArcholifePod.description>Суспензия синтетических клеток, заключенных в одноразовый инкубатор. Используется для создания модифицированных архоживотных.</ArcholifePod.description>
 	
-	<ArchotechRepairGel.label>гель ремонтных механитов</ArchotechRepairGel.label>
-	<ArchotechRepairGel.description>Капсула с инженерными механитами, предназначена для восстановления предметов до идеального состояния.</ArchotechRepairGel.description>
-	<ArchotechRepairGel.comps.1.useLabel>Использовать ремонтный гель</ArchotechRepairGel.comps.1.useLabel>
+	<ArchotechRepairGel.label>инженерные механиты</ArchotechRepairGel.label>
+	<ArchotechRepairGel.description>Капсула с инженерными механитами. Используется для восстановления поврежденных предметов до идеального состояния, или частичного восстановления надетой экипировки.</ArchotechRepairGel.description>
+	<ArchotechRepairGel.comps.1.useLabel>Применить</ArchotechRepairGel.comps.1.useLabel>
 	<ArchotechRepairGel.ingestible.ingestReportString>Использует {0}.</ArchotechRepairGel.ingestible.ingestReportString>
 	<ArchotechRepairGel.ingestible.ingestCommandString>Взять {0}</ArchotechRepairGel.ingestible.ingestCommandString>
-	<ArchotechRepairGel.ingestible.ingestCommandString>Восстановить снаряжение</ArchotechRepairGel.ingestible.ingestCommandString>
+	<ArchotechRepairGel.ingestible.ingestCommandString>Восстановить экипировку</ArchotechRepairGel.ingestible.ingestCommandString>
 	<ArchotechRepairGel.comps.1.useLabel>Восстановить предмет</ArchotechRepairGel.comps.1.useLabel>
 	
-	<ArchotechMechaniteCore.label>ядро механитов</ArchotechMechaniteCore.label>
+	<ArchotechMechaniteCore.label>механитное архотек-ядро</ArchotechMechaniteCore.label>
 	<ArchotechMechaniteCore.description>Компонент из продвинутых миров, это ядро является автономной фабрикой разборочных механитов. Используется в космическом вооружении.</ArchotechMechaniteCore.description>
 	
-	<ArchotechPsychicCore.label>ядро подавителя</ArchotechPsychicCore.label>
+	<ArchotechPsychicCore.label>подавляющее архотек-ядро</ArchotechPsychicCore.label>
 	<ArchotechPsychicCore.description>Компонент из продвинутых миров, это ядро способно сгенерировать подавляющий пси-импульс, который оказывает влияние на мозг живых существ. Используется в космическом вооружении.</ArchotechPsychicCore.description>
 	
 	<ArchotechExoticParticles.label>экзотические частицы</ArchotechExoticParticles.label>

@@ -1,7 +1,7 @@
-﻿using RimWorld;
-using SaveOurShip2;
-using UnityEngine;
-using Verse;
+﻿using RimWorld; // PowerTrader, CompPowerTrader
+using SaveOurShip2; // CompEngineTrail, CompProps_EngineTrail
+using UnityEngine; // Vector, Mathf, Color
+using Verse; // Graphic, GraphicDatabase, ShaderDatabase
 
 namespace SaveOurCat
 {

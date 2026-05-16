@@ -23,7 +23,7 @@
 	<SoS.Settings.ArchoRemove>Удаление архожизни</SoS.Settings.ArchoRemove>
 	<SoS.Settings.ArchoRemove.Desc>Удаляет существа архотека, если они появляются из-за других модификаций до прохождения нужных событий в SOS2.\n\nПо умолчанию: отключено</SoS.Settings.ArchoRemove.Desc>
 	<SoS.Settings.ArchoKill>Связь архожизни</SoS.Settings.ArchoKill>
-	<SoS.Settings.ArchoKill.Desc>Существа архотека погибнут после разрушения Архоспоры, которая их создала.\n\nПо умолчанию: отключено.</SoS.Settings.ArchoKill.Desc>
+	<SoS.Settings.ArchoKill.Desc>Существа архотека погибнут после разрушения Архотек-споры, которая их создала.\n\nПо умолчанию: отключено.</SoS.Settings.ArchoKill.Desc>
 	<SoS.Settings.Debug>Режим отладки</SoS.Settings.Debug>
 	<SoS.Settings.Debug.Desc>Отображение областей всех кораблей и обломков на карте. При наведении на некоторые объекты будет отображаться дополнительная информация. Также будет больше записей в журнале.\n\nПо умолчанию: отключено.</SoS.Settings.Debug.Desc>
 	<SoS.Settings.NewAccuiracySystem>Система уклонения</SoS.Settings.NewAccuiracySystem>

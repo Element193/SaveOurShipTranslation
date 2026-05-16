@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 	<!--1.5\Defs\ThingDefs_Buildings\Buildings_ShipTechArcho.xml-->
-	<Ship_BeamArchotech_Unpowered.label>архокорпус</Ship_BeamArchotech_Unpowered.label>
-	<Ship_BeamArchotech_Unpowered.description>Внешний структурный элемент корпуса космического корабля или станции архотек. Не включает теплопроводы и кабели.</Ship_BeamArchotech_Unpowered.description>
+	<Ship_BeamArchotech_Unpowered.label>архо-корпус корабля</Ship_BeamArchotech_Unpowered.label>
+	<Ship_BeamArchotech_Unpowered.description>Внешний структурный элемент корпуса космического корабля или станции архотек. Не включает тепловые провода и кабели.</Ship_BeamArchotech_Unpowered.description>
 	
-	<Ship_BeamArchotech.label>архокорпус с проводкой</Ship_BeamArchotech.label>
-	<Ship_BeamArchotech.description>Внешний структурный элемент корпуса космического корабля или станции архотек. Включает трубопроводы и кабели.</Ship_BeamArchotech.description>
+	<Ship_BeamArchotech.label>архо-корпус корабля (проводной)</Ship_BeamArchotech.label>
+	<Ship_BeamArchotech.description>Внешний структурный элемент корпуса космического корабля или станции архотек. Включает тепловые провода и кабели.</Ship_BeamArchotech.description>
 	
-	<Ship_Corner_Archo_OneOne.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает теплопроводы и кабели.</Ship_Corner_Archo_OneOne.description>
-	<Ship_Corner_Archo_OneOne.label>угол архокорпуса</Ship_Corner_Archo_OneOne.label>
+	<Ship_Corner_Archo_OneOne.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает тепловые провода и кабели.</Ship_Corner_Archo_OneOne.description>
+	<Ship_Corner_Archo_OneOne.label>угол архо-корпуса корабля</Ship_Corner_Archo_OneOne.label>
 	
-	<Ship_Corner_Archo_OneOneFlip.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает теплопроводы и кабели.</Ship_Corner_Archo_OneOneFlip.description>
-	<Ship_Corner_Archo_OneOneFlip.label>угол архокорпуса отраженный</Ship_Corner_Archo_OneOneFlip.label>
+	<Ship_Corner_Archo_OneOneFlip.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает тепловые провода и кабели.</Ship_Corner_Archo_OneOneFlip.description>
+	<Ship_Corner_Archo_OneOneFlip.label>обрат. угол архо-корпуса корабля</Ship_Corner_Archo_OneOneFlip.label>
 	
-	<Ship_Corner_Archo_OneTwo.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает теплопроводы и кабели.</Ship_Corner_Archo_OneTwo.description>
-	<Ship_Corner_Archo_OneTwo.label>скат архокорпуса х2</Ship_Corner_Archo_OneTwo.label>
+	<Ship_Corner_Archo_OneTwo.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает тепловые провода и кабели.</Ship_Corner_Archo_OneTwo.description>
+	<Ship_Corner_Archo_OneTwo.label>скат архо-корпуса х2</Ship_Corner_Archo_OneTwo.label>
 	
-	<Ship_Corner_Archo_OneTwoFlip.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает теплопроводы и кабели.</Ship_Corner_Archo_OneTwoFlip.description>
-	<Ship_Corner_Archo_OneTwoFlip.label>скат архокорпуса х2 отраженный</Ship_Corner_Archo_OneTwoFlip.label>
+	<Ship_Corner_Archo_OneTwoFlip.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает тепловые провода и кабели.</Ship_Corner_Archo_OneTwoFlip.description>
+	<Ship_Corner_Archo_OneTwoFlip.label>обрат. скат архо-корпуса х2</Ship_Corner_Archo_OneTwoFlip.label>
 	
-	<Ship_Corner_Archo_OneThree.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает теплопроводы и кабели.</Ship_Corner_Archo_OneThree.description>
-	<Ship_Corner_Archo_OneThree.label>скат архокорпуса х3</Ship_Corner_Archo_OneThree.label>
+	<Ship_Corner_Archo_OneThree.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает тепловые провода и кабели.</Ship_Corner_Archo_OneThree.description>
+	<Ship_Corner_Archo_OneThree.label>скат архо-корпуса х3</Ship_Corner_Archo_OneThree.label>
 	
-	<Ship_Corner_Archo_OneThreeFlip.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает теплопроводы и кабели.</Ship_Corner_Archo_OneThreeFlip.description>
-	<Ship_Corner_Archo_OneThreeFlip.label>скат архокорпуса х3 отраженный</Ship_Corner_Archo_OneThreeFlip.label>
+	<Ship_Corner_Archo_OneThreeFlip.description>Угол внешнего корпуса космического корабля или станции архотек. Не включает тепловые провода и кабели.</Ship_Corner_Archo_OneThreeFlip.description>
+	<Ship_Corner_Archo_OneThreeFlip.label>обрат. скат архо-корпуса х3</Ship_Corner_Archo_OneThreeFlip.label>
 	
-	<ShipInside_SolarGeneratorArchotech.label>солнечная батарея архотек</ShipInside_SolarGeneratorArchotech.label>
+	<ShipInside_SolarGeneratorArchotech.label>солнечная архо-батарея</ShipInside_SolarGeneratorArchotech.label>
 	<ShipInside_SolarGeneratorArchotech.description>Запутывает фотоны в фотосфере звезды и поглощает с них больше энергии, чем мог бы дать солнечный свет. Вырабатывает до 1200 Вт/дн в космосе, до 600 Вт/дн на поверхности планеты. Не работает в темноте и от искусственного освещения.</ShipInside_SolarGeneratorArchotech.description>
 	
-	<ShipInside_PassiveVentArchotech.label>вентиляция архотек</ShipInside_PassiveVentArchotech.label>
+	<ShipInside_PassiveVentArchotech.label>архо-вентиляция корабля</ShipInside_PassiveVentArchotech.label>
 	<ShipInside_PassiveVentArchotech.description>Охлаждает или нагревает комнаты внутри корабля до нужной температуры.\n\nМожет использовать электричество для отопления, если в тепловых баках недостаточно нагрева.</ShipInside_PassiveVentArchotech.description>
 	
-	<ShipAirlockArchotech.label>шлюз архотек</ShipAirlockArchotech.label>
+	<ShipAirlockArchotech.label>архо-шлюз корабля</ShipAirlockArchotech.label>
 	<ShipAirlockArchotech.description>Позволяет получать доступ к космическому кораблю или станции и разделять помещения внутри корпуса. Энергетические плазменные барьеры препятствуют выходу газов.</ShipAirlockArchotech.description>
 	
-	<ShipHullTileArchotech.label>обшивка корпуса архотек</ShipHullTileArchotech.label>
+	<ShipHullTileArchotech.label>обшивка архо-корпуса корабля</ShipHullTileArchotech.label>
 	<ShipHullTileArchotech.description>Обшивка корпуса космического корабля или станции, разработанная архотеком. Позволяет устанавливать оборудование и другие сооружения внутри корпуса космического объекта.</ShipHullTileArchotech.description>
 	
-	<Ship_Engine_Archotech.label>ускоритель антиматерии</Ship_Engine_Archotech.label>
-	<Ship_Engine_Archotech.description>Высокотехнологичный корабельный двигатель, разработанный архотеком. Расходует экзотические частицы в качестве топлива, обеспечивая огромную скорость.\n\nНе подходит для использования в атмосфере.</Ship_Engine_Archotech.description>
+	<Ship_Engine_Archotech.label>антиматериальный ускоритель</Ship_Engine_Archotech.label>
+	<Ship_Engine_Archotech.description>Высокотехнологичный корабельный двигатель, разработанный архотеком. Расходует экзотические частицы в качестве топлива, обеспечивая огромную скорость. Не используется в атмосфере.\n\n&lt;color=#bb8f04&gt;Тяга: 6000кН.\nПотребление топлива: 2 экзочастицы/с.&lt;/color&gt;</Ship_Engine_Archotech.description>
 	
-	<ArchotechAntimatterReactor.label>реактор антиматерии</ArchotechAntimatterReactor.label>
+	<ArchotechAntimatterReactor.label>антиматериальный реактор</ArchotechAntimatterReactor.label>
 	<ArchotechAntimatterReactor.description>Высокотехнологичный реактор, разработанный архотеком.\n\nАннигилирует экзотические частицы, вырабатывая огромное количество энергии. Рекомендуется не допускать повреждений этого реактора.</ArchotechAntimatterReactor.description>
 	
 	<ShipHeatsinkAntiEntropy.label>анти-энтропический радиатор</ShipHeatsinkAntiEntropy.label>
@@ -49,26 +49,26 @@
 	<ArchotechShieldGenerator.label>генератор щита архотек</ArchotechShieldGenerator.label>
 	<ArchotechShieldGenerator.description>Высокотехнологичный генератор щита, разработанный архотеком.\n\nГенерирует импульсное репульсорное поле, которое отражает входящие объекты, при этом вырабатывает тепло. Капитанам рекомендуется отключать щиты, когда уровень нагрева приближается к максимальному, иначе генератор выйдет из строя.\n\nБлагодаря модифицированной технологии, этот генератор щита производит на 25% меньше тепла при отражении.</ArchotechShieldGenerator.description>
 
-	<ShipArchotechSpore.label>Архоспора</ShipArchotechSpore.label>
-	<ShipArchotechSpore.description>Этот инкубатор предназначен для эволюции человеческого или машинного разума в архотека. Внутри сосредоточена огромная вычислительная сеть, которая анализирует собственную структуру и другие непознанные тайны.\n\nПосле соответствующих исследований Спора может генерировать пси-поле и время от времени награждать своих создателей подарками. Несколько Спор могут формировать пси-поля независимо друг от друга, но не влияют на частоту подарков.\n\nПри слишком низком настроении Спора может устроить розыгрыш над экипажем корабля. Настроение Споры можно улучшить, медитируя рядом с ней или принося в жертву пленников.</ShipArchotechSpore.description>
+	<ShipArchotechSpore.label>Архотек-спора</ShipArchotechSpore.label>
+	<ShipArchotechSpore.description>Инкубатор, предназначенный для эволюции машинного или смертного разума в настоящего Архотека. Внутри сосредоточена огромная вычислительная сеть, которая анализирует собственную структуру методами интроспекции и рефлексии, познавая новые тайны разума.\n\nПосле соответствующих исследований, Архотек-спора может генерировать пси-поле, и время от времени награждать своих создателей. Несколько Архотек-спор не влияют на частоту наград, но они могут формировать независимые пси-поля.\n\nЕсли Архотек-спора недовольна, она может разыграть экипаж корабля, устроив саботаж для поднятия собственного настроения. Удовлетворенность споры можно улучшить медитируя рядом, или принося ей пленников в качестве жертв для изучения.</ShipArchotechSpore.description>
 	
 	<ArchotechUplink.label>Архолинк</ArchotechUplink.label>
-	<ArchotechUplink.description>Позволяет исследователям взаимодействовать с частью разума Архоспоры для изучения технологий архотека.\n\nУскоряет изучение технологий. Должен быть размещён рядом со столом для исследований. Один стол может быть соединён только с одним архолинком.</ArchotechUplink.description>
+	<ArchotechUplink.description>Позволяет исследователям взаимодействовать с частью разума Архотек-споры для изучения технологий архотека.\n\nУскоряет изучение технологий. Должен быть размещён рядом со столом для исследований. Один стол может быть соединён только с одним архолинком.</ArchotechUplink.description>
 
-	<ShipArchotechPillarA.description>Сложный и причудливый аппарат, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архоспоры.</ShipArchotechPillarA.description>
-	<ShipArchotechPillarA.label>архоколонна альфа</ShipArchotechPillarA.label>
+	<ShipArchotechPillarA.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архотек-споры.</ShipArchotechPillarA.description>
+	<ShipArchotechPillarA.label>архотек альфа-колонна</ShipArchotechPillarA.label>
 	
-	<ShipArchotechPillarB.description>Сложный и причудливый аппарат, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архоспоры.</ShipArchotechPillarB.description>
-	<ShipArchotechPillarB.label>архоколонна бета</ShipArchotechPillarB.label>
+	<ShipArchotechPillarB.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архотек-споры.</ShipArchotechPillarB.description>
+	<ShipArchotechPillarB.label>архотек бета-колонна</ShipArchotechPillarB.label>
 	
-	<ShipArchotechPillarC.description>Сложный и причудливый аппарат, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архоспоры.</ShipArchotechPillarC.description>
-	<ShipArchotechPillarC.label>архоколонна гамма</ShipArchotechPillarC.label>
+	<ShipArchotechPillarC.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архотек-споры.</ShipArchotechPillarC.description>
+	<ShipArchotechPillarC.label>архотек гамма-колонна</ShipArchotechPillarC.label>
 	
-	<ShipArchotechPillarD.description>Сложный и причудливый аппарат, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архоспоры.</ShipArchotechPillarD.description>
-	<ShipArchotechPillarD.label>архоколонна дельта</ShipArchotechPillarD.label>
+	<ShipArchotechPillarD.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архотек-споры.</ShipArchotechPillarD.description>
+	<ShipArchotechPillarD.label>архотек дельта-колонна</ShipArchotechPillarD.label>
 	
 	<ShipSpinalBarrelPsychic.label>линейный пси-подавитель</ShipSpinalBarrelPsychic.label>
-	<ShipSpinalBarrelPsychic.description>Финальный сегмент линейного орудия — пси-подавитель. Генерирует луч направленной пси-энергии, который оглушает экипаж, может вызывать повреждения мозга. Луч не проходит сквозь щит корабля, но игнорирует его корпус. В отличие от других видов корабельного вооружения, пси-подавитель не влияет на собственный корабль.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipSpinalBarrelPsychic.description>
+	<ShipSpinalBarrelPsychic.description>Финальный сегмент линейного орудия — пси-подавитель. Генерирует луч направленной пси-энергии, который оглушает экипаж, может вызывать повреждения мозга. Луч не проходит сквозь щит корабля, но игнорирует его корпус. В отличие от других видов корабельного вооружения, пси-подавитель не влияет на собственный корабль.\n\nДля функционирования требуется соединение тепловым проводом с радиаторами и системой управления.</ShipSpinalBarrelPsychic.description>
 
 	<ShipTurret_SpinalMountTopPsychic.label>линейное орудие</ShipTurret_SpinalMountTopPsychic.label>
 	<ShipTurret_SpinalMountTopPsychic.description>Продвинутое корабельное вооружение.</ShipTurret_SpinalMountTopPsychic.description>
@@ -78,8 +78,8 @@
 	
 	<Proj_ShipTurretPsychic.label>подавляющий пси-луч</Proj_ShipTurretPsychic.label>
 	
-	<ShipSpinalBarrelMechanite.label>линейный разборщик</ShipSpinalBarrelMechanite.label>
-	<ShipSpinalBarrelMechanite.description>Финальный сегмент линейного орудия — разборщик. Запускает пучки разборочных механитов, которые способны поглощать любые твёрдые вещества. Следует устанавливать снаружи, если вы конечно не хотите пробить дыру в корпусе корабля.\n\nДля функционирования требуется соединение теплопроводом с радиаторами и системой управления.</ShipSpinalBarrelMechanite.description>
+	<ShipSpinalBarrelMechanite.label>линейный мех-разборщик</ShipSpinalBarrelMechanite.label>
+	<ShipSpinalBarrelMechanite.description>Финальный сегмент линейного орудия — разборщик. Запускает пучки разборочных механитов, которые способны поглощать любые твёрдые вещества. Следует устанавливать снаружи, если вы конечно не хотите пробить дыру в корпусе корабля.\n\nДля функционирования требуется соединение тепловым проводом с радиаторами и системой управления.</ShipSpinalBarrelMechanite.description>
 	
 	<ShipTurret_SpinalMountTopMechanite.label>линейное орудие</ShipTurret_SpinalMountTopMechanite.label>
 	<ShipTurret_SpinalMountTopMechanite.description>Продвинутое корабельное вооружение.</ShipTurret_SpinalMountTopMechanite.description>
@@ -100,5 +100,5 @@
 	<Proj_GrenadeMechanite.label>механиты</Proj_GrenadeMechanite.label>
 	
 	<ArchoRecycler.label>рециклотрон</ArchoRecycler.label>
-	<ArchoRecycler.description>Рециклотрон, созданный Архоспорой. Это устройство способно разобрать практически любой предмет на составляющие материалы с почти идеальной эффективностью.</ArchoRecycler.description>
+	<ArchoRecycler.description>Рециклотрон, созданный Архотек-спорой. Это устройство способно разобрать практически любой предмет на составляющие материалы с почти идеальной эффективностью.</ArchoRecycler.description>
 </LanguageData>

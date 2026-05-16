@@ -11,7 +11,7 @@
     <ArchotechBioMechanitesTwo.description>Наделение механитов гештальт интелектом для диагностики и восстановления травм.</ArchotechBioMechanitesTwo.description>
 	
 	<ArchotechArchites.label>архогенетика</ArchotechArchites.label>
-	<ArchotechArchites.description>Исследование новых способов для получения совершенных архогенов. Возможность для Архоспоры создавать гены и дарить их в качестве подарков.</ArchotechArchites.description>
+	<ArchotechArchites.description>Исследование новых способов для получения совершенных архогенов. Возможность для Архотек-споры создавать гены и дарить их в качестве подарков.</ArchotechArchites.description>
 	
     <SoSArchotechOrgans.label>архоанатомия</SoSArchotechOrgans.label>
     <SoSArchotechOrgans.description>Разработка высокотехнологичных протезов, которые превосходят биологию на молекулярном уровне.</SoSArchotechOrgans.description>
@@ -29,18 +29,18 @@
     <ArchotechHullConversion.description>Преобразование корпуса корабля до уровня архотек. Не влияет на крупные конструкции, такие как радиаторы или генераторы щитов.</ArchotechHullConversion.description>
 	
 	<ArchotechPsychicField.label>формирование пси-поля</ArchotechPsychicField.label>
-	<ArchotechPsychicField.description>Открытие основных принципов психических взаимодействий, которые позволят Архоспоре генерировать пси-поле.</ArchotechPsychicField.description>
+	<ArchotechPsychicField.description>Открытие основных принципов психических взаимодействий, которые позволят Архотек-споре генерировать пси-поле.</ArchotechPsychicField.description>
 	<ArchotechPsychicField.discoveredLetterTitle>Психическое поле</ArchotechPsychicField.discoveredLetterTitle>
-	<ArchotechPsychicField.discoveredLetterText>Теперь Архоспора генерирует психическое поле. Вы можете использовать пси-способности Архоспоры, если накоплено достаточно силы поля и завершены необходимые исследования.\n\nСила пси-поля медленно накапливается, когда члены экипажа медитируют поблизости Архоспоры. Пси-поле можно усилить за счёт установки архоколонн возле Архоспоры.</ArchotechPsychicField.discoveredLetterText>
+	<ArchotechPsychicField.discoveredLetterText>Теперь Архотек-спора генерирует психическое поле. Вы можете использовать пси-способности Архотек-споры, если накоплено достаточно силы поля и завершены необходимые исследования.\n\nСила пси-поля медленно накапливается, когда члены экипажа медитируют поблизости Архотек-споры. Пси-поле можно усилить за счёт установки архоколонн возле Архотек-споры.</ArchotechPsychicField.discoveredLetterText>
 	
 	<ArchotechPsychicManipulation.label>формирование пси-импульсов</ArchotechPsychicManipulation.label>
-	<ArchotechPsychicManipulation.description>Формирование простых успокаивающих или подавляющих пси-импульсов, используя накопленную силу пси-поля Архоспоры.</ArchotechPsychicManipulation.description>
+	<ArchotechPsychicManipulation.description>Формирование простых успокаивающих или подавляющих пси-импульсов, используя накопленную силу пси-поля Архотек-споры.</ArchotechPsychicManipulation.description>
 	
 	<ArchotechBroadManipulation.label>широкая манипуляция</ArchotechBroadManipulation.label>
-	<ArchotechBroadManipulation.description>Использование пси-поля Архоспоры для трансляции сообщений и снов тысячам существ, влияя на их мнения. Это может быть полезно при переговорах через консоль связи.</ArchotechBroadManipulation.description>
+	<ArchotechBroadManipulation.description>Использование пси-поля Архотек-споры для трансляции сообщений и снов тысячам существ, влияя на их мнения. Это может быть полезно при переговорах через консоль связи.</ArchotechBroadManipulation.description>
 	
 	<ArchotechPsylink.label>формирование пси-связи</ArchotechPsylink.label>
-	<ArchotechPsylink.description>Использование накопленной силы пси-поля Архоспоры для наделения существ пси-связью.</ArchotechPsylink.description>
+	<ArchotechPsylink.description>Использование накопленной силы пси-поля Архотек-споры для наделения существ пси-связью.</ArchotechPsylink.description>
 	
 	<ArchotechPsychicEffectors.label>пси-устройства</ArchotechPsychicEffectors.label>
 	<ArchotechPsychicEffectors.description>Разработка портативных устройств ограниченного использования для генерации заданных пси-импульсов.</ArchotechPsychicEffectors.description>
@@ -49,7 +49,7 @@
 	<ArchotechPsychicWeapon.description>Орудие, конвертирующее энергию в подавляющий луч, который проходит сквозь корпус и выводит из строя экипаж вражеских кораблей.</ArchotechPsychicWeapon.description>
 	
 	<ArchotechPsychicSoulLink.label>пси-реинкарнация</ArchotechPsychicSoulLink.label>
-	<ArchotechPsychicSoulLink.description>Возможность связать существо с Архоспорой. Если телу существа будут нанесены смертельные повреждения, Архоспоры мгновенно загрузит его в свободную капсулу личности.</ArchotechPsychicSoulLink.description>
+	<ArchotechPsychicSoulLink.description>Возможность связать существо с Архотек-спорой. Если телу существа будут нанесены смертельные повреждения, Архотек-спора мгновенно загрузит его в свободную капсулу личности.</ArchotechPsychicSoulLink.description>
 
 	<ArchotechExotics.label>экзотические частицы</ArchotechExotics.label>
 	<ArchotechExotics.description>Расширение законов физики множеством частиц с экзотическим поведением.</ArchotechExotics.description>
