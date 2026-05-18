@@ -4,7 +4,7 @@
   <ARLMiscArmContainer.label>Странный контейнер</ARLMiscArmContainer.label>
   <ARLMiscBeerContainer.label>Запечатанный контейнер</ARLMiscBeerContainer.label>
 
-  <StationGeneralRing.label>Кольцевая станция-хаб</StationGeneralRing.label>
+  <StationGeneralRing.label>Кольцевая хаб-станция</StationGeneralRing.label>
 
 <!-- Разные корабли -->
   <ARLArchoFighterPsy.label>Пси-истребитель Архотек</ARLArchoFighterPsy.label>
@@ -27,7 +27,7 @@
 
   <ARLHunterAP.label>Фрегат Охотник-УЧ</ARLHunterAP.label>
 
-  <ARLMedusaSalvagerAP.label>Спасатель Медуза</ARLMedusaSalvagerAP.label>
+  <ARLMedusaSalvagerAP.label>Инженерный корабль Медуза</ARLMedusaSalvagerAP.label>
 
   <ARLLightLiner.label>Легкий лайнер</ARLLightLiner.label>
 
@@ -50,10 +50,14 @@
   <TBCRaidCorvette.label>Рейдерский корвет ТБС-440</TBCRaidCorvette.label>
 
   <!-- NAS Ships / Anty and Not Anty ships (1.3 reworked) -->
-  <NASPirateCommandCruiser.label>Пиратский крейсер командования</NASPirateCommandCruiser.label>
+  <NASPirateCommandCruiser.label>Пиратский крейсер-хаб</NASPirateCommandCruiser.label>
 
   <NASRedburstCruiser.label>Крейсер Красная Вспышка</NASRedburstCruiser.label>
   
-  <NASScienceCruiser.label>Научный крейсер</NASScienceCruiser.label>
+  <NASScienceCruiser.label>Исследовательский крейсер</NASScienceCruiser.label>
+
+  <!-- Special Ships -->
+  <SpecialShadowOfEmpire.label>Тень Империи</SpecialShadowOfEmpire.label>
+  <SpecialTranclucator812.label>Транклюкатор-812</SpecialTranclucator812.label>
 
 </LanguageData>

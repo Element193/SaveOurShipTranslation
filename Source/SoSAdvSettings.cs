@@ -1,5 +1,6 @@
 
-using System.Collections.Generic; // HashSet only, can be replaced removed
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -9,6 +10,8 @@ namespace SaveOurCat
     {
         public bool Soc_Flag_OdysseyHullGraphics = false;
         public bool Soc_Flag_AccelerationParticles = true;
+        public bool Soc_Flag_SmallNuclearEngine = true;
+        public bool Soc_Flag_GraphicReplaces = false;
         public bool Soc_Flag_RussianTranslation = false;
         public bool Soc_Flag_LifeSupportEnergy = false;
         public bool Soc_Flag_OdysseyThrustersGraphics = false;
@@ -18,6 +21,8 @@ namespace SaveOurCat
         {
             Scribe_Values.Look(ref Soc_Flag_OdysseyHullGraphics, "enableOdysseyHullGraphics", false);
             Scribe_Values.Look(ref Soc_Flag_AccelerationParticles, "enableAccelerationParticles", true);
+            Scribe_Values.Look(ref Soc_Flag_SmallNuclearEngine, "enableSmallNuclearEngine", true);
+            Scribe_Values.Look(ref Soc_Flag_GraphicReplaces, "enableGraphicReplaces", false);
             Scribe_Values.Look(ref Soc_Flag_RussianTranslation, "enableRussianTranslation", false);
             Scribe_Values.Look(ref Soc_Flag_LifeSupportEnergy, "enableLifeSupportEnergy", false);
             Scribe_Values.Look(ref Soc_Flag_OdysseyThrustersGraphics, "enableOdysseyThrustersGraphics", false);
@@ -41,6 +46,8 @@ namespace SaveOurCat
             Soc_PatchLogics.ApplyIfNeed_OdysseyHullGraphics();
             Soc_PatchLogics.ApplyIfNeedOdysseyThrustersGraphics();
             Soc_PatchLogics.ApplyIfNeed_AcceleratingParticles();
+            Soc_PatchLogics.ApplyIfNeed_SmallNuclearEngine();
+            Soc_PatchLogics.ApplyIfNeed_GraphicReplaces();
             if (settings.Soc_Flag_RCSLayerFix)
             {
                 Soc_PatchLogics.ApplyIfNeed_RCSLayerFix();
@@ -56,73 +63,91 @@ namespace SaveOurCat
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
-        {
-            Widgets.DrawLineVertical(inRect.center.x, inRect.yMin, inRect.height);
+{
+    // Линия разделения
+    Widgets.DrawLineVertical(inRect.center.x, inRect.yMin, inRect.height);
 
-            Listing_Standard listing = new Listing_Standard();
-            listing.ColumnWidth = inRect.width / 2;
-            listing.Begin(inRect);
+    // Левая колонка
+    Rect leftRect = new Rect(inRect.x, inRect.y, inRect.width / 2 - 6f, inRect.height);
+    Listing_Standard leftListing = new Listing_Standard();
+    leftListing.Begin(leftRect);
 
-            // Addons
-            Text.Anchor = TextAnchor.MiddleCenter;
-            listing.Label("SocSetts.Addons.title".Translate());
-            Text.Anchor = TextAnchor.UpperLeft;
-            listing.GapLine();
-            listing.CheckboxLabeled("SocSetts.AcceleratingParticles.label".Translate(), ref settings.Soc_Flag_AccelerationParticles, "SocSetts.AcceleratingParticles.desc".Translate());
-            listing.Gap();
+    // Addons
+    Text.Anchor = TextAnchor.MiddleCenter;
+    leftListing.Label("SocSetts.Addons.title".Translate());
+    Text.Anchor = TextAnchor.UpperLeft;
+    leftListing.GapLine();
+    leftListing.CheckboxLabeled("SocSetts.AcceleratingParticles.label".Translate(), ref settings.Soc_Flag_AccelerationParticles, "SocSetts.AcceleratingParticles.desc".Translate());
+    leftListing.CheckboxLabeled("SocSetts.SmallNuclearEngine.label".Translate(), ref settings.Soc_Flag_SmallNuclearEngine, "SocSetts.SmallNuclearEngine.desc".Translate());
+    leftListing.Gap();
 
-            // Ships
-            Text.Anchor = TextAnchor.MiddleCenter;
-            listing.Label("SocSetts.Ships.title".Translate());
-            Text.Anchor = TextAnchor.UpperLeft;
-            listing.GapLine();
-            
-            // StarSector Ships
-            Rect starSectorRect = listing.GetRect(24f);
-            Rect starSectorLabelRect = new Rect(starSectorRect.x, starSectorRect.y, starSectorRect.width - 80, starSectorRect.height);
-            Widgets.Label(starSectorLabelRect, "SocSetts.StarSectorShips.label".Translate());
-            TooltipHandler.TipRegion(starSectorLabelRect, "SocSetts.StarSectorShips.desc".Translate());
-            GUI.color = Color.green;
-            Widgets.Label(new Rect(starSectorRect.xMax - 90, starSectorRect.y, 90, 24), "SocSetts.Active.stat".Translate());
-            GUI.color = Color.white;
-            listing.Gap(4f);
+    // Ships
+    Text.Anchor = TextAnchor.MiddleCenter;
+    leftListing.Label("SocSetts.Ships.title".Translate());
+    Text.Anchor = TextAnchor.UpperLeft;
+    leftListing.GapLine();
 
-            // X4 Foundations Ships
-            Rect x4Rect = listing.GetRect(24f);
-            Rect x4LabelRect = new Rect(x4Rect.x, x4Rect.y, x4Rect.width - 80, x4Rect.height);
-            Widgets.Label(x4LabelRect, "SocSetts.X4FoundationsShips.label".Translate());
-            TooltipHandler.TipRegion(x4LabelRect, "SocSetts.X4FoundationsShips.desc".Translate());
-            GUI.color = Color.green;
-            Widgets.Label(new Rect(x4Rect.xMax - 90, x4Rect.y, 90, 24), "SocSetts.Active.stat".Translate());
-            GUI.color = Color.white;
-            listing.Gap(4f);
+    // StarSector Ships
+    Rect starSectorRect = leftListing.GetRect(24f);
+    Rect starSectorLabelRect = new Rect(starSectorRect.x, starSectorRect.y, starSectorRect.width - 80, starSectorRect.height);
+    Widgets.Label(starSectorLabelRect, "SocSetts.StarSectorShips.label".Translate());
+    TooltipHandler.TipRegion(starSectorLabelRect, "SocSetts.StarSectorShips.desc".Translate());
+    GUI.color = Color.green;
+    Widgets.Label(new Rect(starSectorRect.xMax - 90, starSectorRect.y, 90, 24), "SocSetts.Active.stat".Translate());
+    GUI.color = Color.white;
+    leftListing.Gap(4f);
 
-            // Other Ships
-            Rect otherRect = listing.GetRect(24f);
-            Rect otherLabelRect = new Rect(otherRect.x, otherRect.y, otherRect.width - 80, otherRect.height);
-            Widgets.Label(otherLabelRect, "SocSetts.DifferentShips.label".Translate());
-            TooltipHandler.TipRegion(otherLabelRect, "SocSetts.DifferentShips.desc".Translate());
-            GUI.color = Color.green;
-            Widgets.Label(new Rect(otherRect.xMax - 90, otherRect.y, 90, 24), "SocSetts.Active.stat".Translate());
-            GUI.color = Color.white;
-            listing.Gap(4f);
-            
-            listing.Gap();
+    // X4 Foundations Ships
+    Rect x4Rect = leftListing.GetRect(24f);
+    Rect x4LabelRect = new Rect(x4Rect.x, x4Rect.y, x4Rect.width - 80, x4Rect.height);
+    Widgets.Label(x4LabelRect, "SocSetts.X4FoundationsShips.label".Translate());
+    TooltipHandler.TipRegion(x4LabelRect, "SocSetts.X4FoundationsShips.desc".Translate());
+    GUI.color = Color.green;
+    Widgets.Label(new Rect(x4Rect.xMax - 90, x4Rect.y, 90, 24), "SocSetts.Active.stat".Translate());
+    GUI.color = Color.white;
+    leftListing.Gap(4f);
 
-            // Patches
-            Rect patchesTitleRect = listing.GetRect(24f);
-            Text.Anchor = TextAnchor.MiddleCenter;
-            Widgets.Label(patchesTitleRect, "SocSetts.Patches.Title".Translate());
-            Text.Anchor = TextAnchor.UpperLeft;
-            listing.GapLine();
-            listing.CheckboxLabeled("SocSetts.LifeSupportEnergy.label".Translate(), ref settings.Soc_Flag_LifeSupportEnergy, "SocSetts.LifeSupportEnergy.desc".Translate());
-            listing.CheckboxLabeled("SocSetts.OdysseyHullGraphics.label".Translate(), ref settings.Soc_Flag_OdysseyHullGraphics, "SocSetts.OdysseyHullGraphics.desc".Translate());
-            listing.CheckboxLabeled("SocSetts.OdysseyThrustersGraphics.label".Translate(), ref settings.Soc_Flag_OdysseyThrustersGraphics, "SocSetts.OdysseyThrustersGraphics.desc".Translate());
-            listing.CheckboxLabeled("SocSetts.RCSLayerFix.label".Translate(), ref settings.Soc_Flag_RCSLayerFix, "SocSetts.RCSLayerFix.desc".Translate());
-            listing.CheckboxLabeled("SocSetts.RussianTranslation.label".Translate(), ref settings.Soc_Flag_RussianTranslation, "SocSetts.RussianTranslation.desc".Translate());
+    // Other Ships
+    Rect otherRect = leftListing.GetRect(24f);
+    Rect otherLabelRect = new Rect(otherRect.x, otherRect.y, otherRect.width - 80, otherRect.height);
+    Widgets.Label(otherLabelRect, "SocSetts.DifferentShips.label".Translate());
+    TooltipHandler.TipRegion(otherLabelRect, "SocSetts.DifferentShips.desc".Translate());
+    GUI.color = Color.green;
+    Widgets.Label(new Rect(otherRect.xMax - 90, otherRect.y, 90, 24), "SocSetts.Active.stat".Translate());
+    GUI.color = Color.white;
+    leftListing.Gap(4f);
 
-            listing.End();
-        }
+    leftListing.Gap();
+
+    // Patches
+    Rect patchesTitleRect = leftListing.GetRect(24f);
+    Text.Anchor = TextAnchor.MiddleCenter;
+    Widgets.Label(patchesTitleRect, "SocSetts.Patches.Title".Translate());
+    Text.Anchor = TextAnchor.UpperLeft;
+    leftListing.GapLine();
+    leftListing.CheckboxLabeled("SocSetts.LifeSupportEnergy.label".Translate(), ref settings.Soc_Flag_LifeSupportEnergy, "SocSetts.LifeSupportEnergy.desc".Translate());
+    leftListing.CheckboxLabeled("SocSetts.RussianTranslation.label".Translate(), ref settings.Soc_Flag_RussianTranslation, "SocSetts.RussianTranslation.desc".Translate());
+
+    leftListing.End();
+
+    // Правая колонка
+    Rect rightRect = new Rect(inRect.center.x + 6f, inRect.y, inRect.width / 2 - 6f, inRect.height);
+    Listing_Standard rightListing = new Listing_Standard();
+    rightListing.Begin(rightRect);
+
+    // Graphics
+    Text.Anchor = TextAnchor.MiddleCenter;
+    rightListing.Label("SocSetts.Graphics.title".Translate());
+    Text.Anchor = TextAnchor.UpperLeft;
+    rightListing.GapLine();
+    rightListing.CheckboxLabeled("SocSetts.OdysseyHullGraphics.label".Translate(), ref settings.Soc_Flag_OdysseyHullGraphics, "SocSetts.OdysseyHullGraphics.desc".Translate());
+    rightListing.CheckboxLabeled("SocSetts.OdysseyThrustersGraphics.label".Translate(), ref settings.Soc_Flag_OdysseyThrustersGraphics, "SocSetts.OdysseyThrustersGraphics.desc".Translate());
+    rightListing.CheckboxLabeled("SocSetts.RCSLayerFix.label".Translate(), ref settings.Soc_Flag_RCSLayerFix, "SocSetts.RCSLayerFix.desc".Translate());
+    rightListing.CheckboxLabeled("SocSetts.GraphicReplaces.label".Translate(), ref settings.Soc_Flag_GraphicReplaces, "SocSetts.GraphicReplaces.desc".Translate());
+
+    rightListing.End();
+}
+
 
         public override string SettingsCategory() => "Save Our Cat";
     }
@@ -256,6 +281,38 @@ namespace SaveOurCat
             }
         }
 
+        public static void ApplyIfNeed_SmallNuclearEngine()
+        {
+            bool isEnabled = SaveOurCat.settings?.Soc_Flag_SmallNuclearEngine ?? false;
+            
+            if (!IsSaveOurShipLoadedCached())
+            {
+                return;
+            }
+
+            if (!isEnabled && !AlreadyApplied("SmallNuclearEngine"))
+            {
+                RemoveSmallNuclearEngine();
+                MarkApplied("SmallNuclearEngine");
+            }
+        }
+
+        public static void ApplyIfNeed_GraphicReplaces()
+        {
+            bool isEnabled = SaveOurCat.settings?.Soc_Flag_GraphicReplaces ?? false;
+            
+            if (!IsSaveOurShipLoadedCached())
+            {
+                return;
+            }
+
+            if (isEnabled && !AlreadyApplied("GraphicReplaces"))
+            {
+                ApplyGraphicReplacesPatch();
+                MarkApplied("GraphicReplaces");
+            }
+        }
+
         public static void ApplyIfNeed_RCSLayerFix()
         {
             if (!(SaveOurCat.settings?.Soc_Flag_RCSLayerFix ?? false) || AlreadyApplied("RCSLayerFix"))
@@ -321,6 +378,27 @@ namespace SaveOurCat
             }
         }
 
+        private static void RemoveSmallNuclearEngine()
+        {
+            var def = DefDatabase<ThingDef>.GetNamedSilentFail("Ship_NuclearEngineSmall");
+            if (def != null)
+            {
+                def.designatorDropdown = null;
+                def.designationCategory = null;
+            }
+        }
+
+        private static void ApplyGraphicReplacesPatch()
+        {
+            PatchThingGraphic("Ship_Engine_Large", "Things/Building/Ship/Replace/NuclearEngine", drawSize: new Vector2(5.04f, 7f));
+            PatchThingGraphic("ShipSalvageBay", "Things/Building/Ship/Replace/SalvageBay");
+            PatchThingGraphic("ShipSalvageBayNano", "Things/Building/Ship/Replace/SalvageBayNano");
+            PatchThingGraphic("Ship_Engine", "Things/Building/Ship/Replace/ShipEngineRocket");
+            PatchThingGraphic("Ship_Engine_Small", "Things/Building/Ship/Replace/ShipEngineRocket_Single");
+            PatchThingGraphic("ShipShuttleBay", "Things/Building/Ship/Replace/Shuttle_Bay", typeof(Graphic_Single));
+            PatchThingGraphic("ShipShuttleBayLarge", "Things/Building/Ship/Replace/Shuttle_Bay", typeof(Graphic_Single));
+        }
+
         private static void PatchThrusterCategory(string defName, DesignatorDropdownGroupDef dropdown, DesignationCategoryDef category)
         {
             var thruster = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
@@ -379,12 +457,18 @@ namespace SaveOurCat
             Vector2? drawSize = null)
         {
             var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            if (def?.graphicData == null) return;
+            if (def?.graphicData == null)
+            {
+                Log.Warning($"[SoC] Failed to patch {defName}: def or graphicData is null");
+                return;
+            }
 
             if (texPath != null) def.graphicData.texPath = texPath;
             if (graphicClass != null) def.graphicData.graphicClass = graphicClass;
             if (linkType != null) def.graphicData.linkType = linkType.Value;
             if (drawSize != null) def.graphicData.drawSize = drawSize.Value;
+            
+            Log.Message($"[SoC] Successfully patched {defName} with texture {texPath}");
         }
     }
 }

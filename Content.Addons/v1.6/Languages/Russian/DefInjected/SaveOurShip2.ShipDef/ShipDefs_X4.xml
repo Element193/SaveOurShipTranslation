@@ -17,13 +17,13 @@
 
   <X4ColossusE.label>Боевой крейсер Колосс-Е</X4ColossusE.label>
 
-  <X4Asgard.label>Батлкрейсер Асгард</X4Asgard.label>
+  <X4Asgard.label>Линейный крейсер Асгард</X4Asgard.label>
 
-  <X4Syn-S.label>Батлкрейсер Син-У</X4Syn-S.label>
+  <X4Syn-S.label>Линейный крейсер Син-У</X4Syn-S.label>
 
-  <X4Syn-M.label>Батлкрейсер Син-М</X4Syn-M.label>
+  <X4Syn-M.label>Линейный крейсер Син-М</X4Syn-M.label>
 
-  <X4Syn-T.label>Крейсер ПВО Син-М</X4Syn-T.label>
+  <X4Syn-T.label>Ракетный крейсер Син-М</X4Syn-T.label>
 
   <!-- Personal small ships -->
   <ARLSmallPersonal1.label>Малый личный корабль</ARLSmallPersonal1.label>
@@ -33,7 +33,7 @@
   <!-- Fleets -->
   <FleetX4Asgard.label>Флот Асгарда (4500)</FleetX4Asgard.label>
   
-  <FleetX4AsgardX3.label>Батлкрейсеры Асгард Х3</FleetX4AsgardX3.label>
+  <FleetX4AsgardX3.label>Крейсеры Асгард Х3</FleetX4AsgardX3.label>
 
   <FleetX4HeronX2.label>Торговцы Цапля Х2</FleetX4HeronX2.label>
 

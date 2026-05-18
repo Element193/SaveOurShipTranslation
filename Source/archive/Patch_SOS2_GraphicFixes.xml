@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Fix drawSize for Ship_Engine_Large -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Ship_Engine_Large"]/graphicData/drawSize</xpath>
+    <value>
+      <drawSize>(5.04,7)</drawSize>
+    </value>
+  </Operation>
+</Patch>
