@@ -27,4 +27,7 @@
   <ShipPhoton.label>фотон</ShipPhoton.label>
 
   <BlastPhoton.label>фотонный взрыв</BlastPhoton.label> -->
+
+  <ShipStorage.label>Грузовой терминал</ShipStorage.label>
+  <ShipStorage.description>Грузовой терминал корабля для хранения вещей. Может вместить до 15-ти грузов. Не подходит для хранения больших предметов, таких как обломки.</ShipStorage.description>
 </LanguageData>

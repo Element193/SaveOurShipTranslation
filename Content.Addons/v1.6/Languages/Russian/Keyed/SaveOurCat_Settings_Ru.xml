@@ -1,42 +1,59 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<SocSetts.Addons.title>Дополнения</SocSetts.Addons.title>
-	<SocSetts.AcceleratingParticles.label>Ускоряющие частицы</SocSetts.AcceleratingParticles.label>
-	<SocSetts.AcceleratingParticles.desc>Добавляет новый контент, который включает ионные ускорители, анти-ускорители и капсулы с антипротоном.\n\n- Ионный ускоритель: не требует топлива, расходует 120Вт/д энергии когда активен при тяге 600кН.\n- Анти-ускоритель: Обеспечивает большую тягу в 4200кН, но имеет малый бак и высокий расход антипротона.\n\nНастройка скрывает постройки в меню строительства и рецепты в меню крафта, если отключена.\n\nПрименяется после перезапуска.</SocSetts.AcceleratingParticles.desc>
+    <SocSetts.Addons.title>Аддоны</SocSetts.Addons.title>
+    
+    <SocSetts.AcceleratingParticles.label>Ускоряющие частицы</SocSetts.AcceleratingParticles.label>
+    <SocSetts.AcceleratingParticles.desc>Добавляет новый контент, включая ионные ускорители, анти‑ускорители и капсулы с антипротонами.\n\nВ будущем будут добавлены новые элементы, такие как анти-реактор, фотонная турель и сдвоенный ионный ускоритель.\n\nЕсли флажок снят, элементы исчезают из меню строительства и меню крафта.</SocSetts.AcceleratingParticles.desc>
 
-	<SocSetts.SmallNuclearEngine.label>Малый космический ядерный ускоритель</SocSetts.SmallNuclearEngine.label>
-	<SocSetts.SmallNuclearEngine.desc>Малый корабельный двигатель на ядерном топливе, способный вывести корабль на орбиту и поддерживать стабильное положение.\n\nНастройка скрывает ускоритель в меню строительства, если отключена.\n\nПрименяется после перезапуска.</SocSetts.SmallNuclearEngine.desc>
+    <SocSetts.SmallNuclearEngine.label>Малый ядерный ускоритель</SocSetts.SmallNuclearEngine.label>
+    <SocSetts.SmallNuclearEngine.desc>Малый ускоритель на ядерной тяге, способный вывести корабль на орбиту. Не подходит для межпланетных перелётов.\n\nЕсли флажок снят, элементы исчезают из меню строительства и меню крафта.</SocSetts.SmallNuclearEngine.desc>
 
-	<SocSetts.Ships.title>Корабли</SocSetts.Ships.title>
-	<SocSetts.StarSectorShips.label>StarSector</SocSetts.StarSectorShips.label>
-	<SocSetts.StarSectorShips.desc>Коллекция кораблей в стиле игры StarSector. Включает несколько эсминцев и фрегатов с боевым рейтингом 1000, и другие типы кораблей - истребители, бомбардировщики, грузовые корабли, шаттлы.\n\n- Корабли переработаны, изначальная их версия создана Antisodium.</SocSetts.StarSectorShips.desc>
-	<SocSetts.X4FoundationsShips.label>X4 Foundations</SocSetts.X4FoundationsShips.label>
-	<SocSetts.X4FoundationsShips.desc>Коллекция кораблей в стиле игры X4 Foundations. Включает несколько крупных кораблей, с боевым рейтингом 2000, по типу крейсера Асгард, и другие классы кораблей - истребители, фрегаты, грузовые корабли, эсминцы.</SocSetts.X4FoundationsShips.desc>
-	<SocSetts.DifferentShips.label>Различные корабли</SocSetts.DifferentShips.label>
-	<SocSetts.DifferentShips.desc>Коллекция различных кораблей и структур, которые не входят в другие категории. Может содержать станции, мини-корабли, истребители, грузовые корабли, фрегаты, эсминцы и крейсеры.</SocSetts.DifferentShips.desc>
+    <SocSetts.ShipCargoTerminal.label>Грузовой терминал корабля</SocSetts.ShipCargoTerminal.label>
+    <SocSetts.ShipCargoTerminal.desc>Добавляет специализированный грузовой терминал для кораблей с повышенной ёмкостью хранилища.\n\nЕсли флажок снят, здание исчезает из меню строительства.</SocSetts.ShipCargoTerminal.desc>
 
-	<SocSetts.Patches.Title>Патчи</SocSetts.Patches.Title>
+    <SocSetts.Ships.title>Корабли</SocSetts.Ships.title>
+    <SocSetts.StarSectorShips.label>StarSector</SocSetts.StarSectorShips.label>
+    <SocSetts.StarSectorShips.desc>Сборник кораблей в стиле игры StarSector. Включает несколько эсминцев и фрегатов с боевым рейтингом 1000, а также другие типы кораблей — истребители, бомбардировщики, грузовые суда, шаттлы.\n\n— Корабли были переработаны, оригинальная версия создана Antisodium.</SocSetts.StarSectorShips.desc>
 
-	<SocSetts.LifeSupportEnergy.label>Энергетический патч</SocSetts.LifeSupportEnergy.label>
-	<SocSetts.LifeSupportEnergy.desc>Уменьшает параметр потребления энергии системой жизнеобеспечения в 2 раза, и малой системой жизнеобеспечения в 3 раза.\n\nПрименяется после перезапуска.</SocSetts.LifeSupportEnergy.desc>
+    <SocSetts.X4FoundationsShips.label>X4 Foundations</SocSetts.X4FoundationsShips.label>
+    <SocSetts.X4FoundationsShips.desc>Сборник кораблей в стиле игры X4 Foundations. Включает несколько крупных кораблей с боевым рейтингом 2000, таких как крейсер Asgard, а также другие классы — истребители, фрегаты, грузовые суда, эсминцы.</SocSetts.X4FoundationsShips.desc>
 
-	<SocSetts.RussianTranslation.label>Патч перевода</SocSetts.RussianTranslation.label>
-	<SocSetts.RussianTranslation.desc>Заменяет текст "Hover Mode" на "Режим парения" в интерфейсе шаттлов.\n\nПрименяется после перезапуска.</SocSetts.RussianTranslation.desc>
+    <SocSetts.DifferentShips.label>Различные корабли</SocSetts.DifferentShips.label>
+    <SocSetts.DifferentShips.desc>Сборник различных кораблей и сооружений, которые не попадают в другие категории. Может содержать станции, мини‑корабли, истребители, грузовые суда, фрегаты, эсминцы и крейсеры.</SocSetts.DifferentShips.desc>
 
+    <SocSetts.Patches.Title>Патчи</SocSetts.Patches.Title>
 
-	<SocSetts.Graphics.title>Графика</SocSetts.Graphics.title>
+    <SocSetts.LifeSupportEnergy.label>Энергетический патч</SocSetts.LifeSupportEnergy.label>
+    <SocSetts.LifeSupportEnergy.desc>Снижает энергопотребление системы жизнеобеспечения в 2 раза, а малой системы жизнеобеспечения — в 3 раза.</SocSetts.LifeSupportEnergy.desc>
 
-	<SocSetts.OdysseyHullGraphics.label>Графика корпуса из Odyssey</SocSetts.OdysseyHullGraphics.label>
-	<SocSetts.OdysseyHullGraphics.desc>Графика корпуса корабля из дополнения Odyssey.\n\nПрименяется после перезапуска.</SocSetts.OdysseyHullGraphics.desc>
+    <SocSetts.RussianTranslation.label>Патч перевода</SocSetts.RussianTranslation.label>
+    <SocSetts.RussianTranslation.desc>Заменяет текст «Hover Mode» на «Режим парения» в интерфейсе шаттла.</SocSetts.RussianTranslation.desc>
 
-	<SocSetts.OdysseyThrustersGraphics.label>Графика ускорителей из Odyssey</SocSetts.OdysseyThrustersGraphics.label>
-	<SocSetts.OdysseyThrustersGraphics.desc>Графика ускорителей корабля из дополнения Odyssey.\n\nПрименяется после перезапуска.</SocSetts.OdysseyThrustersGraphics.desc>
+    <SocSetts.Graphics.title>Графика</SocSetts.Graphics.title>
 
-	<SocSetts.RCSLayerFix.label>Фикс слоя отрисовки RCS ускорителя</SocSetts.RCSLayerFix.label>
-	<SocSetts.RCSLayerFix.desc>Устанавливает слой отрисовки RCS ускорителя на FloorEmplacement, чтобы он отображался корректно.\n\nПрименяется после перезапуска.</SocSetts.RCSLayerFix.desc>
+    <SocSetts.OdysseyHullGraphics.label>Графика корпуса Odyssey</SocSetts.OdysseyHullGraphics.label>
+    <SocSetts.OdysseyHullGraphics.desc>Графика корпуса корабля Odyssey. Заменяет корпус, вентиляции и солнечные панели. Не заменяет корпуса мехов и архо.</SocSetts.OdysseyHullGraphics.desc>
 
-	<SocSetts.GraphicReplaces.label>Замена графики</SocSetts.GraphicReplaces.label>
-	<SocSetts.GraphicReplaces.desc>Заменяет графику:\n- Ускорители SOS (RCS, химтопливные, ядерные): незначительные правки для лучшей изометрической перспективы и размера отрисовки;\n- Ангарный отсек: убраны кольца, тип графики изменён на "Single";\n- Инженерные отсеки: убран "механический коготь".\n\nПрименяется после перезапуска.</SocSetts.GraphicReplaces.desc>
+    <SocSetts.OdysseyThrustersGraphics.label>Графика ускорителей Odyssey</SocSetts.OdysseyThrustersGraphics.label>
+    <SocSetts.OdysseyThrustersGraphics.desc>Графика ускорителей корабля Odyssey. Заменяет графику химических двигателей.</SocSetts.OdysseyThrustersGraphics.desc>
 
-	<SocSetts.Active.stat>Подгружено</SocSetts.Active.stat>
+    <SocSetts.RCSLayerFix.label>Исправление слоя ускорителей RCS</SocSetts.RCSLayerFix.label>
+    <SocSetts.RCSLayerFix.desc>Устанавливает слой отображения ускорителей RCS на FloorEmplacement, чтобы они отображались корректнее.</SocSetts.RCSLayerFix.desc>
+
+    <SocSetts.SOSNuclearThrusterGraphics.label>Графика ядерного ускорителя SOS</SocSetts.SOSNuclearThrusterGraphics.label>
+    <SocSetts.SOSNuclearThrusterGraphics.desc>Заменяет графику ядерных ускорителей, корректируя изометрическую перспективу сопла.</SocSetts.SOSNuclearThrusterGraphics.desc>
+
+    <SocSetts.SOSSalvageBayGraphics.label>Графика инженерного отсека SOS</SocSetts.SOSSalvageBayGraphics.label>
+    <SocSetts.SOSSalvageBayGraphics.desc>Заменяет графику инженерных отсеков, убирая механическую клешню. Это обеспечивает корректное отображение предметов, размещённых на постройке.</SocSetts.SOSSalvageBayGraphics.desc>
+
+    <SocSetts.SOSChemEnginesGraphics.label>Графика химических двигателей SOS</SocSetts.SOSChemEnginesGraphics.label>
+    <SocSetts.SOSChemEnginesGraphics.desc>Заменяет графику химических двигателей, корректируя изометрическую перспективу сопла.</SocSetts.SOSChemEnginesGraphics.desc>
+
+    <SocSetts.SOSShuttleBayGraphics.label>Графика ангара шаттлов SOS</SocSetts.SOSShuttleBayGraphics.label>
+    <SocSetts.SOSShuttleBayGraphics.desc>Заменяет графику ангара шаттлов, убирая кольца на платформе, которые были сделаны для старых моделей шаттлов в версии мода RimWorld 1.2.</SocSetts.SOSShuttleBayGraphics.desc>
+
+    <SocSetts.SOSRCSEnginesGraphics.label>Графика ускорителей RCS SOS</SocSetts.SOSRCSEnginesGraphics.label>
+    <SocSetts.SOSRCSEnginesGraphics.desc>Заменяет графику ускорителей RCS, корректируя изометрическую перспективу.</SocSetts.SOSRCSEnginesGraphics.desc>
+
+    <SocSetts.Active.stat>Активно</SocSetts.Active.stat>
 </LanguageData>

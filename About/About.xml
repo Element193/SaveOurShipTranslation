@@ -11,9 +11,8 @@
         <li>1.6</li>
     </supportedVersions>
 
-    <description>Неофициальное дополнение для RimWorld. Постройте пригодный для жизни корабль и продолжите историю своих колонистов в космосе — участвуйте в корабельных боях с пиратами, ищите сокровища среди заброшенных кораблей, или откройте одну-две величайшие космические тайны!
-Save Our Ship включает две концовки: постройте двигатель Джонсона-Танаки, чтобы отправиться к звёздам, или превратите кого-то из экипажа в бога-машину с помощью Архотек-споры.
-                
+    <description>Save Our Ship - Translation &#38; Addons
+        
 Languages content:
 Russian - Save Our Ship 2;
 Russian - Save Our Ship Creation Kit;
@@ -26,7 +25,14 @@ Additional content:
 New thrusters - Ion, Antiproton;
 Mod settings with patches;
 Ships &#38; sites collections;
-UI &#38; misc graphics replaces.</description>
+UI &#38; misc graphics replaces/fixes;
+Ship cargo terminal (30 items shelf).
+
+Licenses:
+- Save Our Ship 2 by Kentington and Thain: CC-BY-NC-SA 4.0;
+- Save Our Ship - Translation &#38; Addons by Arelsk: CC-BY-NC-SA 4.0;
+- Adaptive Storage Framework by bradson, Soul, Phaneron: MIT License.
+</description>
 
     <modDependencies>
     <li><packageId>kentington.saveourship2</packageId><displayName>Save Our Ship 2</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/1909914131</steamWorkshopUrl></li>

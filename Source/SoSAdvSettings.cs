@@ -11,7 +11,12 @@ namespace SaveOurCat
         public bool Soc_Flag_OdysseyHullGraphics = false;
         public bool Soc_Flag_AccelerationParticles = true;
         public bool Soc_Flag_SmallNuclearEngine = true;
-        public bool Soc_Flag_GraphicReplaces = false;
+        public bool Soc_Flag_ShipCargoTerminal = false;
+        public bool Soc_Flag_SOSNuclearThrusterGraphics = false;
+        public bool Soc_Flag_SOSSalvageBayGraphics = false;
+        public bool Soc_Flag_SOSChemEnginesGraphics = false;
+        public bool Soc_Flag_SOSShuttleBayGraphics = false;
+        public bool Soc_Flag_SOSRCSEnginesGraphics = false;
         public bool Soc_Flag_RussianTranslation = false;
         public bool Soc_Flag_LifeSupportEnergy = false;
         public bool Soc_Flag_OdysseyThrustersGraphics = false;
@@ -22,7 +27,12 @@ namespace SaveOurCat
             Scribe_Values.Look(ref Soc_Flag_OdysseyHullGraphics, "enableOdysseyHullGraphics", false);
             Scribe_Values.Look(ref Soc_Flag_AccelerationParticles, "enableAccelerationParticles", true);
             Scribe_Values.Look(ref Soc_Flag_SmallNuclearEngine, "enableSmallNuclearEngine", true);
-            Scribe_Values.Look(ref Soc_Flag_GraphicReplaces, "enableGraphicReplaces", false);
+            Scribe_Values.Look(ref Soc_Flag_ShipCargoTerminal, "enableShipCargoTerminal", false);
+            Scribe_Values.Look(ref Soc_Flag_SOSNuclearThrusterGraphics, "enableSOSNuclearThrusterGraphics", false);
+            Scribe_Values.Look(ref Soc_Flag_SOSSalvageBayGraphics, "enableSOSSalvageBayGraphics", false);
+            Scribe_Values.Look(ref Soc_Flag_SOSChemEnginesGraphics, "enableSOSChemEnginesGraphics", false);
+            Scribe_Values.Look(ref Soc_Flag_SOSShuttleBayGraphics, "enableSOSShuttleBayGraphics", false);
+            Scribe_Values.Look(ref Soc_Flag_SOSRCSEnginesGraphics, "enableSOSRCSEnginesGraphics", false);
             Scribe_Values.Look(ref Soc_Flag_RussianTranslation, "enableRussianTranslation", false);
             Scribe_Values.Look(ref Soc_Flag_LifeSupportEnergy, "enableLifeSupportEnergy", false);
             Scribe_Values.Look(ref Soc_Flag_OdysseyThrustersGraphics, "enableOdysseyThrustersGraphics", false);
@@ -47,7 +57,12 @@ namespace SaveOurCat
             Soc_PatchLogics.ApplyIfNeedOdysseyThrustersGraphics();
             Soc_PatchLogics.ApplyIfNeed_AcceleratingParticles();
             Soc_PatchLogics.ApplyIfNeed_SmallNuclearEngine();
-            Soc_PatchLogics.ApplyIfNeed_GraphicReplaces();
+            ShipCargoTerminalControl.ApplyShipCargoTerminalSetting(settings.Soc_Flag_ShipCargoTerminal);
+            Soc_PatchLogics.ApplyIfNeed_SOSNuclearThrusterGraphics();
+            Soc_PatchLogics.ApplyIfNeed_SOSSalvageBayGraphics();
+            Soc_PatchLogics.ApplyIfNeed_SOSChemEnginesGraphics();
+            Soc_PatchLogics.ApplyIfNeed_SOSShuttleBayGraphics();
+            Soc_PatchLogics.ApplyIfNeed_SOSRCSEnginesGraphics();
             if (settings.Soc_Flag_RCSLayerFix)
             {
                 Soc_PatchLogics.ApplyIfNeed_RCSLayerFix();
@@ -79,6 +94,7 @@ namespace SaveOurCat
     leftListing.GapLine();
     leftListing.CheckboxLabeled("SocSetts.AcceleratingParticles.label".Translate(), ref settings.Soc_Flag_AccelerationParticles, "SocSetts.AcceleratingParticles.desc".Translate());
     leftListing.CheckboxLabeled("SocSetts.SmallNuclearEngine.label".Translate(), ref settings.Soc_Flag_SmallNuclearEngine, "SocSetts.SmallNuclearEngine.desc".Translate());
+    leftListing.CheckboxLabeled("SocSetts.ShipCargoTerminal.label".Translate(), ref settings.Soc_Flag_ShipCargoTerminal, "SocSetts.ShipCargoTerminal.desc".Translate());
     leftListing.Gap();
 
     // Ships
@@ -143,7 +159,11 @@ namespace SaveOurCat
     rightListing.CheckboxLabeled("SocSetts.OdysseyHullGraphics.label".Translate(), ref settings.Soc_Flag_OdysseyHullGraphics, "SocSetts.OdysseyHullGraphics.desc".Translate());
     rightListing.CheckboxLabeled("SocSetts.OdysseyThrustersGraphics.label".Translate(), ref settings.Soc_Flag_OdysseyThrustersGraphics, "SocSetts.OdysseyThrustersGraphics.desc".Translate());
     rightListing.CheckboxLabeled("SocSetts.RCSLayerFix.label".Translate(), ref settings.Soc_Flag_RCSLayerFix, "SocSetts.RCSLayerFix.desc".Translate());
-    rightListing.CheckboxLabeled("SocSetts.GraphicReplaces.label".Translate(), ref settings.Soc_Flag_GraphicReplaces, "SocSetts.GraphicReplaces.desc".Translate());
+    rightListing.CheckboxLabeled("SocSetts.SOSNuclearThrusterGraphics.label".Translate(), ref settings.Soc_Flag_SOSNuclearThrusterGraphics, "SocSetts.SOSNuclearThrusterGraphics.desc".Translate());
+    rightListing.CheckboxLabeled("SocSetts.SOSSalvageBayGraphics.label".Translate(), ref settings.Soc_Flag_SOSSalvageBayGraphics, "SocSetts.SOSSalvageBayGraphics.desc".Translate());
+    rightListing.CheckboxLabeled("SocSetts.SOSChemEnginesGraphics.label".Translate(), ref settings.Soc_Flag_SOSChemEnginesGraphics, "SocSetts.SOSChemEnginesGraphics.desc".Translate());
+    rightListing.CheckboxLabeled("SocSetts.SOSShuttleBayGraphics.label".Translate(), ref settings.Soc_Flag_SOSShuttleBayGraphics, "SocSetts.SOSShuttleBayGraphics.desc".Translate());
+    rightListing.CheckboxLabeled("SocSetts.SOSRCSEnginesGraphics.label".Translate(), ref settings.Soc_Flag_SOSRCSEnginesGraphics, "SocSetts.SOSRCSEnginesGraphics.desc".Translate());
 
     rightListing.End();
 }
@@ -297,20 +317,91 @@ namespace SaveOurCat
             }
         }
 
-        public static void ApplyIfNeed_GraphicReplaces()
+        public static void ApplyIfNeed_SOSNuclearThrusterGraphics()
         {
-            bool isEnabled = SaveOurCat.settings?.Soc_Flag_GraphicReplaces ?? false;
-            
+            if (!(SaveOurCat.settings?.Soc_Flag_SOSNuclearThrusterGraphics ?? false) || AlreadyApplied("SOSNuclearThrusterGraphics"))
+            {
+                return;
+            }
+
             if (!IsSaveOurShipLoadedCached())
             {
                 return;
             }
 
-            if (isEnabled && !AlreadyApplied("GraphicReplaces"))
+            ApplySOSNuclearThrusterGraphicsPatch();
+            MarkApplied("SOSNuclearThrusterGraphics");
+        }
+
+        public static void ApplyIfNeed_SOSSalvageBayGraphics()
+        {
+            if (!(SaveOurCat.settings?.Soc_Flag_SOSSalvageBayGraphics ?? false) || AlreadyApplied("SOSSalvageBayGraphics"))
             {
-                ApplyGraphicReplacesPatch();
-                MarkApplied("GraphicReplaces");
+                return;
             }
+
+            if (!IsSaveOurShipLoadedCached())
+            {
+                return;
+            }
+
+            ApplySOSSalvageBayGraphicsPatch();
+            MarkApplied("SOSSalvageBayGraphics");
+        }
+
+        public static void ApplyIfNeed_SOSChemEnginesGraphics()
+        {
+            if (!(SaveOurCat.settings?.Soc_Flag_SOSChemEnginesGraphics ?? false) || AlreadyApplied("SOSChemEnginesGraphics"))
+            {
+                return;
+            }
+
+            if (!IsSaveOurShipLoadedCached())
+            {
+                return;
+            }
+
+            // Skip if OdysseyThrustersGraphics is enabled (they conflict on Ship_Engine and Ship_Engine_Small)
+            if (SaveOurCat.settings?.Soc_Flag_OdysseyThrustersGraphics ?? false)
+            {
+                MarkApplied("SOSChemEnginesGraphics");
+                return;
+            }
+
+            ApplySOSChemEnginesGraphicsPatch();
+            MarkApplied("SOSChemEnginesGraphics");
+        }
+
+        public static void ApplyIfNeed_SOSShuttleBayGraphics()
+        {
+            if (!(SaveOurCat.settings?.Soc_Flag_SOSShuttleBayGraphics ?? false) || AlreadyApplied("SOSShuttleBayGraphics"))
+            {
+                return;
+            }
+
+            if (!IsSaveOurShipLoadedCached())
+            {
+                return;
+            }
+
+            ApplySOSShuttleBayGraphicsPatch();
+            MarkApplied("SOSShuttleBayGraphics");
+        }
+
+        public static void ApplyIfNeed_SOSRCSEnginesGraphics()
+        {
+            if (!(SaveOurCat.settings?.Soc_Flag_SOSRCSEnginesGraphics ?? false) || AlreadyApplied("SOSRCSEnginesGraphics"))
+            {
+                return;
+            }
+
+            if (!IsSaveOurShipLoadedCached())
+            {
+                return;
+            }
+
+            ApplySOSRCSEnginesGraphicsPatch();
+            MarkApplied("SOSRCSEnginesGraphics");
         }
 
         public static void ApplyIfNeed_RCSLayerFix()
@@ -388,15 +479,32 @@ namespace SaveOurCat
             }
         }
 
-        private static void ApplyGraphicReplacesPatch()
+        private static void ApplySOSNuclearThrusterGraphicsPatch()
         {
             PatchThingGraphic("Ship_Engine_Large", "Things/Building/Ship/Replace/NuclearEngine", drawSize: new Vector2(5.04f, 7f));
+        }
+
+        private static void ApplySOSSalvageBayGraphicsPatch()
+        {
             PatchThingGraphic("ShipSalvageBay", "Things/Building/Ship/Replace/SalvageBay");
             PatchThingGraphic("ShipSalvageBayNano", "Things/Building/Ship/Replace/SalvageBayNano");
+        }
+
+        private static void ApplySOSChemEnginesGraphicsPatch()
+        {
             PatchThingGraphic("Ship_Engine", "Things/Building/Ship/Replace/ShipEngineRocket");
             PatchThingGraphic("Ship_Engine_Small", "Things/Building/Ship/Replace/ShipEngineRocket_Single");
+        }
+
+        private static void ApplySOSShuttleBayGraphicsPatch()
+        {
             PatchThingGraphic("ShipShuttleBay", "Things/Building/Ship/Replace/Shuttle_Bay", typeof(Graphic_Single));
             PatchThingGraphic("ShipShuttleBayLarge", "Things/Building/Ship/Replace/Shuttle_Bay", typeof(Graphic_Single));
+        }
+
+        private static void ApplySOSRCSEnginesGraphicsPatch()
+        {
+            PatchThingGraphic("Ship_Thruster", "Things/Building/Ship/Replace/ShipThruster", typeof(Graphic_Multi), drawSize: new Vector2(2.3f, 2.3f));
         }
 
         private static void PatchThrusterCategory(string defName, DesignatorDropdownGroupDef dropdown, DesignationCategoryDef category)

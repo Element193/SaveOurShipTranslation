@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Ship Cargo Terminal -->
+  <ShipCargoTerminal.label>Грузовой терминал корабля</ShipCargoTerminal.label>
+  <ShipCargoTerminal.description>Трёхуровневая полка, которая вмещает в три раза больше, чем пустая земля. Предметы, хранящиеся внутри, никогда не деградируют и не влияют на красоту окружающего пространства.\n\nПоскольку место на полке ограничено, полки не могут вмещать глыбы, здания, растения и трупы крупных существ.</ShipCargoTerminal.description>
+</LanguageData>

@@ -3,21 +3,13 @@
 	<SocSetts.Addons.title>Addons</SocSetts.Addons.title>
 	
 	<SocSetts.AcceleratingParticles.label>Accelerating Particles</SocSetts.AcceleratingParticles.label>
-	<SocSetts.AcceleratingParticles.desc>Adds new content including ion thrusters, anti‑thrusters, and antiproton capsules.
-
-- Ion Thruster: Requires no fuel, consumes 120 W of energy when active, providing thrust of 600 kN.
-- Anti‑Thruster: “Provides a thrust of 4200 kN, but has a small tank and high antiproton consumption.
-
-This checkbox removes things from the construction menu and crafting menu, if unchecked.
-
-Applied after restart.</SocSetts.AcceleratingParticles.desc>
+	<SocSetts.AcceleratingParticles.desc>Adds new content including ion thrusters, anti‑thrusters, and antiproton capsules.\n\nIn the future, new elements will be added, such as the anti‑reactor, photon turret, and dual ion thruster.\n\nThis checkbox removes things from the construction menu and crafting menu, if unchecked.</SocSetts.AcceleratingParticles.desc>
 
 	<SocSetts.SmallNuclearEngine.label>Small Nuclear Engine</SocSetts.SmallNuclearEngine.label>
-	<SocSetts.SmallNuclearEngine.desc>A small nuclear-powered engine capable of launching a ship into orbit. Not suitable for interplanetary travel.
-		
-This checkbox removes things from the construction menu and crafting menu, if unchecked.
+	<SocSetts.SmallNuclearEngine.desc>A small nuclear-powered engine capable of launching a ship into orbit. Not suitable for interplanetary travel.\n\nThis checkbox removes things from the construction menu and crafting menu, if unchecked.</SocSetts.SmallNuclearEngine.desc>
 
-Applied after restart.</SocSetts.SmallNuclearEngine.desc>
+	<SocSetts.ShipCargoTerminal.label>Ship Cargo Terminal</SocSetts.ShipCargoTerminal.label>
+	<SocSetts.ShipCargoTerminal.desc>Adds a specialized cargo terminal for ships with increased storage capacity.\n\nThis checkbox removes the building from the construction menu, if unchecked.</SocSetts.ShipCargoTerminal.desc>
 
 	<SocSetts.Ships.title>Ships</SocSetts.Ships.title>
 	<SocSetts.StarSectorShips.label>StarSector</SocSetts.StarSectorShips.label>
@@ -32,29 +24,37 @@ Applied after restart.</SocSetts.SmallNuclearEngine.desc>
 	<SocSetts.Patches.Title>Patches</SocSetts.Patches.Title>
 
 	<SocSetts.LifeSupportEnergy.label>Energy Patch</SocSetts.LifeSupportEnergy.label>
-	<SocSetts.LifeSupportEnergy.desc>Reduces the energy consumption of the life support system by 2x, and the small life support system by 3x.\n\nApplied after restart.</SocSetts.LifeSupportEnergy.desc>
+	<SocSetts.LifeSupportEnergy.desc>Reduces the energy consumption of the life support system by 2x, and the small life support system by 3x.</SocSetts.LifeSupportEnergy.desc>
 
 	<SocSetts.RussianTranslation.label>Translation Patch</SocSetts.RussianTranslation.label>
-	<SocSetts.RussianTranslation.desc>Replaces the text "Hover Mode" with "Режим парения" in the shuttle interface. Apply if want to learn some Russian words.\n\nApplied after restart.</SocSetts.RussianTranslation.desc>
+	<SocSetts.RussianTranslation.desc>Replaces the text "Hover Mode" with "Режим парения" in the shuttle interface. Apply if want to learn some Russian words.</SocSetts.RussianTranslation.desc>
 
 	<SocSetts.Graphics.title>Graphics</SocSetts.Graphics.title>
 
 	<SocSetts.OdysseyHullGraphics.label>Odyssey Hull Graphics</SocSetts.OdysseyHullGraphics.label>
-	<SocSetts.OdysseyHullGraphics.desc>Ship hull graphics from the Odyssey add-on.\n\nApplied after restart.</SocSetts.OdysseyHullGraphics.desc>
+	<SocSetts.OdysseyHullGraphics.desc>Ship hull graphics from the Odyssey. Replaces hull, vents and solar panels. Does not replace mech and archo hulls.</SocSetts.OdysseyHullGraphics.desc>
 
 	<SocSetts.OdysseyThrustersGraphics.label>Odyssey Thrusters Graphics</SocSetts.OdysseyThrustersGraphics.label>
-	<SocSetts.OdysseyThrustersGraphics.desc>Ship thruster graphics from the Odyssey add-on.\n\nApplied after restart.</SocSetts.OdysseyThrustersGraphics.desc>
+	<SocSetts.OdysseyThrustersGraphics.desc>Ship thruster graphics from the Odyssey. Replaces chemical engines graphics.</SocSetts.OdysseyThrustersGraphics.desc>
 
-	<SocSetts.RCSLayerFix.label>RCS Layer Fix</SocSetts.RCSLayerFix.label>
-	<SocSetts.RCSLayerFix.desc>Sets the RCS thruster render layer to FloorEmplacement so it displays correctly.\n\nApplied after restart.</SocSetts.RCSLayerFix.desc>
+	<SocSetts.RCSLayerFix.label>RCS Engine Layer Fix</SocSetts.RCSLayerFix.label>
+	<SocSetts.RCSLayerFix.desc>Sets the RCS thruster render layer to FloorEmplacement so it displays more correctly.</SocSetts.RCSLayerFix.desc>
 
-	<SocSetts.GraphicReplaces.label>Graphic Replaces</SocSetts.GraphicReplaces.label>
-	<SocSetts.GraphicReplaces.desc>Replaces graphics:
-		- SOS Thrusters (RCS, chemfuel, nuclear): minor fix for better isometric perspective and draw size;
-		- Shuttle bay: removed rings changed graphic type to "Single";
-		- Salvage bay: removed "mechanical claw".
-		
-		Applied after restart.</SocSetts.GraphicReplaces.desc>
+	<SocSetts.SOSNuclearThrusterGraphics.label>SOS Nuclear Thruster Graphics</SocSetts.SOSNuclearThrusterGraphics.label>
+	<SocSetts.SOSNuclearThrusterGraphics.desc>Replaces the graphics of nuclear thrusters, adjusting the isometric nozzle perspective to a more accurate level.</SocSetts.SOSNuclearThrusterGraphics.desc>
+
+	<SocSetts.SOSSalvageBayGraphics.label>SOS Salvage Bay Graphics</SocSetts.SOSSalvageBayGraphics.label>
+	<SocSetts.SOSSalvageBayGraphics.desc>Replaces the graphics of salvage bays, removing the mechanical claw. This ensures that items placed on this structure appear correctly.</SocSetts.SOSSalvageBayGraphics.desc>
+
+	<SocSetts.SOSChemEnginesGraphics.label>SOS Chemical Engines Graphics</SocSetts.SOSChemEnginesGraphics.label>
+	<SocSetts.SOSChemEnginesGraphics.desc>Replaces the graphics of chemical engines, adjusting the isometric nozzle perspective to a more accurate level.</SocSetts.SOSChemEnginesGraphics.desc>
+
+	<SocSetts.SOSShuttleBayGraphics.label>SOS Shuttle Bay Graphics</SocSetts.SOSShuttleBayGraphics.label>
+	<SocSetts.SOSShuttleBayGraphics.desc>Replaces the graphics of shuttle bays, removing the rings on the platform that were designed for older shuttle models in the RimWorld 1.2 mod version.</SocSetts.SOSShuttleBayGraphics.desc>
+
+	<SocSetts.SOSRCSEnginesGraphics.label>SOS RCS Engines Graphics</SocSetts.SOSRCSEnginesGraphics.label>
+	<SocSetts.SOSRCSEnginesGraphics.desc>Replaces the graphics of RCS thrusters, adjusting the isometric perspective.</SocSetts.SOSRCSEnginesGraphics.desc>
+
 
 	<SocSetts.Active.stat>Loaded</SocSetts.Active.stat>
 </LanguageData>

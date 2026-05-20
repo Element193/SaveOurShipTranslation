@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="StorageShelfBase">
+    <defName>ShipStorage</defName>
+    <label>Ship Cargo Terminal</label>
+    <description>Ship Cargo Terminal for storing items. Can hold up to 15 loads. Not suitable for storing large objects such as wreckage.</description>
+    <thingClass>SaveOurCat.ShipStorageClass</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipCargoTerminal</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.3,4.1)</drawSize>
+    </graphicData>
+    <researchPrerequisites>
+			<li>ShipSalvageBay</li>
+		</researchPrerequisites>
+    <designatorDropdown>Ship_SalvageBays</designatorDropdown>
+    <designationCategory>Ship</designationCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <costList>
+			<Steel>40</Steel>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+      <ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Mass>24</Mass>
+      <WorkToBuild>2500</WorkToBuild>
+      <Beauty>-6</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <building>
+      <storageGroupTag>Shelf</storageGroupTag>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <maxItemsInCell>15</maxItemsInCell>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+
+</Defs>
