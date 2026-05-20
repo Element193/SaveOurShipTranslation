@@ -9,7 +9,7 @@
     <graphicData>
       <texPath>Things/Building/Ship/ShipCargoTerminal</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.3,4.1)</drawSize>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
     <researchPrerequisites>
 			<li>ShipSalvageBay</li>
