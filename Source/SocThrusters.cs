@@ -3,7 +3,7 @@ using SaveOurShip2; // CompEngineTrail, CompProps_EngineTrail
 using UnityEngine; // Vector, Mathf, Color
 using Verse; // Graphic, GraphicDatabase, ShaderDatabase
 
-namespace SaveOurCat
+namespace SaveOurCat // Ускорители (замена трейла, анимации, потребление энергии)
 {
     public class CompProps_NuclearThrusterSmall : CompProps_EngineTrail
     {
@@ -71,12 +71,11 @@ namespace SaveOurCat
         {
             if (active && IonProps != null && IonProps.energy)
             {
-                // Обновляется вычисление каждый 3 кадр.тик вместо 1 кадра.тика. Повышает производительность в 3 раза, визуально упрощение скрыто более медленным движением.
                 int currentTick = Find.TickManager.TicksGame;
-                if (currentTick - lastUpdateTick >= 4)
+                if (currentTick - lastUpdateTick >= 4) // Обновление каждый 4 тик вместо 1 (вычисление для анимации)
                 {
                     cachedDrawHeight = 15.5f;
-                    cachedDrawHeight += 0.4f * Mathf.Cos(currentTick / 8f);       // Косинус лево-право анимация ускорителя
+                    cachedDrawHeight += 0.4f * Mathf.Cos(currentTick / 8f); // Вычисление анимации (косинус лево-право)
 
                     lastUpdateTick = currentTick;
                 }

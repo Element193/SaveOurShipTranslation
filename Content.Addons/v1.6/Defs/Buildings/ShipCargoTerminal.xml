@@ -9,7 +9,7 @@
     <graphicData>
       <texPath>Things/Building/Ship/ShipCargoTerminal</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.3,4.1)</drawSize>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
     <researchPrerequisites>
 			<li>ShipSalvageBay</li>
@@ -37,7 +37,8 @@
       <maxItemsInCell>15</maxItemsInCell>
     </building>
     <placeWorkers>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        <li>SaveOurShip2.PlaceWorker_OnShipHull</li>
+        <li>SaveOurCat.PlaceWorker_FrontZoneClear</li>
     </placeWorkers>
   </ThingDef>
 
