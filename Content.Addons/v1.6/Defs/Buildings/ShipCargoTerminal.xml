@@ -37,7 +37,8 @@
       <maxItemsInCell>15</maxItemsInCell>
     </building>
     <placeWorkers>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        <li>SaveOurShip2.PlaceWorker_OnShipHull</li>
+        <li>SaveOurCat.PlaceWorker_FrontZoneClear</li>
     </placeWorkers>
   </ThingDef>
 

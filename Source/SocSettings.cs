@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using Verse;
 
-namespace SaveOurCat
+namespace SaveOurCat // Настройки мода (окно настроек, флаги, переключение)
 {
     public class Soc_ModSettings : ModSettings
     {
@@ -559,15 +559,14 @@ namespace SaveOurCat
             }
         }
 
-        private static void PatchThingGraphic(string defName, string texPath, 
-            System.Type graphicClass = null, 
-            LinkDrawerType? linkType = null, 
+        private static void PatchThingGraphic(string defName, string texPath,
+            System.Type graphicClass = null,
+            LinkDrawerType? linkType = null,
             Vector2? drawSize = null)
         {
             var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
             if (def?.graphicData == null)
             {
-                Log.Warning($"[SoC] Failed to patch {defName}: def or graphicData is null");
                 return;
             }
 
@@ -575,8 +574,7 @@ namespace SaveOurCat
             if (graphicClass != null) def.graphicData.graphicClass = graphicClass;
             if (linkType != null) def.graphicData.linkType = linkType.Value;
             if (drawSize != null) def.graphicData.drawSize = drawSize.Value;
-            
-            Log.Message($"[SoC] Successfully patched {defName} with texture {texPath}");
         }
+
     }
 }

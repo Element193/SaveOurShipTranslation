@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gz4/hAuMloY=",
+  "dgSpecHash": "l/P/KiHd7Jc=",
   "success": true,
-  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\add23\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
-    "C:\\Users\\add23\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

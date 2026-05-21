@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj": {}
+    "C:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj": {
+    "C:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj",
+        "projectUniqueName": "C:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj",
         "projectName": "SaveOurShipTranslation",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj",
+        "projectPath": "C:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\Project.csproj",
         "packagesPath": "C:\\Users\\add23\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\obj\\",
+        "outputPath": "C:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\SaveOurShipTranslation\\Source\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\add23\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\add23\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net48"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,14 +46,6 @@
       "frameworks": {
         "net48": {
           "targetAlias": "net48",
-          "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
         }
       }
