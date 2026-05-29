@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BaseShuttle">
+    <defName>XenoShuttleCargoRace</defName>
+    <label>Xeno Shuttle (hover mode)</label>
+    <description>A cargo shuttle set to hover mode, allowing it to be used as part of a caravan.</description>
+    <statBases>
+      <MoveSpeed>30</MoveSpeed>
+	  <Mass>600</Mass>
+      <CarryingCapacity>120000</CarryingCapacity>
+      <ArmorRating_Blunt>20.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>20.3</ArmorRating_Sharp>
+      <MeatAmount>0</MeatAmount>
+      <MarketValue>45000</MarketValue>
+    </statBases>
+    <verbs>
+    </verbs>
+    <race>
+      <intelligence>Animal</intelligence>
+      <thinkTreeMain>ShuttleThinkTree</thinkTreeMain>
+      <body>SoSShuttlecraft</body>
+      <baseBodySize>10.0</baseBodySize>
+      <baseHealthScale>190.0</baseHealthScale>
+		<packAnimal>true</packAnimal>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <ageGenerationCurve>
+        <points>
+          <li>(0,0)</li>
+		  <li>(0.001,100)</li>
+		  <li>(0.01,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <soundCallIntervalRange>
+        <min>9999</min>
+        <max>9999</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>424</Steel>
+      <Plasteel>424</Plasteel>
+      <ComponentIndustrial>16</ComponentIndustrial>
+	  <AscendedArchomatter>15</AscendedArchomatter>
+    </butcherProducts>
+	<comps>
+		<li Class="CompProperties_Refuelable">
+			<fuelCapacity>500.0</fuelCapacity>
+			<initialConfigurableTargetFuelLevel>500</initialConfigurableTargetFuelLevel>
+			<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+			<fuelConsumptionRate>0.0001</fuelConsumptionRate>
+			<fuelFilter>
+				<thingDefs>
+					<li>AscendedArchomatterPods</li>
+				</thingDefs>
+			</fuelFilter>
+			<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+		</li>
+		<li Class="CompProperties_BecomeBuilding">
+			<buildingDef>XenoShuttle</buildingDef>
+			<fuelPerTile>0.0001</fuelPerTile>
+			<skyfaller>XenoShuttleIncomingCargo</skyfaller>
+		</li>
+	</comps>
+  </ThingDef>
+
+	<PawnKindDef>
+    <defName>ShuttleXenoHover</defName>
+    <label>Xeno Shuttle (hover mode)</label>
+    <race>XenoShuttleCargoRace</race>
+	<combatPower>999999</combatPower>
+	<isFighter>false</isFighter>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Building/Ship/shuttlexenohover</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>12</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+    <weaponTags>
+    </weaponTags>
+  </PawnKindDef>
+  
+
+</Defs>

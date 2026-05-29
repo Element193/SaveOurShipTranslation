@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ArchoAcid.label>灼烧</ArchoAcid.label>
+  <ArchoAcid.description>一种未知的灼烧.</ArchoAcid.description>
+  <ArchoAcid.comps.0.labelTendedWell>已包扎</ArchoAcid.comps.0.labelTendedWell>
+  <ArchoAcid.comps.0.labelTendedWellInner>已照料</ArchoAcid.comps.0.labelTendedWellInner>
+  <ArchoAcid.comps.0.labelSolidTendedWell>已照料</ArchoAcid.comps.0.labelSolidTendedWell>
+  <ArchoAcid.injuryProps.destroyedLabel>溶解性挥发-停止</ArchoAcid.injuryProps.destroyedLabel>
+  <ArchoAcid.injuryProps.destroyedOutLabel>溶解性挥发-进行</ArchoAcid.injuryProps.destroyedOutLabel>
+  <ArchoAcid.labelNoun>一种未知的灼烧.</ArchoAcid.labelNoun>
+
+  <ArchoDisease.label>远古？？感染</ArchoDisease.label>
+  <ArchoDisease.description>？？？？？？</ArchoDisease.description>
+  <ArchoDisease.stages.0.label>未明显变化</ArchoDisease.stages.0.label>
+  <ArchoDisease.stages.1.label>恶变前期</ArchoDisease.stages.1.label>
+  <ArchoDisease.stages.2.label>恶变初期</ArchoDisease.stages.2.label>
+  <ArchoDisease.stages.3.label>恶变期</ArchoDisease.stages.3.label>
+  <ArchoDisease.stages.4.label>恶变晚期</ArchoDisease.stages.4.label>
+  <ArchoDisease.injuryProps.destroyedLabel>正在发生难以言喻的突变...呕呕呕</ArchoDisease.injuryProps.destroyedLabel>
+  <ArchoDisease.injuryProps.destroyedOutLabel>正在发生难以言喻的突变...呕呕呕</ArchoDisease.injuryProps.destroyedOutLabel>
+
+
+</LanguageData>

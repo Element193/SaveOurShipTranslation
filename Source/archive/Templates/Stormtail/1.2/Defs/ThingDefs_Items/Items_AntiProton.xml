@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<ThingDef ParentName="ResourceBase">
+    <defName>ArchomatterPods</defName>
+    <label>Archomatter Pods</label>
+    <description>A small canister of processed Archomatter to be used as fuel.</description>
+		<tickerType>Normal</tickerType>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>		
+    <graphicData>
+      <texPath>Things/Items/ArchomatterCanister</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>250</stackLimit>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>30</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>30</explosiveRadius>
+				<explosiveDamageType>BombSuper</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>70</min>
+					<max>150</max>
+				</wickTicks>
+			</li>
+		</comps>
+  </ThingDef>
+
+<ThingDef ParentName="ResourceBase">
+    <defName>AscendedArchomatterPods</defName>
+    <label>Ascended Archomatter Pods</label>
+    <description>A small canister of Ascended Archomatter to be used as fuel.</description>
+		<tickerType>Normal</tickerType>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>		
+    <graphicData>
+      <texPath>Things/Items/AscendedArchomatterCanister</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>250</stackLimit>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>30</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>55</explosiveRadius>
+				<explosiveDamageType>BombSuper</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>70</min>
+					<max>150</max>
+				</wickTicks>
+			</li>
+		</comps>
+  </ThingDef>
+
+<ThingDef ParentName="ResourceBase">
+    <defName>CentomatterPods</defName>
+    <label>Centomatter Pods</label>
+    <description>A small canister of Centomatter.</description>
+		<tickerType>Normal</tickerType>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>		
+    <graphicData>
+      <texPath>Things/Items/CentomatterCanister</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>250</stackLimit>
+	<statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>30</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>1.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>55</explosiveRadius>
+				<explosiveDamageType>BombSuper</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.5</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>70</min>
+					<max>150</max>
+				</wickTicks>
+			</li>
+		</comps>
+  </ThingDef>     
+  
+<ThingDef ParentName="ResourceBase">
+    <defName>ZerocrystalPods</defName>
+    <label>Zero Crystal Pods</label>
+    <description>A small canister of processed Zero Crystal to be used as fuel.</description>
+		<tickerType>Normal</tickerType>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>		
+    <graphicData>
+      <texPath>Things/Items/ZeroCrystalCanister</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>250</stackLimit>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>    
+  
+<ThingDef ParentName="ResourceBase">
+    <defName>InfernocrystalPods</defName>
+    <label>Inferno Crystal Pods</label>
+    <description>A small canister of processed Inferno Crystal to be used as fuel.</description>
+		<tickerType>Normal</tickerType>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>		
+    <graphicData>
+      <texPath>Things/Items/InfernoCrystalCanister</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>250</stackLimit>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>  
+  
+</Defs>

@@ -34,6 +34,6 @@
 	<ShipAirlockMech.label>мех-шлюз корабля</ShipAirlockMech.label>
 	<ShipAirlockMech.description>Позволяет получать доступ к космическому кораблю или станции и разделять помещения внутри корпуса. Энергетические плазменные барьеры препятствуют выходу газов.</ShipAirlockMech.description>
 	
-	<ShipHullTileMech.label>обшивка мех-корпуса корабля</ShipHullTileMech.label>
+	<ShipHullTileMech.label>мех-обшивка корабля</ShipHullTileMech.label>
 	<ShipHullTileMech.description>Обшивка корпуса космического корабля или станции механоидов. Позволяет устанавливать оборудование и другие сооружения внутри корпуса космического объекта.</ShipHullTileMech.description>
 </LanguageData>

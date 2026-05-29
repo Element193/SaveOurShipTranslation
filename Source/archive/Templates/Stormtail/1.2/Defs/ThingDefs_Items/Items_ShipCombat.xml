@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ShipTorpedoBase">
+    <defName>ShipTorpedo_AntiTon</defName>
+    <label>Antiton Torpedo</label>
+    <description>A torpedo tipped with an anti-ton warhead and an advanced thruster. Can be fired from torpedo tubes. Multiple explosions when released. Range:200 DMG:(V.High)Anti Everything</description>
+    <graphicData>
+      <texPath>Things/Items/ShipTorpedoAntiTon</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>	
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>35.9</explosiveRadius>
+        <explosiveDamageType>BombSuper</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.8</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <chanceToStartFire>0.22</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <wickTicks>60~120</wickTicks>
+      </li>
+    </comps>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+    </statBases>
+    <projectileWhenLoaded>Bullet_FakeAntiTon</projectileWhenLoaded>
+    <costList>
+      <Steel>60</Steel>
+      <Chemfuel>80</Chemfuel>
+	  <ComponentIndustrial>7</ComponentIndustrial>
+	  <Shell_AntigrainWarhead>3</Shell_AntigrainWarhead>
+    </costList>
+    <tradeability>None</tradeability>	
+    <recipeMaker>
+      <researchPrerequisite>ShipTorpedoes</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_FakeAntiTon</defName>
+    <label>antiton torpedo</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShipTorpedoAntiTon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>BombSuper</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>81</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+    </projectile>
+	<interactionCellIcon>Bullet_Torpedo_AntiTon</interactionCellIcon> <!-- This is such a horrible kludge, but it's a way to attach a ThingDef to another ThingDef!-->
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Bullet_Torpedo_AntiTon</defName>
+    <label>antiton torpedo</label>
+    <thingClass>Projectile_ExplosiveShipCombatAntigrain</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ShipTorpedoAntiTon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>20</explosionRadius>
+      <damageDef>ShipTorpedoBombSuper</damageDef>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>ShipTorpedoBombSuper</defName>
+    <defaultDamage>99999</defaultDamage>
+    <defaultStoppingPower>20.0</defaultStoppingPower>
+    <defaultArmorPenetration>20.0</defaultArmorPenetration>
+  </DamageDef>
+  
+  <ThingDef ParentName="ShipTorpedoBase">
+    <defName>ShipTorpedo_Archlite</defName>
+    <label>Archlite Torpedo</label>
+    <description>A torpedo tipped with an Archomatter warhead, the dealiest weapon in existance! Extremely slow but will cause an Archonuclear explosion annihilating ANYTHING it touches! Can be fired from torpedo tubes. Explodes when damaged. Range:200 DMG:(Ludicrous)Leaves nothing alive</description>
+    <graphicData>
+      <texPath>Things/Items/ShipTorpedoArchlite</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>	
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>6.9</explosiveRadius>
+        <explosiveDamageType>BombSuper</explosiveDamageType>
+        <explosiveExpandPerStackcount>4.8</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <chanceToStartFire>3.22</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>ExplosionArchonuclear</explosionSound>
+        <wickTicks>60~120</wickTicks>
+      </li>
+    </comps>
+    <statBases>
+      <MarketValue>200000</MarketValue>
+    </statBases>
+    <projectileWhenLoaded>Bullet_Archlite</projectileWhenLoaded>
+    <costList>
+      <Steel>100</Steel>
+      <Chemfuel>1000</Chemfuel>
+	  <ComponentIndustrial>2</ComponentIndustrial>
+	  <Archomatter>200</Archomatter>
+    </costList>
+    <tradeability>None</tradeability>	
+    <recipeMaker>
+      <researchPrerequisite>ArchomatterResearch</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Archlite</defName>
+    <label>archlite torpedo</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShipTorpedoArchlite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(6,6)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>CoreBlast</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>20</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+    </projectile>
+	<interactionCellIcon>Bullet_Torpedo_Archlite</interactionCellIcon> <!-- This is such a horrible kludge, but it's a way to attach a ThingDef to another ThingDef!-->
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Bullet_Torpedo_Archlite</defName>
+    <label>archlite torpedo</label>
+    <thingClass>Projectile_ExplosiveShipCombatAntigrain</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ShipTorpedoArchlite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(6,6)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>15</explosionRadius>
+      <damageDef>CoreBlast</damageDef>
+      <speed>10</speed>
+    </projectile>
+  </ThingDef>
+
+  	<SoundDef>
+    <defName>ExplosionArchonuclear</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/Archonuclear</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <DamageDef>
+    <defName>CoreBlast</defName>
+    <label>CoreBlast</label>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been desintegrated.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <!--<impactSoundType>Blunt</impactSoundType>-->
+    <armorCategory>Blunt</armorCategory>
+    <minDamageToFragment>99999</minDamageToFragment>
+    <defaultDamage>999999</defaultDamage>
+    <buildingDamageFactor>9</buildingDamageFactor>
+    <plantDamageFactor>9</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>2</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_ArchoNuclear</explosionCellMote>
+    <soundExplosion>ExplosionArchonuclear</soundExplosion>
+  </DamageDef> 
+
+    <ThingDef ParentName="MoteBase">
+    <defName>Mote_ArchoNuclear</defName>
+    <graphicData>
+      <texPath>Things/Mote/BlastArchonuclear</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>8.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.42</fadeInTime>
+      <solidTime>0.90</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <growthRate>0.42</growthRate>
+    </mote>
+  </ThingDef> 
+
+  <ThingDef ParentName="ShipTorpedoBase">
+    <defName>ShipTorpedo_Doomcaller</defName>
+    <label>Doomcaller Torpedo</label>
+    <description>A torpedo tipped with an Archonanite warhead. Wait, a what? Range:200 Dmg:There will be nothing left.</description>
+    <graphicData>
+      <texPath>Things/Items/ShipTorpedoDoomcaller</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>	
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>56</explosiveRadius>
+        <explosiveDamageType>BombSuper</explosiveDamageType>
+        <explosiveExpandPerStackcount>60.8</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <chanceToStartFire>3.22</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>DoomcallerExplosion</explosionSound>
+        <wickTicks>60~120</wickTicks>
+      </li>		
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>56</explosiveRadius>
+        <explosiveDamageType>BombSuper</explosiveDamageType>
+        <explosiveExpandPerStackcount>60.8</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <chanceToStartFire>3.22</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>DoomcallerExplosion</explosionSound>
+        <wickTicks>60~120</wickTicks>
+      </li>	
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>56</explosiveRadius>
+        <explosiveDamageType>BombSuper</explosiveDamageType>
+        <explosiveExpandPerStackcount>60.8</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+        <chanceToStartFire>3.22</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>DoomcallerExplosion</explosionSound>
+        <wickTicks>60~120</wickTicks>		
+      </li>
+    </comps>
+    <statBases>
+      <MarketValue>7000000</MarketValue>
+    </statBases>
+    <projectileWhenLoaded>Bullet_Doomcaller</projectileWhenLoaded>
+    <costList>
+      <Steel>1000</Steel>
+      <Chemfuel>1000</Chemfuel>
+	  <ArchoNanoKit>200</ArchoNanoKit>
+	  <AscendedArchomatter>7000</AscendedArchomatter>
+    </costList>
+    <tradeability>None</tradeability>	
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>20</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>AscendedArchotechWorkbench</li>
+      </recipeUsers>
+      <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite Inherit="False">ArchotechAbsolution</researchPrerequisite>	  
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Doomcaller</defName>
+    <label>Doomcaller Torpedo</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShipTorpedoDoomcaller</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(8,8)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>DoomcallerBlast</damageDef>
+      <!-- damage amount is the damage def default -->
+      <speed>5</speed>
+      <explosionRadius>56</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+    </projectile>
+	<interactionCellIcon>Bullet_Torpedo_Doomcaller</interactionCellIcon> <!-- This is such a horrible kludge, but it's a way to attach a ThingDef to another ThingDef!-->
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Bullet_Torpedo_Doomcaller</defName>
+    <label>Doomcaller Torpedo</label>
+    <thingClass>Projectile_ExplosiveShipCombatAntigrain</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ShipTorpedoDoomcaller</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(8,8)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>56</explosionRadius>
+      <damageDef>DoomcallerBlast</damageDef>
+      <speed>5</speed>
+    </projectile>
+  </ThingDef>
+
+  	<SoundDef>
+    <defName>DoomcallerExplosion</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/DoomcallerExplosion</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <DamageDef>
+    <defName>DoomcallerBlast</defName>
+    <label>DoomcallerBlast</label>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been desintegrated.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <!--<impactSoundType>Blunt</impactSoundType>-->
+    <armorCategory>Blunt</armorCategory>
+    <minDamageToFragment>9999999999</minDamageToFragment>
+    <defaultDamage>9999999999</defaultDamage>
+    <buildingDamageFactor>9999999999</buildingDamageFactor>
+    <plantDamageFactor>9999999999</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>9999999999</explosionHeatEnergyPerCell>
+    <explosionCellMote>DoomcallerBlast</explosionCellMote>
+    <soundExplosion>DoomcallerExplosion</soundExplosion>
+  </DamageDef> 
+
+    <ThingDef ParentName="MoteBase">
+    <defName>DoomcallerBlast</defName>
+    <graphicData>
+      <texPath>Things/Mote/DoomcallerBlast</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>8.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.42</fadeInTime>
+      <solidTime>0.90</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <growthRate>0.42</growthRate>
+    </mote>
+  </ThingDef>      
+  
+</Defs>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Archolarvae.label>上古蜥虫</Archolarvae.label>
+  <Archolarvae.labelPlural>上古蜥虫虫群</Archolarvae.labelPlural>
+  <Archolarvae.lifeStages.0.label>上古蜥虫</Archolarvae.lifeStages.0.label>
+  <Archolarvae.lifeStages.0.labelPlural>上古蜥虫</Archolarvae.lifeStages.0.labelPlural>
+  <Archolarvae.lifeStages.0.labelMale>雄？上古蜥虫</Archolarvae.lifeStages.0.labelMale>
+  <Archolarvae.lifeStages.0.labelMalePlural>雄？上古蜥虫虫群</Archolarvae.lifeStages.0.labelMalePlural>
+  <Archolarvae.lifeStages.0.labelFemale>雌？上古蜥虫</Archolarvae.lifeStages.0.labelFemale>
+  <Archolarvae.lifeStages.0.labelFemalePlural>雌？ 上古蜥虫</Archolarvae.lifeStages.0.labelFemalePlural>
+  <Archolarvae.lifeStages.1.label>上古蜥虫</Archolarvae.lifeStages.1.label>
+  <Archolarvae.lifeStages.1.labelPlural>上古蜥虫</Archolarvae.lifeStages.1.labelPlural>
+  <Archolarvae.lifeStages.1.labelMale>雄？上古蜥虫</Archolarvae.lifeStages.1.labelMale>
+  <Archolarvae.lifeStages.1.labelMalePlural>雄？上古蜥虫s</Archolarvae.lifeStages.1.labelMalePlural>
+  <Archolarvae.lifeStages.1.labelFemale>雌？上古蜥虫</Archolarvae.lifeStages.1.labelFemale>
+  <Archolarvae.lifeStages.1.labelFemalePlural>雌？上古蜥虫s</Archolarvae.lifeStages.1.labelFemalePlural>
+  <Archolarvae.lifeStages.2.label>Archolarvae</Archolarvae.lifeStages.2.label>
+  <Archolarvae.lifeStages.2.labelPlural>Archolarvae</Archolarvae.lifeStages.2.labelPlural>
+  <Archolarvae.lifeStages.2.labelMale>雄？上古蜥虫</Archolarvae.lifeStages.2.labelMale>
+  <Archolarvae.lifeStages.2.labelMalePlural>雄？上古蜥虫s</Archolarvae.lifeStages.2.labelMalePlural>
+  <Archolarvae.lifeStages.2.labelFemale>雌？上古蜥虫</Archolarvae.lifeStages.2.labelFemale>
+  <Archolarvae.lifeStages.2.labelFemalePlural>雌？上古蜥虫s</Archolarvae.lifeStages.2.labelFemalePlural>
+  <Archolarvae.labelMale>雄？上古蜥虫</Archolarvae.labelMale>
+  <Archolarvae.labelMalePlural>雄？上古蜥虫s</Archolarvae.labelMalePlural>
+  <Archolarvae.labelFemale>雌？上古蜥虫</Archolarvae.labelFemale>
+  <Archolarvae.labelFemalePlural>雌？上古蜥虫s</Archolarvae.labelFemalePlural>
+
+  <Archonibbler.label>上古啃食者</Archonibbler.label>
+  <Archonibbler.labelPlural>上古啃食者虫群</Archonibbler.labelPlural>
+  <Archonibbler.lifeStages.0.label>上古啃食者</Archonibbler.lifeStages.0.label>
+  <Archonibbler.lifeStages.0.labelPlural>上古啃食者</Archonibbler.lifeStages.0.labelPlural>
+  <Archonibbler.lifeStages.0.labelMale>雄？上古啃食者</Archonibbler.lifeStages.0.labelMale>
+  <Archonibbler.lifeStages.0.labelMalePlural>雄？上古啃食者虫群</Archonibbler.lifeStages.0.labelMalePlural>
+  <Archonibbler.lifeStages.0.labelFemale>雌？上古啃食者</Archonibbler.lifeStages.0.labelFemale>
+  <Archonibbler.lifeStages.0.labelFemalePlural>雌？上古啃食者虫群</Archonibbler.lifeStages.0.labelFemalePlural>
+  <Archonibbler.lifeStages.1.label>上古啃食者</Archonibbler.lifeStages.1.label>
+  <Archonibbler.lifeStages.1.labelPlural>上古啃食者</Archonibbler.lifeStages.1.labelPlural>
+  <Archonibbler.lifeStages.1.labelMale>雄？上古啃食者</Archonibbler.lifeStages.1.labelMale>
+  <Archonibbler.lifeStages.1.labelMalePlural>雄？上古啃食者虫群</Archonibbler.lifeStages.1.labelMalePlural>
+  <Archonibbler.lifeStages.1.labelFemale>雌？上古啃食者</Archonibbler.lifeStages.1.labelFemale>
+  <Archonibbler.lifeStages.1.labelFemalePlural>雌？上古啃食者虫群</Archonibbler.lifeStages.1.labelFemalePlural>
+  <Archonibbler.lifeStages.2.label>Archonibbler</Archonibbler.lifeStages.2.label>
+  <Archonibbler.lifeStages.2.labelPlural>Archonibbler</Archonibbler.lifeStages.2.labelPlural>
+  <Archonibbler.lifeStages.2.labelMale>雄？上古啃食者</Archonibbler.lifeStages.2.labelMale>
+  <Archonibbler.lifeStages.2.labelMalePlural>雄？上古啃食者虫群</Archonibbler.lifeStages.2.labelMalePlural>
+  <Archonibbler.lifeStages.2.labelFemale>雌？上古啃食者</Archonibbler.lifeStages.2.labelFemale>
+  <Archonibbler.lifeStages.2.labelFemalePlural>雌？上古啃食者虫群</Archonibbler.lifeStages.2.labelFemalePlural>
+  <Archonibbler.labelMale>雄？上古啃食者</Archonibbler.labelMale>
+  <Archonibbler.labelMalePlural>雄？上古啃食者虫群</Archonibbler.labelMalePlural>
+  <Archonibbler.labelFemale>雌？上古啃食者</Archonibbler.labelFemale>
+  <Archonibbler.labelFemalePlural>雌？上古啃食者虫群</Archonibbler.labelFemalePlural>
+
+  <Archohiver.label>上古蜥蜂</Archohiver.label>
+  <Archohiver.labelPlural>上古蜥蜂群</Archohiver.labelPlural>
+  <Archohiver.lifeStages.0.label>上古蜥蜂</Archohiver.lifeStages.0.label>
+  <Archohiver.lifeStages.0.labelPlural>上古蜥蜂</Archohiver.lifeStages.0.labelPlural>
+  <Archohiver.lifeStages.0.labelMale>上古蜥蜂</Archohiver.lifeStages.0.labelMale>
+  <Archohiver.lifeStages.0.labelMalePlural>上古蜥蜂群</Archohiver.lifeStages.0.labelMalePlural>
+  <Archohiver.lifeStages.0.labelFemale>上古蜥蜂</Archohiver.lifeStages.0.labelFemale>
+  <Archohiver.lifeStages.0.labelFemalePlural>上古蜥蜂群</Archohiver.lifeStages.0.labelFemalePlural>
+  <Archohiver.lifeStages.1.label>Archohiver</Archohiver.lifeStages.1.label>
+  <Archohiver.lifeStages.1.labelPlural>Archohiver</Archohiver.lifeStages.1.labelPlural>
+  <Archohiver.lifeStages.1.labelMale>上古蜥蜂</Archohiver.lifeStages.1.labelMale>
+  <Archohiver.lifeStages.1.labelMalePlural>上古蜥蜂群</Archohiver.lifeStages.1.labelMalePlural>
+  <Archohiver.lifeStages.1.labelFemale>上古蜥蜂</Archohiver.lifeStages.1.labelFemale>
+  <Archohiver.lifeStages.1.labelFemalePlural>上古蜥蜂群</Archohiver.lifeStages.1.labelFemalePlural>
+  <Archohiver.lifeStages.2.label>Archohiver</Archohiver.lifeStages.2.label>
+  <Archohiver.lifeStages.2.labelPlural>Archohiver</Archohiver.lifeStages.2.labelPlural>
+  <Archohiver.lifeStages.2.labelMale>上古蜥蜂</Archohiver.lifeStages.2.labelMale>
+  <Archohiver.lifeStages.2.labelMalePlural>上古蜥蜂群</Archohiver.lifeStages.2.labelMalePlural>
+  <Archohiver.lifeStages.2.labelFemale>上古蜥蜂</Archohiver.lifeStages.2.labelFemale>
+  <Archohiver.lifeStages.2.labelFemalePlural>上古蜥蜂群</Archohiver.lifeStages.2.labelFemalePlural>
+  <Archohiver.labelMale>上古蜥蜂</Archohiver.labelMale>
+  <Archohiver.labelMalePlural>上古蜥蜂群</Archohiver.labelMalePlural>
+  <Archohiver.labelFemale>上古蜥蜂</Archohiver.labelFemale>
+  <Archohiver.labelFemalePlural>上古蜥蜂群</Archohiver.labelFemalePlural>
+
+
+  <!-- MeteorMobs -->
+
+  <MeteorSlime.label>陨星粘液</MeteorSlime.label>
+  <MeteorSlime.labelPlural>陨星粘液</MeteorSlime.labelPlural>
+  <MeteorSlime.lifeStages.0.label>陨星粘液</MeteorSlime.lifeStages.0.label>
+  <MeteorSlime.lifeStages.0.labelPlural>陨星粘液</MeteorSlime.lifeStages.0.labelPlural>
+  <MeteorSlime.lifeStages.0.labelMale>陨星粘液</MeteorSlime.lifeStages.0.labelMale>
+  <MeteorSlime.lifeStages.0.labelMalePlural>陨星粘液</MeteorSlime.lifeStages.0.labelMalePlural>
+  <MeteorSlime.lifeStages.0.labelFemale>陨星粘液</MeteorSlime.lifeStages.0.labelFemale>
+  <MeteorSlime.lifeStages.0.labelFemalePlural>陨星粘液</MeteorSlime.lifeStages.0.labelFemalePlural>
+  <MeteorSlime.lifeStages.1.label>陨星粘液</MeteorSlime.lifeStages.1.label>
+  <MeteorSlime.lifeStages.1.labelPlural>陨星粘液</MeteorSlime.lifeStages.1.labelPlural>
+  <MeteorSlime.lifeStages.1.labelMale>陨星粘液</MeteorSlime.lifeStages.1.labelMale>
+  <MeteorSlime.lifeStages.1.labelMalePlural>陨星粘液</MeteorSlime.lifeStages.1.labelMalePlural>
+  <MeteorSlime.lifeStages.1.labelFemale>陨星粘液</MeteorSlime.lifeStages.1.labelFemale>
+  <MeteorSlime.lifeStages.1.labelFemalePlural>陨星粘液</MeteorSlime.lifeStages.1.labelFemalePlural>
+  <MeteorSlime.lifeStages.2.label>陨星粘液</MeteorSlime.lifeStages.2.label>
+  <MeteorSlime.lifeStages.2.labelPlural>陨星粘液</MeteorSlime.lifeStages.2.labelPlural>
+  <MeteorSlime.lifeStages.2.labelMale>陨星粘液</MeteorSlime.lifeStages.2.labelMale>
+  <MeteorSlime.lifeStages.2.labelMalePlural>陨星粘液</MeteorSlime.lifeStages.2.labelMalePlural>
+  <MeteorSlime.lifeStages.2.labelFemale>陨星粘液</MeteorSlime.lifeStages.2.labelFemale>
+  <MeteorSlime.lifeStages.2.labelFemalePlural>陨星粘液</MeteorSlime.lifeStages.2.labelFemalePlural>
+  <MeteorSlime.labelMale>陨星粘液</MeteorSlime.labelMale>
+  <MeteorSlime.labelMalePlural>陨星粘液</MeteorSlime.labelMalePlural>
+  <MeteorSlime.labelFemale>陨星粘液</MeteorSlime.labelFemale>
+  <MeteorSlime.labelFemalePlural>陨星粘液</MeteorSlime.labelFemalePlural>
+
+  <CyberDrone.label>上古机械</CyberDrone.label>
+  <CyberDrone.labelPlural>上古机械群</CyberDrone.labelPlural>
+  <CyberDrone.lifeStages.0.label>上古机械群</CyberDrone.lifeStages.0.label>
+  <CyberDrone.lifeStages.0.labelPlural>上古机械</CyberDrone.lifeStages.0.labelPlural>
+  <CyberDrone.lifeStages.0.labelMale>上古机械</CyberDrone.lifeStages.0.labelMale>
+  <CyberDrone.lifeStages.0.labelMalePlural>上古机械群</CyberDrone.lifeStages.0.labelMalePlural>
+  <CyberDrone.lifeStages.0.labelFemale>上古机械</CyberDrone.lifeStages.0.labelFemale>
+  <CyberDrone.lifeStages.0.labelFemalePlural>上古机械群</CyberDrone.lifeStages.0.labelFemalePlural>
+  <CyberDrone.lifeStages.1.label>上古机械</CyberDrone.lifeStages.1.label>
+  <CyberDrone.lifeStages.1.labelPlural>上古机械</CyberDrone.lifeStages.1.labelPlural>
+  <CyberDrone.lifeStages.1.labelMale>上古机械</CyberDrone.lifeStages.1.labelMale>
+  <CyberDrone.lifeStages.1.labelMalePlural>上古机械群</CyberDrone.lifeStages.1.labelMalePlural>
+  <CyberDrone.lifeStages.1.labelFemale>上古机械</CyberDrone.lifeStages.1.labelFemale>
+  <CyberDrone.lifeStages.1.labelFemalePlural>上古机械群</CyberDrone.lifeStages.1.labelFemalePlural>
+  <CyberDrone.lifeStages.2.label>上古机械</CyberDrone.lifeStages.2.label>
+  <CyberDrone.lifeStages.2.labelPlural>上古机械</CyberDrone.lifeStages.2.labelPlural>
+  <CyberDrone.lifeStages.2.labelMale>上古机械</CyberDrone.lifeStages.2.labelMale>
+  <CyberDrone.lifeStages.2.labelMalePlural>上古机械群</CyberDrone.lifeStages.2.labelMalePlural>
+  <CyberDrone.lifeStages.2.labelFemale>上古机械</CyberDrone.lifeStages.2.labelFemale>
+  <CyberDrone.lifeStages.2.labelFemalePlural>上古机械群</CyberDrone.lifeStages.2.labelFemalePlural>
+  <CyberDrone.labelMale>上古机械</CyberDrone.labelMale>
+  <CyberDrone.labelMalePlural>上古机械群</CyberDrone.labelMalePlural>
+  <CyberDrone.labelFemale>上古机械群</CyberDrone.labelFemale>
+  <CyberDrone.labelFemalePlural>上古机械群</CyberDrone.labelFemalePlural>
+
+
+</LanguageData>

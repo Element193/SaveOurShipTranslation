@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <!--DrugPillBase-->
+  <ThingDef ParentName="DrugPillBase">
+    <defName>EnhancedLuciferium</defName>
+    <label>Enhanced Luciferium</label>
+    <description>The red devil. Improved.</description>
+    <graphicData>
+      <texPath>Things/Items/EnhancedLuciferium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>	
+    <rotatable>false</rotatable>
+	
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <MarketValue>9000</MarketValue>
+	  <Mass>0.01</Mass>
+    </statBases>
+		<costList>			
+		</costList>	
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>EnhancedLuciferiumHigh</hediffDef>
+          <severity>1.50</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <!--<recipeMaker>
+	  <workSkill>Medicine</workSkill>
+      <recipeUsers>
+        <li>ArchotechHivemind</li>
+      </recipeUsers>
+	<skillRequirements>
+        <Medicine>18</Medicine>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>ArchoferiumProduction</li>
+    </researchPrerequisites>	
+    </recipeMaker>-->
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>EnhancedLuciferium</chemical>
+        <addictiveness>1.00</addictiveness>
+        <needLevelOffset>2.00</needLevelOffset>
+        <listOrder>4200</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>EnhancedLuciferiumHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Enhanced Luciferium</label>
+	<description>Red Devil Power</description>
+    <defaultLabelColor>(0.3,1,0.7)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+	<isBad>false</isBad>
+    <stages>
+      <li>
+        <painFactor>0.10</painFactor>
+		<hungerRateFactor>0.20</hungerRateFactor>
+		<restFallFactor>0.20</restFallFactor>
+		<statOffsets>
+		  <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>2.50</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>2.50</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>2.50</offset>
+          </li>
+		  <li>
+            <capacity>Talking</capacity>
+            <offset>2.20</offset>
+          </li>
+		  <li>
+            <capacity>Eating</capacity>
+            <offset>2.20</offset>
+          </li>
+		  <li>
+            <capacity>Sight</capacity>
+            <offset>2.40</offset>
+          </li>
+		  <li>
+            <capacity>Hearing</capacity>
+            <offset>2.40</offset>
+          </li>
+		  <li>
+            <capacity>Breathing</capacity>
+            <offset>2.20</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>2.40</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>2.30</offset>
+          </li>
+           <li>
+            <capacity>Metabolism</capacity>
+            <offset>2.40</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+
+  
+  
+  <ThoughtDef>
+    <defName>EnhancedLuciferiumHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>EnhancedLuciferiumHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Red Haze</label>
+        <description>I AM THE RED DEVIL!</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+
+  <!-- Luciferium addiction -->
+
+  <ChemicalDef>
+    <defName>EnhancedLuciferium</defName>
+    <label>EnhancedLuciferium</label>
+    <addictionHediff>EnhancedLuciferiumAddiction</addictionHediff>
+    <canBinge>false</canBinge>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_EnhancedLuciferium</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>EnhancedLuciferium</label>
+    <description>1001001001000101</description>
+    <listPriority>45</listPriority>
+    <fallPerDay>0.2</fallPerDay>
+  </NeedDef>
+
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>EnhancedLuciferiumAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>Enhanced Luciferium Need</label>
+	<description>I need more!</description>
+    <causesNeed>Chemical_EnhancedLuciferium</causesNeed>
+	<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>unmet</label>
+        <lifeThreatening>true</lifeThreatening>
+        <deathMtbDays>4</deathMtbDays>
+		<painFactor>0.10</painFactor>
+		<hungerRateFactor>4.5</hungerRateFactor>
+		<restFallFactor>0.20</restFallFactor>
+		<statOffsets>
+		  <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>2.00</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>2.00</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>2.00</offset>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0.00</setMax>
+          </li>
+		  <li>
+            <capacity>Eating</capacity>
+            <setMax>0.00</setMax>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>2.00</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>2.00</offset>
+          </li>
+           <li>
+            <capacity>Metabolism</capacity>
+            <offset>2.00</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>2.00</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>5.00</offset>
+          </li>
+          <li>
+            <capacity>Hearing</capacity>
+            <setMax>2.00</setMax>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>ManhunterPermanent</mentalState>
+            <mtbDays>0.5</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+</Defs>

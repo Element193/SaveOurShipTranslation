@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <!-- ====================== Laser Sniper Rifle  ===================== -->
+  <ThingDef ParentName="SOSEXBaseGrenade">
+    <defName>ArchoFrag_ArchoGrenade</defName>
+    <label>Archomatter Explosive</label>
+    <description>Cleanse your spirit.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Weapons/ArchoFrag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.3</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>10.66</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+      <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite Inherit="False">ArchoWeaponry</researchPrerequisite>
+    </recipeMaker>	
+    <costList>
+      <Archomatter>2000</Archomatter>
+      <ArchoNanoKit>10</ArchoNanoKit>
+    </costList>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>SOSEXQuality</li>
+    </thingCategories>
+		<generateCommonality>0.0001</generateCommonality>	
+    <verbs>
+      <li>
+        <label>Throw Archomatter Explosive</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>50.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>0.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_ArchoGrenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>6</explosiveRadius>
+        <explosiveDamageType>ArchoreactorCoreBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_ArchoGrenade</defName>
+    <label>Archomatter Explosive</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Weapons/ArchoFrag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius >6</explosionRadius >
+      <damageDef>ArchoreactorCoreBlast</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>200</explosionDelay>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="SOSEXBaseGrenade">
+    <defName>ArchoFrag_AscendedArchoGrenade</defName>
+    <label>Ascended Archomatter Explosive</label>
+    <description>Cleanse your spirit.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Weapons/AscendedArchoFrag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.3</uiIconScale>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>1</Mass>
+      <RangedWeapon_Cooldown>15.66</RangedWeapon_Cooldown>
+      <WorkToMake>99000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>20</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>AscendedArchotechWorkbench</li>
+      </recipeUsers>
+      <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite Inherit="False">ArchoWeaponry</researchPrerequisite>
+    </recipeMaker>	
+    <costList>
+      <AscendedArchomatter>2000</AscendedArchomatter>
+      <ArchoNanoKit>10</ArchoNanoKit>
+    </costList>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <thingCategories>
+      <li>SOSEXQuality</li>
+    </thingCategories>
+		<generateCommonality>0.0001</generateCommonality>	
+    <verbs>
+      <li>
+        <label>Throw Ascended Archomatter Explosive</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>50.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>0.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_AscendedArchoGrenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>6</explosiveRadius>
+        <explosiveDamageType>AscendedArchoreactorCoreBlast</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_AscendedArchoGrenade</defName>
+    <label>Archomatter Explosive</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Weapons/AscendedArchoFrag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius >12</explosionRadius >
+      <damageDef>AscendedArchoreactorCoreBlast</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>300</explosionDelay>
+    </projectile>
+  </ThingDef>  
+ 
+  
+</Defs>

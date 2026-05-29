@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ShipTorpedo_AntiTon.label>反质子鱼雷</ShipTorpedo_AntiTon.label>
+  <ShipTorpedo_AntiTon.description>带有反质子弹头和先进推进器的鱼雷。可以从鱼雷发射管发射。损坏时爆炸。射程：200 DMG：它可以摧毁一切。</ShipTorpedo_AntiTon.description>
+
+  <Bullet_FakeAntiTon.label>反质子鱼雷</Bullet_FakeAntiTon.label>
+  <Bullet_Torpedo_AntiTon.label>反质子鱼雷</Bullet_Torpedo_AntiTon.label>
+
+  <ShipTorpedo_Archlite.label>上古太空鱼雷</ShipTorpedo_Archlite.label>
+  <ShipTorpedo_Archlite.description>一枚搭载了上古？质弹头的太空鱼雷，这是现存最有效的武器！它非常慢，但会引起一个反应，摧毁它所接触到的任何东西！可以从鱼雷发射管发射。损坏时爆炸。射程：200 DMG：什么都不会留下。</ShipTorpedo_Archlite.description>
+
+  <Bullet_Archlite.label>上古太空鱼雷</Bullet_Archlite.label>
+  <Bullet_Torpedo_Archlite.label>上古太空鱼雷</Bullet_Torpedo_Archlite.label>
+
+
+</LanguageData>

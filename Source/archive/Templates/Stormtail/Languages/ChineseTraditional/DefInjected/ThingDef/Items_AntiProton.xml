@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ArchomatterPods.label>上古？质容器</ArchomatterPods.label>
+  <ArchomatterPods.description>一个小罐，用于储存的上古？质，这一珍贵的物质可用作燃料。</ArchomatterPods.description>
+
+  <AscendedArchomatterPods.label>临界的上古？质容器</AscendedArchomatterPods.label>
+  <AscendedArchomatterPods.description>一个特种罐子，用于储存的临界上古？质，这一极度珍贵的物质可用作燃料。</AscendedArchomatterPods.description>
+
+  <ZerocrystalPods.label>零点水晶罐</ZerocrystalPods.label>
+  <ZerocrystalPods.description>一个小罐，用于储存的零点水晶，这一珍贵的物质可用作冷却剂。</ZerocrystalPods.description>
+
+
+</LanguageData>

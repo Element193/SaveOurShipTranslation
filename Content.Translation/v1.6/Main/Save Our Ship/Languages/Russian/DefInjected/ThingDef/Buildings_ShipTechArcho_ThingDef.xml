@@ -34,11 +34,11 @@
 	<ShipAirlockArchotech.label>архо-шлюз корабля</ShipAirlockArchotech.label>
 	<ShipAirlockArchotech.description>Позволяет получать доступ к космическому кораблю или станции и разделять помещения внутри корпуса. Энергетические плазменные барьеры препятствуют выходу газов.</ShipAirlockArchotech.description>
 	
-	<ShipHullTileArchotech.label>обшивка архо-корпуса корабля</ShipHullTileArchotech.label>
+	<ShipHullTileArchotech.label>архо-обшивка корабля</ShipHullTileArchotech.label>
 	<ShipHullTileArchotech.description>Обшивка корпуса космического корабля или станции, разработанная архотеком. Позволяет устанавливать оборудование и другие сооружения внутри корпуса космического объекта.</ShipHullTileArchotech.description>
 	
-	<Ship_Engine_Archotech.label>антиматериальный ускоритель</Ship_Engine_Archotech.label>
-	<Ship_Engine_Archotech.description>Высокотехнологичный корабельный двигатель, разработанный архотеком. Расходует экзотические частицы в качестве топлива, обеспечивая огромную скорость. Не используется в атмосфере.\n\n&lt;color=#bb8f04&gt;Тяга: 6000кН.\nПотребление топлива: 2 экзочастицы/с.&lt;/color&gt;</Ship_Engine_Archotech.description>
+	<Ship_Engine_Archotech.label>архотек-ускоритель</Ship_Engine_Archotech.label>
+	<Ship_Engine_Archotech.description>Высокотехнологичный корабельный двигатель, разработанный архотеком. Расходует экзотические частицы в качестве топлива, обеспечивая огромную скорость. Не подходит для атмосферы и межзвёздных перелётов.\n\n&lt;color=#bb8f04&gt;Тяга: 6000кН.\nПотребление топлива: 2 экзочастицы/с.&lt;/color&gt;</Ship_Engine_Archotech.description>
 	
 	<ArchotechAntimatterReactor.label>антиматериальный реактор</ArchotechAntimatterReactor.label>
 	<ArchotechAntimatterReactor.description>Высокотехнологичный реактор, разработанный архотеком.\n\nАннигилирует экзотические частицы, вырабатывая огромное количество энергии. Рекомендуется не допускать повреждений этого реактора.</ArchotechAntimatterReactor.description>
@@ -47,24 +47,24 @@
 	<ShipHeatsinkAntiEntropy.description>Высокотехнологичный радиатор, разработанный архотеком.\n\nИспользует экзотические частицы для преобразования избыточного тепла обратно в полезную энергию. Этот радиатор не излучает тепло в космос, благодаря чему может работать даже при активной маскировке.\n\n&lt;color=#bb8f04&gt;Теплоёмкость: 200 Те.\nПреобразование тепла: 5 Те/с в 1000 Вт/с.&lt;/color&gt;</ShipHeatsinkAntiEntropy.description>
 	
 	<ArchotechShieldGenerator.label>генератор щита архотек</ArchotechShieldGenerator.label>
-	<ArchotechShieldGenerator.description>Высокотехнологичный генератор щита, разработанный архотеком.\n\nГенерирует импульсное репульсорное поле, которое отражает входящие объекты, при этом вырабатывает тепло. Капитанам рекомендуется отключать щиты, когда уровень нагрева приближается к максимальному, иначе генератор выйдет из строя.\n\nБлагодаря модифицированной технологии, этот генератор щита производит на 25% меньше тепла при отражении.</ArchotechShieldGenerator.description>
+	<ArchotechShieldGenerator.description>Высокотехнологичный генератор щита, разработанный архотеком.\n\nГенерирует импульсное репульсорное поле, которое отражает входящие объекты, при этом вырабатывает тепло.\n\nКапитанам рекомендуется отключать щиты, когда уровень нагрева приближается к максимальному, иначе генератор выйдет из строя.\n\nБлагодаря модифицированной технологии, этот генератор щита &lt;color=#bb8f04&gt;вырабатывает на 25% меньше тепла&lt;/color&gt; при отражении.</ArchotechShieldGenerator.description>
 
-	<ShipArchotechSpore.label>Архотек-спора</ShipArchotechSpore.label>
-	<ShipArchotechSpore.description>Инкубатор, предназначенный для эволюции машинного или смертного разума в настоящего Архотека. Внутри сосредоточена огромная вычислительная сеть, которая анализирует собственную структуру методами интроспекции и рефлексии, познавая новые тайны разума.\n\nПосле соответствующих исследований, Архотек-спора может генерировать пси-поле, и время от времени награждать своих создателей. Несколько Архотек-спор не влияют на частоту наград, но они могут формировать независимые пси-поля.\n\nЕсли Архотек-спора недовольна, она может разыграть экипаж корабля, устроив саботаж для поднятия собственного настроения. Удовлетворенность споры можно улучшить медитируя рядом, или принося ей пленников в качестве жертв для изучения.</ShipArchotechSpore.description>
+	<ShipArchotechSpore.label>архотек-спора</ShipArchotechSpore.label>
+	<ShipArchotechSpore.description>Инкубатор, предназначенный для эволюции машинного или смертного разума в настоящего &lt;color=#bb8f04&gt;Архотека&lt;/color&gt;. Внутри сосредоточена огромная вычислительная сеть, которая анализирует собственную структуру методами интроспекции и рефлексии, познавая новые тайны разума.\n\nПосле соответствующих исследований, Архотек-спора может &lt;color=#bb8f04&gt;генерировать пси-поле&lt;/color&gt;, и время от времени &lt;color=#bb8f04&gt;награждать&lt;/color&gt; своих создателей. Несколько Архотек-спор не влияют на частоту наград, но они могут формировать независимые пси-поля.\n\nЕсли Архотек-спора недовольна, она может разыграть экипаж корабля, устроив &lt;color=#bb8f04&gt;саботаж&lt;/color&gt; для поднятия собственного настроения. Удовлетворенность споры можно улучшить медитируя рядом, или принося ей пленников в качестве жертв для изучения.</ShipArchotechSpore.description>
 	
-	<ArchotechUplink.label>Архолинк</ArchotechUplink.label>
+	<ArchotechUplink.label>архолинк</ArchotechUplink.label>
 	<ArchotechUplink.description>Позволяет исследователям взаимодействовать с частью разума Архотек-споры для изучения технологий архотека.\n\nУскоряет изучение технологий. Должен быть размещён рядом со столом для исследований. Один стол может быть соединён только с одним архолинком.</ArchotechUplink.description>
 
-	<ShipArchotechPillarA.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архотек-споры.</ShipArchotechPillarA.description>
+	<ShipArchotechPillarA.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов &lt;color=#bb8f04&gt;Архотек-споры&lt;/color&gt;.</ShipArchotechPillarA.description>
 	<ShipArchotechPillarA.label>архотек альфа-колонна</ShipArchotechPillarA.label>
 	
-	<ShipArchotechPillarB.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архотек-споры.</ShipArchotechPillarB.description>
+	<ShipArchotechPillarB.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов &lt;color=#bb8f04&gt;Архотек-споры&lt;/color&gt;.</ShipArchotechPillarB.description>
 	<ShipArchotechPillarB.label>архотек бета-колонна</ShipArchotechPillarB.label>
 	
-	<ShipArchotechPillarC.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архотек-споры.</ShipArchotechPillarC.description>
+	<ShipArchotechPillarC.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов &lt;color=#bb8f04&gt;Архотек-споры&lt;/color&gt;.</ShipArchotechPillarC.description>
 	<ShipArchotechPillarC.label>архотек гамма-колонна</ShipArchotechPillarC.label>
 	
-	<ShipArchotechPillarD.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов Архотек-споры.</ShipArchotechPillarD.description>
+	<ShipArchotechPillarD.description>Сложный и причудливый механизм, который не служит никакой понятной для человека цели, но каким-то образом способствует осуществлению планов &lt;color=#bb8f04&gt;Архотек-споры&lt;/color&gt;.</ShipArchotechPillarD.description>
 	<ShipArchotechPillarD.label>архотек дельта-колонна</ShipArchotechPillarD.label>
 	
 	<ShipSpinalBarrelPsychic.label>линейный пси-подавитель</ShipSpinalBarrelPsychic.label>

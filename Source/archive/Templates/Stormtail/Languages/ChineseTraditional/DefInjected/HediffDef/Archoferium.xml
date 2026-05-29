@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- DrugPillBase -->
+
+  <ArchoferiumHigh.label>上古孢蔓</ArchoferiumHigh.label>
+  <ArchoferiumHigh.description>发...发生什么了..？</ArchoferiumHigh.description>
+
+
+  <!-- Luciferium addiction -->
+
+  <ArchoferiumAddiction.label>上古孢蔓渴求</ArchoferiumAddiction.label>
+  <ArchoferiumAddiction.description>100100101 需？ 1011010001001 更多的？？ 1001001</ArchoferiumAddiction.description>
+  <ArchoferiumAddiction.stages.1.label>更多？？</ArchoferiumAddiction.stages.1.label>
+
+
+</LanguageData>

@@ -1,0 +1,27 @@
+<Defs>
+
+  <GameConditionDef>
+    <defName>PitchBlack</defName>
+    <conditionClass>SOS2_EX.Events.PitchBlack</conditionClass>
+    <label>Unknown Anomaly</label>
+    <description>What in the heck is going on?! Wait--what is that in the sky? We had better hide!</description>
+    <endMessage>What the f*** was that?! best investigate!</endMessage>
+    <letterText>A freakish storm is making way for something coming through the atmosphere!</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <preventRain>true</preventRain>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+  
+  <GameConditionDef>
+    <defName>Apocalypse</defName>
+    <conditionClass>SOS2_EX.Events.Apocalypse</conditionClass>
+    <label>Hell on the Rim</label>
+    <description>What in the heck is going on?! Wait--what is that in the sky? We had better hide!</description>
+    <endMessage>What the f*** was that?!</endMessage>
+    <letterText>The Sky is Raining large meteors!</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <preventRain>true</preventRain>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+  
+</Defs>

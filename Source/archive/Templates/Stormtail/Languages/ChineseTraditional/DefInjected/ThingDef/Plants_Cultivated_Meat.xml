@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Food crops -->
+
+  <CMeatChicken.label>人工培养的鸡肉</CMeatChicken.label>
+  <CMeatChicken.description>一块鸡肉，生长速度快，最终收货率在中等水平以下.</CMeatChicken.description>
+
+  <CMeatPig.label>人工培养的猪肉</CMeatPig.label>
+  <CMeatPig.description>一块猪肉，较为一般的增长速度和中等产量.</CMeatPig.description>
+
+  <CMeatBeef.label>人工培养的牛肉</CMeatBeef.label>
+  <CMeatBeef.description>一块牛肉，生长速度快，产值也高.</CMeatBeef.description>
+
+
+</LanguageData>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <JoyGiverDef>
+    <defName>Analyze_Data</defName>
+    <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+    <baseChance>10</baseChance>
+    <thingDefs>
+      <li>AnalyzerConsole</li>
+    </thingDefs>
+    <jobDef>Analyze_Data</jobDef>
+    <desireSit>false</desireSit>
+    <joyKind>Analyze_Data</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+      <li>Hearing</li>
+      <li>Talking</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+</Defs>

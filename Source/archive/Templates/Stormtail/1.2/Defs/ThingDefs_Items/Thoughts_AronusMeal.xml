@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ======= Basic quality thoughts ========= -->
+  
+    <ThoughtDef>
+    <defName>AteAronusMeal</defName>
+    <durationDays>0.8</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Ate a marvel of spacefood!</label>
+        <description>How did they even make it taste so good?!</description>
+        <baseMoodEffect>40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+</Defs>

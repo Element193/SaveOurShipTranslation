@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThingDef ParentName="MechSerumBase">
+    <defName>CentomatterResurrector</defName>
+    <label>Cento Res-Serum</label>
+    <description>A resurrection serum so powerful it can restore even dessicated corpses.</description>
+    <graphicData>
+      <texPath>Things/Items/CentoRes</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>		  
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>17000</MarketValue>
+    </statBases>
+    <costList>
+      <ArchoAlgae>800</ArchoAlgae>
+	  <Archomatter>1000</Archomatter>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>5</ComponentIndustrial>
+	  <ZeroCrystal>50</ZeroCrystal>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>		
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>None</tradeability>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use Cento Res-Serum</useLabel>
+        <useDuration>0</useDuration>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SingleCorpse</compClass>
+        <fleshCorpsesOnly>false</fleshCorpsesOnly>
+        <nonDessicatedCorpsesOnly>false</nonDessicatedCorpsesOnly>
+      </li>
+      <li>
+        <compClass>CompTargetEffect_Resurrect</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

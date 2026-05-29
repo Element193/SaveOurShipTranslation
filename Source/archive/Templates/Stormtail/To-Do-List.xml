@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+* Ship Weapons
+- Custom laser graphic (Cancelled)
+- Custom Torpedo Classes
+- Custom Weapon Classes
+
+* Ship Structures
+- New classes for the advanced shield and mini shield.
+- Ability to use Archotech engines to liftoff (Currently does not work)
+- Additional joy sources (Like the observation deck)
+
+* Disease System
+<!-- - Archomatter disease for weapons that quickly grows in severity eventually leading to a mutation-->
+
+* Mutation System
+<!-- - Once the disease is at critical a pawn can transmorph into a Goop-->
+- Archonite Ore / can fall with regular vanilla meteors.
+- When near the Archonite ore rock or the mined ore itself one can get the mutation disease aswell!
+- Event weather of mutated particles that can cause this mutation aswell
+
+* Events
+- Starfall Space Weather: Just for prettyness stars swishing around your ship, giving your colonists a hefty moodbuff.
+- Nebula Space Weather: Slows down anybody outside with a heavy nebula overlay graphic that is random
+- Meteor Rain: Small meteors that can be stopped by a ships shield, but can damage it and a ships hull / other things
+- An artifact item trigger for the Pitchblack event instead of random days
+
+* Weaponry
+<!-- - Several weapons that cause the Archomatter disease. Some disruptive ones for mechanoids -->
+<!-- - Achomatter Armor -->
+- Melee weapons
+- Grenade types
+- True Archomatter Ship Weapons
+
+* Biomes
+- Archomatter infested biome with mutated vegetation / animals everywhere. Highly dangerous. 
+
+* Factions
+- Archotype faction
+- Archomatter evolved mechanoids
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="BaseLaserGun" Abstract="True" ParentName="SOSEXBaseWeapon">
+    <techLevel>Ultra</techLevel>
+    <smeltable>true</smeltable>
+	<tradeability>Sellable</tradeability>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers />
+      <unfinishedThingDef>UnfinishedSalvagedLaserGun</unfinishedThingDef>
+      <researchPrerequisite>VWE_LaserWeapons</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+ <!-- ====================== Laser Sniper Rifle  ===================== -->
+  <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+    <defName>Archogun_BeamcanonBullet</defName>	
+    <label>Archomatter Beam</label>
+    <description>A focused, long range archomatter beam.</description>
+    <textures>
+      <li>Things/Projectile/Beambullet</li>
+    </textures>
+    <seam>0.1</seam>
+    <causefireChance>0.2</causefireChance>
+	<beamWidth>0.5</beamWidth>
+	<lifetime>160</lifetime>
+    <projectile>
+		<damageDef>Burn</damageDef>
+		<damageAmountBase>120</damageAmountBase>
+		<armorPenetrationBase>50</armorPenetrationBase>
+		<stoppingPower>5</stoppingPower>
+    </projectile>
+  </ThingDef>
+  
+ <ThingDef ParentName="BaseLaserGun">
+    <defName>Archogun_Beamcanon</defName>
+	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+    <label>Archomatter Beamcanon</label>
+    <description>A weapon that shoots a beam of more concentrated Archomatter. It quite literally dissolves people into nothing</description>
+    <graphicData>
+		<texPath>Things/Weapons/Beamcanon</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+		<WorkToMake>120500</WorkToMake>
+		<MarketValue>3600</MarketValue>
+		<Mass>3.8</Mass>
+			<AccuracyTouch>0.64</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.92</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>5.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <ArchoAlgae>800</ArchoAlgae>
+	  <Archomatter>1000</Archomatter>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>5</ComponentIndustrial>
+	  <ZeroCrystal>50</ZeroCrystal>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+      <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite Inherit="False">ArchoWeaponry</researchPrerequisite>
+    </recipeMaker>
+	<techLevel>Ultra</techLevel>
+    <weaponTags Inherit="False">
+	<li>SOSEXQuality</li>
+    </weaponTags>
+		<generateCommonality>0.0001</generateCommonality>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.30</MoveSpeed> <!-- drawback -->
+	</equippedStatOffsets>
+	<equippedAngleOffset>50</equippedAngleOffset>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<label>Standard</label>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Archogun_BeamcanonBullet</defaultProjectile>
+			<warmupTime>2.0</warmupTime>
+			<range>70</range>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<burstShotCount>3</burstShotCount>			
+			<soundCast>BeamCanonPew</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>0</muzzleFlashScale>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+      </li>
+    </verbs>
+	<comps>     
+		<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
+			<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+			<WarmUpReductionPerShot>0.5</WarmUpReductionPerShot>
+			<Overheats>true</Overheats>
+			<OverheatDestroys>false</OverheatDestroys>
+			<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+			<OverheatBlastExtraDamage>6</OverheatBlastExtraDamage>
+			<OverheatBlastRadius>1.5</OverheatBlastRadius>
+			<OverheatChance>0.06</OverheatChance>
+			<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
+			<OverheatMoteSize>1</OverheatMoteSize>
+		</li> 
+	</comps>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+ </ThingDef>
+ 
+   	<SoundDef>
+    <defName>BeamCanonPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/BeamCanonPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+  
+</Defs>

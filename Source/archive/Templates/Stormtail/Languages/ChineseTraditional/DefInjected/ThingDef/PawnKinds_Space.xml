@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Archolarvae.label>上古蜥虫</Archolarvae.label>
+  <Archolarvae.description>这是什么恶心的虫子啊！</Archolarvae.description>
+  <Archolarvae.tools.0.label>下颚</Archolarvae.tools.0.label>
+  <Archolarvae.tools.1.label>首部</Archolarvae.tools.1.label>
+
+  <Archonibbler.label>上古啃食者</Archonibbler.label>
+  <Archonibbler.description>一只虫子...以及那吐着寒气的口器...杀了我吧！</Archonibbler.description>
+  <Archonibbler.tools.0.label>首部钳刃</Archonibbler.tools.0.label>
+  <Archonibbler.tools.1.label>首部</Archonibbler.tools.1.label>
+
+  <Archohiver.label>上古蜂群</Archohiver.label>
+  <Archohiver.description>唔......快跑啊！！！！</Archohiver.description>
+  <Archohiver.tools.0.label>首部钳刃</Archohiver.tools.0.label>
+  <Archohiver.tools.1.label>首部</Archohiver.tools.1.label>
+
+
+  <!-- MeteorMobs -->
+
+  <MeteorSlime.label>陨星粘液</MeteorSlime.label>
+  <MeteorSlime.description>“那是上古藻类吗....活的？不管它是什么，千万别让它碰到你！那黏糊糊看起来在溶解它接触到的一切！”</MeteorSlime.description>
+  <MeteorSlime.tools.0.label>矬口</MeteorSlime.tools.0.label>
+  <MeteorSlime.tools.1.label>粘腔</MeteorSlime.tools.1.label>
+
+  <Filth_Goop.label>粘液</Filth_Goop.label>
+
+  <CyberDrone.label>上古机械</CyberDrone.label>
+  <CyberDrone.description>00010011*Meep*1001001001</CyberDrone.description>
+  <CyberDrone.tools.0.label>左手</CyberDrone.tools.0.label>
+  <CyberDrone.tools.1.label>右手</CyberDrone.tools.1.label>
+  <CyberDrone.tools.2.label>钻头机械臂</CyberDrone.tools.2.label>
+
+
+</LanguageData>

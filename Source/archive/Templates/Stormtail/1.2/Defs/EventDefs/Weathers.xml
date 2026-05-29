@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WeatherDef>
+    <defName>Blackness</defName>
+    <label>Pitch Blackness</label>
+    <isBad>false</isBad> <!-- Don't want to use this for forced weather quests since it's so much harder than other isBad weathers; it becomes imbalanced -->
+    <description>????</description>
+    <temperatureRange>0~999</temperatureRange>
+    <windSpeedFactor>6.5</windSpeedFactor>
+    <windSpeedOffset>1.25</windSpeedOffset>
+    <favorability>VeryBad</favorability>
+    <perceivePriority>1</perceivePriority>
+    <ambientSounds>
+      <li>DeadZone</li>
+    </ambientSounds>
+	<durationRange>
+      <min>11000</min>
+      <max>11050</max>
+    </durationRange>
+    <eventMakers>
+      <li>
+        <averageInterval>1000</averageInterval>
+        <eventClass>WeatherEvent_LightningFlash</eventClass>
+      </li>
+      <li>
+        <averageInterval>1000</averageInterval>
+        <eventClass>WeatherEvent_LightningStrike</eventClass>
+      </li>
+    </eventMakers>
+    <!-- Colors are Overcast -->
+    <skyColorsDay>
+      <sky>(0.0,0.0,0.0)</sky>
+      <shadow>(0.0,0.0,0.0)</shadow>
+      <overlay>(0.0,0.0,0.0)</overlay>
+      <saturation>1.0</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.0,0.0,0.0)</sky>
+      <shadow>(0.0,0.0,0.0)</shadow>
+      <overlay>(0.0,0.0,0.0)</overlay>
+      <saturation>1.0</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.0,0.0,0.0)</sky>
+      <shadow>(0.0,0.0,0.0)</shadow>
+      <overlay>(0.0,0.0,0.0)</overlay>
+      <saturation>1.0</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.0,0.0,0.0)</sky>
+      <shadow>(0.0,0.0,0.0)</shadow>
+      <overlay>(0.0,0.0,0.0)</overlay>
+      <saturation>1.0</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+  
+  	<SoundDef>
+    <defName>DeadZone</defName>
+    <context>MapOnly</context>
+    <sustain>True</sustain>  	
+    <maxSimultaneous>1</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>		  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Other/DeadZone</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.99~1.01</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+        <sustainIntervalRange>2.5~2.5</sustainIntervalRange>		
+        <sustainLoop>True</sustainLoop> 		
+      </li>
+    </subSounds>
+  </SoundDef>    
+  
+  <WeatherDef>
+    <defName>Roaring_Thunder</defName>
+    <label>Roaring Thunder</label>
+    <description>Really kicking a dead horse</description>
+	<isBad>false</isBad>
+    <repeatable>true</repeatable>
+    <favorability>VeryBad</favorability>
+    <perceivePriority>1</perceivePriority>
+    <ambientSounds>
+      <li>Ambient_Wind_Storm</li>    <!--Ambient_Wind_Storm-->
+    </ambientSounds>
+	<durationRange>
+      <min>19000</min>
+      <max>21000</max>
+    </durationRange>
+    <eventMakers>
+      <li>
+        <averageInterval>300</averageInterval>
+        <eventClass>WeatherEvent_LightningFlash</eventClass>
+      </li>
+      <li>
+        <averageInterval>300</averageInterval>
+        <eventClass>WeatherEvent_LightningStrike</eventClass>
+      </li>
+    </eventMakers>
+    <!-- Colors are Clear -->
+    <skyColorsDay>
+      <sky>(1,1,1)</sky>
+      <shadow>(0.718,0.745,0.757)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.858,0.650,0.423)</sky>
+      <shadow>(0.955,0.886,0.914)</shadow>
+      <overlay>(0.8,0.8,0.8)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.482,0.603,0.682)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(0.6,0.6,0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.482,0.603,0.682)</sky>
+      <shadow>(0.85, 0.85, 0.85)</shadow>
+      <overlay>(0.6,0.6,0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>  
+
+</Defs>
+
+
+
+
+
+
+
+

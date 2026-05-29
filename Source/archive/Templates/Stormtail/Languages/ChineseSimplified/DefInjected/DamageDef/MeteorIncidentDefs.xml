@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Not quite sure it wll work at the moment -->
+
+  <SmallArchometeorDmgDef.label>远古-氙爆</SmallArchometeorDmgDef.label>
+  <SmallArchometeorDmgDef.deathMessage>{0} 再也不能说话了.</SmallArchometeorDmgDef.deathMessage>
+
+  <ArchometeorDmgDef.label>远古-氙爆</ArchometeorDmgDef.label>
+  <ArchometeorDmgDef.deathMessage>{0} 再也不能说话了.</ArchometeorDmgDef.deathMessage>
+
+
+</LanguageData>

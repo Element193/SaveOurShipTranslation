@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mutationbite.label>突变性撕咬</Mutationbite.label>
+  <Mutationbite.deathMessage>{0} 由于未知的伤口死亡.</Mutationbite.deathMessage>
+
+
+  <!-- METEOR MOB DAMAGE -->
+
+  <IrradiatedScratch.label>辐射灼烧</IrradiatedScratch.label>
+  <IrradiatedScratch.deathMessage>{0} 死了.</IrradiatedScratch.deathMessage>
+
+  <IrradiatedScratches.label>辐射灼烧</IrradiatedScratches.label>
+  <IrradiatedScratches.deathMessage>{0} 死了.</IrradiatedScratches.deathMessage>
+
+
+</LanguageData>

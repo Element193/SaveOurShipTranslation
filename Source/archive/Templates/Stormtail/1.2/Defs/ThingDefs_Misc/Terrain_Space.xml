@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="RockBase">
+    <defName>MineableArchonite</defName>
+    <label>Archonite Ore</label>
+    <description>This piece of rock seems to have mutated into a crystalline structure. Within it's transluscent shell one can see "Things" moving around.</description>
+    <graphicData>
+      <texPath>Things/Terrain/Archonite_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(31,31,31)</colorTwo>
+      <color>(128,128,128)</color>
+    </graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(152,209,76,0)</glowColor>
+			</li>
+		</comps>	
+    <statBases>
+      <MaxHitPoints>9000</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Archonite</mineableThing>
+      <mineableYield>1000</mineableYield>
+      <mineableScatterCommonality>0.2</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>150~350</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Archonite</defName>
+    <label>Archonite Ore</label>
+    <description>A strange crystal which inner structure seems to be constantly moving. It even changes it's outer shape and color in your hand!</description>
+    <graphicData>
+      <texPath>Things/Terrain/Archonite</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(152,209,76,0)</glowColor>
+			</li>
+		</comps>	
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>750</stackLimit>	
+    <statBases>
+	  <MaxHitPoints>9000</MaxHitPoints>
+	  <Flammability>0.8</Flammability>
+      <MarketValue>0.1</MarketValue>
+      <Mass>0.008</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>2</deepCommonality>
+    <deepCountPerPortion>50</deepCountPerPortion>
+    <deepLumpSizeRange>200~300</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>  
+
+        <TerrainDef ParentName="TerrainRoadBase">
+    <defName>AscendedCracks</defName>
+    <label>Cracked Ascended Archonite</label>
+    <description>You might not want to touch this....</description>	
+    <texturePath>Things/Terrain/Surfaces/CrackedAscendedArchonite</texturePath>
+    <edgeType>Fade</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>95</pathCost>	
+	 <layerable>true</layerable>
+    <costList>
+      <Steel>1</Steel>
+    </costList>	
+    <!--<designationCategory>ShipDesign</designationCategory>-->	
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>30</Beauty>
+      <Cleanliness>30</Cleanliness>
+    </statBases>
+    
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    
+    </affordances>
+    
+    <fertility>0.0</fertility>
+
+  </TerrainDef>  
+  
+        <TerrainDef ParentName="TerrainRoadBase">
+    <defName>ArchoniteOoze</defName>
+    <label>Shiny Hull Tile</label>
+    <description>Testing</description>	
+    <texturePath>Things/Terrain/Surfaces/ArchoniteOoze</texturePath>
+    <edgeType>Fade</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>0</pathCost>	
+	 <layerable>true</layerable>
+    <costList>
+      <Steel>1</Steel>
+    </costList>	
+    <!--<designationCategory>ShipDesign</designationCategory>-->	
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>30</Beauty>
+      <Cleanliness>30</Cleanliness>
+    </statBases>
+    
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    
+    </affordances>
+    
+    <fertility>0.0</fertility>
+
+  </TerrainDef>  
+  
+        <TerrainDef ParentName="TerrainRoadBase">
+    <defName>ArchoniteSoil</defName>
+    <label>Shiny Hull Tile</label>
+    <description>Testing</description>	
+    <texturePath>Things/Terrain/Surfaces/ArchoniteSoil</texturePath>
+    <edgeType>Fade</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>0</pathCost>
+	 <layerable>true</layerable>
+    <costList>
+      <Steel>1</Steel>
+    </costList>	
+    <!--<designationCategory>ShipDesign</designationCategory>-->	
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>30</Beauty>
+      <Cleanliness>30</Cleanliness>
+    </statBases>
+    
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    
+    </affordances>
+    
+    <fertility>0.0</fertility>
+
+  </TerrainDef>  
+
+        <TerrainDef ParentName="TerrainRoadBase">
+    <defName>SavanCrack</defName>
+    <label>Shiny Hull Tile</label>
+    <description>Testing</description>	
+    <texturePath>Things/Terrain/Surfaces/SavanCrack</texturePath>
+    <edgeType>Fade</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>0</pathCost>	
+	 <layerable>true</layerable>
+    <costList>
+      <Steel>1</Steel>
+    </costList>	
+    <!--<designationCategory>ShipDesign</designationCategory>-->	
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>30</Beauty>
+      <Cleanliness>30</Cleanliness>
+    </statBases>
+    
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    
+    </affordances>
+    
+    <fertility>0.0</fertility>
+
+  </TerrainDef>    
+  
+        <TerrainDef ParentName="TerrainRoadBase">
+    <defName>Seamstone</defName>
+    <label>Shiny Hull Tile</label>
+    <description>Testing</description>	
+    <texturePath>Things/Terrain/Surfaces/Seamstone</texturePath>
+    <edgeType>Fade</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>0</pathCost>
+	 <layerable>true</layerable>
+    <costList>
+      <Steel>1</Steel>
+    </costList>	
+    <!--<designationCategory>ShipDesign</designationCategory>-->	
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>30</Beauty>
+      <Cleanliness>30</Cleanliness>
+    </statBases>
+    
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    
+    </affordances>
+    
+    <fertility>0.0</fertility>
+
+  </TerrainDef>      
+  
+  
+        <TerrainDef ParentName="TerrainRoadBase">
+    <defName>LitHullTile</defName>
+    <label>Shiny Hull Tile</label>
+	<designatorDropdown>SoS2exFloor</designatorDropdown>	
+    <description>A tile that goes OVER a ship hulltile. Beautiful and clean too!</description>	
+    <texturePath>Things/Building/Ship/HullPlateLight</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>0</pathCost>
+    <researchPrerequisites>
+	<li>ArchomatterAscension</li>
+	</researchPrerequisites>	
+	 <layerable>true</layerable>
+    <costList>
+      <Steel>2</Steel>
+      <Plasteel>2</Plasteel>
+    </costList>	
+    <designationCategory>SoS2Ex</designationCategory>	
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>30</Beauty>
+      <Cleanliness>30</Cleanliness>
+    </statBases>
+    
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    
+    </affordances>
+    
+    <fertility>0.0</fertility>
+
+  </TerrainDef>
+  
+        <TerrainDef ParentName="TerrainRoadBase">
+    <defName>Archofloor</defName>
+    <label>Archo-Connection Floor</label>
+	<designatorDropdown>SoS2exFloor</designatorDropdown>	
+    <description>A tile that goes OVER a ship hulltile. Very beautiful and clean.</description>	
+    <texturePath>Things/Building/Ship/HullArchoFull</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>0</pathCost>
+    <researchPrerequisites>
+	<li>ArchomatterAscension</li>
+	</researchPrerequisites>	
+	 <layerable>true</layerable>
+    <costList>
+      <Archomatter>1</Archomatter>
+      <Plasteel>2</Plasteel>
+    </costList>	
+    <designationCategory>SoS2Ex</designationCategory>	
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>30</Beauty>
+      <Cleanliness>80</Cleanliness>
+    </statBases>
+    
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    
+    </affordances>
+    
+    <fertility>0.0</fertility>
+
+  </TerrainDef>  
+  
+        <TerrainDef ParentName="TerrainRoadBase">
+    <defName>ArchofloorAlt</defName>
+    <label>Archo-Connection Floor(alternate)</label>
+	<designatorDropdown>SoS2exFloor</designatorDropdown>	
+    <description>A tile that goes OVER a ship hulltile. Very beautiful and clean. (Techy stripes in tiles)</description>	
+    <texturePath>Things/Building/Ship/HullArchoFullAlt</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>0</pathCost>
+    <researchPrerequisites>
+	<li>ArchomatterAscension</li>
+	</researchPrerequisites>	
+	 <layerable>true</layerable>
+    <costList>
+      <Archomatter>1</Archomatter>
+      <Plasteel>2</Plasteel>
+    </costList>	
+    <designationCategory>SoS2Ex</designationCategory>	
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>30</Beauty>
+      <Cleanliness>80</Cleanliness>
+    </statBases>
+    
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    
+    </affordances>
+    
+    <fertility>0.0</fertility>
+
+  </TerrainDef>    
+  
+        <TerrainDef ParentName="TerrainRoadBase">
+    <defName>ArchoSoil</defName>
+    <label>Archomatter Soil</label>
+	<designatorDropdown>SoS2exFloor</designatorDropdown>	
+    <description>Archomatter and Algae infused soil to grow your space crops quickly! Be---careful of mutations though....</description>	
+    <texturePath>Things/Building/Ship/ArchoSoil</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>0</pathCost>
+    <researchPrerequisites>
+	<li>SpaceMeat</li>
+	</researchPrerequisites>	
+	 <layerable>true</layerable>
+    <costList>
+      <Archomatter>50</Archomatter>
+      <ArchoAlgae>5</ArchoAlgae>
+    </costList>	
+    <designationCategory>SoS2Ex</designationCategory>	
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <Beauty>50</Beauty>
+      <Cleanliness>50</Cleanliness>
+    </statBases>
+    
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    
+    </affordances>
+    
+    <fertility>10.0</fertility>
+
+  </TerrainDef>  
+  
+  
+
+</Defs>

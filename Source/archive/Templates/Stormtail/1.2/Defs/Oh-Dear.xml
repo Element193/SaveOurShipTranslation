@@ -1,0 +1,260 @@
+<Defs>
+
+  <!--=============== Devastator mortar ===============-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>WorldEnderArtillery</defName>
+    <label>World Ender Artillery</label>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoPlatformWorldEnder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,6)</drawSize>
+      <damageData>
+        <rect>(0.38,0.2,0.56375,0.8)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>8000</WorkToBuild>
+      <Mass>250</Mass>
+      <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <uiIconPath>Things/Building/Ship/WorldEnderMenu</uiIconPath>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Canisters Remaining</fuelLabel>
+        <fuelGizmoLabel>Belt</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>ArchomatterPods</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>21</fuelCapacity>
+        <initialFuelPercent>0</initialFuelPercent>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1</fuelMultiplier>
+        <!--<factorByDifficulty>true</factorByDifficulty>-->
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs shells</outOfFuelMessage>
+        <fuelIconPath>Things/Items/ArchomatterCanister</fuelIconPath>
+      </li>
+    </comps>
+    <description>Testing.</description>
+    <size>(6,6)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.4</fillPercent>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>400</costStuffCount>
+    <costList>
+      <Steel>750</Steel>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+    
+          <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>	
+      <turretGunDef>WorldEnderArtillery_Top</turretGunDef>
+      <turretBurstWarmupTime>5.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
+      <turretTopDrawSize>6</turretTopDrawSize>	  
+      <buildingTags>
+        <li>Artillery</li>
+        <li>Artillery_BaseDestroyer</li>
+          <li>Artillery_MannedMortar</li>
+      </buildingTags>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>PlaceWorker_TurretTop</li>
+          <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <inspectorTabs>
+            <li>ITab_Shells</li>
+          </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>WorldEnderArtillery_Bullet</defName>
+    <label>explosive devastator shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/WorldEnderBullet</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>WorldEnderDmgArt</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <speed>90</speed>
+      <explosionRadius>7.5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof></soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient>Drrrm</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseArtilleryWeapon">
+    <defName>WorldEnderArtillery_Top</defName>
+    <label>World Ender Mortar</label>
+    <graphicData>
+      <texPath>Things/Building/Ship/WorldEnder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>	  
+    </graphicData>
+    <description>Devastator launcher. Lobs bombs over walls. Semi inaccurate but long-ranged and fires high velocity projectiles.</description>
+    <techLevel>Archotech</techLevel>
+    <statBases>
+      <Mass>100</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WorldEnderArtillery_Bullet</defaultProjectile>
+        <forcedMissRadius>7</forcedMissRadius>
+        <warmupTime>5.0</warmupTime>
+        <minRange>20</minRange>
+        <range>500</range>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundAiming></soundAiming>		
+        <soundCast>WorldEnderPew</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>55</muzzleFlashScale>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+      <DamageDef Name="WorldEnderDmg">
+    <defName>WorldEnderDmgArt</defName>
+    <label>WorldEnderDmg</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been wiped from existance.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>1000</minDamageToFragment>
+    <defaultDamage>90000</defaultDamage>
+    <defaultStoppingPower>20.0</defaultStoppingPower>
+    <defaultArmorPenetration>30.80</defaultArmorPenetration>
+    <buildingDamageFactor>2500</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>200000</explosionHeatEnergyPerCell>
+    <explosionCellMote>WorldEnderMote</explosionCellMote>
+    <soundExplosion>WorldEnderExplosion</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef> 
+
+    	<!--<SoundDef>
+    <defName>WorldEnderPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/WorldEnderPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>-->
+  
+  	<SoundDef>
+    <defName>Drrrm</defName>
+    <context>MapOnly</context>
+    <sustain>True</sustain>  	
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>		  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/Drrrm</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+        <sustainIntervalRange>0.5~0.5</sustainIntervalRange>		
+        <sustainLoop>True</sustainLoop> 		
+      </li>
+    </subSounds>
+  </SoundDef>        
+  
+  	<!--<SoundDef>
+    <defName>WorldEnderExplosion</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/WorldEnderExplosion</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> -->
+
+     <ThingDef ParentName="MoteBase">
+    <defName>WorldEnderMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/WorldEnderMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>8.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.42</fadeInTime>
+      <solidTime>0.90</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <growthRate>0.42</growthRate>  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>    
+
+</Defs>  

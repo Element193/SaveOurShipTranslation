@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="OrbitalWeaponBase">
+    <defName>MeteorCaller</defName>
+    <label>Unknown Device</label>
+    <description>An odd device with several blinking lights, a sort of holographic meteoric object within a secluded active screen with a lot of alien language around it and a button.(Do not use this unless you are prepared. And that is a FAT warning)</description>
+    <graphicData>
+      <texPath>Things/Items/UknownItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Mass>0.1</Mass>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>SOS2_EX.Events.Verb_ArchoTrigger</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>10</warmupTime>
+        <ai_AvoidFriendlyFireRadius>0</ai_AvoidFriendlyFireRadius>
+        <range>9999</range>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tradeability>Sellable</tradeability>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+	  <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+ </Defs>

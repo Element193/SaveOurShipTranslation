@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>SuperShuttle</defName>
+    <label>Archo Shuttle</label>
+    <thingClass>Building</thingClass>
+    <description>A reusable super shuttlecraft powered by Archomatter fuel pods. Fitted with a nanotech cargo compressor for additional storage.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/shuttle</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(6,6)</drawSize>
+    </graphicData>
+    <size>(5,5)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>SoS2Ex</designationCategory>
+    <defaultPlacingRot>South</defaultPlacingRot>
+	<building>
+      <hasFuelingPort>true</hasFuelingPort>
+    </building>
+    <statBases>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Flammability>0</Flammability>
+	  <Mass>100</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>80</Plasteel>
+	  <Steel>320</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+      <ComponentSpacer>3</ComponentSpacer>
+	  <Archomatter>150</Archomatter>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Transporter">
+		<massCapacity>20000</massCapacity>
+	  </li>
+      <li Class="CompProperties_ShuttleLaunchable">
+		<fuelPerTile>0.0001</fuelPerTile>
+		<skyfaller>SuperCargoShuttleSkyfaller</skyfaller>
+	  </li>
+	  <li Class="CompProperties_Refuelable">
+        <fuelCapacity>200.0</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>200</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>ArchomatterPods</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+      </li>
+		<li Class="CompProperties_BecomePawn">
+			<pawnDef>SuperShuttleCargoHover</pawnDef>
+		</li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_ContentsTransporter</li>
+    </inspectorTabs>
+    <placeWorkers>
+    </placeWorkers>
+		<researchPrerequisites>
+			<li>ArchomatterResearch</li>
+		</researchPrerequisites>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>XenoShuttle</defName>
+    <label>Xeno Transport Shuttle</label>
+    <thingClass>Building</thingClass>
+    <description>A reusable super shuttlecraft powered by Ascended Archomatter fuel pods. Fitted with a nanotech cargo compressor for additional storage plus small and comfy crewquarters.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/shuttlexeno</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(12,12)</drawSize>
+    </graphicData>
+    <size>(10,10)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>SoS2Ex</designationCategory>
+    <defaultPlacingRot>South</defaultPlacingRot>
+	<building>
+      <hasFuelingPort>true</hasFuelingPort>
+    </building>
+    <statBases>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <WorkToBuild>60000</WorkToBuild>
+      <Flammability>0</Flammability>
+	  <Mass>100</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>2000</Plasteel>
+	  <Steel>3020</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+      <ComponentSpacer>15</ComponentSpacer>
+	  <AscendedArchomatter>200</AscendedArchomatter>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Transporter">
+		<massCapacity>120000</massCapacity>
+	  </li>
+      <li Class="CompProperties_ShuttleLaunchable">
+		<fuelPerTile>0.0001</fuelPerTile>
+		<skyfaller>XenoCargoShuttleSkyfaller</skyfaller>
+	  </li>
+	  <li Class="CompProperties_Refuelable">
+        <fuelCapacity>500.0</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>500</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>AscendedArchomatterPods</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <autoRefuelPercent>1</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+      </li>
+		<li Class="CompProperties_BecomePawn">
+			<pawnDef>ShuttleXenoHover</pawnDef>
+		</li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_ContentsTransporter</li>
+    </inspectorTabs>
+    <placeWorkers>
+    </placeWorkers>
+		<researchPrerequisites>
+			<li>ArchotechAbsolution</li>
+		</researchPrerequisites>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+  </ThingDef>  
+  
+</Defs>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="OrbitalWeaponBase">
+    <defName>ApocalypseLaserCaller</defName>
+    <label>Apocalypse Laser</label>
+    <description>A whole slew of alien babble is on this odd device. You have no idea what it says but something tells you it can't be good!</description>
+    <graphicData>
+      <texPath>Things/Items/ApocalypseLaser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>7500000</MarketValue>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Mass>0.1</Mass>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>SOS2_EX.Damage.Verb_TestingArchoBeam</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>0</ai_AvoidFriendlyFireRadius>
+        <range>9999</range>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>MassiveLaserCharge</soundAiming>
+        <soundCast>MassiveLaser</soundCast>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tradeability>None</tradeability>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+	  <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="OrbitalWeaponBase">
+    <defName>StormiesLaser</defName>
+    <label>SaL</label>
+    <description>HAHAHAHA---no...!</description>
+    <graphicData>
+      <texPath>Things/Items/StormOrb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>700000000</MarketValue>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Mass>0.1</Mass>
+    </statBases>
+	<verbs>
+      <li>
+        <verbClass>SOS2_EX.Damage.Verb_TestingArchoBeam</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>0</ai_AvoidFriendlyFireRadius>
+        <range>9999</range>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>MassiveLaserCharge</soundAiming>
+        <soundCast>MassiveLaser</soundCast>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tradeability>None</tradeability>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+	  <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>  
+  
+  	<SoundDef>
+    <defName>MassiveLaserCharge</defName>
+    <context>MapOnly</context>
+    <sustain>True</sustain>  	
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>		  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Other/MassiveLaserCharge</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+        <sustainIntervalRange>0.5~0.5</sustainIntervalRange>		
+        <sustainLoop>False</sustainLoop> 		
+      </li>
+    </subSounds>
+  </SoundDef>   
+
+  	<SoundDef>
+    <defName>MassiveLaser</defName>
+    <context>MapOnly</context>
+    <sustain>True</sustain>	
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>		  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Other/MassiveLaser</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+        <sustainIntervalRange>0.10~0.10</sustainIntervalRange>		
+        <sustainLoop>False</sustainLoop>		
+      </li>
+    </subSounds>
+  </SoundDef>     
+  
+ </Defs>

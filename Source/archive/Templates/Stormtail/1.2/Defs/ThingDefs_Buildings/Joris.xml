@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MechBuildingBase">
+    <defName>JorisBonson</defName>
+    <label>Our Savior</label>
+    <description>Our savior, Our friend. Thank you for playing with my mod Mr.Streamer</description>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>10000</MaxHitPoints>
+	  <WorkToBuild>25000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MarketValue>5000</MarketValue>
+	  <Mass>800</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Ship/JorisBonson</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(1, 0.4, 1)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2, 0.2, 0.6, 0.6)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+    </building>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    </placeWorkers>
+    <comps>	
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>25</radius>
+		<interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(32, 252, 235 )</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>800</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+      <li Class="CompProperties_Flickable"/>	  
+	   <li Class="CompProperties_ProjectileInterceptor">
+        <radius>25</radius>
+		<interceptAirProjectiles>true</interceptAirProjectiles>
+        <color>(32, 252, 235 )</color>
+        <reactivateEffect>MortarShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>MortarShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>800</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+    </comps>
+	    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <costList>
+      <Steel>5500</Steel>
+    </costList>
+	    <researchPrerequisites>
+      <li>ArchoCooling</li>
+    </researchPrerequisites>
+  </ThingDef> 
+
+
+</Defs>

@@ -1,0 +1,3958 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ArchoPassiveCooler</defName>
+    <label>Archotech Passive Cooler</label>
+	<designatorDropdown>SoS2exCooling</designatorDropdown>		
+    <description>A Archotech unpowered cooler that works by dispensing consensed algae into the air. Must be regularly replenished with ArchoAlgae.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoPassiveCooler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <shadowData>
+        <volume>(0.9,0.3,0.9)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>1</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Archomatter>50</Archomatter>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.4</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-300</heatPerSecond>
+        <heatPushMinTemperature>21</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>5.0</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>ArchoAlgae</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+    <designationCategory>SoS2Ex</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+    <researchPrerequisites>
+      <li>ArchoCooling</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>ArchoResearchBench</defName>
+    <label>Archotech Research Bench</label>
+    <description>A super high-tech bench with computers and electronic measurement equipment. Allows mega rapid research, and unlocks archotech research projects.</description>
+    <thingClass>Building_ResearchBench</thingClass>
+    <size>(3,1)</size>
+    <minifiedDef />
+    <thingCategories Inherit="false" />
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+	  <Archomatter>20</Archomatter>
+    </costList>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchotechResearch</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.5,2.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>1</pathCost>
+    <rotatable>true</rotatable>		
+    <tickerType>Normal</tickerType>		
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <ResearchSpeedFactor>0.8</ResearchSpeedFactor>
+    </statBases>
+    <comps>
+      <li Class="StormFox.SpecialAnimationPlayer_ON"><!-- A little present~ -->
+	  
+<!-- Mote comes here -->
+        <mote>ResearchbenchMote</mote>
+<!-- Set "finite valued function" that motespawn range -->
+        <StartRange>(0,0,0)</StartRange>
+        <EndRange>(0,0,0)</EndRange>
+<!-- 1tick=1/60second -->	
+        <TicktoSpawn>800</TicktoSpawn>
+<!-- How many motes do you want UwU -->	
+        <QuantitytoSpawn>1</QuantitytoSpawn>
+<!-- DrawSize -->	
+        <PlaySize>0.98~0.02</PlaySize>
+<!-- You konw~~ -->	
+        <RotationRate>0~0</RotationRate>
+<!-- They're gonNA be flying everywhere~~ -->		
+        <SpeedrangeX>-0.1~0.8</SpeedrangeX>
+        <SpeedrangeY>-0.8~0.8</SpeedrangeY>
+      </li>		
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2500</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ArchoToolResearch</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <surfaceType>Item</surfaceType>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>StartJourney</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+	<ThingDef ParentName="MechBuildingBase">
+    <defName>BossAscendedShield</defName>
+    <label>Capital Flux Devider</label>
+	<designatorDropdown>SoS2exArchoShields</designatorDropdown>		
+    <description>A shield of Archotech design capable of withstanding any attack. It can however be temporarily disrupted by EMP.</description>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>50000</MaxHitPoints>
+	  <WorkToBuild>25000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MarketValue>5000</MarketValue>
+	  <Mass>800</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Ship/BossShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(1, 0.4, 1)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2, 0.2, 0.6, 0.6)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+    </building>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    </placeWorkers>
+    <comps>	
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>100</radius>
+		<interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(252, 42, 32)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>800</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+      <li Class="CompProperties_Flickable"/>	  
+	   <li Class="CompProperties_ProjectileInterceptor">
+        <radius>100</radius>
+		<interceptAirProjectiles>true</interceptAirProjectiles>
+        <color>(252, 42, 32)</color>
+        <reactivateEffect>MortarShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>MortarShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>800</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+    </comps>
+	    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <costList>
+      <Centomatter>2500</Centomatter>
+    </costList>
+  </ThingDef>   
+  
+	<ThingDef ParentName="MechBuildingBase">
+    <defName>AscendedShield</defName>
+    <label>Ascended Shield Generator</label>
+	<designatorDropdown>SoS2exArchoShields</designatorDropdown>		
+    <description>A shield of Archotech design capable of withstanding any attack. It can however be temporarily disrupted by EMP.</description>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>10000</MaxHitPoints>
+	  <WorkToBuild>25000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MarketValue>5000</MarketValue>
+	  <Mass>800</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Ship/AscendedShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(1, 0.4, 1)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2, 0.2, 0.6, 0.6)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+    </building>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    </placeWorkers>
+    <comps>	
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>50</radius>
+		<interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(60, 247, 230 )</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>800</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+      <li Class="CompProperties_Flickable"/>	  
+	   <li Class="CompProperties_ProjectileInterceptor">
+        <radius>49</radius>
+		<interceptAirProjectiles>true</interceptAirProjectiles>
+        <color>(60, 247, 230 )</color>
+        <reactivateEffect>MortarShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>MortarShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>800</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+    </comps>
+	    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <costList>
+      <AscendedArchomatter>5500</AscendedArchomatter>
+    </costList>
+	    <researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+  </ThingDef> 
+  
+	<ThingDef ParentName="MechBuildingBase">
+    <defName>AdvancedArchoShield</defName>
+    <label>Advanced Archotech Shield Generator</label>
+	<designatorDropdown>SoS2exArchoShields</designatorDropdown>		
+    <description>A shield of Archotech design capable of withstanding any attack. It can however be temporarily disrupted by EMP.</description>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+	  <WorkToBuild>25000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MarketValue>5000</MarketValue>
+	  <Mass>800</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Ship/AdvancedShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(1, 0.4, 1)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2, 0.2, 0.6, 0.6)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+    </building>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>30</radius>
+		<interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(201, 60, 247 )</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>700</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+      <li Class="CompProperties_Flickable"/>	  
+	   <li Class="CompProperties_ProjectileInterceptor">
+        <radius>29</radius>
+		<interceptAirProjectiles>true</interceptAirProjectiles>
+        <color>(201, 60, 247 )</color>
+        <reactivateEffect>MortarShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>MortarShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>700</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+    </comps>
+	    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <costList>
+      <AscendedArchomatter>2500</AscendedArchomatter>
+    </costList>
+	    <researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+  </ThingDef>    
+
+	<ThingDef ParentName="MechBuildingBase">
+    <defName>MiniArchoShield</defName>
+    <label>Archotech Mini-Shield Generator</label>
+	<designatorDropdown>SoS2exArchoShields</designatorDropdown>		
+    <description>A shield of Archotech design capable of withstanding any attack. It can however be temporarily disrupted by EMP.</description>
+    <size>(1,1)</size>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+	  <WorkToBuild>25000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MarketValue>5000</MarketValue>
+	  <Mass>800</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Ship/AscendedMiniShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(1, 0.4, 1)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2, 0.2, 0.6, 0.6)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+    </building>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <radius>20</radius>
+		<interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(60, 247, 60)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>500</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+      <li Class="CompProperties_Flickable"/>	  
+	   <li Class="CompProperties_ProjectileInterceptor">
+        <radius>19</radius>
+		<interceptAirProjectiles>true</interceptAirProjectiles>
+        <color>(60, 247, 60)</color>
+        <reactivateEffect>MortarShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>MortarShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
+        <!--<chargeIntervalTicks>500</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>-->
+      </li>
+    </comps>
+	    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <costList>
+      <AscendedArchomatter>1500</AscendedArchomatter>
+    </costList>
+	    <researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+  </ThingDef>   
+
+  <!--<ThingDef ParentName="BuildingBase">
+    <defName>ShipHullTileGlow</defName>
+    <label>Lighted Hull Plating</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Ship/HullPlateLight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<seeThroughFog>true</seeThroughFog>
+    <uiIconPath>Things/Building/Ship/HullPlateLight</uiIconPath>
+    <building>
+	  <ai_chillDestination>false</ai_chillDestination>
+	  <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Ship/HullPlateLight</texPath>
+      </blueprintGraphicData>
+    </building>
+	<coversFloor>false</coversFloor>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <passability>Standable</passability>
+	<placingDraggableDimensions>2</placingDraggableDimensions>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>900</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <description>Spaceworthy hull plating that gives off light! Designates this tile (and any objects built on it) as part of a ship. Must be placed inside an outer hull.</description>
+    <costList>
+      <Steel>3</Steel>
+	  <Plasteel>1</Plasteel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_RoofMe"/>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(158,218,229,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_InsideShipRoom</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>false</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+	<fillPercent>0.0</fillPercent>
+  </ThingDef>-->
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>ArchomatterReactor</defName>
+		<label>Archomatter Reactor</label>
+	    <designatorDropdown>SoS2exPower</designatorDropdown>		
+        <description>An archotech reactor fueled by special archomatter fuelpods. Needs quite the immense cooling to run properly unless you want your entire base or ship to burn down!</description>			
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ArchomatterReactor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5.3,5.3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<researchPrerequisites>
+			<li>ArchoCooling</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.9</fillPercent>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>5000</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(5,5)</size>
+        <designationCategory>SoS2Ex</designationCategory>
+		<building>
+			<shipPart>true</shipPart>
+		</building>
+		<costList>
+			<Steel>500</Steel>
+			<Plasteel>200</Plasteel>
+			<Silver>100</Silver>
+			<ComponentSpacer>20</ComponentSpacer>
+			<Archomatter>2000</Archomatter>			
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTraderOverdrivable</compClass>
+				<basePowerConsumption>-9000000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<compClass>CompRefuelableOverdrivable</compClass>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>5000</initialConfigurableTargetFuelLevel>
+				<fuelConsumptionRate>50</fuelConsumptionRate>
+				<fuelCapacity>5000</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>ArchomatterPods</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_ShipHeat">
+				<compClass>CompShipHeatSource</compClass>
+				<heatGeneratedPerTickActive>0.5</heatGeneratedPerTickActive>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>8</glowRadius>
+				<glowColor>(162,247,99 ,0)</glowColor>
+			</li>
+			<li Class="CompProperties_ShipPart"/>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>440</wickTicks>			
+				<explosiveRadius>55</explosiveRadius>
+				<explosiveDamageType>ArchoreactorCoreBlast</explosiveDamageType>		
+				<postExplosionSpawnThingDef>Filth_SpaceReactorAsh</postExplosionSpawnThingDef>
+				<postExplosionSpawnThingCount>200</postExplosionSpawnThingCount>
+			</li>
+		</comps>
+		<placeWorkers>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<designationHotKey>Misc4</designationHotKey>
+		<constructionSkillPrerequisite>19</constructionSkillPrerequisite>
+	</ThingDef>
+	
+  <DamageDef>
+    <defName>ArchoreactorCoreBlast</defName>
+    <label>ArchoreactorBlast</label>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been desintegrated.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <!--<impactSoundType>Blunt</impactSoundType>-->
+    <armorCategory>Blunt</armorCategory>
+    <minDamageToFragment>99999</minDamageToFragment>
+    <defaultDamage>999999</defaultDamage>
+    <buildingDamageFactor>90</buildingDamageFactor>
+    <plantDamageFactor>9</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>2</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_ArchoNuclear</explosionCellMote>
+    <soundExplosion>ReactorExplosion</soundExplosion>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>AscendedArchoreactorCoreBlast</defName>
+    <label>AscendedArchoreactorBlast</label>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been desintegrated.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <!--<impactSoundType>Blunt</impactSoundType>-->
+    <armorCategory>Blunt</armorCategory>
+    <minDamageToFragment>99999</minDamageToFragment>
+    <defaultDamage>999999</defaultDamage>
+    <buildingDamageFactor>99999</buildingDamageFactor>
+    <plantDamageFactor>9999</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>2</explosionHeatEnergyPerCell>
+    <explosionCellMote>ShockwaveExplosion</explosionCellMote>
+    <soundExplosion>AscendedReactorExplosion</soundExplosion>
+  </DamageDef>	 
+
+  	<SoundDef>
+    <defName>ReactorExplosion</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ReactorExplosion</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+  	<SoundDef>
+    <defName>AscendedReactorExplosion</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/AscendedReactorExplosion</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>AscendedArchomatterReactor</defName>
+		<label>Ascended Archomatter Reactor</label>
+	    <designatorDropdown>SoS2exPower</designatorDropdown>		
+        <description>An archotech super reactor fueled by special ascended fuelpods. Needs quite the immense cooling to run properly unless you want your entire base or ship to burn down!</description>		
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/AscendedArchomatterReactor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5.3,5.3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<researchPrerequisites>
+			<li>ArchomatterAscension</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.9</fillPercent>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>7000</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(5,5)</size>
+        <designationCategory>SoS2Ex</designationCategory>
+		<building>
+			<shipPart>true</shipPart>
+		</building>
+		<costList>
+			<Steel>500</Steel>
+			<Plasteel>200</Plasteel>
+			<Silver>100</Silver>
+			<ComponentSpacer>20</ComponentSpacer>
+			<AscendedArchomatter>2000</AscendedArchomatter>			
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTraderOverdrivable</compClass>
+				<basePowerConsumption>-20000000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<compClass>CompRefuelableOverdrivable</compClass>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>5000</initialConfigurableTargetFuelLevel>
+				<fuelConsumptionRate>80</fuelConsumptionRate>
+				<fuelCapacity>5000</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>AscendedArchomatterPods</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_ShipHeat">
+				<compClass>CompShipHeatSource</compClass>
+				<heatGeneratedPerTickActive>1.0</heatGeneratedPerTickActive>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>8</glowRadius>
+				<glowColor>(162,247,99 ,0)</glowColor>
+			</li>
+			<li Class="CompProperties_ShipPart"/>		
+			<li Class="CompProperties_Explosive">
+				<wickTicks>340</wickTicks>			
+				<explosiveRadius>55</explosiveRadius>
+				<explosiveDamageType>AscendedArchoreactorCoreBlast</explosiveDamageType>	
+				<postExplosionSpawnThingDef>Filth_SpaceReactorAsh</postExplosionSpawnThingDef>
+				<postExplosionSpawnThingCount>200</postExplosionSpawnThingCount>
+			</li>
+		</comps>
+		<placeWorkers>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<designationHotKey>Misc4</designationHotKey>
+		<constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>CentomatterReactor</defName>
+		<label>Centomatter Reactor</label>
+	    <designatorDropdown>SoS2exPower</designatorDropdown>		
+        <description>Vir'al cento vic aronus.</description>		
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/CentomatterReactor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5.3,5.3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.9</fillPercent>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>7000</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(5,5)</size>
+        <designationCategory>SoS2Ex</designationCategory>
+		<building>
+			<shipPart>true</shipPart>
+		</building>
+		<costList>
+			<Centomatter>7000</Centomatter>			
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTraderOverdrivable</compClass>
+				<basePowerConsumption>-500000000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>5000000000</storedEnergyMax>
+        <efficiency>1.00</efficiency>
+        <transmitsPower>true</transmitsPower>
+      </li>			
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Refuelable">
+				<compClass>CompRefuelableOverdrivable</compClass>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>5000</initialConfigurableTargetFuelLevel>
+				<fuelConsumptionRate>80</fuelConsumptionRate>
+				<fuelCapacity>5000</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>CentomatterPods</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_ShipHeat">
+				<compClass>CompShipHeatSource</compClass>
+				<heatGeneratedPerTickActive>0.0</heatGeneratedPerTickActive>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>8</glowRadius>
+				<glowColor>(162,247,99 ,0)</glowColor>
+			</li>
+			<li Class="CompProperties_ShipPart"/>		
+			<li Class="CompProperties_Explosive">
+				<wickTicks>340</wickTicks>			
+				<explosiveRadius>55</explosiveRadius>
+				<explosiveDamageType>AscendedArchoreactorCoreBlast</explosiveDamageType>	
+				<postExplosionSpawnThingDef>Filth_SpaceReactorAsh</postExplosionSpawnThingDef>
+				<postExplosionSpawnThingCount>200</postExplosionSpawnThingCount>
+			</li>
+		</comps>
+		<placeWorkers>
+		</placeWorkers>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<designationHotKey>Misc4</designationHotKey>
+		<constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+	</ThingDef>	
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>CentoponicsBasin</defName>
+    <label>Centoponics Basin</label>
+    <description>Advanced growing.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/CentoBasin</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <defaultPlacingRot>East</defaultPlacingRot>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.30</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+    <statBases>
+      <WorkToBuild>2800</WorkToBuild>
+      <MaxHitPoints>1800</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Cleanliness>10</Cleanliness>
+    </statBases>
+    <size>(1,4)</size>
+    <costList>
+      <Centomatter>100</Centomatter>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <fertility>500.0</fertility>
+    <building>
+      <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>7000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <researchPrerequisites>
+      <li>Hydroponics</li>
+    </researchPrerequisites>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+  </ThingDef>	
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>HyperCapacitor</defName>
+    <label>Hyper Capacitor</label>
+    <thingClass>Building_ShipCapacitor</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/HyperCapacitor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>Efficiently stores up to 100,000,000Wd of energy.</description>
+    <size>(1,2)</size>
+    <costList>
+	  <Steel>500</Steel>
+      <Plasteel>1000</Plasteel>
+      <ComponentSpacer>20</ComponentSpacer>
+	  <Archomatter>2000</Archomatter>
+	  <ZeroCrystal>1000</ZeroCrystal>
+	  <ArchoAlgae>500</ArchoAlgae>
+    </costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>	
+    <comps>
+      <li Class="CompProperties_ShipPart"/>	
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>100000000</storedEnergyMax>
+        <efficiency>0.95</efficiency>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>55</explosiveRadius>
+        <explosiveDamageType>BombSuper</explosiveDamageType>
+      </li>			  
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <!--<constructEffect>ConstructMetal</constructEffect>-->
+    <designationHotKey>Misc4</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>			
+		<minifiedDef>MinifiedThing</minifiedDef>		
+    <researchPrerequisites>
+      <li>ArchomatterResearch</li>
+    </researchPrerequisites>
+  </ThingDef>  
+  
+<ThingDef ParentName="BuildingBase">
+    <defName>Ship_ReactorMini</defName>
+    <label>Nanotech Chem Reactor</label>
+	<designatorDropdown>SoS2exPower</designatorDropdown>	
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipReactorMini</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites><li>ArchomatterResearch</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.9</fillPercent>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>20000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Nanotech reactor that takes Chemfuel for maximum efficiency.</description>
+    <size>(2,2)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>200</Steel>
+      <Plasteel>50</Plasteel>
+	  <Silver>20</Silver>
+      <ArchoNanoKit>5</ArchoNanoKit>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-2500</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>5</fuelConsumptionRate>
+        <fuelCapacity>500.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Flickable" />
+	  <!--<li Class="Rimefeller.CompProperties_Pipe"/>-->
+    </comps>
+    <placeWorkers>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+  </ThingDef>
+  
+<ThingDef ParentName="BuildingBase">
+    <defName>Ship_ArchoReactor</defName>
+    <label>Nanotech Archotech Reactor</label>
+	<designatorDropdown>SoS2exPower</designatorDropdown>		
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoReactorMini</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites><li>ArchomatterResearch</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.9</fillPercent>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>20000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Absorbs Archomatter to provide medium amounts of long-term power for large/small ships.</description>
+    <size>(2,2)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>100</Steel>
+      <Plasteel>90</Plasteel>
+	  <Silver>200</Silver>
+      <ArchoNanoKit>5</ArchoNanoKit>
+      <Archomatter>45</Archomatter>
+      <ArchoAlgae>30</ArchoAlgae>
+	  <ZeroCrystal>15</ZeroCrystal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-19000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>5</fuelConsumptionRate>
+        <fuelCapacity>100.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>ArchomatterPods</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Flickable" />
+	  <!--<li Class="Rimefeller.CompProperties_Pipe"/>-->
+		<li Class="CompProperties_Glower">
+			<glowRadius>6</glowRadius>
+			<glowColor>(204,255,102,0)</glowColor>
+		</li>	  
+    </comps>
+    <placeWorkers>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+  </ThingDef>  
+  
+ <!-- Tool Cabinet -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ArchoTool</defName>
+    <label>Archotech Toolbox</label>
+    <description>A very efficient toolbox for your crafting benches. Speed up your skill! (Max 50 for Production)</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoTool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>60</pathCost>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>250</Steel>
+	  <ComponentSpacer>5</ComponentSpacer>
+	  <Uranium>100</Uranium>
+	  <Plasteel>500</Plasteel>
+	  <Archomatter>250</Archomatter>
+    </costList>
+    <tickerType>Normal</tickerType>	
+    <researchPrerequisites>
+      <li>StartJourney</li>
+    </researchPrerequisites>
+    <building>
+      <shipPart>true</shipPart>
+    </building>	
+    <designationCategory>SoS2Ex</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>5</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>50</maxSimultaneous>
+		<maxDistance>40</maxDistance>
+      </li>
+	   <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>8000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_ShipPart"/>	  
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>20</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>			  
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef> 
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ArchoToolResearch</defName>
+    <label>Research Toolbox</label>
+    <description>A very efficient toolbox for your research benches. Speed up your skill! (Max 5 for Research)</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ResearchTool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>60</pathCost>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>250</Steel>
+	  <ComponentSpacer>5</ComponentSpacer>
+	  <Uranium>100</Uranium>
+	  <Plasteel>500</Plasteel>
+	  <Archomatter>50</Archomatter>
+    </costList>
+    <tickerType>Normal</tickerType>	
+    <researchPrerequisites>
+      <li>StartJourney</li>
+    </researchPrerequisites>
+    <building>
+      <shipPart>true</shipPart>
+    </building>	
+    <designationCategory>SoS2Ex</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <ResearchSpeedFactor>3</ResearchSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>5</maxSimultaneous>
+      </li>	  
+	   <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_ShipPart"/>	  
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>20</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>			  
+    </comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+  </ThingDef>    
+  
+<ThingDef ParentName="BuildingBase">
+    <defName>UnstableShipCell</defName>
+    <label>Unstable Archomatter Power Cell</label>
+	<designatorDropdown>SoS2exPower</designatorDropdown>		
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipCell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites><li>ShipReactor</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.9</fillPercent>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.1</Flammability>
+      <Mass>10</Mass>	  
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Produces an enormous amount of power but is extremely sensitive to heat and damage. Do not let it blow up! 30.000W</description>
+    <size>(1,1)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Archomatter>15</Archomatter>
+	  <ZeroCrystal>15</ZeroCrystal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-30000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="StormFox.SpecialAnimationPlayer_ON">
+        <mote>CellMote</mote>
+        <StartRange>(-0.2,0,0.2)</StartRange>
+        <EndRange>(0,0,-0.2)</EndRange>
+        <TicktoSpawn>42</TicktoSpawn>
+        <PlaySize>1.12~2.42</PlaySize>
+        <QuantitytoSpawn>2</QuantitytoSpawn>
+        <RotationRate>0~0</RotationRate>
+        <SpeedrangeX>0.2~4.2</SpeedrangeX>
+        <SpeedrangeY>0.2~4.2</SpeedrangeY>
+      </li>  
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.5</fuelConsumptionRate>
+        <fuelCapacity>200.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>ArchomatterPods</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Flickable" />
+		<li Class="CompProperties_Glower">
+			<glowRadius>6</glowRadius>
+			<glowColor>(204,255,102,0)</glowColor>
+		</li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>55</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>		
+    </comps>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>		
+		<minifiedDef>MinifiedThing</minifiedDef>	
+    <placeWorkers>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+  </ThingDef>  
+
+<ThingDef ParentName="BuildingBase">
+    <defName>StableShipCell</defName>
+    <label>Advanced Archomatter Power Cell</label>
+	<designatorDropdown>SoS2exPower</designatorDropdown>		
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/StableShipCell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites>
+	<li>ArchomatterAscension</li>
+	</researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.9</fillPercent>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.1</Flammability>
+      <Mass>10</Mass>	  
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Produces an enormous amount of power fed by Archomatter. More stable but still volatile. 1.000.000w</description>
+    <size>(1,1)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentSpacer>5</ComponentSpacer>
+      <AscendedArchomatter>50</AscendedArchomatter>
+	  <ZeroCrystal>30</ZeroCrystal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="StormFox.SpecialAnimationPlayer_ON">
+        <mote>StableCellmote</mote>
+        <StartRange>(-0.2,0,0.2)</StartRange>
+        <EndRange>(0,0,-0.2)</EndRange>
+        <TicktoSpawn>42</TicktoSpawn>
+        <PlaySize>1.12~2.42</PlaySize>
+        <QuantitytoSpawn>2</QuantitytoSpawn>
+        <RotationRate>0~0</RotationRate>
+        <SpeedrangeX>0.2~4.2</SpeedrangeX>
+        <SpeedrangeY>0.2~4.2</SpeedrangeY>
+      </li>  
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.5</fuelConsumptionRate>
+        <fuelCapacity>200.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>AscendedArchomatterPods</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Flickable" />
+		<li Class="CompProperties_Glower">
+			<glowRadius>6</glowRadius>
+			<glowColor>(124,229,255,0)</glowColor>
+		</li>
+    </comps>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>		
+		<minifiedDef>MinifiedThing</minifiedDef>	
+    <placeWorkers>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+  </ThingDef>     
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>ArchoGenerator</defName>
+    <label>Archomatter Combiner</label>
+	<designatorDropdown>SoS2exResourceSpawner</designatorDropdown>	
+    <description>A machine capable of harvesting particles around it to create a strange material called Archomatter. Does not require power.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchomatterGen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <designationCategory>SoS2Ex</designationCategory>
+    <costList>
+      <Steel>3000</Steel>
+	  <Plasteel>3000</Plasteel>
+	  <Archomatter>5</Archomatter>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+    <comps>
+      <!--<li Class="CompProperties_Breakdownable"/>-->
+      <!--<li Class="CompProperties_Flickable"/>-->
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Archomatter</thingToSpawn>
+        <spawnCount>25</spawnCount>
+        <spawnIntervalRange><min>300000</min><max>400000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>50</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <tradeability>Sellable</tradeability>
+	<constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+    <thingCategories>
+      <li>SoS2ExStuff</li>
+    </thingCategories>	
+		<minifiedDef>MinifiedThing</minifiedDef>
+	<researchPrerequisites>
+      <li>ArchomatterResearch</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>AscendedArchoGenerator</defName>
+    <label>Ascended Archomatter Combiner</label>
+	<designatorDropdown>SoS2exResourceSpawner</designatorDropdown>		
+    <description>Once enough Archomatter is gathered one can begin the process of purifying it into Ascended Archomatter. Does not require power.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/AscendedArchomatterGen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <designationCategory>SoS2Ex</designationCategory>
+    <costList>
+      <Steel>3000</Steel>
+	  <Plasteel>3000</Plasteel>
+	  <Archomatter>600</Archomatter>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+    <comps>
+      <!--<li Class="CompProperties_Breakdownable"/>-->
+      <!--<li Class="CompProperties_Flickable"/>-->
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>AscendedArchomatter</thingToSpawn>
+        <spawnCount>5</spawnCount>
+        <spawnIntervalRange><min>300000</min><max>600000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>50</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <tradeability>Sellable</tradeability>
+	<constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <thingCategories>
+      <li>SoS2ExStuff</li>
+    </thingCategories>	
+		<minifiedDef>MinifiedThing</minifiedDef>	
+	<researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+  </ThingDef>  
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>UltraGenerator</defName>
+    <label>Ultra Combiner</label>
+	<designatorDropdown>SoS2exResourceSpawner</designatorDropdown>		
+    <description>An ultratech combiner that creates both Archomatter and Ascended Archomatter at quite the speed.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/AscendedArchomatterGenBoss</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <designationCategory>SoS2Ex</designationCategory>
+    <costList>
+      <Steel>3000</Steel>
+	  <Plasteel>3000</Plasteel>
+	  <Archomatter>500</Archomatter>
+	  <AscendedArchomatter>500</AscendedArchomatter>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+    <comps>
+      <!--<li Class="CompProperties_Breakdownable"/>-->
+      <!--<li Class="CompProperties_Flickable"/>-->
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>AscendedArchomatter</thingToSpawn>
+        <spawnCount>100</spawnCount>
+        <spawnIntervalRange><min>100000</min><max>100000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Archomatter</thingToSpawn>
+        <spawnCount>100</spawnCount>
+        <spawnIntervalRange><min>100000</min><max>100000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>	  
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>50</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <tradeability>Sellable</tradeability>
+	<constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <thingCategories>
+      <li>SoS2ExStuff</li>
+    </thingCategories>	
+		<minifiedDef>MinifiedThing</minifiedDef>	
+	<researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+  </ThingDef>    
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>CentoGenerator</defName>
+    <label>Centomatter Combiner</label>
+	<designatorDropdown>SoS2exResourceSpawner</designatorDropdown>		
+    <description>Unknown.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/AscendedArchomatterGenCento</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <designationCategory>SoS2Ex</designationCategory>
+    <costList>
+      <Steel>3000</Steel>
+	  <Plasteel>3000</Plasteel>
+	  <Archomatter>5000</Archomatter>
+	  <AscendedArchomatter>5000</AscendedArchomatter>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </costList>
+    <comps>
+      <!--<li Class="CompProperties_Breakdownable"/>-->
+      <!--<li Class="CompProperties_Flickable"/>-->
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Centomatter</thingToSpawn>
+        <spawnCount>100</spawnCount>
+        <spawnIntervalRange><min>50000</min><max>50000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li> 
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>50</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <tradeability>Sellable</tradeability>
+	<constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <thingCategories>
+      <li>SoS2ExStuff</li>
+    </thingCategories>	
+		<minifiedDef>MinifiedThing</minifiedDef>	
+	<researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+  </ThingDef>   
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>SubzeroCooler</defName>
+    <label>Archotech Subzero Cooler</label>
+	<designatorDropdown>SoS2exCooling</designatorDropdown>		
+    <description>An advanced cooler to keep rooms under extreme cool temperatures. Used in conjuction with Ship Vents. *WARNING* These can be very dangerous to your colonists! (-275c)</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoCooler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <shadowData>
+        <volume>(0.9,0.3,0.9)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0</Flammability>
+	  <Mass>1</Mass>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Archomatter>50</Archomatter>
+      <ArchoAlgae>20</ArchoAlgae>
+	  <Steel>100</Steel>
+	  <Plasteel>50</Plasteel>
+	  <ZeroCrystal>10</ZeroCrystal>
+    </costList>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>2</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>	
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-1000</heatPerSecond>
+        <heatPushMinTemperature>-275</heatPushMinTemperature>
+      </li>				  
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(136,231,255,0)</glowColor>
+			</li>	 
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>			
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.5</fuelConsumptionRate>
+        <fuelCapacity>200.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>ZerocrystalPods</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+    <designationCategory>SoS2Ex</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>		
+		<minifiedDef>MinifiedThing</minifiedDef>	
+    <researchPrerequisites>
+      <li>ArchoCooling</li>
+    </researchPrerequisites>
+  </ThingDef>  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>InfernoHeater</defName>
+    <label>Archotech Infernoheater</label>
+	<designatorDropdown>SoS2exCooling</designatorDropdown>	
+	<thingClass>Building_WorkTable_HeatPush</thingClass>	
+    <description>An advanced heater to keep rooms under extreme warm temperatures. *WARNING* These can be very dangerous to your colonists! (+1000c)</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Ship/InfernoHeater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <shadowData>
+        <volume>(0.9,0.3,0.9)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0</Flammability>
+	  <Mass>1</Mass>	  
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Archomatter>50</Archomatter>
+      <ArchoAlgae>20</ArchoAlgae>
+	  <Steel>100</Steel>
+	  <Plasteel>50</Plasteel>
+	  <InfernoCrystal>10</InfernoCrystal>
+    </costList>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>2</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>	
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>700</heatPerSecond>	
+      </li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(250,27,27,0)</glowColor>
+			</li>		
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>			
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.5</fuelConsumptionRate>
+        <fuelCapacity>200.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>InfernocrystalPods</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+    </comps>
+    <designationCategory>SoS2Ex</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>		
+		<minifiedDef>MinifiedThing</minifiedDef>	
+    <researchPrerequisites>
+      <li>ArchoCooling</li>
+    </researchPrerequisites>
+  </ThingDef>    
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>SpaceHeater</defName>
+    <label>Archotech Heater</label>
+	<designatorDropdown>SoS2exCooling</designatorDropdown>	
+	<thingClass>Building_Heater</thingClass>	
+    <description>Just a regular heater for space. More efficient though.</description>
+    <!--<category>Building</category>-->
+    <graphicData>
+      <texPath>Things/Building/Ship/SpaceHeater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <shadowData>
+        <volume>(0.9,0.3,0.9)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <tickerType>Rare</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0</Flammability>
+	  <Mass>1</Mass>	  
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Archomatter>50</Archomatter>
+      <ArchoAlgae>20</ArchoAlgae>
+	  <Steel>100</Steel>
+	  <Plasteel>15</Plasteel>
+	  <InfernoCrystal>50</InfernoCrystal>
+    </costList>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>2</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>	
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>2000</energyPerSecond>
+      </li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(254,178,61,0)</glowColor>
+			</li>		
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>800</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>			
+    </comps>
+    <designationCategory>SoS2Ex</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>		
+		<minifiedDef>MinifiedThing</minifiedDef>	
+    <researchPrerequisites>
+      <li>ArchoCooling</li>
+    </researchPrerequisites>
+  </ThingDef>     
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>ArchoAlgaeFarm</defName>
+    <label>Archo Algae Farm</label>
+    <description>A farm dedicated to growing the lovely little squiggly Archo Algae.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/AlgaeFarm4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4, 3)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <designationCategory>SoS2Ex</designationCategory>
+    <costList>
+      <Steel>330</Steel>
+	  <Plasteel>250</Plasteel>
+	  <Archomatter>75</Archomatter>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>	  
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>ArchomatterPods</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>	  
+      <li Class="CompProperties_Breakdownable"/> 
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>ArchoAlgae</thingToSpawn>
+        <spawnCount>15</spawnCount>
+        <spawnIntervalRange><min>20000</min><max>20000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>50</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(136,231,255,0)</glowColor>
+			</li>	  
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(3, 2)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <tradeability>Sellable</tradeability>
+	<constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>		
+		<minifiedDef>MinifiedThing</minifiedDef>	
+	<researchPrerequisites>
+      <li>ArchomatterResearch</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>ComponentFarm</defName>
+    <label>Component Farm</label>
+    <description>A farm dedicated to growing synthetic wood, fabricating components and advanced components. Runs on chemfuel.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/WoodFarm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 1.5)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <designationCategory>SoS2Ex</designationCategory>
+    <costList>
+      <Steel>400</Steel>
+	  <Plasteel>100</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>	  
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>	  
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>WoodLog</thingToSpawn>
+        <spawnCount>20</spawnCount>
+        <spawnIntervalRange><min>8000</min><max>8000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>ComponentIndustrial</thingToSpawn>
+        <spawnCount>5</spawnCount>
+        <spawnIntervalRange><min>12000</min><max>12000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>	  
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>ComponentSpacer</thingToSpawn>
+        <spawnCount>2</spawnCount>
+        <spawnIntervalRange><min>12000</min><max>12000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>	 
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>50</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(136,231,255,0)</glowColor>
+			</li>	  
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(2, 1)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <tradeability>Sellable</tradeability>
+	<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>		
+		<minifiedDef>MinifiedThing</minifiedDef>	
+  </ThingDef>  
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShipVent</defName>
+    <label>Ship Vent</label>
+    <description>A vent to push the heat from a room out into space. Used in conjuction with Archotech Subzero Coolers</description>
+    <thingClass>Building_Vent</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/SpaceVent</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <castEdgeShadows>true</castEdgeShadows>
+    <canOverlapZones>false</canOverlapZones>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <costList>
+      <Steel>30</Steel>
+    </costList>
+	<costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>	
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Vent</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <building>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <shipPart>true</shipPart>	  
+    </building>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <designationCategory>SoS2Ex</designationCategory>
+    <designationHotKey>Misc8</designationHotKey>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>	
+      <li Class="CompProperties_Flickable"/>	  
+	  <li Class="CompProperties_RoofMe"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeat</compClass>
+      </li>	  
+    </comps>
+  </ThingDef> 
+
+  <ThingDef ParentName="LampBase">
+    <defName>Archolight</defName>
+    <label>Archolight</label>
+    <description>Bright as all heck. Works like a sunlamp that is on constantly!</description>
+    <thingClass>Building_SunLamp</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/Archolamp</texPath>
+    </graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>	
+    <blockWind>true</blockWind>
+    <tickerType>Rare</tickerType>
+    <statBases>
+      <MarketValue>150</MarketValue>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <Beauty>100</Beauty>
+      <Mass>3</Mass>
+      <WorkToBuild>500</WorkToBuild>	  
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+	  <Archomatter>5</Archomatter>
+    </costList>
+    <researchPrerequisites>
+      <li>ArchomatterResearch</li>
+    </researchPrerequisites>
+    <building>
+      <shipPart>true</shipPart>	  
+    </building>	
+    <designationCategory>SoS2Ex</designationCategory>	
+    <comps>
+      <li Class="CompProperties_ShipPart"/>		
+      <li Class="CompProperties_Glower">
+        <overlightRadius>14.0</overlightRadius>
+        <glowRadius>14</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+    </comps>
+    <tradeability>None</tradeability>
+    <specialDisplayRadius>8.8</specialDisplayRadius>
+  </ThingDef>  
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>AronusMeatGrower</defName>
+    <label>Aronus Meat Grower</label>
+    <description>A farm dedicated to growing the vines of the perculiar ''Aronus Adeptus'' and fed Archo Algae, it's leaves easily mutate into an almost perfect flesh like substance.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/AronusmeatGrower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <designationCategory>SoS2Ex</designationCategory>
+    <costList>
+      <Steel>150</Steel>
+	  <Plasteel>150</Plasteel>
+	  <Archomatter>100</Archomatter>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5000</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>5</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>ArchoAlgae</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>	  
+      <li Class="CompProperties_Breakdownable"/> 
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>AronusMeat</thingToSpawn>
+        <spawnCount>15</spawnCount>
+        <spawnIntervalRange><min>20000</min><max>20000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(136,231,255,0)</glowColor>
+			</li>	  	  
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>50</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>-10</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(2, 2)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <tradeability>Sellable</tradeability>
+	<constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>			
+		<minifiedDef>MinifiedThing</minifiedDef>	
+	<researchPrerequisites>
+      <li>ArchomatterResearch</li>
+    </researchPrerequisites>
+  </ThingDef>  
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>SlagTurret</defName>
+		<label>Slag Turret</label>
+		<description>Someone came up with a turret to shoot off superheated slag mixed with Archomatter....well f*** me freddy. Accurate at medium ranges and very deadly.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/SlagBase</texPath>			
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+        <uiIconPath>Things/Building/Ship/SlagTurret</uiIconPath>		
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+		<size>(1,1)</size>
+    <researchPrerequisites>
+	<li>ArchoWeaponry</li>
+	</researchPrerequisites>			
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>150</Mass>
+			<Beauty>-20</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>30</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.75</chanceNeverExplodeFromDamage>
+			</li>	
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(217,217,180,0)</glowColor>
+			</li>
+		</comps>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.75</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<hasTooltip>true</hasTooltip>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Steel>75</Steel>
+			<ChunkSlagSteel>20</ChunkSlagSteel>
+			<Archomatter>20</Archomatter>			
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>SoS2Ex</designationCategory>
+		<specialDisplayRadius>49.9</specialDisplayRadius>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_SlagTurret</turretGunDef>
+			<turretBurstCooldownTime>1.5</turretBurstCooldownTime>
+			<turretTopDrawSize>2</turretTopDrawSize>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>Gun_SlagTurret</defName>
+		<label>Slag Turret</label>
+		<graphicData>
+			<texPath>Things/Building/Ship/SlagTurret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<description>Someone came up with a turret to shoot off slag chunks....well f*** me freddy.</description>
+		<soundInteract>Interact_Rifle</soundInteract>    
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>40</Mass>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_SlagTurret</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>49.9</range>
+				<soundCast>DepleterPew</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<forcedMissRadius>0.6</forcedMissRadius>			
+				<muzzleFlashScale>1</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>	
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_SlagTurret</defName>
+		<label>Slag Bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/BulletSlag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+        <thingClass>Projectile_Explosive</thingClass>			
+		<projectile>	
+			<damageDef>SlagExplosion</damageDef>
+			<damageAmountBase>120</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBase>1.0</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+  <DamageDef Name="SlagExplosion">
+    <defName>SlagExplosion</defName>
+    <label>slag explosion</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an Slag Explosion.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>		
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>55</defaultDamage>
+    <defaultStoppingPower>0.9</defaultStoppingPower>
+    <defaultArmorPenetration>0.20</defaultArmorPenetration>
+    <buildingDamageFactor>5.5</buildingDamageFactor>
+    <plantDamageFactor>7</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastDry</explosionCellMote>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>ExplosionDepleter</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>	
+
+     	<SoundDef>
+    <defName>SlagPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/SlagPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DaegonTurret</defName>
+		<label>Daegon Ground Turret</label>
+		<description>A ground version of it's bigger ship cousin. Highly deadly and accurate. You could almost say it's the ultimate compact turret!</description>			
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ArchoPlatformDaegon</texPath>			
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>			
+        <uiIconPath>Things/Building/Ship/DaegonTurret</uiIconPath>		
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>7500</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>20</Mass>
+			<Beauty>20</Beauty>
+			<ShootingAccuracyTurret>2.96</ShootingAccuracyTurret>
+		</statBases>
+    <researchPrerequisites>
+	<li>ArchomatterAscension</li>
+	</researchPrerequisites>		
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>50</explosiveRadius>
+				<explosiveDamageType>ArchoreactorCoreBlast</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.15</chanceNeverExplodeFromDamage>
+			</li>	
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(217,217,180,0)</glowColor>
+			</li>
+		</comps>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.75</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<hasTooltip>true</hasTooltip>
+		<costList>
+	  <AscendedArchomatter>150</AscendedArchomatter>		
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>SoS2Ex</designationCategory>
+		<specialDisplayRadius>49.9</specialDisplayRadius>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>Gun_DaegonTurret</turretGunDef>
+			<turretBurstCooldownTime>1.5</turretBurstCooldownTime>
+			<turretTopDrawSize>1</turretTopDrawSize>
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>Gun_DaegonTurret</defName>
+		<label>Daegon Ground Turret</label>
+		<description>A ground version of it's bigger ship cousin. Highly deadly and accurate. You could almost say it's the ultimate compact turret!</description>		
+		<graphicData>
+			<texPath>Things/Building/Ship/DaegonTurret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<menuHidden>true</menuHidden>
+		<soundInteract>Interact_Rifle</soundInteract>    
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<statBases>
+			<Mass>2</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>1</AccuracyMedium>
+			<AccuracyLong>1</AccuracyLong>
+			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="false">
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DaegonTurret</defaultProjectile>
+		        <forcedMissRadius>0.1</forcedMissRadius>					
+				<warmupTime>0</warmupTime>
+				<range>100</range>		
+				<soundCast>DaegonTurretPew</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>2</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>	
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_DaegonTurret</defName>
+		<label>Daegon Bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/DaegonBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+        <thingClass>Projectile_Explosive</thingClass>		
+		<projectile>
+			<damageDef>DaegonTurretExplosion</damageDef>
+			<damageAmountBase>120</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<armorPenetrationBase>100.0</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+  <DamageDef Name="DaegonTurretExplosion">
+    <defName>DaegonTurretExplosion</defName>
+    <label>daegon explosion</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>false</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been desintegrated.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>	
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>250</defaultDamage>
+    <defaultStoppingPower>0.9</defaultStoppingPower>
+    <defaultArmorPenetration>0.20</defaultArmorPenetration>
+    <buildingDamageFactor>5.5</buildingDamageFactor>
+    <plantDamageFactor>7</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>20</explosionHeatEnergyPerCell>
+    <explosionCellMote>DaegonExplosion</explosionCellMote>
+    <soundExplosion>ExplosionDepleter</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>	
+
+     	<SoundDef>
+    <defName>DaegonTurretPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/DaegonTurretPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 	  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>AnalyzerConsole</defName>
+    <label>Analyzer Console</label>
+    <description>A joy source for your lovely space farers. Analyzing incoming spacial data's for fun!</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/AnalyzerConsole</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawRotated>true</drawRotated>
+      <drawSize>(2,2)</drawSize>	  
+      <shadowData>
+        <volume>(0.3, 0.7, 0.3)</volume>
+    <offset>(-0.03,0,-0.35)</offset>
+      </shadowData>
+    </graphicData>
+    <size>(1,1)</size>	  	
+    <canBeUsedUnderRoof>true</canBeUsedUnderRoof>
+    <fillPercent>0.15</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>	
+    <building>
+      <shipPart>true</shipPart>
+	  <joyKind>Analyze_Data</joyKind>
+    </building>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <designationCategory>SoS2Ex</designationCategory>	
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <MarketValue>700</MarketValue>
+      <Mass>2.5</Mass>
+      <JoyGainFactor>6.2</JoyGainFactor>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ship_Engine_SmallAdv</defName>
+		<label>Small Archotech Engine</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+		  <texPath>Things/Building/Ship/ArchoEngine</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,5.5)</drawSize>
+		</graphicData>
+		<researchPrerequisites>
+			<li>ShipEngine</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>40000</WorkToBuild>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A small supercharged Archotech engine. Does not need fuel. (Cannot be used for take-off)</description>
+		<size>(3,3)</size>
+		<receivesSignals>true</receivesSignals>
+		<designationCategory>SoS2Ex</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ShipPart"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_RoofMe"/>
+			<li Class="CompProperties_EngineTrail">
+				<thrust>6</thrust>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>2000.0</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<fuelFilter>
+					<thingDefs>
+						<li>ArchomatterPods</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>false</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>					
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShipEngine</li>
+		</placeWorkers>
+		<building>
+			<shipPart>true</shipPart>
+		</building>
+		<costList>
+      <Steel>1000</Steel>
+      <Plasteel>500</Plasteel>
+      <ComponentIndustrial>25</ComponentIndustrial>
+	  <Archomatter>150</Archomatter>
+	  <ZeroCrystal>150</ZeroCrystal>
+		</costList>
+	<costStuffCount>50</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>			
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<designationHotKey>Misc5</designationHotKey>
+	</ThingDef>
+  
+	<ThingDef ParentName="BuildingBase">
+		<defName>EngineArchoLarge</defName>
+		<label>Large Archotech Engine</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+            <texPath>Things/Building/Ship/ArchoEngineLarge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,5.5)</drawSize>
+		</graphicData>
+		<researchPrerequisites>
+			<li>ShipEngine</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>80000</WorkToBuild>
+			<MaxHitPoints>2500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+	    <description>A supercharged Archotech engine. Does not need fuel. (Cannot be used for take-off)</description>
+		<size>(3,3)</size>
+		<receivesSignals>true</receivesSignals>
+		<designationCategory>SoS2Ex</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>2000.0</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<fuelFilter>
+					<thingDefs>
+						<li>ArchomatterPods</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>false</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>			
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_ShipPart"/>
+			<li Class="CompProperties_RoofMe"/>
+			<li Class="CompProperties_EngineTrail">
+				<thrust>12</thrust>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShipEngine</li>
+		</placeWorkers>
+		<building>
+			<shipPart>true</shipPart>
+		</building>
+		<costList>
+      <Steel>2000</Steel>
+      <Plasteel>1000</Plasteel>
+      <ComponentIndustrial>50</ComponentIndustrial>
+	  <Archomatter>300</Archomatter>
+	  <ZeroCrystal>300</ZeroCrystal>
+		</costList>
+	<costStuffCount>100</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>		
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<designationHotKey>Misc5</designationHotKey>
+	</ThingDef>
+  
+    <ThingDef ParentName="BuildingBase">
+    <defName>ShieldHullCorneroneone</defName>
+    <label>Shielded Hull Corner (1x1)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/Shielded1x1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>Angled armor for a ship's outer hull.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+	
+    </placeWorkers>
+    <rotatable>true</rotatable>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>80</Steel>
+      <Plasteel>20</Plasteel>
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShieldHullCorneronetwo</defName>
+    <label>Shield Hull Corner (1x2)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipAngle1x2Shield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+      <drawSize>(1,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>Angled armor for a ship's outer hull.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+	
+    </placeWorkers>
+    <rotatable>true</rotatable>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>160</Steel>
+      <Plasteel>40</Plasteel>
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <size>(1,2)</size>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShieldHullCorneronethree</defName>
+    <label>Shield Hull Corner (1x3)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipAngle1x3Shield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+      <drawSize>(1,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>Angled armor for a ship's outer hull.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+	
+    </placeWorkers>
+    <rotatable>true</rotatable>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>240</Steel>
+      <Plasteel>60</Plasteel>
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <size>(1,3)</size>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShieldHullCorneronetwoFlip</defName>
+    <label>Shielded Hull Corner Flipped (1x2)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipAngle1x2FlipShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+      <drawSize>(1,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>Angled armor for a ship's outer hull.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+	
+    </placeWorkers>
+    <rotatable>true</rotatable>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>160</Steel>
+      <Plasteel>40</Plasteel>
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <size>(1,2)</size>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShieldHullCorneronethreeFlip</defName>
+    <label>Shield Hull Corner Flipped (1x3)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipAngle1x3FlipShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+      <drawSize>(1,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>Angled armor for a ship's outer hull.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+	
+    </placeWorkers>
+    <rotatable>true</rotatable>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>240</Steel>
+      <Plasteel>60</Plasteel>
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <size>(1,3)</size>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+      <!--<ThingDef ParentName="BuildingBase">
+    <defName>AdvancedSolar</defName>
+    <label>Advanced Solar Generator</label>
+    <description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</description>
+    <thingClass>Building</thingClass>
+		<graphicData>
+      <texPath>Things\Building\Ship\BeamSolarUIAdv</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+		<uiIconPath>Things/Building/Ship/BeamSolarUIAdv</uiIconPath>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToBuild>8000</WorkToBuild>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Steel>1500</Steel>
+	  <Plasteel>250</Plasteel>
+      <ComponentSpacer>10</ComponentSpacer>
+    </costList>
+    <building>
+      <shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things\Building\Ship\BeamSolarUIAdv</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+    <li Class="CompProperties_RoofMe"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSolarShip</compClass>
+        <basePowerConsumption>-2000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+			<li Class="CompProperties_Unfold">
+				<extendRate>0.005</extendRate>
+				<retractRate>0.0025</retractRate>
+        <retractTime>750</retractTime>
+				<extendDirection>(0,0,-1)</extendDirection>
+				<startOffset>0.5</startOffset>
+				<length>3.0</length>
+	      <graphicPath>Things/Building/Ship/SolarExpandAdv</graphicPath>
+			</li>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeat</compClass>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_SolarShip</li>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <designationHotKey>Misc5</designationHotKey>
+    <researchPrerequisites>
+      <li>Electricity</li>
+      <li>SolarPanels</li>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>-->
+  
+  <!--<ThingDef ParentName="BuildingBase">
+    <defName>ShipInside_PassiveCoolerAdv</defName>
+    <label>Advanced Ship Radiator</label>
+    <description>Radiates heat into the void, cooling a ship's interior. Also provides a small amount of heat capacity to weapons and shields.</description>
+    <thingClass>Building_Radiator</thingClass>
+    <category>Building</category>
+		<graphicData>
+      <texPath>Things/Building/Ship/BeamRadiatorUIAdv</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Ship/BeamRadiatorUIAdv</uiIconPath>
+    <size>(1,1)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <WorkToBuild>8000</WorkToBuild>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Steel>1000</Steel>
+	  <Plasteel>250</Plasteel>
+      <ComponentSpacer>10</ComponentSpacer>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_Radiator</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>-21</energyPerSecond>
+			</li>
+			<li Class="CompProperties_Unfold">
+				<extendRate>0.005</extendRate>
+				<retractRate>0.0025</retractRate>
+        <retractTime>750</retractTime>
+				<extendDirection>(0,0,-1)</extendDirection>
+				<startOffset>0.5</startOffset>
+				<length>3.0</length>
+	      <graphicPath>Things/Building/Ship/RadiatorAdv</graphicPath>
+			</li>
+			<li Class="CompProperties_Overlay">
+				<graphicPath>Things/Building/Ship/BeamRadiatorUIAdv</graphicPath>
+				<size>(1,1,1)</size>
+			</li>
+      <li Class="CompProperties_RoofMe"/>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSink</compClass>
+		<heatCapacity>300</heatCapacity>
+		<ventHeatToSpace>true</ventHeatToSpace>
+		<heatVentTick>200</heatVentTick>
+      </li>
+    </comps>
+    <designationCategory>SoS2Ex</designationCategory>
+    <designationHotKey>Misc2</designationHotKey>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+      <li>AirConditioning</li>
+    </researchPrerequisites>
+		<building>
+			<shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things\Building\Ship\BeamRadiatorUIAdv</texPath>
+      </blueprintGraphicData>
+		</building>
+  </ThingDef>-->
+  
+    <!--<ThingDef ParentName="BuildingBase">
+    <defName>NanoShipSalvageBay</defName>
+    <label>Nano Salvage Bay</label>
+    <graphicData>
+      <texPath>Things/Building/Ship/SalvageBayNano</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites><li>ShipSalvageBay</li></researchPrerequisites>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0.1</fillPercent>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>A smaller compact version that harvests the remains of enemy ships after a battle. Each salvage bay can retrieve up to 1,000kg of material from a ship.</description>
+    <size>(2,2)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+    <building>
+      <shipPart>true</shipPart>
+      <isEdifice>false</isEdifice>
+    </building>
+    <costList>
+      <Steel>2500</Steel>
+      <Plasteel>500</Plasteel>
+      <ComponentSpacer>30</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_InsideStarship</li>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef>-->
+  
+    <ThingDef ParentName="BuildingBase">
+    <defName>Ship_Beam_Heavy</defName>
+    <label>Heavy Ship Hull (Unpowered)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Linked/ShipBeam/ArmoredBeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Wall</li>
+		<li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Things/Building/Linked/HeavyBeamBP</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>An armored structural element of a ship's hull. Includes pipes for Chemfuel.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_RoofMe"/>	  
+    </comps>
+    <placeWorkers>
+	
+	</placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/ShipBeam/ArmoredBeam</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costList>
+      <Steel>28</Steel>
+      <Plasteel>6</Plasteel>
+	  <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <designationHotKey>Misc1</designationHotKey>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+      <ThingDef ParentName="BuildingBase">
+    <defName>Ship_Beam_HeavyPow</defName>
+    <label>Heavy Ship Hull (Powered)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Linked/ShipBeam/ArmoredBeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Wall</li>
+		<li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Things/Building/Linked/HeavyBeamBP</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>An armored structural element of a ship's hull. Includes pipes for Chemfuel.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_RoofMe"/>
+	  <!--<li Class="Rimefeller.CompProperties_Pipe"/>-->
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeat</compClass>
+      </li>
+    </comps>
+    <placeWorkers>
+	
+	</placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/ShipBeam/ArmoredBeam</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costList>
+      <Steel>28</Steel>
+      <Plasteel>6</Plasteel>
+	  <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <designationHotKey>Misc1</designationHotKey>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+	  <ThingDef ParentName="BuildingBase">
+    <defName>ShipAirlockHeavy</defName>
+    <label>Heavy Airlock</label>
+    <description>Allows access to a ship or divides rooms inside it. Low-energy plasma barriers prevent gases from escaping.</description>
+    <category>Building</category>
+    <thingClass>Building_ShipAirlock</thingClass>
+    <designationCategory>SoS2Ex</designationCategory>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <texPath>Things/Building/Ship/AirlockHeavy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+      <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/AirlockHeavyBP</uiIconPath>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+	  <Plasteel>50</Plasteel>
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>	
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_RoofMe"/>
+      <li Class="CompProperties_ShipHeat">  
+        <compClass>CompShipHeat</compClass>
+      </li>
+    </comps>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+	<statBases>
+      <WorkToBuild>1400</WorkToBuild>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+			<shipPart>true</shipPart>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+      <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/ShipBeam/ShieldBeam</texPath>
+		</blueprintGraphicData>
+		<blueprintClass>Blueprint_Door</blueprintClass>
+    </building>
+  </ThingDef>
+  
+    <ThingDef ParentName="BuildingBase">
+    <defName>Ship_Beam_Shielded</defName>
+    <label>Shielded Ship Hull (unpowered)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Linked/ShipBeam/ShieldBeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Wall</li>
+		<li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Things/Building/Linked/ShieldBeamBP</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>An armored structural element of a ship's hull. Includes pipes for Chemfuel.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_RoofMe"/>  
+    </comps>
+    <placeWorkers>
+	
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/ShieldBeamBP</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costList>
+      <Steel>56</Steel>
+      <Plasteel>12</Plasteel>
+	  <ComponentIndustrial>4</ComponentIndustrial>
+	  <ComponentSpacer>2</ComponentSpacer>	  
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <designationHotKey>Misc1</designationHotKey>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+      <ThingDef ParentName="BuildingBase">
+    <defName>Ship_Beam_ShieldedPow</defName>
+    <label>Shielded Ship Hull (Powered)</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Linked/ShipBeam/ShieldBeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Wall</li>
+		<li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Things/Building/Linked/ShieldBeamBP</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>An armored structural element of a ship's hull. Includes pipes for Chemfuel.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_RoofMe"/>
+	  <!--<li Class="Rimefeller.CompProperties_Pipe"/>-->
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeat</compClass>
+      </li>
+    </comps>
+    <placeWorkers>
+	
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/ShieldBeamBP</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costList>
+      <Steel>56</Steel>
+      <Plasteel>12</Plasteel>
+	  <ComponentIndustrial>4</ComponentIndustrial>
+	  <ComponentSpacer>2</ComponentSpacer>	  
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <designationHotKey>Misc1</designationHotKey>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+  	  <ThingDef ParentName="BuildingBase">
+    <defName>ShipAirlockShield</defName>
+    <label>Shielded Airlock</label>
+    <description>Allows access to a ship or divides rooms inside it. Low-energy plasma barriers prevent gases from escaping.</description>
+    <category>Building</category>
+    <thingClass>Building_ShipAirlock</thingClass>
+    <designationCategory>SoS2Ex</designationCategory>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <texPath>Things/Building/Ship/AirlockShield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+      <!--  no damage marks because they don't move with the door
+        <rect>(0,0.12,1,0.76)</rect>-->
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/AirlockShieldBP</uiIconPath>
+    <costList>
+      <Steel>160</Steel>
+      <ComponentSpacer>4</ComponentSpacer>
+	  <Plasteel>100</Plasteel>
+    </costList>
+	<costStuffCount>14</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>	
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_RoofMe"/>
+      <li Class="CompProperties_ShipHeat">  
+        <compClass>CompShipHeat</compClass>
+      </li>
+    </comps>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+	<statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+			<shipPart>true</shipPart>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+      <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Door/AirlockShieldBP</texPath>
+		</blueprintGraphicData>
+		<blueprintClass>Blueprint_Door</blueprintClass>
+    </building>
+  </ThingDef>
+  
+        <ThingDef ParentName="BuildingBase">
+    <defName>ShipGlassWall</defName>
+    <label>Ship Plasteel Glass Wall</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Linked/ShipBeam/ShipGlass</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Wall</li>
+		<li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Things/Building/Linked/GlassWallBP</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>500</WorkToBuild>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>An armored structural element of a ship's hull. Includes pipes for Chemfuel.</description>
+    <designationCategory>SoS2Ex</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_RoofMe"/>
+	  <!--<li Class="Rimefeller.CompProperties_Pipe"/>-->
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeat</compClass>
+      </li>
+    </comps>
+    <placeWorkers>
+	
+    </placeWorkers>
+    <building>
+      <shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/ShipBeam/ShipGlass</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costList>
+      <Plasteel>20</Plasteel>
+    </costList>
+	<costStuffCount>15</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+    <designationHotKey>Misc1</designationHotKey>
+    <holdsRoof>true</holdsRoof>
+  </ThingDef>
+  
+    <ThingDef ParentName="BuildingBase">
+    <defName>Ship_LifeSupportMini</defName>
+    <label>Nanotech Humidity Bio-Storage</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/MiniSupport</texPath>
+      <graphicClass>Graphic_SingleOnOff</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <researchPrerequisites>
+      <li>ShipLifeSupport</li>
+    </researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>30000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Used to supply water and plumbing (Dubs Hygiene Addon).</description>
+    <size>(1,1)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_ShipPart"/>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_GraphicOnOff"/>
+    </comps>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Steel>500</Steel>
+	  <Plasteel>400</Plasteel>
+      <ArchoNanoKit>5</ArchoNanoKit>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <designationHotKey>Misc5</designationHotKey>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>PitchBlackness</defName>
+    <label>ArchoStorm</label>
+    <workerClass>SOS2_EX.IncidentWorker_MakeGameConditionSOS2</workerClass>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+	<gameCondition>PitchBlack</gameCondition>
+	<!-- the description -->
+    <letterLabel>Ominous Blackness</letterLabel>
+    <letterText>A strange blackness washes over the lands.</letterText>
+    <letterDef>ArchoWhat</letterDef>
+    <baseChance>0.15</baseChance><!-- very Low -->
+    <earliestDay>300</earliestDay>
+    <minRefireDays>300</minRefireDays>
+    <durationDays>
+      <min>1</min>
+      <max>2</max>
+    </durationDays>
+	<tale>ArchoMeteorImpact</tale><!-- Core -->
+  </IncidentDef>
+  
+  <IncidentDef>
+    <defName>ApocalypseStorm</defName>
+    <label>Apocalypse Storm</label>
+    <workerClass>SOS2_EX.IncidentWorker_MakeGameConditionSOS2</workerClass>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_Nope</li>
+    </targetTags>
+	<gameCondition>Apocalypse</gameCondition>
+	<!-- the description -->
+    <letterLabel>Apocalypse Storm *FIND COVER NOW!*</letterLabel>
+    <letterDef>ArchoDeath</letterDef>
+    <baseChance>0</baseChance>
+    <earliestDay>0</earliestDay>
+    <minRefireDays>99999999</minRefireDays>
+    <durationDays>
+      <min>0.1</min>
+      <max>0.2</max>
+    </durationDays>
+	<tale>ArchoMeteorImpact</tale><!-- Core -->
+  </IncidentDef>
+  
+  <IncidentDef>
+	<defName>ArchoMeteorite</defName>
+	<label>Ominous Meteor!</label>
+    <workerClass>SOS2_EX.IncidentWorker_Archometeor</workerClass>
+    <category>ThreatBig</category>
+    <targetTags>
+	  <li>Map_Nope</li>
+	</targetTags>
+	<!-- the description -->
+    <letterLabel>Ominous Meteor</letterLabel>
+    <letterText>A strange Meteor falls from the sky</letterText>
+    <letterDef>Archobad</letterDef>
+    <baseChance>60</baseChance><!-- very High to hopefully ensure it is spawned -->
+    <earliestDay>0</earliestDay>
+    <minRefireDays>300</minRefireDays>
+  </IncidentDef>
+  
+  <!-- Not quite sure it wll work at the moment -->
+  <IncidentDef>
+	<defName>SmallMeteorite</defName>
+	<label>Small Meteorite</label>
+    <workerClass>SOS2_EX.IncidentWorker_Smallmeteor</workerClass>
+    <category>ThreatBig</category>
+    <targetTags>
+      <li>Map_Nope</li>
+    </targetTags>
+    <baseChance>80</baseChance><!-- very High to hopefully ensure it is spawned constantly -->
+    <earliestDay>0</earliestDay>
+    <minRefireDays>0.005</minRefireDays>
+  </IncidentDef>
+  
+  <IncidentDef>
+	<defName>StrangeDeviceImpact</defName>
+	<label>Ominous Crash</label>
+    <workerClass>SOS2_EX.IncidentWorker_StrangeDevice</workerClass>
+    <category>Misc</category>
+    <targetTags>
+	  <li>Map_PlayerHome</li>
+	</targetTags>
+	<!-- the description -->
+    <letterLabel>Ominous Crash</letterLabel>
+    <letterText>A strange object falls from the sky</letterText>
+    <letterDef>ArchoGood</letterDef>
+    <baseChance>70.15</baseChance><!-- very High to hopefully ensure it is spawned for testing-->
+    <earliestDay>0</earliestDay>
+    <minRefireDays>300</minRefireDays>
+  </IncidentDef>
+	
+  <TaleDef>
+    <defName>ArchoMeteorImpact</defName>
+    <label>Archometeor Impact</label>
+    <taleClass>Tale_SinglePawn</taleClass>
+    <type>Volatile</type>
+    <baseInterest>50</baseInterest>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun->a meteorite falling near [PAWN_nameDef]'s [Community]</li>
+        <li>tale_noun->a meteorite impacting near [PAWN_nameDef]'s [Community]</li>
+        <li>image->a [AdjectiveLarge] rock trailing [Color] flames [airborne_circumstance]</li>
+        <li>image->a brightly-glowing spot [airborne_circumstance]</li>
+        <li>image->a [AdjectiveLarge] [Color] fireball [airborne_circumstance]</li>
+        <li>airborne_circumstance->blazing across the sky</li>
+        <li>airborne_circumstance->falling to the ground in a cloud of ash</li>
+        <li>airborne_circumstance->shedding rocks and debris as it flies</li>
+        <li>image->a [AdjectiveLarge] monolith, [ground_circumstance]</li>
+        <li>image->a [AdjectiveLarge] [Color] scorched stone, [ground_circumstance]</li>
+        <li>image->a [Color] pillar of rock, [ground_circumstance]</li>
+        <li>ground_circumstance->surrounded by smoke and ash</li>
+        <li>ground_circumstance->smoking from heat</li>
+        <li>ground_circumstance->surrounded by molten debris</li>
+        <li>ground_circumstance->partially embedded in the ground</li>
+        <li>ground_circumstance->lying in a cracked crater</li>
+        <li>desc_sentence->[PAWN_nameDef] looks on in surprise.</li>
+        <li>desc_sentence->[PAWN_nameDef] looks on with excitement.</li>
+        <li>desc_sentence->[PAWN_nameDef] looks on in shock.</li>
+        <li>desc_sentence->[Quantity_adjphrase] figures approach from a nearby [TerrainFeature].</li>
+        <li>desc_sentence->[Quantity_adjphrase] figures prepare tools and equipment.</li>
+        <li>desc_sentence->[Quantity_adjphrase] [Animal]s mill around uncertainly.</li>
+        <li>desc_sentence->The surroundings are muted and dull.</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>ArchometeorIncoming</defName>
+    <label>Archomatter Meteorite (incoming)</label>
+    <size>(6, 6)</size>
+    <graphicData>
+      <texPath>Things/Projectile/ArchoMeteorite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(6, 6)</drawSize>
+    </graphicData> 
+    <skyfaller>
+      <shadowSize>(6, 6)</shadowSize>
+      <explosionRadius>33</explosionRadius>
+      <explosionDamage>ArchometeorDmgDef</explosionDamage>
+	  <explosionDamageFactor>9.7</explosionDamageFactor>
+      <anticipationSound>MeteorIncoming</anticipationSound>
+	  <anticipationSoundTicks>500</anticipationSoundTicks>	  
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <speed>0.001</speed>
+    </skyfaller>
+  </ThingDef>
+
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>SmallmeteorIncoming</defName>
+    <label>Strange Meteor (Incoming)</label>
+    <size>(4, 4)</size>
+    <graphicData>
+      <texPath>Things/Projectile/SmallMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(4, 4)</drawSize>
+    </graphicData> 
+    <skyfaller>
+      <shadowSize>(4, 4)</shadowSize>
+      <explosionRadius>10</explosionRadius>
+      <explosionDamage>SmallArchometeorDmgDef</explosionDamage>
+	  <explosionDamageFactor>30.7</explosionDamageFactor>
+      <anticipationSound>SmallMeteorIncoming</anticipationSound>
+	  <anticipationSoundTicks>50</anticipationSoundTicks>	  
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <speed>0.2</speed>
+    </skyfaller>
+  </ThingDef> 
+  
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>StrangedeviceIncoming</defName>
+    <label>Strange Device (Incoming)</label>
+    <size>(4, 4)</size>
+    <graphicData>
+      <texPath>Things/Projectile/SmallMeteor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(4, 4)</drawSize>
+    </graphicData> 
+    <skyfaller>
+      <shadowSize>(4, 4)</shadowSize>
+      <explosionRadius>10</explosionRadius>
+      <explosionDamage>SmallArchometeorDmgDef</explosionDamage>
+	  <explosionDamageFactor>30.7</explosionDamageFactor>
+      <anticipationSound>SmallMeteorIncoming</anticipationSound>
+	  <anticipationSoundTicks>50</anticipationSoundTicks>	  
+      <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
+      <speed>0.2</speed>
+    </skyfaller>
+  </ThingDef> 
+
+  
+  <DamageDef Name="SmallArchometeorDmgDef">
+    <defName>SmallArchometeorDmgDef</defName>
+    <label>ArchometeorDmgDef</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>700</minDamageToFragment>
+    <defaultDamage>130</defaultDamage>
+    <defaultStoppingPower>10.5</defaultStoppingPower>
+    <defaultArmorPenetration>10.10</defaultArmorPenetration>
+    <buildingDamageFactor>12</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellMote>SmallMeteorMote</explosionCellMote>
+    <soundExplosion>SmallMeteorExplosion</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef> 
+  
+     <ThingDef ParentName="MoteBase">
+    <defName>SmallMeteorMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/SmallMeteorMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>1.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>1.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <growthRate>2.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>    
+  
+  
+  <DamageDef Name="ArchometeorDmgDef">
+    <defName>ArchometeorDmgDef</defName>
+    <label>ArchometeorDmgDef</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>700</minDamageToFragment>
+    <defaultDamage>10000</defaultDamage>
+    <defaultStoppingPower>10.5</defaultStoppingPower>
+    <defaultArmorPenetration>10.10</defaultArmorPenetration>
+    <buildingDamageFactor>120</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+    <explosionCellMote>MeteorMote</explosionCellMote>
+    <soundExplosion>MeteorExplosion</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef> 
+  
+     <ThingDef ParentName="MoteBase">
+    <defName>MeteorMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/MeteorMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>6.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>1.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <growthRate>0.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>    
+  
+     	<SoundDef>
+    <defName>MeteorExplosion</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/MeteorExplosion</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+     	<SoundDef>
+    <defName>SmallMeteorExplosion</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>5</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/SmallMeteorExplosion</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>5025~5025</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+     	<SoundDef>
+    <defName>SmallMeteorIncoming</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>5</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/SmallMeteorIncoming</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>5025~5025</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+     	<SoundDef>
+    <defName>MeteorIncoming</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>	
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/MeteorIncoming</clipPath>
+          </li>
+        </grains>		
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>925~925</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>    
+  
+  <!-- ===========IMPORTANT========== -->
+  
+  <IncidentTargetTagDef>
+	<defName>Map_Nope</defName>
+  </IncidentTargetTagDef>
+
+</Defs>

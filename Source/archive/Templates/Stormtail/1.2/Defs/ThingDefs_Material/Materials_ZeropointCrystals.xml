@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>ZeroCrystal</defName>
+		<label>Inactive Zero Crystal</label>
+		<description>A glowing blue crystal required to run the Archotech cooler. Not exactly great to eat!</description>
+		<soundInteract>Silver_Drop</soundInteract>
+		<soundDrop>Silver_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Material/ZeroCrystalGrow</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>	
+			
+		</graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>		
+		<statBases>
+			<MaxHitPoints>500.5</MaxHitPoints>
+			<Nutrition>0.01</Nutrition>
+			<Flammability>0</Flammability>
+            <FoodPoisonChanceFixedHuman>3.00</FoodPoisonChanceFixedHuman>			
+		</statBases>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<comps>
+      <li Class="CompProperties_FoodPoisonable" />
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(136,231,255,0)</glowColor>
+			</li>	  	  
+		</comps>
+
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+            <foodType>Kibble</foodType>				
+		</ingestible>   
+    <researchPrerequisites>
+      <li>ArchoCooling</li>
+    </researchPrerequisites>		
+	</ThingDef> 
+
+	<ThingDef ParentName="PlantBase">
+		<defName>ZeroCrystalGrow</defName>
+		<label>Inactive Zero Crystal</label>
+		<description>A glowing blue crystal required to run the Archotech cooler. Not exactly great to eat!</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Material/ZeroCrystalGrow</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+    <comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(136,231,255,0)</glowColor>
+			</li>	  	
+    </comps>	
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>2</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>ZeroCrystal</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>80</growDays>
+			
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+    <researchPrerequisites>
+      <li>ArchoCooling</li>
+    </researchPrerequisites>		
+	</ThingDef>	
+	
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>InfernoCrystal</defName>
+		<label>Inactive Inferno Crystal</label>
+		<description>A glowing red crystal required to run the Inferno Heater. Not exactly great to eat!</description>
+		<soundInteract>Silver_Drop</soundInteract>
+		<soundDrop>Silver_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Material/InfernoCrystalGrow</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>	
+			
+		</graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>		
+		<statBases>
+			<MaxHitPoints>500.5</MaxHitPoints>
+			<Nutrition>0.01</Nutrition>
+			<Flammability>0</Flammability>
+            <FoodPoisonChanceFixedHuman>3.00</FoodPoisonChanceFixedHuman>			
+		</statBases>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<comps>
+      <li Class="CompProperties_FoodPoisonable" />
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(255,87,51,0)</glowColor>
+			</li>	  	  
+		</comps>
+
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+            <foodType>Kibble</foodType>				
+		</ingestible>   
+    <researchPrerequisites>
+      <li>ArchoCooling</li>
+    </researchPrerequisites>		
+	</ThingDef> 
+
+	<ThingDef ParentName="PlantBase">
+		<defName>InfernoCrystalGrow</defName>
+		<label>Inactive Inferno Crystal</label>
+		<description>A glowing red crystal required to run the Inferno Heater. Not exactly great to eat!</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Material/InfernoCrystalGrow</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+    <comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(255,87,51,0)</glowColor>
+			</li>	  	
+    </comps>	
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>2</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>InfernoCrystal</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>80</growDays>
+			
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+    <researchPrerequisites>
+      <li>ArchoCooling</li>
+    </researchPrerequisites>		
+	</ThingDef>		
+
+</Defs>

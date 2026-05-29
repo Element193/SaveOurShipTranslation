@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ArchoResearchBench.label>上古研究台</ArchoResearchBench.label>
+  <ArchoResearchBench.description>配有计算机和电子测量设备的超时代科技工作台。允许进行快速研究，并解锁“上古”研究项目。</ArchoResearchBench.description>
+
+  <AscendedShield.label>舰用护盾发生器</AscendedShield.label>
+  <AscendedShield.description>一种奇特的护盾，可以覆盖数百米的区域，以防受到枪炮和迫击炮的攻击。</AscendedShield.description>
+
+  <AdvancedArchoShield.label>上古护盾发生器</AdvancedArchoShield.label>
+  <AdvancedArchoShield.description>一种奇特的护盾，可以覆盖数百米的区域，以防受到枪炮和迫击炮的攻击。</AdvancedArchoShield.description>
+
+  <MiniArchoShield.label>小型上古护盾发生器</MiniArchoShield.label>
+  <MiniArchoShield.description>一种奇特的护盾，可以覆盖数百米的区域，以防受到枪炮和迫击炮的攻击。</MiniArchoShield.description>
+
+
+  <!-- <ThingDef ParentName="BuildingBase">
+    <defName>ShipHullTileGlow</defName>
+    <label>Lighted Hull Plating</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Ship/HullPlateLight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<seeThroughFog>true</seeThroughFog>
+    <uiIconPath>Things/Building/Ship/HullPlateLight</uiIconPath>
+    <building>
+	  <ai_chillDestination>false</ai_chillDestination>
+	  <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Ship/HullPlateLight</texPath>
+      </blueprintGraphicData>
+    </building>
+	<coversFloor>false</coversFloor>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <passability>Standable</passability>
+	<placingDraggableDimensions>2</placingDraggableDimensions>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>900</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <description>Spaceworthy hull plating that gives off light! Designates this tile (and any objects built on it) as part of a ship. Must be placed inside an outer hull.</description>
+    <costList>
+      <Steel>3</Steel>
+	  <Plasteel>1</Plasteel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_RoofMe"/>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(158,218,229,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_InsideShipRoom</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>false</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+	<fillPercent>0.0</fillPercent>
+  </ThingDef> -->
+
+  <ArchomatterReactor.label>上古？质反应堆</ArchomatterReactor.label>
+  <ArchomatterReactor.description>Unlimited Powaaaaa!</ArchomatterReactor.description>
+
+  <AscendedArchomatterReactor.label>临界上古？质反应堆</AscendedArchomatterReactor.label>
+  <AscendedArchomatterReactor.description>界‘无’限</AscendedArchomatterReactor.description>
+
+  <HyperCapacitor.label>高效储电器</HyperCapacitor.label>
+  <HyperCapacitor.description>高效储存高达100，000，000wd的能量。</HyperCapacitor.description>
+
+  <Ship_ReactorMini.label>纳米反应器</Ship_ReactorMini.label>
+  <Ship_ReactorMini.description>纳米反应器，利用化学燃料实现最大效率。</Ship_ReactorMini.description>
+
+  <Ship_ArchoReactor.label>上古纳米反应器</Ship_ArchoReactor.label>
+  <Ship_ArchoReactor.description>吸收上古？质为大型/小型船舶提供巨量的长期动力。</Ship_ArchoReactor.description>
+
+
+  <!-- Tool Cabinet -->
+
+  <ArchoTool.label>远古工具箱</ArchoTool.label>
+  <ArchoTool.description>一个非常有效的工具箱，放满了我们不认识但超级酷炫的工具，可以提高你的手工技能！</ArchoTool.description>
+
+  <UnstableShipCell.label>不稳定上古？质能量单元</UnstableShipCell.label>
+  <UnstableShipCell.description>产生巨大的能量，但对【热量】和【损伤】非常敏感。别让它爆炸！</UnstableShipCell.description>
+
+  <StableShipCell.label>上古？质能量单元</StableShipCell.label>
+  <StableShipCell.description>产生由上古？质提供的巨大能量。</StableShipCell.description>
+
+  <ArchoGenerator.label>上古？质合成器</ArchoGenerator.label>
+  <ArchoGenerator.description>一种能够在其周围收集颗粒以产生一种被我们成为“上古？质”的奇怪材料的机器。.</ArchoGenerator.description>
+
+  <AscendedArchoGenerator.label>临界上古？质合成器</AscendedArchoGenerator.label>
+  <AscendedArchoGenerator.description>一旦足够的“上古？质”被收集，你就可以开始提纯成“临界上古？质”。.</AscendedArchoGenerator.description>
+
+  <SubzeroCooler.label>远古低温冷却器</SubzeroCooler.label>
+  <SubzeroCooler.description>先进的冷却器，使房间保持在极低的温度下。与【舰船用通风孔】结合使用。*警告：这一古代科技可能对你的殖民者带来意想不到的灾难！</SubzeroCooler.description>
+  <SubzeroCooler_Blueprint.label>远古低温冷却器</SubzeroCooler_Blueprint.label>
+  <SubzeroCooler_Frame.label>远古低温冷却器</SubzeroCooler_Frame.label>
+  <SubzeroCooler_Frame.description>先进的冷却器，使房间保持在极低的温度下。与【舰船用通风孔】结合使用。*警告：这一古代科技可能对你的殖民者带来意想不到的灾难！</SubzeroCooler_Frame.description>
+
+  <ArchoAlgaeFarm.label>远古藻类农场</ArchoAlgaeFarm.label>
+  <ArchoAlgaeFarm.description>一个农场，专门种植那些正在蠕动的可爱远古藻类。</ArchoAlgaeFarm.description>
+
+  <ShipVent.label>舰船用通风孔</ShipVent.label>
+  <ShipVent.description>把房间里的热量辐射入太空的“通风口”。与【远古低温冷却器】结合使用</ShipVent.description>
+
+  <Archolight.label>古老灯具</Archolight.label>
+  <Archolight.description>像地狱一样的亮.</Archolight.description>
+
+  <AronusMeatGrower.label>孢子农场</AronusMeatGrower.label>
+  <AronusMeatGrower.description>一个农场，致力于种植''蛋白孢子''的先进农场，仅需要“喂养”大量的藻类，它的叶子会在成熟后变异成几乎完美的肉类食品。</AronusMeatGrower.description>
+
+  <SlagTurret.label>废料炮塔</SlagTurret.label>
+  <SlagTurret.description>有人想出了建造一个炮塔来发射混合着上古？质的过热废料...杀了我吧，弗莱迪*。
+  *80年代恐怖电影的一个经典代表人物。</SlagTurret.description>
+
+  <Gun_SlagTurret.label>垃圾炮塔</Gun_SlagTurret.label>
+  <Gun_SlagTurret.description>有人想出了建造一个炮塔来发射混合着上古？质的过热废料...杀了我吧，弗莱迪*。
+  *80年代恐怖电影的一个经典代表人物。</Gun_SlagTurret.description>
+
+  <Bullet_SlagTurret.label>垃圾子弹</Bullet_SlagTurret.label>
+
+  <DaegonTurret.label>冷射线炮台</DaegonTurret.label>
+  <DaegonTurret.description>哦，天哪</DaegonTurret.description>
+
+  <Gun_DaegonTurret.label>冷射线炮台</Gun_DaegonTurret.label>
+  <Gun_DaegonTurret.description>哦，天哪.</Gun_DaegonTurret.description>
+
+  <Bullet_DaegonTurret.label>废料炮弹</Bullet_DaegonTurret.label>
+
+  <AnalyzerConsole.label>分析仪控制台</AnalyzerConsole.label>
+  <AnalyzerConsole.description>为你可爱的太空旅行者带来一定的娱乐————分析传入的空间数据。</AnalyzerConsole.description>
+
+  <Ship_Engine_SmallAdv.label>小型远古推进器</Ship_Engine_SmallAdv.label>
+  <Ship_Engine_SmallAdv.description>一种小型增压式泰克发动机。（不能用于起飞）</Ship_Engine_SmallAdv.description>
+
+  <EngineArchoLarge.label>大型远古推进器</EngineArchoLarge.label>
+  <EngineArchoLarge.description>一种增压式泰克发动机。（不能用于起飞）</EngineArchoLarge.description>
+
+  <ShieldHullCorneroneone.label>外挂船体结构(1x1)</ShieldHullCorneroneone.label>
+  <ShieldHullCorneroneone.description>船体外壳上有的结构，用于防止结构性损伤。</ShieldHullCorneroneone.description>
+
+  <ShieldHullCorneronetwo.label>外挂船体结构(1x2)</ShieldHullCorneronetwo.label>
+  <ShieldHullCorneronetwo.description>船体外壳上有的结构，用于防止结构性损伤。</ShieldHullCorneronetwo.description>
+
+  <ShieldHullCorneronethree.label>外挂船体结构(1x3)</ShieldHullCorneronethree.label>
+  <ShieldHullCorneronethree.description>船体外壳上有的结构，用于防止结构性损伤。</ShieldHullCorneronethree.description>
+
+  <ShieldHullCorneronetwoFlip.label>外挂船体结构-翻转(1x2)</ShieldHullCorneronetwoFlip.label>
+  <ShieldHullCorneronetwoFlip.description>船体外壳上有的结构，用于防止结构性损伤。</ShieldHullCorneronetwoFlip.description>
+
+  <ShieldHullCorneronethreeFlip.label>外挂船体结构-翻转(1x3)</ShieldHullCorneronethreeFlip.label>
+  <ShieldHullCorneronethreeFlip.description>船体外壳上有的结构，用于防止结构性损伤。</ShieldHullCorneronethreeFlip.description>
+
+
+  <!-- <ThingDef ParentName="BuildingBase">
+    <defName>NanoShipSalvageBay</defName>
+    <label>Nano Salvage Bay</label>
+    <graphicData>
+      <texPath>Things/Building/Ship/SalvageBayNano</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <researchPrerequisites><li>ShipSalvageBay</li></researchPrerequisites>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <passability>Standable</passability>
+    <fillPercent>0.1</fillPercent>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <description>A smaller compact version that harvests the remains of enemy ships after a battle. Each salvage bay can retrieve up to 1,000kg of material from a ship.</description>
+    <size>(2,2)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+    <building>
+      <shipPart>true</shipPart>
+      <isEdifice>false</isEdifice>
+    </building>
+    <costList>
+      <Steel>2500</Steel>
+      <Plasteel>500</Plasteel>
+      <ComponentSpacer>30</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_InsideStarship</li>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef> -->
+
+  <Ship_Beam_Heavy.label>重型船体结构（无电力）</Ship_Beam_Heavy.label>
+  <Ship_Beam_Heavy.description>船体的装甲结构部件，内置化学燃料管道。</Ship_Beam_Heavy.description>
+
+  <Ship_Beam_HeavyPow.label>重型船体结构（无电力）</Ship_Beam_HeavyPow.label>
+  <Ship_Beam_HeavyPow.description>船体的装甲结构部件，内置化学燃料管道。</Ship_Beam_HeavyPow.description>
+
+  <ShipAirlockHeavy.label>重型气闸</ShipAirlockHeavy.label>
+  <ShipAirlockHeavy.description>允许进入船上或在船内划分房间。拥有低能等离子屏障来阻止气体逸出。</ShipAirlockHeavy.description>
+  <ShipAirlockHeavy_Blueprint.label>重型气闸</ShipAirlockHeavy_Blueprint.label>
+  <ShipAirlockHeavy_Frame.label>重型气闸</ShipAirlockHeavy_Frame.label>
+  <ShipAirlockHeavy_Frame.description>允许进入船上或在船内划分房间。拥有低能等离子屏障来阻止气体逸出。</ShipAirlockHeavy_Frame.description>
+
+  <Ship_Beam_Shielded.label>护盾船体结构（无电力）</Ship_Beam_Shielded.label>
+  <Ship_Beam_Shielded.description>船体的装甲结构部件，内置化学燃料管道。</Ship_Beam_Shielded.description>
+
+  <Ship_Beam_ShieldedPow.label>护盾船体结构（电力）</Ship_Beam_ShieldedPow.label>
+  <Ship_Beam_ShieldedPow.description>船体的装甲结构部件，内置化学燃料管道。</Ship_Beam_ShieldedPow.description>
+
+  <ShipAirlockShield.label>重型护盾气闸</ShipAirlockShield.label>
+  <ShipAirlockShield.description>允许进入船上或在船内划分房间。拥有低能等离子屏障来阻止气体逸出。</ShipAirlockShield.description>
+  <ShipAirlockShield_Blueprint.label>重型护盾气闸</ShipAirlockShield_Blueprint.label>
+  <ShipAirlockShield_Frame.label>重型护盾气闸</ShipAirlockShield_Frame.label>
+  <ShipAirlockShield_Frame.description>允许进入船上或在船内划分房间。拥有低能等离子屏障来阻止气体逸出。</ShipAirlockShield_Frame.description>
+
+  <ShipGlassWall.label>船用玻璃钢观察墙</ShipGlassWall.label>
+  <ShipGlassWall.description>船体的装甲结构部件，内置化学燃料管道。</ShipGlassWall.description>
+
+  <Ship_LifeSupportMini.label>纳米液态存储器</Ship_LifeSupportMini.label>
+  <Ship_LifeSupportMini.description>用于供水和管道（卫生mod插件）</Ship_LifeSupportMini.description>
+
+
+</LanguageData>

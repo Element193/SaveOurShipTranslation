@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="CMeatOrganicProductBase" ParentName="ResourceBase">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>5</DeteriorationRate>
+			<Mass>0.20</Mass>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="CMeatFoodRawBase" ParentName="CMeatOrganicProductBase">
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+			<tasteThought>AteRawFood</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+    <statBases>
+      <Nutrition>0.4</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+		<li>MeatRaw</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>3</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="CMeatFoodRawBase">
+    <defName>RawChickenMeat</defName>
+    <label>synthetic chicken</label>
+    <description>Raw sytheticly created chicken.</description>
+    <graphicData>		
+      <texPath>Things/Material/CMeatSmall</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.05</Nutrition>
+      <MarketValue>1.4</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="CMeatFoodRawBase">
+    <defName>RawPigMeat</defName>
+    <label>synthetic pork</label>
+    <description>Raw sytheticly created pork.</description>
+    <graphicData>		
+      <texPath>Things/Material/CMeatBig</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.05</Nutrition>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="CMeatFoodRawBase">
+    <defName>RawCowMeat</defName>
+    <label>synthetic beef</label>
+    <description>Raw sytheticly created beef.</description>
+    <graphicData>	
+      <texPath>Things/Material/CMeatBig</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.05</Nutrition>
+      <MarketValue>1.6</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+</Defs>

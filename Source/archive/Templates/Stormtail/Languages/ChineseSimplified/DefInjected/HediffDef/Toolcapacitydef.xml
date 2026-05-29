@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- METEOR MOB DAMAGE -->
+
+  <Irradiated.label>辐射病</Irradiated.label>
+  <Irradiated.description>辐射病.</Irradiated.description>
+  <Irradiated.comps.0.labelTendedWell>已包扎</Irradiated.comps.0.labelTendedWell>
+  <Irradiated.comps.0.labelTendedWellInner>已照料</Irradiated.comps.0.labelTendedWellInner>
+  <Irradiated.comps.0.labelSolidTendedWell>已照料</Irradiated.comps.0.labelSolidTendedWell>
+  <Irradiated.injuryProps.destroyedLabel>死于辐射病.</Irradiated.injuryProps.destroyedLabel>
+
+
+</LanguageData>

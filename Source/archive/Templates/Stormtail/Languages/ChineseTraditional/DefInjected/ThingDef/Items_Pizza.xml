@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PizzaCheese.label>芝士披萨</PizzaCheese.label>
+  <PizzaCheese.description>我想说谁不喜欢披萨?!</PizzaCheese.description>
+
+  <PizzaMeat.label>香肠披萨</PizzaMeat.label>
+  <PizzaMeat.description>我想说谁不喜欢披萨?!</PizzaMeat.description>
+
+  <PizzaMushroom.label>蘑菇披萨</PizzaMushroom.label>
+  <PizzaMushroom.description>我想说谁不喜欢披萨?!</PizzaMushroom.description>
+
+  <PizzaVeggie.label>纯粹蔬菜披萨</PizzaVeggie.label>
+  <PizzaVeggie.description>我想说谁不喜欢披萨?!（该死的素食主义者…）</PizzaVeggie.description>
+
+
+</LanguageData>

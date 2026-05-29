@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RawChickenMeat.label>合成鸡肉</RawChickenMeat.label>
+  <RawChickenMeat.description>生的人造鸡肉.</RawChickenMeat.description>
+
+  <RawPigMeat.label>合成猪肉</RawPigMeat.label>
+  <RawPigMeat.description>生的人造猪肉.</RawPigMeat.description>
+
+  <RawCowMeat.label>合成牛肉</RawCowMeat.label>
+  <RawCowMeat.description>生的人造牛肉.</RawCowMeat.description>
+
+
+</LanguageData>

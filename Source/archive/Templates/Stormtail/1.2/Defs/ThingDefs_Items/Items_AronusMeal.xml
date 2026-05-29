@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	
+  <ThingDef ParentName="MealBase">
+    <defName>CookedAronusMeal</defName>
+    <label>Meaty Aronus Stew</label>
+    <description>A meal combined with several regular ingredients, Archo Algae and Aronus Meat. A biological marvel!</description>
+    <graphicData>
+      <texPath>Things/Food/AronusMeal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>	
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>1500</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>1000</WorkToMake>
+      <Nutrition>2.50</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <tasteThought>AteAronusMeal</tasteThought>
+    </ingestible>
+    <tradeability>None</tradeability>	
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>CookedAlgaeMeal</defName>
+    <label>Algae Stew</label>
+    <description>A meal combined with several regular ingredients and tasty Algae.....yum?</description>
+    <graphicData>
+      <texPath>Things/Food/AlgaeMeal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>	
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>1500</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>1000</WorkToMake>
+      <Nutrition>1.50</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <tasteThought>AteAronusMeal</tasteThought>
+    </ingestible>
+    <tradeability>None</tradeability>	
+  </ThingDef>	  
+  
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>ArchoJelly</defName>
+    <label>Zerocrystal Jelly</label>
+    <description>Who in the world would eat this stuff?!</description>
+    <graphicData>
+      <texPath>Things/Material/ZeroJelly</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>80.0</MarketValue>
+      <Mass>0.025</Mass>
+      <Nutrition>2.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.09</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <ingestible>
+      <foodType>AnimalProduct</foodType>
+      <preferability>MealFine</preferability>
+      <joy>0.80</joy>
+      <joyKind>Gluttonous</joyKind>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>  
+	
+</Defs>

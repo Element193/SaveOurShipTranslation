@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MakeArchoPods.label>制作远古？质©的燃料容器</MakeArchoPods.label>
+  <MakeArchoPods.description>制作100x远古？质©的燃料容器.</MakeArchoPods.description>
+  <MakeArchoPods.jobString>制作远古？质©的燃料容器.</MakeArchoPods.jobString>
+
+  <MakeAscendedArchoPods.label>制作远古？质©的高压燃料舱</MakeAscendedArchoPods.label>
+  <MakeAscendedArchoPods.description>制作100x远古？质©的高压燃料舱.</MakeAscendedArchoPods.description>
+  <MakeAscendedArchoPods.jobString>制作远古？质©的高压燃料舱.</MakeAscendedArchoPods.jobString>
+
+  <MakeCrystalPods.label>制作零点水晶容器</MakeCrystalPods.label>
+  <MakeCrystalPods.description>制作100x零点水晶容器.</MakeCrystalPods.description>
+  <MakeCrystalPods.jobString>制作零点水晶容器.</MakeCrystalPods.jobString>
+
+
+</LanguageData>

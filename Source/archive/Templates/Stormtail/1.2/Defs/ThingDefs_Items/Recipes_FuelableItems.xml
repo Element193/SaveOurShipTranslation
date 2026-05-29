@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+  <RecipeDef>
+    <defName>MakeArchoPods</defName>
+    <label>make Archomatter fuel pods</label>
+    <description>Craft 100 Archomatter fuel pods.</description>
+    <jobString>Making Archomatter fuel pods.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>6000</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Archomatter</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+			<li>
+				<filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+			</li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Archomatter</li>
+		<li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ArchomatterPods>100</ArchomatterPods>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+		<li>ArchotechWorkbench</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeAscendedArchoPods</defName>
+    <label>make Ascended Archomatter fuel pods</label>
+    <description>Craft 100 Ascended Archomatter fuel pods.</description>
+    <jobString>Making Archomatter fuel pods.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>9000</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AscendedArchomatter</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+			<li>
+				<filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+			</li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AscendedArchomatter</li>
+		<li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AscendedArchomatterPods>100</AscendedArchomatterPods>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+		<li>ArchotechWorkbench</li>
+	</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeCentoPods</defName>
+    <label>make Centomatter fuel pods</label>
+    <description>Craft 100 Centomatter fuel pods.</description>
+    <jobString>Making Centomatter fuel pods.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>9000</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Centomatter</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+			<li>
+				<filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+			</li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Centomatter</li>
+		<li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <CentomatterPods>100</CentomatterPods>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+		<li>ArchotechWorkbench</li>
+	</recipeUsers>
+  </RecipeDef>   
+  
+  <RecipeDef>
+    <defName>MakeCrystalPods</defName>
+    <label>make Zero Crystal fuel pods</label>
+    <description>Craft 100 Zero Crystal fuel pods.</description>
+    <jobString>Making Zero Crystal fuel pods.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>6000</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ZeroCrystal</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+			<li>
+				<filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+			</li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ZeroCrystal</li>
+		<li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ZerocrystalPods>100</ZerocrystalPods>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+		<li>ArchotechWorkbench</li>
+	</recipeUsers>
+  </RecipeDef>  
+  
+  <RecipeDef>
+    <defName>MakeInfernoCrystalPods</defName>
+    <label>make Inferno Crystal fuel pods</label>
+    <description>Craft 100 Inferno Crystal fuel pods.</description>
+    <jobString>Making Inferno Crystal fuel pods.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>6000</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>InfernoCrystal</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+			<li>
+				<filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+			</li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>InfernoCrystal</li>
+		<li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <InfernocrystalPods>100</InfernocrystalPods>
+    </products>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers>
+		<li>ArchotechWorkbench</li>
+	</recipeUsers>
+  </RecipeDef>    
+  
+</Defs>

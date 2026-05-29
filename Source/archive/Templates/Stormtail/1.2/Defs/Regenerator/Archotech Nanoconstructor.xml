@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>ArchotechNanoconstructor</defName>
+		<label>Archotech Nanoconstructor</label>
+		<thingClass>RepairingAura.Building_RepairingAura</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ArchoNano</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1.0</fillPercent>
+		<statBases>
+			<MaxHitPoints>3000</MaxHitPoints>
+			<WorkToBuild>3</WorkToBuild>
+			<Flammability>1.0</Flammability>
+            <Mass>10</Mass>			
+		</statBases>
+		<tickerType>Rare</tickerType>		
+		<description>A small dispenser fed with Archomatter that releases it in a spore-like form, enabling it to reconstruct just about anything around it.</description>
+		<size>(1,1)</size>
+		<costList>
+			<Plasteel>250</Plasteel>
+			<ComponentIndustrial>20</ComponentIndustrial>
+			<ComponentSpacer>20</ComponentSpacer>
+			<Archomatter>50</Archomatter>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1600</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>false</holdsRoof>
+		<blockLight>false</blockLight>
+		<blockWind>false</blockWind>
+		<coversFloor>false</coversFloor>
+		<rotatable>false</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>true</castEdgeShadows>
+		<designationCategory>SoS2Ex</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>ArchoReconstruction</li>
+		</researchPrerequisites>
+		<thingCategories>
+			<li>SoS2ExStuff</li>
+		</thingCategories>		
+		<minifiedDef>MinifiedThing</minifiedDef>		
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<!-- this is also it's effective range -->
+		<specialDisplayRadius>50</specialDisplayRadius>
+	</ThingDef>
+</Defs>

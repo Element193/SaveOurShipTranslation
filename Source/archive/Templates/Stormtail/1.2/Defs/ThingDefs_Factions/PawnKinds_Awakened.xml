@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="AwakenedBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>OutlanderCivil</defaultFactionType>
+    <chemicalAddictionChance>0.90</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <invNutrition>9.55</invNutrition>
+    <biocodeWeaponChance>500.1</biocodeWeaponChance>
+  </PawnKindDef>
+
+  <!-- Povery tier - drifter -->
+  
+  <PawnKindDef ParentName="AwakenedBase">
+    <defName>Awakened</defName>
+    <label>awakened</label>
+    <combatPower>120</combatPower>
+    <invNutrition>0</invNutrition>
+    <gearHealthRange>0.2~0.6</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>9999999~9999999</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>SOSEXApparelQuality</li>
+    </apparelTags>
+    <weaponMoney>9999999~9999999</weaponMoney>
+    <weaponTags>
+      <li>SOSEXBaseWeapon</li>
+    </weaponTags>
+    <techHediffsMoney>9999999~9999999</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+    </techHediffsRequired>	
+    <techHediffsChance>0.15</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>30~70</countRange>
+        </li>
+        <li>
+          <thingDef>Archoferium</thingDef>
+          <countRange>1~7</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!-- Low tier - scavenger, thrasher -->
+
+  <PawnKindDef ParentName="AwakenedBase" Name="AwakenedBaseTier" Abstract="True">
+    <combatPower>170</combatPower>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <itemQuality>Poor</itemQuality>
+    <apparelTags>
+      <li>SOSEXApparelQuality</li>
+    </apparelTags>
+    <gearHealthRange>0.4~1.1</gearHealthRange>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <techHediffsMoney>9999999~9999999</techHediffsMoney>
+    <maxGenerationAge>80</maxGenerationAge>
+	<minGenerationAge>16</minGenerationAge>	
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+    </techHediffsRequired>	
+    <techHediffsChance>0.04</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>25~50</countRange>
+        </li>
+        <li>
+          <thingDef>Archoferium</thingDef>
+          <countRange>1~7</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AwakenedBaseTier">
+    <defName>AwakenedGunner</defName>
+    <label>Awakened Gunner</label>
+    <apparelMoney>9999999~9999999</apparelMoney>
+    <weaponMoney>9999999~9999999</weaponMoney>
+    <maxGenerationAge>80</maxGenerationAge>
+	<minGenerationAge>16</minGenerationAge>	
+    <weaponTags>
+      <li>SOSEXBaseWeapon</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AwakenedBaseTier">
+    <defName>AwakenedTrasher</defName>
+    <label>Awakened Thrasher</label>
+    <race>Human</race>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>9999999~9999999</apparelMoney>
+    <maxGenerationAge>80</maxGenerationAge>
+	<minGenerationAge>16</minGenerationAge>	
+    <apparelTags>
+      <li>SOSEXApparelQuality</li>
+    </apparelTags>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+    </techHediffsRequired>	
+    <weaponMoney>9999999~9999999</weaponMoney>
+    <weaponTags>
+      <li>SOSEXBaseWeapon</li>
+      <li>SOSEXMeleeQuality</li>
+    </weaponTags>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DoBillsProduceArchoDrugs.label>合成远古药物</DoBillsProduceArchoDrugs.label>
+  <DoBillsProduceArchoDrugs.verb>生产远古药物</DoBillsProduceArchoDrugs.verb>
+  <DoBillsProduceArchoDrugs.gerund>生产远古药物于</DoBillsProduceArchoDrugs.gerund>
+
+  <MakeStuffWorkbench.label>制作武器</MakeStuffWorkbench.label>
+  <MakeStuffWorkbench.verb>完成项目</MakeStuffWorkbench.verb>
+  <MakeStuffWorkbench.gerund>完成项目于</MakeStuffWorkbench.gerund>
+
+  <DoBillsBuyShitArcho.label>购买上古物品</DoBillsBuyShitArcho.label>
+  <DoBillsBuyShitArcho.verb>交易上古物品</DoBillsBuyShitArcho.verb>
+  <DoBillsBuyShitArcho.gerund>购物于</DoBillsBuyShitArcho.gerund>
+
+  <DoBillsBuyShitPizza.label>买披萨</DoBillsBuyShitPizza.label>
+  <DoBillsBuyShitPizza.verb>买超级美味的披萨</DoBillsBuyShitPizza.verb>
+  <DoBillsBuyShitPizza.gerund>订购披萨于</DoBillsBuyShitPizza.gerund>
+
+
+</LanguageData>

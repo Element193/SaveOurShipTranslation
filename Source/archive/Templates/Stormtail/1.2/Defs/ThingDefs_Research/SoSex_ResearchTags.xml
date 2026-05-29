@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectTagDef>
+    <defName>AngryFaction</defName>
+  </ResearchProjectTagDef>
+
+  <ResearchProjectTagDef>
+    <defName>Consequences</defName>
+  </ResearchProjectTagDef>
+  
+  <ResearchProjectTagDef>
+    <defName>WARNING</defName>
+  </ResearchProjectTagDef>
+  
+</Defs>

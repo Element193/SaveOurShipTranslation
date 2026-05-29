@@ -1,0 +1,174 @@
+<Defs>
+
+    <ThingDef ParentName="MoteBase">
+    <defName>AronusMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/AronusMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+			<drawSize>(0.42,0.42)</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.42</fadeInTime>
+      <solidTime>0.42</solidTime>
+      <fadeOutTime>0.42</fadeOutTime>
+      <growthRate>0.42</growthRate>
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+    
+    <ThingDef ParentName="MoteBase">
+    <defName>ArchoBeamImpact</defName>
+    <graphicData>
+      <texPath>Things/Mote/ArchomatterLaserBeam</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.5</fadeInTime>
+      <solidTime>9.3</solidTime>
+      <fadeOutTime>1.0</fadeOutTime>
+    </mote>
+  </ThingDef>
+  
+    <ThingDef ParentName="MoteBase">
+    <defName>AlgaeMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/AlgaeMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+			<drawSize>(0.42,0.42)</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.42</fadeInTime>
+      <solidTime>0.42</solidTime>
+      <fadeOutTime>0.42</fadeOutTime>
+      <growthRate>0.42</growthRate>
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+    <defName>CellMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/Cellmote</texPath>
+      <shaderType>MoteGlow</shaderType>
+			<drawSize>(0.42,0.42)</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.42</fadeInTime>
+      <solidTime>0.42</solidTime>
+      <fadeOutTime>0.42</fadeOutTime>
+      <growthRate>0.42</growthRate>
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>  
+
+    <ThingDef ParentName="MoteBase">
+    <defName>StableCellmote</defName>
+    <graphicData>
+      <texPath>Things/Mote/StableCellmote</texPath>
+      <shaderType>MoteGlow</shaderType>
+			<drawSize>(0.42,0.42)</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.42</fadeInTime>
+      <solidTime>0.42</solidTime>
+      <fadeOutTime>0.42</fadeOutTime>
+      <growthRate>0.42</growthRate>
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>   
+  
+     <ThingDef ParentName="MoteBase">
+    <defName>SlagExplosion</defName>
+    <graphicData>
+      <texPath>Things/Mote/SlagExplosion</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>0.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+  
+    <ThingDef ParentName="MoteBase">
+    <defName>HivemindMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/HivemindMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>	
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>0.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <growthRate>0.42</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> 
+
+    <ThingDef ParentName="MoteBase">
+    <defName>WorkbenchMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/WorkbenchMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>	
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>0.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <growthRate>0.42</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> 
+
+    <ThingDef ParentName="MoteBase">
+    <defName>ResearchbenchMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/ResearchbenchMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>	
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>0.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <growthRate>0.42</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> 
+
+    <ThingDef ParentName="MoteBase">
+    <defName>AscendedWorkbenchMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/AscendedWorkbenchMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>	
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>0.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <growthRate>0.42</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>   
+ 
+</Defs>

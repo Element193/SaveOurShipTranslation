@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Not quite sure it wll work at the moment -->
+
+  <ArchoMeteorImpact.label>上古？岩，抵达</ArchoMeteorImpact.label>
+  <ArchoMeteorImpact.rulePack.rulesStrings.0>tale_noun->一颗陨石撞击[PAWN_nameDef]的[Community]附近</ArchoMeteorImpact.rulePack.rulesStrings.0>
+  <ArchoMeteorImpact.rulePack.rulesStrings.1>tale_noun->一颗陨石坠落在[PAWN_nameDef]的[Community]附近</ArchoMeteorImpact.rulePack.rulesStrings.1>
+  <ArchoMeteorImpact.rulePack.rulesStrings.2>image->一颗 [AdjectiveLarge] 陨石拖着 [Color]火焰[airborne_circumstance]</ArchoMeteorImpact.rulePack.rulesStrings.2>
+  <ArchoMeteorImpact.rulePack.rulesStrings.3>image->一个明亮的发光点 [airborne_circumstance]</ArchoMeteorImpact.rulePack.rulesStrings.3>
+  <ArchoMeteorImpact.rulePack.rulesStrings.4>image->一个[AdjectiveLarge] [Color] 火球[airborne_circumstance]</ArchoMeteorImpact.rulePack.rulesStrings.4>
+  <ArchoMeteorImpact.rulePack.rulesStrings.5>airborne_circumstance->划过天空</ArchoMeteorImpact.rulePack.rulesStrings.5>
+  <ArchoMeteorImpact.rulePack.rulesStrings.6>airborne_circumstance->落在一片灰烬中</ArchoMeteorImpact.rulePack.rulesStrings.6>
+  <ArchoMeteorImpact.rulePack.rulesStrings.7>airborne_circumstance->飞行时掉落岩石和碎片</ArchoMeteorImpact.rulePack.rulesStrings.7>
+  <ArchoMeteorImpact.rulePack.rulesStrings.8>image->一个[AdjectiveLarge]巨石, [ground_circumstance]</ArchoMeteorImpact.rulePack.rulesStrings.8>
+  <ArchoMeteorImpact.rulePack.rulesStrings.9>image->一块[AdjectiveLarge] [Color] 焦石, [ground_circumstance]</ArchoMeteorImpact.rulePack.rulesStrings.9>
+  <ArchoMeteorImpact.rulePack.rulesStrings.10>image->一根 [Color]岩石柱, [ground_circumstance]</ArchoMeteorImpact.rulePack.rulesStrings.10>
+  <ArchoMeteorImpact.rulePack.rulesStrings.11>ground_circumstance->被烟和灰包围</ArchoMeteorImpact.rulePack.rulesStrings.11>
+  <ArchoMeteorImpact.rulePack.rulesStrings.12>ground_circumstance->热得冒烟</ArchoMeteorImpact.rulePack.rulesStrings.12>
+  <ArchoMeteorImpact.rulePack.rulesStrings.13>ground_circumstance->被熔融碎片包围</ArchoMeteorImpact.rulePack.rulesStrings.13>
+  <ArchoMeteorImpact.rulePack.rulesStrings.14>ground_circumstance->部分嵌入地面</ArchoMeteorImpact.rulePack.rulesStrings.14>
+  <ArchoMeteorImpact.rulePack.rulesStrings.15>ground_circumstance->躺在一个裂开的陨石坑里</ArchoMeteorImpact.rulePack.rulesStrings.15>
+  <ArchoMeteorImpact.rulePack.rulesStrings.16>desc_sentence->[PAWN_nameDef]惊讶的看着.</ArchoMeteorImpact.rulePack.rulesStrings.16>
+  <ArchoMeteorImpact.rulePack.rulesStrings.17>desc_sentence->[PAWN_nameDef]兴奋的看着.</ArchoMeteorImpact.rulePack.rulesStrings.17>
+  <ArchoMeteorImpact.rulePack.rulesStrings.18>desc_sentence->[PAWN_nameDef]震惊的看着.</ArchoMeteorImpact.rulePack.rulesStrings.18>
+  <ArchoMeteorImpact.rulePack.rulesStrings.19>desc_sentence->[Quantity_adjphrase]人们从附近的 [TerrainFeature]接近.</ArchoMeteorImpact.rulePack.rulesStrings.19>
+  <ArchoMeteorImpact.rulePack.rulesStrings.20>desc_sentence->[Quantity_adjphrase]人们准备工具和设备.</ArchoMeteorImpact.rulePack.rulesStrings.20>
+  <ArchoMeteorImpact.rulePack.rulesStrings.21>desc_sentence->[Quantity_adjphrase] [Animal]不确定地绕来绕去.</ArchoMeteorImpact.rulePack.rulesStrings.21>
+  <ArchoMeteorImpact.rulePack.rulesStrings.22>desc_sentence->周围一片寂静和沉闷.</ArchoMeteorImpact.rulePack.rulesStrings.22>
+
+
+</LanguageData>

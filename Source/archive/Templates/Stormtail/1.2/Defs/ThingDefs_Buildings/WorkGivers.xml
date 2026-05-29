@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <WorkGiverDef>
+    <defName>DoBillsProduceArchoDrugs</defName>
+    <label>Synthesize Archomedicals</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <workTags>
+      <li>Crafting</li>
+    </workTags>
+    <priorityInType>121</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ArchotechHivemind</li>
+    </fixedBillGiverDefs>
+    <verb>produce archomedicals</verb>
+    <gerund>producing archomedicals at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+
+
+  <WorkGiverDef>
+    <defName>MakeStuffWorkbench</defName>
+    <label>Make Weaponry and Random</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <workTags>
+      <li>Crafting</li>
+    </workTags>
+    <priorityInType>121</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ArchotechWorkbench</li>
+    </fixedBillGiverDefs>
+    <verb>produce items</verb>
+    <gerund>producing items at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>  
+  
+  <WorkGiverDef>
+    <defName>MakeStuffASCWorkbench</defName>
+    <label>Make Weaponry and Random</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <workTags>
+      <li>Crafting</li>
+    </workTags>
+    <priorityInType>121</priorityInType>
+    <fixedBillGiverDefs>
+      <li>AscendedArchotechWorkbench</li>
+    </fixedBillGiverDefs>
+    <verb>produce items</verb>
+    <gerund>producing items at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>    
+  
+  <WorkGiverDef>
+    <defName>DoBillsBuyShitArcho</defName>
+    <label>Buy Archo-Items</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <workTags>
+      <li>Crafting</li>
+    </workTags>
+    <priorityInType>120</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ArchoVendor</li>
+    </fixedBillGiverDefs>
+    <verb>buy archo-items</verb>
+    <gerund>buying archo-items at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>  
+  
+  <WorkGiverDef>
+    <defName>DoBillsBuyShitPizza</defName>
+    <label>Buy Pizza</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <workTags>
+      <li>Crafting</li>
+    </workTags>
+    <priorityInType>120</priorityInType>
+    <fixedBillGiverDefs>
+      <li>PizzaVendor</li>
+    </fixedBillGiverDefs>
+    <verb>buy delicious pizza</verb>
+    <gerund>buying pizza's at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>    
+
+
+</Defs>

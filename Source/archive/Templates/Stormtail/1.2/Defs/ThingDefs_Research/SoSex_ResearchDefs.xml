@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>StartJourney</defName>
+    <label>The Journey</label>
+    <description>Are you sure you want to do this?</description>
+    <baseCost>6000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>1</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>ArchomatterResearch</defName>
+    <label>Archomatter Research</label>
+    <description>01110101 01101110 01101100 01101111 01100011 01101011 00100000 01110000 01101111 01110100 01100101 01101110 01110100 01101001 01100001 01101100.</description>
+    <baseCost>700000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>2</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef>
+    <defName>MedicalTreatment</defName>
+    <label>Medical Research</label>
+    <description>New Medicine, in space! Required for the new deadly diseases.</description>
+    <baseCost>51000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>ArchomatterResearch</li>
+    </prerequisites>	
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>3</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>ArchoferiumProduction</defName>
+    <label>Archoferium Production</label>
+    <description>New Drugs, in space! Highly dangerous though.</description>
+    <baseCost>79000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>MedicalTreatment</li>
+    </prerequisites>		
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>4</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef>
+    <defName>ArchoReconstruction</defName>
+    <label>Archomatter Reconstruction</label>
+    <description>Research into reconstructive technology to further your understanding.</description>
+    <baseCost>88000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>ArchoferiumProduction</li>
+    </prerequisites>	
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>5</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>SpaceMeat</defName>
+    <label>Hydromeat Cultivation</label>
+    <description>Spacemeat, for space. Self explanatory.</description>
+    <baseCost>5000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>ArchoReconstruction</li>
+    </prerequisites>		
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>6</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef> 
+
+    <ResearchProjectDef>
+    <defName>ArchoCooling</defName>
+    <label>Archotech Cooling</label>
+    <description>Research the best cooling system ever invented.</description>
+    <baseCost>9000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>SpaceMeat</li>
+    </prerequisites>	
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>7</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>ArchoWeaponry</defName>
+    <label>Archotech Weaponry</label>
+    <description>Advanced weaponry</description>
+    <baseCost>900000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>ArchoCooling</li>
+    </prerequisites>	
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>8</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef> 
+  
+    <ResearchProjectDef>
+    <defName>NanoTech</defName>
+    <label>Nanotech</label>
+    <description>Minified tech for more compact builds.</description>
+    <baseCost>500000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>ArchoWeaponry</li>
+    </prerequisites>		
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>8</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef>    
+
+    <ResearchProjectDef>
+    <defName>ArchotechAbsolution</defName>
+    <label>Archotech Absolution</label>
+    <description>The start to become ascended.</description>
+    <baseCost>90000000</baseCost>
+	<techLevel>Archotech</techLevel>
+    <prerequisites>
+      <li>ArchoWeaponry</li>
+    </prerequisites>		
+	<tags>
+      <li>WARNING</li>
+      <li>AngryFaction</li>	  
+    </tags>
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>9</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef> 
+
+    <ResearchProjectDef>
+    <defName>ArchomatterAscension</defName>
+    <label>Archomatter Ascension</label>
+    <description>Ascension to the ultimate level.</description>
+    <baseCost>50000000</baseCost>
+	<techLevel>Archotech</techLevel>		
+    <prerequisites>
+      <li>ArchotechAbsolution</li>
+    </prerequisites>		
+	<tags>
+      <li>Consequences</li>
+    </tags>
+    <requiredResearchBuilding>ArchoResearchBench</requiredResearchBuilding>
+	<researchViewX>0</researchViewX>
+	<researchViewY>10</researchViewY>
+	<tab>ExtendedSpace</tab>
+  </ResearchProjectDef>    
+
+</Defs>

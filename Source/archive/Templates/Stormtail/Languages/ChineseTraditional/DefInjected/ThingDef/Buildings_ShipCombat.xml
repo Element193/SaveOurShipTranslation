@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<ShipHeatsinkAdv.label>先进散热片</ShipHeatsinkAdv.label>
+<ShipHeatsinkAdv.description>一种低温冷却的散热器，用于储存武器射击时产生的多余热量。缓慢地将热量排放到周围的房间；在真空中不起作用。</ShipHeatsinkAdv.description>
+<ShipHeatsinkAdv_Blueprint.label>先进散热片（蓝图）</ShipHeatsinkAdv_Blueprint.label>
+<ShipHeatsinkAdv_Frame.label>高级散热片（建造中）</ShipHeatsinkAdv_Frame.label>
+<ShipHeatsinkAdv_Frame.description>一种低温冷却的散热器，用于储存武器射击时产生的多余热量。缓慢地将热量排放到周围的房间；在真空中不起作用。</ShipHeatsinkAdv_Frame.description>
+<ShipHeatsinkMini.label>纳米技术散热器</ShipHeatsinkMini.label>
+<ShipHeatsinkMini.description>一种低温冷却的散热器，用于储存武器射击时产生的多余热量。缓慢地将热量排放到周围的房间；在真空中不起作用。</ShipHeatsinkMini.description>
+<ShipHeatsinkMini_Blueprint.label>纳米技术散热器（蓝图）</ShipHeatsinkMini_Blueprint.label>
+<ShipHeatsinkMini_Frame.label>纳米技术散热器（建造中）</ShipHeatsinkMini_Frame.label>
+<ShipHeatsinkMini_Frame.description>一种低温冷却的散热器，用于储存武器射击时产生的多余热量。缓慢地将热量排放到周围的房间；在真空中不起作用。</ShipHeatsinkMini_Frame.description>
+<ShipHeatsinkCapital.label>高级热能核心</ShipHeatsinkCapital.label>
+<ShipHeatsinkCapital.description>一种低温冷却的超级散热片，用于储存武器火力产生的多余热量。缓慢地将热量排放到周围的房间；在真空中不起作用。</ShipHeatsinkCapital.description>
+<ShipHeatsinkCapital_Blueprint.label>高级热能核心（蓝图）</ShipHeatsinkCapital_Blueprint.label>
+<ShipHeatsinkCapital_Frame.label>高级热能核心 (建造中)</ShipHeatsinkCapital_Frame.label>
+<ShipHeatsinkCapital_Frame.description>一种低温冷却的超级散热片，用于储存武器火力产生的多余热量。缓慢地将热量排放到周围的房间；在真空中不起作用。</ShipHeatsinkCapital_Frame.description>
+<ShipHeatsinkUltra.label>Ultratech热能核心</ShipHeatsinkUltra.label>
+<ShipHeatsinkUltra.description>一种低温冷却的超级散热片，用于储存武器火力产生的多余热量。缓慢地将热量排放到周围的房间；在真空中不起作用。</ShipHeatsinkUltra.description>
+<ShipHeatsinkUltra_Blueprint.label>Ultratech热能核心（蓝图）</ShipHeatsinkUltra_Blueprint.label>
+<ShipHeatsinkUltra_Frame.label>Ultratech热能核心（建造中）</ShipHeatsinkUltra_Frame.label>
+<ShipHeatsinkUltra_Frame.description>一种低温冷却的超级散热片，用于储存武器火力产生的多余热量。缓慢地将热量排放到周围的房间；在真空中不起作用。</ShipHeatsinkUltra_Frame.description>
+<ShipCombatShieldGeneratorADV.label>高级护盾发生器</ShipCombatShieldGeneratorADV.label>
+<ShipCombatShieldGeneratorADV.description>发射动量斥力场的一种较小的护盾装置。射击可以射出，但不能射入。\n\n阻挡攻击时会产生热量。如果没有散热器容量，则护罩将损坏并需要修理。\n\n护罩打开时，散热器无法散热。船长们被建议在散热器接近容量时放下防护罩，否则他们的船可能会变成烤箱。</ShipCombatShieldGeneratorADV.description>
+<MiniShield.label>纳米技术护盾发生器</MiniShield.label>
+<MiniShield.description>发射动量斥力场的一种较小的护盾装置。射击可以射出，但不能射入。\n\n阻挡攻击时会产生热量。如果没有散热器容量，则护罩将损坏并需要修理。\n\n护罩打开时，散热器无法散热。船长们被建议在散热器接近容量时放下防护罩，否则他们的船可能会变成烤箱。</MiniShield.description>
+<ShipSpinalBarrelPlasmaAdv.label>脊峰炮：支配者</ShipSpinalBarrelPlasmaAdv.label>
+<ShipSpinalBarrelPlasmaAdv.description>把几个过热的等离子束集中成一个大球体的脊峰炮。射程：200 热：500PP 能量：450PP DMG：（M.High）船体瓦驱逐舰/反Pawn</ShipSpinalBarrelPlasmaAdv.description>
+<Bullet_Dominator.label>等离子体环面</Bullet_Dominator.label>
+<ShipTurret_Dominator.label>脊峰炮</ShipTurret_Dominator.label>
+<ShipTurret_Dominator.description>主力舰武器。</ShipTurret_Dominator.description>
+<ShipTurret_Dominator.verbs.0.label>发射</ShipTurret_Dominator.verbs.0.label>
+<Proj_ShipSpinalBeamDominator.label>发射</Proj_ShipSpinalBeamDominator.label>
+<ShipTurretStarburst.label>星光炮</ShipTurretStarburst.label>
+<ShipTurretStarburst.description>发射密集星云的星际飞船炮塔。热量利用率很低，但能量很高。射程：200 热：20PP 能量：8000PP DMG：（极端）贯穿一切</ShipTurretStarburst.description>
+<ShipTurret_StarburstTop.label>等离子体</ShipTurret_StarburstTop.label>
+<ShipTurret_StarburstTop.description>发射密集星云的穿梭炮塔。热量利用率很低，但能量很高。</ShipTurret_StarburstTop.description>
+<ShipTurret_StarburstTop.verbs.0.label>火焰等离子体</ShipTurret_StarburstTop.verbs.0.label>
+<ShipTurretStarburstMini.label>纳米技术©星爆加农炮</ShipTurretStarburstMini.label>
+<ShipTurretStarburstMini.description>一种发射密集星云的纳米技术炮塔。热量利用率很低，但能量很高。射程：200 热：90PP 能量：8000PP DMG：（极端）贯穿一切。</ShipTurretStarburstMini.description>
+<ShipTurret_StarburstTopMini.label>等离子体</ShipTurret_StarburstTopMini.label>
+<ShipTurret_StarburstTopMini.description>一个发射密集星云的星际飞船纳米技术炮塔。热量利用率很低，但能量很高。</ShipTurret_StarburstTopMini.description>
+<ShipTurret_StarburstTopMini.verbs.0.label>火焰等离子体</ShipTurret_StarburstTopMini.verbs.0.label>
+<Bullet_Starburst.label>等离子体环面</Bullet_Starburst.label>
+<Proj_Starburst.label>星环面</Proj_Starburst.label>
+<ShipSpinalArchobeam.label>脊峰炮：Haelo喷发器</ShipSpinalArchobeam.label>
+<ShipSpinalArchobeam.description>一种密集分布的脊峰炮发射机械装置，撞击后会扩散并吞噬任何东西触摸范围：200 热量：800PP 能量：1000PP DMG:（V.High）船体瓦驱逐舰/反抵押</ShipSpinalArchobeam.description>
+<ShipTurret_SpinalArchobeam.label>Arhcotype脊峰炮</ShipTurret_SpinalArchobeam.label>
+<ShipTurret_SpinalArchobeam.description>主力舰武器。</ShipTurret_SpinalArchobeam.description>
+<ShipTurret_SpinalArchobeam.verbs.0.label>发射</ShipTurret_SpinalArchobeam.verbs.0.label>
+<Proj_ShipSpinalArcho.label>死亡射线</Proj_ShipSpinalArcho.label>
+<Bullet_Fake_LaserArcho.label>激光束</Bullet_Fake_LaserArcho.label>
+<ShipTurret_HarasserMini.label>纳米技术©哈拉塞尔炮塔</ShipTurret_HarasserMini.label>
+<ShipTurret_HarasserMini.description>一个难以置信的快速射击纳米技术©动能爆破器，低伤害，需要大量的能量。范围：200Max-100Min 加热：10PP 能量：60PP DMG：（低）骚扰武器</ShipTurret_HarasserMini.description>
+<ShipTurret_HarasserTop.label>轨道炮</ShipTurret_HarasserTop.label>
+<ShipTurret_HarasserTop.description>轨道炮。最适合远距离使用。</ShipTurret_HarasserTop.description>
+<ShipTurret_HarasserTop.verbs.0.label>发射</ShipTurret_HarasserTop.verbs.0.label>
+<Bullet_Fake_Harasser.label>轨道炮弹头</Bullet_Fake_Harasser.label>
+<Proj_ShipTurretHarasser.label>轨道炮弹头</Proj_ShipTurretHarasser.label>
+<ShipTurret_DepleterMini.label>Nanotech©消耗者炮塔</ShipTurret_DepleterMini.label>
+<ShipTurret_DepleterMini.description>小型电磁脉冲炮塔。不需要热量，但需要大量能量！范围：100Max-60Min 加热：0PP 能量：200PP DMG：（正常）防护罩</ShipTurret_DepleterMini.description>
+<ShipTurret_DepleterTop.label>轨道炮</ShipTurret_DepleterTop.label>
+<ShipTurret_DepleterTop.description>EMP 缓慢移动.</ShipTurret_DepleterTop.description>
+<ShipTurret_DepleterTop.verbs.0.label>发射</ShipTurret_DepleterTop.verbs.0.label>
+<Bullet_Fake_Depleter.label>电磁脉冲爆炸</Bullet_Fake_Depleter.label>
+<Proj_ShipTurretDepleter.label>电磁脉冲爆炸</Proj_ShipTurretDepleter.label>
+<ShipSpinalBarrelNewDawn.label>脊峰炮：新黎明</ShipSpinalBarrelNewDawn.label>
+<ShipSpinalBarrelNewDawn.description>新的黎明。终极力量的武器。射程：200 热：6000PP 能源：6000PP DMG：（V.High）船体壁切割机</ShipSpinalBarrelNewDawn.description>
+<ShipTurret_SpinalMountTopNewDawn.label>脊峰炮</ShipTurret_SpinalMountTopNewDawn.label>
+<ShipTurret_SpinalMountTopNewDawn.description>主力舰武器。</ShipTurret_SpinalMountTopNewDawn.description>
+<ShipTurret_SpinalMountTopNewDawn.verbs.0.label>发射</ShipTurret_SpinalMountTopNewDawn.verbs.0.label>
+<Bullet_Fake_NewDawn.label>曙光</Bullet_Fake_NewDawn.label>
+<Proj_ShipSpinalBeamNewDawn.label>曙光</Proj_ShipSpinalBeamNewDawn.label>
+<ShipTurret_MachineRail.label>机轨炮塔</ShipTurret_MachineRail.label>
+<ShipTurret_MachineRail.description>达卡的力量支配你。范围：70Max-50Min加热：5便士能量：5PP DMG：（中等）总体基本伤害</ShipTurret_MachineRail.description>
+<ShipTurret_MachineRailMini.label>纳米技术©机械轨道炮炮塔</ShipTurret_MachineRailMini.label>
+<ShipTurret_MachineRailMini.description>纳米技术的力量©达卡迫使你。啪，啪，啪~范围：70Max-50Min加热：2便士能量：2PP DMG：（V.High）船体切割机</ShipTurret_MachineRailMini.description>
+<ShipTurret_MachineRailTopMini.label>微型机械炮</ShipTurret_MachineRailTopMini.label>
+<ShipTurret_MachineRailTopMini.description>纳米技术机枪。最适合短程使用。</ShipTurret_MachineRailTopMini.description>
+<ShipTurret_MachineRailTopMini.verbs.0.label>发射</ShipTurret_MachineRailTopMini.verbs.0.label>
+<ShipTurret_MachineRailTop.label>机枪</ShipTurret_MachineRailTop.label>
+<ShipTurret_MachineRailTop.description>机关枪。最适合短程使用。</ShipTurret_MachineRailTop.description>
+<ShipTurret_MachineRailTop.verbs.0.label>发射</ShipTurret_MachineRailTop.verbs.0.label>
+<Bullet_Fake_MachineRail.label>轨道炮弹头</Bullet_Fake_MachineRail.label>
+<Proj_ShipTurretMachineRail.label>轨道炮弹头</Proj_ShipTurretMachineRail.label>
+<ShipTurret_NeuronMini.label>纳米技术©神经干扰炮塔</ShipTurret_NeuronMini.label>
+<ShipTurret_NeuronMini.description>一个使用神经等离子体的纳米技术反护盾炮塔。范围：200Max-Min60 热：100PP 能量：300PP DMG：（重型）防护罩</ShipTurret_NeuronMini.description>
+<ShipTurret_NeuronMiniTop.label>纳米技术©神经干扰炮塔</ShipTurret_NeuronMiniTop.label>
+<ShipTurret_NeuronMiniTop.description>一个纳米科技使用等离子体的重型反护盾炮塔</ShipTurret_NeuronMiniTop.description>
+<ShipTurret_NeuronMiniTop.verbs.0.label>发射</ShipTurret_NeuronMiniTop.verbs.0.label>
+<Bullet_Fake_NeuronMini.label>轨道炮弹头</Bullet_Fake_NeuronMini.label>
+<Proj_NeuronMini.label>轨道炮弹头</Proj_NeuronMini.label>
+<ArchoTorpedoLauncher.label>大型鱼雷发射器（20）</ArchoTorpedoLauncher.label>
+<ArchoTorpedoLauncher.description>发射各种鱼雷的一系列管子。高精度和对护盾造成毁灭性打击，但到达目标缓慢，容易受到点防御激光。</ArchoTorpedoLauncher.description>
+<Artillery_ShipTorpedoCapital.label>大型鱼雷管（20）</Artillery_ShipTorpedoCapital.label>
+<Artillery_ShipTorpedoCapital.description>鱼雷发射器。精确和对护盾造成毁灭性打击，但容易受到点防御激光的攻击。</Artillery_ShipTorpedoCapital.description>
+<Daegon.label>上古？质冷射线炮塔</Daegon.label>
+<Daegon.description>一个大型的炮塔，可以发射超冷凝激活的上古？质，它将消灭任何接触的物质。</Daegon.description>
+<DaegonTop.label>上古？质冷射线炮塔</DaegonTop.label>
+<DaegonTop.description>一个炮塔，可以发射超冷凝激活的上古？质，它将消灭任何接触的物质。</DaegonTop.description>
+<DaegonTop.verbs.0.label>加压储存上古？质</DaegonTop.verbs.0.label>
+<Bullet_Daegon.label>加压储存上古？质</Bullet_Daegon.label>
+<Proj_Daegon.label>加压储存上古？质</Proj_Daegon.label>
+<Borealis.label>上古？质冷脉冲炮塔</Borealis.label>
+<Borealis.description>一个小型的炮塔，可以发射超冷凝激活的上古？质，它将消灭任何接触的物质。</Borealis.description>
+<BorealisTop.label>上古？质冷脉冲炮塔</BorealisTop.label>
+<BorealisTop.description>一个小型的炮塔，可以发射超冷凝激活的上古？质，它将消灭任何接触的物质。</BorealisTop.description>
+<BorealisTop.verbs.0.label>加压储存上古？质</BorealisTop.verbs.0.label>
+<Bullet_Borealis.label>加压储存上古？质</Bullet_Borealis.label>
+<Proj_Borealis.label>加压储存上古？质</Proj_Borealis.label>
+<Shockwave.label>上古？毁灭者</Shockwave.label>
+<Shockwave.description>一个致命的炮塔简直把船化为虚无。</Shockwave.description>
+<ShockwaveTop.label>上古？毁灭者</ShockwaveTop.label>
+<ShockwaveTop.description>一个致命的炮塔简直把船化为虚无。</ShockwaveTop.description>
+<ShockwaveTop.verbs.0.label>加压储存上古？质</ShockwaveTop.verbs.0.label>
+<Bullet_Shockwave.label>加压储存上古？质</Bullet_Shockwave.label>
+<Proj_Shockwave.label>加压储存上古？质</Proj_Shockwave.label>
+
+</LanguageData>

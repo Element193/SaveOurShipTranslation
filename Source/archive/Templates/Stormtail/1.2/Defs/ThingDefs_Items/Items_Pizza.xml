@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	
+  <ThingDef ParentName="MealBase">
+    <defName>PizzaCheese</defName>
+    <label>Cheese Pizza</label>
+    <description>I mean c'mon who doesn't like pizza?!</description>
+    <graphicData>
+      <texPath>Things/Food/pizzacheese</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.4,0.4</drawSize>		  
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>150</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>1000</WorkToMake>
+      <Nutrition>1.20</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <tasteThought>AtePizza</tasteThought>
+    </ingestible>
+  </ThingDef>	
+  
+  <ThingDef ParentName="MealBase">
+    <defName>PizzaMeat</defName>
+    <label>meat Pizza</label>
+    <description>I mean c'mon who doesn't like pizza?!</description>
+    <graphicData>
+      <texPath>Things/Food/pizzameat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.4,0.4</drawSize>		  
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>150</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>1000</WorkToMake>
+      <Nutrition>1.20</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <tasteThought>AtePizza</tasteThought>
+    </ingestible>
+  </ThingDef>	
+
+  <ThingDef ParentName="MealBase">
+    <defName>PizzaMushroom</defName>
+    <label>Mushroom Pizza</label>
+    <description>I mean c'mon who doesn't like pizza?!</description>
+    <graphicData>
+      <texPath>Things/Food/pizzamushroom</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.4,0.4</drawSize>		  
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>150</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>1000</WorkToMake>
+      <Nutrition>1.20</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <tasteThought>AtePizza</tasteThought>
+    </ingestible>
+  </ThingDef>	
+
+  <ThingDef ParentName="MealBase">
+    <defName>PizzaVeggie</defName>
+    <label>Veggie Pizza</label>
+    <description>I mean c'mon who doesn't like pizza?! (Goddamn Vegans...)</description>
+    <graphicData>
+      <texPath>Things/Food/pizzaveggie</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.4,0.4</drawSize>		  
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>150</MarketValue>
+      <Mass>0.3</Mass>
+      <WorkToMake>1000</WorkToMake>
+      <Nutrition>1.20</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <tasteThought>AtePizza</tasteThought>
+    </ingestible>
+  </ThingDef>	  
+	
+</Defs>

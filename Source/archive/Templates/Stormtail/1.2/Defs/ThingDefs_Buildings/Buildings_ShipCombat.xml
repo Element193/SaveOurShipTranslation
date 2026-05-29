@@ -1,0 +1,3451 @@
+<Defs>   
+
+  <ThingDef ParentName="BuildingBase" Name="ArchotechPurgePort">
+    <defName>ArchotechPurgePort</defName>
+    <label>Archotech Purge Port</label>
+    <description>A system for rapidly dispersing heat into the cold dark abyss.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <size>(4,4)</size>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoPurge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <building>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.8</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Flammability>0.7</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>2000</Steel>
+	  <Plasteel>1500</Plasteel>
+	  <ComponentSpacer>20</ComponentSpacer>
+	  <Archomatter>250</Archomatter>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatPurge</compClass>
+		<heatCapacity>5000</heatCapacity>
+		<heatVentTick>120</heatVentTick>
+		<heatPurge>1000</heatPurge>
+		<threat>250</threat>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+	  <li Class="CompProperties_Refuelable">
+		<fuelCapacity>100.0</fuelCapacity>
+		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+			<fuelFilter>
+				<thingDefs>
+					<li>ArchomatterPods</li>
+				</thingDefs>
+			</fuelFilter>
+		<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+		<autoRefuelPercent>1</autoRefuelPercent>
+		<showFuelGizmo>true</showFuelGizmo>
+		<drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+		<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+		<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+	  </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>ShipHeatsink</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShipArchoEmitter</defName>
+    <label>Archotech Spinal Capacitor</label>
+    <description>The first segment of an Archotech spinal-mount weapon. Connects to one or more amplifiers, then a barrel.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoAmp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,3.2)</drawSize>
+    </graphicData>
+    <size>(5,3)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1.0</fillPercent>
+    <designationCategory>SoS2Ex</designationCategory>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+    </building>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+	  <Steel>240</Steel>
+      <Uranium>80</Uranium>
+	  <Plasteel>240</Plasteel>
+      <AscendedArchomatter>200</AscendedArchomatter>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_SpinalMount">
+		<emits>true</emits>
+        <stackEnd>true</stackEnd>		
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_SpinalMountPort</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <uiIconScale>0.9</uiIconScale>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ShipArchoAmplifier</defName>
+    <label>Archotech Spinal Amplifier</label>
+    <description>A middle segment of an Archotech spinal-mount weapon. Attach one or more of these to an emitter, then add a barrel to complete the gun.\n\nIncreases base damage by 75%, but also increases power consumption and heat generated by the same percentage.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoSpinalAmp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,1.2)</drawSize>
+    </graphicData>
+    <size>(5,1)</size>
+    <rotatable>true</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <designationHotKey>Misc12</designationHotKey>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>SoS2Ex</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+      <WorkToBuild>1600</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+	  <Steel>60</Steel>
+      <Uranium>20</Uranium>
+	  <Plasteel>80</Plasteel>
+      <AscendedArchomatter>50</AscendedArchomatter>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_SpinalMount">
+		<emits>true</emits>
+		<receives>true</receives>
+		<ampAmount>0.75</ampAmount>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+	</comps>
+    <placeWorkers>
+      <li>PlaceWorker_NeedsSpinalMountPort</li>
+      <li>PlaceWorker_SpinalMountPort</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <uiIconScale>0.85</uiIconScale>
+  </ThingDef>
+
+    <ThingDef ParentName="BuildingBase" Name="ShipHeatsinkAdv">
+    <defName>ShipHeatsinkAdv</defName>
+    <label>Advanced Heatsink</label>
+	<designatorDropdown>SoS2exHeatSink</designatorDropdown>	
+    <description>A cryo-cooled heatsink for storing excess heat from weapons fire. Slowly bleeds heat into the surrounding room; will not function in vacuum. (1000Cap 50Heat-Tick/s)</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <size>(2,2)</size>
+    <graphicData>
+      <texPath>Things/Building/Ship/AdvancedHeatsink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <building>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.8</fillPercent>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <WorkToBuild>3500</WorkToBuild>
+      <Flammability>0.7</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>500</Steel>
+	  <Plasteel>250</Plasteel>
+	  <ComponentSpacer>10</ComponentSpacer>
+	  <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSink</compClass>
+		<heatCapacity>1000</heatCapacity>
+		<heatVentTick>50</heatVentTick>
+		<threat>5</threat>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>ShipHeatsink</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+      <ThingDef ParentName="BuildingBase" Name="ShipHeatsinkMini">
+    <defName>ShipHeatsinkMini</defName>
+    <label>Nanotech Heatsink</label>
+	<designatorDropdown>SoS2exHeatSink</designatorDropdown>	
+    <description>A cryo-cooled heatsink for storing excess heat from weapons fire. Slowly bleeds heat into the surrounding room; will not function in vacuum.(500Cap 50Heat-Tick/s)</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <size>(1,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Ship/AdvancedHeatsinkNanotech</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <building>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.8</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <WorkToBuild>3500</WorkToBuild>
+      <Flammability>0.7</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>900</Steel>
+	  <Plasteel>500</Plasteel>
+	  <ComponentSpacer>5</ComponentSpacer>
+	  <ArchoNanoKit>20</ArchoNanoKit>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSink</compClass>
+		<heatCapacity>500</heatCapacity>
+		<heatVentTick>50</heatVentTick>
+		<threat>5</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>NanoTech</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+      <ThingDef ParentName="BuildingBase" Name="ShipHeatsinkCapital">
+    <defName>ShipHeatsinkCapital</defName>
+    <label>Capital Heatcore</label>
+	<designatorDropdown>SoS2exHeatSink</designatorDropdown>	
+    <description>A cryo-cooled hyper heatsink for storing excess heat from weapons fire. Slowly bleeds heat into the surrounding room; will not function in vacuum. (10.000Cap 5Heat-Tick/s)</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <size>(4,2)</size>
+    <graphicData>
+      <texPath>Things/Building/Ship/CapitalHeatsink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <building>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.8</fillPercent>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>5000</Steel>
+	  <Plasteel>2500</Plasteel>
+	  <ComponentSpacer>100</ComponentSpacer>
+	  <ComponentIndustrial>100</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSink</compClass>
+		<heatCapacity>10000</heatCapacity>
+		<heatVentTick>20</heatVentTick>
+		<threat>5</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>ShipHeatsink</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+      <ThingDef ParentName="BuildingBase" Name="ShipHeatsinkBoss">
+    <defName>ShipHeatsinkBoss</defName>
+    <label>Dreadnaught Heatcore</label>
+	<designatorDropdown>SoS2exHeatSink</designatorDropdown>	
+    <description>A gigantic heatsink for dreadnaught classes. (7.000.000Cap 100Heat-Tick/s)</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <size>(12,12)</size>
+    <graphicData>
+      <texPath>Things/Building/Ship/BossHeatsink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(12,12)</drawSize>
+    </graphicData>
+    <building>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.8</fillPercent>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>5000</Steel>
+	  <AscendedArchomatter>2500</AscendedArchomatter>
+	  <ComponentSpacer>100</ComponentSpacer>
+	  <ComponentIndustrial>100</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSink</compClass>
+		<heatCapacity>7000000</heatCapacity>
+		<heatVentTick>50</heatVentTick>
+		<threat>5</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <tickerType>Normal</tickerType>
+  </ThingDef>   
+  
+      <ThingDef ParentName="BuildingBase" Name="ShipHeatsinkUltra">
+    <defName>ShipHeatsinkUltra</defName>
+    <label>Ultratech Heatcore</label>
+	<designatorDropdown>SoS2exHeatSink</designatorDropdown>	
+    <description>A cryo-cooled ultra heatsink for storing excess heat from weapons fire. Slowly bleeds heat into the surrounding room; will not function in vacuum. (70.000Cap 100Heat-Tick/s)</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <size>(1,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Ship/UltraHeatsink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <building>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.8</fillPercent>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <Steel>250</Steel>
+	  <Plasteel>250</Plasteel>
+	  <ComponentSpacer>10</ComponentSpacer>
+	  <ArchoNanoKit>10</ArchoNanoKit>
+	  <Archomatter>1000</Archomatter>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSink</compClass>
+		<heatCapacity>70000</heatCapacity>
+		<heatVentTick>100</heatVentTick>
+		<threat>5</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>ShipHeatsink</li>
+    </researchPrerequisites>
+  </ThingDef> 
+
+    <ThingDef ParentName="BuildingBase">
+    <defName>ArchotechMegaShield</defName>
+    <label>Unknown Shielding Device</label>
+	<designatorDropdown>SoS2exArchoShields</designatorDropdown>		
+    <description>Xera'ath igna.</description>
+    <size>(1,1)</size>
+    <receivesSignals>true</receivesSignals>
+    <statBases>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Ship/BossMegaShield</texPath>
+      <graphicClass>Graphic_SingleOnOff</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(2.6, 0.8, 2.6)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2, 0.2, 2.8, 2.8)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+    </building>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_ShipCombatShield">
+        <radius>100</radius>
+      </li>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <soundImpactDefault>ExplosionDomi</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <tickerType>Normal</tickerType>
+    <costList>
+	  <Centomatter>1000</Centomatter>
+    </costList>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>  
+ 
+    <ThingDef ParentName="BuildingBase">
+    <defName>ShipCombatShieldGeneratorADV</defName>
+    <label>Advanced Shield Generator</label>
+    <description>A smaller shielding device which projects a momentum repulsor field. Shots can go out, but not in.\n\nGenerates heat when it blocks attacks. If no heatsink capacity is available, the shield will be damaged and require repairs.\n\nShip radiators cannot disperse heat while shields are up. Captains are advised to drop shields once heatsinks are close to capacity, or risk their ships turning into ovens.</description>
+    <size>(3,3)</size>
+    <receivesSignals>true</receivesSignals>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Ship/AdvancedShieldGenerator</texPath>
+      <graphicClass>Graphic_SingleOnOff</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(2.6, 0.8, 2.6)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2, 0.2, 2.8, 2.8)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+    </building>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_ShipCombatShield">
+        <radius>50</radius>
+      </li>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <soundImpactDefault>ExplosionDomi</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>ShipShields</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>500</Plasteel>
+	  <Silver>2000</Silver>
+	  <Steel>2000</Steel>
+	  <ComponentSpacer>30</ComponentSpacer>
+    </costList>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+  
+      <ThingDef ParentName="BuildingBase">
+    <defName>MiniShield</defName>
+    <label>Nanotech Shield Generator</label>
+    <description>A tiny generator which projects a momentum repulsor field with enhanced EMP resistance. Shots can go out, but not in.\n\nGenerates heat when it blocks attacks. If no heatsink capacity is available, the shield will be damaged and require repairs.\n\nShip radiators cannot disperse heat while shields are up. Captains are advised to drop shields once heatsinks are close to capacity, or risk their ships turning into ovens.</description>
+    <size>(1,1)</size>
+    <receivesSignals>true</receivesSignals>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Ship/MiniShield</texPath>
+      <graphicClass>Graphic_SingleOnOff</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(2.6, 0.8, 2.6)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2, 0.2, 2.8, 2.8)</rect>
+      </damageData>
+    </graphicData>
+    <building>
+    </building>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <placeWorkers>
+      <li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_ShipCombatShield">
+        <radius>10</radius>
+      </li>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <soundImpactDefault>ExplosionDomi</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>NanoTech</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>1000</Plasteel>
+	  <Silver>3000</Silver>
+	  <Steel>3000</Steel>
+	  <ArchoNanoKit>5</ArchoNanoKit>
+    </costList>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+
+    <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipSpinalBarrelPlasmaAdv</defName>
+    <label>Spinal Barrel: Dominator</label>
+	<designatorDropdown>SoS2exSpinal</designatorDropdown>	
+    <description>A spinal that focuses several superheated plasma bolts into one large sphere. Range:200 Heat:500PP Energy:450PP DMG:(M.High)Hull Tile Destroyer / Anti Pawn</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/SpinalMountBarrel_LaserD</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,4.2)</drawSize>
+    </graphicData>
+    <size>(5,4)</size>
+    <rotatable>true</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <designationHotKey>Misc12</designationHotKey>
+    <fillPercent>1</fillPercent>
+    <designationCategory>SoS2Ex</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+	  <RangedWeapon_DamageMultiplier>26.01</RangedWeapon_DamageMultiplier>
+    </statBases>
+    <costList>
+	  <Steel>240</Steel>
+	  <Plasteel>240</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_SpinalMount">
+		<emits>false</emits>
+		<receives>true</receives>
+		<color>(0.7,0.4,0)</color>
+      </li>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>500</heatPerPulse>
+		<energyToFire>450</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>5</projectileSpeed>
+		<threat>20</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>7000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+	</comps>
+    <placeWorkers>
+      <li>PlaceWorker_NeedsSpinalMountPort</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ArchoWeaponry</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    <uiIconScale>1</uiIconScale>
+    <building>
+      <turretGunDef>ShipTurret_Dominator</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>45.0</turretBurstCooldownTime>
+    </building>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Dominator</defName>
+    <label>plasma toroid</label>
+    <graphicData>
+      <texPath>Things/Projectile/DominatorPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(12,12)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>ShipPlasmaSmallDomi</damageDef>
+      <speed>70</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_Dominator</defName>
+    <label>spinal-Dominator mount cannon</label>
+    <description>Capital ship weaponry.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>shoot</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>200</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>8</noiseRadius>
+        <burstShotCount>2</burstShotCount>		
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>DominatorPew</soundCast>
+        <defaultProjectile>Bullet_Dominator</defaultProjectile>
+        <spawnDef>Proj_ShipSpinalBeamDominator</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <building>
+    </building>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_ShipSpinalBeamDominator</defName>
+    <label>ProjectileDomi</label>
+    <thingClass>Projectile_ExplosiveShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/DominatorPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(12,12)</drawSize>
+    </graphicData>	
+    <projectile>
+      <explosionRadius>15</explosionRadius>
+      <damageDef>ShipPlasmaSmallDomi</damageDef>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+    <DamageDef Name="ShipPlasmaSmallDomi">
+    <defName>ShipPlasmaSmallDomi</defName>
+    <label>plasma</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been vaporized by superheated plasma.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>2000</minDamageToFragment>
+    <defaultDamage>2000</defaultDamage>
+    <defaultStoppingPower>50.0</defaultStoppingPower>
+    <defaultArmorPenetration>20.80</defaultArmorPenetration>
+    <buildingDamageFactor>600</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>500</explosionHeatEnergyPerCell>	
+    <explosionCellMote>ExplosionDomi</explosionCellMote>
+    <!--<explosionColorCenter>(0.9, 1, 0.1)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 0)</explosionColorEdge>-->
+    <soundExplosion>ExplosionDomi</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+  	<SoundDef>
+    <defName>ExplosionDomi</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ExplosionDomi</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  	<SoundDef>
+    <defName>DominatorPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/DominatorPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    	<SoundDef>
+    <defName>StarburstPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/StarburstPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  	<SoundDef>
+    <defName>ExplosionStarburst</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ExplosionStarburst</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+    <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipTurretStarburst</defName>
+    <label>Starburst Cannon</label>
+    <description>A starship turret that fires a burst of concentrated Nebulon. Very low on heat cap usage but high on energy. Range:200 Heat:20PP Energy:8000PP DMG:(Extreme)Goes through everything</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/StarburstBottom</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>20</heatPerPulse>
+		<energyToFire>8000</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>3</projectileSpeed>
+		<threat>25</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>ShipTurret_StarburstTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.1</turretBurstWarmupTime>
+      <turretBurstCooldownTime>15.0</turretBurstCooldownTime>
+      <turretTopDrawSize>2</turretTopDrawSize>
+    </building>
+    <costList>
+	  <Steel>700</Steel>
+      <Uranium>300</Uranium>
+	  <Plasteel>1500</Plasteel>
+      <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+		<designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/StarburstMenuIcon</uiIconPath>
+    <researchPrerequisites>
+      <li>ArchomatterResearch</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_StarburstTop</defName>
+    <label>plasma</label>
+    <description>A shuttle turret that fires a burst of concentrated Nebulon. Very low on heat cap usage but high on energy.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/StarburstTurret</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>fire plasma</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <burstShotCount>3</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>StarburstPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Starburst</defaultProjectile>
+        <spawnDef>Proj_Starburst</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipTurretStarburstMini</defName>
+    <label>Nanotech Starburst Cannon</label>
+    <description>A Nanotech turret that fires a burst of concentrated Nebulon. Very low on heat cap usage but high on energy. Range:200 Heat:90PP Energy:8000PP DMG:(Extreme)Goes through everything.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/StarburstBottom</texPath>
+      <drawSize>(1.1)</drawSize>	  
+    </graphicData>
+    <size>(1,1)</size>		
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>90</heatPerPulse>
+		<energyToFire>8000</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>3</projectileSpeed>
+		<threat>23</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>ShipTurret_StarburstTopMini</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.1</turretBurstWarmupTime>
+      <turretBurstCooldownTime>15.0</turretBurstCooldownTime>
+      <turretTopDrawSize>1</turretTopDrawSize>
+    </building>
+    <costList>
+	  <Steel>1200</Steel>
+      <Uranium>600</Uranium>
+	  <Plasteel>1900</Plasteel>
+      <ArchoNanoKit>10</ArchoNanoKit>
+    </costList>
+		<designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/StarburstMenuIcon</uiIconPath>
+    <researchPrerequisites>
+      <li>NanoTech</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_StarburstTopMini</defName>
+    <label>plasma</label>
+    <description>A starship Nanotech turret that fires a burst of concentrated Nebulon. Very low on heat cap usage but high on energy.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/StarburstTurret</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>fire plasma</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <burstShotCount>2</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>StarburstPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Starburst</defaultProjectile>
+        <spawnDef>Proj_Starburst</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef>  
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Starburst</defName>
+    <label>plasma toroid</label>
+    <graphicData>
+      <texPath>Things/Projectile/Starburst</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>StarburstPlasmaDamage</damageDef>
+      <speed>100</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_Starburst</defName>
+    <label>Star toroid</label>
+    <thingClass>Projectile_ExplosiveShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Starburst</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>4.0</explosionRadius>
+      <damageDef>StarburstPlasmaDamage</damageDef>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+  
+      <DamageDef Name="StarburstPlasmaDamage">
+    <defName>StarburstPlasmaDamage</defName>
+    <label>Starburst</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been vaporized by stars.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>60</defaultDamage>
+    <defaultStoppingPower>5.0</defaultStoppingPower>
+    <defaultArmorPenetration>3.80</defaultArmorPenetration>
+    <buildingDamageFactor>8</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>100</explosionHeatEnergyPerCell>
+    <explosionCellMote>BlastStarburst</explosionCellMote>
+    <soundExplosion>ExplosionStarburst</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+  <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipSpinalArchobeam</defName>
+    <label>Spinal Barrel: Haelo Eruptor</label>
+	<designatorDropdown>SoS2exSpinal</designatorDropdown>	
+    <description>A spinal firing densely packed mechanites that upon impact spread and devour anything they touch.Range:200 Heat:800PP Energy:1000PP DMG:(V.High)Hull Tile Destroyer / Anti Pawn</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/SpinalMountArchobeam</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,4.2)</drawSize>
+    </graphicData>
+    <size>(5,4)</size>
+    <rotatable>true</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <designationHotKey>Misc12</designationHotKey>
+    <fillPercent>1</fillPercent>
+    <designationCategory>SoS2Ex</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>12500</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+	  <RangedWeapon_DamageMultiplier>30.01</RangedWeapon_DamageMultiplier>
+    </statBases>
+    <costList>
+	  <Steel>7000</Steel>
+	  <Plasteel>7000</Plasteel>
+      <ComponentSpacer>100</ComponentSpacer>
+	  <Archomatter>100</Archomatter>	  
+    </costList>
+    <comps>
+	  <li Class="CompProperties_SpinalMount">
+		<emits>false</emits>
+		<receives>true</receives>
+		<color>(0,1,0.6)</color>
+      </li>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>800</heatPerPulse>
+		<energyToFire>1000</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>10</projectileSpeed>
+        <singleFireSound>ArchoPew</singleFireSound>
+		<threat>40</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+	</comps>
+    <placeWorkers>
+      <li>PlaceWorker_NeedsSpinalMountPort</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <uiIconScale>1</uiIconScale>
+    <building>
+      <turretGunDef>ShipTurret_SpinalArchobeam</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>30.0</turretBurstCooldownTime>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_SpinalArchobeam</defName>
+    <label>spinal-mount Archotype cannon</label>
+    <description>Capital ship weaponry.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>shoot</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>200</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>10</noiseRadius>
+        <burstShotCount>2</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ArchoPew</soundCast>		
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Fake_LaserArcho</defaultProjectile>
+        <spawnDef>Proj_ShipSpinalArcho</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef>  
+  
+    <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_ShipSpinalArcho</defName>
+    <label>death ray</label>
+    <thingClass>Projectile_ExplosiveShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ArchoBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(8,8)</drawSize>	  
+    </graphicData>
+    <projectile>
+      <explosionRadius>10</explosionRadius>
+      <damageDef>ShipLaserArcho</damageDef>
+      <speed>200</speed>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Fake_LaserArcho</defName>
+    <label>laser beam</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArchoBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(8,8)</drawSize>	  
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>100</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+    <DamageDef Name="ShipLaserSmall">
+    <defName>ShipLaserArcho</defName>
+    <label>laser</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been torn to shreds by mechanites.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>15000</minDamageToFragment>
+    <defaultDamage>80000</defaultDamage>
+    <defaultStoppingPower>100.5</defaultStoppingPower>
+    <defaultArmorPenetration>100.10</defaultArmorPenetration>
+    <buildingDamageFactor>80000</buildingDamageFactor>
+    <plantDamageFactor>80000</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>80000</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastLaserSoSArcho</explosionCellMote>
+    <soundExplosion>ExplosionArcho</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+    <!--<ThingDef ParentName="MoteBase">
+    <defName>ShipCombatLaserMoteArcho</defName>
+    <thingClass>ShipCombatLaserMote</thingClass>
+    <graphicData>
+      <texPath>Things/Mote/ArchoImpact</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>0.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>-->
+  
+     	<SoundDef>
+    <defName>ArchoPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+     	<SoundDef>
+    <defName>ExplosionArcho</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ExplosionArcho</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>   
+  
+  <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipTurret_HarasserMini</defName>
+    <label>Nanotech Harasser Turret</label>
+    <description>An incredibly fast shooting Nanotech kinetic burster with low damage that requires a lot of power. Range:200Max-100Min Heat:10PP Energy:60PP DMG:(Low)Harassment Weaponry</description>
+    <graphicData>
+      <drawSize>(1.1)</drawSize>
+      <texPath>Things/Building/Ship/HardpointStandard</texPath>	  
+    </graphicData>
+    <size>(1,1)</size>	
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>10</heatPerPulse>
+		<energyToFire>60</energyToFire>
+		<maxRange>200</maxRange>
+		<minRange>100</minRange>
+		<projectileSpeed>8</projectileSpeed>
+		<threat>5</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>ShipTurret_HarasserTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>2.0</turretBurstCooldownTime>
+      <turretTopDrawSize>1</turretTopDrawSize>
+    </building>
+    <designationCategory>SoS2Ex</designationCategory>	
+    <costList>
+	  <Steel>120</Steel>
+      <Uranium>220</Uranium>
+	  <Plasteel>100</Plasteel>
+      <ArchoNanoKit>5</ArchoNanoKit>
+    </costList>
+  <uiIconPath>Things/Building/Ship/HarasserMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>NanoTech</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>  
+
+  <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_HarasserTop</defName>
+    <label>railgun</label>
+    <description>Railgun. Best used at long range.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/Harasser</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>shoot slug</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <warmupTime>0.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>HarasserPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Fake_Harasser</defaultProjectile>
+        <spawnDef>Proj_ShipTurretHarasser</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Fake_Harasser</defName>
+    <label>railgun slug</label>
+    <graphicData>
+      <texPath>Things/Projectile/Harasserbolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>150</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_ShipTurretHarasser</defName>
+    <label>railgun slug</label>
+    <thingClass>Projectile_ExplosiveShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Harasserbolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>3.9</explosionRadius>
+      <damageDef>BombHarasser</damageDef>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef Name="BombHarasser">
+    <defName>BombHarasser</defName>
+    <label>bomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>45</defaultDamage>
+    <defaultStoppingPower>0.4</defaultStoppingPower>
+    <defaultArmorPenetration>0.4</defaultArmorPenetration>
+    <buildingDamageFactor>3</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>2</explosionHeatEnergyPerCell>
+    <explosionCellMote>ExplosionHarasser</explosionCellMote>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef> 
+
+     	<SoundDef>
+    <defName>HarasserPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/HarasserPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+  <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipTurret_DepleterMini</defName>
+    <label>Nanotech Depleter Turret</label>
+    <description>Small EMP Turret. Takes no heat but a lot of energy! Range:100Max-60Min Heat:0PP Energy:200PP DMG:(Normal)Anti Shield</description>
+    <graphicData>
+      <drawSize>(1.1)</drawSize>
+      <texPath>Things/Building/Ship/HardpointStandard</texPath>	  
+    </graphicData>
+    <size>(1,1)</size>	
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>0</heatPerPulse>
+		<energyToFire>200</energyToFire>
+		<maxRange>100</maxRange>
+		<minRange>60</minRange>
+		<projectileSpeed>2</projectileSpeed>
+		<threat>13</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>ShipTurret_DepleterTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>6.0</turretBurstCooldownTime>
+      <turretTopDrawSize>1</turretTopDrawSize>
+    </building>
+    <costList>
+	  <Steel>150</Steel>
+      <Uranium>50</Uranium>
+	  <Plasteel>100</Plasteel>
+      <ArchoNanoKit>5</ArchoNanoKit>
+    </costList>
+    <designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/Depleter_MenuIcon</uiIconPath>
+    <researchPrerequisites>
+      <li>NanoTech</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>  
+
+  <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_DepleterTop</defName>
+    <label>railgun</label>
+    <description>EMP Slow moving.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/Depleter</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>shoot slug</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <warmupTime>0.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>DepleterPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Fake_Depleter</defaultProjectile>
+        <spawnDef>Proj_ShipTurretDepleter</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Fake_Depleter</defName>
+    <label>EMP Blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/DepleterPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>60</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_ShipTurretDepleter</defName>
+    <label>EMP Blast</label>
+    <thingClass>Projectile_TorpedoShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/DepleterPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>3.9</explosionRadius>
+      <damageDef>BombDepleter</damageDef>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef Name="BombDepleter">
+    <defName>BombDepleter</defName>
+    <label>bomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>25</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <defaultArmorPenetration>0.2</defaultArmorPenetration>
+    <buildingDamageFactor>30</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>30</explosionHeatEnergyPerCell>
+    <explosionCellMote>DepleterMote</explosionCellMote>
+    <soundExplosion>ExplosionDepleter</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef> 
+
+     	<SoundDef>
+    <defName>DepleterPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/DepleterPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+     	<SoundDef>
+    <defName>ExplosionDepleter</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ExplosionDepleter</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+  <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipSpinalBarrelNewDawn</defName>
+    <label>spinal barrel: New Dawn</label>
+	<designatorDropdown>SoS2exSpinal</designatorDropdown>	
+    <description>The New Dawn. A weapon of ultimate power. Range:200 Heat:6000PP Energy:6000PP DMG:(V.High)Hull Wall Cutter</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoSpinalNewDawn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,4.2)</drawSize>
+    </graphicData>
+    <size>(5,4)</size>
+    <rotatable>true</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <designationHotKey>Misc12</designationHotKey>
+    <fillPercent>1</fillPercent>
+    <designationCategory>SoS2Ex</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <WorkToBuild>1600</WorkToBuild>
+      <Flammability>0.5</Flammability>
+	  <RangedWeapon_DamageMultiplier>2</RangedWeapon_DamageMultiplier>
+    </statBases>
+    <costList>
+	  <Steel>240</Steel>
+	  <Plasteel>240</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+	  <Archomatter>400</Archomatter>
+	  <ZeroCrystal>100</ZeroCrystal>
+    </costList>
+    <comps>
+	  <li Class="CompProperties_SpinalMount">
+		<emits>false</emits>
+		<receives>true</receives>
+		<color>(0,1,1)</color>
+      </li>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>60000</heatPerPulse>
+		<energyToFire>60000</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>10</projectileSpeed>
+        <singleFireSound>NewDawnPew</singleFireSound>
+		<threat>55</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+	</comps>
+    <placeWorkers>
+      <li>PlaceWorker_NeedsSpinalMountPort</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <uiIconScale>1</uiIconScale>
+    <building>
+      <turretGunDef>ShipTurret_SpinalMountTopNewDawn</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>2</turretBurstWarmupTime>
+      <turretBurstCooldownTime>80.0</turretBurstCooldownTime>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_SpinalMountTopNewDawn</defName>
+    <label>spinal-mount cannon</label>
+    <description>Capital ship weaponry.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>shoot</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>200</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <soundCast>NewDawnPew</soundCast>		
+        <burstShotCount>3</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Fake_NewDawn</defaultProjectile>
+        <spawnDef>Proj_ShipSpinalBeamNewDawn</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Fake_NewDawn</defName>
+    <label>dawn beam</label>
+    <graphicData>
+      <texPath>Things/Projectile/NewDawnBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	       <drawSize>5.0</drawSize>		  
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>80</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>  
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_ShipSpinalBeamNewDawn</defName>
+    <label>dawn ray</label>
+    <thingClass>Projectile_ExplosiveShipCombatPlasmaXL</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/NewDawnBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	       <drawSize>5.0</drawSize>		  
+    </graphicData>
+    <projectile>
+      <explosionRadius>5</explosionRadius>
+      <damageDef>ShipLaserDawn</damageDef>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>  
+  
+  <DamageDef Name="ShipLaserDawn">
+    <defName>ShipLaserDawn</defName>
+    <label>laser</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been lasered to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>60</minDamageToFragment>
+    <defaultDamage>2000</defaultDamage>
+    <defaultStoppingPower>10.5</defaultStoppingPower>
+    <defaultArmorPenetration>10.10</defaultArmorPenetration>
+    <buildingDamageFactor>2000</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>2000</explosionHeatEnergyPerCell>
+    <explosionCellMote>ExplosionDawnE</explosionCellMote>
+    <!--<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>-->
+    <soundExplosion>ExplosionNewDawn</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+     	<SoundDef>
+    <defName>NewDawnPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/NewDawnPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+     	<SoundDef>
+    <defName>ExplosionNewDawn</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ExplosionNewDawn</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+     <ThingDef ParentName="MoteBase">
+    <defName>DepleterMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/DepleterMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>6.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>1.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <growthRate>0.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>ExplosionDomi</defName><!-- SydailyFlash_ON!!!!! -->
+    <graphicData>
+      <texPath>Things/Mote/ExplosionDomi</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>4.2</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.12</fadeInTime>
+      <solidTime>1.24</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <growthRate>0.42</growthRate>
+    </mote>
+  </ThingDef> 
+
+    <ThingDef ParentName="MoteBase">
+    <defName>BlastStarburst</defName>
+    <graphicData>
+      <texPath>Things/Mote/BlastStarburst</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>1.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <solidTime>0.10</solidTime>
+      <fadeInTime>0.2</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <growthRate>1.90</growthRate>		  
+    </mote>
+  </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+    <defName>Mote_BlastLaserSoSArcho</defName>
+    <graphicData>
+      <texPath>Things/Mote/ArchoImpact</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>3.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <solidTime>0</solidTime>
+      <fadeInTime>0.2</fadeInTime>
+      <fadeOutTime>0.15</fadeOutTime>
+      <growthRate>2.40</growthRate>		  
+    </mote>
+  </ThingDef>  
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>ExplosionDawnE</defName><!-- SydailyFlash_ON!!!!! -->
+    <graphicData>
+      <texPath>Things/Mote/ExplosionDawn</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>4.2</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.12</fadeInTime>
+      <solidTime>0.10</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <growthRate>0.72</growthRate>
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>ExplosionHarasser</defName><!-- SydailyFlash_ON!!!!! -->
+    <graphicData>
+      <texPath>Things/Mote/ExplosionHarasser</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>3</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.20</fadeInTime>
+      <solidTime>0.34</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <growthRate>0.82</growthRate>
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>ExplosionMachine</defName><!-- SydailyFlash_ON!!!!! -->
+    <graphicData>
+      <texPath>Things/Mote/ExplosionMachine</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>0.9</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.10</fadeInTime>
+      <solidTime>0.04</solidTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <growthRate>4.82</growthRate>
+    </mote>
+  </ThingDef>  
+
+  <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipTurret_MachineRail</defName>
+    <label>Machine Railgun Turret</label>
+    <description>The power of DAKKA compels you. Range:70Max-50Min Heat:5PP Energy:5PP DMG:(Medium)Overall Basic Damage</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/HardpointStandard</texPath>
+    </graphicData>	
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>5</heatPerPulse>
+		<energyToFire>5</energyToFire>
+		<maxRange>70</maxRange>
+		<minRange>50</minRange>
+		<projectileSpeed>4</projectileSpeed>
+		<threat>22</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>ShipTurret_MachineRailTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+      <turretTopDrawSize>3</turretTopDrawSize>
+    </building>
+    <costList>
+	  <Steel>30</Steel>
+      <Uranium>100</Uranium>
+	  <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/MachineRailMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>ShipTurretKinetic</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipTurret_MachineRailMini</defName>
+    <label>Nanotech Machine Railgun Turret</label>
+    <description>The power of Nanotech DAKKA compels you. Skrrrt bap bap bap~ Range:70Max-50Min Heat:2PP Energy:2PP DMG:(V.High)Hull Cutter</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/HardpointStandard</texPath>
+      <drawSize>(1.1)</drawSize>	  
+    </graphicData>		
+    <size>(1,1)</size>		
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>2</heatPerPulse>
+		<energyToFire>2</energyToFire>
+		<maxRange>70</maxRange>
+		<minRange>50</minRange>
+		<projectileSpeed>4</projectileSpeed>
+		<threat>20</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>ShipTurret_MachineRailTopMini</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.5</turretBurstCooldownTime>
+      <turretTopDrawSize>1</turretTopDrawSize>
+    </building>
+    <costList>
+	  <Steel>50</Steel>
+      <Uranium>120</Uranium>
+	  <Plasteel>60</Plasteel>
+      <ArchoNanoKit>5</ArchoNanoKit>
+    </costList>
+    <designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/MachineRailMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>NanoTech</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_MachineRailTopMini</defName>
+    <label>minimachinerailgun</label>
+    <description>Nanotech Machine Railgun. Best used at short range.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/MachineRail</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>shoot slug</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>MachineRailPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Fake_MachineRail</defaultProjectile>
+        <spawnDef>Proj_ShipTurretMachineRail</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef>   
+  
+  <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_MachineRailTop</defName>
+    <label>machinerailgun</label>
+    <description>Machine Railgun. Best used at short range.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/MachineRail</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>shoot slug</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>MachineRailPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Fake_MachineRail</defaultProjectile>
+        <spawnDef>Proj_ShipTurretMachineRail</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Fake_MachineRail</defName>
+    <label>railgun slug</label>
+    <graphicData>
+      <texPath>Things/Projectile/Machinebolts</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>150</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_ShipTurretMachineRail</defName>
+    <label>railgun slug</label>
+    <thingClass>Projectile_ExplosiveShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Machinebolts</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>2</explosionRadius>
+      <damageDef>BombMachineRail</damageDef>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef Name="BombMachineRail">
+    <defName>BombMachineRail</defName>
+    <label>bomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>30</minDamageToFragment>
+    <defaultDamage>60</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <defaultArmorPenetration>0.2</defaultArmorPenetration>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>2</explosionHeatEnergyPerCell>
+    <explosionCellMote>ExplosionMachine</explosionCellMote>
+    <soundExplosion>MachineRailHit</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef> 
+
+     	<SoundDef>
+    <defName>MachineRailPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/MachineRailPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+     	<SoundDef>
+    <defName>MachineRailHit</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/MachineRailHit</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+  <ThingDef ParentName="BaseShipArtilleryBuilding"> 
+    <defName>ShipTurret_NeuronMini</defName>
+    <label>Nanotech Neuron Turret</label>
+    <description>A Nanotech heavy shieldbreaker turret using Neuro-plasma. Range:200Max-Min60 Heat:100PP Energy:300PP DMG:(Heavy)Anti-Shield</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/HardpointStandard</texPath>	  
+      <drawSize>(1.1)</drawSize>	  
+    </graphicData>		
+    <size>(1,1)</size>		
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>100</heatPerPulse>
+		<energyToFire>300</energyToFire>
+		<maxRange>200</maxRange>
+		<minRange>60</minRange>
+		<projectileSpeed>4</projectileSpeed>
+		<threat>25</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>ShipTurret_NeuronMiniTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
+      <turretTopDrawSize>1</turretTopDrawSize>
+    </building>
+    <costList>
+	  <Steel>120</Steel>
+      <Uranium>300</Uranium>
+	  <Plasteel>100</Plasteel>
+      <ArchoNanoKit>5</ArchoNanoKit>
+    </costList>
+    <designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/NeuronMiniMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>NanoTech</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseShipArtilleryWeapon"> 
+    <defName>ShipTurret_NeuronMiniTop</defName>
+    <label>Nanotech Neuron Turret</label>
+    <description>A Nanotech heavy shieldbreaker turret using Neuro-plasma.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/NeuronMini</texPath>
+      <drawSize>(1.1)</drawSize>	  
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>shoot slug</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>200</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>NeuronPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Fake_NeuronMini</defaultProjectile>
+        <spawnDef>Proj_NeuronMini</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef>   
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Fake_NeuronMini</defName>
+    <label>railgun slug</label>
+    <graphicData>
+      <texPath>Things/Projectile/NeuronBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>20</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_NeuronMini</defName>
+    <label>railgun slug</label>
+    <thingClass>Projectile_TorpedoShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/NeuronBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>5</explosionRadius>
+      <damageDef>BombNeuronMini</damageDef>
+      <speed>20</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef Name="BombNeuronMini">
+    <defName>BombNeuronMini</defName>
+    <label>NeuronBomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>30</minDamageToFragment>
+    <defaultDamage>120</defaultDamage>
+    <defaultStoppingPower>0.1</defaultStoppingPower>
+    <defaultArmorPenetration>0.2</defaultArmorPenetration>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>30</explosionHeatEnergyPerCell>
+    <explosionCellMote>NeuronExplosion</explosionCellMote>
+    <soundExplosion>NeuronExplosion</soundExplosion>
+    <!--<combatLogRules>Damage_Bomb</combatLogRules>-->
+  </DamageDef>  
+
+     	<SoundDef>
+    <defName>NeuronPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/NeuronPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+     	<SoundDef>
+    <defName>NeuronExplosion</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/NeuronExplosion</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>NeuronExplosion</defName><!-- SydailyFlash_ON!!!!! -->
+    <graphicData>
+      <texPath>Things/Mote/NeuronExplosion</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>3</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.20</fadeInTime>
+      <solidTime>0.14</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <growthRate>2.82</growthRate>
+    </mote>
+  </ThingDef>  
+  
+  <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <thingClass>Building_ShipTurretTorpedo</thingClass>
+    <defName>ArchoTorpedoLauncher</defName>
+    <label>Capital Torpedo Launcher (20)</label>
+	<designatorDropdown>ShipTurrets_Torpedo</designatorDropdown>
+    <description>A series of tubes that launch all kinds of torpedoes. Highly accurate and devastating against shields, but slow to reach targets and vulnerable to point-defense lasers.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Ship/TorpedoTubesCap</texPath>
+      <drawSize>(6,7)</drawSize>
+      <damageData>
+        <rect>(0.38,0.2,0.56375,0.8)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+    </graphicData>
+	<size>(6,7)</size>
+    <designationCategory>SoS2Ex</designationCategory>	
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>5</heatPerPulse>
+		<energyToFire>0</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>0.25</projectileSpeed>
+		<threat>55</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>600</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />  
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>Artillery_ShipTorpedoCapital</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+    </building>
+  <uiIconPath>Things/Building/Ship/TorpedoTubesCap</uiIconPath>
+  <uiIconScale>0.9</uiIconScale>
+    <researchPrerequisites>
+      <li>ShipTorpedoes</li>
+    </researchPrerequisites>
+    <costList>
+      <Plasteel>170</Plasteel>
+	  <Steel>300</Steel>
+	  <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <inspectorTabs>
+      <li>ITab_Shells</li>
+    </inspectorTabs>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+    <rotatable>false</rotatable>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>Artillery_ShipTorpedoCapital</defName>
+    <label>Capital Torpedo Tubes (20)</label>
+    <description>Torpedo launcher. Accurate and devastating against shields, but vulnerable to point-defense lasers.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+    </graphicData>
+    <weaponTags>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>1.0</warmupTime>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>500</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>TorpedoCapital</soundCast>
+        <muzzleFlashScale>16</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ChangeableProjectilePlural">
+		<maxTorpedoes>20</maxTorpedoes>
+	  </li>
+    </comps>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>SpaceTorpedoes</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+          <categories>
+            <li>SpaceTorpedoes</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
+
+     	<SoundDef>
+    <defName>TorpedoCapital</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/TorpedoCapital</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+    <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>Daegon</defName>
+    <label>Archotech Daegon</label>
+    <description>A turret firing hypercondensed activated Archomatter so volatile it will annihilate anything on contact.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoPlatformDaegon</texPath>
+	  <drawSize>3,3</drawSize>
+    </graphicData>
+	<size>3,3</size>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+	  <RangedWeapon_DamageMultiplier>17.01</RangedWeapon_DamageMultiplier>
+    </statBases>	
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>20</heatPerPulse>
+		<energyToFire>200</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>3</projectileSpeed>
+		<threat>100</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <building>
+      <turretGunDef>DaegonTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>8.0</turretBurstCooldownTime>
+      <turretTopDrawSize>3</turretTopDrawSize>
+    </building>
+    <costList>
+	  <AscendedArchomatter>500</AscendedArchomatter>
+    </costList>
+		<designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/DaegonMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>ArchotechAbsolution</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+	
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>DaegonTop</defName>
+    <label>Archotech Daegon Top</label>
+    <description>A turret firing hypercondensed activated Archomatter so volatile it will annihilate anything on contact.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/DaegonTurret</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>Condensed Archomatter</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>40</range>
+        <warmupTime>2</warmupTime>
+        <noiseRadius>8</noiseRadius>
+        <burstShotCount>1</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>DaegonPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Daegon</defaultProjectile>
+        <spawnDef>Proj_Daegon</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Daegon</defName>
+    <label>Hypercondensed Archomatter</label>
+    <graphicData>
+      <texPath>Things/Projectile/DaegonBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>DaegonDmg</damageDef>
+      <speed>100</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_Daegon</defName>
+    <label>Hypercondensed Archomatter</label>
+    <thingClass>Projectile_ExplosiveShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/DaegonBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>8.0</explosionRadius>
+      <damageDef>DaegonDmg</damageDef>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+  
+      <DamageDef Name="DaegonDmg">
+    <defName>DaegonDmg</defName>
+    <label>DaegonDmg</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been wiped from existance.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>110</minDamageToFragment>
+    <defaultDamage>7000</defaultDamage>
+    <defaultStoppingPower>5.0</defaultStoppingPower>
+    <defaultArmorPenetration>10.80</defaultArmorPenetration>
+    <buildingDamageFactor>90</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>2000</explosionHeatEnergyPerCell>
+    <explosionCellMote>DaegonExplosion</explosionCellMote>
+    <soundExplosion>ExplosionDaegon</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>  
+
+    	<SoundDef>
+    <defName>DaegonPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/DaegonPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  	<SoundDef>
+    <defName>ExplosionDaegon</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ExplosionDaegon</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>    
+  
+     <ThingDef ParentName="MoteBase">
+    <defName>DaegonExplosion</defName>
+    <graphicData>
+      <texPath>Things/Mote/DaegonExplosion</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>0.8</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.05</fadeOutTime>
+      <growthRate>10.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> 
+
+    <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>Borealis</defName>
+    <label>Archotech Borealis</label>
+    <description>A turret firing hypercondensed activated Archomatter so volatile it will annihilate anything on contact.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoPlatformBorealis</texPath>
+	  <drawSize>3,3</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+	  <RangedWeapon_DamageMultiplier>5.0</RangedWeapon_DamageMultiplier>
+    </statBases>	
+	<size>3,3</size>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>20</heatPerPulse>
+		<energyToFire>200</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>3</projectileSpeed>
+		<threat>120</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>7000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <building>
+      <turretGunDef>BorealisTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>15.0</turretBurstCooldownTime>
+      <turretTopDrawSize>3</turretTopDrawSize>
+    </building>
+    <costList>
+	  <AscendedArchomatter>600</AscendedArchomatter>
+    </costList>
+		<designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/BorealisMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>ArchotechAbsolution</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>BorealisTop</defName>
+    <label>Archotech Borealis Top</label>
+    <description>A turret firing hypercondensed activated Archomatter so volatile it will annihilate anything on contact.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/BorealisTurret</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>Condensed Archomatter</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>40</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>8</noiseRadius>
+        <burstShotCount>3</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>BorealisPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Borealis</defaultProjectile>
+        <spawnDef>Proj_Borealis</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Borealis</defName>
+    <label>Hypercondensed Archomatter</label>
+    <graphicData>
+      <texPath>Things/Projectile/BorealisBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>BorealisDmg</damageDef>
+      <speed>100</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_Borealis</defName>
+    <label>Hypercondensed Archomatter</label>
+    <thingClass>Projectile_ExplosiveShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/BorealisBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>8.0</explosionRadius>
+      <damageDef>BorealisDmg</damageDef>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+  
+      <DamageDef Name="BorealisDmg">
+    <defName>BorealisDmg</defName>
+    <label>BorealisDmg</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been wiped from existance.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>120</minDamageToFragment>
+    <defaultDamage>1200</defaultDamage>
+    <defaultStoppingPower>20.0</defaultStoppingPower>
+    <defaultArmorPenetration>30.80</defaultArmorPenetration>
+    <buildingDamageFactor>120</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>2000</explosionHeatEnergyPerCell>
+    <explosionCellMote>BorealisExplosion</explosionCellMote>
+    <soundExplosion>ExplosionDaegon</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>  
+
+    	<SoundDef>
+    <defName>BorealisPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/BorealisPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  	<SoundDef>
+    <defName>ExplosionBorealis</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ExplosionBorealis</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>    
+  
+     <ThingDef ParentName="MoteBase">
+    <defName>BorealisExplosion</defName>
+    <graphicData>
+      <texPath>Things/Mote/BorealisExplosion</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>0.5</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.05</fadeOutTime>
+      <growthRate>6.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> 
+
+    <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>Shockwave</defName>
+    <label>Archotech Archlite Canon</label>
+    <description>A turret so deadly it simply melts ships into nothing.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoPlatformShockwave</texPath>
+	  <drawSize>3,3</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+	  <RangedWeapon_DamageMultiplier>30.01</RangedWeapon_DamageMultiplier>
+    </statBases>	
+	<size>3,3</size>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>20</heatPerPulse>
+		<energyToFire>200</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>3</projectileSpeed>
+		<threat>200</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>9000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <building>
+      <turretGunDef>ShockwaveTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
+      <turretTopDrawSize>3</turretTopDrawSize>
+    </building>
+    <costList>
+	  <AscendedArchomatter>900</AscendedArchomatter>
+    </costList>
+		<designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/ShockwaveMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>ArchotechAbsolution</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShockwaveTop</defName>
+    <label>Archotech Archlite Canon Top</label>
+    <description>A turret so deadly it simply melts ships into nothing.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShockwaveTurret</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>Condensed Archomatter</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>100</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>8</noiseRadius>
+        <burstShotCount>1</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ShockwavePew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Shockwave</defaultProjectile>
+        <spawnDef>Proj_Shockwave</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shockwave</defName>
+    <label>Hypercondensed Archomatter</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShockwaveBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(6,6)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>ShockwaveDmg</damageDef>
+      <speed>50</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_Shockwave</defName>
+    <label>Hypercondensed Archomatter</label>
+    <thingClass>Projectile_ExplosiveShipCombatAntigrain</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/ShockwaveBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(6,6)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>8.0</explosionRadius>
+      <damageDef>ShockwaveDmg</damageDef>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+  
+      <DamageDef Name="ShockwaveDmg">
+    <defName>ShockwaveDmg</defName>
+    <label>ShockwaveDmg</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been wiped from existance.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>120</minDamageToFragment>
+    <defaultDamage>30000</defaultDamage>
+    <defaultStoppingPower>20.0</defaultStoppingPower>
+    <defaultArmorPenetration>30.80</defaultArmorPenetration>
+    <buildingDamageFactor>250</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>50000</explosionHeatEnergyPerCell>
+    <explosionCellMote>ShockwaveExplosion</explosionCellMote>
+    <soundExplosion>ShockwaveExplosion</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>  
+
+    	<SoundDef>
+    <defName>ShockwavePew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ShockwavePew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  	<SoundDef>
+    <defName>ShockwaveExplosion</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ShockwaveExplosion</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>    
+  
+     <ThingDef ParentName="MoteBase">
+    <defName>ShockwaveExplosion</defName>
+    <graphicData>
+      <texPath>Things/Mote/AscendedBlast</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>8.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.42</fadeInTime>
+      <solidTime>0.90</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <growthRate>0.42</growthRate>  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> 
+
+    <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>WorldEnder</defName>
+    <label>Centotech World Ender</label>
+    <description>Zae var'ictu.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoPlatformWorldEnder</texPath>
+	  <drawSize>12,12</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+	  <RangedWeapon_DamageMultiplier>100.01</RangedWeapon_DamageMultiplier>
+    </statBases>	
+	<size>12,12</size>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>2000000</heatPerPulse>
+		<energyToFire>2000000</energyToFire>
+		<maxRange>60</maxRange>
+		<projectileSpeed>3</projectileSpeed>
+		<threat>350</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>120000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <building>
+      <turretGunDef>WorldEnderTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>5.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>20.0</turretBurstCooldownTime>  
+      <turretTopDrawSize>12</turretTopDrawSize>
+    </building>
+    <costList>
+	  <Centomatter>7000</Centomatter>
+    </costList>
+		<designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/WorldEnderMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>ArchotechAbsolution</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>WorldEnderTop</defName>
+    <label>Centotech World Ender Top</label>
+    <description>Zae var'ictu.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/WorldEnder</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>Condensed Centomatter</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>50</range>
+        <warmupTime>5</warmupTime>
+        <noiseRadius>20</noiseRadius>
+        <burstShotCount>1</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundAiming>WorldEnderCharge</soundAiming>		
+        <soundCast>WorldEnderPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_WorldEnder</defaultProjectile>
+        <spawnDef>Proj_WorldEnder</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_WorldEnder</defName>
+    <label>Hypercondensed Archomatter</label>
+    <graphicData>
+      <texPath>Things/Projectile/WorldEnderBullet</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(12,12)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>WorldEnderDmg</damageDef>
+      <speed>40</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate>WorldEnderCharge</soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_WorldEnder</defName>
+    <label>Hypercondensed Archomatter</label>
+    <thingClass>Projectile_ExplosiveShipCombatAntigrain</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/WorldEnderBullet</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(12,12)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>55.0</explosionRadius>
+      <damageDef>WorldEnderDmg</damageDef>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+  
+      <DamageDef Name="WorldEnderDmg">
+    <defName>WorldEnderDmg</defName>
+    <label>WorldEnderDmg</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been wiped from existance.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>1000</minDamageToFragment>
+    <defaultDamage>90000</defaultDamage>
+    <defaultStoppingPower>20.0</defaultStoppingPower>
+    <defaultArmorPenetration>30.80</defaultArmorPenetration>
+    <buildingDamageFactor>2500</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>200000</explosionHeatEnergyPerCell>
+    <explosionCellMote>WorldEnderMote</explosionCellMote>
+    <soundExplosion>WorldEnderExplosion</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>  
+
+    	<SoundDef>
+    <defName>WorldEnderPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/WorldEnderPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  	<SoundDef>
+    <defName>WorldEnderCharge</defName>
+    <context>MapOnly</context>
+    <sustain>True</sustain>  	
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>		  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/WorldEnderCharge</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+        <sustainIntervalRange>0.5~0.5</sustainIntervalRange>		
+        <sustainLoop>True</sustainLoop> 		
+      </li>
+    </subSounds>
+  </SoundDef>     
+  
+  	<SoundDef>
+    <defName>WorldEnderExplosion</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/WorldEnderExplosion</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+     <ThingDef ParentName="MoteBase">
+    <defName>WorldEnderMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/WorldEnderMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>8.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.42</fadeInTime>
+      <solidTime>0.90</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <growthRate>0.42</growthRate>  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>   
+  
+</Defs>

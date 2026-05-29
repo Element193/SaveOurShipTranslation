@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <!-- ====================== Laser Sniper Rifle  ===================== -->
+  <ThingDef ParentName="VWEL_Bullet_LaserGeneric" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
+    <defName>AscendedArchogun_BeamcanonBullet</defName>	
+    <label>Ascended Archomatter Beam</label>
+    <description>A focused, long range ascended archomatter beam.</description>
+    <textures>
+      <li>Things/Projectile/AscendedBeambullet</li>
+    </textures>
+    <seam>0.1</seam>
+    <causefireChance>0.7</causefireChance>
+	<beamWidth>0.5</beamWidth>
+	<lifetime>160</lifetime>
+    <projectile>
+		<damageDef>Burn</damageDef>
+		<damageAmountBase>240</damageAmountBase>
+		<armorPenetrationBase>120</armorPenetrationBase>
+		<stoppingPower>10</stoppingPower>
+    </projectile>
+  </ThingDef>
+  
+ <ThingDef ParentName="BaseLaserGun">
+    <defName>AscendedArchogun_Beamcanon</defName>
+	<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+    <label>Ascended Archomatter Beamcanon</label>
+    <description>The end of all things.</description>
+    <graphicData>
+		<texPath>Things/Weapons/AscendedBeamcanon</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+		<WorkToMake>120500</WorkToMake>
+		<MarketValue>7000</MarketValue>
+		<Mass>3.8</Mass>
+			<AccuracyTouch>0.74</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>1.92</AccuracyMedium>
+			<AccuracyLong>0.98</AccuracyLong>
+			<RangedWeapon_Cooldown>4.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <ArchoAlgae>800</ArchoAlgae>
+	  <AscendedArchomatter>1000</AscendedArchomatter>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>5</ComponentIndustrial>
+	  <ZeroCrystal>50</ZeroCrystal>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>20</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>AscendedArchotechWorkbench</li>
+      </recipeUsers>
+      <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite Inherit="False">ArchomatterAscension</researchPrerequisite>
+    </recipeMaker>
+	<techLevel>Archotech</techLevel>
+    <weaponTags Inherit="False">
+	<li>SOSEXQuality</li>
+    </weaponTags>
+		<generateCommonality>0.0001</generateCommonality>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.10</MoveSpeed> <!-- drawback -->
+	</equippedStatOffsets>
+	<equippedAngleOffset>50</equippedAngleOffset>
+    <verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<label>Standard</label>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>AscendedArchogun_BeamcanonBullet</defaultProjectile>
+			<warmupTime>1.0</warmupTime>
+			<range>90</range>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<burstShotCount>1</burstShotCount>			
+			<soundCast>AscendedBeamCanonPew</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<!--<muzzleFlashScale>0</muzzleFlashScale>-->
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+      </li>
+    </verbs>
+	<comps>     
+		<li Class="VanillaWeaponsExpandedLaser.CompProperties_LaserCapacitor">
+			<UiIconPath>UI/EnableWarmup/EnableWarmup</UiIconPath>
+			<WarmUpReductionPerShot>0.5</WarmUpReductionPerShot>
+			<Overheats>true</Overheats>
+			<OverheatDestroys>false</OverheatDestroys>
+			<OverheatBlastDamageDef>Burn</OverheatBlastDamageDef>
+			<OverheatBlastExtraDamage>6</OverheatBlastExtraDamage>
+			<OverheatBlastRadius>1.5</OverheatBlastRadius>
+			<OverheatChance>0.06</OverheatChance>
+			<OverheatMoteThrown>Mote_HeatGlow</OverheatMoteThrown>
+			<OverheatMoteSize>1</OverheatMoteSize>
+		</li> 
+	</comps>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+ </ThingDef>
+ 
+   	<SoundDef>
+    <defName>AscendedBeamCanonPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>6</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/AscendedBeamCanonPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+  
+</Defs>

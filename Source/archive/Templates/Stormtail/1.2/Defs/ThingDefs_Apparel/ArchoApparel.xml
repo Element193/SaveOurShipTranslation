@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SOSEXApparel">
+    <defName>AArchoHelmet</defName>
+    <label>A.R.C.H.O Helmet</label>
+    <description>Archomatter helmet with a reflective ArchoAlgae layer.</description>	
+    <techLevel>Archotech</techLevel>
+	<useHitPoints>true</useHitPoints>
+    <tickerType>Normal</tickerType>	
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>ArchoWeaponry</researchPrerequisite>	  
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/ArchoHelmet/ArchoHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <selectable>true</selectable>
+	<thingCategories>
+      <li>SOSEXApparel</li>
+    </thingCategories>
+    <generateCommonality>0.0001</generateCommonality>
+    <statBases>
+      <MarketValue>25000</MarketValue>	
+      <WorkToMake>80000</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+      <Mass>0.75</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>5</ArmorRating_Blunt>
+      <ArmorRating_Heat>25</ArmorRating_Heat>
+      <Insulation_Cold>150</Insulation_Cold>
+      <Insulation_Heat>150</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <costList>
+      <Archomatter>2500</Archomatter>
+      <ArchoAlgae>1500</ArchoAlgae>	  
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/ArchoHelmet/ArchoHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <tags>
+		<li>EVA</li>
+        <li>SOSEXApparelQuality</li>		
+	  </tags>  
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_BiocodableApparel"/>
+    </comps>		
+  </ThingDef>
+  
+	<ThingDef ParentName="SOSEXApparel">
+    <defName>AscendedArchoHelmet</defName>
+    <label>Ascended Helmet</label>
+    <description>A transcendant's helmet. Blueprints given by an unknown source.</description>	
+    <techLevel>Archotech</techLevel>
+	<useHitPoints>true</useHitPoints>
+    <tickerType>Normal</tickerType>	
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>ArchomatterAscension</researchPrerequisite>	  
+      <skillRequirements>
+        <Crafting>20</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>AscendedArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/AscendedHelmet/AscendedHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <selectable>true</selectable>
+    <thingCategories>
+      <li>SOSEXApparel</li>
+    </thingCategories>	
+    <generateCommonality>0.0001</generateCommonality>
+    <statBases>
+      <MarketValue>25000</MarketValue>		
+      <WorkToMake>120000</WorkToMake>
+      <MaxHitPoints>20000</MaxHitPoints>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+      <Mass>0.75</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>10</ArmorRating_Blunt>
+      <ArmorRating_Heat>50</ArmorRating_Heat>
+      <Insulation_Cold>300</Insulation_Cold>
+      <Insulation_Heat>300</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <costList>
+      <AscendedArchomatter>2500</AscendedArchomatter>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/AscendedHelmet/AscendedHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <tags>
+		<li>EVA</li>
+        <li>SOSEXApparelQuality</li>		
+	  </tags>  
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_BiocodableApparel"/>
+    </comps>		
+  </ThingDef> 
+  
+	<ThingDef ParentName="SOSEXApparel">
+    <defName>Archoflashlightdrone</defName>
+    <label>Archotech Flashlight Drone</label>
+    <description>A flashlight drone with an unending powersource to use in the dark. It also protects you from the cold and heat with it's nifty barrier. A cute little companion!</description>
+    <thingClass>MiningHelmet.ApparelWithMiningLight</thingClass>	
+    <techLevel>Archotech</techLevel>
+	<useHitPoints>true</useHitPoints>
+    <tickerType>Normal</tickerType>	
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>ArchomatterAscension</researchPrerequisite>	  
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>AscendedArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/ArchoFlashlight/Archoflashlightdrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <selectable>true</selectable>
+     <thingCategories>
+      <li>SOSEXApparel</li>
+    </thingCategories>	
+    <generateCommonality>0.0001</generateCommonality>
+    <statBases>
+      <MarketValue>25000</MarketValue>		
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>7000</MaxHitPoints>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+      <Mass>0.75</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Heat>50</ArmorRating_Heat>
+      <Insulation_Cold>300</Insulation_Cold>
+      <Insulation_Heat>1000</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <costList>
+      <AscendedArchomatter>700</AscendedArchomatter>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/ArchoFlashlight/Archoflashlightdrone</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+	  <tags>
+		<li>EVA</li>
+        <li>SOSEXApparelQuality</li>		
+	  </tags>	  
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_BiocodableApparel"/>
+    </comps>		
+  </ThingDef>   
+  
+  <BodyPartGroupDef>
+    <defName>Drone</defName>
+    <label>Overhead Drone</label>
+    <listOrder>180</listOrder>
+  </BodyPartGroupDef>  
+
+  <ThingDef ParentName="SOSEXApparel">
+    <defName>AscendedArchoArmor</defName>
+    <label>Ascended Armor</label>
+    <thingClass>Apparel</thingClass>	
+    <description>A transcendant's armor. Blueprints given by an unknown source.</description>
+	<techLevel>Archotech</techLevel>
+	<useHitPoints>true</useHitPoints>	
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>ArchomatterAscension</researchPrerequisite>	  
+      <skillRequirements>
+        <Crafting>20</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>AscendedArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/AscendedArmor/AscendedArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <generateCommonality>0.0001</generateCommonality>
+    <statBases>
+      <MarketValue>50000</MarketValue>		
+      <WorkToMake>480000</WorkToMake>
+      <MaxHitPoints>20000</MaxHitPoints>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+      <Mass>6</Mass>
+      <Flammability>0.0</Flammability>
+      <ArmorRating_Sharp>10</ArmorRating_Sharp>
+      <ArmorRating_Blunt>10</ArmorRating_Blunt>
+      <ArmorRating_Heat>50</ArmorRating_Heat>
+      <Insulation_Cold>1000</Insulation_Cold>
+      <Insulation_Heat>1000</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+      <!--<EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>25</EnergyShieldEnergyMax>-->
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>1</MoveSpeed>
+    </equippedStatOffsets>
+    <selectable>true</selectable>
+    <thingCategories>
+      <li>SOSEXApparel</li>
+    </thingCategories>	
+    <costList>
+      <AscendedArchomatter>3500</AscendedArchomatter>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>Waist</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+		<li>Hands</li>		
+        <li>Legs</li>
+		<li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/AscendedArmor/AscendedArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+		<!--<li>Belt</li>-->
+      </layers>
+	  <tags>
+		<li>EVA</li>
+        <li>SOSEXApparelQuality</li>		
+	  </tags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+	  <careIfWornByCorpse>false</careIfWornByCorpse>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_BiocodableApparel"/>
+    </comps>
+  </ThingDef>  
+
+  <ThingDef ParentName="SOSEXApparel">
+    <defName>AArchoArmor</defName>
+    <label>A.R.C.H.O Armor</label>
+    <thingClass>Apparel</thingClass>	
+    <description>Archomatter armor with a reflective ArchoAlgae layer.</description>
+	<techLevel>Archotech</techLevel>
+	<useHitPoints>true</useHitPoints>	
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>ArchoWeaponry</researchPrerequisite>	  
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Apparel/ArchoArmor/ArchoArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <generateCommonality>0.0001</generateCommonality>
+    <statBases>
+      <MarketValue>50000</MarketValue>		
+      <WorkToMake>240000</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+	  <DeteriorationRate>0.0</DeteriorationRate>
+      <Mass>6</Mass>
+      <Flammability>0.0</Flammability>
+      <ArmorRating_Sharp>5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>5</ArmorRating_Blunt>
+      <ArmorRating_Heat>25</ArmorRating_Heat>
+      <Insulation_Cold>500</Insulation_Cold>
+      <Insulation_Heat>500</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+      <!--<EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>25</EnergyShieldEnergyMax>-->
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>1</MoveSpeed>
+    </equippedStatOffsets>
+    <selectable>true</selectable>
+    <thingCategories>
+      <li>SOSEXApparel</li>
+    </thingCategories>	
+    <costList>
+      <Archomatter>3500</Archomatter>
+      <ArchoAlgae>1700</ArchoAlgae>	 
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>Waist</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+		<li>Hands</li>
+        <li>Legs</li>
+		<li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/ArchoArmor/ArchoArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+		<!--<li>Belt</li>-->
+      </layers>
+	  <tags>
+		<li>EVA</li>
+        <li>SOSEXApparelQuality</li>		
+	  </tags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+	  <careIfWornByCorpse>false</careIfWornByCorpse>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_BiocodableApparel"/>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>SoS2ExStuff</defName>
+      <label>SoS2Ext Buildings</label>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+	  <parent>Buildings</parent>
+    </ThingCategoryDef>
+	
+    <ThingCategoryDef>
+      <defName>SOSEXApparel</defName>
+      <label>SoS2Extended Apparel</label>
+      <parent>Apparel</parent>	  
+    </ThingCategoryDef>	
+
+    <ThingCategoryDef>
+      <defName>SOSEXBaseWeapon</defName>
+      <label>SoS2Ext Ranged Weapons</label>
+      <parent>Weapons</parent>  	  
+    </ThingCategoryDef>
+	
+   <ThingCategoryDef>
+      <defName>SOSEXApparelBase</defName>
+      <label>SoS2ExtBase</label>  	  
+    </ThingCategoryDef>
+		
+    <ThingCategoryDef>
+      <defName>SOSEXMelee</defName>
+      <label>SoS2Ext Melee Weapons</label>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <parent>Weapons</parent>	  
+    </ThingCategoryDef>		
+	
+    <ThingCategoryDef>
+      <defName>SOSEXApparelQuality</defName>
+      <label>SosexApparel</label>
+      <parent>SOSEXApparelBase</parent>	
+      <resourceReadoutRoot>true</resourceReadoutRoot>	  	  
+    </ThingCategoryDef>	
+
+    <ThingCategoryDef>
+      <defName>SOSEXMeleeQuality</defName>
+      <label>Sosexmelee</label>
+      <parent>SOSEXMelee</parent>	
+      <resourceReadoutRoot>true</resourceReadoutRoot>	  	  
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>SOSEXQuality</defName>
+      <label>Sosexweapon</label>
+      <parent>SOSEXBaseWeapon</parent>	
+      <resourceReadoutRoot>true</resourceReadoutRoot>	  	  
+    </ThingCategoryDef>
+	
+    <ThingCategoryDef>
+      <defName>RuinedLeather</defName>
+      <label>Ruined Leather</label>
+      <parent>Root</parent>	
+      <resourceReadoutRoot>true</resourceReadoutRoot>	  
+    </ThingCategoryDef>			
+
+  
+  <ThingDef Name="SOSEXApparel" ParentName="SOSEXApparelQuality" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>0</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <techLevel>Archotech</techLevel>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>-3</Beauty>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <burnableByRecipe>true</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>  
+  
+  <ThingDef Name="SOSEXApparelQuality" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>  
+
+  <ThingDef Abstract="True" Name="SOSEXBaseWeapon">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <equipmentType>Primary</equipmentType>
+    <smeltable>false</smeltable>	
+    <useHitPoints>true</useHitPoints>
+    <pathCost>14</pathCost>
+    <selectable>true</selectable>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-3</Beauty>
+      <SellPriceFactor>0.0</SellPriceFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>      
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef Name="SOSEXQuality" Abstract="True" ParentName="SOSEXBaseWeapon">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>  
+  
+  <ThingDef Name="SOSEXBaseGrenade" ParentName="SOSEXBaseWeapon" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>	  
+    </recipeMaker>
+      <smeltable>false</smeltable>	  
+  </ThingDef>  
+  
+  <ThingDef Name="SOSEXMelee" Abstract="True" ParentName="SOSEXBaseWeapon">
+    <techLevel>Industrial</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef Name="SOSEXMeleeQuality" Abstract="True" ParentName="SOSEXMelee">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>  
+  
+</Defs>

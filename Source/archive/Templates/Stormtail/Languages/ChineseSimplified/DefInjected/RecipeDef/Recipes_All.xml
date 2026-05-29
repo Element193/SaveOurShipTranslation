@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CookAronusMeal.label>准备奇怪的紫色食物</CookAronusMeal.label>
+  <CookAronusMeal.description>对于我们的认知世界里，这可能是最漂亮的不可名状之物了.</CookAronusMeal.description>
+  <CookAronusMeal.jobString>制作太空美食中~</CookAronusMeal.jobString>
+
+  <CookAronusMealBulk.label>准备奇怪的紫色食物 (x5)</CookAronusMealBulk.label>
+  <CookAronusMealBulk.description>对于我们的认知世界里，这可能是最漂亮的不可名状之物了.</CookAronusMealBulk.description>
+  <CookAronusMealBulk.jobString>制作太空美食中~</CookAronusMealBulk.jobString>
+
+  <CookAronusMealBulkTen.label>准备奇怪的紫色食物 (x10)</CookAronusMealBulkTen.label>
+  <CookAronusMealBulkTen.description>对于我们的认知世界里，这可能是最漂亮的不可名状之物了.</CookAronusMealBulkTen.description>
+  <CookAronusMealBulkTen.jobString>制作太空美食中~</CookAronusMealBulkTen.jobString>
+
+  <Make_SpacerMeds.label>制作太空药物</Make_SpacerMeds.label>
+  <Make_SpacerMeds.description>制作先进的高科技太空药物!</Make_SpacerMeds.description>
+  <Make_SpacerMeds.jobString>制作药物.</Make_SpacerMeds.jobString>
+
+  <Make_SpacerMedsBulkFive.label>制作太空药物(x5)</Make_SpacerMedsBulkFive.label>
+  <Make_SpacerMedsBulkFive.description>制作先进的高科技太空药物!</Make_SpacerMedsBulkFive.description>
+  <Make_SpacerMedsBulkFive.jobString>制作药物.</Make_SpacerMedsBulkFive.jobString>
+
+  <Make_SpacerMedsBulkTen.label>制作太空药物(x10)</Make_SpacerMedsBulkTen.label>
+  <Make_SpacerMedsBulkTen.description>制作先进的高科技太空药物!</Make_SpacerMedsBulkTen.description>
+  <Make_SpacerMedsBulkTen.jobString>制作药物.</Make_SpacerMedsBulkTen.jobString>
+
+  <Make_Archomeds.label>制作远古药物</Make_Archomeds.label>
+  <Make_Archomeds.description>制作不可思议的远古药物!</Make_Archomeds.description>
+  <Make_Archomeds.jobString>制作药物.</Make_Archomeds.jobString>
+
+  <Make_ArchomedsBulkFive.label>制作远古药物(x5)</Make_ArchomedsBulkFive.label>
+  <Make_ArchomedsBulkFive.description>制作不可思议的远古药物!</Make_ArchomedsBulkFive.description>
+  <Make_ArchomedsBulkFive.jobString>制作药物.</Make_ArchomedsBulkFive.jobString>
+
+  <Make_ArchomedsBulkTen.label>制作远古药物(x10)</Make_ArchomedsBulkTen.label>
+  <Make_ArchomedsBulkTen.description>制作不可思议的远古药物!</Make_ArchomedsBulkTen.description>
+  <Make_ArchomedsBulkTen.jobString>制作药物.</Make_ArchomedsBulkTen.jobString>
+
+  <Make_Archoferium.label>制作上古孢蔓</Make_Archoferium.label>
+  <Make_Archoferium.description>制作上古孢蔓！恐怖的药物。</Make_Archoferium.description>
+  <Make_Archoferium.jobString>制作远古药物.</Make_Archoferium.jobString>
+
+  <Make_ArchoferiumBulkFive.label>制作上古孢蔓(x5)</Make_ArchoferiumBulkFive.label>
+  <Make_ArchoferiumBulkFive.description>制作上古孢蔓！恐怖的药物。</Make_ArchoferiumBulkFive.description>
+  <Make_ArchoferiumBulkFive.jobString>制作远古药物.</Make_ArchoferiumBulkFive.jobString>
+
+  <Make_ArchoferiumBulkTen.label>制作上古孢蔓(x10)</Make_ArchoferiumBulkTen.label>
+  <Make_ArchoferiumBulkTen.description>制作上古孢蔓！恐怖的药物。</Make_ArchoferiumBulkTen.description>
+  <Make_ArchoferiumBulkTen.jobString>制作远古药物.</Make_ArchoferiumBulkTen.jobString>
+
+  <Buy_Archoferium.label>购买远古孢蔓(x5)</Buy_Archoferium.label>
+  <Buy_Archoferium.description>唔姆...你确定吗？</Buy_Archoferium.description>
+  <Buy_Archoferium.jobString>交易中.</Buy_Archoferium.jobString>
+
+  <Buy_AronusMeal.label>购买奇怪的紫色食物(x5)</Buy_AronusMeal.label>
+  <Buy_AronusMeal.description>Yummy!</Buy_AronusMeal.description>
+  <Buy_AronusMeal.jobString>交易中.</Buy_AronusMeal.jobString>
+
+  <Buy_CheesePizza.label>订购芝士披萨(x5)</Buy_CheesePizza.label>
+  <Buy_CheesePizza.description>Yummy!</Buy_CheesePizza.description>
+  <Buy_CheesePizza.jobString>交易中.</Buy_CheesePizza.jobString>
+
+  <Buy_VeggiePizza.label>订购纯粹蔬菜披萨(x5)</Buy_VeggiePizza.label>
+  <Buy_VeggiePizza.description>Yummy!</Buy_VeggiePizza.description>
+  <Buy_VeggiePizza.jobString>交易中.</Buy_VeggiePizza.jobString>
+
+  <Buy_MeatPizza.label>订购香肠披萨(x5)</Buy_MeatPizza.label>
+  <Buy_MeatPizza.description>Yummy!</Buy_MeatPizza.description>
+  <Buy_MeatPizza.jobString>交易中.</Buy_MeatPizza.jobString>
+
+  <Buy_MushroomPizza.label>订购蘑菇披萨(x5)</Buy_MushroomPizza.label>
+  <Buy_MushroomPizza.description>Yummy!</Buy_MushroomPizza.description>
+  <Buy_MushroomPizza.jobString>交易中.</Buy_MushroomPizza.jobString>
+
+  <Make_Archomatter.label>制作远古？质©</Make_Archomatter.label>
+  <Make_Archomatter.description>制作材料学中的无尽明珠.(25)</Make_Archomatter.description>
+  <Make_Archomatter.jobString>制作远古？质©.</Make_Archomatter.jobString>
+
+  <Make_ArchomatterBulkTen.label>制作远古？质© (x10)</Make_ArchomatterBulkTen.label>
+  <Make_ArchomatterBulkTen.description>制作材料学中的无尽明珠.(250)</Make_ArchomatterBulkTen.description>
+  <Make_ArchomatterBulkTen.jobString>制作远古？质©.</Make_ArchomatterBulkTen.jobString>
+
+
+</LanguageData>

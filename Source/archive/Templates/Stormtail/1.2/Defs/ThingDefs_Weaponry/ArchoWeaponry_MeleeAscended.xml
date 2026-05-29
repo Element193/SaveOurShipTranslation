@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="SOSEXMeleeQuality">
+    <defName>AscendedArchoMelee_Slicer</defName>
+    <label>Ascended Neuron Slicer</label>
+    <description>Feeble flesh, convert!</description>
+    <graphicData>
+		<texPath>Things/Weapons/AscendedArchoNeuronSlicer</texPath>
+		<shaderType>TransparentPostLight</shaderType>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1.2</drawSize>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <weaponTags Inherit="False">
+		<li>SOSEXMeleeQuality</li>
+    </weaponTags>
+    <costList>
+      <ArchoAlgae>150</ArchoAlgae>
+	  <AscendedArchomatter>150</AscendedArchomatter>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>5</ComponentIndustrial>	 
+    </costList>
+        <generateCommonality>0.0001</generateCommonality>	
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>20</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>AscendedArchotechWorkbench</li>
+      </recipeUsers>
+      <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite Inherit="False">ArchomatterAscension</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+		<MarketValue>7000</MarketValue>
+		<Mass>1.4</Mass>
+    </statBases>
+    <equippedAngleOffset>-15</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>Handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>120</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>MolecularEdge</label>
+        <capacities>
+          <li>FrostStrike</li>
+        </capacities>
+        <power>120</power>
+        <armorPenetration>60.50</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>MolecularBlade</label>
+        <capacities>
+          <li>FrostStrike</li>
+        </capacities>
+        <power>120</power>
+        <armorPenetration>60.80</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+                <groundGraphic>
+                    <texPath>Things/Weapons/AscendedArchoNeuronSlicer</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                </groundGraphic>
+            </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+	<tradeability>Sellable</tradeability>
+  </ThingDef>
+
+  
+</Defs>

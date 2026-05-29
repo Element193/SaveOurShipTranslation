@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Archogun_AlgaeBeamer.label>上古？质热脉冲激发器</Archogun_AlgaeBeamer.label>
+  <Archogun_AlgaeBeamer.description>一种相当危险的武器，它可以向目标注射零点纳米晶体，并在一瞬间激发它的突变。对建筑物很有效！</Archogun_AlgaeBeamer.description>
+  <Archogun_AlgaeBeamer.tools.0.label>枪托</Archogun_AlgaeBeamer.tools.0.label>
+  <Archogun_AlgaeBeamer.tools.1.label>枪管</Archogun_AlgaeBeamer.tools.1.label>
+
+  <Archogun_AlgaeFlamer.label>上古？质火焰枪</Archogun_AlgaeFlamer.label>
+  <Archogun_AlgaeFlamer.description>你有没有想过当你把液体上古？质溅洒到周围会发生什么？</Archogun_AlgaeFlamer.description>
+  <Archogun_AlgaeFlamer.tools.0.label>枪托</Archogun_AlgaeFlamer.tools.0.label>
+  <Archogun_AlgaeFlamer.tools.1.label>枪管</Archogun_AlgaeFlamer.tools.1.label>
+
+  <Archoflame.label>？火焰</Archoflame.label>
+
+  <Archogun_Plasma.label>上古？质等离子雄鹰</Archogun_Plasma.label>
+  <Archogun_Plasma.description>沉重而危险，它的体内充满了难以想象的危险物质。你想要什么？它会带来最最精确的处刑！</Archogun_Plasma.description>
+  <Archogun_Plasma.tools.0.label>枪托</Archogun_Plasma.tools.0.label>
+  <Archogun_Plasma.tools.1.label>枪管</Archogun_Plasma.tools.1.label>
+
+  <Archogun_Disruptor.label>“破坏者”手枪</Archogun_Disruptor.label>
+  <Archogun_Disruptor.description>被那些烦人肉团惹恼了吗？对它们这些下贱崽子说不！让他们尝一尝远古神力的滋味！！！</Archogun_Disruptor.description>
+  <Archogun_Disruptor.tools.0.label>枪托</Archogun_Disruptor.tools.0.label>
+  <Archogun_Disruptor.tools.1.label>枪管</Archogun_Disruptor.tools.1.label>
+
+  <ArchoDisruptorWave.label>氙压脉冲</ArchoDisruptorWave.label>
+
+  <Archogun_Ripper.label>上古？破坏者</Archogun_Ripper.label>
+  <Archogun_Ripper.description>恶棍，残忍，它是彻底的恶毒之士。</Archogun_Ripper.description>
+  <Archogun_Ripper.tools.0.label>枪托</Archogun_Ripper.tools.0.label>
+  <Archogun_Ripper.tools.1.label>枪管</Archogun_Ripper.tools.1.label>
+
+  <ArchoRipper.label>镭射束</ArchoRipper.label>
+
+  <Archogun_Lance.label>上古？镭射</Archogun_Lance.label>
+  <Archogun_Lance.description>所以，当你想在极远距离上消灭一些东西时，可以用有毒的黏液将它彻底焚化！这种超远程快子投射器威力如此之大，需要零点水晶冷却！</Archogun_Lance.description>
+  <Archogun_Lance.tools.0.label>枪托</Archogun_Lance.tools.0.label>
+  <Archogun_Lance.tools.1.label>枪管</Archogun_Lance.tools.1.label>
+
+  <ArchoLanceBullet.label>镭射束</ArchoLanceBullet.label>
+
+
+</LanguageData>

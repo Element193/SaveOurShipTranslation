@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MedicineBase">
+		<defName>Spacermeds</defName>
+		<label>Spacetech Medicine</label>
+		<description>Ultra-advanced medical supplies made from spacetechnology. These are required for more advanced diseases, though are less effective than it's upgrade!</description>
+		<thingClass>Medicine</thingClass>	
+		<graphicData>
+			<texPath>Things/Items/MedicineSpacer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<Mass>0.50</Mass>
+			<Flammability>0.1</Flammability>
+			<MedicalPotency>4.00</MedicalPotency>
+			<MedicalQualityMax>4.50</MedicalQualityMax>
+			<DeteriorationRate>0.0</DeteriorationRate>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<costList>
+			<MedicineUltratech>2</MedicineUltratech>
+			<Luciferium>2</Luciferium>
+		</costList>
+		<stackLimit>75</stackLimit>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>			
+    <researchPrerequisites>
+      <li>MedicalTreatment</li>
+    </researchPrerequisites>		
+		<!--<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Medicine</workSkill>
+			<skillRequirements>
+				<Medicine>15</Medicine>
+			</skillRequirements>
+		</recipeMaker>-->
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+	
+		<ThingDef ParentName="MedicineBase">
+		<defName>Archomeds</defName>
+		<label>Archomatter Medicine</label>
+		<description>Ultra-advanced medical supplies made from archotechnology. These are required for more advanced diseases!</description>
+		<thingClass>Medicine</thingClass>		
+		<graphicData>
+			<texPath>Things/Items/MedicineArcho3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MarketValue>5000</MarketValue>
+			<Mass>0.50</Mass>
+			<Flammability>0.1</Flammability>
+			<MedicalPotency>8.00</MedicalPotency>
+			<MedicalQualityMax>8.50</MedicalQualityMax>
+			<DeteriorationRate>0.0</DeteriorationRate>
+			<WorkToMake>17000</WorkToMake>
+		</statBases>
+		<costList>
+			<MedicineUltratech>5</MedicineUltratech>
+			<Spacermeds>5</Spacermeds>
+			<Archoferium>2</Archoferium>
+		</costList>
+		<stackLimit>75</stackLimit>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>			
+    <researchPrerequisites>
+      <li>MedicalTreatment</li>
+    </researchPrerequisites>		
+		<!--<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Medicine</workSkill>
+			<skillRequirements>
+				<Medicine>18</Medicine>
+			</skillRequirements>
+		</recipeMaker>-->
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+	
+</Defs>

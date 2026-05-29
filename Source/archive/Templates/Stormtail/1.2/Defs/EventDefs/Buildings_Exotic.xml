@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ========================= Meteor ========================= -->
+
+
+  <!-- =============================== Yes ============================ -->
+  
+  <ThingDef ParentName="OrbitalStrikeBase">
+    <defName>ArchoBeam</defName>
+    <label>Archo beam</label>
+    <thingClass>SOS2_EX.Events.ArchoBeam</thingClass>
+    <comps>
+      <li Class="CompProperties_OrbitalBeam">
+        <width>12</width>
+        <color>(182, 252, 32, 242)</color>
+        <sound>MassiveLaser</sound>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ArchoMeteor</defName>
+    <label>Archomatter Meteor Chunk</label>
+    <description>A chunk of...well....no idea actually!</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Projectile/Archorift</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(12,12)</drawSize>
+      <damageData>
+        <rect>(0.1,0.1,1.8,1.8)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.39,0.5,1.25)</volume>
+      </shadowData> 
+    </graphicData>
+    <tickerType>Normal</tickerType>	 	
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>35</pathCost>
+    <blockWind>true</blockWind>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.50</fillPercent>
+    <size>(12,12)</size>
+    <statBases>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-20</Beauty>
+      <WorkToBuild>12000</WorkToBuild>
+    </statBases>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <killedLeavings>
+      <Archomatter>300</Archomatter>
+      <ArchoAlgae>300</ArchoAlgae>
+	  <ChunkSlate>30</ChunkSlate>
+    </killedLeavings>
+    <costList>
+      <Archomatter>300</Archomatter>
+      <ArchoAlgae>300</ArchoAlgae>
+	  <ChunkSlate>30</ChunkSlate>
+    </costList>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(156,249,51,0)</glowColor>
+      </li>
+      <li Class="StormFox.SpecialAnimationPlayer_ON">
+        <mote>MeteorChantMote</mote>
+        <StartRange>(-0.2,0,0.2)</StartRange>
+        <EndRange>(0,0,-0.2)</EndRange>
+        <TicktoSpawn>42</TicktoSpawn>
+        <PlaySize>6.12~8.42</PlaySize>
+        <QuantitytoSpawn>1</QuantitytoSpawn>
+        <RotationRate>0~0</RotationRate>
+        <SpeedrangeX>0.2~4.2</SpeedrangeX>
+        <SpeedrangeY>0.2~4.2</SpeedrangeY>
+      </li>
+      <li Class="StormFox.SpecialAnimationPlayer_ON">
+        <mote>MeteorChantMoteTwo</mote>
+        <StartRange>(0,0,0)</StartRange>
+        <EndRange>(0,0,0)</EndRange>
+        <TicktoSpawn>21</TicktoSpawn>
+        <PlaySize>0.12~1.42</PlaySize>
+        <QuantitytoSpawn>4</QuantitytoSpawn>
+        <RotationRate>0~0</RotationRate>
+        <SpeedrangeX>0.2~4.2</SpeedrangeX>
+        <SpeedrangeY>0.2~4.2</SpeedrangeY>
+      </li>
+      <li Class="CompProperties_PlaySoundOnDestroy">
+        <sound>ChantingMeteorDeath</sound>
+      </li>	 
+      <li Class="CompProperties_SpawnerPawn">
+        <spawnablePawnKinds>
+          <li>MeteorSlime</li>		  
+        </spawnablePawnKinds>
+        <lordJob>LordJob_DefendAndExpandHive</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>4999999</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>9999999</maxSpawnedPawnsPoints>
+      </li>	
+      <li Class="CompProperties_SpawnerPawn">
+        <spawnablePawnKinds>
+          <li>CyberDrone</li>		  
+        </spawnablePawnKinds>
+        <lordJob>LordJob_DefendAndExpandHive</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>99999999</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>199999999</maxSpawnedPawnsPoints>
+      </li>	  	  
+    </comps>
+    <building>
+      <claimable>false</claimable>
+      <alwaysDeconstructible>true</alwaysDeconstructible>
+	  <soundAmbient>ChantingMeteor</soundAmbient>
+      <isEdifice>false</isEdifice>	  
+    </building>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <drawerType>MapMeshOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+  </ThingDef>
+  
+  <SoundDef>
+    <defName>ChantingMeteorDeath</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Ship/ChantingMeteorDeath</clipFolderPath>
+          </li>
+        </grains>
+        <onCamera>True</onCamera>
+        <volumeRange>522</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+     	<SoundDef>
+    <defName>ChantingMeteor</defName>
+    <sustain>True</sustain> 	
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ChantingMeteor</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+     <ThingDef ParentName="MoteBase">
+    <defName>MeteorChantMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/MeteorMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>2.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>1.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <growthRate>1.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> 
+
+     <ThingDef ParentName="MoteBase">
+    <defName>MeteorChantMoteTwo</defName>
+    <graphicData>
+      <texPath>Things/Mote/MeteorMoteTwo</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>2.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>1.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+      <growthRate>0.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>    
+
+</Defs>

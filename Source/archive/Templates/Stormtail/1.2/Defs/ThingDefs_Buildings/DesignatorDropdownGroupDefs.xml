@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>ArchoMedDrug</defName>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>ArchoVendor</defName>
+  </DesignatorDropdownGroupDef> 
+
+  <DesignatorDropdownGroupDef>
+    <defName>PizzaVendor</defName>
+  </DesignatorDropdownGroupDef>  
+
+	<DesignatorDropdownGroupDef>
+		<defName>SoS2exHeatSink</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>SoS2exPower</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>SoS2exSpinal</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>SoS2exCooling</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>SoS2exResourceSpawner</defName>
+	</DesignatorDropdownGroupDef>	
+	<DesignatorDropdownGroupDef>
+		<defName>SoS2exArchoShields</defName>
+	</DesignatorDropdownGroupDef>	
+	<DesignatorDropdownGroupDef>
+		<defName>SoS2exFloor</defName>
+	</DesignatorDropdownGroupDef>		
+
+</Defs>

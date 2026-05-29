@@ -3,59 +3,59 @@
 
 	<!-- АПГРЕЙДЫ ШАТТЛОВ КОРПУС -->
 	
-	<SoS2ShuttleUpgradeTree.nodes.0.label>Лёгкая обшивка</SoS2ShuttleUpgradeTree.nodes.0.label>
-	<SoS2ShuttleUpgradeTree.nodes.0.description>Облегчённая обшивка шаттла. Жертвует защитой в пользу скорости и топливной эффективности.\n\n&lt;color=#bb8f04&gt;-10% броня (удар), -20% броня (проникновение), +6 скорость, +100 вместимость, -10 расход топлива&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.0.description>
+	<SoS2ShuttleUpgradeTree.nodes.0.label>Облегченная обшивка</SoS2ShuttleUpgradeTree.nodes.0.label>
+	<SoS2ShuttleUpgradeTree.nodes.0.description>Внешняя обшивка шаттла из облегченных пластин. Обеспечивает лучшую скорость и топливную эффективность.\n\n&lt;color=#bb8f04&gt;-10% броня (удар), -20% броня (проникновение), +6 скорость, +100 вместимость, -10 расход топлива&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.0.description>
 	
-	<SoS2ShuttleUpgradeTree.nodes.1.label>Прочная обшивка</SoS2ShuttleUpgradeTree.nodes.1.label>
-	<SoS2ShuttleUpgradeTree.nodes.1.description>Дополнительный слой тяжёлой брони шаттла.\n\n&lt;color=#bb8f04&gt;+40% броня (удар), +40% броня (проникновение), -6 скорость полёта, -250 вместимость, +10 расход топлива&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.1.description>
+	<SoS2ShuttleUpgradeTree.nodes.1.label>Дополнительная броня</SoS2ShuttleUpgradeTree.nodes.1.label>
+	<SoS2ShuttleUpgradeTree.nodes.1.description>Дополнительный слой внешней обшивки шаттла для обеспечения большей защиты.\n\n&lt;color=#bb8f04&gt;+40% броня (удар), +40% броня (проникновение), -6 скорость полёта, -250 вместимость, +10 расход топлива&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.1.description>
 	
-	<SoS2ShuttleUpgradeTree.nodes.2.label>Реактивная обшивка</SoS2ShuttleUpgradeTree.nodes.2.label>
-	<SoS2ShuttleUpgradeTree.nodes.2.description>Слой вибрирующих механитных цепей, которые поглощают и рассеивают удары.\n\n&lt;color=#bb8f04&gt;+30% броня (удар), +10% броня (проникновение), -50 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.2.description>
+	<SoS2ShuttleUpgradeTree.nodes.2.label>Реактивная нано-обшивка</SoS2ShuttleUpgradeTree.nodes.2.label>
+	<SoS2ShuttleUpgradeTree.nodes.2.description>Внешний слой обшивки шаттла из вибрирующих механитных цепей, которые поглощают и рассеивают удары.\n\n&lt;color=#bb8f04&gt;+30% броня (удар), +10% броня (проникновение), -50 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.2.description>
 	
-	<SoS2ShuttleUpgradeTree.nodes.3.label>Архотек обшивка</SoS2ShuttleUpgradeTree.nodes.3.label>
-	<SoS2ShuttleUpgradeTree.nodes.3.description>[ЧЕЛОВЕЧЕСКИЙ ПАНЦИРЬ. ИЗ ЭТОГО КОКОНА Я РОЖДАЮСЬ, ЧТОБЫ СПЛЕСТИ ЕЩЁ БОЛЕЕ КРЕПКИЙ.]\n\n&lt;color=#bb8f04&gt;+50% броня (удар), +50% броня (проникновение)&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.3.description>
+	<SoS2ShuttleUpgradeTree.nodes.3.label>Обшивка Архотек</SoS2ShuttleUpgradeTree.nodes.3.label>
+	<SoS2ShuttleUpgradeTree.nodes.3.description>[ЧЕЛОВЕЧЕСКИЙ ПАНЦИРЬ\nИЗ ЭТОГО КОКОНА Я РОЖДАЮСЬ\nЧТОБЫ СОЗДАТЬ ЕЩЁ БОЛЕЕ КРЕПКИЙ.]\n\n&lt;color=#bb8f04&gt;+50% броня (удар), +50% броня (проникновение)&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.3.description>
 	
 
 	<!-- АПГРЕЙДЫ ШАТТЛОВ ЩИТЫ -->
 
 	<SoS2ShuttleUpgradeTree.nodes.8.label>Малый генератор щита</SoS2ShuttleUpgradeTree.nodes.8.label>
-	<SoS2ShuttleUpgradeTree.nodes.8.description>Миниатюрный генератор щита, который отражает входящие объекты. Включает дополнительные резервуары с охлаждающей жидкостью.\n\n&lt;color=#bb8f04&gt;+200 теплоёмкость, -250 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.8.description>
+	<SoS2ShuttleUpgradeTree.nodes.8.description>Небольшой генератор щита для шаттлов, который создаёт импульсное репульсионное поле, отражающее входящие объекты. Включает радиатор и небольшой бак с охлаждающей жидкостью.\n\n&lt;color=#bb8f04&gt;+200 теплоёмкость, -250 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.8.description>
 
 	<SoS2ShuttleUpgradeTree.nodes.9.label>Большой генератор щита</SoS2ShuttleUpgradeTree.nodes.9.label>
-	<SoS2ShuttleUpgradeTree.nodes.9.description>Большой генератор щита, который отражает входящие объекты. Включает дополнительные резервуары с охлаждающей жидкостью.\n\n&lt;color=#bb8f04&gt;+400 теплоёмкость, -500 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.9.description>
+	<SoS2ShuttleUpgradeTree.nodes.9.description>Большой генератор щита для шаттлов, который создаёт импульсное репульсионное поле, отражающее входящие объекты. Включает радиатор и небольшой бак с охлаждающей жидкостью.\n\n&lt;color=#bb8f04&gt;+400 теплоёмкость, -500 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.9.description>
 
-	<SoS2ShuttleUpgradeTree.nodes.10.label>Генератор щита архотек</SoS2ShuttleUpgradeTree.nodes.10.label>
-	<SoS2ShuttleUpgradeTree.nodes.10.description>[МЕНЬШЕ, ЧЕМ ПЕСЧИНКИ В СРАВНЕНИИ С ЗВЁЗДАМИ. СТРЕЛЯЙТЕ ВО ЧТО-НИБУДЬ ДРУГОЕ, ПОЖАЛУЙСТА.]\n\n&lt;color=#bb8f04&gt;+500 теплоёмкость, -100 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.10.description>
+	<SoS2ShuttleUpgradeTree.nodes.10.label>Генератор щита Архотек</SoS2ShuttleUpgradeTree.nodes.10.label>
+	<SoS2ShuttleUpgradeTree.nodes.10.description>[МАЛЫЕ, КАК ПЕСЧИНКИ НА ФОНЕ ЗВЁЗД\nСТРЕЛЯЙТЕ ВО ЧТО-НИБУДЬ ДРУГОЕ\nПОЖАЛУЙСТА.]\n\n&lt;color=#bb8f04&gt;+500 теплоёмкость, -100 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.10.description>
 
 
 	<!-- АПГРЕЙДЫ ШАТТЛОВ УСКОРИТЕЛИ -->
 
 	<SoS2ShuttleUpgradeTree.nodes.4.label>Овердрайв</SoS2ShuttleUpgradeTree.nodes.4.label>
-	<SoS2ShuttleUpgradeTree.nodes.4.description>Разгон ускорителей шаттла за счёт перегрузки реактора.\n\n&lt;color=#bb8f04&gt;+12 скорость, +20 расход топлива&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.4.description>
+	<SoS2ShuttleUpgradeTree.nodes.4.description>Разгон ускорителей шаттла за счёт перегрузки ядерного реактора.\n\n&lt;color=#bb8f04&gt;+12 скорость, +20 расход топлива&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.4.description>
 
 	<SoS2ShuttleUpgradeTree.nodes.5.label>Маневровые ускорители</SoS2ShuttleUpgradeTree.nodes.5.label>
-	<SoS2ShuttleUpgradeTree.nodes.5.description>Дополнительные двигатели низкой тяги, которые повышают манёвренность шаттла.\n\n&lt;color=#bb8f04&gt;+15% шанс уклонения, +5 расход топлива&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.5.description>
+	<SoS2ShuttleUpgradeTree.nodes.5.description>Дополнительные небольшие ускорители с низкой тягой для маневрирования в бою.\n\n&lt;color=#bb8f04&gt;+15% шанс уклонения, +5 расход топлива&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.5.description>
 
 	<SoS2ShuttleUpgradeTree.nodes.7.label>Архотек ускорители</SoS2ShuttleUpgradeTree.nodes.7.label>
-	<SoS2ShuttleUpgradeTree.nodes.7.description>[КАКОЙ ПАРУС ТЕБЯ НЕСЁТ? ПРОТИВ КАКОЙ ЗВЕЗДЫ? ОТВЕТ: ДА.]\n\n&lt;color=#bb8f04&gt;+12 скорость, +15% шанс уклонения, +100 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.7.description>
+	<SoS2ShuttleUpgradeTree.nodes.7.description>[КАКОЙ ПАРУС ТЕБЯ НЕСЁТ?\nПРОТИВ КАКОЙ ЗВЕЗДЫ?\nОТВЕТ: ДА.]\n\n&lt;color=#bb8f04&gt;+12 скорость, +15% шанс уклонения, +100 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.7.description>
 
 
 	<!-- АПГРЕЙДЫ ШАТТЛОВ РАЗНОЕ -->
 
 	<SoS2ShuttleUpgradeTree.nodes.6.label>Модуль М.У.Л</SoS2ShuttleUpgradeTree.nodes.6.label>
-	<SoS2ShuttleUpgradeTree.nodes.6.description>Модуль М.У.Л использует технологию перенаправления импульса, повышая грузовую вместимость шаттла.\n\n&lt;color=#bb8f04&gt;-8 скорость, +250 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.6.description>
+	<SoS2ShuttleUpgradeTree.nodes.6.description>Система на базе технологии перенаправления импульса. М.У.Л значительно повышает грузовую вместимость шаттла.\n\n&lt;color=#bb8f04&gt;-8 скорость, +250 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.6.description>
 
 	<SoS2ShuttleUpgradeTree.nodes.11.label>Бортовой доктор</SoS2ShuttleUpgradeTree.nodes.11.label>
-	<SoS2ShuttleUpgradeTree.nodes.11.description>Установленные возле пассажирских мест автоматизированные медицинские манипуляторы быстро залатают любые кровоточащие раны с минимальным качеством.\n\n&lt;color=#bb8f04&gt;-250 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.11.description>
+	<SoS2ShuttleUpgradeTree.nodes.11.description>Автоматизированный модуль шаттла с множеством систем для оказания медицинской помощи. Включает манипулятор, который способен быстро залатать любые раны с базовым качеством.\n\n&lt;color=#bb8f04&gt;-250 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.11.description>
 
 	<SoS2ShuttleUpgradeTree.nodes.12.label>Маскировочное устройство</SoS2ShuttleUpgradeTree.nodes.12.label>
-	<SoS2ShuttleUpgradeTree.nodes.12.description>Миниатюрное маскировочное устройство, которое повышает шанс уклонения в бою. Дополнительные резервуары с охлаждающей жидкостью также немного повышают теплоёмкость.\n\n&lt;color=#bb8f04&gt;+25% шанс уклонения, +50 теплоёмкость, -500 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.12.description>
+	<SoS2ShuttleUpgradeTree.nodes.12.description>Маскировочное устройство шаттла, построенное на базе корабельных технологий. Позволяет чаще уклоняться в космических боях. Включает радиатор и небольшой бак с охлаждающей жидкостью.\n\n&lt;color=#bb8f04&gt;+25% шанс уклонения, +50 теплоёмкость, -500 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.12.description>
 
 	<SoS2ShuttleUpgradeTree.nodes.13.label>Тепловой резервуар</SoS2ShuttleUpgradeTree.nodes.13.label>
-	<SoS2ShuttleUpgradeTree.nodes.13.description>Резервуар с охлаждающей жидкостью для шаттлов, повышает теплоёмкость.\n\n&lt;color=#bb8f04&gt;+200 теплоёмкость, -100 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.13.description>
+	<SoS2ShuttleUpgradeTree.nodes.13.description>Тепловой резервуар шаттла для повышения тепловой вместимости. Позволяет генератору щита дольше отражать входящие снаряды, что полезно как в космических, так и в наземных боях.\n\n&lt;color=#bb8f04&gt;+200 теплоёмкость, -100 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.13.description>
 
 	<SoS2ShuttleUpgradeTree.nodes.14.label>Гиперпространство</SoS2ShuttleUpgradeTree.nodes.14.label>
-	<SoS2ShuttleUpgradeTree.nodes.14.description>[КОРОБКА ВНУТРИ КОРОБКИ. ПОВТОРЕНИЕ ДО БЕСКОНЕЧНОСТИ. СЕРИЯ СХОДИТСЯ.]\n\n&lt;color=#bb8f04&gt;+500 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.14.description>
+	<SoS2ShuttleUpgradeTree.nodes.14.description>[КОРОБКА ВНУТРИ КОРОБКИ\nПОВТОРЕНИЕ ДО БЕСКОНЕЧНОСТИ\nСЕРИЯ СХОДИТСЯ.]\n\n&lt;color=#bb8f04&gt;+500 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.14.description>
 
 
 	<!-- АПГРЕЙДЫ ШАТТЛОВ ПАССАЖИРЫ -->
@@ -88,41 +88,41 @@
 	<!-- АПГРЕЙДЫ ШАТТЛОВ ВООРУЖЕНИЕ -->
 
 	<SoS2ShuttleUpgradeTree.nodes.23.label>Лазерная турель (А)</SoS2ShuttleUpgradeTree.nodes.23.label>
-	<SoS2ShuttleUpgradeTree.nodes.23.description>Лазерная турель шаттла. Позволяет вести огонь по вражеским кораблям, или перехватывать угрозы.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.23.description>
+	<SoS2ShuttleUpgradeTree.nodes.23.description>Лазерная турель шаттла для ведения наземных и космических боев. Лазерные турели способны перехватывать небольшие угрозы, или вести огонь по вражеским кораблям.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.23.description>
 	<SoS2ShuttleUpgradeTree.nodes.23.upgrades.1.turrets.0.gizmoLabel>Лазерная Турель</SoS2ShuttleUpgradeTree.nodes.23.upgrades.1.turrets.0.gizmoLabel>
 
 	<SoS2ShuttleUpgradeTree.nodes.26.label>Лазерная турель (B)</SoS2ShuttleUpgradeTree.nodes.26.label>
-	<SoS2ShuttleUpgradeTree.nodes.26.description>Лазерная турель шаттла. Позволяет вести огонь по вражеским кораблям, или перехватывать угрозы.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.26.description>
+	<SoS2ShuttleUpgradeTree.nodes.26.description>Лазерная турель шаттла для ведения наземных и космических боев. Лазерные турели способны перехватывать небольшие угрозы, или вести огонь по вражеским кораблям.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.26.description>
 	<SoS2ShuttleUpgradeTree.nodes.26.upgrades.1.turrets.0.gizmoLabel>Лазерная Турель</SoS2ShuttleUpgradeTree.nodes.26.upgrades.1.turrets.0.gizmoLabel>
 
 	<SoS2ShuttleUpgradeTree.nodes.29.label>Лазерная турель (C)</SoS2ShuttleUpgradeTree.nodes.29.label>
-	<SoS2ShuttleUpgradeTree.nodes.29.description>Лазерная турель шаттла. Позволяет вести огонь по вражеским кораблям, или перехватывать угрозы.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.29.description>
+	<SoS2ShuttleUpgradeTree.nodes.29.description>Лазерная турель шаттла для ведения наземных и космических боев. Лазерные турели способны перехватывать небольшие угрозы, или вести огонь по вражеским кораблям.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.29.description>
 	<SoS2ShuttleUpgradeTree.nodes.29.upgrades.1.turrets.0.gizmoLabel>Лазерная Турель</SoS2ShuttleUpgradeTree.nodes.29.upgrades.1.turrets.0.gizmoLabel>
 
 
 	<SoS2ShuttleUpgradeTree.nodes.24.label>Плазменная турель (А)</SoS2ShuttleUpgradeTree.nodes.24.label>
-	<SoS2ShuttleUpgradeTree.nodes.24.description>Плазменная турель шаттла. Позволяет вести огонь по вражеским кораблям.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.24.description>
+	<SoS2ShuttleUpgradeTree.nodes.24.description>Плазменная турель шаттла для ведения наземных и космических боев. Плазменные турели могут быть использованы для обстрела вражеских кораблей в бою.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.24.description>
 	<SoS2ShuttleUpgradeTree.nodes.24.upgrades.1.turrets.0.gizmoLabel>Плазменная Турель</SoS2ShuttleUpgradeTree.nodes.24.upgrades.1.turrets.0.gizmoLabel>
 
 	<SoS2ShuttleUpgradeTree.nodes.27.label>Плазменная турель (B)</SoS2ShuttleUpgradeTree.nodes.27.label>
-	<SoS2ShuttleUpgradeTree.nodes.27.description>Плазменная турель шаттла. Позволяет вести огонь по вражеским кораблям.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.27.description>
+	<SoS2ShuttleUpgradeTree.nodes.27.description>Плазменная турель шаттла для ведения наземных и космических боев. Плазменные турели могут быть использованы для обстрела вражеских кораблей в бою.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.27.description>
 	<SoS2ShuttleUpgradeTree.nodes.27.upgrades.1.turrets.0.gizmoLabel>Плазменная Турель</SoS2ShuttleUpgradeTree.nodes.27.upgrades.1.turrets.0.gizmoLabel>
 
 	<SoS2ShuttleUpgradeTree.nodes.30.label>Плазменная турель (C)</SoS2ShuttleUpgradeTree.nodes.30.label>
-	<SoS2ShuttleUpgradeTree.nodes.30.description>Плазменная турель шаттла. Позволяет вести огонь по вражеским кораблям.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.30.description>
+	<SoS2ShuttleUpgradeTree.nodes.30.description>Плазменная турель шаттла для ведения наземных и космических боев. Плазменные турели могут быть использованы для обстрела вражеских кораблей в бою.\n\n&lt;color=#bb8f04&gt;-200 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.30.description>
 	<SoS2ShuttleUpgradeTree.nodes.30.upgrades.1.turrets.0.gizmoLabel>Плазменная Турель</SoS2ShuttleUpgradeTree.nodes.30.upgrades.1.turrets.0.gizmoLabel>
 
 
 	<SoS2ShuttleUpgradeTree.nodes.25.label>Торпедный аппарат (А)</SoS2ShuttleUpgradeTree.nodes.25.label>
-	<SoS2ShuttleUpgradeTree.nodes.25.description>Торпедный аппарат шаттла. Позволяет выполнять бомбардировку вражеских кораблей.\n\n&lt;color=#bb8f04&gt;-400 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.25.description>
+	<SoS2ShuttleUpgradeTree.nodes.25.description>Торпедный аппарат шаттла для ведения космических боев. Позволяет выполнять бомбардировку вражеских кораблей.\n\n&lt;color=#bb8f04&gt;-400 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.25.description>
 	<SoS2ShuttleUpgradeTree.nodes.25.upgrades.1.turrets.0.gizmoLabel>Торпедный Аппарат</SoS2ShuttleUpgradeTree.nodes.25.upgrades.1.turrets.0.gizmoLabel>
 
 	<SoS2ShuttleUpgradeTree.nodes.28.label>Торпедный аппарат (B)</SoS2ShuttleUpgradeTree.nodes.28.label>
-	<SoS2ShuttleUpgradeTree.nodes.28.description>Торпедный аппарат шаттла. Позволяет выполнять бомбардировку вражеских кораблей.\n\n&lt;color=#bb8f04&gt;-400 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.28.description>
+	<SoS2ShuttleUpgradeTree.nodes.28.description>Торпедный аппарат шаттла для ведения космических боев. Позволяет выполнять бомбардировку вражеских кораблей.\n\n&lt;color=#bb8f04&gt;-400 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.28.description>
 	<SoS2ShuttleUpgradeTree.nodes.28.upgrades.1.turrets.0.gizmoLabel>Торпедный Аппарат</SoS2ShuttleUpgradeTree.nodes.28.upgrades.1.turrets.0.gizmoLabel>
 
 	<SoS2ShuttleUpgradeTree.nodes.31.label>Торпедный аппарат (C)</SoS2ShuttleUpgradeTree.nodes.31.label>
-	<SoS2ShuttleUpgradeTree.nodes.31.description>Торпедный аппарат шаттла. Позволяет выполнять бомбардировку вражеских кораблей.\n\n&lt;color=#bb8f04&gt;-400 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.31.description>
+	<SoS2ShuttleUpgradeTree.nodes.31.description>Торпедный аппарат шаттла для ведения космических боев. Позволяет выполнять бомбардировку вражеских кораблей.\n\n&lt;color=#bb8f04&gt;-400 вместимость&lt;/color&gt;</SoS2ShuttleUpgradeTree.nodes.31.description>
 	<SoS2ShuttleUpgradeTree.nodes.31.upgrades.1.turrets.0.gizmoLabel>Торпедный Аппарат</SoS2ShuttleUpgradeTree.nodes.31.upgrades.1.turrets.0.gizmoLabel>
 
 	

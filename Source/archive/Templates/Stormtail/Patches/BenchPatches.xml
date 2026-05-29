@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!--Electric Smelter-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ElectricSmelter"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+						<li>ArchoTool</li>
+					</linkableFacilities>
+				</li>
+			</value>
+	</Operation>	
+<!--Biofuel Refinery-->	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="BiofuelRefinery"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+						<li>ArchoTool</li>
+					</linkableFacilities>
+				</li>
+			</value>
+	</Operation>
+<!--Electric Stove-->		
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ElectricStove"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+						<li>ArchoTool</li>
+					</linkableFacilities>
+				</li>
+			</value>
+	</Operation>
+<!--Fueled Stove-->		
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="FueledStove"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+						<li>ArchoTool</li>
+					</linkableFacilities>
+				</li>
+			</value>
+	</Operation>
+<!--Brewery-->	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Brewery"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_AffectedByFacilities">
+						<linkableFacilities>
+							<li>ArchoTool</li>
+						</linkableFacilities>
+					</li>
+				</comps>
+			</value>
+	</Operation>
+<!--Electric Crematorium-->	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ElectricCrematorium"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+						<li>ArchoTool</li>
+					</linkableFacilities>
+				</li>
+			</value>
+	</Operation>
+<!--Fabrication Bench-->	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="FabricationBench"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+						<li>ArchoTool</li>
+					</linkableFacilities>
+				</li>
+			</value>
+	</Operation>	
+<!--Hivemind-->	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ArchotechHivemind"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+						<li>ArchoTool</li>
+					</linkableFacilities>
+				</li>
+			</value>
+	</Operation>
+<!--Butcher-->	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="TableButcher"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_AffectedByFacilities">
+					<linkableFacilities>
+						<li>ArchoTool</li>
+					</linkableFacilities>
+				</li>
+			</value>
+	</Operation>
+<!--Makes Tool Cabinets work with any workbench from any mod as long as it has vanilla Tool Cabinet linked-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef/comps/li[@Class='CompProperties_AffectedByFacilities']/linkableFacilities[li = 'ToolCabinet']</xpath>
+			<value>
+				<li>ArchoTool</li>
+			</value>
+	</Operation>
+<!--Pinnable-->	<!-- Unobtainer	-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Science Never Stops: You're Going Too Far</li>
+			<li>Science Never Stops: Ambition of the Cosmic</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="Table_SNS_PinnacleFabricator" or defName="Table_SNS_Unobtainer"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_AffectedByFacilities">
+							<linkableFacilities>
+								<li>ArchoTool</li>
+							</linkableFacilities>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

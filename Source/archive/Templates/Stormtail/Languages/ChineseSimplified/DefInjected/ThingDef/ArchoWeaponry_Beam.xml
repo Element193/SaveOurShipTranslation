@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Laser Sniper Rifle -->
+
+  <Archogun_BeamcanonBullet.label>上古？质射线枪</Archogun_BeamcanonBullet.label>
+  <Archogun_BeamcanonBullet.description>一种能将能量聚焦于一点上，远距离的光束武器.</Archogun_BeamcanonBullet.description>
+
+  <Archogun_Beamcanon.label>上古？质射线炮</Archogun_Beamcanon.label>
+  <Archogun_Beamcanon.description>一种能射出一束更为集中的光束的武器，几乎可以将目标从可观测宇宙中抹除。</Archogun_Beamcanon.description>
+  <Archogun_Beamcanon.tools.0.label>枪管</Archogun_Beamcanon.tools.0.label>
+  <Archogun_Beamcanon.tools.1.label>稳定握把</Archogun_Beamcanon.tools.1.label>
+  <Archogun_Beamcanon.verbs.0.label>测度器</Archogun_Beamcanon.verbs.0.label>
+
+
+</LanguageData>

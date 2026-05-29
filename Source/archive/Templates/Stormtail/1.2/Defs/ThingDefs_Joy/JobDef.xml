@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--======================= Building use =======================-->
+
+  <!-- Data Analyze -->
+  <JoyKindDef>
+    <defName>Analyze_Data</defName>
+    <label>Analyze_Data</label>
+  </JoyKindDef>
+
+</Defs>

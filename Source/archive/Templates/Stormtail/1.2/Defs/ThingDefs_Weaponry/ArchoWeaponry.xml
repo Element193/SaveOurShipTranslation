@@ -1,0 +1,1189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="SOSEXBaseWeapon">
+    <defName>Archogun_AlgaeBeamer</defName>
+    <label>Archomatter Blaster</label>    
+	<description>A rather dangerous weapon that is meant to inject the target with Archomatter Nanites and activate a mutation process. It's also very effective against buildings!</description>
+    <techLevel>Spacer</techLevel>
+	<graphicData>
+      <texPath>Things/Weapons/ArchobeamCanon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.2)</drawSize>	  
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+		<MarketValue>3600</MarketValue>	
+      <WorkToMake>90000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>.80</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>.95</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+	    <li>ArchoWeaponry</li>	    
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="True">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	  <li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+    <costList>
+      <ArchoAlgae>550</ArchoAlgae>
+	  <Archomatter>300</Archomatter>
+      <ComponentSpacer>10</ComponentSpacer>
+      <ComponentIndustrial>10</ComponentIndustrial>	  
+    </costList>
+        <generateCommonality>0.0001</generateCommonality>	
+    <weaponTags>
+	  <li>SOSEXBaseWeapon</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Archobeam</defaultProjectile>
+		<forcedMissRadius>1.1</forcedMissRadius>		
+        <warmupTime>1.3</warmupTime>
+		<burstShotCount>5</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <range>80</range>
+        <soundCast>ArchoBeamFire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Burn</def>
+            <amount>3</amount>
+            <chance>0.8</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>	
+  </ThingDef> 
+  
+     <ThingDef ParentName="BaseBullet">
+    <defName>Archobeam</defName>
+    <graphicData>
+      <texPath>Things/Mote/ArchoPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>	  
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>2.0</drawSize>	  
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>	
+    <projectile>
+      <damageDef>ArchobeamDmg</damageDef> 
+	  <stoppingPower>2</stoppingPower>
+	  <explosionRadius>2</explosionRadius>	  
+	  <damageAmountBase>40</damageAmountBase>
+	  <armorPenetrationBase>0.80</armorPenetrationBase>
+      <speed>20</speed>
+    </projectile>	
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <!--<fadeInTime>0</fadeInTime>-->
+      <solidTime>3.25</solidTime>
+      <fadeOutTime>2.25</fadeOutTime>
+      <growthRate>7.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+  
+  <DamageDef ParentName="BluntBase">
+    <defName>ArchobeamDmg</defName>
+    <label>Archobeam</label>
+    <workerClass>SOS2_EX.Damage.DamageWorker_ArchotechBurn</workerClass>	
+	<deathMessage>{0} has been mutated to death.</deathMessage>
+	<isRanged>true</isRanged>
+	<bluntStunDuration>1.8</bluntStunDuration>
+	<explosionCellMote>ArchoBeamMote</explosionCellMote>	
+	<soundExplosion>ArchoBeamExplosion</soundExplosion>
+	<buildingDamageFactor>1.70</buildingDamageFactor>
+  </DamageDef> 
+
+     <ThingDef ParentName="MoteBase">
+    <defName>ArchoBeamMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/SmallMeteorMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>2.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.05</fadeOutTime>
+      <growthRate>1.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>    
+
+     	<SoundDef>
+    <defName>ArchoBeamFire</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoBeamFire</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+     	<SoundDef>
+    <defName>ArchoBeamExplosion</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoBeamExplosion</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>   
+  
+    <ThingDef ParentName="SOSEXBaseWeapon">
+    <defName>Archogun_AlgaeFlamer</defName>
+    <label>Archomatter Flamer</label>
+    <description>Ever wondered what would happen when you spray liquid Archomatter all around?</description>
+    <tickerType>Normal</tickerType>
+	<graphicData>
+      <texPath>Things/Weapons/ArchoFlamer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>	
+      <drawSize>(1.5)</drawSize>		  
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	  <li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+    <statBases>
+		<MarketValue>3600</MarketValue>	
+      <WorkToMake>50000</WorkToMake>
+      <Mass>8</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.13</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <ArchoAlgae>700</ArchoAlgae>
+	  <Archomatter>500</Archomatter>
+      <ComponentSpacer>10</ComponentSpacer>
+      <ComponentIndustrial>10</ComponentIndustrial>	  
+    </costList>
+    <recipeMaker>
+      <researchPrerequisites>
+	    <li>ArchoWeaponry</li>    
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="True">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>	  
+    </recipeMaker>	
+    <techLevel>Ultra</techLevel>
+        <generateCommonality>0.0001</generateCommonality>	
+    <weaponTags>
+      <li>SOSEXQuality</li>
+    </weaponTags>
+	<equippedStatOffsets>
+      <MoveSpeed>-0.20</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Archoflame</defaultProjectile>
+        <warmupTime>1.3</warmupTime>
+        <range>40.9</range>
+		<minRange>2.9</minRange>
+		<forcedMissRadius>1.1</forcedMissRadius>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>ArchoFlamerFire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+	  <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>3</amount>
+            <chance>0.8</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.5</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+		<preExplosionSpawnThingDef>Filth_ArchoAcid</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>     
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Archoflame</defName>
+    <label>Archo flame</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArchoFlamer</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+	  <drawSize>.8</drawSize>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+	  <speed>18</speed>
+      <damageDef>ArchoFlameAcid</damageDef>
+	  <damageAmountBase>5</damageAmountBase>
+	  <stoppingPower>2</stoppingPower>
+      <explosionRadius>2.1</explosionRadius>	  
+	  <preExplosionSpawnThingDef>Filth_ArchoAcid</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.66</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+    </projectile>
+  </ThingDef>   
+  
+  <DamageDef>
+	<defName>ArchoFlameAcid</defName>
+	<label>Archo Acid</label>
+	<workerClass>DamageWorker_AddInjury</workerClass>
+	<externalViolence>true</externalViolence>
+	<isRanged>true</isRanged>
+	<impactSoundType>Slice</impactSoundType>
+	<hediff>ChemicalBurn</hediff>
+	<additionalHediffs>
+      <li>
+        <hediff>ToxicBuildup</hediff>
+        <severityPerDamageDealt>0.12</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+	<harmsHealth>true</harmsHealth>
+	<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+	<armorCategory>Heat</armorCategory>
+	<defaultArmorPenetration>10.00</defaultArmorPenetration>
+	<explosionCellMote>ArchoAcidMote</explosionCellMote>
+    <!--<explosionColorCenter>(100, 152, 100)</explosionColorCenter>
+    <explosionColorEdge>(100, 152, 100)</explosionColorEdge>-->
+    <soundExplosion>DeathAcidifier</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+	<buildingDamageFactor>4</buildingDamageFactor>
+  </DamageDef> 
+
+     <ThingDef ParentName="MoteBase">
+    <defName>ArchoAcidMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/ArchoAcidMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>6.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.05</fadeOutTime>
+      <growthRate>1.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>      
+  
+     	<SoundDef>
+    <defName>ArchoFlamerFire</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoFlamerFire</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+  <ThingDef ParentName="SOSEXBaseWeapon">
+    <defName>Archogun_Plasma</defName>
+    <label>Archomatter Plasma Eagle</label>    
+	<description>Heavy, dangerous and filled with dangerous substance. What more do you want?! Accurate short range.</description>
+    <techLevel>Spacer</techLevel>
+	<graphicData>
+      <texPath>Things/Weapons/ArchoPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.2)</drawSize>	  
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+		<MarketValue>3600</MarketValue>	
+      <WorkToMake>90000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>1.80</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+	    <li>ArchoWeaponry</li>	    
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="True">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	  <li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+    <costList>
+      <ArchoAlgae>350</ArchoAlgae>
+	  <Archomatter>300</Archomatter>
+      <ComponentSpacer>7</ComponentSpacer>
+      <ComponentIndustrial>7</ComponentIndustrial>	  
+    </costList>
+        <generateCommonality>0.0001</generateCommonality>	
+    <weaponTags>
+	  <li>SOSEXQuality</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ArchoPlasma</defaultProjectile>
+		<forcedMissRadius>1.1</forcedMissRadius>		
+        <warmupTime>3.0</warmupTime>
+		<burstShotCount>1</burstShotCount>
+		<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <range>60</range>
+        <soundCast>ArchoPlasmaFire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Burn</def>
+            <amount>3</amount>
+            <chance>0.8</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>	
+  </ThingDef> 
+  
+     <ThingDef ParentName="BaseBullet">
+    <defName>ArchoPlasma</defName>
+    <graphicData>
+      <texPath>Things/Projectile/ArchoPlasma</texPath>
+      <graphicClass>Graphic_Single</graphicClass>	  
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>2.0</drawSize>	  
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>	
+    <projectile>
+      <damageDef>ArchoPlasmaDmg</damageDef> 
+	  <stoppingPower>2</stoppingPower>
+	  <explosionRadius>2</explosionRadius>	  
+	  <damageAmountBase>80</damageAmountBase>
+	  <armorPenetrationBase>2.80</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>	
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <!--<fadeInTime>0</fadeInTime>-->
+      <solidTime>3.25</solidTime>
+      <fadeOutTime>2.25</fadeOutTime>
+      <growthRate>2.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>
+  
+  <DamageDef ParentName="BluntBase">
+    <defName>ArchoPlasmaDmg</defName>
+    <label>Archobeam</label>
+    <workerClass>SOS2_EX.Damage.DamageWorker_ArchotechBurn</workerClass>	
+	<deathMessage>{0} has been mutated to death.</deathMessage>
+	<isRanged>true</isRanged>
+	<bluntStunDuration>1.8</bluntStunDuration>
+	<explosionCellMote>ArchoPlasmaMote</explosionCellMote>	
+	<soundExplosion>ArchoBeamExplosion</soundExplosion>
+	<buildingDamageFactor>1.70</buildingDamageFactor>
+  </DamageDef> 
+
+     <ThingDef ParentName="MoteBase">
+    <defName>ArchoPlasmaMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/Cellmote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>2.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.05</fadeOutTime>
+      <growthRate>1.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef>    
+
+     	<SoundDef>
+    <defName>ArchoPlasmaFire</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoPlasmaFire</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+  
+  <ThingDef ParentName="SOSEXBaseWeapon">
+    <defName>Archogun_Disruptor</defName>
+    <label>Archomatter Disruptor Pistol</label>    
+	<description>Annoyed by fleshies or just about anything? Say nomore! Give them a touch of Archofrostbite</description>
+    <techLevel>Spacer</techLevel>
+        <generateCommonality>0.0001</generateCommonality>
+    <tickerType>Normal</tickerType>
+	<graphicData>
+      <texPath>Things/Weapons/ArchoDisruptor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>	  
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+		<MarketValue>3600</MarketValue>	
+      <WorkToMake>55000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>.65</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>ArchoWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <ArchoAlgae>150</ArchoAlgae>
+	  <Archomatter>150</Archomatter>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <weaponTags>
+	  <li>SOSEXQuality</li>
+    </weaponTags>	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ArchoDisruptorWave</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>50.9</range>
+		<forcedMissRadius>1.1</forcedMissRadius>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ArchoDisruptorFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>10</amount>
+            <chance>0.40</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>6</explosiveRadius>
+        <explosiveDamageType>EMP</explosiveDamageType>		
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>     
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>ArchoDisruptorWave</defName>
+    <label>Archodisruptor wave</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArchoDisruptorBlast</texPath>
+	  <!--texPath>Projectiles/ExtraContent/EMPWave</texPath-->
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2</drawSize>
+	  <color>(60,165,235)</color>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>ArchoEMP</damageDef>
+	  <stoppingPower>2</stoppingPower>
+	  <explosionRadius>2.3</explosionRadius>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>  
+  
+  <DamageDef>
+    <defName>ArchoEMP</defName>
+    <label>ArchoEMP</label>
+	<makesBlood>false</makesBlood>
+    <workerClass>DamageWorker_Frostbite</workerClass>	
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has succumbed to frostbite.</deathMessage>
+    <hediff>Frostbite</hediff>
+	<harmsHealth>true</harmsHealth>
+    <defaultDamage>50</defaultDamage>	
+    <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCellMote>ArchoDisruptorMote</explosionCellMote>
+    <!--<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>-->
+    <explosionInteriorMote>ArchoDisruptorMote</explosionInteriorMote>
+    <soundExplosion>ArchoDisruptorExplosion</soundExplosion>	
+	<defaultArmorPenetration>5</defaultArmorPenetration>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <armorCategory>Sharp</armorCategory>	
+	<isRanged>true</isRanged>
+	<buildingDamageFactor>.80</buildingDamageFactor>	
+  </DamageDef>  
+  
+     <ThingDef ParentName="MoteBase">
+    <defName>ArchoDisruptorMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/ArchoDisruptorMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>2.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.05</fadeOutTime>
+      <growthRate>1.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> 
+
+     	<SoundDef>
+    <defName>ArchoDisruptorFire</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoDisruptorFire</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef> 	
+    <defName>ArchoDisruptorExplosion</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoDisruptorExplosion</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+  <ThingDef ParentName="SOSEXBaseWeapon">
+    <defName>Archogun_Ripper</defName>
+    <label>Archomatter Ripper</label>    
+	<description>Simply vicious!</description>
+    <techLevel>Spacer</techLevel>
+	<graphicData>
+      <texPath>Things/Weapons/ArchoRipper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1)</drawSize>	  
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+		<MarketValue>3600</MarketValue>	
+      <WorkToMake>90000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>.80</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>.60</AccuracyMedium>
+      <AccuracyLong>.40</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>50</equippedAngleOffset>	
+    <recipeMaker>
+      <researchPrerequisites>
+	    <li>ArchoWeaponry</li>	    
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="True">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+	  <li>RewardStandardLowFreq</li>
+	  <li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+    <costList>
+      <ArchoAlgae>750</ArchoAlgae>
+	  <Archomatter>400</Archomatter>
+      <ComponentSpacer>10</ComponentSpacer>
+      <ComponentIndustrial>10</ComponentIndustrial>	  
+    </costList>
+        <generateCommonality>0.0001</generateCommonality>
+    <weaponTags>
+	  <li>SOSEXQuality</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ArchoRipper</defaultProjectile>		
+        <warmupTime>1.3</warmupTime>
+		<burstShotCount>6</burstShotCount>
+		<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <range>80</range>
+        <soundCast>ArchoRipperFire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Burn</def>
+            <amount>3</amount>
+            <chance>0.8</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>	
+  </ThingDef> 
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>ArchoRipper</defName>
+    <label>laser beam</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArchoRipperBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>1</drawSize>
+	  <!--<color>(255,65,60)</color>-->
+    </graphicData>	
+    <projectile>
+      <damageDef>ArchoRipperLaser</damageDef>
+	  <damageAmountBase>12</damageAmountBase>	  	  
+      <speed>150</speed>	  
+    </projectile>
+  </ThingDef>  
+  
+  <DamageDef ParentName="Flame">
+    <defName>ArchoRipperLaser</defName>
+    <label>Ripper Burn</label>
+    <workerClass>SOS2_EX.Damage.DamageWorker_ArchotechBurn</workerClass>
+	<buildingDamageFactor>.15</buildingDamageFactor>
+    <explosionCellMote>ArchoBeamMote</explosionCellMote>
+    <!--<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>-->
+    <soundExplosion>ArchoBeamExplosion</soundExplosion>		
+	<isRanged>true</isRanged>
+	<impactSoundType>Blunt</impactSoundType>
+	<canUseDeflectMetalEffect>true</canUseDeflectMetalEffect>	
+	<armorCategory>Sharp</armorCategory>
+  </DamageDef>
+
+  <SoundDef> 	
+    <defName>ArchoRipperFire</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoRipperFire</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <ThingDef ParentName="SOSEXBaseWeapon">
+    <defName>Archogun_Lance</defName>
+    <label>Archomatter Lancer</label>    
+	<description>So when you want to annihilate something at a distance and utterly incinerate it with toxic goop, this is the way. This weapon is so powerful it requires Zero crystal cooling!</description>
+    <techLevel>Spacer</techLevel>
+        <generateCommonality>0.0001</generateCommonality>	
+    <tickerType>Normal</tickerType>
+	<graphicData>
+      <texPath>Things/Weapons/ArchoBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>	  
+    </graphicData>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <statBases>
+		<MarketValue>3600</MarketValue>	
+      <WorkToMake>55000</WorkToMake>
+      <Mass>2</Mass>
+      <AccuracyTouch>.25</AccuracyTouch>
+      <AccuracyShort>.40</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>2</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>50</equippedAngleOffset>	
+    <recipeMaker>
+      <researchPrerequisite>ArchoWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <ArchoAlgae>800</ArchoAlgae>
+	  <Archomatter>750</Archomatter>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>5</ComponentIndustrial>
+	  <ZeroCrystal>50</ZeroCrystal>
+    </costList>
+    <weaponTags>
+	  <li>SOSEXQuality</li>
+    </weaponTags>	
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ArchoLanceBullet</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>70.9</range>
+		<forcedMissRadius>1.0</forcedMissRadius>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>ArchoLanceFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+		<extraMeleeDamages>
+          <li>
+            <def>Stun</def>
+            <amount>10</amount>
+            <chance>0.40</chance>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>10</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>		
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>     
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>ArchoLanceBullet</defName>
+    <label>laser beam</label>
+    <graphicData>
+      <texPath>Things/Projectile/ArchoLanceBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>	 
+      <drawSize>1</drawSize>
+	  <!--<color>(255,65,60)</color>-->
+    </graphicData>	
+	<thingClass>Projectile_Explosive</thingClass>		
+    <projectile>
+      <damageDef>ArcholanceFlame</damageDef>
+	  <explosionRadius>2</explosionRadius>	  
+	  <damageAmountBase>5</damageAmountBase>	  	  
+      <speed>100</speed>	  
+    </projectile>
+  </ThingDef>     
+  
+  <DamageDef>
+    <defName>ArcholanceFlame</defName>
+    <label>ArcholanceFlame</label>
+	<makesBlood>false</makesBlood>
+    <workerClass>SOS2_EX.Damage.DamageWorker_ArchotechBurn</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has mutated to oblivion.</deathMessage>
+    <hediff>ArchoAcid</hediff>
+	<harmsHealth>true</harmsHealth>
+    <minDamageToFragment>2</minDamageToFragment>	
+    <defaultDamage>5</defaultDamage>
+    <explosionHeatEnergyPerCell>7</explosionHeatEnergyPerCell>	
+    <explosionCellMote>ArchoLanceMote</explosionCellMote>
+    <!--<explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>-->
+    <soundExplosion>ArchoLanceExplosion</soundExplosion>	
+	<defaultArmorPenetration>15</defaultArmorPenetration>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <armorCategory>Heat</armorCategory>	
+    <combatLogRules>Damage_Flame</combatLogRules>	
+	<isRanged>true</isRanged>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>	
+	<buildingDamageFactor>.80</buildingDamageFactor>	
+  </DamageDef>
+  
+  <HediffDef ParentName="InjuryBase">
+    <defName>ArchoAcid</defName>
+    <label>burn</label>
+    <labelNoun>a strange burn</labelNoun>
+    <description>A strange burn.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>tended</labelTendedWellInner>
+        <labelSolidTendedWell>tended</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.30</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>molten scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.01875</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <canMerge>true</canMerge>
+      <destroyedLabel>Melted off</destroyedLabel>
+      <destroyedOutLabel>Melted out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+  
+<HediffDef ParentName="InfectionBase">
+    <defName>ArchoDisease</defName>
+    <hediffClass>SOS2_EX.Damage.Hediff_ArchoDisease</hediffClass>
+    <displayWound>true</displayWound>	
+    <label>Archomatter Infection</label>
+    <description>?????</description>
+    <defaultLabelColor>(223, 254, 48)</defaultLabelColor>
+	<initialSeverity>0.1</initialSeverity>
+    <lethalSeverity>2</lethalSeverity>
+	<tendable>true</tendable>
+    <taleOnVisible>HeatstrokeRevealed</taleOnVisible>
+    <stages>
+      <li>
+        <label>initial</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>Mutation Initial Stage</label>
+        <minSeverity>0.09</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.09</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>Mutation Minor Stage</label>
+        <minSeverity>0.5</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.6</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>Mutation Serious Stage</label>
+        <minSeverity>0.75</minSeverity>
+        <painOffset>0.25</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.7</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>Mutation Advanced Stage</label>
+        <minSeverity>1.90</minSeverity>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.90</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>6</baseTendDurationHours>
+        <severityPerDayTended>-1.0</severityPerDayTended>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>6.0</severityPerDayNotImmune>
+        <immunityPerDaySick>2.10</immunityPerDaySick>
+        <severityPerDayImmune>-1.70</severityPerDayImmune>
+        <immunityPerDayNotSick>-0.4</immunityPerDayNotSick>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>Infection Scartissue</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.01875</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <canMerge>true</canMerge>
+      <destroyedLabel>Too Severely mutated</destroyedLabel>
+      <destroyedOutLabel>Too Severely mutated</destroyedOutLabel>
+    </injuryProps>	
+  </HediffDef> 
+  
+     <ThingDef ParentName="MoteBase">
+    <defName>ArchoLanceMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/ArchoLanceMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>2.2</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>	
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.05</fadeOutTime>
+      <growthRate>4.40</growthRate>	  
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> 
+
+     	<SoundDef>
+    <defName>ArchoLanceFire</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoLanceFire</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef> 	
+    <defName>ArchoLanceExplosion</defName>	
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>	
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/ArchoLanceExplosion</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>   
+  
+  
+</Defs>

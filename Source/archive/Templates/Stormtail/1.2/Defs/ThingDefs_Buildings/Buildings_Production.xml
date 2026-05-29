@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BenchBase">
+    <defName>ArchotechHivemind</defName>
+    <label>Archotech Hivemind</label>
+    <description>01000001 01101100 01101100 00100000 01111001 01101111 01110101 01110010 00100000 01100010 01100001 01110011 01100101 00100000 01100001 01110010 01100101 00100000 01100010 01100101 01101100 01101111 01101110 01100111 00100000 01110100 01101111 00100000 01110101 01110011.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/Archomachine2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>		
+    <tickerType>Normal</tickerType>	
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <costList>
+      <Steel>7000</Steel>
+      <Plasteel>8000</Plasteel>
+	  <Silver>5000</Silver>
+      <ArchoNanoKit>100</ArchoNanoKit>
+	  <Archomatter>150</Archomatter>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <blockLight>false</blockLight>	
+    <statBases>
+      <WorkToBuild>8500</WorkToBuild>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <size>(5,5)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+	<designatorDropdown>ArchoMedDrug</designatorDropdown>	
+    <passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	  <soundAmbient>HivemindIdle</soundAmbient>	  	  
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li> 
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_GraphicOnOff"/>  
+      <li Class="StormFox.SpecialAnimationPlayer_ON"><!-- A little present~ -->
+	  
+<!-- Mote comes here -->
+        <mote>HivemindMote</mote>
+<!-- Set "finite valued function" that motespawn range -->
+        <StartRange>(0,0,0)</StartRange>
+        <EndRange>(0,0,0)</EndRange>
+<!-- 1tick=1/60second -->	
+        <TicktoSpawn>200</TicktoSpawn>
+<!-- How many motes do you want UwU -->	
+        <QuantitytoSpawn>6</QuantitytoSpawn>
+<!-- DrawSize -->	
+        <PlaySize>0.98~5.02</PlaySize>
+<!-- You konw~~ -->	
+        <RotationRate>10~200</RotationRate>
+<!-- They're gonNA be flying everywhere~~ -->		
+        <SpeedrangeX>-0.8~20.8</SpeedrangeX>
+        <SpeedrangeY>-0.8~20.8</SpeedrangeY>
+      </li>		
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(230,249,203,0)</glowColor>
+      </li>	  
+      <li Class="CompProperties_PlaySoundOnDestroy">
+        <sound>HivemindDeath</sound>
+      </li>		  
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ArchomatterResearch</li>
+    </researchPrerequisites>
+  </ThingDef>   
+  
+  
+  <ThingDef ParentName="BenchBase">
+    <defName>ArchoVendor</defName>
+    <label>Archo Vending Machine</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>???</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoVendor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>		
+      </damageData>
+        <drawSize>(2.3,2.3)</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>	
+    <costList>
+      <Steel>120</Steel>
+	  <ComponentIndustrial>5</ComponentIndustrial>
+	  <Archomatter>100</Archomatter>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <designationCategory>SoS2Ex</designationCategory>
+	<designatorDropdown>ArchoVendor</designatorDropdown>
+	<uiIconPath>Things/Building/Ship/ArchoVendor</uiIconPath>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <minifiedDef>MinifiedThing</minifiedDef>	
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+		<basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(216, 255, 253)</glowColor>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>	
+	<placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+	    <researchPrerequisites>
+      <li>ArchoReconstruction</li>
+    </researchPrerequisites>
+  </ThingDef> 
+  
+  <ThingDef ParentName="BenchBase">
+    <defName>PizzaVendor</defName>
+    <label>Pizza Vending Machine</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>Ready and hot Pizza's!</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/PizzaVendor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>		
+      </damageData>
+        <drawSize>(2.3,2.3)</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>	
+    <costList>
+      <Steel>120</Steel>
+	  <ComponentIndustrial>5</ComponentIndustrial>
+	  <Archomatter>20</Archomatter>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <designationCategory>SoS2Ex</designationCategory>
+	<designatorDropdown>PizzaVendor</designatorDropdown>
+	<uiIconPath>Things/Building/Ship/PizzaVendor</uiIconPath>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <minifiedDef>MinifiedThing</minifiedDef>	
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+		<basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(216, 255, 253)</glowColor>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>	
+	<placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+	    <researchPrerequisites>
+      <li>ArchoReconstruction</li>
+    </researchPrerequisites>
+  </ThingDef>   
+
+     <SoundDef>
+    <defName>HivemindIdle</defName>
+    <sustain>True</sustain> 	
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused> 	  
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/HivemindIdle</clipPath>
+          </li>
+        </grains>
+        <!--<pitchRange>0.2~0.8</pitchRange>-->
+        <volumeRange>725~725</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>    
+  
+  <SoundDef>
+    <defName>HivemindDeath</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Ship/HivemindDeath</clipFolderPath>
+          </li>
+        </grains>
+        <onCamera>True</onCamera>
+        <volumeRange>522</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+
+  <SoundDef>
+    <defName>HivemindOff</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Ship/HivemindOff</clipFolderPath>
+          </li>
+        </grains>
+        <onCamera>False</onCamera>
+        <volumeRange>522</volumeRange>
+        <pitchRange>0.95~1.05</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+  <ThingDef ParentName="BenchBase">
+    <defName>ArchotechWorkbench</defName>
+    <label>Archotech Workbench</label>
+    <description>Fabricate some archojazz.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchotechWorkbench</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.5,2.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <rotatable>true</rotatable>		
+    <tickerType>Normal</tickerType>	
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costList>
+      <Steel>700</Steel>
+      <Plasteel>800</Plasteel>
+	  <Silver>200</Silver>
+      <ComponentSpacer>15</ComponentSpacer>
+	  <Archomatter>150</Archomatter>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <blockLight>false</blockLight>	
+    <statBases>
+      <WorkToBuild>8500</WorkToBuild>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	  <soundAmbient>HivemindIdle</soundAmbient>	  	  
+    </building>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_GraphicOnOff"/>  
+      <li Class="StormFox.SpecialAnimationPlayer_ON"><!-- A little present~ -->
+	  
+<!-- Mote comes here -->
+        <mote>WorkbenchMote</mote>
+<!-- Set "finite valued function" that motespawn range -->
+        <StartRange>(0,0,0)</StartRange>
+        <EndRange>(0,0,0)</EndRange>
+<!-- 1tick=1/60second -->	
+        <TicktoSpawn>200</TicktoSpawn>
+<!-- How many motes do you want UwU -->	
+        <QuantitytoSpawn>2</QuantitytoSpawn>
+<!-- DrawSize -->	
+        <PlaySize>0.98~5.02</PlaySize>
+<!-- You konw~~ -->	
+        <RotationRate>0~0</RotationRate>
+<!-- They're gonNA be flying everywhere~~ -->		
+        <SpeedrangeX>-0.1~0.8</SpeedrangeX>
+        <SpeedrangeY>-0.8~0.8</SpeedrangeY>
+      </li>		
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(230,249,203,0)</glowColor>
+      </li>	  
+      <li Class="CompProperties_PlaySoundOnDestroy">
+        <sound>HivemindDeath</sound>
+      </li>		  
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ArchomatterResearch</li>
+    </researchPrerequisites>
+  </ThingDef>  
+
+  <ThingDef ParentName="BenchBase">
+    <defName>AscendedArchotechWorkbench</defName>
+    <label>Ascended Archotech Workbench</label>
+    <description>Fabricate some archojazz.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/AscendedArchotechWorkbench</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.5,2.5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <rotatable>true</rotatable>		
+    <tickerType>Normal</tickerType>	
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costList>
+      <Steel>700</Steel>
+      <Plasteel>800</Plasteel>
+	  <Silver>200</Silver>
+      <ArchoNanoKit>25</ArchoNanoKit>
+	  <AscendedArchomatter>150</AscendedArchomatter>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <blockLight>false</blockLight>	
+    <statBases>
+      <WorkToBuild>8500</WorkToBuild>
+      <MaxHitPoints>70000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <size>(3,1)</size>
+    <designationCategory>SoS2Ex</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+	  <soundAmbient>HivemindIdle</soundAmbient>	  	  
+    </building>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_GraphicOnOff"/>  
+      <li Class="StormFox.SpecialAnimationPlayer_ON"><!-- A little present~ -->
+	  
+<!-- Mote comes here -->
+        <mote>AscendedWorkbenchMote</mote>
+<!-- Set "finite valued function" that motespawn range -->
+        <StartRange>(0,0,0)</StartRange>
+        <EndRange>(0,0,0)</EndRange>
+<!-- 1tick=1/60second -->	
+        <TicktoSpawn>200</TicktoSpawn>
+<!-- How many motes do you want UwU -->	
+        <QuantitytoSpawn>2</QuantitytoSpawn>
+<!-- DrawSize -->	
+        <PlaySize>0.98~2.02</PlaySize>
+<!-- You konw~~ -->	
+        <RotationRate>0~0</RotationRate>
+<!-- They're gonNA be flying everywhere~~ -->		
+        <SpeedrangeX>-0.1~0.8</SpeedrangeX>
+        <SpeedrangeY>-0.8~0.8</SpeedrangeY>
+      </li>		
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(76,250,255,0)</glowColor>
+      </li>	  
+      <li Class="CompProperties_PlaySoundOnDestroy">
+        <sound>HivemindDeath</sound>
+      </li>		  
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>ArchomatterAscension</li>
+    </researchPrerequisites>
+  </ThingDef>     
+
+</Defs>

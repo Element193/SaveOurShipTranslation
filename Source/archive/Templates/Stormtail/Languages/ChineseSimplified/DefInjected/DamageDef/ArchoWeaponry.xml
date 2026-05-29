@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ArchobeamDmg.label>远古-镭射</ArchobeamDmg.label>
+  <ArchobeamDmg.deathMessage>{0} 死了.</ArchobeamDmg.deathMessage>
+
+  <ArchoFlameAcid.label>远古-腐蚀液</ArchoFlameAcid.label>
+  <ArchoFlameAcid.deathMessage>{0} 被烧穿了.</ArchoFlameAcid.deathMessage>
+
+  <ArchoPlasmaDmg.label>远古-镭射</ArchoPlasmaDmg.label>
+  <ArchoPlasmaDmg.deathMessage>{0} 死了.</ArchoPlasmaDmg.deathMessage>
+
+  <ArchoEMP.label>远古-氙脉冲</ArchoEMP.label>
+  <ArchoEMP.deathMessage>{0} 的神经死亡了.</ArchoEMP.deathMessage>
+
+  <ArchoRipperLaser.label>超力燃烧</ArchoRipperLaser.label>
+  <ArchoRipperLaser.deathMessage>{0} 被榨成了碳.</ArchoRipperLaser.deathMessage>
+
+  <ArcholanceFlame.label>远古-低温灼烧</ArcholanceFlame.label>
+  <ArcholanceFlame.deathMessage>{0} 再也无法说话了.</ArcholanceFlame.deathMessage>
+
+
+</LanguageData>

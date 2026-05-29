@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PitchBlackness.label>远古风暴</PitchBlackness.label>
+  <PitchBlackness.letterText>奇异的光芒划过天际，恐怖的黑暗笼罩大地。（作者就叫Stormy哟~）</PitchBlackness.letterText>
+  <PitchBlackness.letterLabel>不祥？黑暗</PitchBlackness.letterLabel>
+
+  <ArchoMeteorite.label>奇异彗星！</ArchoMeteorite.label>
+  <ArchoMeteorite.letterText>奇异的光芒划过天际，黎明的曙光照亮了小镇，一枚奇怪的陨石砸落地表。</ArchoMeteorite.letterText>
+  <ArchoMeteorite.letterLabel>不祥？奇岩</ArchoMeteorite.letterLabel>
+
+
+  <!-- Not quite sure it wll work at the moment -->
+
+  <SmallMeteorite.label>小的陨石</SmallMeteorite.label>
+
+
+</LanguageData>

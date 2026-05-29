@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>BioHive</defName>
+    <label>Archogenetic Hive (The Build-A-Bug)</label>
+    <description>A strange building fed with Archomatter to reconstruct certain beasties. (A new kind of biological basedefense. These little guys will protect you!)</description>
+    <thingClass>Hive</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/Buildabug</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>3.6</drawSize>
+    </graphicData>
+	<size>3,3</size>	
+    <researchPrerequisites>
+      <li>ArchoReconstruction</li>
+    </researchPrerequisites>
+    <uiIconScale>0.35</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <pathCost>50</pathCost>
+    <receivesSignals>true</receivesSignals>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <designationCategory>SoS2Ex</designationCategory>
+    <building>
+      <shipPart>true</shipPart>
+    </building>
+    <costList>
+      <Archomatter>1000</Archomatter>
+      <ArchoAlgae>800</ArchoAlgae>
+    </costList>	
+    <passability>PassThroughOnly</passability>
+    <killedLeavings>
+      <InsectJelly>100</InsectJelly>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_CanBeDormant">
+        <startsDormant>false</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+      <li Class="CompProperties_WakeUpDormant" />
+      <li Class="CompProperties_SpawnerPawn">
+        <spawnablePawnKinds>
+          <li>Archolarvae</li>
+          <li>Archonibbler</li>
+          <li>Archohiver</li>		  
+        </spawnablePawnKinds>
+        <lordJob>LordJob_DefendAndExpandHive</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>500</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>8000</maxSpawnedPawnsPoints>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>100</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
+      </li>
+      <li Class="CompProperties_SpawnerHives" />
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>ArchoJelly</thingToSpawn>
+        <spawnCount>200</spawnCount>
+        <spawnIntervalRange>2600~3000</spawnIntervalRange>
+        <spawnMaxAdjacent>40</spawnMaxAdjacent>
+        <spawnForbidden>true</spawnForbidden>
+        <saveKeysPrefix>jelly</saveKeysPrefix>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>GlowPod</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>30000~60000</spawnIntervalRange>
+        <spawnMaxAdjacent>1</spawnMaxAdjacent>
+        <saveKeysPrefix>pod</saveKeysPrefix>
+        <inheritFaction>true</inheritFaction>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>6</heatPerSecond>
+        <heatPushMaxTemperature>38</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_Slime</filthDef>
+        <spawnCountOnSpawn>10</spawnCountOnSpawn>
+        <spawnMtbHours>1</spawnMtbHours>
+        <spawnRadius>10</spawnRadius>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>18</constructionSkillPrerequisite>	
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>CyberneticHive</defName>
+    <label>Cybernetic Hive (The Build-A-Bot)</label>
+    <description>A strange building fed with Archomatter to construct small robots. (A new kind of cybernetic basedefense. These little guys will protect you!)</description>
+    <thingClass>Hive</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/Buildabot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>3.3</drawSize>
+    </graphicData>
+	<size>3,3</size>
+    <researchPrerequisites>
+      <li>ArchoReconstruction</li>
+    </researchPrerequisites>
+    <uiIconScale>0.65</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <pathCost>50</pathCost>
+    <receivesSignals>true</receivesSignals>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <designationCategory>SoS2Ex</designationCategory>
+    <building>
+      <shipPart>false</shipPart>
+    </building>
+    <costList>
+      <Archomatter>6500</Archomatter>
+      <ArchoAlgae>3500</ArchoAlgae>
+      <ArchoNanoKit>25</ArchoNanoKit>	  
+    </costList>	
+    <passability>PassThroughOnly</passability>
+    <comps>
+      <li Class="CompProperties_CanBeDormant">
+        <startsDormant>true</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+      <li Class="CompProperties_WakeUpDormant" />
+      <li Class="CompProperties_SpawnerPawn">
+        <spawnablePawnKinds>
+          <li>CyberDrone</li>	  
+        </spawnablePawnKinds>
+        <lordJob>LordJob_DefendAndExpandHive</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>49999995</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>49999995</maxSpawnedPawnsPoints>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>100</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
+      </li>
+      <li Class="CompProperties_SpawnerHives" />
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>6</heatPerSecond>
+        <heatPushMaxTemperature>100</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_ArchoByte</filthDef>
+        <spawnCountOnSpawn>10</spawnCountOnSpawn>
+        <spawnMtbHours>1</spawnMtbHours>
+        <spawnRadius>10</spawnRadius>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>	
+  </ThingDef> 
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>CyberneticDragonHive</defName>
+    <label>Cybernetic Dragon Hive</label>
+    <description>A strange building fed with Archomatter to construct mechanical dragons. (A new kind of cybernetic basedefense. Dragons to defend you, oh jeez!)</description>
+    <thingClass>Hive</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/Buildabotdragon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>3.3</drawSize>
+    </graphicData>
+	<size>3,3</size>
+    <researchPrerequisites>
+      <li>ArchoReconstruction</li>
+    </researchPrerequisites>
+    <uiIconScale>0.65</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <pathCost>50</pathCost>
+    <receivesSignals>true</receivesSignals>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <designationCategory>SoS2Ex</designationCategory>
+    <building>
+      <shipPart>false</shipPart>
+    </building>
+    <costList>
+      <Archomatter>6500</Archomatter>
+      <ArchoAlgae>3500</ArchoAlgae>
+      <ArchoNanoKit>25</ArchoNanoKit>	  
+    </costList>	
+    <passability>PassThroughOnly</passability>
+    <comps>
+      <li Class="CompProperties_CanBeDormant">
+        <startsDormant>true</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+      <li Class="CompProperties_WakeUpDormant" />
+      <li Class="CompProperties_SpawnerPawn">
+        <spawnablePawnKinds>
+          <li>ArchoDragon</li>	  
+        </spawnablePawnKinds>
+        <lordJob>LordJob_DefendAndExpandHive</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>9999999</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>9999999</maxSpawnedPawnsPoints>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>100</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
+      </li>
+      <li Class="CompProperties_SpawnerHives" />
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>6</heatPerSecond>
+        <heatPushMaxTemperature>100</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_ArchoByte</filthDef>
+        <spawnCountOnSpawn>10</spawnCountOnSpawn>
+        <spawnMtbHours>1</spawnMtbHours>
+        <spawnRadius>10</spawnRadius>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>	
+  </ThingDef>    
+
+</Defs>

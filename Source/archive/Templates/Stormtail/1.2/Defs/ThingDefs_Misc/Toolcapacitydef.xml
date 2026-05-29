@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ToolCapacityDef>
+    <defName>FrostStrike</defName>
+    <label>FrostStrike</label>
+  </ToolCapacityDef>
+  
+  <ToolCapacityDef>
+    <defName>ArchoDragonBreath</defName>
+    <label>ArchoDragonBreath</label>
+  </ToolCapacityDef>  
+  
+  <ManeuverDef>
+    <defName>ArchoDragonBreathManeuver</defName>
+    <requiredCapacity>ArchoDragonBreath</requiredCapacity>
+    <verb>
+      <verbClass>Verb_Shoot</verbClass>
+      <meleeDamageDef>Breathstrike</meleeDamageDef> 
+    </verb>
+    <!--<logEntryDef>RangedAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>-->
+  </ManeuverDef>  
+  
+  <DamageDef>
+    <defName>Breathstrike</defName>
+    <label>Breathstrike</label>
+    <workerClass>SOS2_EX.Damage.DamageWorker_ArchotechBurn</workerClass>
+    <externalViolence>true</externalViolence>
+	<isRanged>true</isRanged>	
+    <deathMessage>{0} has succumbed to the dragons might.</deathMessage>
+    <hediff>Burn</hediff>
+	<explosionCellMote>AscendedArchoBeamMote</explosionCellMote>	
+	<soundExplosion>ArchoBeamExplosion</soundExplosion>
+	<buildingDamageFactor>3.70</buildingDamageFactor>	
+    <hediffSolid>Crack</hediffSolid>
+    <additionalHediffs>
+      <li>
+        <hediff>ArchoDisease</hediff>
+        <severityPerDamageDealt>0.015</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+  </DamageDef>    
+
+  <ManeuverDef>
+    <defName>FrostStrikeManeuver</defName>
+    <requiredCapacity>FrostStrike</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Mutationbite</meleeDamageDef> 
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <DamageDef>
+    <defName>Mutationbite</defName>
+    <label>Mutation Bite</label>
+    <workerClass>DamageWorker_Bite</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has succumbed to Mutation Bite.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <additionalHediffs>
+      <li>
+        <hediff>ArchoDisease</hediff>
+        <severityPerDamageDealt>0.015</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+  </DamageDef>  
+  
+  
+  
+  <!--=============================METEOR MOB DAMAGE=============================-->
+  
+  <ToolCapacityDef>
+    <defName>Irradiated</defName>
+    <label>Irradiated</label>
+  </ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>Irradiated</defName>
+    <requiredCapacity>Irradiated</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>IrradiatedScratch</meleeDamageDef> 
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <DamageDef ParentName="Scratch">
+    <defName>IrradiatedScratch</defName>
+    <label>Irradiated Scratch</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Irradiated</hediff>
+        <severityPerDamageDealt>0.006</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="Scratch">
+    <defName>IrradiatedScratches</defName>
+    <label>Irradiated Scratch</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+  </DamageDef>  
+  
+  <HediffDef ParentName="InjuryBase">
+    <defName>Irradiated</defName>
+    <label>Irradiated</label>
+    <description>Irradiated.</description>
+    <displayWound>false</displayWound>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>tended</labelTendedWellInner>
+        <labelSolidTendedWell>tended</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.09</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>Irradiated Tissue</permanentLabel>
+      </li>
+    </comps>
+    <defaultLabelColor>(76, 220, 218)</defaultLabelColor>	
+    <injuryProps>
+      <painPerSeverity>0.001</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.002</averagePainPerSeverityPermanent>
+      <canMerge>true</canMerge>
+      <destroyedLabel>Lost to Radiation</destroyedLabel>
+    </injuryProps>
+  </HediffDef>    
+  
+</Defs>

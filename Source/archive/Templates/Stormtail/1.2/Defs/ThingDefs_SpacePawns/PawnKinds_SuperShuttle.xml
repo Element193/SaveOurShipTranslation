@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BaseShuttle">
+    <defName>SuperShuttleCargoRace</defName>
+    <label>Archo Shuttle (hover mode)</label>
+    <description>A cargo shuttle set to hover mode, allowing it to be used as part of a caravan.</description>
+    <statBases>
+      <MoveSpeed>30</MoveSpeed>
+	  <Mass>600</Mass>
+      <CarryingCapacity>20000</CarryingCapacity>
+      <ArmorRating_Blunt>5.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>5.3</ArmorRating_Sharp>
+      <MeatAmount>0</MeatAmount>
+      <MarketValue>4500</MarketValue>
+    </statBases>
+    <verbs>
+    </verbs>
+    <race>
+      <intelligence>Animal</intelligence>
+      <thinkTreeMain>ShuttleThinkTree</thinkTreeMain>
+      <body>SoSShuttlecraft</body>
+      <baseBodySize>8.0</baseBodySize>
+      <baseHealthScale>120.0</baseHealthScale>
+		<packAnimal>true</packAnimal>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+	  <ageGenerationCurve>
+        <points>
+          <li>(0,0)</li>
+		  <li>(0.001,100)</li>
+		  <li>(0.01,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <soundCallIntervalRange>
+        <min>9999</min>
+        <max>9999</max>
+      </soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>424</Steel>
+      <Plasteel>424</Plasteel>
+      <ComponentIndustrial>16</ComponentIndustrial>
+	  <Archomatter>15</Archomatter>
+    </butcherProducts>
+	<comps>
+		<li Class="CompProperties_Refuelable">
+			<fuelCapacity>200.0</fuelCapacity>
+			<initialConfigurableTargetFuelLevel>200</initialConfigurableTargetFuelLevel>
+			<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+			<fuelConsumptionRate>0.0001</fuelConsumptionRate>
+			<fuelFilter>
+				<thingDefs>
+					<li>ArchomatterPods</li>
+				</thingDefs>
+			</fuelFilter>
+			<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+		</li>
+		<li Class="CompProperties_BecomeBuilding">
+			<buildingDef>SuperShuttle</buildingDef>
+			<fuelPerTile>0.0001</fuelPerTile>
+			<skyfaller>SuperShuttleIncomingCargo</skyfaller>
+		</li>
+	</comps>
+  </ThingDef>
+
+	<PawnKindDef>
+    <defName>SuperShuttleCargoHover</defName>
+    <label>Archo Shuttle (hover mode)</label>
+    <race>SuperShuttleCargoRace</race>
+	<combatPower>999999</combatPower>
+	<isFighter>false</isFighter>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <aiAvoidCover>true</aiAvoidCover>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Building/Ship/ShuttleHover</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>6</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+    <weaponTags>
+    </weaponTags>
+  </PawnKindDef>
+  
+
+</Defs>

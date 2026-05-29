@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <ThingDef ParentName="BuildingBase">
+    <defName>ShipHullTileGlow</defName>
+    <label>Lighted Hull Plating</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Ship/HullPlateLight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<seeThroughFog>true</seeThroughFog>
+    <uiIconPath>Things/Building/Ship/HullPlateLight</uiIconPath>
+    <building>
+	  <ai_chillDestination>false</ai_chillDestination>
+	  <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <shipPart>true</shipPart>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Ship/HullPlateLight</texPath>
+      </blueprintGraphicData>
+    </building>
+	<coversFloor>false</coversFloor>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <passability>Standable</passability>
+	<placingDraggableDimensions>2</placingDraggableDimensions>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>900</WorkToBuild>
+      <Flammability>0.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <description>Spaceworthy hull plating that gives off light! Designates this tile (and any objects built on it) as part of a ship. Must be placed inside an outer hull.</description>
+    <costList>
+      <Steel>3</Steel>
+	  <Plasteel>1</Plasteel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_ShipPart"/>
+	  <li Class="CompProperties_RoofMe"/>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(158,218,229,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_InsideShipRoom</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>false</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>SoS2Ex</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>ShipBasics</li>
+    </researchPrerequisites>
+	<fillPercent>0.0</fillPercent>
+  </ThingDef> -->
+
+  <ArchoreactorCoreBlast.label>远古反应堆爆炸</ArchoreactorCoreBlast.label>
+  <ArchoreactorCoreBlast.deathMessage>{0} 消失了.</ArchoreactorCoreBlast.deathMessage>
+
+  <AscendedArchoreactorCoreBlast.label>远古反应堆失衡</AscendedArchoreactorCoreBlast.label>
+  <AscendedArchoreactorCoreBlast.deathMessage>{0} 小水灵.</AscendedArchoreactorCoreBlast.deathMessage>
+
+
+  <!-- Tool Cabinet -->
+
+  <SlagExplosion.label>废料爆炸</SlagExplosion.label>
+  <SlagExplosion.deathMessage>{0} 死于太空事故.</SlagExplosion.deathMessage>
+
+  <DaegonTurretExplosion.label>冷射线流冲击</DaegonTurretExplosion.label>
+  <DaegonTurretExplosion.deathMessage>{0} 死了.</DaegonTurretExplosion.deathMessage>
+
+
+</LanguageData>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_ArchoAcid</defName>
+    <label>Archo Acid Puddle</label>
+	<description>A puddle of sticky, moving noxious liquid.</description>
+    <statBases>
+      <Beauty>-80</Beauty>
+      <Cleanliness>-15</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/ArchoSpatter</texPath>
+      <!--<color>(100, 152, 100, 170)</color>-->
+    </graphicData>
+	<pathCost>80</pathCost>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>90</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+	  <maxThickness>4</maxThickness>
+    </filth>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_AscendedArchoAcid</defName>
+    <label>Ascended Archo Acid Puddle</label>
+	<description>A puddle of sticky, moving noxious liquid.</description>
+    <statBases>
+      <Beauty>-80</Beauty>
+      <Cleanliness>-115</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/AscendedArchoSpatter</texPath>
+      <!--<color>(100, 152, 100, 170)</color>-->
+    </graphicData>
+	<pathCost>95</pathCost>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>90</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+	  <maxThickness>4</maxThickness>
+    </filth>
+  </ThingDef>  
+ 
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_ArchoByte</defName>
+    <label>Archobytes</label>
+	<description>Weird symbols.</description>
+    <statBases>
+      <Beauty>2000</Beauty>
+      <Cleanliness>15</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/ArchoByte</texPath>
+      <!--<color>(100, 152, 100, 170)</color>-->
+    </graphicData>
+	<pathCost>0</pathCost>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>90</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+	  <maxThickness>6</maxThickness>
+    </filth>
+  </ThingDef>
+
+</Defs>

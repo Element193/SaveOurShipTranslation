@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- MeteorMobs -->
+
+  <ArchoDrone.label>上古机械</ArchoDrone.label>
+  <ArchoDrone.corePart.parts.0.parts.0.parts.1.customLabel>视觉传感器-左</ArchoDrone.corePart.parts.0.parts.0.parts.1.customLabel>
+  <ArchoDrone.corePart.parts.0.parts.0.parts.2.customLabel>视觉传感器-右</ArchoDrone.corePart.parts.0.parts.0.parts.2.customLabel>
+  <ArchoDrone.corePart.parts.0.parts.0.parts.3.customLabel>声波探测器-左</ArchoDrone.corePart.parts.0.parts.0.parts.3.customLabel>
+  <ArchoDrone.corePart.parts.0.parts.0.parts.4.customLabel>声波探测器-右</ArchoDrone.corePart.parts.0.parts.0.parts.4.customLabel>
+  <ArchoDrone.corePart.parts.1.customLabel>左肩甲</ArchoDrone.corePart.parts.1.customLabel>
+  <ArchoDrone.corePart.parts.1.parts.0.customLabel>左臂</ArchoDrone.corePart.parts.1.parts.0.customLabel>
+  <ArchoDrone.corePart.parts.1.parts.0.parts.0.customLabel>左切割刃</ArchoDrone.corePart.parts.1.parts.0.parts.0.customLabel>
+  <ArchoDrone.corePart.parts.1.parts.0.parts.1.customLabel>左机械爪</ArchoDrone.corePart.parts.1.parts.0.parts.1.customLabel>
+  <ArchoDrone.corePart.parts.1.parts.0.parts.1.parts.0.customLabel>左小指</ArchoDrone.corePart.parts.1.parts.0.parts.1.parts.0.customLabel>
+  <ArchoDrone.corePart.parts.1.parts.0.parts.1.parts.1.customLabel>左中指</ArchoDrone.corePart.parts.1.parts.0.parts.1.parts.1.customLabel>
+  <ArchoDrone.corePart.parts.1.parts.0.parts.1.parts.2.customLabel>左食指</ArchoDrone.corePart.parts.1.parts.0.parts.1.parts.2.customLabel>
+  <ArchoDrone.corePart.parts.1.parts.0.parts.1.parts.3.customLabel>左拇指</ArchoDrone.corePart.parts.1.parts.0.parts.1.parts.3.customLabel>
+  <ArchoDrone.corePart.parts.2.customLabel>右肩甲</ArchoDrone.corePart.parts.2.customLabel>
+  <ArchoDrone.corePart.parts.2.parts.0.customLabel>右臂</ArchoDrone.corePart.parts.2.parts.0.customLabel>
+  <ArchoDrone.corePart.parts.2.parts.0.parts.0.customLabel>右切割刃</ArchoDrone.corePart.parts.2.parts.0.parts.0.customLabel>
+  <ArchoDrone.corePart.parts.2.parts.0.parts.1.customLabel>右机械爪</ArchoDrone.corePart.parts.2.parts.0.parts.1.customLabel>
+  <ArchoDrone.corePart.parts.2.parts.0.parts.1.parts.0.customLabel>右小指</ArchoDrone.corePart.parts.2.parts.0.parts.1.parts.0.customLabel>
+  <ArchoDrone.corePart.parts.2.parts.0.parts.1.parts.1.customLabel>右中指</ArchoDrone.corePart.parts.2.parts.0.parts.1.parts.1.customLabel>
+  <ArchoDrone.corePart.parts.2.parts.0.parts.1.parts.2.customLabel>右食指</ArchoDrone.corePart.parts.2.parts.0.parts.1.parts.2.customLabel>
+  <ArchoDrone.corePart.parts.2.parts.0.parts.1.parts.3.customLabel>右拇指</ArchoDrone.corePart.parts.2.parts.0.parts.1.parts.3.customLabel>
+  <ArchoDrone.corePart.parts.3.customLabel>左肢</ArchoDrone.corePart.parts.3.customLabel>
+  <ArchoDrone.corePart.parts.3.parts.0.customLabel>左抓地足</ArchoDrone.corePart.parts.3.parts.0.customLabel>
+  <ArchoDrone.corePart.parts.4.customLabel>右肢</ArchoDrone.corePart.parts.4.customLabel>
+  <ArchoDrone.corePart.parts.4.parts.0.customLabel>右抓地足</ArchoDrone.corePart.parts.4.parts.0.customLabel>
+
+
+</LanguageData>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ShipPlasmaSmallDomi.label>等离子射线流</ShipPlasmaSmallDomi.label>
+  <ShipPlasmaSmallDomi.deathMessage>{0} 被彻底蒸发了.</ShipPlasmaSmallDomi.deathMessage>
+
+  <StarburstPlasmaDamage.label>太阳射线</StarburstPlasmaDamage.label>
+  <StarburstPlasmaDamage.deathMessage>{0} 被彻底蒸发了.</StarburstPlasmaDamage.deathMessage>
+
+  <ShipLaserArcho.label>镭射</ShipLaserArcho.label>
+  <ShipLaserArcho.deathMessage>{0} 被同身边的一切撕成了可爱的碎片.</ShipLaserArcho.deathMessage>
+
+
+  <!-- <ThingDef ParentName="MoteBase">
+    <defName>ShipCombatLaserMoteArcho</defName>
+    <thingClass>ShipCombatLaserMote</thingClass>
+    <graphicData>
+      <texPath>Things/Mote/ArchoImpact</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.125</fadeInTime>
+      <solidTime>0.25</solidTime>
+      <fadeOutTime>0.25</fadeOutTime>
+    </mote>
+	<seeThroughFog>true</seeThroughFog>
+  </ThingDef> -->
+
+  <BombHarasser.label>爆炸</BombHarasser.label>
+  <BombHarasser.deathMessage>{0} 死了.</BombHarasser.deathMessage>
+
+  <BombDepleter.label>爆炸</BombDepleter.label>
+  <BombDepleter.deathMessage>{0} 死了.</BombDepleter.deathMessage>
+
+  <ShipLaserDawn.label>微型激光</ShipLaserDawn.label>
+  <ShipLaserDawn.deathMessage>{0} 死了.</ShipLaserDawn.deathMessage>
+
+  <BombMachineRail.label>爆炸</BombMachineRail.label>
+  <BombMachineRail.deathMessage>{0} 死了.</BombMachineRail.deathMessage>
+
+  <BombNeuronMini.label>精神炸弹</BombNeuronMini.label>
+  <BombNeuronMini.deathMessage>{0} 死了.</BombNeuronMini.deathMessage>
+
+  <DaegonDmg.label>冷射线流冲击</DaegonDmg.label>
+  <DaegonDmg.deathMessage>{0} 从可观测宇宙中消失了.</DaegonDmg.deathMessage>
+
+  <BorealisDmg.label>冷射线流冲击</BorealisDmg.label>
+  <BorealisDmg.deathMessage>{0} 从可观测宇宙中消失了.</BorealisDmg.deathMessage>
+
+  <ShockwaveDmg.label>冷射线流冲击</ShockwaveDmg.label>
+  <ShockwaveDmg.deathMessage>{0} 从可观测宇宙中消失了.</ShockwaveDmg.deathMessage>
+
+
+</LanguageData>

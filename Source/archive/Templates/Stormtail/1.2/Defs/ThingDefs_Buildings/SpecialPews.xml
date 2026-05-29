@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>ShipTurret_RailArtillery</defName>
+    <label>Railgun Artillery</label>
+    <description>Two rail-powered tungsten coated slugs are fired from this rather beastly weapon. Though a more conventional ballistic it packs quite the punch. Range:100Max-50Min Heat:100PP Energy:5PP DMG:(Medium)Good against hull. Bad against shields.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/HardpointStandard</texPath>
+    </graphicData>	
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>100</heatPerPulse>
+		<energyToFire>5</energyToFire>
+		<maxRange>100</maxRange>
+		<minRange>50</minRange>
+		<projectileSpeed>4</projectileSpeed>
+		<threat>35</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>ShipTurret_RailArtilleryTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
+      <turretTopDrawSize>3</turretTopDrawSize>
+    </building>
+    <costList>
+	  <Steel>150</Steel>
+      <Uranium>250</Uranium>
+	  <Plasteel>50</Plasteel>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/RailArtilleryMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>ShipTurretKinetic</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>ShipTurret_RailArtilleryTop</defName>
+    <label>Rail Artillery</label>
+    <description>Railgun Artillery.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/RailArtillery</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>shoot slug</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>100.0</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>RailArtillery</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Fake_RailArtillery</defaultProjectile>
+        <spawnDef>Proj_ShipTurretRailArtillery</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Fake_RailArtillery</defName>
+    <label>railgun slug</label>
+    <graphicData>
+      <texPath>Things/Projectile/BulletArtillery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>180</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_ShipTurretRailArtillery</defName>
+    <label>railgun slug</label>
+    <thingClass>Projectile_ExplosiveShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/BulletArtillery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>6</explosionRadius>
+      <damageDef>BombRailArtillery</damageDef>
+      <speed>180</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef Name="BombRailArtillery">
+    <defName>BombRailArtillery</defName>
+    <label>Rail Explosion</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>55</minDamageToFragment>
+    <defaultDamage>120</defaultDamage>
+    <defaultStoppingPower>0.8</defaultStoppingPower>
+    <defaultArmorPenetration>0.9</defaultArmorPenetration>
+    <buildingDamageFactor>8</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>1</explosionHeatEnergyPerCell>
+    <explosionCellMote>ExplosionArtillery</explosionCellMote>
+    <soundExplosion>RailArtilleryHit</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef> 
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>ExplosionArtillery</defName><!-- SydailyFlash_ON!!!!! -->
+    <graphicData>
+      <texPath>Things/Mote/ExplosionArtillery</texPath>
+      <shaderType>MoteGlow</shaderType>
+	       <drawSize>0.9</drawSize>	  
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.10</fadeInTime>
+      <solidTime>0.04</solidTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <growthRate>4.82</growthRate>
+    </mote>
+  </ThingDef>   
+
+     	<SoundDef>
+    <defName>RailArtillery</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/RailArtillery</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+     	<SoundDef>
+    <defName>RailArtilleryHit</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/RailArtilleryHit</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>   
+
+    <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>Banisher</defName>
+    <label>Archotech Banisher Canon</label>
+    <description>Archotech EMP device.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoPlatformBanisher</texPath>
+	  <drawSize>1,1</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+	  <RangedWeapon_DamageMultiplier>120.01</RangedWeapon_DamageMultiplier>
+    </statBases>	
+	<size>1,1</size>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>2000</heatPerPulse>
+		<energyToFire>2000</energyToFire>
+		<maxRange>200</maxRange>
+		<projectileSpeed>100</projectileSpeed>
+		<threat>80</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>4000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <building>
+      <turretGunDef>BanisherTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
+      <turretTopDrawSize>1</turretTopDrawSize>
+    </building>
+    <costList>
+	  <AscendedArchomatter>1200</AscendedArchomatter>
+    </costList>
+		<designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/BanisherMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>ArchotechAbsolution</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>BanisherTop</defName>
+    <label>Archotech Banisher Canon Top</label>
+    <description>Eeee Emm PEEE. It's in the game</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/BanisherTurret</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>Condensed Archomatter</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>100</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>8</noiseRadius>
+        <burstShotCount>1</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>BanisherPew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Banisher</defaultProjectile>
+        <spawnDef>Proj_Banisher</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Banisher</defName>
+    <label>Hypercondensed EMP</label>
+    <graphicData>
+      <texPath>Things/Projectile/BanisherBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>EMP</damageDef>
+      <speed>100</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_Banisher</defName>
+    <label>Hypercondensed EMP</label>
+    <thingClass>Projectile_TorpedoShipCombat</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/BanisherBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <projectile>
+      <explosionRadius>8.0</explosionRadius>
+      <damageDef>EMP</damageDef>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef> 
+  
+  <DamageDef ParentName="StunBase">
+    <defName>AAEMP</defName>
+    <label>AAEMP</label>
+    <externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+    <deathMessage>{0} has been EMPed to death.</deathMessage>
+    <harmsHealth>false</harmsHealth>
+    <impactSoundType>Electric</impactSoundType>
+    <defaultDamage>5000</defaultDamage>
+    <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+    <explosionCellMote>Mote_BlastEMP</explosionCellMote>
+    <explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
+    <explosionInteriorMote>Mote_ElectricalSpark</explosionInteriorMote>
+    <explosionHeatEnergyPerCell>90000</explosionHeatEnergyPerCell>	
+    <soundExplosion>Explosion_EMP</soundExplosion>
+    <combatLogRules>Damage_EMP</combatLogRules>
+  </DamageDef>  
+
+    	<SoundDef>
+    <defName>BanisherPew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>10</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/BanisherPew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    	<SoundDef>
+    <defName>DragonfirePew</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Ship/DragonfirePew</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>525~525</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+    <ThingDef ParentName="BaseShipArtilleryBuilding">
+    <defName>Dragonfire</defName>
+    <label>Archotech Dragonfire Canon</label>
+    <description>Archotech laser device.</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/ArchoPlatformDragonfire</texPath>
+	  <drawSize>6,6</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.0</Flammability>
+	  <RangedWeapon_DamageMultiplier>120.01</RangedWeapon_DamageMultiplier>
+    </statBases>	
+	<size>6,6</size>
+    <comps>
+      <li Class="CompProperties_ShipHeat">
+        <compClass>CompShipHeatSource</compClass>
+		<heatPerPulse>7000</heatPerPulse>
+		<energyToFire>2000</energyToFire>
+		<maxRange>200</maxRange>
+        <singleFireSound>DragonfirePew</singleFireSound>		
+		<projectileSpeed>100</projectileSpeed>
+		<threat>650</threat>		
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>12000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+    <building>
+      <turretGunDef>DragonfireTop</turretGunDef>
+      <buildingTags>
+      </buildingTags>
+      <turretBurstWarmupTime>0.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>30.0</turretBurstCooldownTime>
+      <turretTopDrawSize>6</turretTopDrawSize>
+    </building>
+    <costList>
+	  <AscendedArchomatter>2000</AscendedArchomatter>
+    </costList>
+		<designationCategory>SoS2Ex</designationCategory>	
+  <uiIconPath>Things/Building/Ship/DragonfireMenu</uiIconPath>
+    <researchPrerequisites>
+      <li>ArchotechAbsolution</li>
+    </researchPrerequisites>
+    <altitudeLayer>WorldClipper</altitudeLayer>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseShipArtilleryWeapon">
+    <defName>DragonfireTop</defName>
+    <label>Archotech Dragonfire Canon Top</label>
+    <description>Big lasers. Who doesn't want those?</description>
+    <graphicData>
+      <texPath>Things/Building/Ship/DragonfireTurret</texPath>
+    </graphicData>
+    <weaponTags>
+    </weaponTags>
+    <verbs>
+      <li>
+        <label>Condensed Archomatter</label>
+        <verbClass>Verb_LaunchProjectileShip</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>100</range>
+        <warmupTime>0</warmupTime>
+        <noiseRadius>8</noiseRadius>
+        <burstShotCount>30</burstShotCount>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>DragonfirePew</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Bullet_Fake_Laser</defaultProjectile>
+        <spawnDef>Proj_ShipTurretLaser</spawnDef>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+    </comps>
+    <building>
+    </building>
+  </ThingDef> 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Fake_Laser</defName>
+    <label>laser beam</label>
+    <graphicData>
+      <texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Bullet</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>100</speed>
+      <explosionRadius>0</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode></soundExplode>
+      <soundImpactAnticipate></soundImpactAnticipate>
+      <soundAmbient></soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_ShipTurretLaser</defName>
+    <label>laser beam</label>
+    <thingClass>Projectile_ExplosiveShipCombatLaser</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/HullPlateTransparent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <explosionRadius>1.9</explosionRadius>
+      <damageDef>DragonfireLaserDMG</damageDef>
+      <speed>200</speed>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef Name="DragonfireLaserDMG">
+    <defName>DragonfireLaserDMG</defName>
+    <label>laser</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has been lasered to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <hediffSolid>Burn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>700</minDamageToFragment>
+    <defaultDamage>20</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.10</defaultArmorPenetration>
+    <buildingDamageFactor>1000</buildingDamageFactor>
+    <plantDamageFactor>1000</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>600</explosionHeatEnergyPerCell>
+    <explosionCellMote>DragonfireMote</explosionCellMote>
+    <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+    <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+    <soundExplosion>ArchoLanceExplosion</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+    <ThingDef ParentName="MoteBase">
+    <defName>DragonfireMote</defName>
+    <graphicData>
+      <texPath>Things/Mote/DragonfireMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.5</fadeInTime>
+      <solidTime>0.3</solidTime>
+      <fadeOutTime>1.0</fadeOutTime>
+      <growthRate>2.42</growthRate>	  
+    </mote>
+  </ThingDef>  
+
+</Defs>

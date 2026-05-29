@@ -6,54 +6,54 @@
 	<SoS.NoShipsToLoad>Нет кораблей для загрузки. Сценарий загрузки корабля - это загрузка корабля из прошлой игры, если корабль был отправлен в межзвёздное путешествие.\nЧтобы начать играть в космосе нормально, используйте сценарии Космический корабль, Космическая станция, Одиночный капитан.</SoS.NoShipsToLoad>
 	
 	<!-- world/orbit -->
-	<SoS.MoveWest>Движение Запад</SoS.MoveWest>
-	<SoS.MoveWestDesc>Перемещение корабля по орбите на запад.</SoS.MoveWestDesc>
-	<SoS.MoveEast>Движение Восток</SoS.MoveEast>
-	<SoS.MoveEastDesc>Перемещение корабля по орбите на восток.</SoS.MoveEastDesc>
-	<SoS.MoveNorth>Движение Север</SoS.MoveNorth>
-	<SoS.MoveNorthDesc>Перемещение корабля по орбите на север.</SoS.MoveNorthDesc>
-	<SoS.MoveSouth>Движение Юг</SoS.MoveSouth>
-	<SoS.MoveSouthDesc>Перемещение корабля по орбите на юг.</SoS.MoveSouthDesc>
+	<SoS.MoveWest>Движение\nЗапад</SoS.MoveWest>
+	<SoS.MoveWestDesc>Перемещать корабль по орбите в сторону запада.</SoS.MoveWestDesc>
+	<SoS.MoveEast>Движение\nВосток</SoS.MoveEast>
+	<SoS.MoveEastDesc>Перемещать корабль по орбите в сторону востока.</SoS.MoveEastDesc>
+	<SoS.MoveNorth>Движение\nСевер</SoS.MoveNorth>
+	<SoS.MoveNorthDesc>Перемещать корабль по орбите в сторону севера.</SoS.MoveNorthDesc>
+	<SoS.MoveSouth>Движение\nЮг</SoS.MoveSouth>
+	<SoS.MoveSouthDesc>Перемещать корабль по орбите в сторону юга.</SoS.MoveSouthDesc>
 	<SoS.MoveStop>Остановить движение</SoS.MoveStop>
 	<SoS.MoveStopDesc>Остановить движение, установив геосинхронную орбиту.</SoS.MoveStopDesc>
 	<SoS.AbandonHome>Покинуть корабль</SoS.AbandonHome>
-	<SoS.AbandonHomeDesc>Покинуть корабль. Члены экипажа будут потеряны!</SoS.AbandonHomeDesc>
+	<SoS.AbandonHomeDesc>Бросить этот корабль на произвол судьбы. Члены экипажа в этой области будут потеряны!</SoS.AbandonHomeDesc>
 	<SoS.LeaveGraveyard>Покинуть обломки</SoS.LeaveGraveyard>
-	<SoS.LeaveGraveyardDesc>Оставить обломки на произвол судьбы.</SoS.LeaveGraveyardDesc>
+	<SoS.LeaveGraveyardDesc>Оставить эти обломки на произвол судьбы.</SoS.LeaveGraveyardDesc>
 	<SoS.LeaveGraveyardConfirmation1>Вы уверены, что хотите покинуть обломки</SoS.LeaveGraveyardConfirmation1>
 	<SoS.LeaveGraveyardConfirmation2>с {0} постройками?</SoS.LeaveGraveyardConfirmation2>
-	<SoS.LeaveGraveyardConfirmationColonistsParagraph>Внимание! В обломках {0} колонистов, они тоже будут покинуты.</SoS.LeaveGraveyardConfirmationColonistsParagraph>
-	<SoS.ForceExitAndRemoveMapCountdown>Сгорит в атмосфере через {0}.</SoS.ForceExitAndRemoveMapCountdown>
+	<SoS.LeaveGraveyardConfirmationColonistsParagraph>Внимание! В области этих обломков присутствуют члены экипажа: {0}, они не выживут без вашей помощи.</SoS.LeaveGraveyardConfirmationColonistsParagraph>
+	<SoS.ForceExitAndRemoveMapCountdown>Сгорит в атмосфере через {0_numCase ? день : дня : дней}.</SoS.ForceExitAndRemoveMapCountdown>
 	<SoS.BurnUpPlayer>Орбита нестабильна</SoS.BurnUpPlayer>
-	<SoS.BurnUpPlayerDesc>Системы управления выведены из строя, корабль не способен поддерживать стабильную орбиту и дрейфует к планете.\n\nВосстановите управление, иначе все сгорит в атмосфере через {0}!</SoS.BurnUpPlayerDesc>
-	<SoS.BurnUpPlayerPrevented>Управление восстановлено, корабль выходит на стабильную орбиту.</SoS.BurnUpPlayerPrevented>
+	<SoS.BurnUpPlayerDesc>Из-за отсутствия управления, этот объект не способен поддерживать стабильное положение на орбите.\n\nПредположительно, объект войдет в атмосферу планеты через {0_numCase ? день : дня : дней}!</SoS.BurnUpPlayerDesc>
+	<SoS.BurnUpPlayerPrevented>Управление восстановлено, объект выходит на стабильную орбиту.</SoS.BurnUpPlayerPrevented>
 	<SoS.BurnUpCountdown>Вход в атмосферу ({0})</SoS.BurnUpCountdown>
-	<SoS.BurnUpCountdownTip>Этот объект не способен поддерживать стабильную орбиту и сгорит в атмосфере планеты через {0}.</SoS.BurnUpCountdownTip>
+	<SoS.BurnUpCountdownTip>Этот объект не способен поддерживать стабильное положение на орбите и войдет в атмосферу планеты через {0_numCase ? день : дня : дней}.</SoS.BurnUpCountdownTip>
 	<!-- world/orbit - Odyssey -->
-	<SoS.CantLaunchGravshipToCombatMap>Очень опасно запускать гравикорабль в зону активного сражения кораблей.</SoS.CantLaunchGravshipToCombatMap>
+	<SoS.CantLaunchGravshipToCombatMap>Очень опасно запускать гравикорабль в зону активного сражения космических кораблей.</SoS.CantLaunchGravshipToCombatMap>
 	<SoS.CantLaunchToEnemyMap>Очень опасно навигировать к активному вражескому кораблю. Он может быть достигнут с помощью шаттлов, отправленных на миссию посадки с корабля игрока.</SoS.CantLaunchToEnemyMap>
 	
 	<!-- combat -->
-	<SoS.CombatTooltip>Отображает дистанцию корабля к различным объектам, дальность поражения орудий, снаряды и шаттлы в полёте.\n\nМетки обозначают дальность поражения орудий:\n\nКрасные метки – лазеры и баллистика.\nЗеленые метки – плазма.\nСиние метки – рельсотроны.\nФиолетовая метка – торпеды.</SoS.CombatTooltip>
+	<SoS.CombatTooltip>Отображает дистанцию и различные объекты в космическом бою.\n\nКрасные метки: дистанция 500 - 1000;\nЗелёные метки: дистанция 1000 - 1500;\nСиние метки: дистанция 1500 - 2000;\nФиолетовая метка: дистанция 3000.</SoS.CombatTooltip>
 	<SoS.CombatRetreat>Отступать</SoS.CombatRetreat>
-	<SoS.CombatRetreatDesc>Отдалятся от корабля противника.</SoS.CombatRetreatDesc>
+	<SoS.CombatRetreatDesc>Отдаляться от противника.</SoS.CombatRetreatDesc>
 	<SoS.CombatStop>Остановить</SoS.CombatStop>
-	<SoS.CombatStopDesc>Отключить питание двигателей корабля.</SoS.CombatStopDesc>
+	<SoS.CombatStopDesc>Остановить движение и оставаться на месте.</SoS.CombatStopDesc>
 	<SoS.CombatMaintain>Удерживать</SoS.CombatMaintain>
-	<SoS.CombatMaintainDesc>Удерживать дистанцию к кораблю противнику.</SoS.CombatMaintainDesc>
+	<SoS.CombatMaintainDesc>Держать противника на одной дистанции.</SoS.CombatMaintainDesc>
 	<SoS.CombatAdvance>Наступать</SoS.CombatAdvance>
-	<SoS.CombatAdvanceDesc>Приближаться к кораблю противника.</SoS.CombatAdvanceDesc>
+	<SoS.CombatAdvanceDesc>Начать движение и приближаться к противнику.</SoS.CombatAdvanceDesc>
 	<SoS.CombatEscape>Отступить</SoS.CombatEscape>
-	<SoS.CombatEscapeDesc>Отступить, оставив экипаж за пределами корабля на произвол судьбы.</SoS.CombatEscapeDesc>
-	<SoS.CombatAbandonPawns>ВНИМАНИЕ!\n\nДружественный экипаж на борту вражеского корабля будет оставлен на произвол судьбы!</SoS.CombatAbandonPawns>
+	<SoS.CombatEscapeDesc>Выйти из боя, оставив всё за пределами корабля на произвол судьбы.</SoS.CombatEscapeDesc>
+	<SoS.CombatAbandonPawns>Члены экипажа на борту вражеского корабля будут оставлены на произвол судьбы!</SoS.CombatAbandonPawns>
 	<SoS.CombatShieldBroken>Генератор щита выведен из строя из-за перегрева!</SoS.CombatShieldBroken>
 	<SoS.CombatShieldBrokenEnemy>Вражеский генератор щита выведен из строя из-за перегрева!</SoS.CombatShieldBrokenEnemy>
-	<SoS.CombatPodDestroyedPlayer>Шаттл был уничтожен вражеским орудием точечной обороны! Выжившие члены экипажа вернутся в спасательных капсулах.</SoS.CombatPodDestroyedPlayer>
-	<SoS.CombatPodDestroyedEnemy>Вражеский шаттл был уничтожен орудием точечной обороны!</SoS.CombatPodDestroyedEnemy>
-	<SoS.WithdrawShip>Отозвать корабль</SoS.WithdrawShip>
-	<SoS.WithdrawShipDesc>Вывести корабль из боя, оставив его позади.</SoS.WithdrawShipDesc>
-	<SoS.WithdrawShipLast>Единственный корабль не может покинуть бой!</SoS.WithdrawShipLast>
-	<SoS.CombatConfirmWithdraw>Вывести корабль из боя? Если бой будет проигран, противник его атакует.</SoS.CombatConfirmWithdraw>
+	<SoS.CombatPodDestroyedPlayer>Ваш шаттл был уничтожен вражескими орудиями точечной обороны</SoS.CombatPodDestroyedPlayer>
+	<SoS.CombatPodDestroyedEnemy>Вражеский шаттл был уничтожен орудиями точечной обороны</SoS.CombatPodDestroyedEnemy>
+	<SoS.WithdrawShip>Отозвать объект</SoS.WithdrawShip>
+	<SoS.WithdrawShipDesc>Вывести объект из боя в безопасное место позади.</SoS.WithdrawShipDesc>
+	<SoS.WithdrawShipLast>Единственный объект не может покинуть бой!</SoS.WithdrawShipLast>
+	<SoS.CombatConfirmWithdraw>Вывести объект из боя? Он будет позади боя, противник не сможет его атаковать, пока не уничтожит корабль впереди.</SoS.CombatConfirmWithdraw>
 	<SoS.WrecksPreventMove>Перемещение невозможно из-за обломков!</SoS.WrecksPreventMove>
 	<SoS.RemoveWrecks>Убрать\nобломки</SoS.RemoveWrecks>
 	<SoS.RemoveWrecksDesc>Убрать все обломки в области, они будут брошены на произвол судьбы.</SoS.RemoveWrecksDesc>
@@ -63,7 +63,7 @@
 	<SoS.WithdrawWrecksConfirm>Переместить обломки в безопасное место? Если бой будет проигран, противник их атакует. Обломки можно будет извлечь с помощью инженерных отсеков за незначительное количество топлива.</SoS.WithdrawWrecksConfirm>
 	<SoS.ScuttleShip>Запустить капсулы</SoS.ScuttleShip>
 	<SoS.ScuttleShipDesc>Активировать все космические саркофаги, запустив спасательные капсулы в указанное место на поверхности планеты.</SoS.ScuttleShipDesc>
-	<SoS.ScuttleShipPods>Нельзя покинуть корабль, пока к нему/от него запущен шаттл!</SoS.ScuttleShipPods>
+	<SoS.ScuttleShipPods>Нельзя покинуть объект, пока к нему/от него запущен шаттл!</SoS.ScuttleShipPods>
 	<SoS.NoLoadedPods>Нет загруженных спасательных капсул.</SoS.NoLoadedPods>
 	<SoS.LaunchCryptoNotLoaded>Саркофаги не загружены</SoS.LaunchCryptoNotLoaded>
 	<SoS.SelectWeapons>Выбрать орудия</SoS.SelectWeapons>
@@ -81,20 +81,20 @@
 
 	<!-- salvage/capture -->
 	<SoS.ReturnShip>Стабилизировать</SoS.ReturnShip>
-	<SoS.ReturnShipDesc>Вывести корабль на стабильную орбиту</SoS.ReturnShipDesc>
+	<SoS.ReturnShipDesc>Использовать инженерный отсек для вывода объекта на стабильную орбиту</SoS.ReturnShipDesc>
 	<SoS.CaptureShip>Захватить</SoS.CaptureShip>
-	<SoS.CaptureShipDesc>Взять этот корабль под контроль</SoS.CaptureShipDesc>
-	<SoS.LaunchFailPawns>На корабле найдено неподконтрольное существо: {0}, взлёт прерван.</SoS.LaunchFailPawns>
+	<SoS.CaptureShipDesc>Взять этот объект под контроль</SoS.CaptureShipDesc>
+	<SoS.LaunchFailPawns>Взлёт прерван, так как на корабле найдено неподконтрольное существо: {0}.</SoS.LaunchFailPawns>
 	<SoS.MoveWreckCommand>Переместить обломки</SoS.MoveWreckCommand>
 	<SoS.MoveWreckCommandDesc>Переместить обломки в пределах области.</SoS.MoveWreckCommandDesc>
-	<SoS.MoveWreckFlipCommand>Перевернуть обломки</SoS.MoveWreckFlipCommand>
-	<SoS.MoveWreckFlipCommandDesc>Переместить и перевернуть обломки в пределах области.</SoS.MoveWreckFlipCommandDesc>
+	<SoS.MoveWreckFlipCommand>Развернуть обломки</SoS.MoveWreckFlipCommand>
+	<SoS.MoveWreckFlipCommandDesc>Переместить и развернуть обломки в пределах области.</SoS.MoveWreckFlipCommandDesc>
 	<SoS.MoveWreckRotCommand>Повернуть обломки</SoS.MoveWreckRotCommand>
 	<SoS.MoveWreckRotCommandDesc>Переместить и повернуть обломки в пределах области.</SoS.MoveWreckRotCommandDesc>
 	<SoS.SalvageCommand>Извлечь {0}</SoS.SalvageCommand>
 	<SoS.SalvageCommandDesc>Извлечь корабль: {0}</SoS.SalvageCommandDesc>
 	<SoS.SalvageBeam>Извлечь обломки {0}</SoS.SalvageBeam>
-	<SoS.SalvageBeamDesc>Извлечь дрейфующие обломки из {0}</SoS.SalvageBeamDesc>
+	<SoS.SalvageBeamDesc>Извлечь обломки из области{0}</SoS.SalvageBeamDesc>
 	<SoS.SalvageStablize>Стабилизировать {0}</SoS.SalvageStablize>
 	<SoS.SalvageStablizeFuel>Для стабилизации этого объекта требуется {0} топлива!</SoS.SalvageStablizeFuel>
 	<SoS.SalvageStablizeDesc>Стабилизировать орбиту: {0}. Требуется достаточная мощность инженерных отсеков и наличие топлива.</SoS.SalvageStablizeDesc>
@@ -134,7 +134,7 @@
 	<SoS.PirateTalkPirate>Пираты знают о вашем авторитете, их капитан запрашивает разрешение для торговли.</SoS.PirateTalkPirate>
 	<SoS.PirateTalkParley>Получены торговые данные, судно готово к обмену.</SoS.PirateTalkParley>
 	<SoS.PirateTalkPaid>Нет ответа.</SoS.PirateTalkPaid>
-	<SoS.PirateTalkNormal>Пираты требуют выплаты в размере {0} серебра.</SoS.PirateTalkNormal>
+	<SoS.PirateTalkNormal>Пираты требуют выплату в размере {0} серебра.</SoS.PirateTalkNormal>
 	<SoS.PirateTrade>Торговать</SoS.PirateTrade>
 	<SoS.PirateDemand>Принять требование</SoS.PirateDemand>
 	<SoS.PirateDemandFail>Недостаточно серебра: {0}</SoS.PirateDemandFail>
@@ -142,11 +142,11 @@
 	<SoS.PirateParleyFail>Неудачные переговоры</SoS.PirateParleyFail>
 	<SoS.PirateParleyFailDesc>Капитан пиратского судна не желает вести переговоры, он прерывает связь и направляется к вам.</SoS.PirateParleyFailDesc>
 	<SoS.PirateParleyWin>Успешные переговоры</SoS.PirateParleyWin>
-	<SoS.PirateParleyWinDesc>Переговоры с космическими пиратами завершились успехом.</SoS.PirateParleyWinDesc>
+	<SoS.PirateParleyWinDesc>Переговоры с космическими пиратами завершились успехом.\n\nОни не против обменяться товарами и другими вещами.</SoS.PirateParleyWinDesc>
 	<SoS.PirateAttacksBetray>Несоблюдение кодекса</SoS.PirateAttacksBetray>
-	<SoS.PirateAttacksBetrayDesc>Похоже, что среди воров нет чести.</SoS.PirateAttacksBetrayDesc>
+	<SoS.PirateAttacksBetrayDesc>Похоже, что среди воров нет чести.\n\nПираты не соблюдают кодекс чести чести и нападают без предупреждения.</SoS.PirateAttacksBetrayDesc>
 	<SoS.PirateAttacksPay>Нападение пиратов</SoS.PirateAttacksPay>
-	<SoS.PirateAttacksPayDesc>Космические пираты приняли выплату, и всё-же, решили что этого недостаточно. Их корабль направляется к вам.</SoS.PirateAttacksPayDesc>
+	<SoS.PirateAttacksPayDesc>Пираты приняли выплату, и всё-же, решили что этого недостаточно. Их корабль направляется к вам.</SoS.PirateAttacksPayDesc>
 	<SoS.PirateAttacksWait>Приближение пиратов</SoS.PirateAttacksWait>
 	<SoS.PirateAttacksWaitDesc>Пираты больше не хотят ждать, их судно направляется к вам!</SoS.PirateAttacksWaitDesc>
 	<SoS.PirateImmediateAttack>Пиратский корабль собирается вас атаковать. Может быть они хотят провести переговоры перед стрельбой, но, похоже на борту их корабля нет консоли связи.</SoS.PirateImmediateAttack>
@@ -166,38 +166,38 @@
 	<SoS.StatsShipCombatRating>Боевой рейтинг: {0}</SoS.StatsShipCombatRating>
 	<SoS.StatsShipCombatThrust>Соотношение тяга/вес: {0}</SoS.StatsShipCombatThrust>
 	<SoS.StatsShipCombatMapThrust>Соотношение тяга/вес флота: {0}</SoS.StatsShipCombatMapThrust>
-	<SoS.ReportInterReady>Корабль готов к межзвёздным путешествиям.</SoS.ReportInterReady>
-	<SoS.ReportInterNotReady>Корабль не готов к межзвёздным путешествиям.</SoS.ReportInterNotReady>
-	<SoS.ReportNeedPilot>Корабль требует пилота, либо ИИ.</SoS.ReportNeedPilot>
-	<SoS.NeedsMoreFuel>Корабль требует {1} ед. топлива, сейчас в баках {0} ед. топлива.</SoS.NeedsMoreFuel>
-	<SoS.NeedsMorePower>Корабль требует {0} Вт/дн накопленной энергии.</SoS.NeedsMorePower>
-	<SoS.NeedsMoreJTEngines>Корабль требует больше двигателей Джонсона-Танаки для своей массы.</SoS.NeedsMoreJTEngines>
+	<SoS.ReportInterReady>Корабль готов к межзвёздным перелётам.</SoS.ReportInterReady>
+	<SoS.ReportInterNotReady>Корабль не готов к межзвёздным перелётам.</SoS.ReportInterNotReady>
+	<SoS.ReportNeedPilot>Корабль требует пилота, либо ИИ-капитана.</SoS.ReportNeedPilot>
+	<SoS.NeedsMoreFuel>Требуется {1} ед. топлива, сейчас в баках {0} ед. топлива.</SoS.NeedsMoreFuel>
+	<SoS.NeedsMorePower>Требуется {0} Вт/дн накопленной энергии.</SoS.NeedsMorePower>
+	<SoS.NeedsMoreJTEngines>Требуется больше двигателей Джонсона-Танаки для такой массы.</SoS.NeedsMoreJTEngines>
 	<SoS.PlanetLeave>Покинуть планету</SoS.PlanetLeave>
-	<SoS.PlanetLeaveDesc>Отправиться в путешествие к звёздам, покинув этот мир.</SoS.PlanetLeaveDesc>
+	<SoS.PlanetLeaveDesc>Покинуть орбиту этого мира для поиска нового.</SoS.PlanetLeaveDesc>
 	<SoS.ToggleScanShips>Искать корабли</SoS.ToggleScanShips>
-	<SoS.ToggleScanShipsDesc>Сканировать космическое пространство на наличие других кораблей.</SoS.ToggleScanShipsDesc>
+	<SoS.ToggleScanShipsDesc>Сканировать ближайшее космическое пространство на наличие других кораблей.</SoS.ToggleScanShipsDesc>
 	<SoS.ToggleScanSites>Искать объекты</SoS.ToggleScanSites>
-	<SoS.ToggleScanSitesDesc>Сканировать космическое пространство на наличие орбитальных объектов.</SoS.ToggleScanSitesDesc>
+	<SoS.ToggleScanSitesDesc>Сканировать ближайшее космическое пространство на наличие орбитальных объектов.</SoS.ToggleScanSitesDesc>
 	<SoS.ToggleShields>Переключить щиты</SoS.ToggleShields>
 	<SoS.ToggleShieldsDesc>Активировать генераторы щитов для отражения входящих снарядов или других объектов.</SoS.ToggleShieldsDesc>
 	<SoS.ToggleCloak>Переключить маскировку</SoS.ToggleCloak>
 	<SoS.ToggleCloakDesc>Активировать маскировочное устройство чтобы скрыть корабль от обнаружения и избежать космических сражений.</SoS.ToggleCloakDesc>
 	<SoS.ShipInfo>Посмотреть статистику</SoS.ShipInfo>
-	<SoS.ShipInfoDesc>Посмотреть технические характеристики корабля и его готовность к межзвездным путешествиям.</SoS.ShipInfoDesc>
+	<SoS.ShipInfoDesc>Посмотреть технические характеристики корабля и его готовность к межзвездным перелётам.</SoS.ShipInfoDesc>
 	<SoS.Rename>Назвать\nкорабль</SoS.Rename>
-	<SoS.RenameDesc>Дать этому кораблю новое, величественное имя.</SoS.RenameDesc>
+	<SoS.RenameDesc>Дать этому кораблю новое имя.</SoS.RenameDesc>
 	<SoS.Move>Переместить корабль</SoS.Move>
-	<SoS.MoveDesc>Переместить корабль в новое место.</SoS.MoveDesc>
+	<SoS.MoveDesc>Использовать маневровые ускорители для перемещения корабля в области.</SoS.MoveDesc>
 	<SoS.MoveFlip>Развернуть корабль</SoS.MoveFlip>
-	<SoS.MoveFlipDesc>Развернуть корабль в противоположную сторону.</SoS.MoveFlipDesc>
+	<SoS.MoveFlipDesc>Использовать маневровые ускорители для разворота корабля в противоположную сторону.</SoS.MoveFlipDesc>
 	<SoS.MoveRot>Повернуть корабль</SoS.MoveRot>
 	<SoS.MoveRotNo>Некоторые объекты на корабле нельзя повернуть!</SoS.MoveRotNo>
-	<SoS.MoveRotDesc>Повернуть корабль против часовой стрелки.</SoS.MoveRotDesc>
+	<SoS.MoveRotDesc>Использовать маневровые ускорители для поворота корабля против часовой стрелки.</SoS.MoveRotDesc>
 	<SoS.MoveFail>Перемещение не удалось!</SoS.MoveFail>
 	<SoS.MoveFailDesc>Перемещение корабля не удалось! Проверьте ваш корабль. Возможно на корабле есть объекты из модов, которые можно убрать только вручную.\nОшибка при перемещении: {0}</SoS.MoveFailDesc>
 	<SoS.MoveFailPilot>Корабль требует пилота для перемещения.</SoS.MoveFailPilot>
 	<SoS.MoveFailRCS>Для перемещения корабля требуется как минимум один маневровый ускоритель.</SoS.MoveFailRCS>
-	<SoS.MoveFailFuel>Недостаточно топлива для перемещения корабля, требуется {0} топлива.</SoS.MoveFailFuel>
+	<SoS.MoveFailFuel>Недостаточно топлива для перемещения корабля, требуется {0} ед. топлива.</SoS.MoveFailFuel>
 	<SoS.MoveFailFaction>Перемещение прервано. Рядом с этой областью находится корабль другой фракции.</SoS.MoveFailFaction>
 	<SoS.MoveFailCombat>Корабль находится в бою.</SoS.MoveFailCombat>
 	<SoS.Land>Посадить корабль</SoS.Land>
@@ -205,82 +205,82 @@
 	<SoS.LandSomewhere>где-то</SoS.LandSomewhere>
 	<SoS.LandNoTargetTile>Здесь нет места для посадки корабля. Найдите другую область с помощью сенсоров или исследовательской консоли.</SoS.LandNoTargetTile>
 	<SoS.Rebuild>Восстановить корпус</SoS.Rebuild>
-	<SoS.RebuildDesc>Разместить проекты разрушенных структур после боя.</SoS.RebuildDesc>
-	<SoS.BridgeConnectTooltip>Управление отсутствует! Убедитесь что мостик или ИИ подключены к энергии и тепловым трубам.</SoS.BridgeConnectTooltip>
+	<SoS.RebuildDesc>Разместить проекты разрушенных в бою структур.</SoS.RebuildDesc>
+	<SoS.BridgeConnectTooltip>Управление отсутствует! Убедитесь, что объект имеет активные системы для управления.</SoS.BridgeConnectTooltip>
 	<SoS.BridgeSelectOuterdoors>Выбрать наружные шлюзы</SoS.BridgeSelectOuterdoors>
 	<SoS.BridgeSelectOuterdoorsDesc>Выбрать все наружные шлюзы этого корабля.</SoS.BridgeSelectOuterdoorsDesc>
 	
 	<!-- story -->
 	<SoS.QuestPillarA>Атаковать КСС "Горизонт"</SoS.QuestPillarA>
-	<SoS.QuestPillarADesc>Атаковать древнюю станцию терраформирования для получения древнего артефакта архотек.</SoS.QuestPillarADesc>
+	<SoS.QuestPillarADesc>Атаковать древнюю станцию терраформирования для поиска древнего артефакта Архотек.</SoS.QuestPillarADesc>
 	<SoS.QuestPillarB>Штурмовать Лунную базу</SoS.QuestPillarB>
-	<SoS.QuestPillarBDesc>Атаковать исследовательскую базу механоидов на одной из планетарных лун для получения древнего артефакта архотек.\n\nСканеры фиксируют большой объект рядом, похожий на боевой корабль механоидов!</SoS.QuestPillarBDesc>
+	<SoS.QuestPillarBDesc>Атаковать исследовательскую базу механоидов на одной из планетарных лун для поиска древнего артефакта Архотек.\n\nСканеры фиксируют большой объект рядом, похожий на боевой корабль механоидов!</SoS.QuestPillarBDesc>
 
 	<!-- scan -->
 	<SoS.scanRegion>Сканировать</SoS.scanRegion>
 	<SoS.scanRegionDesc>Укажите область сканирования.</SoS.scanRegionDesc>
 	<SoS.ScanMap>Сканировать</SoS.ScanMap>
-	<SoS.ScanMapDesc>Использовать сенсоры корабля для наблюдения за планетарными или орбитальными объектами.</SoS.ScanMapDesc>
+	<SoS.ScanMapDesc>Использовать сенсоры корабля для наблюдения за планетарными, или орбитальными объектами.</SoS.ScanMapDesc>
 	<SoS.ScanMapStop>Завершить наблюдение</SoS.ScanMapStop>
-	<SoS.ScanMapStopDesc>Завершить наблюдение за {0}. Данные о местности будут утеряны, если на ней нет ваших поселенцев.</SoS.ScanMapStopDesc>
+	<SoS.ScanMapStopDesc>Завершить наблюдение за {0}. Данные о местности будут утеряны, если на ней нет ваших членов экипажа.</SoS.ScanMapStopDesc>
 
 	<!-- engines -->
 	<SoS.ToggleEngines>Включить двигатели</SoS.ToggleEngines>
 	<SoS.ToggleEnginesDesc>Включить двигатели корабля для маневрирования.</SoS.ToggleEnginesDesc>
 
 	<!-- airlock -->
-	<SoS.ToggleDock>Выдвинуть шлюз</SoS.ToggleDock>
-	<SoS.ToggleDockDesc>Выдвинуть расширитель шлюза на дистанцию 3 клетки.</SoS.ToggleDockDesc>
-	<SoS.AirlockHacked>Взлом шлюза удался!</SoS.AirlockHacked>
-	<SoS.AirlockHackFailed>Взлом шлюза не удался!</SoS.AirlockHackFailed>
-	<SoS.AirlockBreached>Шлюз открыт!</SoS.AirlockBreached>
+	<SoS.ToggleDock>Развернуть шлюз</SoS.ToggleDock>
+	<SoS.ToggleDockDesc>Выдвинуть расширитель шлюза на небольшую дистанцию для стыковки с другими объектами.</SoS.ToggleDockDesc>
+	<SoS.AirlockHacked>Шлюз взломан</SoS.AirlockHacked>
+	<SoS.AirlockHackFailed>Взлом шлюза не удался</SoS.AirlockHackFailed>
+	<SoS.AirlockBreached>Шлюз вскрыт</SoS.AirlockBreached>
 
 	<!-- unfold -->
 	<SoS.UnfoldStatus>Статус: </SoS.UnfoldStatus>
-	<SoS.UnfoldRetracted>свернуто</SoS.UnfoldRetracted>
-	<SoS.UnfoldExtended>развернуто</SoS.UnfoldExtended>
-	<SoS.UnfoldExtending>развертывание</SoS.UnfoldExtending>
-	<SoS.UnfoldRetracting>свертывание</SoS.UnfoldRetracting>
-	<SoS.UnfoldBlocked>Место должно быть свободно от препятствий и других развёртываемых элементов.</SoS.UnfoldBlocked>
+	<SoS.UnfoldRetracted>свёрнуто</SoS.UnfoldRetracted>
+	<SoS.UnfoldExtended>развёрнуто</SoS.UnfoldExtended>
+	<SoS.UnfoldExtending>развёртывание</SoS.UnfoldExtending>
+	<SoS.UnfoldRetracting>свёртывание</SoS.UnfoldRetracting>
+	<SoS.UnfoldBlocked>Место должно быть свободно от препятствий и других развёртываемых систем.</SoS.UnfoldBlocked>
 
 	<!-- heat -->
     <SoS.HeatStored>Накопленное тепло: {0} Те.\nТеплоёмкость сети: {1} Те.</SoS.HeatStored>
 	<SoS.HeatWithPower>Использовать энергию</SoS.HeatWithPower>
 	<SoS.HeatWithPowerDesc>Использовать энергию для обогрева, если нет избыточного тепла.</SoS.HeatWithPowerDesc>
 	<SoS.PurgeHeat>Сбросить серебро</SoS.PurgeHeat>
-	<SoS.PurgeHeatDesc>Сбросить раскалённое серебро в космос, чтобы быстро снизить уровень нагрева охлаждающей жидкости.\n\nЭто приведет к отключению щитов, их нужно как можно скорее активировать с помощью корабельного мостика!</SoS.PurgeHeatDesc>
+	<SoS.PurgeHeatDesc>Сбросить раскалённое серебро в космос, чтобы быстро снизить уровень нагрева охлаждающей жидкости.\n\nЭто приведет к отключению щитов, их можно активировать вручную через корабельный мостик!</SoS.PurgeHeatDesc>
 	<SoS.HeatPurge>Сбросить нагрев</SoS.HeatPurge>
-	<SoS.HeatPurgeDesc>Начать сброс охлаждающей жидкости из радиаторов. Радиаторы будут работать в 5 раз эффективнее, пока нагрев не достигнет минимального значения.\n\nГенераторы защитного поля и орудия будут отключены во время сброса, после чего активируются автоматически.\n\nЭтот процесс нельзя отменить, а сброшенная охлаждающая жидкость восстановится только после завершения боя.</SoS.HeatPurgeDesc>
-	<SoS.HeatPurgeVenting>жидкость уже сбрасывается.</SoS.HeatPurgeVenting>
-	<SoS.HeatPurgeNotEnough>слишком слабый нагрев для охлаждения.</SoS.HeatPurgeNotEnough>
+	<SoS.HeatPurgeDesc>Начать сброс охлаждающей жидкости из радиаторов. Эффективность отвода тепла повысится в 5 раз, до полного охлаждения. Генераторы щитов и орудия не будут функционировать, они активируются автоматически после завершения сброса.\n\nЭтот процесс нельзя отменить, а сброшенная охлаждающая жидкость восстановится только после завершения боя.</SoS.HeatPurgeDesc>
+	<SoS.HeatPurgeVenting>уже в процессе сброса.</SoS.HeatPurgeVenting>
+	<SoS.HeatPurgeNotEnough>температура в норме, сброс не требуется.</SoS.HeatPurgeNotEnough>
 	<SoS.CloakBroken>Маскировка отключена из-за перегрева.</SoS.CloakBroken>
-	<SoS.HeatCritical>ОПАСНОСТЬ! Критический уровень нагрева!</SoS.HeatCritical>
+	<SoS.HeatCritical>Критический уровень нагрева!</SoS.HeatCritical>
 	<SoS.HeatNotConnected>Не подключено к тепловой сети.</SoS.HeatNotConnected>
-	<SoS.CantPurge>Невозможно сбросить нагрев, так как объект покрыт активным щитом другого корабля или тепловой сетью. Рассмотрите возможность отключения его вручную.</SoS.CantPurge>
+	<SoS.CantPurge>Невозможно сбросить нагрев, вероятно тепловая сеть или щит другого объекта мешает активации.</SoS.CantPurge>
 	<SoS.HeatTurretEnergy>Энергия для выстрела: {0} Вт/д</SoS.HeatTurretEnergy>
 
 	<!-- turret -->
 	<SoS.TurretNotInShipCombat>Это орудие может быть использовано только в космическом бою.</SoS.TurretNotInShipCombat>
-	<SoS.TurretInPointDefense>Это орудие находится в режиме точечной обороны, оно не может быть наведено на цели.</SoS.TurretInPointDefense>
+	<SoS.TurretInPointDefense>Активен режим точечной обороны, орудие игнорирует крупные цели.</SoS.TurretInPointDefense>
 	<SoS.TurretExtractTorpedo>Извлечь все торпеды</SoS.TurretExtractTorpedo>
 	<SoS.TurretExtractTorpedoDesc>Извлечь все загруженные торпеды.</SoS.TurretExtractTorpedoDesc>
 	<SoS.TurretExtractOneTorpedo>Извлечь торпеду</SoS.TurretExtractOneTorpedo>
 	<SoS.TurretExtractOneTorpedoDesc>Извлечь одну торпеду.</SoS.TurretExtractOneTorpedoDesc>
 	<SoS.TurretExtract>Извлечь</SoS.TurretExtract>
-	<SoS.TurretOptimalRange>Оптимальная дистанция</SoS.TurretOptimalRange>
-	<SoS.TurretOptimalRangeDesc>Использовать оптимальную дистанцию для стрельбы.</SoS.TurretOptimalRangeDesc>
+	<SoS.TurretOptimalRange>Эффективная дистанция</SoS.TurretOptimalRange>
+	<SoS.TurretOptimalRangeDesc>Разрешить стрельбу на такой дистанции, когда орудие имеет максимальную точность.</SoS.TurretOptimalRangeDesc>
 	<SoS.TurretPointDefense>Режим точ. обороны</SoS.TurretPointDefense>
-	<SoS.TurretPointDefenseDesc>Использовать орудие для перехвата вражеских торпед и шаттлов.</SoS.TurretPointDefenseDesc>
+	<SoS.TurretPointDefenseDesc>Использовать орудие для перехвата вражеских торпед и шаттлов, игнорировать крупные цели.</SoS.TurretPointDefenseDesc>
 	<SoS.TorpedoAllowedDesc>Запретить или разрешить стрельбу торпедами этого типа.</SoS.TorpedoAllowedDesc>
 	<SoS.TorpedoNotLoaded>Торпеды не загружены</SoS.TorpedoNotLoaded>
 	<SoS.TorpedoFullyLoaded>Полная загрузка торпед</SoS.TorpedoFullyLoaded>
 	<SoS.TorpedoNone>Отсутствуют торпеды</SoS.TorpedoNone>
-	<SoS.AmplifierCount>Усилители: {0}</SoS.AmplifierCount>
-	<SoS.SpinalCapNotFound>Отсутствует излучатель.</SoS.SpinalCapNotFound>
-	<SoS.CannotFireDueToHeat>{0} не может произвести выстрел: перегрузка тепловой системы</SoS.CannotFireDueToHeat>
-	<SoS.CannotFireDueToPower>{0} не может произвести выстрел: недостаточно энергии</SoS.CannotFireDueToPower>
-	<SoS.CannotFireDueToAmmo>{0} не может произвести выстрел: нет боеприпасов</SoS.CannotFireDueToAmmo>
-	<SoS.TurretNotConnected>Нет подключения к системам управления через тепловой провод.</SoS.TurretNotConnected>
+	<SoS.AmplifierCount>Подключенные усилители: {0}</SoS.AmplifierCount>
+	<SoS.SpinalCapNotFound>Отсутствует излучатель линейного орудия.</SoS.SpinalCapNotFound>
+	<SoS.CannotFireDueToHeat>{0} не стреляет из-за перегрузки тепловой системы</SoS.CannotFireDueToHeat>
+	<SoS.CannotFireDueToPower>{0} не стреляет из-за недостатка энергии</SoS.CannotFireDueToPower>
+	<SoS.CannotFireDueToAmmo>{0} не стреляет из-за отсутствия боеприпасов</SoS.CannotFireDueToAmmo>
+	<SoS.TurretNotConnected>Не подключено к системам управления тепловым проводом.</SoS.TurretNotConnected>
 
 	<!-- shield -->
 	<SoS.ShieldRadius>Радиус поля: {1}/{0}</SoS.ShieldRadius>
@@ -295,11 +295,11 @@
 	<!-- reactor -->
 	<SoS.ReactorInstability>Нестабильность: {0}</SoS.ReactorInstability>
 	<SoS.ReactorOverdrive>Разгон I</SoS.ReactorOverdrive>
-	<SoS.ReactorOverdriveDesc>Увеличение мощности реактора за счёт большего тепловыделения и расхода ядерного топлива.</SoS.ReactorOverdriveDesc>
+	<SoS.ReactorOverdriveDesc>Увеличить мощность реактора за счёт большего тепловыделения и расхода ядерного топлива.</SoS.ReactorOverdriveDesc>
 	<SoS.ReactorOverdrive2>Разгон II</SoS.ReactorOverdrive2>
-	<SoS.ReactorOverdrive2Desc>Увеличение мощности реактора за счёт большего тепловыделения и расхода ядерного топлива.\n\nЭтот режим повышает нестабильность реактора, шансы возгорания и утечек радиации.</SoS.ReactorOverdrive2Desc>
+	<SoS.ReactorOverdrive2Desc>Увеличить мощность реактора за счёт большего тепловыделения и расхода ядерного топлива.\n\nРеактор в этом режиме становится нестабильным, что повышает шансы возгорания и утечек радиации.</SoS.ReactorOverdrive2Desc>
 	<SoS.ReactorOverdrive3>Разгон III</SoS.ReactorOverdrive3>
-	<SoS.ReactorOverdrive3Desc>Увеличение мощности реактора за счёт большего тепловыделения и расхода ядерного топлива.\n\nЭтот режим повышает нестабильность реактора, шансы возгорания и утечек радиации.</SoS.ReactorOverdrive3Desc>
+	<SoS.ReactorOverdrive3Desc>Увеличить мощность реактора за счёт большего тепловыделения и расхода ядерного топлива.\n\nРеактор в этом режиме становится нестабильным, что повышает шансы возгорания и утечек радиации.</SoS.ReactorOverdrive3Desc>
 	
 	<!-- blueprints -->
 	<SoS.BlueprintDisabled>Требует исследования основ кораблестроения</SoS.BlueprintDisabled>
@@ -313,17 +313,17 @@
 	
 	<!-- pawns/eva -->
 	<SoS.DamagedReactorHurtsPawn>{0} получает радиационные ожоги от нестабильного корабельного реактора.</SoS.DamagedReactorHurtsPawn>
-	<SoS.EVACapable>Позволяет находится в открытом космосе.</SoS.EVACapable>
+	<SoS.EVACapable>Позволяет выходить в открытый космос.</SoS.EVACapable>
 	<SoS.AtmosphereVacuum>Вакуум</SoS.AtmosphereVacuum>
 	<SoS.Atmosphere>Пригодная Атмосфера</SoS.Atmosphere>
 	<SoS.AtmosphereNonBreathable>Непригодная Атмосфера</SoS.AtmosphereNonBreathable>
-	<SoS.AtmosphereBreach>Утечка воздуха!</SoS.AtmosphereBreach>
+	<SoS.AtmosphereBreach>Утечка воздуха</SoS.AtmosphereBreach>
 	
 	<!-- holo/spore -->
 	<SoS.SpawnHologram>Создать форму</SoS.SpawnHologram>
-	<SoS.SpawnHologramDesc>Создать форму механитов, благодаря которой сознание будет взаимодействовать с окружающим миром.</SoS.SpawnHologramDesc>
+	<SoS.SpawnHologramDesc>Создать формгель под управлением этой личности.</SoS.SpawnHologramDesc>
 	<SoS.DespawnHologram>Уничтожить форму</SoS.DespawnHologram>
-	<SoS.DespawnHologramDesc>Уничтожить форму, контролируемую этим устройством. Восстановление механитов займёт 1 день.</SoS.DespawnHologramDesc>
+	<SoS.DespawnHologramDesc>Уничтожить форму, контролируемую этим устройством. Восстановление механитов может занять время.</SoS.DespawnHologramDesc>
 	<SoS.RenameAI>Назвать\nИИ</SoS.RenameAI>
 	<SoS.RenameAIDesc>Дать этому ИИ новое имя.</SoS.RenameAIDesc>
 	<SoS.Ship.DefaultName>Безымянный корабль</SoS.Ship.DefaultName>
@@ -344,9 +344,9 @@
 	<SoS.ResurrectBrain>Воскресить</SoS.ResurrectBrain>
 	<SoS.ResurrectBrainDesc>Использовать сыворотку воскрешения, чтобы создать новое тело для этого существа.</SoS.ResurrectBrainDesc>
 	<SoS.ArchoGift>Открывает награды от Архотек-споры</SoS.ArchoGift>
-	<SoS.ArchotechGoodwillPlus>Улучшить отношения (+10, {0} силы поля)</SoS.ArchotechGoodwillPlus>
-	<SoS.ArchotechGoodwillMinus>Ухудшить отношения (-10, {0} силы поля)</SoS.ArchotechGoodwillMinus>
-	<SoS.ArchotechFieldStrengthLow>Недостаточная сила поля.</SoS.ArchotechFieldStrengthLow>
+	<SoS.ArchotechGoodwillPlus>Улучшить отношения ({0} силы поля)</SoS.ArchotechGoodwillPlus> <!-- +10 -->
+	<SoS.ArchotechGoodwillMinus>Ухудшить отношения ({0} силы поля)</SoS.ArchotechGoodwillMinus> <!-- -10 -->
+	<SoS.ArchotechFieldStrengthLow>Слабое пси-поле.</SoS.ArchotechFieldStrengthLow>
 	<SoS.ArchotechSoothe>Пси-покой</SoS.ArchotechSoothe>
 	<SoS.ArchotechSootheDesc>Сгенерировать умиротворяющий пси-импульс ({0} силы поля).</SoS.ArchotechSootheDesc>
 	<SoS.ArchotechShock>Пси-шок</SoS.ArchotechShock>
@@ -556,7 +556,7 @@
 	<!-- Dodge mechanics -->
 	<SoS.DodgeNoEnginePower>Невозможно уклонится из-за отсутствия работающих двигателей или обломков в области. Проверьте двигатели, или уберите обломки.</SoS.DodgeNoEnginePower>
 	<SoS.DodgeNoRCSOnShip>Корабль {0} требует маневровые ускорители для уклонения.</SoS.DodgeNoRCSOnShip>
-	<SoS.DodgeOnCooldown>Маневровые ускорители остывают. Следующий маневр уклонения можно будет выполнить через {0} секунд.</SoS.DodgeOnCooldown>
+	<SoS.DodgeOnCooldown>Маневровые ускорители остывают. Следующий маневр уклонения можно будет выполнить через {0_numCase ? секунду : секунды : секунд}.</SoS.DodgeOnCooldown>
 	<SoS.DodgeLeft>Уклониться влево</SoS.DodgeLeft>
 	<SoS.DodgeLeftDesc>Уклониться от приближающихся снарядов, включив правые маневровые ускорители, корабль сместится вправо.</SoS.DodgeLeftDesc>
 	<SoS.DodgeRight>Уклониться вправо</SoS.DodgeRight>
@@ -632,6 +632,20 @@
 	<SoS.LoadedTorpedoEMP>Заряжены ЭМИ-торпеды: {0} </SoS.LoadedTorpedoEMP>
 	<SoS.LoadedTorpedoAM>Заряжены гранульные торпеды: {0} </SoS.LoadedTorpedoAM>
 
+	<!-- Stashed ship quest -->
+
+	<SoS.StashedShip.RequestOptionParent>Запросить местоположение спрятанного корабля</SoS.StashedShip.RequestOptionParent>
+	<SoS.StashedShip.RequestOption>{0} (стоимость: {1} серебра) ({2})</SoS.StashedShip.RequestOption>
+	<SoS.StashedShip.RequestOptionDummy>Запросить местоположение спрятанного корабля</SoS.StashedShip.RequestOptionDummy>
+	<SoS.StashedShip.RequestOptionDummySpecific>{0}</SoS.StashedShip.RequestOptionDummySpecific>
+	<SoS.StashedShip.OnCooldown>Следующий запрос спрятанного корабля будет доступен через {0_numCase ? день : дня : дней}.</SoS.StashedShip.OnCooldown>
+	<SoS.StashedShip.RequiresTech>Изучите технологию основ звездоходства перед запросом.</SoS.StashedShip.RequiresTech>
+	<SoS.StashedShip.NoSecuroity>Без охраны</SoS.StashedShip.NoSecuroity>
+	<SoS.StashedShip.MinorSceurity>Слабая охрана</SoS.StashedShip.MinorSceurity>
+	<SoS.StashedShip.AverageSceurity>Средняя защита</SoS.StashedShip.AverageSceurity>
+	<SoS.StashedShip.HighSceurity>Сильная охрана</SoS.StashedShip.HighSceurity>
+
+	
 
 	<!-- obsolete/unused
 	<SoS.PirateTradeEmpire>Our act of piracy against the Empire has not gone unnoticed!</SoS.PirateTradeEmpire>

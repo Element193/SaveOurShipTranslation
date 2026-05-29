@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ShipTorpedoBombSuper.deathMessage>{0} 死掉了.</ShipTorpedoBombSuper.deathMessage>
+
+  <CoreBlast.label>核心溟灭</CoreBlast.label>
+  <CoreBlast.deathMessage>{0} 从可观测宇宙中消失了.</CoreBlast.deathMessage>
+
+
+</LanguageData>

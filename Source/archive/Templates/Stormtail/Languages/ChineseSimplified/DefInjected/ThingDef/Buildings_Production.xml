@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ArchotechHivemind.label>上古蜂巢核心</ArchotechHivemind.label>
+  <ArchotechHivemind.description>01000001 01101100 01101100 00100000 01111001 01101111 01110101 01110010 00100000 01100010 01100001 01110011 01100101 00100000 01100001 01110010 01100101 00100000 01100010 01100101 01101100 01101111 01101110 01100111 00100000 01110100 01101111 00100000 01110101 01110011.</ArchotechHivemind.description>
+
+  <ArchoVendor.label>上古的自动售货机</ArchoVendor.label>
+  <ArchoVendor.description>？？？（有狐狸卖吗？）</ArchoVendor.description>
+
+  <PizzaVendor.label>卖看起来是披萨的食物的自动售货机</PizzaVendor.label>
+  <PizzaVendor.description>准备新鲜出炉的热乎乎美味披萨！</PizzaVendor.description>
+
+  <ArchotechWorkbench.label>上古合成站</ArchotechWorkbench.label>
+  <ArchotechWorkbench.description>制作一些上古的“爵士”.</ArchotechWorkbench.description>
+
+
+</LanguageData>

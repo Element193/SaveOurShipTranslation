@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <!--DrugPillBase-->
+  <ThingDef ParentName="DrugPillBase">
+    <defName>AscendedArchoferium</defName>
+    <label>Ascended Archoferium</label>
+    <description>A more purified version of Archoferium. Well, ''Purified'' being loosely used. This will turn you into a demigod, for a price.</description>
+    <graphicData>
+      <texPath>Things/Items/AscendedArchoferium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>	
+    <rotatable>false</rotatable>
+	
+    <statBases>
+      <WorkToMake>90000</WorkToMake>
+      <MarketValue>9000</MarketValue>
+	  <Mass>0.01</Mass>
+    </statBases>
+		<costList>
+			<Luciferium>2</Luciferium>
+			<Penoxycyline>2</Penoxycyline>
+			<ArchoAlgae>5</ArchoAlgae>	
+            <Neutroamine>20</Neutroamine>			
+		</costList>	
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AscendedHigh</hediffDef>
+          <severity>5.00</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <!--<recipeMaker>
+	  <workSkill>Medicine</workSkill>
+      <recipeUsers>
+        <li>ArchotechHivemind</li>
+      </recipeUsers>
+	<skillRequirements>
+        <Medicine>18</Medicine>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>ArchoferiumProduction</li>
+    </researchPrerequisites>	
+    </recipeMaker>-->
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>AscendedArchoferium</chemical>
+        <addictiveness>1.00</addictiveness>
+        <needLevelOffset>5.00</needLevelOffset>
+        <listOrder>4200</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>AscendedHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Ascended Archoferium</label>
+	<description>What...is happening?</description>
+    <defaultLabelColor>(32,242,252)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+	<isBad>false</isBad>
+    <stages>
+      <li>
+        <painFactor>0.90</painFactor>
+		<hungerRateFactor>0.90</hungerRateFactor>
+		<restFallFactor>1.00</restFallFactor>
+		<statOffsets>
+		  <ArmorRating_Sharp>5.2</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>5.2</ArmorRating_Blunt>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>10.50</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>10.50</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>10.50</offset>
+          </li>
+		  <li>
+            <capacity>Talking</capacity>
+            <offset>10.20</offset>
+          </li>
+		  <li>
+            <capacity>Eating</capacity>
+            <offset>10.20</offset>
+          </li>
+		  <li>
+            <capacity>Sight</capacity>
+            <offset>10.40</offset>
+          </li>
+		  <li>
+            <capacity>Hearing</capacity>
+            <offset>10.40</offset>
+          </li>
+		  <li>
+            <capacity>Breathing</capacity>
+            <offset>10.20</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>10.40</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>10.30</offset>
+          </li>
+           <li>
+            <capacity>Metabolism</capacity>
+            <offset>10.40</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+
+  
+  
+  <ThoughtDef>
+    <defName>AscendedArchoferiumHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AscendedHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>01010100 01101000 01101001 01110011 00100000 01100110 01100101 01100101 01101100 01110011 00100000 01100001 01101101 01100001 01111010 01101001 01101110 01100111 00100001</label>
+        <description>100100100001001001</description>
+        <baseMoodEffect>500</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+
+  <!-- Luciferium addiction -->
+
+  <ChemicalDef>
+    <defName>AscendedArchoferium</defName>
+    <label>Ascended Archoferium</label>
+    <addictionHediff>AscendedArchoferiumAddiction</addictionHediff>
+    <canBinge>false</canBinge>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_AscendedArchoferium</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>Ascended Archoferium</label>
+    <description>1001001001000101</description>
+    <listPriority>45</listPriority>
+    <fallPerDay>1.0</fallPerDay>
+  </NeedDef>
+
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>AscendedArchoferiumAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>Ascended Archoferium Need</label>
+	<description>100100101 Need 1011010001001 MORE! 1001001</description>
+    <causesNeed>Chemical_Archoferium</causesNeed>
+	<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>unmet</label>
+        <lifeThreatening>true</lifeThreatening>
+        <deathMtbDays>0.3</deathMtbDays>
+		<painFactor>0.10</painFactor>
+		<hungerRateFactor>1.0</hungerRateFactor>
+		<restFallFactor>0.20</restFallFactor>
+		<statOffsets>
+		  <ArmorRating_Sharp>10.2</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>10.6</ArmorRating_Blunt>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>10.00</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>10.00</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>10.00</offset>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0.00</setMax>
+          </li>
+		  <li>
+            <capacity>Eating</capacity>
+            <setMax>0.00</setMax>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>10.00</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>10.00</offset>
+          </li>
+           <li>
+            <capacity>Metabolism</capacity>
+            <offset>10.00</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>10.00</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>10.00</offset>
+          </li>
+          <li>
+            <capacity>Hearing</capacity>
+            <setMax>10.00</setMax>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>ManhunterPermanent</mentalState>
+            <mtbDays>6.5</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+</Defs>

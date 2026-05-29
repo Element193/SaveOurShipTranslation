@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>AronusMeat</defName>
+		<label>Raw Aronus Meat</label>
+		<description>Strange meat grown with the help of Archomatter Algae.</description>
+		<soundInteract>Grain_Drop</soundInteract>
+		<soundDrop>Grain_Drop</soundDrop>	
+
+		<graphicData>
+
+			<texPath>Things/Material/AronusPlantMeat</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>			
+			
+		</graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>		
+		<statBases>
+			<MaxHitPoints>0.5</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>1.0</Flammability>
+            <FoodPoisonChanceFixedHuman>3.00</FoodPoisonChanceFixedHuman>		
+		</statBases>
+				<tickerType>Rare</tickerType>		
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<comps>
+      <li Class="CompProperties_FoodPoisonable" />		
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>100</daysToRotStart>
+				<rotDestroys>true</rotDestroys>				
+			</li>
+		</comps>
+
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+            <foodType>Meat</foodType>				
+		</ingestible>
+    <researchPrerequisites>
+      <li>SpaceMeat</li>
+    </researchPrerequisites>			
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AronusMeatGrow</defName>
+		<label>Raw Aronus Meat</label>
+		<description>Strange meat grown with the help of Archomatter Algae.</description>
+		<statBases>
+			<MaxHitPoints>500.5</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<Flammability>1.0</Flammability>
+            <FoodPoisonChanceFixedHuman>3.00</FoodPoisonChanceFixedHuman>				
+		</statBases>
+		<graphicData>
+			<texPath>Things/Material/AronusPlantMeat</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+    <comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(103,46,244,0)</glowColor>
+			</li>	  	
+    </comps>	
+		<plant>
+			<fertilityMin>0.70</fertilityMin>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<maxMeshCount>4</maxMeshCount>
+			<harvestedThingDef>AronusMeat</harvestedThingDef>
+			<harvestYield>25</harvestYield>
+			<harvestWork>200</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>200</growDays>
+			
+			<visualSizeRange>0.4~1.2</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+		</plant>
+    <researchPrerequisites>
+      <li>SpaceMeat</li>
+    </researchPrerequisites>			
+	</ThingDef>	    
+
+</Defs>

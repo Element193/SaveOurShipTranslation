@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="SOSEXMeleeQuality">
+    <defName>ArchoMelee_Slicer</defName>
+    <label>Neuron Slicer</label>
+    <description>A glowing Archomatter infused blade perfect for cutting down anything fleshy. It will also infect them with Archomatter</description>
+    <graphicData>
+		<texPath>Things/Weapons/ArchoNeuronSlicer</texPath>
+		<shaderType>TransparentPostLight</shaderType>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1.2</drawSize>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <weaponTags Inherit="False">
+		<li>SOSEXMeleeQuality</li>
+    </weaponTags>
+    <costList>
+      <ArchoAlgae>150</ArchoAlgae>
+	  <Archomatter>150</Archomatter>
+      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>5</ComponentIndustrial>	 
+    </costList>
+        <generateCommonality>0.0001</generateCommonality>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>18</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>ArchotechWorkbench</li>
+      </recipeUsers>
+      <unfinishedThingDef Inherit="False">UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite Inherit="False">ArchoWeaponry</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+		<MarketValue>2000</MarketValue>
+		<Mass>1.4</Mass>
+    </statBases>
+    <equippedAngleOffset>-15</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>Handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>MolecularEdge</label>
+        <capacities>
+          <li>FrostStrike</li>
+        </capacities>
+        <power>31</power>
+        <armorPenetration>30.50</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>MolecularBlade</label>
+        <capacities>
+          <li>FrostStrike</li>
+        </capacities>
+        <power>31</power>
+        <armorPenetration>30.80</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+                <groundGraphic>
+                    <texPath>Things/Weapons/ArchoNeuronSlicer</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                </groundGraphic>
+            </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+	<tradeability>Sellable</tradeability>
+  </ThingDef>
+
+  
+</Defs>
